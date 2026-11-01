@@ -9,6 +9,19 @@
 
 V2 ke source folders complete the, lekin main agent MDs short summaries the. V3 mein main dossiers expand kiye hain, scope/wording errors fix kiye hain aur actual dated memory/project records add kiye hain. AI Writer ka exact source abhi bhi missing hai; uski file clearly reconstructed hai.
 
+## maniik brain + God Mode (`gm`)
+
+Is repo ka main kaam ek brain banana hai jo AI mein almost kuch bhi kar sake. Top layer **maniik** hai, Manik ka AI-founder alter ego ([identity](agents/MANIIK_FOUNDER.md)). maniik decide karta hai kya banana hai. Daksh orchestrate karta hai, aur specialists execute karte hain.
+
+| Command | Kaam |
+|---|---|
+| `gm <goal>` | Repo ke relevant agents/skills + current tools, hacks, architecture ka research -> ek ranked blueprint |
+| `gm deep <goal>` | Parallel deep research + independent review |
+| `gm build <goal>` | Research ke baad capability repo mein bana ke commit |
+| `gm scan <goal>` | Sirf internal: brain mein kya already hai, gaps kya hain |
+
+Skill: [skills/god-mode/SKILL.md](skills/god-mode/SKILL.md). Internal scanner: `python skills/god-mode/scripts/gm_scan.py "<goal>"`. Reports: `research/god-mode/`. Claude Code is repo mein `CLAUDE.md` ke through `gm` automatically pehchanta hai.
+
 ## Start here
 - [Audit verdict and actual gaps](audit/AUDIT_REPORT.md)
 - [Coverage matrix](audit/COVERAGE_MATRIX.md)

@@ -1,0 +1,12 @@
+interface:
+  display_name: God Mode (maniik)
+  short_description: Research agents, skills, hacks and architecture for any goal
+  default_prompt: 'gm <goal>: use $god-mode as maniik to research what this brain already
+    has, the best current tools, hacks and architecture, and give me one ranked blueprint.'
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
