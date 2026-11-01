@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "core_agents": 8,
+  "support_modules": 1,
+  "files": [
+    "README.md",
+    "agents/AI_DUBBING.md",
+    "agents/AI_LOCATION_DIRECTOR.md",
+    "agents/AI_MUSIC_DIRECTOR.md",
+    "agents/AI_NATIVE_DIRECTOR.md",
+    "agents/AI_SOCIALS.md",
+    "agents/AI_WRITER.md",
+    "agents/DAKSH_MASTER.md",
+    "agents/MANIIK_WORKFLOW.md",
+    "agents/SUNO_PROMPT_HELPER.md",
+    "shared/AGENT_MAP.md",
+    "shared/COMMON_RULES.md"
+  ]
+}
