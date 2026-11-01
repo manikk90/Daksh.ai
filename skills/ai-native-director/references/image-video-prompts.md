@@ -25,6 +25,8 @@ For substantive composition choices, use `shot-composition.md` before compiling.
 
 ## Scoped revisions and shorthand
 
+Current output lock: do not emit a standalone `Refs (continuity): ...` line/section unless the user explicitly asks for it. Keep necessary visible character/prop/location tags inside the executable prompt body. Internal reference-role bindings remain separate production metadata. Put a blank line before final `DIALOGUE:` and nothing after it.
+
 Source:27October2026 supplied user corrections/memories and dated retrieved summaries; scope: AI Native Director prompt revisions. Retain the supplied shot identifier in the opening shot header (including its original leading timecode when present); never invent a missing ID. Default to minimal requested edits, preserving original structure and exact tags. Keep prompts compact unless detailed output is requested; do not add unsolicited CAMERA/LIGHTING/NEGATIVE/AUDIO sections.
 
 In every video prompt, put ALL action/timing, camera, sound, performance directions and visual Refs before the final dialogue block. Preserve exact supplied words, punctuation, order and speaker tokens in `DIALOGUE: @character: "..."`. Nothing follows the final dialogue line. Offscreen voice is an audio role, not permission to render its owner. Return only executable prompts in one copyable code block for prompt-only requests.
@@ -70,7 +72,6 @@ Build this clip's visual tag/input set from its actual frame and authorized prog
 Portable production handoff:
 ```text
 [0-<duration>s] @<shot-id> [<SIZE>]: From <actual starting pose/contact>, <exact subject tag executes one coherent action beat: trigger, path/vector, pace, support/contact and settling, with visible emotional change>. Camera: <starting height/framing, one move, path/speed/end framing>. Focus: <fixed/follow or A-to-B rack, sharp target and soft layers>. <Relevant environmental response>. End: <pose/position/prop/contact/emotional state for next shot>. <Supported sound, vocal performance and reaction onset>.
-Refs (continuity): <exact relevant locked tags>
 DIALOGUE: @<speaker>: "<exact supplied line, only when provided>"
 ```
 
@@ -132,7 +133,6 @@ Example still, with tags only if locked for the active scene:
 Example portable video direction:
 ```text
 [0-5s] @s1p1s5 [ECU]: @naina-01 probes the next stone tread with @wooden-stick, confirms its edge, then places one bare foot on it and transfers weight in a measured upward step. Camera tracks parallel at 8cm above @krishna-temple.outer-steps.ground, keeping foot and stick tip framed. Follow focus stays on the stepping foot and tread; background remains soft. End with foot planted and body balanced. Natural bell ambience.
-Refs (continuity): @naina-01 @wooden-stick @krishna-temple.outer-steps.ground
 ```
 
 Runway-style motion-only compilation of that shot, if the start frame actually supports it: The girl probes the next stone step with her cane, then takes one measured upward step. A ground-level camera tracks beside her foot; focus follows the planted foot and cane tip. Background stays soft.

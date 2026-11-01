@@ -105,3 +105,8 @@ Use DIR-010 through DIR-012 and DIR-LG-009 through DIR-LG-012 in the learning le
 - Naina's default blind-eye state: eyelids approximately 20% open, eyes lowered/unfocused, no direct eye contact or visual tracking; head turns toward sound/voice. A shot-specific eyelid instruction can override only that shot.
 - Preserve established character/object blocking, facing and prop placement across subsequent panels/shots unless an approved action or explicit correction changes it.
 - Current temple base tag is `@krishna-temple`; use exact approved view parts such as `.front`, `.background`, `.left`, `.right` only when those view tags are actually established for the shot. Do not invent suffixes.
+
+### Current Panchayat crowd-tag lock — 2 November 2026
+
+For Laddu Gopal Panchayat/crowd storyboard prompts, `@crowd` and `@crowd-2` are approved crowd tags when that specific crowd is actually visible in the frame. Preserve frame-local visibility: do not add either crowd tag to a tight shot or source frame where the crowd is out of frame. This scoped rule supersedes any older wording that made `@crowd` entrance-only when the current Panchayat source clearly shows the approved crowd asset.
+

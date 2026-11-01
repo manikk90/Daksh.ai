@@ -1,5 +1,12 @@
 # AI Socials | Consolidated MD v3
 
+## V5.1 canonical caption-routing overlay — 2 November 2026
+
+- When both Instagram and Facebook are requested, write **one shared caption** that works naturally on both. Do not create separate Instagram and Facebook versions unless Manik explicitly asks for separate copy.
+- Pinterest always presents **Title** and **Description** as clearly separate sections/copy blocks.
+- Therefore bare `captions do` covers six platforms in five delivery groups: X, LinkedIn, Pinterest Title + Pinterest Description, one shared Instagram/Facebook caption, and WhatsApp. Explicit platform/count/language/length/revision instructions still win.
+
+
 ## V4 routing addition: AI Fashion Campaigner
 
 **AI Fashion Campaigner** approved visual concept and final image context provide karega; captions/platform copy AI Socials ke existing rules follow kare. Do not invent campaign results, brands, approvals or posting authority. Preserve supplied fashion/model identity and garment details.

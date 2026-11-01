@@ -216,3 +216,17 @@ These direct user corrections supersede older generic revision behavior in their
 - `fm` = strict supplied-frame match. Preserve crop/composition, identity, pose baseline, lighting, background and locked camera. With `fm + dh`, keep camera motion restrained to frame-compatible tremor unless the user explicitly authorizes more.
 
 For visual previews, "preview" means actual cinematic reference images/thumbnails shown before the prompt. Do not substitute a text-only sketch. Preserve established physical blocking across panels unless a user explicitly changes it. For Laddu Gopal keep `@mukund-03` and `@pooja-02` exact. Naina remains blind-specific: eyelids about 20% open by default, eyes lowered/unfocused, no direct eye contact or visual tracking, head oriented toward sound/voice unless the shot explicitly sets a different eyelid state.
+
+## Current user-lock overlay — 2 November 2026
+
+Apply these current user corrections over conflicting older examples:
+
+- A supplied screenshot/reference frame plus a video-prompt request is implicit `fm` unless the user explicitly authorizes a composition/blocking/camera change. Preserve the actual frame and allow only compatible motion/performance.
+- `fc` means Frame Correction. Preserve unrequested pose/body/outfit/camera/crop/light/background/props/composition and automatically remove non-scene UI/overlay baked into the supplied frame. Do not invoke an image edit when no usable image target is present.
+- For Laddu Gopal, Naina's default blind-state eyelids are about 20% open, eyes lowered/unfocused with no visual tracking, and head attention follows sound/voice. Shot-local eye instructions override only that shot.
+- Preserve exact tags `@mukund-03` and `@pooja-02`. In Panchayat/crowd frames, `@crowd` and `@crowd-2` are approved only when the corresponding crowd is visibly present.
+- Do not output a standalone `Refs (continuity): ...` line or separate Refs section unless explicitly requested. Keep required visible/location/prop tags in the executable prompt itself; keep internal tool/reference bindings outside user-visible prompt copy.
+- Put a blank line before the final `DIALOGUE: @character: "..."` line. Dialogue remains absolute last content, with nothing after it.
+- When a revised prompt contains dialogue, optimize inline emotion/voice/delivery tags by default without changing supplied dialogue words, punctuation or order unless rewriting is requested.
+- `fx c` requires actual representative visual composition previews before the copy-ready revised prompt. `fx`, `pm`, `fm`, `dh`, `ah`, `ch` and ordinary prompt-fix requests evaluate story-led composition, but strict frame locks prevent unauthorized reframing.
+
