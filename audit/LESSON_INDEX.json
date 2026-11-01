@@ -1,0 +1,584 @@
+[
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-001",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-002",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-003",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-004",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-001",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-002",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-005",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-R-001",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-006",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-007",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-003",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-004",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-005",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-006",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-007",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-008",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-009",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-008",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-R-002",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-COMP-001",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-CAST-001",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-010",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-011",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-012",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-009",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-010",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-011",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-012",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-013",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-013",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-014",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-015",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-REV-20261027",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-native-director",
+    "id": "DIR-LG-017",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "source": "skills/ai-native-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-001",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-002",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-003",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-004",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-005",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-006",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-007",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-008",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-009",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-010",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-011",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-012",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-013",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-014",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-research-001",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-research-002",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-015",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-016",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-017",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-018",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-019",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-020",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-021",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-022",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-023",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-024",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-location-director",
+    "id": "loc-feedback-025",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "source": "skills/ai-location-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-001",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-002",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-003",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-004",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-005",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-006",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-007",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-008",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-009",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-010",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-011",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-012",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-013",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-music-director",
+    "id": "MUS-014",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "source": "skills/ai-music-director/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "original-photo-layout",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "scoped-five-slide-layout",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "face-identity",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "media-grounded-caption",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "team-test-attribution",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "approved-copy-lock",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "designated-face-reference",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "per-angle-likeness-review",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "four-photo-collage-scope",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "monochrome-photos-color-type",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "reference-glasses-batch",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "lighting-grade-continuity",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "last-image-only-revision",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "one-hinglish-caption",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "scoped-artistic-portrait-brief",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "current-frame-visual-reference-binding",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "singular-plural-caption-routing",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "six-platform-caption-adaptation",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "image-selection-complement-20261024",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "final-carousel-source-delivery",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "aspect-ratio-without-crop-20261004",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  },
+  {
+    "skill": "ai-socials",
+    "id": "selected-duck-photo-zoom-20261030",
+    "dossier": "agents/AI_SOCIALS.md",
+    "source": "skills/ai-socials/assets/learning-ledger.json"
+  }
+]

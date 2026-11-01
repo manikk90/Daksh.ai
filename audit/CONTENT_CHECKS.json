@@ -1,0 +1,573 @@
+[
+  {
+    "id": "C01",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Supplied shot ID retained, no invented ID",
+    "v2_status": "Present in v2; retained",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "Preserve original supplied shot IDs"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C02",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Strict frame/static locks win over camera shorthand",
+    "v2_status": "Partly summarized; clarified",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "None overrides a static or strict-frame lock"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C03",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "se resolved from actual compiler",
+    "v2_status": "Unnecessarily unresolved in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "se = motivated shot experiments"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C04",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "ah/dh/ah+dh/ch defined",
+    "v2_status": "Present in v2; retained",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "ah = action/acting-heavy",
+      "dh = dialogue-delivery-heavy",
+      "ch = motivated camera"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C05",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "No unrequested sections for narrow fixes",
+    "v2_status": "Present in v2; retained",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "Do not add CAMERA, LIGHTING, AUDIO or NEGATIVE sections"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C06",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Varied story-motivated composition",
+    "v2_status": "Present in v2; retained with full source",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "varied story-motivated compositions",
+      "centered close-ups"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C07",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Individual visual previews not dense infographic",
+    "v2_status": "Present in v2/overlay; integrated",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "individual cinematic reference images",
+      "Do not substitute one dense generated infographic"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C08",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "26 saved patterns versus missing 100-preview set",
+    "v2_status": "Gap existed and remains explicit",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "original catalogue has 26 patterns",
+      "not the requested-but-unrecovered 100-preview set"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C09",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Beginning/end reference role and camera motion separation",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "An end-frame reference does not invent the opening pose",
+      "Keep zoom, camera translation, focus change and subject slow motion separate"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C10",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Per-frame inputs include partial owners, not offscreen actors",
+    "v2_status": "Partly summarized; expanded",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "partial shoulder/reflection ownership and offscreen audio distinct"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C11",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Storyboard cells and underfill rule",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "nine horizontal 16:9 cells in a 3x3 layout",
+      "do not invent filler"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C12",
+    "agent": "AI_NATIVE_DIRECTOR",
+    "label": "Video-dialogue-only scope",
+    "v2_status": "Over-broad summary corrected",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_NATIVE_DIRECTOR.md",
+    "required_text": [
+      "For VIDEO PROMPTS",
+      "does not move dialogue to the end of an authored screenplay"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C13",
+    "agent": "AI_LOCATION_DIRECTOR",
+    "label": "Props are photos not drawings",
+    "v2_status": "Ambiguous v2 wording corrected",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_LOCATION_DIRECTOR.md",
+    "required_text": [
+      "PHOTOREALISTIC STUDIO REFERENCE PHOTOGRAPHS",
+      "not schematic or orthographic drawings"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C14",
+    "agent": "AI_LOCATION_DIRECTOR",
+    "label": "Four-view default and custom overrides",
+    "v2_status": "Only fully specified in linked source",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_LOCATION_DIRECTOR.md",
+    "required_text": [
+      "Front, Back, Left and Right photographs",
+      "Explicit custom angles/layouts override"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C15",
+    "agent": "AI_LOCATION_DIRECTOR",
+    "label": "No repeated master approval and no mirrored side substitution",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_LOCATION_DIRECTOR.md",
+    "required_text": [
+      "Reuse approved plan/master gates",
+      "Do not mirror an image"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C16",
+    "agent": "AI_LOCATION_DIRECTOR",
+    "label": "Schematic/render/panorama/viewer checks differ",
+    "v2_status": "Partly summarized; expanded",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_LOCATION_DIRECTOR.md",
+    "required_text": [
+      "Distinguish schematic, shared-scene render, AI-enhanced image",
+      "viewer-tested panorama"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C17",
+    "agent": "AI_LOCATION_DIRECTOR",
+    "label": "Real project state included without media-QC claim",
+    "v2_status": "Actual runtime JSON absent from v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_LOCATION_DIRECTOR.md",
+    "required_text": [
+      "revision-7 Laddu Gopal project record",
+      "No new geometry or source-image QC"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C18",
+    "agent": "AI_MUSIC_DIRECTOR",
+    "label": "800 is editorial/user cap, not provider maximum",
+    "v2_status": "Misleading v2 wording corrected",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_MUSIC_DIRECTOR.md",
+    "required_text": [
+      "USER/EDITORIAL CAP",
+      "not a verified provider maximum"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C19",
+    "agent": "AI_MUSIC_DIRECTOR",
+    "label": "Sad opening retained, flute follows epic peak",
+    "v2_status": "Present in v2; retained",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_MUSIC_DIRECTOR.md",
+    "required_text": [
+      "preserve the sad opening",
+      "flute tail after the epic peak"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C20",
+    "agent": "AI_MUSIC_DIRECTOR",
+    "label": "Instrumental excludes voice, choir and chants",
+    "v2_status": "Only fully specified in linked source",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_MUSIC_DIRECTOR.md",
+    "required_text": [
+      "exclude vocals, choir, chants, humming and sung alaap"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C21",
+    "agent": "AI_MUSIC_DIRECTOR",
+    "label": "Daily seva not arrival, different briefs not merged",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_MUSIC_DIRECTOR.md",
+    "required_text": [
+      "already has the idol",
+      "not invent an arrival story",
+      "separate scoped briefs"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C22",
+    "agent": "AI_MUSIC_DIRECTOR",
+    "label": "Music-only not automatic SFX/audio analysis",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_MUSIC_DIRECTOR.md",
+    "required_text": [
+      "Do not silently add SFX or audio analysis"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C23",
+    "agent": "AI_DUBBING",
+    "label": "Fast line path and minimal output",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_DUBBING.md",
+    "required_text": [
+      "fast one-line route",
+      "without an unsolicited plan"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C24",
+    "agent": "AI_DUBBING",
+    "label": "Words versus tagged text/payload",
+    "v2_status": "Partly summarized; expanded",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_DUBBING.md",
+    "required_text": [
+      "canonical approved words separate from the tagged/render text"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C25",
+    "agent": "AI_DUBBING",
+    "label": "Two new candidate repair-attempt bound",
+    "v2_status": "Not stated in main v2 MD",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_DUBBING.md",
+    "required_text": [
+      "AT MOST TWO NEW CANDIDATE ATTEMPTS"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C26",
+    "agent": "AI_DUBBING",
+    "label": "Independent delivery dimensions and reviews",
+    "v2_status": "Partly summarized; expanded",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_DUBBING.md",
+    "required_text": [
+      "Separate emotion, tone/subtext, volume, pitch/resonance, pace and breath",
+      "Native-language, acting, sync and technical reviews are separate"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C27",
+    "agent": "AI_DUBBING",
+    "label": "Route-specific controls and current verification limit",
+    "v2_status": "Only fully specified in linked source",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_DUBBING.md",
+    "required_text": [
+      "UI controls do not prove API fields",
+      "saved provider guidance is dated"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C28",
+    "agent": "AI_SOCIALS",
+    "label": "Single/plural platform contract",
+    "v2_status": "Present in v2; retained",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_SOCIALS.md",
+    "required_text": [
+      "one Instagram caption",
+      "six native versions"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C29",
+    "agent": "AI_SOCIALS",
+    "label": "Explicit two-caption count exception",
+    "v2_status": "Not stated in main v2 MD",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_SOCIALS.md",
+    "required_text": [
+      "\"2 captions do\" means two Instagram options"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C30",
+    "agent": "AI_SOCIALS",
+    "label": "Six captions versus four-platform analytics",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_SOCIALS.md",
+    "required_text": [
+      "Six-platform caption support is not six-platform analytics"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C31",
+    "agent": "AI_SOCIALS",
+    "label": "Weighted counting and actual evaluator constraints",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_SOCIALS.md",
+    "required_text": [
+      "weighted character counting",
+      "six scores >=7, confidentiality 10",
+      "at most two revision cycles"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C32",
+    "agent": "AI_SOCIALS",
+    "label": "Original photos, selection and no-crop boundaries",
+    "v2_status": "Partly summarized; expanded",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_SOCIALS.md",
+    "required_text": [
+      "Preserve original-photo pixels",
+      "complement exclusions",
+      "no-crop/canvas-extension"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C33",
+    "agent": "MANIIK_WORKFLOW",
+    "label": "Exact weekly template included",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/MANIIK_WORKFLOW.md",
+    "required_text": [
+      "Week: {Monday date} - {Saturday date}",
+      "Commitments (3-5, har ek me number)"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C34",
+    "agent": "MANIIK_WORKFLOW",
+    "label": "Team review pagination and delta watch",
+    "v2_status": "Only linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/MANIIK_WORKFLOW.md",
+    "required_text": [
+      "paginate and deduplicate actual source IDs",
+      "review deltas"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C35",
+    "agent": "MANIIK_WORKFLOW",
+    "label": "Ownership and dated PC-work labels",
+    "v2_status": "Latest dated context not fully present in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/MANIIK_WORKFLOW.md",
+    "required_text": [
+      "Arun",
+      "As Director - PC Work",
+      "Surajmal, Pret Saraay and Baba Loknath - Bengali"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C36",
+    "agent": "MANIIK_WORKFLOW",
+    "label": "No external writes/calendar change",
+    "v2_status": "Present in v2; retained",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/MANIIK_WORKFLOW.md",
+    "required_text": [
+      "Do not create Slack drafts/replies/reactions",
+      "calendar reminders"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C37",
+    "agent": "DAKSH_MASTER",
+    "label": "Actual brain, scoped memory and no passive clone",
+    "v2_status": "Actual state absent; mechanisms linked in v2",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/DAKSH_MASTER.md",
+    "required_text": [
+      "actual saved brain snapshot",
+      "not only brain.template.json",
+      "source-version invalidation"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C38",
+    "agent": "DAKSH_MASTER",
+    "label": "Research experiment is not commercial proof",
+    "v2_status": "Only fully specified in linked source",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/DAKSH_MASTER.md",
+    "required_text": [
+      "experiment kit is not commercial validation"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C39",
+    "agent": "DAKSH_MASTER",
+    "label": "Writer historical status reconciliation",
+    "v2_status": "Risk clarified; current live state remains unverified",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/DAKSH_MASTER.md",
+    "required_text": [
+      "29 October Writer recovery report",
+      "30 October paused/unavailable record",
+      "live state is NOT checked"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C40",
+    "agent": "AI_WRITER",
+    "label": "Original missing, reconstruction explicit",
+    "v2_status": "Gap remains unresolved",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_WRITER.md",
+    "required_text": [
+      "ORIGINAL INSTALLED SKILL UNAVAILABLE",
+      "No fake Writer skill.zip"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C41",
+    "agent": "AI_WRITER",
+    "label": "Full formats and character-first breakdown",
+    "v2_status": "Important scope missing from v2 reconstruction",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_WRITER.md",
+    "required_text": [
+      "ads/TVC/DVC",
+      "Start with character dossiers",
+      "matching JSON manifest"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C42",
+    "agent": "AI_WRITER",
+    "label": "Silent scene, original language and writing layer",
+    "v2_status": "Missing from v2 reconstruction",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_WRITER.md",
+    "required_text": [
+      "Keep a silent scene silent",
+      "original source language",
+      "not screenplay layout"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C43",
+    "agent": "AI_WRITER",
+    "label": "Exact-source/translation separation and unapplied patch",
+    "v2_status": "Recovered pending evidence added",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/AI_WRITER.md",
+    "required_text": [
+      "published translation",
+      "UNAPPLIED_RUNTIME_LIMIT",
+      "patch was NOT applied"
+    ],
+    "missing": []
+  },
+  {
+    "id": "C44",
+    "agent": "SUNO_PROMPT_HELPER",
+    "label": "Instrumental helper cap and no lyrical substitution",
+    "v2_status": "Partly summarized; scope clarified",
+    "v3_status": "PASS_TEXT_INCLUSION",
+    "file": "agents/SUNO_PROMPT_HELPER.md",
+    "required_text": [
+      "800-character cap is Manik's output preference",
+      "not lyrics",
+      "exclude voice, humming, choir, chants"
+    ],
+    "missing": []
+  }
+]

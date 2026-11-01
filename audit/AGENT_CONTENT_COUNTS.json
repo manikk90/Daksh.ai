@@ -1,0 +1,85 @@
+[
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "old_words": 531,
+    "new_words": 12743,
+    "inline_markdown_modules": 9,
+    "saved_lessons": 0,
+    "indexed_source_files": 22
+  },
+  {
+    "agent": "MANIIK_WORKFLOW",
+    "skill": "maniik",
+    "old_words": 433,
+    "new_words": 3914,
+    "inline_markdown_modules": 4,
+    "saved_lessons": 0,
+    "indexed_source_files": 7
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "old_words": 679,
+    "new_words": 50922,
+    "inline_markdown_modules": 19,
+    "saved_lessons": 34,
+    "indexed_source_files": 31
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "old_words": 450,
+    "new_words": 29782,
+    "inline_markdown_modules": 12,
+    "saved_lessons": 27,
+    "indexed_source_files": 30
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "old_words": 474,
+    "new_words": 13941,
+    "inline_markdown_modules": 11,
+    "saved_lessons": 14,
+    "indexed_source_files": 21
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "old_words": 434,
+    "new_words": 13802,
+    "inline_markdown_modules": 6,
+    "saved_lessons": 0,
+    "indexed_source_files": 16
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "old_words": 519,
+    "new_words": 15453,
+    "inline_markdown_modules": 11,
+    "saved_lessons": 22,
+    "indexed_source_files": 87
+  },
+  {
+    "agent": "SUNO_PROMPT_HELPER",
+    "skill": "suno-instrumental-prompts",
+    "old_words": 331,
+    "new_words": 2123,
+    "inline_markdown_modules": 1,
+    "saved_lessons": 0,
+    "indexed_source_files": 3
+  },
+  {
+    "agent": "AI_WRITER",
+    "skill": null,
+    "old_words": 519,
+    "new_words": 2596,
+    "inline_markdown_modules": 0,
+    "saved_lessons": 0,
+    "indexed_source_files": 0,
+    "status": "documented_reconstruction_original_unavailable",
+    "pending_candidates": 2
+  }
+]

@@ -34,3 +34,11 @@ These are an export-side context overlay from the user instructions and recent c
 
 ## State and permissions
 This addon request authorizes creation of this downloadable export. It does not imply permission to publish/send, start paid generation, restore a paused agent, change timers or overwrite installed skills. No such action was performed in this export.
+
+## Audit clarification, 1 November 2026
+- `se` is defined in the installed Director compiler as motivated shot experiments within the current request; strict references still win.
+- Apply terminal DIALOGUE only to video-prompt compilation, not ordinary screenplay formatting or standalone dubbing delivery.
+- The usual Suno 800-character limit is a user/editorial constraint, not a current provider maximum.
+- Default four-view props are photorealistic grey-background photographs, not substitute schematic/orthographic drawings.
+- Current export documents are updated; copied installed-skill snapshots and the eight nested skill.zip files remain unchanged.
+- The recovered Writer pending patch is evidence only. It was not applied, installed, resumed or treated as a complete Writer source.

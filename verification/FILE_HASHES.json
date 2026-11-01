@@ -9,28 +9,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1018,
-      "sha256": "f90b7c138a014be013fbdd629096bfe63f12ab8c664d4f99a4724b70f4601e9c"
+      "bytes": 1415,
+      "sha256": "6dfc981ef934628cdc02e7fe1258e811cdc4506ec55b0ef06be76e3863872c02"
     },
     {
       "path": "DEPENDENCIES_AND_LIMITS.md",
-      "bytes": 3491,
-      "sha256": "bdbeab28839ff206535102dbe7663e30eef1e95498b18ea95c443c59b147992b"
+      "bytes": 4000,
+      "sha256": "c68e82d1979d4be693a53f64437e936c9b75aa4d1bc8d093b5176cb8b872537f"
     },
     {
       "path": "HOW_TO_USE.md",
-      "bytes": 1639,
-      "sha256": "379bd8afd2ce3aff75346e032878f72d82642f40c8a3c361b0e8d4d6da7a1d52"
+      "bytes": 1335,
+      "sha256": "6c0927fbd99a8d5d0e7dd2d93cc3ace65b4a114715d583f7a5128a3aa1dcc4fb"
     },
     {
       "path": "MANIFEST.json",
-      "bytes": 16426,
-      "sha256": "eb22d99954c8adf3e46b8375bcd466472bd1a469fdfdc3b5aa1e37eadf5712aa"
+      "bytes": 17946,
+      "sha256": "c898de34a9994ed3082c079def7aac0ea65789554798ad95f6f8f5e6e906c0a5"
     },
     {
       "path": "README.md",
-      "bytes": 3185,
-      "sha256": "3a705ecafca4fad167501980780704aebc42ca197495433c33adb5eab319ca5a"
+      "bytes": 2454,
+      "sha256": "6b9d62da0d3758e129d6634d1ddfb7178afeab8982ce4ee3b9a20ec31bb5b91b"
     },
     {
       "path": "SKILL_CATALOG.md",
@@ -39,48 +39,113 @@
     },
     {
       "path": "agents/AI_DUBBING.md",
-      "bytes": 4461,
-      "sha256": "96144668111593ec18d38fe71c15d6443b112e3bd6853fc81c072020a23eada6"
+      "bytes": 103958,
+      "sha256": "81670cd19086db02815a00b3d7b42b4d4b658a1a14cdd894fd7bb387e390ef47"
     },
     {
       "path": "agents/AI_LOCATION_DIRECTOR.md",
-      "bytes": 5606,
-      "sha256": "8afe50f24a0991384846702a1b83c5f478cb5f5f2bfebcd604d9ae603755bf17"
+      "bytes": 237108,
+      "sha256": "e9f25188ba39c133845f69a69324da0d2af2bc46ac2ce5a2bcb012f9d41d6f28"
     },
     {
       "path": "agents/AI_MUSIC_DIRECTOR.md",
-      "bytes": 5356,
-      "sha256": "5aef7daaf4abbd0ecfc80ce2ee01fc28dabe0c0e057ad635257dba8a2d71cbbc"
+      "bytes": 109885,
+      "sha256": "03a703fda28bb34dc867260e481b902ae9ade13c8ea9f17689d025fb866efd3a"
     },
     {
       "path": "agents/AI_NATIVE_DIRECTOR.md",
-      "bytes": 7970,
-      "sha256": "f488e71bc9f20e8f0cc5dfd2ddc64b779fed71c986805a4a8ea2358f68c56d05"
+      "bytes": 401680,
+      "sha256": "18303356b17fdd45f8386c2221e81e1cc00cbcf0d8cc25b8148678e866fd1a77"
     },
     {
       "path": "agents/AI_SOCIALS.md",
-      "bytes": 6450,
-      "sha256": "7dd67e816b159e9d6c261deb02690385666e37b97bee8d5632e98a64d23e75fc"
+      "bytes": 122057,
+      "sha256": "7c76af799981dffdd6f81c25f7106cc8b23e8f6e1dc62ec393847b51cd6e7e52"
     },
     {
       "path": "agents/AI_WRITER.md",
-      "bytes": 3968,
-      "sha256": "3643db676922bf3805658ace4468ef37159fb09ea7a93fb6998eebc6b2208294"
+      "bytes": 19685,
+      "sha256": "a1a10f2b4d6c03541f458dc961dfa2926d285769ffebc662d6a99424b48c1022"
     },
     {
       "path": "agents/DAKSH_MASTER.md",
-      "bytes": 5345,
-      "sha256": "2f1c076b085a32523fa067b843c5921511eef57c9ed2c8e8ce76f620b6d0f168"
+      "bytes": 103965,
+      "sha256": "3d39c4f218ab27d99606ac41af7ca5fe9ec69fccd9f99f895fe89ed039c94c4f"
     },
     {
       "path": "agents/MANIIK_WORKFLOW.md",
-      "bytes": 3794,
-      "sha256": "923f79ed7db0dc98119c12964a5f634574058a66b8980f44637bcaa17e361f3e"
+      "bytes": 29657,
+      "sha256": "6268876f3a80ae2631a6a29501504bfde842cfb4b2981b89527dea21648563ce"
     },
     {
       "path": "agents/SUNO_PROMPT_HELPER.md",
-      "bytes": 2882,
-      "sha256": "f5bd3cd8adb326df5499ad6f1f9f45ac758cba48b9411f4558a724a89e624e99"
+      "bytes": 15480,
+      "sha256": "db6a7fbbf42b8773c99d2a58a6984c567948d173c526805f1952d87b10c300a0"
+    },
+    {
+      "path": "audit/AGENT_CONTENT_COUNTS.json",
+      "bytes": 1942,
+      "sha256": "38655fd06cfa65d407040caf1a3a2ea5b11eb79ab408778ed3d3f9ba3deb34fe"
+    },
+    {
+      "path": "audit/AUDIT_REPORT.md",
+      "bytes": 6217,
+      "sha256": "c036ac9e2863e0c3fa1b5f09acbaa3b607f838211a55455bebd19a1f0f4e46cc"
+    },
+    {
+      "path": "audit/CONTENT_CHECKS.json",
+      "bytes": 16713,
+      "sha256": "4e321398f8d293d81bdd947f819daac3d42bf06daca0e7566c622154b95b8b4a"
+    },
+    {
+      "path": "audit/COVERAGE_MATRIX.md",
+      "bytes": 5841,
+      "sha256": "a85230d2b9492b228679430c4dd54637aaa8b07ff25d404009a22786686bf83d"
+    },
+    {
+      "path": "audit/FINDINGS.json",
+      "bytes": 5034,
+      "sha256": "98f89f0161ed6e807da2cf2c4df02b55f41229c5588f28f35f80eb3abdf0cc6b"
+    },
+    {
+      "path": "audit/INLINE_MODULES.json",
+      "bytes": 30798,
+      "sha256": "abc54e2158ddd52ea92901d39a3f84ff466642d5030521a28eb04559ac8cd784"
+    },
+    {
+      "path": "audit/LESSON_INDEX.json",
+      "bytes": 17984,
+      "sha256": "6cb6d20d3586d213db6d44054ce1f5b74bda12c2b25a20fa9de0ab2f18a4a9ba"
+    },
+    {
+      "path": "audit/LINK_CHECKS.json",
+      "bytes": 47,
+      "sha256": "deac799d24e2caab5d525d6d8e0b78762dd021052cbd52bcab73ba74877bde00"
+    },
+    {
+      "path": "audit/RESIDUAL_GAPS.md",
+      "bytes": 1183,
+      "sha256": "75d4f10a3e3e40495c6615d55985e86b4a99b3b49c7814288aa2db6550333be3"
+    },
+    {
+      "path": "audit/RESOURCE_INDEX.json",
+      "bytes": 32068,
+      "sha256": "7b9dcae5ef69f27b83f2be1f0c2cfcbf847264be5ee4af23e3df583ed9f83aea"
+    },
+    {
+      "path": "audit/SOURCE_COMPARISON.json",
+      "bytes": 1006,
+      "sha256": "f5902efe76b38c4a2ab9dd972744b556e724b0fdf5cd6bb5fce5c1ba9a2533bc"
+    },
+    {
+      "path": "audit/SOURCE_REGISTER.md",
+      "bytes": 1707,
+      "sha256": "bc4d32433bd6af8661ee92267b569e0520768194a23b71ed82d01fb23b9e1c1f"
+    },
+    {
+      "path": "audit/sources/WRITER_MASTER_CONTEXT_EXCERPT.md",
+      "bytes": 2166,
+      "sha256": "6a9de3ad9eba0930012c69567581c58400aeefeb2b33a4d3357b21030da985c6"
     },
     {
       "path": "external_dependencies/README.md",
@@ -114,8 +179,8 @@
     },
     {
       "path": "missing/AI_WRITER_SOURCE_STATUS.md",
-      "bytes": 1681,
-      "sha256": "ffd5309c1dfa4f90818632e417108e14050a892ede7b8a4317c384e1a2af8bfc"
+      "bytes": 809,
+      "sha256": "d1028f01945106a6f89e2d64ecf6cc6a2869cdb4d41275d6cacbb052e78a6f5f"
     },
     {
       "path": "original_dossier/Manik_Agent_Files_2026-11-01/README.md",
@@ -184,8 +249,68 @@
     },
     {
       "path": "overlays/LATEST_USER_OVERRIDES_2026-11-01.md",
-      "bytes": 4580,
-      "sha256": "039650f52933eb96d7d9bec2763841bbdac6e6de53532d64e0639ced4b3fedfe"
+      "bytes": 5373,
+      "sha256": "23b1253ce44fb59b3dde0f4fc984dd6fbd04ecfd6d0808dbeaf67e96e201a8df"
+    },
+    {
+      "path": "previous_v2_summaries/AI_DUBBING.md",
+      "bytes": 4461,
+      "sha256": "96144668111593ec18d38fe71c15d6443b112e3bd6853fc81c072020a23eada6"
+    },
+    {
+      "path": "previous_v2_summaries/AI_LOCATION_DIRECTOR.md",
+      "bytes": 5606,
+      "sha256": "8afe50f24a0991384846702a1b83c5f478cb5f5f2bfebcd604d9ae603755bf17"
+    },
+    {
+      "path": "previous_v2_summaries/AI_MUSIC_DIRECTOR.md",
+      "bytes": 5356,
+      "sha256": "5aef7daaf4abbd0ecfc80ce2ee01fc28dabe0c0e057ad635257dba8a2d71cbbc"
+    },
+    {
+      "path": "previous_v2_summaries/AI_NATIVE_DIRECTOR.md",
+      "bytes": 7970,
+      "sha256": "f488e71bc9f20e8f0cc5dfd2ddc64b779fed71c986805a4a8ea2358f68c56d05"
+    },
+    {
+      "path": "previous_v2_summaries/AI_SOCIALS.md",
+      "bytes": 6450,
+      "sha256": "7dd67e816b159e9d6c261deb02690385666e37b97bee8d5632e98a64d23e75fc"
+    },
+    {
+      "path": "previous_v2_summaries/AI_WRITER.md",
+      "bytes": 3968,
+      "sha256": "3643db676922bf3805658ace4468ef37159fb09ea7a93fb6998eebc6b2208294"
+    },
+    {
+      "path": "previous_v2_summaries/DAKSH_MASTER.md",
+      "bytes": 5345,
+      "sha256": "2f1c076b085a32523fa067b843c5921511eef57c9ed2c8e8ce76f620b6d0f168"
+    },
+    {
+      "path": "previous_v2_summaries/MANIIK_WORKFLOW.md",
+      "bytes": 3794,
+      "sha256": "923f79ed7db0dc98119c12964a5f634574058a66b8980f44637bcaa17e361f3e"
+    },
+    {
+      "path": "previous_v2_summaries/SUNO_PROMPT_HELPER.md",
+      "bytes": 2882,
+      "sha256": "f5bd3cd8adb326df5499ad6f1f9f45ac758cba48b9411f4558a724a89e624e99"
+    },
+    {
+      "path": "runtime_state/AI_Writer_Pending_Maintenance_2026-10-29.json",
+      "bytes": 45100,
+      "sha256": "bcab8e41b39db03df6c71dc374c32b73867ffcdd3567b222dcdd4a012a405592"
+    },
+    {
+      "path": "runtime_state/DAKSH_BRAIN.json",
+      "bytes": 335124,
+      "sha256": "d8a417e5a6339d0576ea2570c89de6f24426fe00246cb6bf92c896541916691a"
+    },
+    {
+      "path": "runtime_state/Laddu_Gopal_Production_Context.json",
+      "bytes": 58711,
+      "sha256": "8e9742164bd800e64c63bea8b02740b5a12f3d365dd35a59e907ee4b826d2dc5"
     },
     {
       "path": "shared/AGENT_MAP.md",
@@ -194,8 +319,13 @@
     },
     {
       "path": "shared/COMMON_RULES.md",
-      "bytes": 2403,
-      "sha256": "38163b01bc45e0c4750e5ddbb3de4c054ab8029b74a43000a69b39810e370bbb"
+      "bytes": 4728,
+      "sha256": "b6ccadabada71b698832b9160aca983fbe9a5ac31624a55fae40728826e97cc5"
+    },
+    {
+      "path": "shared/RECENT_PROJECT_EXCEPTIONS.md",
+      "bytes": 5023,
+      "sha256": "975247c9f21b23f4f41d5820d0d92ec2ff5672f9bdcfaf860a9cdadf6bb0ee52"
     },
     {
       "path": "skill_packages/ai-dubbing/skill.zip",
@@ -1369,13 +1499,28 @@
     },
     {
       "path": "verification/QA_REPORT.md",
+      "bytes": 2419,
+      "sha256": "bb7087c2fa22782075d3cd90ea513098d149a731fd145c016541a9b8eab45c82"
+    },
+    {
+      "path": "verification/QA_RESULTS.json",
+      "bytes": 1021,
+      "sha256": "e83d8d0f172bbda93f130daa613944a79030f59a131cb17147baff443b536e15"
+    },
+    {
+      "path": "verification/V2_QA_REPORT.md",
       "bytes": 2615,
       "sha256": "7a760ed0f89d151286eaee957714994eb67d20c93c00c11e53c401bf072ede4e"
     },
     {
-      "path": "verification/QA_RESULTS.json",
+      "path": "verification/V2_QA_RESULTS.json",
       "bytes": 771,
       "sha256": "48666fd2ab321c7c723ebd591a281f8ef89086320c6a09641b370ec838b98bc0"
+    },
+    {
+      "path": "verification/V2_build_state.json",
+      "bytes": 2411,
+      "sha256": "8a78237b46c486f14567fac3b4ac7f615e18a19655b2684834600d1c1f5b6611"
     },
     {
       "path": "verification/build_state.json",
@@ -1421,6 +1566,11 @@
       "path": "verification/logs/suno-instrumental-prompts_packaging.log",
       "bytes": 664,
       "sha256": "295a93e53b3b61f30088eba2fedfa963bfb248031e31a98811b6e4c2e1ac713e"
+    },
+    {
+      "path": "verification/verify_content.py",
+      "bytes": 2055,
+      "sha256": "89d4f3bd3660d304f6b1e70c2485bda52d3cc0771de956f11a37ea9beebd0d34"
     },
     {
       "path": "verification/verify_export.py",

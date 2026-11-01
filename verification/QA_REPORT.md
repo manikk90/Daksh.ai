@@ -1,45 +1,38 @@
-# Export validation report
+# v3 validation report
 
-**Result: PASS for the packaging checks listed below.**
+**Result:** PASS for the bounded source-inclusion and packaging checks below. This is NOT a guarantee of exhaustive historical content, source correctness, installed behavior or media quality.
 
-| Executed check | Result |
+| Check | Actual result |
 |---|---|
-| exact_original_source_files | 225 |
-| original_dossier_files_preserved | 13 |
-| json_files_parsed | 59 |
-| yaml_files_parsed | 8 |
-| python_files_syntax_checked | 69 |
-| skill_entrypoints_parsed | 11 |
-| module_paths_verified | 132 |
-| registered_role_edges | 16 |
-| new_document_links_verified | 330 |
-| preexisting_unresolved_source_links | 0 |
-| font_files_exported | 0 |
-| high_signal_secret_pattern_hits | 0 |
-| single_skill_archives_verified | 8 |
+| status | PASS_BOUNDED_DOCUMENTATION_AND_INTEGRITY_CHECKS |
+| review_kind | same-context source/dossier audit; no independent worker |
+| exact_original_sources_preserved | 225 |
+| custom_source_files_compared_to_current_mount | 217 |
+| custom_source_missing_or_changed | 0 |
+| main_agent_and_helper_dossiers | 9 |
+| full_markdown_modules_included | 73 |
+| saved_lesson_records_included | 97 |
+| bounded_text_coverage_checks | 44 |
+| bounded_text_coverage_checks_passed | 44 |
+| previous_v2_main_dossiers_preserved | 9 |
+| original_single_skill_archives_unchanged | 8 |
+| new_runtime_records | 3 |
+| generated_links_checked | 393 |
+| unresolved_generated_links | 0 |
+| json_parsed_at_validation_stage | 76 |
+| python_syntax_checked | 71 |
+| exported_font_files | 0 |
+| original_software_regression_suites_rerun | False |
+| live_scheduler_or_accounts_checked | False |
+| installed_agents_changed | False |
+| media_tests | 0 |
+| writer_original_source_available | False |
+| complete_chat_archive_available | False |
 
-## Original packager
+## What was tested
+All 73 transformed full Markdown source bodies were matched against the built dossiers during the build, not just their filenames. The reusable verify_content.py checks source hashes, module anchors and the 44 specified content markers. The separate verify_export.py checks complete exported-file hashes and nested archive integrity. Exact original custom files also matched the currently mounted originals.
 
-Each of the eight custom skills passed its original `package_skill.py` / `quick_validate.py` structure check. Each generated archive contains exactly one custom `SKILL.md` entrypoint, matches its copied source members and passes ZIP integrity checks. Detailed per-skill logs are in `logs/`.
+## What was not tested
+No fresh independent agent reviewed this export. No actual model/API/account execution, scheduling, publication, imagery, audio or lip-sync test ran. Original software regression suites were not rerun; parser/structure tests do not establish behavioral correctness. Historical test outcomes in source ledgers remain historical records. Source Markdown headings/relative links were rebased for readability; original source files remain byte-exact.
 
-## Source scope
-
-225 exact copied source files = 217 custom skill files + 8 Skill Creator support files. No source file was rewritten. All 13 original dossier members are preserved separately. Generated mapping/guide/overlay files are new export documentation, not silently installed updates.
-
-## Deliberately not claimed
-
-- No live connector or account integration test.
-- No automation status change or current-state guarantee.
-- No production image, audio, video, face-match, geometry or lip-sync QC.
-- No fresh execution of the original full software regression suites; Python syntax and packaging structure were checked instead.
-- No full provider-plugin export for Data/Writing Style; their entrypoint text and routing are included.
-- No recovered original AI Writer source or newly verified full-chat archive.
-- Secret-pattern scanning is a limited high-signal check, not a comprehensive security audit.
-
-## Source link limits
-
-0 pre-existing source Markdown link(s) could not be resolved within the copied custom directories. The exact list is in `PREEXISTING_LINK_LIMITS.json`. Original sources were not modified to invent missing targets. Data provider relative links are intentionally external and separately documented.
-
-## Hash verification
-
-Run `python verification/verify_export.py .` after extraction. The verifier checks every file declared in `FILE_HASHES.json`, rejects unexpected files except ordinary cache/OS metadata, checks ZIP CRC integrity and requires exactly one primary SKILL.md in each individual archive. It also checks exported source files against their source manifest hashes. The hash manifest cannot hash itself; it is covered by the outer ZIP SHA-256 delivered alongside the archive.
+AI Writer's original installed source and exhaustive raw chat/media history remain unavailable. The 100-preview collection was not recovered. See audit/AUDIT_REPORT.md for the substantive findings and audit/COVERAGE_MATRIX.md for the test boundaries.

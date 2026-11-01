@@ -1,0 +1,659 @@
+[
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/SKILL.md",
+    "source_sha256": "2446485b2a89cb7a4e838c27d03d0dee68f09cad6304073d612709e6ac27dd75",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "4d4505b4f5ad84fdf7cda4ce95ca7f5802f48621928eed38b0715ec0224c65bd"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/evaluation.md",
+    "source_sha256": "c12ee77ce0c5ee55d2e602b771c9745a730df02740eb6d4b2de7258c209c9510",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-evaluation-md",
+    "rendered_sha256": "cffc5b263ad00736a8e12e947d767f4d41ec6a2442b4d3a4112aa7edb7ee3f43"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/master-orchestration.md",
+    "source_sha256": "41ddfd97137a2d707ce226667ec4571a3a072c06785b4a524d996076b5de9537",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-master-orchestration-md",
+    "rendered_sha256": "3a8324f3b382d9a0caab2b789cbca804f74331be5b31d3331ea35e4f9d6c3cda"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/memory-and-actions.md",
+    "source_sha256": "d78372e4c89bd83ee6a5f86dd0faa833703c2ae16cee9f21536e358a52a9107f",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-memory-and-actions-md",
+    "rendered_sha256": "7480bf204392519cf5f7114563359c22adf0cb00810e93f8df07c666e3464080"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/operating-loop.md",
+    "source_sha256": "6a4179e0fb8026630ed15235230294526e1945d92decc69ab512ee4abd0f5c71",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-operating-loop-md",
+    "rendered_sha256": "e383bd299a80d6929e9e65ad64fbfb93165798f18064c77b1c0fdcc6230d9fd1"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/research-and-business.md",
+    "source_sha256": "d726416647a8c92ff7bd656a89cc26066e04a1b8de8b7df4aaa5eb0b6c01536e",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-research-and-business-md",
+    "rendered_sha256": "3f07984d6f90597fc82d8b2b9d5a6873554c9027ccbf35d9b759e5dd361f1274"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/research-synthesis.md",
+    "source_sha256": "2cd4701406054c684259106dea2399dcd8cdf7e5ad4c15a10c7292e73e8d943e",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-research-synthesis-md",
+    "rendered_sha256": "f751501b8d7c2de8d97a8189df554b010402e15810d19810e02bd31fd5868fe5"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/specialists.md",
+    "source_sha256": "93d4283e69a0695559b6a85ec61f620c9983343077bf59ae0ae33952b0844716",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-specialists-md",
+    "rendered_sha256": "00cb8dd415281134b277ea5fb1bc2b9aa1cca24262a3decba400de345e3796a6"
+  },
+  {
+    "agent": "DAKSH_MASTER",
+    "skill": "daksh",
+    "source_path": "skills/daksh/references/weekly-learning.md",
+    "source_sha256": "eb994a74207bb38087dc58755259e48dcaaf6876b153689b29f6c95709f6270d",
+    "dossier": "agents/DAKSH_MASTER.md",
+    "anchor": "source-references-weekly-learning-md",
+    "rendered_sha256": "6089f62e5e2d653e10b24dc3d73108e8deb00d4fa26e7ca7ad085fd2840d39ce"
+  },
+  {
+    "agent": "MANIIK_WORKFLOW",
+    "skill": "maniik",
+    "source_path": "skills/maniik/SKILL.md",
+    "source_sha256": "2175e293fc593b65e5c55a57a823d25c545d0232314d59d50ff3627fadead22b",
+    "dossier": "agents/MANIIK_WORKFLOW.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "49d4bd4ba0c5f658c862e0e785fde1cc114e35e1708b84c948a137a32518d79d"
+  },
+  {
+    "agent": "MANIIK_WORKFLOW",
+    "skill": "maniik",
+    "source_path": "skills/maniik/references/context-and-template.md",
+    "source_sha256": "39065a69768456a77e3be138c46c5c115cc82d57dbb3cf1ea0d340db0795c663",
+    "dossier": "agents/MANIIK_WORKFLOW.md",
+    "anchor": "source-references-context-and-template-md",
+    "rendered_sha256": "9f4b391eb3b5209277403aafcdbc3f86022c911f7d030947f0d238e87210ed85"
+  },
+  {
+    "agent": "MANIIK_WORKFLOW",
+    "skill": "maniik",
+    "source_path": "skills/maniik/references/extended-workflows.md",
+    "source_sha256": "1e9e5c159f217b162bdb6d74c01ffd2cc0c4e8c313557d2e2adfd6bbc3b1d3e1",
+    "dossier": "agents/MANIIK_WORKFLOW.md",
+    "anchor": "source-references-extended-workflows-md",
+    "rendered_sha256": "15fc8c43d4d46963da4712f39f10f23ccf9e50ef666808bcddd886f556a88fc7"
+  },
+  {
+    "agent": "MANIIK_WORKFLOW",
+    "skill": "maniik",
+    "source_path": "skills/maniik/references/preferences.md",
+    "source_sha256": "e9387a475967df6a9796b48fe868a4f150bface0d8eb0eb7c1fb739833f344cf",
+    "dossier": "agents/MANIIK_WORKFLOW.md",
+    "anchor": "source-references-preferences-md",
+    "rendered_sha256": "f7b834e6383c374a9e1c9b2e28c61e5a1e400708cce07e64535e2fc002888d4c"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/SKILL.md",
+    "source_sha256": "48268901150c07b40827689797b9da101b6f993954910bd6a76fcee8db383e0c",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "10844caf7d62ecf0df8fd03af0a4fe5451f01e0222a8b40af71e4a04dcee8511"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/agents/filmmaking-qc.md",
+    "source_sha256": "a462fb8e5645e9ca5c258cba1ad80e79c5360181b0306f8c30237b091a7d3887",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-agents-filmmaking-qc-md",
+    "rendered_sha256": "5d491650d5b93bd3490a3b6daab81bb935f9adbdfb0760ec8ca92e3fcf7deee8"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/agents/reference-mapper.md",
+    "source_sha256": "416e634befe8c908183236fc8a26a3ca117e0b59d96792711f4b44608d88177e",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-agents-reference-mapper-md",
+    "rendered_sha256": "8efcf848273eb883557c4bde99ab56d5dfe0f21358f8c121ef6f8e30a9daed62"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/camera-and-coverage.md",
+    "source_sha256": "e455e959cb0ac8b23db41499f98ec01fcbfb2a4d230848384e56411168aa5969",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-camera-and-coverage-md",
+    "rendered_sha256": "7a42ae902815a593a27bebb9da7adb3e1e12008ddaa6dbc6faf15735fed117c9"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/camera-catalog.md",
+    "source_sha256": "3bbf4bd6e71ca4fcae8183ed160e5eb87d48ae1de8b9bd38f667f435fb589200",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-camera-catalog-md",
+    "rendered_sha256": "5af55c75c8494051114b4c60d077f6c7ea5cc174e9980df51110fcabd7104d35"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/cast-and-costume.md",
+    "source_sha256": "01bce9b3d08cef45e61f848dfa6e52a238f4943afee0f084ef84653c0caf6ca1",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-cast-and-costume-md",
+    "rendered_sha256": "ad1abc2a3d7cef58e952df6a0c3b27bc105e9b941d4a7a5070bec10ac3427680"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/composition-editing-sound.md",
+    "source_sha256": "ebde0a26208fececfcde1c167ed37f55c4cc1727622d61f46c8a2dfe4e40435e",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-composition-editing-sound-md",
+    "rendered_sha256": "dddcd4c7943665e352c60da4b8cdd345b95a26db6b5eac5a4ce3a256a90050b6"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/continuous-learning.md",
+    "source_sha256": "1ccc9267a7179cb1b5e16b99fb0906db5844c45eb8948bd80203339701d07c60",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-continuous-learning-md",
+    "rendered_sha256": "f3318da1b1acbd6a84168a07488a5218591f05ef9066dfe33faf2f77908529fa"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/controller-runtime.md",
+    "source_sha256": "fd31708ca8b977c07869ea5da9cfe5060b6347a7cb437a6726a90418bea940ad",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-controller-runtime-md",
+    "rendered_sha256": "d21386d93b5e4648adff8011ffa22a8f94cf33729e0739aa09167605170ecc72"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/execution-quality.md",
+    "source_sha256": "a3c86b6d0cd3e11ef0099890221bc256bd654d4acbf2f835fc81f8a0e39dfd45",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-execution-quality-md",
+    "rendered_sha256": "a65badb4e926c5f806ad0340574a92eeedf49acdf189658905d16261590b81dd"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/filmmaking-qc-contract.md",
+    "source_sha256": "da44cd151b95428643dc7d74db89c691c4cfd841d1ddd8ecf8b8ab7f82bb67f9",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-filmmaking-qc-contract-md",
+    "rendered_sha256": "1c3bf958007c0361b2ec1f10e5296698d9d1f858499cfb86f4116b2f1ec1724a"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/image-video-prompts.md",
+    "source_sha256": "244c80a9fe913d3f6348fbf7c26bc0175ac0ee498126d9b43d2f95fcac36d913",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-image-video-prompts-md",
+    "rendered_sha256": "4d36dd29cd9ea8fa1e5cd499f92334c2868784119e15f245bd145ac55d0f32e2"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/laddu-gopal.md",
+    "source_sha256": "8747d0ea8d389aac6f6287bf2ebf81209e41cfeed9a26156415342ecbbcfaba6",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-laddu-gopal-md",
+    "rendered_sha256": "ad8a4ef9e40de452d1540a90908f4a4d21ad95743387908b8a6a38285455d5a6"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/mapping-and-qc-agents.md",
+    "source_sha256": "7e630eb9986cd9b0f05927511c3772b861d27a98c8a93fc6a6f3cfc3aaed3e9e",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-mapping-and-qc-agents-md",
+    "rendered_sha256": "7ed8b24997218ad68af317006c09df2b6f165e80945231c2862158296ada87e1"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/model-adapters.md",
+    "source_sha256": "db7689c5f43e005b016a0a94311fcc793ddffd0ba2b0d712f3e28ba94b56d013",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-model-adapters-md",
+    "rendered_sha256": "7b494995ca64866b1e6a8af0cb2ac1cbbf6d9dff71920fd0cd96d8d9b3bc4f7b"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/performance-and-action.md",
+    "source_sha256": "3aa3ca9abae06e444051e5c80883d83d0adeb124f34c6f42540c5c72b42299cf",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-performance-and-action-md",
+    "rendered_sha256": "5be1c5b5889596363ed67dd09c1407b489e1229be7ed95e85e59e8b1fb1bc5a4"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/reference-input-preflight.md",
+    "source_sha256": "8580848a3a557380b1979b605888213f8062cecbf616c1d9fe281a1024f4278a",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-reference-input-preflight-md",
+    "rendered_sha256": "3aa2b3bd0a56ff78fabdc15ff8acb3630c8f39725d96a3583dbf271d8323b0b0"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/reference-mapper-contract.md",
+    "source_sha256": "e17c453a0a640e12507fdee365e459e25712b500d8454ff9b1608da7fa61ea6e",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-reference-mapper-contract-md",
+    "rendered_sha256": "3391e88afc3286c79b91759c2143d6ff20f4aa4329b0685888fd0a3cb643586a"
+  },
+  {
+    "agent": "AI_NATIVE_DIRECTOR",
+    "skill": "ai-native-director",
+    "source_path": "skills/ai-native-director/references/shot-composition.md",
+    "source_sha256": "3be5e26b0767b8f89b783c3dcd4f3ff485b3fce84db6447c851d3fa7ec311460",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md",
+    "anchor": "source-references-shot-composition-md",
+    "rendered_sha256": "0702ab5c492407bf434eff2c8771bf7a72b0e6d85fcec44528544c50b468af94"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/SKILL.md",
+    "source_sha256": "f7d4d117c78a43f088dacd08b559ee81efa14c67ae3925bfd8f83402410f3ca1",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "16f8cf43d712a54586ccb7a06f0e5b9d976bc29fd6d505b79cd3d0a16840aef0"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/agent-controller.md",
+    "source_sha256": "4e00bd2f832844df087d87c2021679cdd306e6f56d41a295a6bfe55d755c3240",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-agent-controller-md",
+    "rendered_sha256": "143d3ae6c64fbb6fb459e1bb326d09956b95c60204a5256e093e6aa0badd6a4e"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/context-research.md",
+    "source_sha256": "565c2c01ffd32ebba06b01b777bd2d825d3387b62499ceb1e95b9bffb19279d2",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-context-research-md",
+    "rendered_sha256": "11741dc4c63104f7442f8f6d24d7638a1dbe53a9a837be34422013410bb9bc4b"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/continuous-learning.md",
+    "source_sha256": "be5056f926091643a9e116d74160d5ad0f499217f5f6a78173a4382eb47e8a95",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-continuous-learning-md",
+    "rendered_sha256": "558386953f80772b3fd0fb0e91d99e3425a9c8592ed21544fd443950cdc0926c"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/production-runtime.md",
+    "source_sha256": "61b4aa8967ec968def875b65d7b54d68da7c7a99ebb470d8c96ebf64d1e00a9b",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-production-runtime-md",
+    "rendered_sha256": "bbf9c647c92c2283f2b92515d636294a45872d9af1a17e0039162c06cbdc5fa5"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/project-location-locks.md",
+    "source_sha256": "c43364de6ff0df39ddbf85e7fdd52ee43f70c26610df2a03ce40040a47c185d0",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-project-location-locks-md",
+    "rendered_sha256": "3e1fb79b3da2751e22e9e6f68f3279f5a625d6593d6e2d9c7bfe48b7ddcaf40c"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/prompts-and-handoff.md",
+    "source_sha256": "bb9bd7ed69de84f2500a7e141cda0811f6ba199c01b8518b83cff71295903028",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-prompts-and-handoff-md",
+    "rendered_sha256": "437110f9e55a32848efd828a01c50ff83e4d37948c588a84ddf6755851751448"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/props-four-views.md",
+    "source_sha256": "aea3705cc4856966f8143ddf1509867b0ad8738abef6bfd7ae1955ab666160d5",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-props-four-views-md",
+    "rendered_sha256": "235958cab42e0642c18665e9b633e0a85618812d239a9ffd1c62c13c68d4d98b"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/qc-and-repair.md",
+    "source_sha256": "2a788898925f534f69093b95d68e76e7f6451b81d3e0dc3d5a115ab696ae0cc7",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-qc-and-repair-md",
+    "rendered_sha256": "d42f79bcada831196d89b82dd7ee6db51fba5edc303efb6f91ff8b0c7c3a52a4"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/reference-input-preflight.md",
+    "source_sha256": "decf51328018a1f695b3cae3692afbd1b25ed87ad4125a17645a359cb71dd044",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-reference-input-preflight-md",
+    "rendered_sha256": "5b175a3ffeb5d5af9ae9a75bfe0eb22e8b7ed59c389ab408ce0642cd16c5d7ca"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/spatial-contract.md",
+    "source_sha256": "8122d2209982074b331b650a41a4d0aad28411e909a1eb4470116bfc979ca9f9",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-spatial-contract-md",
+    "rendered_sha256": "772db937328a4cb94befc97c6b83b11794626bee0b0357d68dda9b0a6db75abc"
+  },
+  {
+    "agent": "AI_LOCATION_DIRECTOR",
+    "skill": "ai-location-director",
+    "source_path": "skills/ai-location-director/references/workflow.md",
+    "source_sha256": "8889f3085ababef574a3ea5dc0e8f45b208a11e5a68630877d470adfbe82977f",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md",
+    "anchor": "source-references-workflow-md",
+    "rendered_sha256": "ec7c030f3446389038e52b0e4a42c5542bdf15e05f7a1269ff06a419d261505f"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/SKILL.md",
+    "source_sha256": "695c19e45de4fdc1f9ebff12ca81383c259f765c4cb445d0c9c4486bafec50ff",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "8571e109629ae61a7ce7ef60dc1d35eb10d354a6c94d9c2b70cdf95bcf568a7c"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/agents/music-director.md",
+    "source_sha256": "cf36f6c9884444609d72e2a8552fbecf22505bf8e8dac5f42a634d802e0bee2a",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-agents-music-director-md",
+    "rendered_sha256": "dd63c3677e03b087f3f0d584f943a2b36c5f5dfafaaf3f5d2720544c22d78441"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/autonomous-runtime.md",
+    "source_sha256": "139b7774555e357c0e21b88ffb5fc4478e66ab68a96b1547265ff87c6a3ff95b",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-autonomous-runtime-md",
+    "rendered_sha256": "e9d394d9575ff8d430ad867550d96d18d2197709013b24c82dfd593a5fb30d2e"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/continuous-learning.md",
+    "source_sha256": "62107862fa85a1a629886dae53e52fbf13c3da6f0e75251af7e07771518466a3",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-continuous-learning-md",
+    "rendered_sha256": "ffa4f301f9c1368ddeaabec60149cc7d23958aa68d17b1112eaa000704e24a9f"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/instrument-palette.md",
+    "source_sha256": "1676ad692fddef9982a3ba91c5876e5a8067c28f2b8e29c40b66c8418f2d59fc",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-instrument-palette-md",
+    "rendered_sha256": "9afb99e67c3c3214716b79c4eba6219c4aea7b9bc4e0dfeca398ad36dd29cf43"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/lyrics-and-vocal-direction.md",
+    "source_sha256": "b1d856677fbc3330e31ae471037e779ce081ed5a1bb151495de73c7835aea52c",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-lyrics-and-vocal-direction-md",
+    "rendered_sha256": "f389a688a5d7a53dfd5563a0f72ebcaf8451716975ffa26192ac0b657629031d"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/platform-workflows.md",
+    "source_sha256": "5e393880e54502cc460e892ee46e7424e8928e36bf210191d3f94e3b1549207a",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-platform-workflows-md",
+    "rendered_sha256": "6eb32e689273a4b655618a4f7effac2a686315a3c1810b3740658bf05a338610"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/project-music-context.md",
+    "source_sha256": "14ef435bf11fdbfd96d2c0f93d148d1ca32d98bb6a089d69409ec38ada3515ca",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-project-music-context-md",
+    "rendered_sha256": "93e5fd48e9fed70c66b54fc8ee802cc8427226358131bf9013c60b8b76f74ff3"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/scene-scoring.md",
+    "source_sha256": "3e4b0da94aa1cd0858b48c2afdd40b01446cc23e4554cf50a8bf717b8d0d5384",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-scene-scoring-md",
+    "rendered_sha256": "c030cd781347644a48536884adcbeb2f98685c1976938c0e49713d202b66feb8"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/smart-parameters.md",
+    "source_sha256": "144cf188a72268f221b4d013ee91caaa5aa1b70280415a05782a30afab5305e4",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-smart-parameters-md",
+    "rendered_sha256": "8b468c3a28afedca90d016b5a1ca495c78337911c6df3a48f4058e71f08384b5"
+  },
+  {
+    "agent": "AI_MUSIC_DIRECTOR",
+    "skill": "ai-music-director",
+    "source_path": "skills/ai-music-director/references/vocal-micro-expression.md",
+    "source_sha256": "e20a1e8dfb49ffaf1cbb3c9013969c6f21348f9d01d4cf7d1723ac7c1a3f8edf",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md",
+    "anchor": "source-references-vocal-micro-expression-md",
+    "rendered_sha256": "79afea2a03efc7f7659e6024c45d8c5ef01b6c8b895a9d2c1cf717a3543da3ea"
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "source_path": "skills/ai-dubbing/SKILL.md",
+    "source_sha256": "f5e8f79b5a17ebe283c35c43bce5a891db5413ec3f797e985fc60b87a39d7a24",
+    "dossier": "agents/AI_DUBBING.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "21dc0a3f46fe39cd40677a488548a55306022b55bb94ed5b6ab928cfc0e74458"
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "source_path": "skills/ai-dubbing/references/continuous-learning.md",
+    "source_sha256": "f06121e7c92444e603ed5b315f741cda459d8d3df66c013970e3ac35d50ffc81",
+    "dossier": "agents/AI_DUBBING.md",
+    "anchor": "source-references-continuous-learning-md",
+    "rendered_sha256": "cd5eb1655edea0614ca77b32142fe0a4fe330f6be3e06fea8f60d88da9a82a23"
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "source_path": "skills/ai-dubbing/references/fast-performance.md",
+    "source_sha256": "a516bf1e188a1ab41cdcd40e89529964879e8aa75ad42626930d1304d3874c6c",
+    "dossier": "agents/AI_DUBBING.md",
+    "anchor": "source-references-fast-performance-md",
+    "rendered_sha256": "bf1d31f5e9f3aec7951778196f1a77c75c80e43b3e56652e315fe351e01e2338"
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "source_path": "skills/ai-dubbing/references/interface-specific-controls.md",
+    "source_sha256": "5dc25e720bcd65b6c0647135aafef3cadf58af4ec6184700ca6aa822d469dfba",
+    "dossier": "agents/AI_DUBBING.md",
+    "anchor": "source-references-interface-specific-controls-md",
+    "rendered_sha256": "fa38f0990e883173a538512117b29e90e52515fa1905b0da6e818e142444e530"
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "source_path": "skills/ai-dubbing/references/research-and-playbook.md",
+    "source_sha256": "31c1a1029d68d4077a69d79b243ea744c5ddf0a6cf3d7a6f7c8f4b2ac2897824",
+    "dossier": "agents/AI_DUBBING.md",
+    "anchor": "source-references-research-and-playbook-md",
+    "rendered_sha256": "6d04bf2bd52627d44d63f3582f9c9abbbfd1bb008235b9f1480177b17fadd43b"
+  },
+  {
+    "agent": "AI_DUBBING",
+    "skill": "ai-dubbing",
+    "source_path": "skills/ai-dubbing/references/workflow-contract.md",
+    "source_sha256": "dc4c9db44e8fdcbb666d43f8cfb76972afa6bc7d5e135f0b570f8b52d54882d7",
+    "dossier": "agents/AI_DUBBING.md",
+    "anchor": "source-references-workflow-contract-md",
+    "rendered_sha256": "32286a61b9b9195a0b864feace28532d134edcf8317151bfc205b01bc6ddd39c"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/SKILL.md",
+    "source_sha256": "954b185c4059dafac72c1fc759708490c9d887743969730632ff10c130622a57",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "0d0ce29c843897ba80bc8a57e18f8b1a8869822bda47129171526fc518b8883e"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/assets/launch/2026-W44/READY.md",
+    "source_sha256": "3e6500c33947ed1da26b482dc2936899e570ea89e1efdc89b2cf9602ba1f2232",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-assets-launch-2026-w44-ready-md",
+    "rendered_sha256": "62ad7b650b8181946b00edffef4a4b2f689faa22159cb65ac573393981024d98"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/assets/profile_copy.md",
+    "source_sha256": "b489631999fc73c532fd048445f687497d2982eb3dd48c920d2c8e179849b78c",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-assets-profile-copy-md",
+    "rendered_sha256": "10f7f2cc680dc73af7a7f2509fda576d25d37b4a2ad5907f914d05b50ce77cfc"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/brain/playbook.md",
+    "source_sha256": "aa91507479b80c3fd3fc08a9cd7bde6623d5c15dad7ab6cdbc5ee6e4d761fba9",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-brain-playbook-md",
+    "rendered_sha256": "ea688c20e5b4a3d8a7b538930b754c797698aa9e0f7589db41539007df5ac049"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/brain/voice.md",
+    "source_sha256": "661cb460ea69d0418f0072b06a8fc7ac13ab239aa3bcb7e13f58bdd17823aec2",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-brain-voice-md",
+    "rendered_sha256": "4e12bb26b6476e879a30d6ef35f73a788912682d5a4b8726a3c8752d6237a3f5"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/references/caption-mode.md",
+    "source_sha256": "2e320b14e20ac63b78fdc2918663151e0578db420a54320c3fb97411b63f7c1e",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-references-caption-mode-md",
+    "rendered_sha256": "e9c883afb3619a8c810b47e86feb310627c9fc918058201999ea4c91c0b7b768"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/references/growth-strategy.md",
+    "source_sha256": "0027a99c0a82f48f3db359c39f37f10454e15613292dd2633599b151f75dd6e7",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-references-growth-strategy-md",
+    "rendered_sha256": "cdaadac33f78638178d703260830228f97119def3530f40fe1f9be0ceea38b42"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/references/learning.md",
+    "source_sha256": "f087d4c8af12b30b4a4079975c021bcee7b63b3c9c9f98bfd8b6ac8ae2477000",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-references-learning-md",
+    "rendered_sha256": "f23530eee73bdb0faa3d14c4c97ed0dc11b61b8283ff944922238a16c00fb497"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/references/recent-lessons.md",
+    "source_sha256": "a51d94836ceefe2aee923a681add6218352817026029feb6eff43516b7e9ab47",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-references-recent-lessons-md",
+    "rendered_sha256": "f0d194c5acd23492cc2e6c6dcd75f837db40168439660cf8a1c3cc8f11d8efde"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/references/roles.md",
+    "source_sha256": "999837583b39fa039ac76b2c2b777e386ec6933f8ee6d92698435d9be9c06b9a",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-references-roles-md",
+    "rendered_sha256": "df5efb6b591af6e0148a529b94573d6b1836a1bbd72e753a4c2a3c71d13b9172"
+  },
+  {
+    "agent": "AI_SOCIALS",
+    "skill": "ai-socials",
+    "source_path": "skills/ai-socials/references/workflows.md",
+    "source_sha256": "b6e646b3de83d21e00898973e189355c422279c6943b8c61f0336f2c410aafb4",
+    "dossier": "agents/AI_SOCIALS.md",
+    "anchor": "source-references-workflows-md",
+    "rendered_sha256": "c4bf3a528a695ea815a08fb8b80357029691ac781f72f6dd4b99e8869f0ec9bc"
+  },
+  {
+    "agent": "SUNO_PROMPT_HELPER",
+    "skill": "suno-instrumental-prompts",
+    "source_path": "skills/suno-instrumental-prompts/SKILL.md",
+    "source_sha256": "9aa72973fee97c53e00497a00d3393d74bafac8bf0f120860829b0d83184a913",
+    "dossier": "agents/SUNO_PROMPT_HELPER.md",
+    "anchor": "source-skill-md",
+    "rendered_sha256": "f93f9c8d5ae2be6e1b86203e82f8ef390fb802e6b8c1f658ca703c4b9c7ac454"
+  }
+]

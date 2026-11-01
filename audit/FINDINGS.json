@@ -1,0 +1,93 @@
+[
+  {
+    "id": "F01",
+    "issue": "Main MDs were abbreviated dossiers",
+    "evidence": "The eight source trees were complete, but most instruction bodies lived in linked modules rather than the main MDs.",
+    "action": "Inline all 73 original Markdown modules, retain saved lessons and a complete resource index.",
+    "remaining_limit": "Fixed for available Markdown source set; not an all-chat guarantee."
+  },
+  {
+    "id": "F02",
+    "issue": "Previous QA was packaging QA",
+    "evidence": "V2 QA_REPORT explicitly checked hashes, syntax, structures and links; it did not claim semantic completeness.",
+    "action": "Add this substantive audit, coverage cases and residual gaps.",
+    "remaining_limit": "Bounded self-review plus deterministic inclusion checks; no independent reviewer."
+  },
+  {
+    "id": "F03",
+    "issue": "AI Writer original missing",
+    "evidence": "The installed catalogue/container has no Writer source.",
+    "action": "Expand documented scope from the saved master and add the actual pending-maintenance JSON.",
+    "remaining_limit": "Still unresolved: exact original Writer source/installer."
+  },
+  {
+    "id": "F04",
+    "issue": "Writer scope under-described",
+    "evidence": "The v2 Writer MD did not describe full format routing, character-first breakdown, matching JSON or exact-source/translation separation.",
+    "action": "Add those sourced rules and preserve silence/source language.",
+    "remaining_limit": "Reconstructed instructions, not installed-source recovery."
+  },
+  {
+    "id": "F05",
+    "issue": "Real runtime context absent",
+    "evidence": "V2 linked brain/project templates but did not bundle the real DAKSH_BRAIN or revision-7 Laddu Gopal state.",
+    "action": "Add three actual dated runtime/source JSON files.",
+    "remaining_limit": "Snapshots are partial; not live database access or complete cast/media records."
+  },
+  {
+    "id": "F06",
+    "issue": "se shorthand unnecessarily unresolved",
+    "evidence": "V2 said inspect context; installed image-video-prompts.md already defines se.",
+    "action": "Define se as motivated shot experiments within scope, subordinate to strict references.",
+    "remaining_limit": "Fixed in main Director MD and overlay."
+  },
+  {
+    "id": "F07",
+    "issue": "Suno cap wording conflated concepts",
+    "evidence": "V2 Music MD said 800 characters unless the actual tool limit changes.",
+    "action": "Identify 800 as user/editorial cap, not provider policy.",
+    "remaining_limit": "Fixed; current provider limits not reverified in this audit."
+  },
+  {
+    "id": "F08",
+    "issue": "Prop output type ambiguous",
+    "evidence": "V2 Location workflow used orthographic-style language while the source requires photographs.",
+    "action": "Specify photorealistic grey-background Front/Back/Left/Right studio photographs; custom brief wins.",
+    "remaining_limit": "Fixed; no new prop images generated or inspected."
+  },
+  {
+    "id": "F09",
+    "issue": "Dialogue rule too broadly worded",
+    "evidence": "V2 said every prompt or keep dialogue exact and final without consistently limiting scope.",
+    "action": "Apply terminal DIALOGUE only to video-prompt compilation; preserve screenplay/silent-scene/dubbing formats.",
+    "remaining_limit": "Fixed in active summaries and shared contract; older snapshots remain historical."
+  },
+  {
+    "id": "F10",
+    "issue": "Schedule/current-state confusion risk",
+    "evidence": "Historical Writer restored/resumed and later paused/unavailable records coexist.",
+    "action": "State chronology and distinguish intended cadence, saved observation and live state.",
+    "remaining_limit": "Live scheduler not checked; nothing resumed or changed."
+  },
+  {
+    "id": "F11",
+    "issue": "Detailed contracts absent from main summaries",
+    "evidence": "Exact maniik template, Dubbing repair budget, Socials count exceptions/analytics limits and Director source-role rules were only linked.",
+    "action": "Include complete source modules plus salient front-of-file clarifications.",
+    "remaining_limit": "Fixed as documentation inclusion, not a production behavior benchmark."
+  },
+  {
+    "id": "F12",
+    "issue": "Latest scope notes needed consolidation",
+    "evidence": "Available 31 October/1 November instructions were spread across context/overlay rather than consistently present in relevant MDs.",
+    "action": "Add scoped recent project exceptions, latest composition/lighting/gallery rules and dated work-plan notes.",
+    "remaining_limit": "Available summaries only; no exact marked-image or full-chat recovery."
+  },
+  {
+    "id": "F13",
+    "issue": "100-composition collection unavailable",
+    "evidence": "The actual saved catalogue has 26 patterns; a request for 100 previews is not the delivered 100-asset collection.",
+    "action": "Preserve the real 26-pattern catalogue and 545-frame study record, label the remaining collection gap.",
+    "remaining_limit": "Still unresolved: exact expanded preview/reference set not recovered."
+  }
+]

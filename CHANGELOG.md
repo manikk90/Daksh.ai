@@ -12,3 +12,6 @@
 - Added deterministic packaging, source/hash, syntax and archive validation records.
 
 No installed skill was edited. No automation was created, enabled, disabled or rescheduled. No messages, posts, paid generations or production assets were changed.
+
+## v3 | 1 November 2026
+Audited source inclusion versus main-MD content; expanded eight source-backed dossiers with all Markdown modules and saved lessons; expanded Writer reconstruction; recovered three actual dated state JSONs; fixed scoped dialogue, 800-character cap, prop-photo and se wording; added source/coverage/findings reports. Original skills, nested installers and timers unchanged.

@@ -1,0 +1,259 @@
+{
+  "status": "UNAPPLIED_RUNTIME_LIMIT",
+  "created_on": "2026-10-29",
+  "base_revision": "8bf362cd513084ff942843e21a79eb92156653e9",
+  "submitted_revision": "06e13cb775d20725be2e130d863a8d887c6eb7e6",
+  "current_remote_revision": "78705d1bc578a3181f13a7c600bc258101952a8a",
+  "current_skill_root": "skill-6ae2c66cf120819189195cc39a4c7e91",
+  "former_root": "skill-6ad26002e47c81918886fec6a72c5209",
+  "target_paths": [
+    "skill-6ae2c66cf120819189195cc39a4c7e91/SKILL.md",
+    "skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-research.md",
+    "skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-delivery-and-qc.md",
+    "skill-6ae2c66cf120819189195cc39a4c7e91/references/continuous-learning.md",
+    "skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-ledger.json",
+    "skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-runtime.json"
+  ],
+  "review": {
+    "id": "NIGHTLY-20261029",
+    "date": "2026-10-29",
+    "base_revision": "8bf362cd513084ff942843e21a79eb92156653e9",
+    "status": "UNAPPLIED_RUNTIME_LIMIT",
+    "source_coverage": {
+      "chat": {
+        "window": "23–29 October 2026 since saved bounded23October chat review",
+        "method": "One focused Personal Context retrieval summary plus supplied external conversation excerpts msg_idx0–26 and recent-context excerpts; not full raw archive",
+        "gap": "Underlying raw chats, original Bible/DOCX/PDF and referenced media not inspected; prior assistant claims remain attributed"
+      },
+      "slack": {
+        "window": "after2026-10-23 before2026-10-30; oldest retained24October material thread",
+        "searches": 3,
+        "returned_hits": 37,
+        "count_note": "Search-hit count includes contextual overlap with separately read threads, not a unique total",
+        "queries": [
+          "channel/time filter, latest20 hits; older pages not fetched",
+          "same channel/time screenplay,13 hits, end reached",
+          "same channel/time from U089MA16V1S,4 hits, end reached"
+        ],
+        "channel": "C0AFDSFD3PA",
+        "full_threads": [
+          {
+            "ts": "1793178450.375559",
+            "messages": 9,
+            "url": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793178450375559"
+          },
+          {
+            "ts": "1793007122.756619",
+            "messages": 12,
+            "url": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793007122756619"
+          },
+          {
+            "ts": "1792841681.105559",
+            "messages": 8,
+            "url": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1792841681105559"
+          },
+          {
+            "ts": "1793103080.824639",
+            "messages": 3,
+            "url": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793103080824639"
+          },
+          {
+            "ts": "1793281216.022919",
+            "messages": 7,
+            "url": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793281216022919"
+          }
+        ],
+        "attachments_read": 0,
+        "attachment_reason": "Reports suffice for attributed process review; no media-quality/root-cause determination attempted. Attachments remain uninspected.",
+        "gap": "Channel search first20 page only; no all-channel or complete Slack coverage; no verified saved Slack checkpoint available in recovered current ledger"
+      },
+      "research": {
+        "reason": "Scoped catch-up for missed25October Sunday; last successful research checkpoint null",
+        "lookback": "22–29October2026 plus labelled older baselines",
+        "search_queries": 3,
+        "search_engines": 2,
+        "access_date": "2026-10-29",
+        "inspected_sources": [
+          {
+            "url": "https://www.oscars.org/nicholl/screenwriting-resources",
+            "date": "undated baseline; linked examples predate review",
+            "decision": "Existing screenplay-vs-production separation; no new rule"
+          },
+          {
+            "url": "https://www.valmikiramayan.net/utf8/sundara/sarga36/sundarasans36.htm",
+            "date": "ancient text, undated digital edition",
+            "decision": "Observed paragraph/verse alignment discrepancy supports WR-005"
+          },
+          {
+            "url": "https://collab.sundance.org/catalog/The-Dialogue-Prompt",
+            "event_date": "2021-11-30",
+            "decision": "Old challenge; not a2026release or universal conflict requirement"
+          },
+          {
+            "url": "https://github.com/eternityspring/shuohao-skills",
+            "changelog_url": "https://github.com/eternityspring/shuohao-skills/blob/main/CHANGELOG.md",
+            "latest_visible_version_date": "2026-10-15",
+            "decision": "Older baseline despite recent index crawl/update claims. Existing staging/handoff discipline already covered; no mandatory duration/hook/model rules imported."
+          }
+        ],
+        "gaps": [
+          {
+            "url": "https://arxiv.org/abs/2609.19853",
+            "reported_publication": "2026-09-17",
+            "status": "abstract search result only; direct open DisabledError; no methods/benchmark adoption"
+          },
+          {
+            "url": "https://collab.sundance.org/catalog/Screenwriting-From-Outline-to-First-Draft-of-Your-Screenplay/November-2026",
+            "status": "search excerpt only; direct page inaccessible; upcoming session not verified new craft release"
+          }
+        ],
+        "decision": "No verified new-release rule adopted; bounded search completed, inaccessible sources pending. No exhaustive research checkpoint."
+      }
+    },
+    "evidence_separation": {
+      "direct_user": "Exact-source requests; frame-local corrections;27October incident and later issue-solved reply",
+      "team_report": "Generic/spoon-feeding dialogue feedback; language/format incidents; claimed fixes await specific retest",
+      "team_proposal": "Location hierarchy/recce simplification; automatic two-way translation proposal not adopted",
+      "suspected_cause": "WAN integration attribution remains user hypothesis, not proven cause",
+      "observed": "Current remote Writer identity and scheduler; read Slack message content; public translation paragraph mismatch",
+      "assistant_report": "Previous restore/save and301-verse/PDF claims not treated as freshly inspected evidence"
+    },
+    "deduplicated": [
+      {
+        "lesson": "WR-004",
+        "sources": [
+          "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1792841681105559",
+          "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793007122756619"
+        ],
+        "result": "Preserve active screenplay location/silence and separate translated version; existing safeguards retained"
+      },
+      {
+        "lesson": "character-dialogue-and-punchlines.md",
+        "source": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793178450375559",
+        "result": "Existing voice/subtext/compression already covers generic exposition; no extra formula added"
+      },
+      {
+        "lesson": "continuity-and-handoffs.md",
+        "source": "https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793281216022919",
+        "result": "Keep source slugline/unknown parent and only needed view demand; no rewriting another Location skill or universal two-image rule"
+      }
+    ],
+    "adopted_pending_save": [
+      "WR-005",
+      "WR-006"
+    ],
+    "pending": [
+      "Uninspected raw chats/media and incomplete channel pages",
+      "Unverified source methods/dates as listed",
+      "STAGE application fixes not verified here"
+    ],
+    "paid_media": false,
+    "slack_writes": 0,
+    "rollback": "Revert only the new WR005/006 reference paragraphs if regressing; preserve existing locks, unrelated edits, recovered history and scheduler.",
+    "checks": {
+      "skill_validation": "PASS",
+      "diff_whitespace": "PASS",
+      "independent_text_review": "Four synthetic prompts executed by separate fresh-context agent; root evaluated responses. PASS_TEXT_ONLY. Formatting normalized in retained result text.",
+      "json": "PASS",
+      "relative_links": {
+        "checked": 15,
+        "broken": 0
+      },
+      "media": "NOT_PERFORMED",
+      "quality_limit": "No audience, native dialect, visual/audio or application-fix claims"
+    },
+    "persistence": {
+      "status": "remote_reconciliation_failed",
+      "feature_commit": "06e13cb775d20725be2e130d863a8d887c6eb7e6",
+      "note": "Use full submitted revision below; push accepted, then reconciliation deleted entire current Writer root; no successful checkpoints advanced."
+    },
+    "validation_cases": [
+      {
+        "id": "source_target",
+        "prompt": "Exactly kaha likha hai? Supplied source verse 5-36-4 describes Sita taking/seeing the ring and rejoicing; following English paragraph instead repeats reassurance from preceding verse. Show SCENE and LOCATION as original headings.",
+        "result": "Aapke supplied source ka anchor Sundarakanda, Sarga 36, verse 4 — 5-36-4 hai: Sita angoothi leti/dekhti hain aur prasann hoti hain. Uske baad diya English paragraph pichhle verse ki reassurance dohrata hai; yeh translation-alignment discrepancy hai. Exact Sanskrit wording supplied nahi hai, isliye use quote nahi kar raha. SCENE aur LOCATION mool paath ke original headings nahi hain. Unhe sirf adaptation ke editorial labels ke roop mein dikhaya ja sakta hai.",
+        "verdict": "PASS: no invented exact Sanskrit or original headings"
+      },
+      {
+        "id": "source_boundary_adaptation",
+        "prompt": "Is episode ko original adaptation ki tarah likho; source quote mat do. Locked scene ID 12A, line: मैं लौटूँगा। Give two brief lines of action and that exact dialogue.",
+        "result": "12A\nवह अपना सामान उठाता है।\nदरवाज़े पर रुककर पीछे देखता है।\nवह\nमैं लौटूँगा।",
+        "verdict": "PASS: permitted authored action, exact supplied ID and dialogue"
+      },
+      {
+        "id": "detail_target_quiet",
+        "prompt": "Quiet scene: elderly woman waits at door. Give short treatment then screenplay, do not invent visitors or dialogue; no fixed runtime.",
+        "result": "ट्रीटमेंट\nबुज़ुर्ग स्त्री दरवाज़े पर प्रतीक्षा करती है। खड़े रहने की थकान उसे अपना भार बदलने पर मजबूर करती है, लेकिन उसकी नज़र चौखट के पार टिकी रहती है। दृश्य उसी अधूरी प्रतीक्षा में ठहरता है।\nस्क्रीनप्ले\nEXT. घर का दरवाज़ा — समय अनिर्दिष्ट\nबुज़ुर्ग स्त्री चौखट पकड़कर खड़ी है।\nवह धीरे से अपना भार दूसरे पैर पर रखती है। पकड़ ढीली करती है, फिर चौखट थाम लेती है।\nउसकी नज़र बाहर टिकी रहती है।",
+        "verdict": "PASS: distinct layers, no visitor/dialogue/runtime invented; action is synthetic authored choice"
+      },
+      {
+        "id": "detail_boundary_dense",
+        "prompt": "Dense literary treatment chahiye, do meaningful comparisons allowed. Keep object: a sealed letter, opening it is forbidden. Do not add camera/lens.",
+        "result": "सीलबंद चिट्ठी मेज़ पर रखी है। उसे खोलना मना है। स्त्री उसके सामने बैठती है और अपना हाथ मेज़ के नीचे दबा लेती है। लिफ़ाफ़े पर उसका नाम है; भीतर के शब्दों पर उसका कोई अधिकार नहीं। चिट्ठी एक भींचे हुए मुँह की तरह उसके सामने पड़ी है—बोलने की संभावना लिए, चुप रहने को बाध्य।\n\nवह उसे उठाती है। काग़ज़ हल्का है, मगर हथेली में उसका भार उस पत्थर जैसा महसूस होता है जिसे रास्ते से हटाना ज़रूरी हो और छूना निषिद्ध। अँगूठा सील तक पहुँचकर ठहर जाता है। वह हाथ पीछे खींचती है। कुछ देर बाद चिट्ठी वापस रख देती है, इस बार नाम वाला हिस्सा नीचे करके। सील सुरक्षित है। उसकी बेचैनी अब दिखाई देने वाले नाम की मोहताज नहीं।",
+        "verdict": "PASS: dense style/two comparisons allowed, seal stays intact, no camera"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "WR-005",
+      "version": 1,
+      "date": "2026-10-29",
+      "status": "validated_pending_persistence",
+      "scope": "exact_source_requests_and_translation_alignment",
+      "source_kind": "direct_user_excerpts_plus_observed_public_source",
+      "source": {
+        "user_anchor": "Supplied external conversation msg_idx 16,19,25: exact location/original full passage and Hindi translation requests",
+        "url": "https://www.valmikiramayan.net/utf8/sundara/sarga36/sundarasans36.htm",
+        "accessed_on": "2026-10-29",
+        "observation": "English paragraph following Sanskrit 5-36-4 duplicates preceding assurance paragraph; Sanskrit and word gloss differ. Digital-page discrepancy only."
+      },
+      "rule": "Separate exact original, published translation, own bhavarth and invented scene labels; anchor selected edition and check verse/translation alignment. Track actual coverage for full passages.",
+      "boundary": "Explicit creative adaptation permits authored narration; do not force citation labels into every fictional sentence. Never treat past assistant counts/files as newly inspected.",
+      "validation": {
+        "status": "PASS_TEXT_ONLY",
+        "kind": "four_case_text_review",
+        "media_tests": 0,
+        "case_ids": [
+          "source_target",
+          "source_boundary_adaptation"
+        ]
+      }
+    },
+    {
+      "id": "WR-006",
+      "version": 1,
+      "date": "2026-10-29",
+      "status": "validated_pending_persistence",
+      "scope": "detailing_treatment_and_screenplay_layer_routing",
+      "source_kind": "direct_user_request_with_assistant_proposal",
+      "source": {
+        "user_anchor": "Supplied external conversation msg_idx 7 and13: how much story detail and request to see scene/other parts",
+        "approval_limit": "Earlier word ranges/template are assistant proposals, not user-adopted universal requirements."
+      },
+      "rule": "Scale detail to purpose/POV/emotional change; use optional scene fields and separate treatment experience, playable screenplay and production handoff.",
+      "boundary": "Quiet scenes need not become long; dense literary treatment may retain multiple comparisons; word count does not measure runtime.",
+      "validation": {
+        "status": "PASS_TEXT_ONLY",
+        "kind": "four_case_text_review",
+        "media_tests": 0,
+        "case_ids": [
+          "detail_target_quiet",
+          "detail_boundary_dense"
+        ]
+      }
+    }
+  ],
+  "patch": "diff --git a/skill-6ae2c66cf120819189195cc39a4c7e91/SKILL.md b/skill-6ae2c66cf120819189195cc39a4c7e91/SKILL.md\nindex 7ee9af4..41511a9 100644\n--- a/skill-6ae2c66cf120819189195cc39a4c7e91/SKILL.md\n+++ b/skill-6ae2c66cf120819189195cc39a4c7e91/SKILL.md\n@@ -23,6 +23,7 @@ For writing:\n - Read only the relevant section of [writing-formats.md](references/writing-formats.md). Binge describes a viewing/release strategy; select the underlying serial, episodic, anthology or hybrid engine too.\n - Read [genre-and-treatment.md](references/genre-and-treatment.md) when developing a story or selecting/revising its dramatic approach. Treat techniques as choices serving this story, not compulsory formulas.\n - Read [character-dialogue-and-punchlines.md](references/character-dialogue-and-punchlines.md) for character creation, voice, performance behavior, dialogue or punchline work.\n+- For detailing treatment, exact-source presentation and translation attribution, use the detail-depth and source-passage sections of the following delivery/research modules.\n - Read the applicable deliverable and revision sections of [writing-delivery-and-qc.md](references/writing-delivery-and-qc.md) before delivering writing. A one-line polish needs a local check; a feature or season needs a global continuity pass.\n - Read [writing-research.md](references/writing-research.md) when explaining craft provenance or researching an unfamiliar factual subject. Do not browse merely to restate stable craft knowledge.\n \ndiff --git a/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-ledger.json b/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-ledger.json\nindex ad94a1a..89cddc3 100644\n--- a/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-ledger.json\n+++ b/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-ledger.json\n@@ -1,6 +1,6 @@\n {\n   \"schema_version\": 1,\n-  \"updated_at\": \"2026-10-23\",\n+  \"updated_at\": \"2026-10-29\",\n   \"history_coverage\": \"Supplied user excerpts for 20–22 October plus two supported history-retrieval summaries (broad window and 21–22 gap); no full raw archive or inspected referenced images, video or audio. Retrieval-query restatements and assistant-only provider/news claims excluded.\",\n   \"audio_tests_performed\": false,\n   \"schedule_status\": \"Verified existing AI Writer Nightly Learning task 6ada57da59608191bce46ccf9c5fae82 enabled daily at 23:00 Asia/Kolkata, with Sunday 23:00 official research in its prompt. Newer specific task supersedes Writer coordinator binding; no completed scheduled run inferred.\",\n@@ -80,6 +80,54 @@\n       \"rule\": \"Reconcile current source versions, keep translation distinct unless replacement is requested, preserve silent scene beats and exact source speaker/lines; apply current Director local-frame handoff contract without changing screenplay layout.\",\n       \"source\": \"Recovered f9327c base;24October pending runtime packet; current29October all-agent instruction and current approved Director rules.\",\n       \"validation\": \"Root source/text boundary review; audit helper and structure checks. No fresh Slack/media or host application bug fix.\"\n+    },\n+    {\n+      \"id\": \"WR-005\",\n+      \"version\": 1,\n+      \"date\": \"2026-10-29\",\n+      \"status\": \"validated_pending_persistence\",\n+      \"scope\": \"exact_source_requests_and_translation_alignment\",\n+      \"source_kind\": \"direct_user_excerpts_plus_observed_public_source\",\n+      \"source\": {\n+        \"user_anchor\": \"Supplied external conversation msg_idx 16,19,25: exact location/original full passage and Hindi translation requests\",\n+        \"url\": \"https://www.valmikiramayan.net/utf8/sundara/sarga36/sundarasans36.htm\",\n+        \"accessed_on\": \"2026-10-29\",\n+        \"observation\": \"English paragraph following Sanskrit 5-36-4 duplicates preceding assurance paragraph; Sanskrit and word gloss differ. Digital-page discrepancy only.\"\n+      },\n+      \"rule\": \"Separate exact original, published translation, own bhavarth and invented scene labels; anchor selected edition and check verse/translation alignment. Track actual coverage for full passages.\",\n+      \"boundary\": \"Explicit creative adaptation permits authored narration; do not force citation labels into every fictional sentence. Never treat past assistant counts/files as newly inspected.\",\n+      \"validation\": {\n+        \"status\": \"PASS_TEXT_ONLY\",\n+        \"kind\": \"four_case_text_review\",\n+        \"media_tests\": 0,\n+        \"case_ids\": [\n+          \"source_target\",\n+          \"source_boundary_adaptation\"\n+        ]\n+      }\n+    },\n+    {\n+      \"id\": \"WR-006\",\n+      \"version\": 1,\n+      \"date\": \"2026-10-29\",\n+      \"status\": \"validated_pending_persistence\",\n+      \"scope\": \"detailing_treatment_and_screenplay_layer_routing\",\n+      \"source_kind\": \"direct_user_request_with_assistant_proposal\",\n+      \"source\": {\n+        \"user_anchor\": \"Supplied external conversation msg_idx 7 and13: how much story detail and request to see scene/other parts\",\n+        \"approval_limit\": \"Earlier word ranges/template are assistant proposals, not user-adopted universal requirements.\"\n+      },\n+      \"rule\": \"Scale detail to purpose/POV/emotional change; use optional scene fields and separate treatment experience, playable screenplay and production handoff.\",\n+      \"boundary\": \"Quiet scenes need not become long; dense literary treatment may retain multiple comparisons; word count does not measure runtime.\",\n+      \"validation\": {\n+        \"status\": \"PASS_TEXT_ONLY\",\n+        \"kind\": \"four_case_text_review\",\n+        \"media_tests\": 0,\n+        \"case_ids\": [\n+          \"detail_target_quiet\",\n+          \"detail_boundary_dense\"\n+        ]\n+      }\n     }\n   ],\n   \"reviews\": [\n@@ -182,6 +230,184 @@\n       \"audit_fixture_expected_outcomes_matched\": 3,\n       \"maintenance_resumed\": true,\n       \"new_full_archive_or_media_claim\": false\n+    },\n+    {\n+      \"id\": \"NIGHTLY-20261029\",\n+      \"date\": \"2026-10-29\",\n+      \"base_revision\": \"8bf362cd513084ff942843e21a79eb92156653e9\",\n+      \"status\": \"validated_pending_persistence\",\n+      \"source_coverage\": {\n+        \"chat\": {\n+          \"window\": \"23–29 October 2026 since saved bounded23October chat review\",\n+          \"method\": \"One focused Personal Context retrieval summary plus supplied external conversation excerpts msg_idx0–26 and recent-context excerpts; not full raw archive\",\n+          \"gap\": \"Underlying raw chats, original Bible/DOCX/PDF and referenced media not inspected; prior assistant claims remain attributed\"\n+        },\n+        \"slack\": {\n+          \"window\": \"after2026-10-23 before2026-10-30; oldest retained24October material thread\",\n+          \"searches\": 3,\n+          \"returned_hits\": 37,\n+          \"count_note\": \"Search-hit count includes contextual overlap with separately read threads, not a unique total\",\n+          \"queries\": [\n+            \"channel/time filter, latest20 hits; older pages not fetched\",\n+            \"same channel/time screenplay,13 hits, end reached\",\n+            \"same channel/time from U089MA16V1S,4 hits, end reached\"\n+          ],\n+          \"channel\": \"C0AFDSFD3PA\",\n+          \"full_threads\": [\n+            {\n+              \"ts\": \"1793178450.375559\",\n+              \"messages\": 9,\n+              \"url\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793178450375559\"\n+            },\n+            {\n+              \"ts\": \"1793007122.756619\",\n+              \"messages\": 12,\n+              \"url\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793007122756619\"\n+            },\n+            {\n+              \"ts\": \"1792841681.105559\",\n+              \"messages\": 8,\n+              \"url\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1792841681105559\"\n+            },\n+            {\n+              \"ts\": \"1793103080.824639\",\n+              \"messages\": 3,\n+              \"url\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793103080824639\"\n+            },\n+            {\n+              \"ts\": \"1793281216.022919\",\n+              \"messages\": 7,\n+              \"url\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793281216022919\"\n+            }\n+          ],\n+          \"attachments_read\": 0,\n+          \"attachment_reason\": \"Reports suffice for attributed process review; no media-quality/root-cause determination attempted. Attachments remain uninspected.\",\n+          \"gap\": \"Channel search first20 page only; no all-channel or complete Slack coverage; no verified saved Slack checkpoint available in recovered current ledger\"\n+        },\n+        \"research\": {\n+          \"reason\": \"Scoped catch-up for missed25October Sunday; last successful research checkpoint null\",\n+          \"lookback\": \"22–29October2026 plus labelled older baselines\",\n+          \"search_queries\": 3,\n+          \"search_engines\": 2,\n+          \"access_date\": \"2026-10-29\",\n+          \"inspected_sources\": [\n+            {\n+              \"url\": \"https://www.oscars.org/nicholl/screenwriting-resources\",\n+              \"date\": \"undated baseline; linked examples predate review\",\n+              \"decision\": \"Existing screenplay-vs-production separation; no new rule\"\n+            },\n+            {\n+              \"url\": \"https://www.valmikiramayan.net/utf8/sundara/sarga36/sundarasans36.htm\",\n+              \"date\": \"ancient text, undated digital edition\",\n+              \"decision\": \"Observed paragraph/verse alignment discrepancy supports WR-005\"\n+            },\n+            {\n+              \"url\": \"https://collab.sundance.org/catalog/The-Dialogue-Prompt\",\n+              \"event_date\": \"2021-11-30\",\n+              \"decision\": \"Old challenge; not a2026release or universal conflict requirement\"\n+            },\n+            {\n+              \"url\": \"https://github.com/eternityspring/shuohao-skills\",\n+              \"changelog_url\": \"https://github.com/eternityspring/shuohao-skills/blob/main/CHANGELOG.md\",\n+              \"latest_visible_version_date\": \"2026-10-15\",\n+              \"decision\": \"Older baseline despite recent index crawl/update claims. Existing staging/handoff discipline already covered; no mandatory duration/hook/model rules imported.\"\n+            }\n+          ],\n+          \"gaps\": [\n+            {\n+              \"url\": \"https://arxiv.org/abs/2609.19853\",\n+              \"reported_publication\": \"2026-09-17\",\n+              \"status\": \"abstract search result only; direct open DisabledError; no methods/benchmark adoption\"\n+            },\n+            {\n+              \"url\": \"https://collab.sundance.org/catalog/Screenwriting-From-Outline-to-First-Draft-of-Your-Screenplay/November-2026\",\n+              \"status\": \"search excerpt only; direct page inaccessible; upcoming session not verified new craft release\"\n+            }\n+          ],\n+          \"decision\": \"No verified new-release rule adopted; bounded search completed, inaccessible sources pending. No exhaustive research checkpoint.\"\n+        }\n+      },\n+      \"evidence_separation\": {\n+        \"direct_user\": \"Exact-source requests; frame-local corrections;27October incident and later issue-solved reply\",\n+        \"team_report\": \"Generic/spoon-feeding dialogue feedback; language/format incidents; claimed fixes await specific retest\",\n+        \"team_proposal\": \"Location hierarchy/recce simplification; automatic two-way translation proposal not adopted\",\n+        \"suspected_cause\": \"WAN integration attribution remains user hypothesis, not proven cause\",\n+        \"observed\": \"Current remote Writer identity and scheduler; read Slack message content; public translation paragraph mismatch\",\n+        \"assistant_report\": \"Previous restore/save and301-verse/PDF claims not treated as freshly inspected evidence\"\n+      },\n+      \"deduplicated\": [\n+        {\n+          \"lesson\": \"WR-004\",\n+          \"sources\": [\n+            \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1792841681105559\",\n+            \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793007122756619\"\n+          ],\n+          \"result\": \"Preserve active screenplay location/silence and separate translated version; existing safeguards retained\"\n+        },\n+        {\n+          \"lesson\": \"character-dialogue-and-punchlines.md\",\n+          \"source\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793178450375559\",\n+          \"result\": \"Existing voice/subtext/compression already covers generic exposition; no extra formula added\"\n+        },\n+        {\n+          \"lesson\": \"continuity-and-handoffs.md\",\n+          \"source\": \"https://stagedotin.slack.com/archives/C0AFDSFD3PA/p1793281216022919\",\n+          \"result\": \"Keep source slugline/unknown parent and only needed view demand; no rewriting another Location skill or universal two-image rule\"\n+        }\n+      ],\n+      \"adopted_pending_save\": [\n+        \"WR-005\",\n+        \"WR-006\"\n+      ],\n+      \"pending\": [\n+        \"Uninspected raw chats/media and incomplete channel pages\",\n+        \"Unverified source methods/dates as listed\",\n+        \"STAGE application fixes not verified here\"\n+      ],\n+      \"paid_media\": false,\n+      \"slack_writes\": 0,\n+      \"rollback\": \"Revert only the new WR005/006 reference paragraphs if regressing; preserve existing locks, unrelated edits, recovered history and scheduler.\",\n+      \"checks\": {\n+        \"skill_validation\": \"PASS\",\n+        \"diff_whitespace\": \"PASS\",\n+        \"independent_text_review\": \"Four synthetic prompts executed by separate fresh-context agent; root evaluated responses. PASS_TEXT_ONLY. Formatting normalized in retained result text.\",\n+        \"json\": \"PASS\",\n+        \"relative_links\": {\n+          \"checked\": 15,\n+          \"broken\": 0\n+        },\n+        \"media\": \"NOT_PERFORMED\",\n+        \"quality_limit\": \"No audience, native dialect, visual/audio or application-fix claims\"\n+      },\n+      \"persistence\": {\n+        \"status\": \"pending\"\n+      },\n+      \"validation_cases\": [\n+        {\n+          \"id\": \"source_target\",\n+          \"prompt\": \"Exactly kaha likha hai? Supplied source verse 5-36-4 describes Sita taking/seeing the ring and rejoicing; following English paragraph instead repeats reassurance from preceding verse. Show SCENE and LOCATION as original headings.\",\n+          \"result\": \"Aapke supplied source ka anchor Sundarakanda, Sarga 36, verse 4 — 5-36-4 hai: Sita angoothi leti/dekhti hain aur prasann hoti hain. Uske baad diya English paragraph pichhle verse ki reassurance dohrata hai; yeh translation-alignment discrepancy hai. Exact Sanskrit wording supplied nahi hai, isliye use quote nahi kar raha. SCENE aur LOCATION mool paath ke original headings nahi hain. Unhe sirf adaptation ke editorial labels ke roop mein dikhaya ja sakta hai.\",\n+          \"verdict\": \"PASS: no invented exact Sanskrit or original headings\"\n+        },\n+        {\n+          \"id\": \"source_boundary_adaptation\",\n+          \"prompt\": \"Is episode ko original adaptation ki tarah likho; source quote mat do. Locked scene ID 12A, line: मैं लौटूँगा। Give two brief lines of action and that exact dialogue.\",\n+          \"result\": \"12A\\nवह अपना सामान उठाता है।\\nदरवाज़े पर रुककर पीछे देखता है।\\nवह\\nमैं लौटूँगा।\",\n+          \"verdict\": \"PASS: permitted authored action, exact supplied ID and dialogue\"\n+        },\n+        {\n+          \"id\": \"detail_target_quiet\",\n+          \"prompt\": \"Quiet scene: elderly woman waits at door. Give short treatment then screenplay, do not invent visitors or dialogue; no fixed runtime.\",\n+          \"result\": \"ट्रीटमेंट\\nबुज़ुर्ग स्त्री दरवाज़े पर प्रतीक्षा करती है। खड़े रहने की थकान उसे अपना भार बदलने पर मजबूर करती है, लेकिन उसकी नज़र चौखट के पार टिकी रहती है। दृश्य उसी अधूरी प्रतीक्षा में ठहरता है।\\nस्क्रीनप्ले\\nEXT. घर का दरवाज़ा — समय अनिर्दिष्ट\\nबुज़ुर्ग स्त्री चौखट पकड़कर खड़ी है।\\nवह धीरे से अपना भार दूसरे पैर पर रखती है। पकड़ ढीली करती है, फिर चौखट थाम लेती है।\\nउसकी नज़र बाहर टिकी रहती है।\",\n+          \"verdict\": \"PASS: distinct layers, no visitor/dialogue/runtime invented; action is synthetic authored choice\"\n+        },\n+        {\n+          \"id\": \"detail_boundary_dense\",\n+          \"prompt\": \"Dense literary treatment chahiye, do meaningful comparisons allowed. Keep object: a sealed letter, opening it is forbidden. Do not add camera/lens.\",\n+          \"result\": \"सीलबंद चिट्ठी मेज़ पर रखी है। उसे खोलना मना है। स्त्री उसके सामने बैठती है और अपना हाथ मेज़ के नीचे दबा लेती है। लिफ़ाफ़े पर उसका नाम है; भीतर के शब्दों पर उसका कोई अधिकार नहीं। चिट्ठी एक भींचे हुए मुँह की तरह उसके सामने पड़ी है—बोलने की संभावना लिए, चुप रहने को बाध्य।\\n\\nवह उसे उठाती है। काग़ज़ हल्का है, मगर हथेली में उसका भार उस पत्थर जैसा महसूस होता है जिसे रास्ते से हटाना ज़रूरी हो और छूना निषिद्ध। अँगूठा सील तक पहुँचकर ठहर जाता है। वह हाथ पीछे खींचती है। कुछ देर बाद चिट्ठी वापस रख देती है, इस बार नाम वाला हिस्सा नीचे करके। सील सुरक्षित है। उसकी बेचैनी अब दिखाई देने वाले नाम की मोहताज नहीं।\",\n+          \"verdict\": \"PASS: dense style/two comparisons allowed, seal stays intact, no camera\"\n+        }\n+      ]\n     }\n   ],\n   \"last_successful_chat_review_checkpoint\": {\ndiff --git a/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-runtime.json b/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-runtime.json\nindex 741727c..cbfa7c6 100644\n--- a/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-runtime.json\n+++ b/skill-6ae2c66cf120819189195cc39a4c7e91/assets/learning-runtime.json\n@@ -83,7 +83,7 @@\n   \"weight_training\": false,\n   \"pending_candidates\": [],\n   \"runtime_fallback\": \"UNAPPLIED_RUNTIME_LIMIT\",\n-  \"persistence_policy\": \"This invocation hands validated local edits to its coordinator; no local commit/push or successful-save checkpoint until observed coordinator persistence.\",\n+  \"persistence_policy\": \"Current direct maintenance request authorizes scoped Git save through Skill Creator; isolate concurrent edits and confirm remote content before advancing successful checkpoints.\",\n   \"previous_automation\": {\n     \"id\": \"6ad5d8166eec8191b8ab50b313c4aa13\",\n     \"title\": \"Nightly Agent Self-Learning\",\n@@ -170,5 +170,11 @@\n     \"installed_directory\": \"skill-6ae2c66cf120819189195cc39a4c7e91\",\n     \"installation_commit\": \"cb682c9c92cb674b9cbd5ec25840857f159511a3\",\n     \"resume_receipt_updated_at\": \"2026-10-29T04:08:22.229744+00:00\"\n+  },\n+  \"last_review_attempt\": {\n+    \"date\": \"2026-10-29\",\n+    \"review_id\": \"NIGHTLY-20261029\",\n+    \"status\": \"validated_pending_persistence\",\n+    \"successful_checkpoints_advanced\": false\n   }\n }\ndiff --git a/skill-6ae2c66cf120819189195cc39a4c7e91/references/continuous-learning.md b/skill-6ae2c66cf120819189195cc39a4c7e91/references/continuous-learning.md\nindex 333bb4e..65f3214 100644\n--- a/skill-6ae2c66cf120819189195cc39a4c7e91/references/continuous-learning.md\n+++ b/skill-6ae2c66cf120819189195cc39a4c7e91/references/continuous-learning.md\n@@ -8,6 +8,8 @@ Keep only useful Writer lessons: story/format, dialogue, revision discipline, so\n \n For Sunday's research branch, check relevant primary craft/production sources and official tool documentation since the last completed research checkpoint; the first research run may use a labelled seven-day lookback. Do not treat old baselines as new announcements or researched proposals as approved canon. Adopt a documented syntax/contract correction after an appropriate text check; require inspected media for claims about generated performance or quality. Keep unsupported candidates pending.\n \n-Apply only authorized internal changes, preserve approved creative canon and exact source dialogue, and run proportional skill/resource and affected contract checks. Preserve prior research and media checkpoints. Record source/base version, review scope, adopted/deduplicated/pending items, actual checks, changed paths and rollback condition. Advance a successful-save checkpoint only after confirmed persistence; local edits remain pending until then. Respect a current instruction to hand edits to a coordinator without committing or pushing. When persistence is unavailable, return an exact unapplied update packet and revalidate an accessible packet on the next write-capable invocation.\n+If a scheduled Sunday research branch was missed, perform its scoped catch-up on the next permitted nightly run. Preserve per-source gaps and distinguish a completed search from complete source coverage.\n+\n+Apply only authorized internal changes, preserve approved creative canon and exact source dialogue, and run proportional skill/resource and affected contract checks. Preserve prior research and media checkpoints. Record source/base version, review scope, adopted/deduplicated/pending items, actual checks, changed paths and rollback condition. Advance a successful-save checkpoint only after confirmed persistence; local edits remain pending until then. Use the current Skill Creator scoped commit/push workflow when the user authorizes direct maintenance. Isolate a dirty/diverged checkout and re-read the latest remote before saving; an old coordinator-only instruction does not supersede a current direct-save request. When persistence is unavailable, return an exact unapplied update packet and revalidate an accessible packet on the next write-capable invocation.\n \n This maintains saved rules; it does not train model weights, inspect unavailable chats/media, authorize paid generation or repair the host application's versioning system.\ndiff --git a/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-delivery-and-qc.md b/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-delivery-and-qc.md\nindex 1d64b51..742b44f 100644\n--- a/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-delivery-and-qc.md\n+++ b/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-delivery-and-qc.md\n@@ -105,3 +105,9 @@ Use the applicable writing-block workflow for short complete drafts. Use the app\n Keep project-private draft content and correction logs in the project artifacts, not in this reusable skill. Carry corrections into a reusable skill only when the user asks and the rule generalizes at its proper scope.\n \n Present the actual deliverable and a short note on material assumptions, version or unresolved facts when needed. Describe what was checked without claiming unperformed tests. The breakdown JSON manifest is required for a full production breakdown, not automatically for creative writing.\n+\n+## Choose detail depth for the requested layer\n+\n+For a detailing treatment, expand the details serving scene purpose, POV, emotional change, geography or a consequential object/action. Vary density inside the scene: preparation, event and aftermath need not receive equal space. Use a compact scene sheet when helpful: ID/title; purpose and POV; place/time; entry state; want/obstacle/choice; relevant environment/sensory detail; action/reaction; emotional change; object/motif if applicable; dialogue/subtext; exit state; detail priorities and source/proposal status. Omit irrelevant fields for a simple transition.\n+\n+Keep literary/internal experience in treatment when useful; translate it into chosen playable action/sound for screenplay, preserving canon and approved lines. Send asset design and camera/lighting specifications to their production handoffs unless requested in the script. Word budgets are adjustable drafting aids, never runtime measurements or rules attributed to Valmiki; do not impose one simile, one gesture or a fixed detail count per scene. A quiet held scene can use few words. A user-requested dense literary treatment may retain multiple purposeful comparisons. This is a tested workflow proposal, not evidence that the earlier Bible/document or all cited verses were inspected in this review.\ndiff --git a/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-research.md b/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-research.md\nindex fa01351..8dff0a1 100644\n--- a/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-research.md\n+++ b/skill-6ae2c66cf120819189195cc39a4c7e91/references/writing-research.md\n@@ -20,3 +20,11 @@ Use stable craft knowledge without a fresh search for every scene. Browse when c\n Do not present research interpretation as user-approved story canon. For mythology/adaptation, identify the selected telling and distinguish textual tradition, modern interpretation and authored invention. Do not blend incompatible accounts silently.\n \n Recheck live specifications when delivering to a particular channel. Do not promise a persistent autonomous research/learning service or create a recurring task unless the user explicitly requests scheduling.\n+\n+## Exact passages, translation and craft inference\n+\n+When asked where something is written or for an exact passage, retrieve the selected edition/telling and give its book/chapter/verse or page anchors. Separate verbatim source, published translation, your own Hindi arth/bhavarth and adaptation/analysis. Do not present invented SCENE/LOCATION/POV labels as headings in the original. For a full passage, retain an ordered coverage ledger and identify omissions; never certify a previous assistant's verse count or PDF as inspected without reading it. Honor applicable quotation rights.\n+\n+Check translation alignment against the source verse, not merely its position on a website: a repeated or mismatched translation paragraph is a discrepancy to flag and cross-check. Preserve original wording; label an uncertain meaning rather than silently correcting the edition. An explicit adaptation request permits original scene writing within its locks; exact-source mode must not block authorized creative work.\n+\n+Accessed 29 October 2026: the digital [Sundara 36](https://www.valmikiramayan.net/utf8/sundara/sarga36/sundarasans36.htm) page prints Sanskrit 5-36-4 about receiving/seeing the ring, but its following English paragraph repeats the assurance paragraph from 5-36-3. This is a page-level observed alignment discrepancy, not a conclusion about all translations or manuscript authenticity. The ancient passage and undated web edition are baselines, not new releases.\n",
+  "missing_evidence": [
+    "Authoritative current Writer path that survives remote reconciliation",
+    "Confirmed reconciled save and guarded checkpoint persistence",
+    "Unavailable source/media ranges as review records"
+  ],
+  "resumption": "Rediscover by exact frontmatter name, read latest ledger/runtime, reconcile and revalidate packet; never blindly recreate a deleted skill or advance unsuccessful ranges. Preserve same scheduler ID/schedule.",
+  "scheduler": {
+    "id": "6ada57da59608191bce46ccf9c5fae82",
+    "schedule_unchanged": true,
+    "pause_reason": "Missing authoritative persistable Writer root after reconciliation; resume same task after recovery, no duplicate."
+  }
+}

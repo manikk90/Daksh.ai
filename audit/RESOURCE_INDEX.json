@@ -1,0 +1,1087 @@
+[
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/SKILL.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/agents/openai.yaml",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/assets/agent-registry.json",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/assets/brain.template.json",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/assets/evaluation.json",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/assets/icon.svg",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/assets/run.template.json",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/assets/runtime.json",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/evaluation.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/master-orchestration.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/memory-and-actions.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/operating-loop.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/research-and-business.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/research-synthesis.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/specialists.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/references/weekly-learning.md",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/scripts/brain.py",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/scripts/orchestrator.py",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/scripts/synthesis.py",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/scripts/test_brain.py",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/scripts/test_brain_extensions.py",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "daksh",
+    "source": "skills/daksh/scripts/test_orchestrator.py",
+    "dossier": "agents/DAKSH_MASTER.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/SKILL.md",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/agents/openai.yaml",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/assets/icon.svg",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/assets/learning-runtime.json",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/references/context-and-template.md",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/references/extended-workflows.md",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "maniik",
+    "source": "skills/maniik/references/preferences.md",
+    "dossier": "agents/MANIIK_WORKFLOW.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/SKILL.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/agents/filmmaking-qc.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/agents/openai.yaml",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/agents/reference-mapper.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/assets/cast-costume.template.json",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/assets/character-performance.template.json",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/assets/composition-patterns.json",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/assets/composition-study.frames.json",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/assets/icon.svg",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/assets/learning-ledger.json",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/camera-and-coverage.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/camera-catalog.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/cast-and-costume.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/composition-editing-sound.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/continuous-learning.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/controller-runtime.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/execution-quality.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/filmmaking-qc-contract.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/image-video-prompts.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/laddu-gopal.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/mapping-and-qc-agents.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/model-adapters.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/performance-and-action.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/reference-input-preflight.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/reference-mapper-contract.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/references/shot-composition.md",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/scripts/audit_prompt_contract.py",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/scripts/composition_lookup.py",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/scripts/project_context.py",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/scripts/validate_handoff.py",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-native-director",
+    "source": "skills/ai-native-director/scripts/validate_learning_ledger.py",
+    "dossier": "agents/AI_NATIVE_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/SKILL.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/agents/openai.yaml",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/assets/icon.svg",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/assets/learning-ledger.json",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/assets/location-manifest.template.json",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/agent-controller.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/context-research.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/continuous-learning.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/production-runtime.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/project-location-locks.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/prompts-and-handoff.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/props-four-views.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/qc-and-repair.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/reference-input-preflight.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/spatial-contract.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/references/workflow.md",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/build_panorama_viewer.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/compare_views.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/inspect_colmap_pose.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/location_runtime.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/spatial_checks.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/test_build_panorama_viewer.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/test_compare_views.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/test_inspect_colmap_pose.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/test_location_runtime.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/test_spatial_checks.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/test_transfer_intrinsics.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/transfer_intrinsics.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/validate_learning.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-location-director",
+    "source": "skills/ai-location-director/scripts/validate_location.py",
+    "dossier": "agents/AI_LOCATION_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/SKILL.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/agents/music-director.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/agents/openai.yaml",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/assets/control-profiles.json",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/assets/icon.svg",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/assets/improvement-state.json",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/assets/learning-ledger.json",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/assets/lyric-patterns.json",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/assets/model-registry.json",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/autonomous-runtime.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/continuous-learning.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/instrument-palette.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/lyrics-and-vocal-direction.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/platform-workflows.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/project-music-context.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/scene-scoring.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/smart-parameters.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/references/vocal-micro-expression.md",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/scripts/music_qc.py",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/scripts/music_runtime.py",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-music-director",
+    "source": "skills/ai-music-director/scripts/test_music_runtime.py",
+    "dossier": "agents/AI_MUSIC_DIRECTOR.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/SKILL.md",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/agents/openai.yaml",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/assets/dubbing-manifest.example.json",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/assets/icon.svg",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/assets/learning-ledger.json",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/assets/learning-runtime.json",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/assets/performance-cues.json",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/references/continuous-learning.md",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/references/fast-performance.md",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/references/interface-specific-controls.md",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/references/research-and-playbook.md",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/references/workflow-contract.md",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/scripts/cue_qc.py",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/scripts/dialogue_request_qc.py",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/scripts/test_cue_qc.py",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-dubbing",
+    "source": "skills/ai-dubbing/scripts/test_dialogue_request_qc.py",
+    "dossier": "agents/AI_DUBBING.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/.gitignore",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/SKILL.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/agents/openai.yaml",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/icon.svg",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/READY.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/plan.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-fb-1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-fb-2.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-ig-1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-ig-2.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-li-1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-li-2.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-li-3.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-x-1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/launch/2026-W44/w44-x-2.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/learning-ledger.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/profile_copy.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/assets/source-manifest.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/confidential_terms.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/hook_library.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/hypotheses.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/pillars.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/platform_rules.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/playbook.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/playbook_rules.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/profiles.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/slots.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/targets.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/brain/voice.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/pytest.ini",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/references/caption-mode.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/references/growth-strategy.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/references/learning.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/references/recent-lessons.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/references/roles.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/references/workflows.md",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/schemas/content_plan.schema.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/schemas/draft_post.schema.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/schemas/eval_report.schema.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/schemas/playbook_diff.schema.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/schemas/research_brief.schema.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/__init__.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/__main__.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/bandit.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/cli.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/ingest/__init__.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/ingest/linkedin.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/ingest/meta.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/ingest/x_archive.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/lang.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/liking_profile.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/metrics.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/metrics_import.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/models.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/pullers/__init__.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/pullers/http.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/pullers/instagram.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/pullers/x.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/ready.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/retro.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/storage.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/ai_social/validate.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/requirements.txt",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/scripts/social.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/conftest.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/linkedin/Comments.csv",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/linkedin/Reactions.csv",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/linkedin/Shares.csv",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/meta/connections/followers_and_following/followers_1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/meta/your_facebook_activity/comments_and_reactions/comments.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/meta/your_facebook_activity/comments_and_reactions/likes_and_reactions_1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/meta/your_instagram_activity/comments/post_comments_1.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/meta/your_instagram_activity/likes/liked_comments.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/meta/your_instagram_activity/likes/liked_posts.json",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/x/data/like.js",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/fixtures/x/data/tweets.js",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/helpers.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_cli.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_ingest_profile.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_launch_pack.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_metrics_bandit.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_models_lang.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_portability_and_readiness.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_pullers_import.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_retro.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_storage.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "ai-socials",
+    "source": "skills/ai-socials/tests/test_validate.py",
+    "dossier": "agents/AI_SOCIALS.md"
+  },
+  {
+    "skill": "suno-instrumental-prompts",
+    "source": "skills/suno-instrumental-prompts/SKILL.md",
+    "dossier": "agents/SUNO_PROMPT_HELPER.md"
+  },
+  {
+    "skill": "suno-instrumental-prompts",
+    "source": "skills/suno-instrumental-prompts/agents/openai.yaml",
+    "dossier": "agents/SUNO_PROMPT_HELPER.md"
+  },
+  {
+    "skill": "suno-instrumental-prompts",
+    "source": "skills/suno-instrumental-prompts/assets/icon.svg",
+    "dossier": "agents/SUNO_PROMPT_HELPER.md"
+  }
+]

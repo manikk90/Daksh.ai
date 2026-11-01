@@ -1,0 +1,58 @@
+[
+  {
+    "skill": "ai-dubbing",
+    "export_files": 16,
+    "current_files": 16,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "ai-location-director",
+    "export_files": 30,
+    "current_files": 30,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "ai-music-director",
+    "export_files": 21,
+    "current_files": 21,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "ai-native-director",
+    "export_files": 31,
+    "current_files": 31,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "ai-socials",
+    "export_files": 87,
+    "current_files": 87,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "daksh",
+    "export_files": 22,
+    "current_files": 22,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "maniik",
+    "export_files": 7,
+    "current_files": 7,
+    "missing": [],
+    "changed": []
+  },
+  {
+    "skill": "suno-instrumental-prompts",
+    "export_files": 3,
+    "current_files": 3,
+    "missing": [],
+    "changed": []
+  }
+]

@@ -1,21 +1,10 @@
-# Use karne ka tareeka
+# How to use this audited bundle
 
-## Files samajhne ke liye
-1. `AGENT_SKILL_MAP.md` se agent ownership aur mappings dekho.
-2. `agents/` mein readable operational documentation padho. Har file ke end mein mapped-skills addon hai.
-3. `SKILL_CATALOG.md` se exact reference, role, script ya template tak jao.
-4. `overlays/LATEST_USER_OVERRIDES_2026-11-01.md` ko relevant agent ke saath load karo; copied originals ko silently overwrite mat karo.
+1. Open audit/AUDIT_REPORT.md to understand what was checked and what remains missing.
+2. Choose the relevant agents/*.md. Its opening clarifications govern this export; full original source modules follow with explicit provenance. Do not load all agents for a tiny task.
+3. Use the original skills/ folder for executable scripts, exact templates, structured data and byte-exact source recovery. Paths inside quoted source instructions are relative to their original skill root.
+4. Treat runtime_state/ as dated source snapshots, not current account state. The Writer patch is unapplied evidence, not a recovery script to execute automatically.
+5. Use previous_v2_summaries/ only for comparison. Use original_dossier/ as historical backup.
+6. Run `python verification/verify_export.py .` from the extracted bundle root to verify file hashes and nested ZIP integrity. Run `python verification/verify_content.py .` for the bounded source-inclusion/content-marker checks. Neither command runs agents or verifies output quality.
 
-## Source files reuse karne ke liye
-`skills/<name>/` mein actual original directory structure hai. Entrypoint `SKILL.md` hai; referenced files same directory tree mein rakho. Ek task ke liye relevant files hi load karo, poora archive context mein paste karna zaroori nahi.
-
-`skill_packages/<name>/skill.zip` mein usi ek skill ka source bundle hai. Outer ZIP multiple skills aur documentation ka export hai, single-skill installer nahi. Target host ki import process aur permissions alag se apply hongi. Export banne se koi installation, account connection ya automation activate nahi hoti.
-
-## Original backup aur verification
-`original_dossier/` purane ZIP ke har file ko unchanged preserve karta hai. `mapping/source_files.json` mein original source hashes hain. `verification/FILE_HASHES.json` export files ke hashes deta hai, aur `verification/verify_export.py` unhe recheck karta hai.
-
-```bash
-python verification/verify_export.py .
-```
-
-`verification/QA_REPORT.md` mein executed checks aur limitations dono diye hain. External provider entrypoint snapshots ko fully self-contained plugin installers mat samajhna. AI Writer ki original source gap `missing/AI_WRITER_SOURCE_STATUS.md` mein marked hai.
+The individual skill.zip packages are unchanged original snapshots. This task did not install or synchronize any skill. External Data/Writing Style dependencies remain snapshots/mappings rather than full provider bundles. AI Writer still has no recovered original installer.

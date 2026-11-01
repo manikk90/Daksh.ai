@@ -27,3 +27,6 @@ Current user instructions and approved scoped assets > export-side latest user o
 
 ## Validation scope
 See `verification/QA_REPORT.md`. Source identity, structure, JSON/YAML parsing, Python syntax and ZIP integrity are deterministic packaging checks. They do not establish that all media outputs, live tools, timers, account controls or plugin installs work. No production generation or external write is included.
+
+## v3 recovery and remaining limits
+Actual DAKSH_BRAIN.json, Laddu_Gopal_Production_Context.json revision 7 and AI_Writer_Pending_Maintenance_2026-10-29.json are now in runtime_state/. They are dated records. The Writer pending patch remains unapplied and the complete original source is unavailable. The exact expanded 100-preview set and full raw conversation/media archive remain unrecovered. Main MD consolidation is not live installation, current API verification or proof of future schedule execution.

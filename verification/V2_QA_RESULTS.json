@@ -1,0 +1,26 @@
+{
+  "status": "pass_packaging_scope",
+  "checks": {
+    "exact_original_source_files": 225,
+    "original_dossier_files_preserved": 13,
+    "json_files_parsed": 59,
+    "yaml_files_parsed": 8,
+    "python_files_syntax_checked": 69,
+    "skill_entrypoints_parsed": 11,
+    "module_paths_verified": 132,
+    "registered_role_edges": 16,
+    "new_document_links_verified": 330,
+    "preexisting_unresolved_source_links": 0,
+    "font_files_exported": 0,
+    "high_signal_secret_pattern_hits": 0,
+    "single_skill_archives_verified": 8
+  },
+  "full_regression_suites_executed": false,
+  "source_link_limits": [],
+  "runtime_actions": {
+    "installed_skills_changed": false,
+    "automations_changed": false,
+    "external_writes": false,
+    "media_generated": false
+  }
+}

@@ -1,0 +1,1241 @@
+{
+  "schema_version": 1,
+  "project_id": "laddu-gopal",
+  "title": "Laddu Gopal — shared production context",
+  "record_revision": 7,
+  "updated_at": "2026-10-29T03:10:55.789725+00:00",
+  "purpose": "One project state record for AI Writer, AI Native Director and AI Location Director. Seeded from reviewed saved context and explicit available user corrections; not a completed cast bible.",
+  "authority": {
+    "active_screenplay_id": null,
+    "active_screenplay_version": null,
+    "screenplay_coverage": "NOT_RECHECKED_IN_THIS_TASK",
+    "resolution_order": [
+      "current explicit user instruction within its scope",
+      "approved scene/shot override",
+      "current source and approved project record",
+      "reusable skill default"
+    ],
+    "write_rule": "Read current revision; update existing identity with expected-current-version where available. Resolve concurrent changes rather than overwriting. Never claim live automatic synchronization or automatic metric collection."
+  },
+  "sources": [
+    {
+      "source_id": "director_current",
+      "kind": "saved_project_context",
+      "path": "ai-native-director/references/laddu-gopal.md",
+      "sha256": "390ed1730a9947a5cb78aaeebd7547ab946fc908237b8f9b9ba0d8c612f56132",
+      "read_on": "2026-10-16",
+      "authority": "Prior saved user locks/extracted context; original screenplay and media not rechecked in this task."
+    },
+    {
+      "source_id": "location_current",
+      "kind": "saved_project_context",
+      "path": "ai-location-director/references/project-location-locks.md",
+      "sha256": "049075f998474785eaee556b4491ad3046b14fef00b08a0a47ca8921dd2603ff",
+      "read_on": "2026-10-16",
+      "authority": "Prior saved location corrections; visual geometry verification pending."
+    },
+    {
+      "source_id": "recent_user_excerpts",
+      "kind": "user_correction",
+      "anchor": "Available recent-chat excerpts: Character Sheet Banao, Shot Planning, Storyboard Correction and Video Prompt Mapping, Oct 9–16",
+      "authority": "Explicit textual user corrections within their original scope."
+    },
+    {
+      "source_id": "director_export",
+      "kind": "historical_skill_export",
+      "library_file_id": "libfile_5d71c7d3ba548191986b864c0a357529",
+      "read_extent": "lines 1–75 only",
+      "authority": "Historical 2026-10-14 workflow snapshot; not a current project state record."
+    },
+    {
+      "source_id": "new_chat_excerpts_2026_10_20",
+      "kind": "user_correction",
+      "anchor": "Supplied user excerpts: Write shot descriptions and Scene description rewrite, 20 October; Prompt correction guidelines, 15 October; supported recent-chat summary retrieval, 20 October 2026.",
+      "read_on": "2026-10-20",
+      "authority": "Explicit text within each shot only; retrieved entrance summary identified separately. No raw source media or generated output inspected."
+    },
+    {
+      "source_id": "temple_master_approval_20261022",
+      "kind": "user_approved_visual_master",
+      "anchor": "ye okay h ye lock kro final. ab ek baar jo jo location or unki sub location banegi uski mapping kro. or list nikalo",
+      "sha256": "77c1563c41f1ca96dbaef06d54ffdf841d7a85c32747d76b7bccb6f4d60879b3",
+      "authority": "Explicit approval of final expanded-landing image in current conversation."
+    },
+    {
+      "source_id": "chat_learning_review_20261022",
+      "kind": "user_correction",
+      "anchor": "Supplied recent chats20–22October and supported bounded retrievals; current all-agent learning request",
+      "read_on": "2026-10-22",
+      "authority": "Explicit text only in its named scene/shot/request; source media not newly inspected. Final approved master in location_design_records retains priority over earlier palette/blueprint requests."
+    },
+    {
+      "source_id": "frame_local_qc_20261023",
+      "kind": "user_correction",
+      "anchor": "Latest current user: only frame-relevant character/prop/location; targeted cart-only retrieval",
+      "read_on": "2026-10-23",
+      "authority": "Exact current textual scope/QC instruction; original frame media not inspected."
+    },
+    {
+      "source_id": "chat_learning_review_20261027",
+      "kind": "user_correction",
+      "anchor": "Current direct27October storyboard correction plus supplied26October exact-stick/blind-state user correction and retrieved25October touch/dialogue summary",
+      "read_on": "2026-10-27",
+      "authority": "Text within its named workflow/character/scene scope; raw source media and exact25October shot identity remain uninspected."
+    }
+  ],
+  "format": {
+    "value": "Laddu Gopal: horizontal realistic 16:9. Requested 4K is a target until output dimensions are verified. One full storyboard panel is 3x3 shots.",
+    "source_id": "director_current",
+    "scope": "project",
+    "status": "SAVED_CONTEXT"
+  },
+  "characters": [
+    {
+      "character_id": "naina",
+      "name": "Naina",
+      "exact_identity_tag": "@naina-01",
+      "profile_version": 2,
+      "completeness": "PARTIAL",
+      "movement_baseline": [
+        {
+          "value": "Natural measured navigation and balanced support; modest cane sweep/probe only when the stick is present. Confirm footing by touch before transferring weight at level changes.",
+          "source_id": "director_current",
+          "scope": "project",
+          "status": "SAVED_CONTEXT"
+        },
+        {
+          "value": "While @naina-01 is blind, proactively direct cautious sound/touch-led navigation and relevant small exploratory movements. Use exact @wooden-stick for an actually present/visible walking stick; never import it into an out-of-crop face shot. Preserve later explicitly approved no-stick and hand-occupancy overrides.",
+          "source_id": "chat_learning_review_20261027",
+          "scope": "project, current @naina-01 blind representation",
+          "status": "USER_CORRECTION"
+        }
+      ],
+      "speaking_action": [],
+      "listening_response": [
+        {
+          "value": "While blind, retain lowered/unfocused eyes and natural head orientation toward sound; do not add visual tracking of people, props or camera. Keep head/posture changes subtle and compatible with the actual crop and requested beat.",
+          "source_id": "chat_learning_review_20261027",
+          "scope": "current @naina-01 blind representation; later explicit representation overrides take priority",
+          "status": "USER_CORRECTION"
+        }
+      ],
+      "look_and_identity_constraints": [
+        {
+          "value": "Eight-year-old blind girl. Preserve active approved face, costume and eye reference; clean hands without birthmark/stain/scar/tattoo.",
+          "source_id": "director_current",
+          "scope": "project",
+          "status": "SAVED_CONTEXT"
+        }
+      ],
+      "scene_overrides": [
+        {
+          "scope": "approved subjective walking insert",
+          "source_id": "recent_user_excerpts",
+          "status": "USER_CORRECTION",
+          "value": "Krishna leads; Naina follows. Krishna anatomical RIGHT hand holds Naina LEFT. Naina RIGHT supports @canvas-travel-bag at RIGHT hip. Maintain relaxed contact without pulling; omit the stick only within this approved insert. Crowd does not perceive Krishna.",
+          "relative_gap": "Use active selected-shot instruction; no universal fixed numerical gap adopted."
+        },
+        {
+          "value": "For the corrected seated porch view, Naina sits cross-legged inward on screen-left; crowd is blurred on screen-right; a few steps then temple behind. Do not apply screen placement to every reverse.",
+          "source_id": "recent_user_excerpts",
+          "scope": "corrected seated porch view",
+          "status": "USER_CORRECTION"
+        }
+      ],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING",
+      "profile_history": [
+        {
+          "character_id": "naina",
+          "name": "Naina",
+          "exact_identity_tag": "@naina-01",
+          "profile_version": 1,
+          "completeness": "PARTIAL",
+          "movement_baseline": [
+            {
+              "value": "Natural measured navigation and balanced support; modest cane sweep/probe only when the stick is present. Confirm footing by touch before transferring weight at level changes.",
+              "source_id": "director_current",
+              "scope": "project",
+              "status": "SAVED_CONTEXT"
+            }
+          ],
+          "speaking_action": [],
+          "listening_response": [
+            {
+              "value": "Use hearing/touch for attention; no invented visual tracking of bag, idol, floor or camera. General upright listening posture; shot-specific softly lowered eyes/chin instructions stay scoped.",
+              "source_id": "director_current",
+              "scope": "project",
+              "status": "SAVED_CONTEXT"
+            }
+          ],
+          "look_and_identity_constraints": [
+            {
+              "value": "Eight-year-old blind girl. Preserve active approved face, costume and eye reference; clean hands without birthmark/stain/scar/tattoo.",
+              "source_id": "director_current",
+              "scope": "project",
+              "status": "SAVED_CONTEXT"
+            }
+          ],
+          "scene_overrides": [
+            {
+              "scope": "approved subjective walking insert",
+              "source_id": "recent_user_excerpts",
+              "status": "USER_CORRECTION",
+              "value": "Krishna leads; Naina follows. Krishna anatomical RIGHT hand holds Naina LEFT. Naina RIGHT supports @canvas-travel-bag at RIGHT hip. Maintain relaxed contact without pulling; omit the stick only within this approved insert. Crowd does not perceive Krishna.",
+              "relative_gap": "Use active selected-shot instruction; no universal fixed numerical gap adopted."
+            },
+            {
+              "value": "For the corrected seated porch view, Naina sits cross-legged inward on screen-left; crowd is blurred on screen-right; a few steps then temple behind. Do not apply screen placement to every reverse.",
+              "source_id": "recent_user_excerpts",
+              "scope": "corrected seated porch view",
+              "status": "USER_CORRECTION"
+            }
+          ],
+          "unknown_fields": [
+            "habitual vocal pitch",
+            "usual pace and dialect",
+            "signature talking gesture",
+            "relationship-specific performance",
+            "complete arc from current screenplay"
+          ],
+          "asset_inspection": "PENDING",
+          "profile_history": []
+        }
+      ]
+    },
+    {
+      "character_id": "bal_krishna",
+      "name": "Bal Krishna",
+      "exact_identity_tag": "@bal-krishna-default",
+      "profile_version": 1,
+      "completeness": "PARTIAL",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [
+        {
+          "value": "Keep manifested Bal Krishna distinct from the brass idol and human Gopal; ordinary villagers cannot see him. Preserve current approved identity/costume rather than inventing appearance changes.",
+          "source_id": "director_current",
+          "scope": "project",
+          "status": "SAVED_CONTEXT"
+        }
+      ],
+      "scene_overrides": [
+        {
+          "scope": "approved subjective walking insert",
+          "source_id": "recent_user_excerpts",
+          "status": "USER_CORRECTION",
+          "value": "Krishna leads; Naina follows. Krishna anatomical RIGHT hand holds Naina LEFT. Naina RIGHT supports @canvas-travel-bag at RIGHT hip. Maintain relaxed contact without pulling; omit the stick only within this approved insert. Crowd does not perceive Krishna.",
+          "relative_gap": "Use active selected-shot instruction; no universal fixed numerical gap adopted."
+        }
+      ],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "human_gopal",
+      "name": "Human friend Gopal",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [
+        {
+          "value": "Distinct human child, not the manifested Krishna or brass idol; age/appearance require current screenplay/reference confirmation.",
+          "source_id": "director_current",
+          "scope": "project",
+          "status": "SAVED_CONTEXT"
+        }
+      ],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "gardener",
+      "name": "Gardener",
+      "exact_identity_tag": "@gardener-default",
+      "profile_version": 1,
+      "completeness": "PARTIAL",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [
+        {
+          "value": "Flower-bearing gardener uses @woven-bamboo-basket for marigolds. This action/occupation is not proof of a habitual gesture.",
+          "source_id": "director_current",
+          "scope": "Scene 1 continuation",
+          "status": "SAVED_CONTEXT"
+        }
+      ],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "mukund",
+      "name": "Mukund",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [
+        {
+          "value": "Requested face approximately age 35, slightly receding/thinning hair; retain approved costume and shoulder cloth. Side bag removal belongs to the corrected character sheet.",
+          "source_id": "recent_user_excerpts",
+          "scope": "Mukund corrected reference sheet",
+          "status": "USER_CORRECTION"
+        }
+      ],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "pooja",
+      "name": "Pooja",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "nandu",
+      "name": "Nandu",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "sharda",
+      "name": "Sharda",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "avdhesh",
+      "name": "Avdhesh",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "vikram",
+      "name": "Vikram",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "dinbandhu",
+      "name": "Dinbandhu",
+      "exact_identity_tag": null,
+      "profile_version": 1,
+      "completeness": "PENDING",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    },
+    {
+      "character_id": "villagers",
+      "name": "Villagers / generic crowd",
+      "exact_identity_tag": "@villagers",
+      "profile_version": 1,
+      "completeness": "PARTIAL",
+      "movement_baseline": [],
+      "speaking_action": [],
+      "listening_response": [],
+      "look_and_identity_constraints": [],
+      "scene_overrides": [
+        {
+          "value": "Exactly ten distinct people in the requested UP crowd sheet; differentiated faces/eyes/clothes, no text. This is not a ten-person cap on every crowd scene.",
+          "source_id": "recent_user_excerpts",
+          "scope": "ten-person UP crowd sheet",
+          "status": "USER_CORRECTION"
+        }
+      ],
+      "unknown_fields": [
+        "habitual vocal pitch",
+        "usual pace and dialect",
+        "signature talking gesture",
+        "relationship-specific performance",
+        "complete arc from current screenplay"
+      ],
+      "asset_inspection": "PENDING"
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "idol",
+      "tag": "@laddu-gopal-idol",
+      "design": {
+        "value": "Small dressed brass Laddu Gopal idol; approved scale/design and peacock feather remain consistent.",
+        "source_id": "director_current",
+        "scope": "project",
+        "status": "SAVED_CONTEXT"
+      },
+      "states": [],
+      "asset_binding_status": "PENDING"
+    },
+    {
+      "prop_id": "naina_bag",
+      "tag": "@canvas-travel-bag",
+      "design": {
+        "value": "Naina travel bag; preserve exact visible tag and design.",
+        "source_id": "director_current",
+        "scope": "project",
+        "status": "SAVED_CONTEXT"
+      },
+      "states": [
+        {
+          "value": "Right hand/right hip during approved guided walk.",
+          "source_id": "director_current",
+          "scope": "approved walking insert",
+          "status": "SAVED_CONTEXT"
+        }
+      ],
+      "asset_binding_status": "PENDING"
+    },
+    {
+      "prop_id": "stick",
+      "tag": "@wooden-stick",
+      "design": {
+        "value": "Thin, slightly naturally bent wooden navigation stick; preserve current reference.",
+        "source_id": "recent_user_excerpts",
+        "scope": "project",
+        "status": "SAVED_CONTEXT"
+      },
+      "states": [
+        {
+          "value": "Presence is shot-specific; no universal removal or addition.",
+          "source_id": "recent_user_excerpts",
+          "scope": "project",
+          "status": "SAVED_CONTEXT"
+        }
+      ],
+      "asset_binding_status": "PENDING"
+    },
+    {
+      "prop_id": "idol_basket",
+      "tag": null,
+      "design": {
+        "value": "Approved ornate basket supporting the idol in the seated/lap beat; exact tag pending. Do not substitute gardener basket.",
+        "source_id": "recent_user_excerpts",
+        "scope": "project",
+        "status": "SAVED_CONTEXT"
+      },
+      "states": [],
+      "asset_binding_status": "PENDING"
+    },
+    {
+      "prop_id": "flower_basket",
+      "tag": "@woven-bamboo-basket",
+      "design": {
+        "value": "Gardener marigold basket, a separate physical prop.",
+        "source_id": "director_current",
+        "scope": "project",
+        "status": "SAVED_CONTEXT"
+      },
+      "states": [],
+      "asset_binding_status": "PENDING"
+    },
+    {
+      "prop_id": "nandu_rickshaw",
+      "tag": null,
+      "design": {
+        "value": "Indian rickshaw with makeup stock, accelerator kalava, plate UP 13AF2452 with final 52 faded.",
+        "source_id": "location_current",
+        "scope": "Nandu rickshaw prop",
+        "status": "SAVED_CONTEXT"
+      },
+      "states": [],
+      "asset_binding_status": "PENDING"
+    }
+  ],
+  "locations": [
+    {
+      "tag": "@krishna-temple.stairs.front-view",
+      "zone": "stairs",
+      "view": "front-view",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "12-stairs/01-stairs.front-view.png",
+      "sha256": "c202aa30e382011a96d8279e65413e71affe00de80a84c0b22f5b834c9fb3b8b",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.stairs.background",
+      "zone": "stairs",
+      "view": "background",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "12-stairs/02-stairs.background.png",
+      "sha256": "afcdc6f0a5b698451333c0948e766bb124112ed34e7107ec1314d2d19e3e9118",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.stairs.left-side",
+      "zone": "stairs",
+      "view": "left-side",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "12-stairs/03-stairs.left-side.png",
+      "sha256": "4cb9929aa3db4905cc63e288fba4eb26f1e0a49b98a45fa009af6d4bb459c8d5",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.stairs.right-side",
+      "zone": "stairs",
+      "view": "right-side",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "12-stairs/04-stairs.right-side.png",
+      "sha256": "517b448e2fc69f561a1a3a47116528b01c82a640bd6ef8c2d6aad809971161d2",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.stairs.ground",
+      "zone": "stairs",
+      "view": "ground",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "12-stairs/05-stairs.ground.png",
+      "sha256": "5aa0c2929b8b65a4c2c67878a222c25d69e608e78ed7a1a2a8265cd4f338887c",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.stairs.sky-overhead",
+      "zone": "stairs",
+      "view": "sky-overhead",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "12-stairs/06-stairs.sky-overhead.png",
+      "sha256": "50f620c5757da3344d163b4e0ae2e37efeb02b75374abac9e440f8b6885c6d38",
+      "qc_status": "REVIEW_REQUIRED_CAMERA"
+    },
+    {
+      "tag": "@krishna-temple.sanctum.front-wall",
+      "zone": "sanctum",
+      "view": "front-wall",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "15-sanctum/01-sanctum.front-wall.png",
+      "sha256": "c2e71c5803d7171d77d6ed17c2d8b8a553654384955bbce36c8dd308f183fe09",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.sanctum.back-wall",
+      "zone": "sanctum",
+      "view": "back-wall",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "15-sanctum/02-sanctum.back-wall.png",
+      "sha256": "b64a97c2e901389dee7c69f8bf8aeadb405e877a6adda83fecb57a9be7564b80",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.sanctum.left-wall",
+      "zone": "sanctum",
+      "view": "left-wall",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "15-sanctum/03-sanctum.left-wall.png",
+      "sha256": "0167896e3ea3083fe0dd06b014b7905c177a78ffefe0a59c7d8c79008c99cce7",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.sanctum.right-wall",
+      "zone": "sanctum",
+      "view": "right-wall",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "15-sanctum/04-sanctum.right-wall.png",
+      "sha256": "1cbf00367e4e4fc1bc5a6baeced7729c0b2587afe08210c032aefee05601ad76",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.sanctum.floor",
+      "zone": "sanctum",
+      "view": "floor",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "15-sanctum/05-sanctum.floor.png",
+      "sha256": "c0ec62b7ae62aa78bf219febe6315df298f10b2c574278cd9be7536221d80733",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.sanctum.ceiling",
+      "zone": "sanctum",
+      "view": "ceiling",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "15-sanctum/06-sanctum.ceiling.png",
+      "sha256": "3fe790a0db4d3c8f068e0499b7a7ffe9f2df922d75cbd9c4a479d4ff28805a3f",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.outer-steps.front-view",
+      "zone": "outer-steps",
+      "view": "front-view",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "03-outer-steps/01-outer-steps.front-view.png",
+      "sha256": "9e3efbdb2b4108bdfb631eb578f3fa73d7dea88758b1f6fc44d0f5154169f356",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.outer-steps.background",
+      "zone": "outer-steps",
+      "view": "background",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "03-outer-steps/02-outer-steps.background.png",
+      "sha256": "87a7d9130a7b3b152f555f0d9202aab0c0d4ebc1b93f92a59c9dd65157622a06",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.outer-steps.left-side",
+      "zone": "outer-steps",
+      "view": "left-side",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "03-outer-steps/03-outer-steps.left-side.png",
+      "sha256": "2e9ce44f0d6d6eedd40d50a3857e28f0fbcc457e64acd3f6b100fbceb3e75d71",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.outer-steps.right-side",
+      "zone": "outer-steps",
+      "view": "right-side",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "03-outer-steps/04-outer-steps.right-side.png",
+      "sha256": "229f4dfa55417d7f377d39b881cd5431a637c1086569b364f0e3c9d4bb929fa5",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.outer-steps.ground",
+      "zone": "outer-steps",
+      "view": "ground",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "03-outer-steps/05-outer-steps.ground.png",
+      "sha256": "e04eda2675e88866df68d7088de37504fb1475873fa8c635f50e4fb70d67aabc",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.outer-steps.sky-overhead",
+      "zone": "outer-steps",
+      "view": "sky-overhead",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "03-outer-steps/06-outer-steps.sky-overhead.png",
+      "sha256": "1ea505b31c10ca960bfbd1cc04c096a9c647f4af825699f3798eb9262dcaf6ee",
+      "qc_status": "REVIEW_REQUIRED_CAMERA"
+    },
+    {
+      "tag": "@krishna-temple.courtyard.front-view",
+      "zone": "courtyard",
+      "view": "front-view",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "04-courtyard/01-courtyard.front-view.png",
+      "sha256": "ab18cdb6d81f2578da804845091e6504a0b2ca34afa685816a50c85bf192b2e7",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.courtyard.background",
+      "zone": "courtyard",
+      "view": "background",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "04-courtyard/02-courtyard.background.png",
+      "sha256": "b5811af4b617eeb96fb9d28ff924f1ca82badd1e6c426308151c6b925ae63716",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.courtyard.left-side",
+      "zone": "courtyard",
+      "view": "left-side",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "04-courtyard/03-courtyard.left-side.png",
+      "sha256": "fc176f26bd477eac7fb4701523331da52597918041cba57d496db420913cacb9",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.courtyard.right-side",
+      "zone": "courtyard",
+      "view": "right-side",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "04-courtyard/04-courtyard.right-side.png",
+      "sha256": "713ad9dcd8f76237d95e798260a8591aa95528c727a714d91bbe5cdd7351e17e",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.courtyard.ground",
+      "zone": "courtyard",
+      "view": "ground",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "04-courtyard/05-courtyard.ground.png",
+      "sha256": "04bfc4f7aee06ec135e74420d4168a37b1049408563b559629b091f6fddc8ea0",
+      "qc_status": "VISUALLY_REVIEWED_REFERENCE_BASED"
+    },
+    {
+      "tag": "@krishna-temple.courtyard.sky-overhead",
+      "zone": "courtyard",
+      "view": "sky-overhead",
+      "source_id": "director_current",
+      "asset_binding_status": "GENERATED_REVIEW_REFERENCE_NOT_USER_APPROVED",
+      "geometry_status": "REFERENCE_GUIDED_NOT_SHARED_3D_VERIFIED",
+      "active_location_design_record": "krishna-temple/final-master-v01",
+      "reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip",
+      "relative_file": "04-courtyard/06-courtyard.sky-overhead.png",
+      "sha256": "ecaf57209be75cc1f58297c55594904cd138462c5af01fccc9de6cbfa075a2da",
+      "qc_status": "REVIEW_REQUIRED_CAMERA"
+    }
+  ],
+  "scoped_locks": [
+    {
+      "value": "Match original supplied screenshot colour tone in repairs; inspect the actual reference before claiming colour compliance.",
+      "source_id": "recent_user_excerpts",
+      "scope": "project",
+      "status": "SAVED_CONTEXT"
+    },
+    {
+      "value": "Gate exterior connects to broad road and UP village rather than immediate jungle. Banyan remains at inner left gate corner in approved gate-relative orientation. Camera reversal must not mirror world geometry.",
+      "source_id": "location_current",
+      "scope": "project",
+      "status": "SAVED_CONTEXT"
+    },
+    {
+      "value": "Requested wall-only courtyard pack excludes temple by valid framing, not by deleting temple from world.",
+      "source_id": "location_current",
+      "scope": "six wall-only courtyard views",
+      "status": "SAVED_CONTEXT"
+    },
+    {
+      "value": "A locked dialogue shot retains camera/framing/focus and exact supplied words; direct only pose-compatible performance.",
+      "source_id": "recent_user_excerpts",
+      "scope": "camera-locked dialogue shots",
+      "status": "SAVED_CONTEXT"
+    },
+    {
+      "value": "For the identifiable 20 October entrance-ground correction only: exact @krishna-temple.outer-steps.ground and entering @crowd. Exact shot ID unresolved; no global crowd rename.",
+      "source_id": "new_chat_excerpts_2026_10_20",
+      "scope": "20 October entrance-ground source; exact shot ID unresolved",
+      "status": "RETRIEVED_SUMMARY_SCOPE_PENDING"
+    },
+    {
+      "value": "Latest selected22October seated storyboard: Laddu Gopal idol rests supported directly in Naina lap, without the removed basket; preserve miniature scale and idol facing Naina across requested camera angles. Stick stays at the user-marked spot; exact marked geometry pending media. Earlier specifically approved basket shots remain their own versions.",
+      "source_id": "chat_learning_review_20261022",
+      "scope": "Selected22October lap storyboard correction; exact panel/source image pending",
+      "status": "USER_TEXT_LOCK"
+    },
+    {
+      "value": "For requested lap-to-face transition: both hands support the rigid brass idol as Naina raises it to face height; next requested shot uses matching-level manifested Krishna face. Do not animate the brass idol or conflate it with the manifested child. Keep current source location/palette and independent still instants.",
+      "source_id": "chat_learning_review_20261022",
+      "scope": "User-imagined22October idol-lift/matching-face sequence",
+      "status": "USER_TEXT_LOCK"
+    },
+    {
+      "value": "Image/storyboard corrections use motivated dynamic lighting and experiment requests use purposeful varied angles while preserving active final-master palette, lighting geography and character/world continuity. Reference-only setup and unrelated projects retain their own instructions.",
+      "source_id": "chat_learning_review_20261022",
+      "scope": "Current image/storyboard correction and experiment workflow",
+      "status": "USER_TEXT_LOCK"
+    },
+    {
+      "value": "Every executable visual prompt and reference binding contains only the specific frame's actual relevant character/partial-owner/prop and exact location tags. The corrected cart-only case uses @nandu-s-cart and @village-alley.ground only. Preserve explicit offscreen voice routing separately, without introducing its owner into the visual frame; no global crowd or absent-character carryover.",
+      "source_id": "frame_local_qc_20261023",
+      "scope": "Per-shot visual prompt/reference QC, with cart-only example scoped to its source",
+      "status": "USER_TEXT_LOCK"
+    },
+    {
+      "value": "Story context guides intention and continuity internally; each storyboard cell or video clip contains only its required information and exact relevant character/partial-owner/prop/location-view tags and reference inputs. Strict supplied crop/layout/visibility/focus and video endpoints take priority over optional2S/OTS experiments; use a soft edge owner only when relevant and authorized.",
+      "source_id": "chat_learning_review_20261027",
+      "scope": "Storyboard/image/video prompt compilation and QC",
+      "status": "USER_TEXT_LOCK"
+    },
+    {
+      "value": "In the retrieved25October Naina sit/lean/touch beat only, keep one natural continuous action, slow tiny left/right exploratory hand movement, then begin the exact supplied dialogue after touch settles. Exact scene/shot binding and source-media timing remain unresolved; this is not a universal gesture or delay for every Naina line.",
+      "source_id": "chat_learning_review_20261027",
+      "scope": "25October sit/lean/touch-before-dialogue source; exact shot ID unresolved",
+      "status": "RETRIEVED_SUMMARY_SCOPE_PENDING"
+    }
+  ],
+  "unresolved_tag_namespaces": [
+    {
+      "observed_tags": [
+        "@stairs.left-side",
+        "@stairs.ground"
+      ],
+      "possible_full_tags": [
+        "@krishna-temple.stairs.left-side",
+        "@krishna-temple.stairs.ground"
+      ],
+      "status": "PENDING",
+      "rule": "Do not rename or equate namespaces automatically. Use the exact tag approved for the active shot."
+    },
+    {
+      "observed_tags": [
+        "@stairs.front-view",
+        "@baal-krishna"
+      ],
+      "status": "PENDING_GLOBAL_ALIAS_EQUIVALENCE",
+      "rule": "Preserve exact locally supplied strings in the listed shot states; do not equate them with longer stairs or Bal Krishna aliases across other shots."
+    }
+  ],
+  "shot_states": [
+    {
+      "shot_id": "@s4p4s3",
+      "scene": "Scene 4 Panel 4",
+      "source_id": "new_chat_excerpts_2026_10_20",
+      "status": "USER_TEXT_LOCK",
+      "asset_inspection": "PENDING",
+      "source_revision": "Supplied latest per-shot user correction; current full screenplay not rechecked",
+      "character_id": "human_gopal",
+      "exact_visual_tag": "@gopal-02",
+      "exact_dialogue_speaker": "@gopal",
+      "entry_state": "Gopal seated; only Naina side shoulder soft in foreground.",
+      "ordered_beats": [
+        "Stand with supported weight transfer",
+        "Search ahead to his right and left",
+        "Speak teasingly"
+      ],
+      "focus": "Gopal remains primary sharp subject; no full Naina reveal.",
+      "spoken_words": "मुझे वहाँ कोई नहीं दिख रहा। क्या तुम पक्का कोई कहानी नहीं बना रही हो?",
+      "delivery": "Compact English delivery tags; latest explicit teasing intention overrides hesitant/curious only in this shot.",
+      "reference_video": "Motion/visual-language role only; actual video unavailable in this review, matching unverified.",
+      "timing": "Requested 0–10s; actual action/dialogue fit unmeasured.",
+      "boundary": "No global human-Gopal identity/profile or Krishna mapping changed."
+    },
+    {
+      "shot_id": "@s2p6s9",
+      "scene": "Scene 2 Panel 6",
+      "source_id": "new_chat_excerpts_2026_10_20",
+      "status": "USER_TEXT_LOCK",
+      "asset_inspection": "PENDING",
+      "source_revision": "Supplied latest per-shot user correction; current full screenplay not rechecked",
+      "exact_reference_tags": [
+        "@naina-01",
+        "@canvas-travel-bag",
+        "@stairs.front-view"
+      ],
+      "entry_state": "Naina closeup with closed eyes; bag strap at lower edge; stairs softly blurred.",
+      "performance": "Gentle gradually growing smile; loose hair stirred by breeze; eyes stay closed.",
+      "camera": "Slow lens zoom from fixed position; slow-motion visible action; no automatic audio retime.",
+      "boundary": "Closed eyes and smile are shot-specific; no altered blind-eye reference or permanent expression."
+    },
+    {
+      "shot_id": "@s2p6s6",
+      "scene": "Scene 2 Panel 6",
+      "source_id": "new_chat_excerpts_2026_10_20",
+      "status": "USER_TEXT_LOCK",
+      "asset_inspection": "PENDING",
+      "source_revision": "Supplied latest per-shot user correction; current full screenplay not rechecked",
+      "exact_reference_tags": [
+        "@baal-krishna",
+        "@stairs.front-view"
+      ],
+      "performance": "Smile with one mischievous wink toward camera.",
+      "camera": "Gentle zoom plus slow-motion visible action.",
+      "boundary": "Exact local source tag retained; no global identity-tag rename or new villager perception."
+    },
+    {
+      "shot_id": "@s3p6s7",
+      "scene": "Scene 3 Panel 6",
+      "source_id": "new_chat_excerpts_2026_10_20",
+      "status": "USER_TEXT_LOCK",
+      "asset_inspection": "PENDING",
+      "source_revision": "Supplied latest per-shot user correction; current full screenplay not rechecked",
+      "exact_reference_tags": [
+        "@baal-krishna",
+        "@naina-01",
+        "@krishna-temple.courtyard.front-view",
+        "@wooden-stick",
+        "@canvas-travel-bag"
+      ],
+      "entry_state": "Krishna stands at temple doorway, soft OTS shoulder. Naina is already outside walking farther into courtyard.",
+      "contact_and_props": "Stick in anatomical LEFT hand; anatomical RIGHT hand supports bag at RIGHT hip; eyes lowered/unfocused.",
+      "camera": "Hold camera world position behind stationary Krishna shoulder; gentle lens zoom; no crossing/side pass.",
+      "boundary": "Do not replay threshold exit or add stick to different approved stick-free shots."
+    }
+  ],
+  "performance_tracking": {
+    "collection": "Explicitly recorded observations only; no passive monitor exists. Append one entry per substantive run when useful, not one per tool call.",
+    "comparison_status": "NO_MEASURED_SPEED_BASELINE",
+    "definitions": {
+      "wall_time_seconds": "Observed elapsed time for stated measurement extent; null when not measured.",
+      "source_reads": "Count only observed source-read operations; null if unknown.",
+      "repeat_reads": "Repeated unchanged-source reads within the stated task; null if unknown.",
+      "correction_rounds": "Observed user/repair rounds within stated task; null if unknown.",
+      "accepted_shots": "Explicitly accepted outputs, not successful generation count.",
+      "requested_shots": "Requested useful shots, excluding unrequested alternates."
+    },
+    "entries": [
+      {
+        "run_id": "director-workflow-audit-2026-10-16",
+        "kind": "text_contract_and_behavior_review",
+        "source_id": "director_current",
+        "status": "COMPLETED_TEXT_ONLY",
+        "observed_at": "2026-10-16T23:20:16+05:30",
+        "wall_time_seconds": null,
+        "source_reads": null,
+        "repeat_reads": null,
+        "correction_rounds": null,
+        "accepted_shots": null,
+        "requested_shots": null,
+        "literal_cases": 12,
+        "expected_literal_results_matched": 12,
+        "behavioral_text_cases": 3,
+        "media_tests": 0,
+        "notes": "Results recorded in current Director learning review: exact tags/dialogue and three read-only behavioral cases; no visual, temporal, audio or speed-gain claim."
+      },
+      {
+        "run_id": "director-new-chat-review-2026-10-20",
+        "kind": "text_correction_and_behavior_review",
+        "source_id": "new_chat_excerpts_2026_10_20",
+        "status": "COMPLETED_TEXT_ONLY",
+        "observed_at": "2026-10-20T23:39:24.470971+05:30",
+        "wall_time_seconds": null,
+        "source_reads": null,
+        "repeat_reads": null,
+        "correction_rounds": null,
+        "accepted_shots": null,
+        "requested_shots": null,
+        "literal_cases": null,
+        "expected_literal_results_matched": null,
+        "behavioral_text_cases": 7,
+        "media_tests": 0,
+        "notes": "Seven fresh-thread prompt tasks reviewed against supplied user locks. Four scoped shot states added; global cast/props/locations preserved. No measured speed/visual/audio quality claim."
+      },
+      {
+        "run_id": "frame-local-prompt-qc-2026-10-23",
+        "kind": "text_correction_and_behavior_review",
+        "source_id": "frame_local_qc_20261023",
+        "status": "COMPLETED_TEXT_ONLY",
+        "observed_at": "2026-10-23T20:35:05.788773+05:30",
+        "wall_time_seconds": null,
+        "source_reads": null,
+        "repeat_reads": null,
+        "correction_rounds": null,
+        "accepted_shots": null,
+        "requested_shots": null,
+        "literal_cases": 4,
+        "expected_literal_results_matched": 4,
+        "behavioral_text_cases": 3,
+        "media_tests": 0,
+        "notes": "Current-frame inventory enforced across prose/tags/reference roles. Three fresh text tasks and focused boundary review passed. Literal checker alone does not detect an untagged extra character; semantic/input inspection remains required. No media/quality/speed claim."
+      }
+    ]
+  },
+  "pending": [
+    "Current screenplay identity/version and exact cast evidence.",
+    "Unknown habitual movement/voice details for most characters.",
+    "Actual identity/prop/environment source binding and media inspection.",
+    "Measured real task baseline and comparative trial.",
+    "Any cross-agent update still requires an actual read/write; hooks are workflow instructions, not a background syncing service."
+  ],
+  "location_design_records": {
+    "krishna-temple": {
+      "status": "USER_APPROVED_VISUAL_MASTER",
+      "version": "final-master-v01",
+      "approval_evidence": {
+        "status": "USER_APPROVED",
+        "evidence": "ye okay h ye lock kro final. ab ek baar jo jo location or unki sub location banegi uski mapping kro. or list nikalo",
+        "date_local": "2026-10-22",
+        "timezone": "Asia/Kolkata"
+      },
+      "master_sha256": "77c1563c41f1ca96dbaef06d54ffdf841d7a85c32747d76b7bccb6f4d60879b3",
+      "master_file_name": "Krishna-Temple-FINAL-MASTER-v01.png",
+      "mapping_bundle_name": "Krishna-Temple-Final-Master-and-Mapping-v01.zip",
+      "mapping_manifest_name": "Krishna-Temple-Final-Lock-and-Mapping-v01.json",
+      "mapping_bundle_sha256": "ddcfcc043664b72f0fe06152e5b8f8d838a6b61452fa3dabb88ed540ebe5ff5c",
+      "locks": [
+        "Approved exact final image: exec-f46ecac5-0084-427e-bb5c-7cb7f9d4ecc6.png. Earlier images are superseded as overall masters.",
+        "Architecture, elongated main temple, carved arched main gate, broad inner stairs, raised platform and expanded landing locked by explicit user acceptance.",
+        "Landing increased approximately 30% in depth at unchanged width relative to prior source; generated visual approval, not measured geometry.",
+        "Warm dusty taupe / grey-brown weathered stone and warm sunlight follow supplied colour reference.",
+        "No steel queue railing. Banyan inside southwest corner; well east/right; side gate west/left; priest seating rear-right.",
+        "Aerial temple entrance is in deep shadow. The rear idol remains hidden from this camera; only physically valid interior views show it.",
+        "Facing temple from main gate: left=west, right=east. Never mirror world anchors for reverse views.",
+        "New exact metric dimensions, lens/poses and unseen geometry remain provisional. v04 blueprint is planning guidance; revise its affected geometry to approved final master before renders.",
+        "Preserve all 24 exact existing tags. Earlier photographed view assets are reference-only pending reconciliation with final master."
+      ],
+      "coverage_summary": {
+        "parent_locations": 1,
+        "sublocations": 17,
+        "master_images_locked": 1,
+        "planned_reference_views": 73,
+        "existing_tag_views": 24,
+        "proposed_new_tag_views": 49,
+        "new_views_generated_in_this_task": 49,
+        "screenplay_coverage": "Brief and current approved image; screenplay not supplied",
+        "total_generated_views": 73,
+        "remaining_ungenerated_views": 0,
+        "reference_based_reviewed_views": 70,
+        "camera_review_pending_views": 3
+      },
+      "metric_geometry_status": "PENDING_RECONCILIATION_TO_APPROVED_FINAL",
+      "legacy_v04_blueprint_status": "PLANNING_REFERENCE_REQUIRES_REVISION",
+      "production_batches": [
+        {
+          "id": "core24-review-v01",
+          "date_local": "2026-10-22",
+          "bundle_name": "Krishna-Temple-Core24-Review-Pack-v01.zip",
+          "bundle_sha256": "2dd0a730f5f1330c4316b79897d39334c05e18d14c53da8fa19ec73f75ba871d",
+          "generated_views": 24,
+          "reference_based_reviewed_views": 21,
+          "camera_repair_pending_views": 3,
+          "all_views_user_approval": "PENDING",
+          "additional_planned_views": 49,
+          "metric_geometry": "NOT_SHARED_3D_VERIFIED",
+          "pending_tags": [
+            "@krishna-temple.outer-steps.sky-overhead",
+            "@krishna-temple.courtyard.sky-overhead",
+            "@krishna-temple.stairs.sky-overhead"
+          ],
+          "record_file": "Production-Outputs.json"
+        },
+        {
+          "id": "additional49-and-combined73-review-v02",
+          "date_local": "2026-10-22",
+          "bundle_name": "Krishna-Temple-All73-Location-Pack-v02.zip",
+          "bundle_sha256": "301f35f57dffda9e223bb8213500c2e35357f583f969058939d8443e41da2bce",
+          "generated_views_this_batch": 49,
+          "combined_generated_views": 73,
+          "reference_based_reviewed_views": 70,
+          "camera_repair_pending_views": 3,
+          "pending_tags": [
+            "@krishna-temple.outer-steps.sky-overhead",
+            "@krishna-temple.courtyard.sky-overhead",
+            "@krishna-temple.stairs.sky-overhead"
+          ],
+          "individual_view_user_approval": "PENDING",
+          "additional_planned_views": 0,
+          "metric_geometry": "NOT_SHARED_3D_VERIFIED",
+          "record_file": "Production-Outputs-All73.json",
+          "review_notes": "Side passage gate orientation, inside-gate descending exterior steps, misplaced chabutra well and misplaced rear-platform banyan corrected. Nadir guide variants did not preserve both exact camera and identity; retained high overhead previews clearly flagged."
+        }
+      ],
+      "next_action": "All 73 mapped views generated. Review new individual views; three overhead cameras still need exact-nadir repair and shared geometry/fine details remain uncalibrated. Do not treat reference generation as user approval.",
+      "active_reference_pack": "Krishna-Temple-All73-Location-Pack-v02.zip"
+    }
+  },
+  "learning_reviews": [
+    {
+      "reviewed_on": "2026-10-23",
+      "window": "2026-10-20 through2026-10-23",
+      "kind": "explicit_accessible_chat_review",
+      "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+      "current_visual_master_preserved": "77c1563c41f1ca96dbaef06d54ffdf841d7a85c32747d76b7bccb6f4d60879b3",
+      "remaining_media_issues": "Preserve current three exact-nadir repairs, unmeasured geometry and per-view approval gaps; no new completion claim.",
+      "latest_instruction_date": "2026-10-23",
+      "completed_at": "2026-10-23T20:35:05.788773+05:30",
+      "status": "COMPLETED_TEXT_ONLY",
+      "text_checks": {
+        "root_literal_cases": 4,
+        "expected_literal_results_matched": 4,
+        "fresh_prompt_cases": 3,
+        "fresh_boundary_review": "PASS; includes visible partial ownership, explicit crowd, offscreen speech and untagged extra entity rejection",
+        "media_tests": 0,
+        "measured_speed_gain": null
+      },
+      "skill_saves": {
+        "ai-native-director": "a1426c3378b66a64775409563a8f7584c3a73bbb",
+        "ai-location-director": "1704b15c848e28ef6c08f2a06d260e2023395a4f"
+      }
+    },
+    {
+      "reviewed_on": "2026-10-27",
+      "kind": "explicit_partial_chat_learning",
+      "coverage": "Two supported history queries: broad23–27 mostly23October; gap query24–27 returned24–25October. Supplied project/recent-conversation user excerpts cover26–27 and the current direct27October storyboard correction. No full raw-chat archive or original media inspected.",
+      "changes": "Versioned current Naina blind-state performance text and scoped cell/clip compilation/touch-order locks; no inferred keyed shot states.",
+      "current_visual_master_preserved": "77c1563c41f1ca96dbaef06d54ffdf841d7a85c32747d76b7bccb6f4d60879b3",
+      "media_tests": 0,
+      "pending": "Original media, exact25October scene/shot and timing, full screenplay/character traits, current temple repair/geometry gaps remain unverified.",
+      "persistence_reconciled_on": "2026-10-29",
+      "text_validation_extent": "Original prepared-profile/source checks plus final root scoped text self-review; no fresh independent decision table or media inspection."
+    }
+  ]
+}
