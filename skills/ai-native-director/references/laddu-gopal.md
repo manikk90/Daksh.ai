@@ -97,3 +97,11 @@ Use DIR-010 through DIR-012 and DIR-LG-009 through DIR-LG-012 in the learning le
 - `@s2p6s9`: Naina's eyes stay closed, her smile grows gently, loose hair responds to the breeze; slow motion plus a gentle zoom. Keep any visible bag strap bound to `@canvas-travel-bag`. `@s2p6s6`: Bal Krishna smiles and gives one mischievous wink with the requested slow motion/gentle zoom. Preserve each shot's supplied tags, including `@baal-krishna` and `@stairs.front-view` where supplied; do not normalize those strings into project aliases or make either expression every shot's default.
 - `@s3p6s7`: Krishna remains standing at the temple doorway, a soft OTS shoulder in front; Naina is already outside and walks farther into the courtyard. Hold camera position behind the shoulder while gently zooming; no crossing the stationary shoulder and no replay of exiting the threshold. Retain the stick and bag only as specified for this continuation; a different approved stick-free shot remains stick-free.
 - A retrieved 20 October entrance-shot correction binds the ground to `@krishna-temple.outer-steps.ground` and entering people to `@crowd`. The exact shot ID and media were not returned: apply only when that entrance source is identifiable; never globally replace `@village-crowd`, `@villagers` or other crowd tags.
+
+## 1 November 2026 direct prompt locks
+
+- Mukund tag is exactly `@mukund-03`; do not expand it with costume/state suffixes unless Manik explicitly changes the tag.
+- Pooja tag is exactly `@pooja-02`; do not expand it with costume/injury suffixes unless explicitly authorized.
+- Naina's default blind-eye state: eyelids approximately 20% open, eyes lowered/unfocused, no direct eye contact or visual tracking; head turns toward sound/voice. A shot-specific eyelid instruction can override only that shot.
+- Preserve established character/object blocking, facing and prop placement across subsequent panels/shots unless an approved action or explicit correction changes it.
+- Current temple base tag is `@krishna-temple`; use exact approved view parts such as `.front`, `.background`, `.left`, `.right` only when those view tags are actually established for the shot. Do not invent suffixes.

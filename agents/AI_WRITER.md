@@ -186,3 +186,7 @@ Sad beginning -> epic reveal -> flute tail is a local music revision chain. Pres
 - [Source availability note](../missing/AI_WRITER_SOURCE_STATUS.md).
 
 Still missing: complete original Writer entrypoint/reference tree, the active approved full screenplay/version, complete raw source conversations and a current live scheduler receipt. Do not call this an exact skill backup or a completed source restoration. No fake Writer skill.zip has been added.
+
+## Update — 2 November 2026
+
+No recovered installable AI Writer source became available in this run, so no live/source skill edit is claimed. Retain the existing source-language, exact-dialogue, silent-scene and production-bible rules. New handoff boundary: when feeding AI Native Director, provide only frame/shot-relevant visible inventory plus explicitly required offscreen audio; do not force Director video-prompt formatting (including terminal `DIALOGUE`) back into ordinary screenplay formatting. A character's blindness or other perception lock must survive the handoff without inventing visual tracking.

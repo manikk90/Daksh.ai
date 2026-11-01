@@ -103,3 +103,7 @@ Run `python3 scripts/cue_qc.py MANIFEST.json --phase draft` during preparation, 
 - A successful skill-workspace save installs instructions and Ai Dubbing UI metadata. Paid audio, casting, voice training and ElevenAgents deployment are separate states; report them accurately.
 
 For model/interface controls, dubbing settings or pronunciation capability research, read `references/interface-specific-controls.md`; preserve its unresolved documentation conflicts and account/route boundaries.
+
+## 1 November 2026 dialogue-tag default
+
+When Manik supplies dialogue for a dubbing or Director handoff, proactively improve the **inline emotion/voice delivery tags** even if he does not explicitly ask. Preserve the dialogue words, punctuation, order and speaker token unless he asks for a rewrite. Tune tone, emotion, pacing, breath, pauses, hesitation, confidence/manipulation and delivery to the scene beat. Keep platform/model support distinct from creative direction: a useful tag suggestion is not proof that a specific endpoint accepts it or that the rendered take sounds correct.

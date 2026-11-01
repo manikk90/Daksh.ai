@@ -138,3 +138,9 @@ Refs (continuity): @naina-01 @wooden-stick @krishna-temple.outer-steps.ground
 Runway-style motion-only compilation of that shot, if the start frame actually supports it: The girl probes the next stone step with her cane, then takes one measured upward step. A ground-level camera tracks beside her foot; focus follows the planted foot and cane tip. Background stays soft.
 
 QC before delivery: each cell/clip's necessary information and exact tag/input set; no scene-wide context leakage; strict-frame crop/layout/inventory/focus and endpoint compliance; exact tag strings and asset binding; active costume/prop source; exact dialogue and performance intent; correct scene/instant and valid input pose; no premature reveal; frame height/angle actually visible; primary action/contact evidence readable; focus target explicit; camera versus subject motion separate; optical/physical compatibility; anatomical hand ownership/support; axis/light; one coherent action beat; model/audio workflow checked; adjacent edit state matches; no claimed generation, measured sync or native dimensions without evidence.
+
+### 1 November shortcut expansion
+
+`fx c` is the composition-only branch of `fx`: keep the scene beat and locked blocking, but boldly redesign framing, viewpoint, geometry, depth, focus, crowd readability and motivated lighting. It requires a visual preview before the revised prompt. Preview means actual cinematic reference-frame images/thumbnails, not ASCII or a text diagram.
+
+`ah`, `dh`, `ah+dh`, and `ch` are priority modifiers. `dh` also refines emotion/voice tags automatically while preserving exact dialogue wording. `ch` cannot override a locked STATIC camera. `fm + dh` keeps the supplied frame and allows only restrained compatible handheld tremor unless the user requests a camera change. The dialogue block remains the absolute final content of a video prompt.

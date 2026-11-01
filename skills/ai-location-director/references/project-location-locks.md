@@ -54,3 +54,7 @@ Personal Context returned user source `2026-10-27T19:14:32Z` (28 October IST): `
 ## 26 October selected bike-removal images
 
 The supplied "Bike removal update" explicitly asks for bikes removed only in six selected images and their final frames, with no storyboard. Apply `loc-feedback-025`: use the direct image-edit branch, preserve unrequested content and the actual source crop/light/layout, and return edited image artifacts after execution and inspection. This does not remove bikes project-wide or silently supersede the 25 October courtyard reference. A newer removal overrides that bike state only if the exact courtyard image is among the selected targets or separately authorized. The six original images are unavailable in this review; no edit, visual preservation or delivery is verified here.
+
+## 1 November 2026 Krishna temple tag routing
+
+For the current Laddu Gopal workflow, the base location tag is `@krishna-temple`. Use exact approved view-part suffixes such as `.front`, `.background`, `.left`, `.right` only when that view is established by the source/project record. Do not invent a new orientation merely to make a prompt read better. Preserve shot-to-shot physical geography and hand off the exact current view tag to AI Native Director.

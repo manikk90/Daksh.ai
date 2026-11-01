@@ -202,3 +202,17 @@ Return a final assembly map for supplemental/replacement coverage: narrative ord
 Do not evade safety safeguards or endlessly rewrite a rejected request. When permitted, propose a materially different alternative that removes the affected depiction; preserve the story only to the degree the alternative actually covers it. Explain omitted beats and keep them pending. Never diagnose an unspecified rejection category as a particular frame with certainty, or call the scene complete after omitting essential action.
 
 For actual reference-input preparation or suspected generation reframing, use `references/reference-input-preflight.md`; preserve opening/final-reference roles and the approved frame.
+
+## 2 November 2026 shorthand and preview overrides
+
+These direct user corrections supersede older generic revision behavior in their scope:
+
+- `fx c` = composition-focused fix/rethink. Reassess shot size, viewpoint, geometry, foreground/midground/background, focus/depth, crowd readability and motivated lighting while preserving exact tags, identity, approved blocking, location, dialogue and strict-frame locks. **Always show a real visual composition preview first** for `fx c`: use representative cinematic reference-frame thumbnails/images, not ASCII, diagrams or a generated infographic/contact sheet. Then give the copy-ready prompt.
+- `fx` = full composition-level rethink for the supplied shot(s), still preserving continuity locks and exact tags.
+- `ah` = action/acting-heavy; prioritize blocking, physical acting and natural micro-expressions.
+- `dh` = dialogue-heavy; prioritize delivery, pauses, breath, lip-sync and dialogue-linked micro-expressions. Improve inline emotion/voice tags automatically when dialogue tags are in scope, without changing supplied dialogue wording unless requested.
+- `ah+dh` = integrate both action and dialogue priorities.
+- `ch` = camera-heavy; specify motivated camera start/path/speed/angle/lens/focus/end composition. Never override explicit STATIC or strict frame-match locks.
+- `fm` = strict supplied-frame match. Preserve crop/composition, identity, pose baseline, lighting, background and locked camera. With `fm + dh`, keep camera motion restrained to frame-compatible tremor unless the user explicitly authorizes more.
+
+For visual previews, "preview" means actual cinematic reference images/thumbnails shown before the prompt. Do not substitute a text-only sketch. Preserve established physical blocking across panels unless a user explicitly changes it. For Laddu Gopal keep `@mukund-03` and `@pooja-02` exact. Naina remains blind-specific: eyelids about 20% open by default, eyes lowered/unfocused, no direct eye contact or visual tracking, head oriented toward sound/voice unless the shot explicitly sets a different eyelid state.

@@ -2,6 +2,11 @@
 
 **Private working export | 1 November 2026**
 
+> **Latest: V5 (2 November 2026).** `agents/` aur `skills/` ab V5 wale hain: AI Fashion Campaigner (`agents/AI_FASHION_CAMPAIGNER.md`, `skills/fashion-campaign-director/`) add hua, aur Native Director, Dubbing, Socials, Location, Music, Suno, Daksh, maniik update hue. Details: [V5 update report](reports/V5_UPDATE_REPORT.md), [V5 QA](reports/V5_QA_REPORT.md), [official research](research/OFFICIAL_RESEARCH_2026-11-02.md), [V5 manifest](reports/V5_MANIFEST.json).
+>
+> Baaki folders (`audit/`, `runtime_state/`, `mapping/`, `skill_packages/`, `verification/`, `previous_v2_summaries/`, `original_dossier/`) v3 snapshot hain. `skill_packages/*.zip` aur `verification/FILE_HASHES.json` V5 se update nahi hue, isliye V5 files ke liye `reports/V5_MANIFEST.json` ke hashes use karo.
+
+
 V2 ke source folders complete the, lekin main agent MDs short summaries the. V3 mein main dossiers expand kiye hain, scope/wording errors fix kiye hain aur actual dated memory/project records add kiye hain. AI Writer ka exact source abhi bhi missing hai; uski file clearly reconstructed hai.
 
 ## Start here

@@ -1,5 +1,11 @@
 # Daksh | Master Agent | Consolidated MD v3
 
+## V4 routing addition: AI Fashion Campaigner
+
+Fashion campaign, editorial, lookbook aur styling briefs ko **AI Fashion Campaigner** (`fashion-campaign-director`) par route karo. Current export routing `mapping/effective_agent_registry.json` mein hai. The unchanged older registry quoted below is historical source; it does not include this new role. Relevant update requests cover this agent, its mapped skill, rules/hacks and actually affected handoffs. Do not add a timer or claim live installation.
+
+See [new agent dossier](AI_FASHION_CAMPAIGNER.md). The source modules below remain preserved from the v3 audit.
+
 **Snapshot:** 1 November 2026. **Status:** source-backed documentation export, not live deployment.
 
 Is file mein short summary ke saath poore available Markdown instruction modules aur saved lesson records consolidate kiye gaye hain. Original source files skills/daksh/ mein unchanged hain. Scripts, templates, structured data aur full historical ledgers ka complete index end mein hai.
@@ -1181,3 +1187,7 @@ Code, fixtures, schemas and JSON files are preserved, not claimed executed by th
 Original skill files and individual skill.zip archives are unchanged. This v3 changes documentation, adds recovered dated runtime records and records the audit. It does not install these latest overlay rules into the live skills. No actual image/audio/video QC, private inbox scan, paid request, scheduler mutation or independent worker review ran.
 
 See [audit report](../audit/AUDIT_REPORT.md), [coverage matrix](../audit/COVERAGE_MATRIX.md), [dependencies](../DEPENDENCIES_AND_LIMITS.md) and [mapping](../AGENT_SKILL_MAP.md).
+
+## Update — 2 November 2026
+
+Added standing update semantics, Fashion routing, and manual all-agent roster. Scheduled timers unchanged.

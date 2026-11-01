@@ -1,0 +1,1227 @@
+{
+  "bundle": "Manik_v5_Main_Files",
+  "skill_folders": [
+    "ai-dubbing",
+    "ai-location-director",
+    "ai-music-director",
+    "ai-native-director",
+    "ai-socials",
+    "daksh",
+    "fashion-campaign-director",
+    "maniik",
+    "suno-instrumental-prompts"
+  ],
+  "agent_md_files": [
+    "AI_DUBBING.md",
+    "AI_FASHION_CAMPAIGNER.md",
+    "AI_LOCATION_DIRECTOR.md",
+    "AI_MUSIC_DIRECTOR.md",
+    "AI_NATIVE_DIRECTOR.md",
+    "AI_SOCIALS.md",
+    "AI_WRITER.md",
+    "DAKSH_MASTER.md",
+    "MANIIK_WORKFLOW.md",
+    "SUNO_PROMPT_HELPER.md"
+  ],
+  "research_files": [
+    "OFFICIAL_RESEARCH_2026-11-02.md"
+  ],
+  "report_files": [
+    "OFFICIAL_RESEARCH_2026-11-02.md",
+    "V5_QA_REPORT.md",
+    "V5_UPDATE_REPORT.md"
+  ],
+  "file_count": 238,
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 682,
+      "sha256": "760aa401e1fa89823d6ae0f7548d34c66b13750d2ae3018096c2ef306c812bad"
+    },
+    {
+      "path": "agents/AI_DUBBING.md",
+      "size_bytes": 104106,
+      "sha256": "f48c719f4a8e8689925690556c786c928dece8633d80e5251d0d50a4ee986edf"
+    },
+    {
+      "path": "agents/AI_FASHION_CAMPAIGNER.md",
+      "size_bytes": 55208,
+      "sha256": "99c75906bd96fd5b4731dd9b9e31aabea7f8867829df146d6635084fa430c17e"
+    },
+    {
+      "path": "agents/AI_LOCATION_DIRECTOR.md",
+      "size_bytes": 237674,
+      "sha256": "21b52302ec3453fb5102973d5aea16915d496006d88b62e0c3557f2e9aaa708e"
+    },
+    {
+      "path": "agents/AI_MUSIC_DIRECTOR.md",
+      "size_bytes": 110005,
+      "sha256": "15b76c54ad111d149f03eb7f80c1afe8f06e8622b4044590d15168ecf2832d01"
+    },
+    {
+      "path": "agents/AI_NATIVE_DIRECTOR.md",
+      "size_bytes": 402333,
+      "sha256": "fa59f797562a2ba61c7690ada142204c6ada78be7976fa4ec492d8501f9071a8"
+    },
+    {
+      "path": "agents/AI_SOCIALS.md",
+      "size_bytes": 122673,
+      "sha256": "5a31d8fb18625e77a626ea9d91e08968380652d1ee25d297ff3eab292b2ee5a4"
+    },
+    {
+      "path": "agents/AI_WRITER.md",
+      "size_bytes": 20301,
+      "sha256": "7e3119209f4a631a3a3a2fc20ac4bc60d689222189394a770fd443231277ae9a"
+    },
+    {
+      "path": "agents/DAKSH_MASTER.md",
+      "size_bytes": 104721,
+      "sha256": "abb6ae15580497c7fa459220c70c549c98a14a066f89472bd8de7e0875d398f4"
+    },
+    {
+      "path": "agents/MANIIK_WORKFLOW.md",
+      "size_bytes": 29800,
+      "sha256": "e16d6babfec56b06d8a9a35ecef364a16e6e86fb61d206b94612fc2e0f2fdbef"
+    },
+    {
+      "path": "agents/SUNO_PROMPT_HELPER.md",
+      "size_bytes": 15606,
+      "sha256": "6328d144435a7374d7be80d479675183656116915ed42ffae1c4cdf5a4af1cd3"
+    },
+    {
+      "path": "reports/OFFICIAL_RESEARCH_2026-11-02.md",
+      "size_bytes": 2020,
+      "sha256": "41282d184149713ec17d4b94ca1111cb09a804f4157a2e7a9b38db9ca78b5152"
+    },
+    {
+      "path": "reports/V5_QA_REPORT.md",
+      "size_bytes": 1307,
+      "sha256": "1eee5711d2982eae880d0a39f264f1a5886606c2617d26a7df5b216109e7a68c"
+    },
+    {
+      "path": "reports/V5_UPDATE_REPORT.md",
+      "size_bytes": 1764,
+      "sha256": "2e22b876e6ae7676a4a6f788a98aa2f77a6794f3b2ab1b0473a10dd7653b3b8e"
+    },
+    {
+      "path": "research/OFFICIAL_RESEARCH_2026-11-02.md",
+      "size_bytes": 2020,
+      "sha256": "41282d184149713ec17d4b94ca1111cb09a804f4157a2e7a9b38db9ca78b5152"
+    },
+    {
+      "path": "skills/AI_WRITER_SOURCE_STATUS.md",
+      "size_bytes": 392,
+      "sha256": "fd0889fe6a8391269d43cb36f3d8e6d2c47e40de6224551301a6255576558c22"
+    },
+    {
+      "path": "skills/ai-dubbing/SKILL.md",
+      "size_bytes": 15778,
+      "sha256": "9ef792936d427c0284820169e54158d3c69f52e939999f5a0940482d40311039"
+    },
+    {
+      "path": "skills/ai-dubbing/agents/openai.yaml",
+      "size_bytes": 416,
+      "sha256": "52fe1cbf5cac44f5d8682de79d80633675f878eb4fc5debff5cc6b258e0e8121"
+    },
+    {
+      "path": "skills/ai-dubbing/assets/dubbing-manifest.example.json",
+      "size_bytes": 2728,
+      "sha256": "8b0bc9ebbb0e68d6557f594b25a54f14a6cc4809b637c1e2ada99da792bdbe97"
+    },
+    {
+      "path": "skills/ai-dubbing/assets/icon.svg",
+      "size_bytes": 786,
+      "sha256": "72343cc4b66256ae7de8474c7cad14e711ad84a94c473732a44f96a56124c42d"
+    },
+    {
+      "path": "skills/ai-dubbing/assets/learning-ledger.json",
+      "size_bytes": 25287,
+      "sha256": "9a14b8ce18999d2a967c598835e383fd08a4883f8636af612b89d1aa277ab1a3"
+    },
+    {
+      "path": "skills/ai-dubbing/assets/learning-runtime.json",
+      "size_bytes": 14043,
+      "sha256": "f03cef54d52fbb1b7b9aed03c44acd0516f8eaaa12324ab999193c9a7aa6e42f"
+    },
+    {
+      "path": "skills/ai-dubbing/assets/performance-cues.json",
+      "size_bytes": 1766,
+      "sha256": "0ba2461a4735b3eb6b36725387db680b71b39353f77028bc3f053a2d14b223c6"
+    },
+    {
+      "path": "skills/ai-dubbing/references/continuous-learning.md",
+      "size_bytes": 7259,
+      "sha256": "f06121e7c92444e603ed5b315f741cda459d8d3df66c013970e3ac35d50ffc81"
+    },
+    {
+      "path": "skills/ai-dubbing/references/fast-performance.md",
+      "size_bytes": 7577,
+      "sha256": "a516bf1e188a1ab41cdcd40e89529964879e8aa75ad42626930d1304d3874c6c"
+    },
+    {
+      "path": "skills/ai-dubbing/references/interface-specific-controls.md",
+      "size_bytes": 2925,
+      "sha256": "5dc25e720bcd65b6c0647135aafef3cadf58af4ec6184700ca6aa822d469dfba"
+    },
+    {
+      "path": "skills/ai-dubbing/references/research-and-playbook.md",
+      "size_bytes": 40168,
+      "sha256": "31c1a1029d68d4077a69d79b243ea744c5ddf0a6cf3d7a6f7c8f4b2ac2897824"
+    },
+    {
+      "path": "skills/ai-dubbing/references/workflow-contract.md",
+      "size_bytes": 10209,
+      "sha256": "dc4c9db44e8fdcbb666d43f8cfb76972afa6bc7d5e135f0b570f8b52d54882d7"
+    },
+    {
+      "path": "skills/ai-dubbing/scripts/cue_qc.py",
+      "size_bytes": 12909,
+      "sha256": "c1d57020efc63e9759848977844960ad3f43a6291aedd8d56850c24425de5ca5"
+    },
+    {
+      "path": "skills/ai-dubbing/scripts/dialogue_request_qc.py",
+      "size_bytes": 3053,
+      "sha256": "6277cc731234fd6df057293c059f4fbf14a0d170ccea164070bb18af10227925"
+    },
+    {
+      "path": "skills/ai-dubbing/scripts/test_cue_qc.py",
+      "size_bytes": 8719,
+      "sha256": "4b6abad67232432188f28a12d76f0e0be8d2c4eab42814c09e73996a0d1cb9b9"
+    },
+    {
+      "path": "skills/ai-dubbing/scripts/test_dialogue_request_qc.py",
+      "size_bytes": 3990,
+      "sha256": "3f8d03203eca882c81c7c6df2d1885745f62e413ecf4a04867f7577a47dca659"
+    },
+    {
+      "path": "skills/ai-location-director/SKILL.md",
+      "size_bytes": 25397,
+      "sha256": "f7d4d117c78a43f088dacd08b559ee81efa14c67ae3925bfd8f83402410f3ca1"
+    },
+    {
+      "path": "skills/ai-location-director/agents/openai.yaml",
+      "size_bytes": 517,
+      "sha256": "aee679e2fea34faf8595ee9f744bef5e94a8814c909097933598a83d76271193"
+    },
+    {
+      "path": "skills/ai-location-director/assets/icon.svg",
+      "size_bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "skills/ai-location-director/assets/learning-ledger.json",
+      "size_bytes": 159896,
+      "sha256": "997383a7787cbf7871ec8afb29a768207dc7d68c6993226373aaca7c23c821d9"
+    },
+    {
+      "path": "skills/ai-location-director/assets/location-manifest.template.json",
+      "size_bytes": 2336,
+      "sha256": "bcea5002498ccb029aa168e9ada4b70806b17008c5d98837e5bbd5af1c4703fe"
+    },
+    {
+      "path": "skills/ai-location-director/references/agent-controller.md",
+      "size_bytes": 9598,
+      "sha256": "4e00bd2f832844df087d87c2021679cdd306e6f56d41a295a6bfe55d755c3240"
+    },
+    {
+      "path": "skills/ai-location-director/references/context-research.md",
+      "size_bytes": 4361,
+      "sha256": "565c2c01ffd32ebba06b01b777bd2d825d3387b62499ceb1e95b9bffb19279d2"
+    },
+    {
+      "path": "skills/ai-location-director/references/continuous-learning.md",
+      "size_bytes": 11190,
+      "sha256": "be5056f926091643a9e116d74160d5ad0f499217f5f6a78173a4382eb47e8a95"
+    },
+    {
+      "path": "skills/ai-location-director/references/production-runtime.md",
+      "size_bytes": 12829,
+      "sha256": "61b4aa8967ec968def875b65d7b54d68da7c7a99ebb470d8c96ebf64d1e00a9b"
+    },
+    {
+      "path": "skills/ai-location-director/references/project-location-locks.md",
+      "size_bytes": 14204,
+      "sha256": "ba908aa2f752857d542f8049e8fad13620f1554696c3c9beba45eaebbc44acba"
+    },
+    {
+      "path": "skills/ai-location-director/references/prompts-and-handoff.md",
+      "size_bytes": 6166,
+      "sha256": "bb9bd7ed69de84f2500a7e141cda0811f6ba199c01b8518b83cff71295903028"
+    },
+    {
+      "path": "skills/ai-location-director/references/props-four-views.md",
+      "size_bytes": 9884,
+      "sha256": "aea3705cc4856966f8143ddf1509867b0ad8738abef6bfd7ae1955ab666160d5"
+    },
+    {
+      "path": "skills/ai-location-director/references/qc-and-repair.md",
+      "size_bytes": 6358,
+      "sha256": "2a788898925f534f69093b95d68e76e7f6451b81d3e0dc3d5a115ab696ae0cc7"
+    },
+    {
+      "path": "skills/ai-location-director/references/reference-input-preflight.md",
+      "size_bytes": 1103,
+      "sha256": "decf51328018a1f695b3cae3692afbd1b25ed87ad4125a17645a359cb71dd044"
+    },
+    {
+      "path": "skills/ai-location-director/references/spatial-contract.md",
+      "size_bytes": 11954,
+      "sha256": "8122d2209982074b331b650a41a4d0aad28411e909a1eb4470116bfc979ca9f9"
+    },
+    {
+      "path": "skills/ai-location-director/references/workflow.md",
+      "size_bytes": 9143,
+      "sha256": "8889f3085ababef574a3ea5dc0e8f45b208a11e5a68630877d470adfbe82977f"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/build_panorama_viewer.py",
+      "size_bytes": 7881,
+      "sha256": "7b29c5fd870315ecfeeb8062b0764e432815c19dc9de7087faf8eb4ae372da8e"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/compare_views.py",
+      "size_bytes": 4599,
+      "sha256": "f8c30f7dafd89f398c492c67fcead4bb7d82ce0b7c5bf68068321ff682b5e84f"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/inspect_colmap_pose.py",
+      "size_bytes": 2448,
+      "sha256": "4986cd7e9f979feeeea3b656fb717a94107f132d4c3665473f06aaae6c083a7d"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/location_runtime.py",
+      "size_bytes": 12872,
+      "sha256": "49258d013bd96eaf2e50f537c3d79ae6484053893250ccaa50237c81fb4d85f4"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/spatial_checks.py",
+      "size_bytes": 8017,
+      "sha256": "b0aa3c585bc922cfc373058b4736a386ad39d40dba17a3bca292accb5e7e421e"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/test_build_panorama_viewer.py",
+      "size_bytes": 2348,
+      "sha256": "7b44088072d3feb1472e7831e153c08de40fcbaa6a69ed21c4e684cea2b9f062"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/test_compare_views.py",
+      "size_bytes": 2947,
+      "sha256": "17b961f12b572f4aae2348b93dd6fc09bfdb80a4c51c8ec0d932615eb39671e6"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/test_inspect_colmap_pose.py",
+      "size_bytes": 2992,
+      "sha256": "47d1957c791dcd936951f4024b40cc63ff8dcdc19eab7e5981c31ae42fc0971a"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/test_location_runtime.py",
+      "size_bytes": 4856,
+      "sha256": "6be6b52ad6cf2c328f5cdec7eaf15b4e58e19b226610fb0281db0e6fb59620da"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/test_spatial_checks.py",
+      "size_bytes": 3330,
+      "sha256": "6e39e247f4bff798d9e83d7285b5328815fa8804cf53347944e8769beda59e1c"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/test_transfer_intrinsics.py",
+      "size_bytes": 3032,
+      "sha256": "e12cbd1e26bb4d99204239b09bf6ef88b382c62eef091420b887f193fd3e9b7c"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/transfer_intrinsics.py",
+      "size_bytes": 2929,
+      "sha256": "56b54b6ddd22b618937653e38959af77468080d308d4970f710ef57ef1711c15"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/validate_learning.py",
+      "size_bytes": 10303,
+      "sha256": "6faca4f23ca0508725577bea3bba6c06c6f192de9ee05959cf20e1222b6e4c4d"
+    },
+    {
+      "path": "skills/ai-location-director/scripts/validate_location.py",
+      "size_bytes": 22561,
+      "sha256": "2c794fd7628722b32c1e061d9c96ca780753086251d0db063c27272f490c7a50"
+    },
+    {
+      "path": "skills/ai-music-director/SKILL.md",
+      "size_bytes": 11332,
+      "sha256": "695c19e45de4fdc1f9ebff12ca81383c259f765c4cb445d0c9c4486bafec50ff"
+    },
+    {
+      "path": "skills/ai-music-director/agents/music-director.md",
+      "size_bytes": 3096,
+      "sha256": "cf36f6c9884444609d72e2a8552fbecf22505bf8e8dac5f42a634d802e0bee2a"
+    },
+    {
+      "path": "skills/ai-music-director/agents/openai.yaml",
+      "size_bytes": 504,
+      "sha256": "05fd9ca8b575641de274c5547738d61e5c0ec1d2968946aa3080be237cf6f7f6"
+    },
+    {
+      "path": "skills/ai-music-director/assets/control-profiles.json",
+      "size_bytes": 4753,
+      "sha256": "649468dba89eea55ed43bac21d04d330dffdd386d739470ca75090d0aa54d42d"
+    },
+    {
+      "path": "skills/ai-music-director/assets/icon.svg",
+      "size_bytes": 1210,
+      "sha256": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+    },
+    {
+      "path": "skills/ai-music-director/assets/improvement-state.json",
+      "size_bytes": 15298,
+      "sha256": "1496a69fff4a0e48c83b71e4f9a738da4f28887b1446d24d57c55c6d8e049fa7"
+    },
+    {
+      "path": "skills/ai-music-director/assets/learning-ledger.json",
+      "size_bytes": 29051,
+      "sha256": "981beaadf08801987f7c17974d2072a449d3f2667fd5850130f4710fcd21825a"
+    },
+    {
+      "path": "skills/ai-music-director/assets/lyric-patterns.json",
+      "size_bytes": 3581,
+      "sha256": "d617eb326cd04cee96c370c63edadd9bcb2010820824bf0c30b6b2c8532864f4"
+    },
+    {
+      "path": "skills/ai-music-director/assets/model-registry.json",
+      "size_bytes": 7049,
+      "sha256": "3779b94509b51b4070df7681473f7d558edf4ecdf51901412cbc5fc8e81644f8"
+    },
+    {
+      "path": "skills/ai-music-director/references/autonomous-runtime.md",
+      "size_bytes": 7741,
+      "sha256": "139b7774555e357c0e21b88ffb5fc4478e66ab68a96b1547265ff87c6a3ff95b"
+    },
+    {
+      "path": "skills/ai-music-director/references/continuous-learning.md",
+      "size_bytes": 7759,
+      "sha256": "62107862fa85a1a629886dae53e52fbf13c3da6f0e75251af7e07771518466a3"
+    },
+    {
+      "path": "skills/ai-music-director/references/instrument-palette.md",
+      "size_bytes": 4934,
+      "sha256": "1676ad692fddef9982a3ba91c5876e5a8067c28f2b8e29c40b66c8418f2d59fc"
+    },
+    {
+      "path": "skills/ai-music-director/references/lyrics-and-vocal-direction.md",
+      "size_bytes": 5926,
+      "sha256": "b1d856677fbc3330e31ae471037e779ce081ed5a1bb151495de73c7835aea52c"
+    },
+    {
+      "path": "skills/ai-music-director/references/platform-workflows.md",
+      "size_bytes": 12208,
+      "sha256": "9d3fbf602291310f64c34177635b0aca5978c80a4ae28d396be585a3848dde30"
+    },
+    {
+      "path": "skills/ai-music-director/references/project-music-context.md",
+      "size_bytes": 6391,
+      "sha256": "14ef435bf11fdbfd96d2c0f93d148d1ca32d98bb6a089d69409ec38ada3515ca"
+    },
+    {
+      "path": "skills/ai-music-director/references/scene-scoring.md",
+      "size_bytes": 7133,
+      "sha256": "3e4b0da94aa1cd0858b48c2afdd40b01446cc23e4554cf50a8bf717b8d0d5384"
+    },
+    {
+      "path": "skills/ai-music-director/references/smart-parameters.md",
+      "size_bytes": 4293,
+      "sha256": "144cf188a72268f221b4d013ee91caaa5aa1b70280415a05782a30afab5305e4"
+    },
+    {
+      "path": "skills/ai-music-director/references/vocal-micro-expression.md",
+      "size_bytes": 4229,
+      "sha256": "e20a1e8dfb49ffaf1cbb3c9013969c6f21348f9d01d4cf7d1723ac7c1a3f8edf"
+    },
+    {
+      "path": "skills/ai-music-director/scripts/music_qc.py",
+      "size_bytes": 8256,
+      "sha256": "230317d50448bf6e7b98ef0667fdc2aec6cd4db4dc051ac67d6dd28e844142bd"
+    },
+    {
+      "path": "skills/ai-music-director/scripts/music_runtime.py",
+      "size_bytes": 16108,
+      "sha256": "9282e5ed75cef54302776ab2073d070e08bab824ce5a01719753d99310823030"
+    },
+    {
+      "path": "skills/ai-music-director/scripts/test_music_runtime.py",
+      "size_bytes": 14195,
+      "sha256": "8c654fa9e4609e9a7c6deaa436fea13c5677b95333e72657bc31a4e4f56af7cd"
+    },
+    {
+      "path": "skills/ai-native-director/SKILL.md",
+      "size_bytes": 36572,
+      "sha256": "cccf47c75f7680832d55e4a0474b95fbb2d92642ff8fd2c1e4a1da9a3bcaa19a"
+    },
+    {
+      "path": "skills/ai-native-director/agents/filmmaking-qc.md",
+      "size_bytes": 4239,
+      "sha256": "a462fb8e5645e9ca5c258cba1ad80e79c5360181b0306f8c30237b091a7d3887"
+    },
+    {
+      "path": "skills/ai-native-director/agents/openai.yaml",
+      "size_bytes": 485,
+      "sha256": "b4bb4cc2c738d6010f54a343e5ebc12374bb94a0659808543426deb3a8b6ba0f"
+    },
+    {
+      "path": "skills/ai-native-director/agents/reference-mapper.md",
+      "size_bytes": 3484,
+      "sha256": "416e634befe8c908183236fc8a26a3ca117e0b59d96792711f4b44608d88177e"
+    },
+    {
+      "path": "skills/ai-native-director/assets/cast-costume.template.json",
+      "size_bytes": 3171,
+      "sha256": "6fe88ae5b107b7abc4445098823219b7b71708dee35f9c58f71339cd42c23701"
+    },
+    {
+      "path": "skills/ai-native-director/assets/character-performance.template.json",
+      "size_bytes": 621,
+      "sha256": "a2b8c87626997ada5a390fda074eff359af87895d0716edf3308251cc305f453"
+    },
+    {
+      "path": "skills/ai-native-director/assets/composition-patterns.json",
+      "size_bytes": 29958,
+      "sha256": "d5ef75ee4ccbf8a2dd9c6377f7af921983fe644d78eefc335019e32e6a0ac774"
+    },
+    {
+      "path": "skills/ai-native-director/assets/composition-study.frames.json",
+      "size_bytes": 492040,
+      "sha256": "60a1d2c8e1c0267247ed2496d457cb5c40098ed434311ce02b4fc6fcaa64e63e"
+    },
+    {
+      "path": "skills/ai-native-director/assets/icon.svg",
+      "size_bytes": 1619,
+      "sha256": "7fbf187a9d38a8a699f93d3f220438d8097ef6000994e414444636828b0880a0"
+    },
+    {
+      "path": "skills/ai-native-director/assets/learning-ledger.json",
+      "size_bytes": 203705,
+      "sha256": "e8a09ca4c768b855a64443675d0d680bde3b546a5aaaaf6e3a7036d9a5f9fa39"
+    },
+    {
+      "path": "skills/ai-native-director/references/camera-and-coverage.md",
+      "size_bytes": 4346,
+      "sha256": "e455e959cb0ac8b23db41499f98ec01fcbfb2a4d230848384e56411168aa5969"
+    },
+    {
+      "path": "skills/ai-native-director/references/camera-catalog.md",
+      "size_bytes": 10001,
+      "sha256": "3bbf4bd6e71ca4fcae8183ed160e5eb87d48ae1de8b9bd38f667f435fb589200"
+    },
+    {
+      "path": "skills/ai-native-director/references/cast-and-costume.md",
+      "size_bytes": 16845,
+      "sha256": "01bce9b3d08cef45e61f848dfa6e52a238f4943afee0f084ef84653c0caf6ca1"
+    },
+    {
+      "path": "skills/ai-native-director/references/composition-editing-sound.md",
+      "size_bytes": 9009,
+      "sha256": "ebde0a26208fececfcde1c167ed37f55c4cc1727622d61f46c8a2dfe4e40435e"
+    },
+    {
+      "path": "skills/ai-native-director/references/continuous-learning.md",
+      "size_bytes": 10585,
+      "sha256": "1ccc9267a7179cb1b5e16b99fb0906db5844c45eb8948bd80203339701d07c60"
+    },
+    {
+      "path": "skills/ai-native-director/references/controller-runtime.md",
+      "size_bytes": 6093,
+      "sha256": "fd31708ca8b977c07869ea5da9cfe5060b6347a7cb437a6726a90418bea940ad"
+    },
+    {
+      "path": "skills/ai-native-director/references/execution-quality.md",
+      "size_bytes": 5082,
+      "sha256": "a3c86b6d0cd3e11ef0099890221bc256bd654d4acbf2f835fc81f8a0e39dfd45"
+    },
+    {
+      "path": "skills/ai-native-director/references/filmmaking-qc-contract.md",
+      "size_bytes": 4582,
+      "sha256": "da44cd151b95428643dc7d74db89c691c4cfd841d1ddd8ecf8b8ab7f82bb67f9"
+    },
+    {
+      "path": "skills/ai-native-director/references/image-video-prompts.md",
+      "size_bytes": 20143,
+      "sha256": "01eb782a0e387329e912615df7da54c728c606ae15e0a353ff63428cd364754b"
+    },
+    {
+      "path": "skills/ai-native-director/references/laddu-gopal.md",
+      "size_bytes": 17392,
+      "sha256": "71db0e766e532fea8cc441d749d3a008b644f10f51f67e503168a69bdcb97e60"
+    },
+    {
+      "path": "skills/ai-native-director/references/mapping-and-qc-agents.md",
+      "size_bytes": 9273,
+      "sha256": "7e630eb9986cd9b0f05927511c3772b861d27a98c8a93fc6a6f3cfc3aaed3e9e"
+    },
+    {
+      "path": "skills/ai-native-director/references/model-adapters.md",
+      "size_bytes": 4272,
+      "sha256": "db7689c5f43e005b016a0a94311fcc793ddffd0ba2b0d712f3e28ba94b56d013"
+    },
+    {
+      "path": "skills/ai-native-director/references/performance-and-action.md",
+      "size_bytes": 14242,
+      "sha256": "3aa3ca9abae06e444051e5c80883d83d0adeb124f34c6f42540c5c72b42299cf"
+    },
+    {
+      "path": "skills/ai-native-director/references/reference-input-preflight.md",
+      "size_bytes": 1593,
+      "sha256": "8580848a3a557380b1979b605888213f8062cecbf616c1d9fe281a1024f4278a"
+    },
+    {
+      "path": "skills/ai-native-director/references/reference-mapper-contract.md",
+      "size_bytes": 3358,
+      "sha256": "e17c453a0a640e12507fdee365e459e25712b500d8454ff9b1608da7fa61ea6e"
+    },
+    {
+      "path": "skills/ai-native-director/references/shot-composition.md",
+      "size_bytes": 12578,
+      "sha256": "3be5e26b0767b8f89b783c3dcd4f3ff485b3fce84db6447c851d3fa7ec311460"
+    },
+    {
+      "path": "skills/ai-native-director/scripts/audit_prompt_contract.py",
+      "size_bytes": 3877,
+      "sha256": "0197d84de024570b2df2dcaa98f45824cd383762c9d6a6c2bba60786a8df80f9"
+    },
+    {
+      "path": "skills/ai-native-director/scripts/composition_lookup.py",
+      "size_bytes": 2136,
+      "sha256": "9e95568bc6d9096b0c19643443705892b6be7e75984e157a69805437d22c6bad"
+    },
+    {
+      "path": "skills/ai-native-director/scripts/project_context.py",
+      "size_bytes": 5367,
+      "sha256": "807acbdef4717b48d6d40c16971c25de64e188c20a412c2977cd1af187bfaf0d"
+    },
+    {
+      "path": "skills/ai-native-director/scripts/validate_handoff.py",
+      "size_bytes": 9787,
+      "sha256": "a2a4c6b66f541abab88bafb1dab20f97caf68760808ec3fa3a13a4f6c455702d"
+    },
+    {
+      "path": "skills/ai-native-director/scripts/validate_learning_ledger.py",
+      "size_bytes": 8791,
+      "sha256": "25ce2112fd6bb9b99277c5a7ea23a591d844a345da1fe7388d47c9fa997265dc"
+    },
+    {
+      "path": "skills/ai-socials/.gitignore",
+      "size_bytes": 39,
+      "sha256": "005867498b23e30fd4264e96b01fbbf783b4a83eab5168b153363a4f3aeaa9dc"
+    },
+    {
+      "path": "skills/ai-socials/SKILL.md",
+      "size_bytes": 12271,
+      "sha256": "954b185c4059dafac72c1fc759708490c9d887743969730632ff10c130622a57"
+    },
+    {
+      "path": "skills/ai-socials/agents/openai.yaml",
+      "size_bytes": 339,
+      "sha256": "31b9e1486a3ef456520689ae9cb033c98ee3f48ef6dd1ff9e01e4dbd2580972e"
+    },
+    {
+      "path": "skills/ai-socials/assets/icon.svg",
+      "size_bytes": 1210,
+      "sha256": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/READY.md",
+      "size_bytes": 13220,
+      "sha256": "3e6500c33947ed1da26b482dc2936899e570ea89e1efdc89b2cf9602ba1f2232"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/plan.json",
+      "size_bytes": 3266,
+      "sha256": "f1ab0fc0a274ec138de13d72cf7dcb134778e96d4a030a049531123d240c09d1"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-fb-1.json",
+      "size_bytes": 1257,
+      "sha256": "878928af402b57a332027732bb04cd3e452893e8584b6114edb207410b83461b"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-fb-2.json",
+      "size_bytes": 1979,
+      "sha256": "897c5af7c695f91587d2b6b4951abc161869cb54ae4382d19eb20f5bb930006f"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-ig-1.json",
+      "size_bytes": 1067,
+      "sha256": "59faac750f559519df6efeba04b6ed29d55ab83c54001cca828d7503faf18cc8"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-ig-2.json",
+      "size_bytes": 1040,
+      "sha256": "440c172bd9876e2f2a67d6c59dbd53f7bbdc44c02063e6cabefbfcbf4929dbea"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-li-1.json",
+      "size_bytes": 2153,
+      "sha256": "b5be9b02db91297c278e82b51ce123d14792bbb4abad614f14959cac8be935ea"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-li-2.json",
+      "size_bytes": 1980,
+      "sha256": "d6bf64dcab4c27619171c58b14bc6c5186753f8309365562d3738648978c707e"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-li-3.json",
+      "size_bytes": 1475,
+      "sha256": "5f89bcf1f6500bf2f565fc465b768c2473b746de175e6a754d38554ccda442b0"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-x-1.json",
+      "size_bytes": 1739,
+      "sha256": "e310733ebf9470c5c066f17012520d73302876ee745c1bd5ea375c1a33856461"
+    },
+    {
+      "path": "skills/ai-socials/assets/launch/2026-W44/w44-x-2.json",
+      "size_bytes": 563,
+      "sha256": "d1b1a7552252c69d6fc4b437e64e2a9a7d1356bfcea20dafb49f2f6a538a15ba"
+    },
+    {
+      "path": "skills/ai-socials/assets/learning-ledger.json",
+      "size_bytes": 50528,
+      "sha256": "1e75ef4c7c7bb67f4aeebda62c2978796d2363fee1d38bedab2f27ecc8c443f7"
+    },
+    {
+      "path": "skills/ai-socials/assets/profile_copy.md",
+      "size_bytes": 3273,
+      "sha256": "b489631999fc73c532fd048445f687497d2982eb3dd48c920d2c8e179849b78c"
+    },
+    {
+      "path": "skills/ai-socials/assets/source-manifest.json",
+      "size_bytes": 809,
+      "sha256": "39429dec31b69805034eb15afdc0a36b130625e27dfd51f00fff9d6ec0a5ae67"
+    },
+    {
+      "path": "skills/ai-socials/brain/confidential_terms.json",
+      "size_bytes": 332,
+      "sha256": "926a80cb669a525152cccdd12e11d808b623ee98b9ed081ef24ead4724310f8c"
+    },
+    {
+      "path": "skills/ai-socials/brain/hook_library.json",
+      "size_bytes": 2191,
+      "sha256": "91c42da56120a7f9027ac95f2806c8741a2a04c1518122c60edf5587b0a96deb"
+    },
+    {
+      "path": "skills/ai-socials/brain/hypotheses.json",
+      "size_bytes": 1363,
+      "sha256": "0d42463f890e21ee6c1d5c459274d9496fbdeb9a54e63bf45c00ae401b25a763"
+    },
+    {
+      "path": "skills/ai-socials/brain/pillars.json",
+      "size_bytes": 2146,
+      "sha256": "25a9849af1c54aadffac9b2a4b25902de05aca0a0b39b347fde16a0a7ca6b4df"
+    },
+    {
+      "path": "skills/ai-socials/brain/platform_rules.json",
+      "size_bytes": 4954,
+      "sha256": "34f0d5c6cc11b55c94c8aba6f186403c9d3ddb1d6a58bb2aca38890dc80e33aa"
+    },
+    {
+      "path": "skills/ai-socials/brain/playbook.md",
+      "size_bytes": 3584,
+      "sha256": "aa91507479b80c3fd3fc08a9cd7bde6623d5c15dad7ab6cdbc5ee6e4d761fba9"
+    },
+    {
+      "path": "skills/ai-socials/brain/playbook_rules.json",
+      "size_bytes": 2555,
+      "sha256": "5766ccd4c2cae7bbbaffb1c863aa7f1def6a8abe3ac763b508d66960ce796f83"
+    },
+    {
+      "path": "skills/ai-socials/brain/profiles.json",
+      "size_bytes": 1354,
+      "sha256": "51aa1d2cecad72e4a3c8b169ecca1890d0ed65291995d38c88d67de56a6f7f6a"
+    },
+    {
+      "path": "skills/ai-socials/brain/slots.json",
+      "size_bytes": 575,
+      "sha256": "d9ee20939bb0eb93ba164a3fcb97a1e9d6db9ad3d7df0c4f9f93a622fd5bf900"
+    },
+    {
+      "path": "skills/ai-socials/brain/targets.json",
+      "size_bytes": 844,
+      "sha256": "24ece43e896eb14bf28a36071b8d29004e270ad44123f8994c6e9e319cdb1fcf"
+    },
+    {
+      "path": "skills/ai-socials/brain/voice.md",
+      "size_bytes": 6298,
+      "sha256": "661cb460ea69d0418f0072b06a8fc7ac13ab239aa3bcb7e13f58bdd17823aec2"
+    },
+    {
+      "path": "skills/ai-socials/pytest.ini",
+      "size_bytes": 48,
+      "sha256": "00bf4481467c28b31fff7b64e72c67f58e45be68fa03380ff6dd7eab021dabde"
+    },
+    {
+      "path": "skills/ai-socials/references/caption-mode.md",
+      "size_bytes": 12122,
+      "sha256": "0c456df67af44ee4328372480233c3c889c1ff5bf34c026567aba2aee16f4d8a"
+    },
+    {
+      "path": "skills/ai-socials/references/growth-strategy.md",
+      "size_bytes": 3672,
+      "sha256": "0027a99c0a82f48f3db359c39f37f10454e15613292dd2633599b151f75dd6e7"
+    },
+    {
+      "path": "skills/ai-socials/references/learning.md",
+      "size_bytes": 4358,
+      "sha256": "f087d4c8af12b30b4a4079975c021bcee7b63b3c9c9f98bfd8b6ac8ae2477000"
+    },
+    {
+      "path": "skills/ai-socials/references/recent-lessons.md",
+      "size_bytes": 11953,
+      "sha256": "a51d94836ceefe2aee923a681add6218352817026029feb6eff43516b7e9ab47"
+    },
+    {
+      "path": "skills/ai-socials/references/roles.md",
+      "size_bytes": 1926,
+      "sha256": "999837583b39fa039ac76b2c2b777e386ec6933f8ee6d92698435d9be9c06b9a"
+    },
+    {
+      "path": "skills/ai-socials/references/workflows.md",
+      "size_bytes": 3427,
+      "sha256": "b6e646b3de83d21e00898973e189355c422279c6943b8c61f0336f2c410aafb4"
+    },
+    {
+      "path": "skills/ai-socials/schemas/content_plan.schema.json",
+      "size_bytes": 1416,
+      "sha256": "71b063408c8535bd6d40762c651b48aaa6862c0de16f29dac3f74e2f3b859ec0"
+    },
+    {
+      "path": "skills/ai-socials/schemas/draft_post.schema.json",
+      "size_bytes": 2080,
+      "sha256": "d870b867c0541667030805687b4ea021c0351d4ae7371d7a3454e39fe6190440"
+    },
+    {
+      "path": "skills/ai-socials/schemas/eval_report.schema.json",
+      "size_bytes": 1190,
+      "sha256": "e577f1589c12bf28b10182631a9a123f8753668356557852dd9cd8172fce7582"
+    },
+    {
+      "path": "skills/ai-socials/schemas/playbook_diff.schema.json",
+      "size_bytes": 1357,
+      "sha256": "fffea2afeaf57e0eeb38980d2c697438c62658e3b4c21a6eb3c3f0be5057e747"
+    },
+    {
+      "path": "skills/ai-socials/schemas/research_brief.schema.json",
+      "size_bytes": 2328,
+      "sha256": "4ae3da4103288d7d37dc1224c9319759ff96e83849d8a359636c2f705c1ebbd3"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/__init__.py",
+      "size_bytes": 350,
+      "sha256": "f22cfc4cb3bb08c6cb09b99ddfdcfc32e314bb90796ca3b5cb4dc4505e579a8f"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/__main__.py",
+      "size_bytes": 98,
+      "sha256": "fc528518028a839e961186499d115e28043aaf09887f916594f33388d7060f50"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/bandit.py",
+      "size_bytes": 3253,
+      "sha256": "c8d40a3c7b6b879bf82a38a26b39681e81e973609c5587b123a2d2ce3ddcf671"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/cli.py",
+      "size_bytes": 11040,
+      "sha256": "0f8b785a86789a21b9f3e402f17288a15c453fde10bdbb9d641de5b543c58871"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/ingest/__init__.py",
+      "size_bytes": 307,
+      "sha256": "67265d5c26a8eeff1388ef4e8581520079fd2250a9d991bf5ca91ec950b8f94b"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/ingest/linkedin.py",
+      "size_bytes": 4423,
+      "sha256": "4c4ca280ee336b37097a04f68bfb5ec2054e25494afabee2da43961c84b9ec5d"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/ingest/meta.py",
+      "size_bytes": 7190,
+      "sha256": "5f1c45904151c5074535fd14c6447ae0849529b1b5c71a8ab5b4a674ddb0de9e"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/ingest/x_archive.py",
+      "size_bytes": 3216,
+      "sha256": "402c1733f2f49bd479f00d74f26e000ee6d0a1c36d27584eca2ad312a0f8f485"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/lang.py",
+      "size_bytes": 1831,
+      "sha256": "31c3dda2e93dfce4e892f71baa8a0c90eb7d7c952985935e0ad1631c9fe99e58"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/liking_profile.py",
+      "size_bytes": 4945,
+      "sha256": "8d39259201e53e7fd0773770bfad81b852ecd331ed6cd8e747096ed421883d33"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/metrics.py",
+      "size_bytes": 5658,
+      "sha256": "78fd283deb96a984e7e156aae6453cf99a35ddd0574ae8566e70a2bfc908df2b"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/metrics_import.py",
+      "size_bytes": 4166,
+      "sha256": "9fc34a845eaad69a61bee806edbb0a2313e28abd5acdf0e9b9f80ea6cfb37978"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/models.py",
+      "size_bytes": 6291,
+      "sha256": "9fde3de76b51c68c079432a3961a4b9c22991c77fd388c412b1cb0edabfcf8c2"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/pullers/__init__.py",
+      "size_bytes": 73,
+      "sha256": "d08c287cf646b7970bd37db5a9086eff38e882343179f161b9898160473f479a"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/pullers/http.py",
+      "size_bytes": 1949,
+      "sha256": "fbe2d0f3fdc17b35fec531c53326fd3c08432d267d1cd141f66d08dff750b23c"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/pullers/instagram.py",
+      "size_bytes": 3735,
+      "sha256": "a0ec63d706348eee04519ed5bf6c2362d9e22640dee711983ca7f43b0898d787"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/pullers/x.py",
+      "size_bytes": 2773,
+      "sha256": "dc97a3c50eaad6fd0940f35fa9602e877f3aeb73dbf645ef47f0a6d8eeeaab9d"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/ready.py",
+      "size_bytes": 3621,
+      "sha256": "d6027368b61ffb04c9fbadc39653cbee07a415f23ae9be6ab166534a16531a74"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/retro.py",
+      "size_bytes": 13570,
+      "sha256": "77d312e44c81b4284754f625c8fb2aae13d161dd880bfc8b8c471f075c1bb5ea"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/storage.py",
+      "size_bytes": 4442,
+      "sha256": "b86bd5b87a294eab399ff6fbc51d7a15e602ab2e87c59c50cb08d26647c69e3d"
+    },
+    {
+      "path": "skills/ai-socials/scripts/ai_social/validate.py",
+      "size_bytes": 8565,
+      "sha256": "4b2aef222f7be7bb8ff4e4b837a9341bb6999a89e144e4e94ca842710c011e1c"
+    },
+    {
+      "path": "skills/ai-socials/scripts/requirements.txt",
+      "size_bytes": 20,
+      "sha256": "9984fa6ad6d35d2468011c4c278583e9bb4983d83be6bb3f5aabcef9c99b19b7"
+    },
+    {
+      "path": "skills/ai-socials/scripts/social.py",
+      "size_bytes": 2298,
+      "sha256": "7c0c477feecfb309533161cf8b7fc83aa6e6f12ac671dd9f0c0fed06447a58c0"
+    },
+    {
+      "path": "skills/ai-socials/tests/conftest.py",
+      "size_bytes": 714,
+      "sha256": "90c51c465213f8401a9bc150cbe33ad5e8438694d2dd2b3b76703a7d121a0d9d"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/linkedin/Comments.csv",
+      "size_bytes": 216,
+      "sha256": "bf35e393180b24014736df569d4174b83cfc0bb253e5af78620ad6d4f00cf1f5"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/linkedin/Reactions.csv",
+      "size_bytes": 370,
+      "sha256": "5ced47c08ff0b9fc531809929fdfaaf777ddc99a095b31a58deea7a42bf25087"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/linkedin/Shares.csv",
+      "size_bytes": 249,
+      "sha256": "cde322a299b009c032eb0ff6692dbcc3d2049456cfd80e78b79d484a15127ed1"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/meta/connections/followers_and_following/followers_1.json",
+      "size_bytes": 75,
+      "sha256": "c405628a099e8e4ac852fe8d64048734e521b5be8b40fd953d336d84c6567a31"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/meta/your_facebook_activity/comments_and_reactions/comments.json",
+      "size_bytes": 380,
+      "sha256": "a70ea3694383f6b9ef8f1bef0a6e2fcd34dbb914317b7c44ec98b72eee799338"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/meta/your_facebook_activity/comments_and_reactions/likes_and_reactions_1.json",
+      "size_bytes": 147,
+      "sha256": "839584182f8c4e50a014d8021c5c5484ae08ff73eef3c15f58ec071ef2f77a64"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/meta/your_instagram_activity/comments/post_comments_1.json",
+      "size_bytes": 403,
+      "sha256": "85e5de15967d68aaa4c1ae712877794c7ee2cd4fdd4b155139b8e88ba9508e27"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/meta/your_instagram_activity/likes/liked_comments.json",
+      "size_bytes": 304,
+      "sha256": "c193db1d08aee360f8e0a1f7f912e650c38dcf66bf7e3d0f8f2f52ec0c070075"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/meta/your_instagram_activity/likes/liked_posts.json",
+      "size_bytes": 170,
+      "sha256": "3ae1415af496406380a611364e71ca8078502f180b13c23b58609afa76467a65"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/x/data/like.js",
+      "size_bytes": 159,
+      "sha256": "5ce41f3cd4993324c23a47496a664bb3b7c3b6dc5a800cec28ccccfff33b6f05"
+    },
+    {
+      "path": "skills/ai-socials/tests/fixtures/x/data/tweets.js",
+      "size_bytes": 574,
+      "sha256": "d34dcf07e267bb319206e8a09235da7b44b44630bc3020e7fa68d8de3dfdd0d6"
+    },
+    {
+      "path": "skills/ai-socials/tests/helpers.py",
+      "size_bytes": 1364,
+      "sha256": "0a5270d4deec0066176102ae8f5b63b5490d542d248f68a339b4438638da902d"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_cli.py",
+      "size_bytes": 2712,
+      "sha256": "d875782af6bb5af727f619c7b7352d83846024c2de1ee665465b479d7ef9d70a"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_ingest_profile.py",
+      "size_bytes": 3962,
+      "sha256": "0cc2122dc7e7f76d5eb59bb0bfb126c100820b09f8a1e5d66b1865647a2a0cc7"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_launch_pack.py",
+      "size_bytes": 1495,
+      "sha256": "d649829d0c1500fb5d806c204ff33014cfb711f46c709abafbc0a32b4c7e1d70"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_metrics_bandit.py",
+      "size_bytes": 2293,
+      "sha256": "89c0e8e6dc1f9c9e64750c3fb8bb66935c87e6bd53fe19e9da5e4aff2f346d61"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_models_lang.py",
+      "size_bytes": 2103,
+      "sha256": "c96c8ee981195d7ea0b9aa8bd238d723893189431daf7da13f0468e038a928bc"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_portability_and_readiness.py",
+      "size_bytes": 2600,
+      "sha256": "efdb7ff0055d5b43e1f5766ca13f920d67dac50a67fee2212e539054393e71c5"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_pullers_import.py",
+      "size_bytes": 4493,
+      "sha256": "fc2b1104e1ef65113088d6aea300f1918d44bc08d73ef1ed27b4f533aae89734"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_retro.py",
+      "size_bytes": 3158,
+      "sha256": "f8536091ea263f36eb1cbec19af41099bcd984b4d707a4ccc7f9dc332be9a5ec"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_storage.py",
+      "size_bytes": 868,
+      "sha256": "f499248e0a23991da9656b5f6658d389c167c0556fecc197e468ae54c44e1b10"
+    },
+    {
+      "path": "skills/ai-socials/tests/test_validate.py",
+      "size_bytes": 4646,
+      "sha256": "323c7e49fd1baa50249423f47455d802c23a6c634ebbe7b2350d43e092d59041"
+    },
+    {
+      "path": "skills/daksh/SKILL.md",
+      "size_bytes": 13206,
+      "sha256": "d67b17a71748c6a384638fdc64a34981f7fcfcba7029b1786b2a8e97591cec81"
+    },
+    {
+      "path": "skills/daksh/agents/openai.yaml",
+      "size_bytes": 412,
+      "sha256": "9d0b0d194d62c3bf921a34bb4b74f173f16527df6a09b359cec08da0a48d4681"
+    },
+    {
+      "path": "skills/daksh/assets/agent-registry.json",
+      "size_bytes": 6714,
+      "sha256": "7aa4f7d1cf85828874b1e93627ad8768a5bd611065e22a04fa9fe0e068e82afd"
+    },
+    {
+      "path": "skills/daksh/assets/brain.template.json",
+      "size_bytes": 555,
+      "sha256": "edf3273c23ce743ecf68b5c05af1607f08260ebd70ba192d779e4c898bbe9dd8"
+    },
+    {
+      "path": "skills/daksh/assets/evaluation.json",
+      "size_bytes": 4876,
+      "sha256": "2b86a1b86a8f31050797e425370ea5ef37850065978b778b5a042f69cd1a0c87"
+    },
+    {
+      "path": "skills/daksh/assets/icon.svg",
+      "size_bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "skills/daksh/assets/run.template.json",
+      "size_bytes": 2738,
+      "sha256": "8404901199027200418ed8159f0e28dd3d0f887fe8f4ca5f2e7d7a009c4157f2"
+    },
+    {
+      "path": "skills/daksh/assets/runtime.json",
+      "size_bytes": 21274,
+      "sha256": "1c48acf1caf96b1a1cac2f1298edcc7150915860acb48ddc6cd072de887d48cb"
+    },
+    {
+      "path": "skills/daksh/references/evaluation.md",
+      "size_bytes": 2475,
+      "sha256": "c12ee77ce0c5ee55d2e602b771c9745a730df02740eb6d4b2de7258c209c9510"
+    },
+    {
+      "path": "skills/daksh/references/master-orchestration.md",
+      "size_bytes": 9927,
+      "sha256": "41ddfd97137a2d707ce226667ec4571a3a072c06785b4a524d996076b5de9537"
+    },
+    {
+      "path": "skills/daksh/references/memory-and-actions.md",
+      "size_bytes": 3095,
+      "sha256": "d78372e4c89bd83ee6a5f86dd0faa833703c2ae16cee9f21536e358a52a9107f"
+    },
+    {
+      "path": "skills/daksh/references/operating-loop.md",
+      "size_bytes": 13569,
+      "sha256": "6a4179e0fb8026630ed15235230294526e1945d92decc69ab512ee4abd0f5c71"
+    },
+    {
+      "path": "skills/daksh/references/research-and-business.md",
+      "size_bytes": 3730,
+      "sha256": "d726416647a8c92ff7bd656a89cc26066e04a1b8de8b7df4aaa5eb0b6c01536e"
+    },
+    {
+      "path": "skills/daksh/references/research-synthesis.md",
+      "size_bytes": 3775,
+      "sha256": "2cd4701406054c684259106dea2399dcd8cdf7e5ad4c15a10c7292e73e8d943e"
+    },
+    {
+      "path": "skills/daksh/references/specialists.md",
+      "size_bytes": 3024,
+      "sha256": "93d4283e69a0695559b6a85ec61f620c9983343077bf59ae0ae33952b0844716"
+    },
+    {
+      "path": "skills/daksh/references/weekly-learning.md",
+      "size_bytes": 9560,
+      "sha256": "937fdf7350760a4ac11f6fd41c5f092e631ce8f652c214f6c64ed8681696fa03"
+    },
+    {
+      "path": "skills/daksh/scripts/brain.py",
+      "size_bytes": 22745,
+      "sha256": "e11e25338bac4bb943847e0f48c9261921db04a4bc157144e2ed42615feae8d9"
+    },
+    {
+      "path": "skills/daksh/scripts/orchestrator.py",
+      "size_bytes": 31815,
+      "sha256": "d86ddcad1da7e97a4e13a868f1885ec816739bec35622334da654c46b26ec2db"
+    },
+    {
+      "path": "skills/daksh/scripts/synthesis.py",
+      "size_bytes": 6441,
+      "sha256": "498c7530c30719361cdb3e2dbe3449877d42b9612671f09797e62c878a5d18fe"
+    },
+    {
+      "path": "skills/daksh/scripts/test_brain.py",
+      "size_bytes": 4517,
+      "sha256": "533eab89c8fd8c58352324532289752f8b0362e45768f11645a71c3018680ef9"
+    },
+    {
+      "path": "skills/daksh/scripts/test_brain_extensions.py",
+      "size_bytes": 11103,
+      "sha256": "82adbfc2a04e3a085e1e61fbaf871c499178787606eb348ae1b7d1cf09e00c0c"
+    },
+    {
+      "path": "skills/daksh/scripts/test_orchestrator.py",
+      "size_bytes": 32707,
+      "sha256": "12971e8ab62f1d38b1aa04244609715d95becdf1369d1e2e4a2d90150001bdff"
+    },
+    {
+      "path": "skills/fashion-campaign-director/SKILL.md",
+      "size_bytes": 17133,
+      "sha256": "d7a55c4b6d4fd1653be046c1b72501b335e78c73a2cb76e56082175ca7291c0e"
+    },
+    {
+      "path": "skills/fashion-campaign-director/agents/openai.yaml",
+      "size_bytes": 283,
+      "sha256": "0f1e48ccd9092d82340c14d46c73f7e9f996b4258e57cc0fb8ae42c088ebc1e0"
+    },
+    {
+      "path": "skills/fashion-campaign-director/references/example-campaign.md",
+      "size_bytes": 7715,
+      "sha256": "eba6ed9d28a6e786f647e097fc3f91f36e08958b70b3c77abc5b6647ebc79636"
+    },
+    {
+      "path": "skills/fashion-campaign-director/references/manik-integration.md",
+      "size_bytes": 7728,
+      "sha256": "8fe32f30593f375c83e89ce7ec346f65825953cd1f5f515700737da9c8838ed8"
+    },
+    {
+      "path": "skills/fashion-campaign-director/references/visual-language.md",
+      "size_bytes": 19679,
+      "sha256": "5885f2d5f7420bd6e1b328bc2d04fd69887adc0c98636fc08574b568aabb9d91"
+    },
+    {
+      "path": "skills/maniik/SKILL.md",
+      "size_bytes": 7474,
+      "sha256": "2175e293fc593b65e5c55a57a823d25c545d0232314d59d50ff3627fadead22b"
+    },
+    {
+      "path": "skills/maniik/agents/openai.yaml",
+      "size_bytes": 381,
+      "sha256": "904b278db8a05c8b5529bcb046b2ac95b2ab82121d429b78781d59c871aa01c5"
+    },
+    {
+      "path": "skills/maniik/assets/icon.svg",
+      "size_bytes": 2922,
+      "sha256": "fbb6c7314886573cd56c3f86884a65afe3b5f4ce4bf1ee6baeeeb1fa50aea7a4"
+    },
+    {
+      "path": "skills/maniik/assets/learning-runtime.json",
+      "size_bytes": 5723,
+      "sha256": "294c8ca4e968f952d5169e3942788c7af3a170ccc6e71ece457bda6592f57850"
+    },
+    {
+      "path": "skills/maniik/references/context-and-template.md",
+      "size_bytes": 1693,
+      "sha256": "39065a69768456a77e3be138c46c5c115cc82d57dbb3cf1ea0d340db0795c663"
+    },
+    {
+      "path": "skills/maniik/references/extended-workflows.md",
+      "size_bytes": 5383,
+      "sha256": "1e9e5c159f217b162bdb6d74c01ffd2cc0c4e8c313557d2e2adfd6bbc3b1d3e1"
+    },
+    {
+      "path": "skills/maniik/references/preferences.md",
+      "size_bytes": 3120,
+      "sha256": "9b4d1d6e8f6da88aec425855eec3f796a2948afb17e15298d65ac38937ff6a46"
+    },
+    {
+      "path": "skills/suno-instrumental-prompts/SKILL.md",
+      "size_bytes": 6088,
+      "sha256": "17ce09d9d7ec4ea4c2c151a9752aa01a89bf495b1fcfe173bbf204083c8c9152"
+    },
+    {
+      "path": "skills/suno-instrumental-prompts/agents/openai.yaml",
+      "size_bytes": 389,
+      "sha256": "ce41d391c6963b47e25a285ece73b5e0a43f88e08760b940c9288260f8ef8ff9"
+    },
+    {
+      "path": "skills/suno-instrumental-prompts/assets/icon.svg",
+      "size_bytes": 1210,
+      "sha256": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+    }
+  ]
+}

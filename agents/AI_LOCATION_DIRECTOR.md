@@ -1,5 +1,11 @@
 # AI Location Director | Consolidated MD v3
 
+## V4 routing addition: AI Fashion Campaigner
+
+**AI Fashion Campaigner** se connected-set, reverse-view aur prop continuity work tab lo jab brief ko zaroorat ho. Supplied/approved environment, product placements and spatial layout preserve karo. Generic rich-set suggestions do not authorize adding objects or people to locked frames.
+
+See [new agent dossier](AI_FASHION_CAMPAIGNER.md). The source modules below remain preserved from the v3 audit.
+
 **Snapshot:** 1 November 2026. **Status:** source-backed documentation export, not live deployment.
 
 Is file mein short summary ke saath poore available Markdown instruction modules aur saved lesson records consolidate kiye gaye hain. Original source files skills/ai-location-director/ mein unchanged hain. Scripts, templates, structured data aur full historical ledgers ka complete index end mein hai.
@@ -3045,3 +3051,7 @@ Code, fixtures, schemas and JSON files are preserved, not claimed executed by th
 Original skill files and individual skill.zip archives are unchanged. This v3 changes documentation, adds recovered dated runtime records and records the audit. It does not install these latest overlay rules into the live skills. No actual image/audio/video QC, private inbox scan, paid request, scheduler mutation or independent worker review ran.
 
 See [audit report](../audit/AUDIT_REPORT.md), [coverage matrix](../audit/COVERAGE_MATRIX.md), [dependencies](../DEPENDENCIES_AND_LIMITS.md) and [mapping](../AGENT_SKILL_MAP.md).
+
+## Update — 2 November 2026
+
+Added scoped @krishna-temple base/view-tag routing and no-invented-orientation rule.

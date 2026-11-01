@@ -61,3 +61,11 @@ Use these as scoped evidence, not a secret viral formula. The ranges and platfor
 | [WhatsApp: Status](https://blog.whatsapp.com/new-ways-to-enjoy-whatsapp-status) (7 February 2023) | Status is a personal update surface for contacts, supports photos/text and has audience controls. The short caption range is an editorial choice, not a sourced length limit. |
 
 No live account dashboard, private feed, original viral-post performance experiment or new analytics integration was inspected in this update. An Instagram search-explainer fetch was rate-limited and is not used as verified evidence. No ad-only best-performing caption statistic is generalized to organic posts.
+
+## 1–2 November 2026 user routing overrides
+
+- Pinterest must always be delivered as two clearly separate fields/blocks: **Pinterest Title** and **Pinterest Description**. Never merge them into one paragraph.
+- Instagram and Facebook use **one shared caption** when both are requested together. Write it so the same copy works natively on both. Do not create separate Instagram and Facebook captions unless Manik explicitly asks for separate versions.
+- Therefore bare `captions do` currently yields: X, LinkedIn, Pinterest Title + Pinterest Description, Instagram/Facebook shared caption, and WhatsApp. Platform-specific factual constraints still apply.
+
+Current official research checked 2 November 2026: Facebook introduced user-controlled natural-language interest tuning for Feed/Reels on 13 October 2026. Treat this as evidence that semantic topic relevance and audience interest remain important, **not** as a viral-caption formula or a reason to stuff keywords. No guaranteed reach rule is inferred.

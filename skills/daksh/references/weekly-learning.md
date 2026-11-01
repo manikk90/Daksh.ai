@@ -42,3 +42,7 @@ The explicit all-agent completion request recovered AI Writer from the exact rec
 ### Current-state gate, reviewed30October
 
 The recovery/resume described above preceded the later29October Writer save failure. Current original task was observed paused on29 and30October; preserve that pause and its unapplied packet. Use current runtime/tool receipts over historical restoration prose. Source: current explicit schedule-ownership instruction plus observed original-task receipts. Example: consume its saved pending result, do not run Writer here. Boundary: this observation is neither a user deletion nor permission to recover it under nightly maintenance. Text/state validation only; no installation or scheduler change performed.
+
+## Manual all-agent update extension — 2 November 2026
+
+An explicit manual **update all agents** request now includes AI Fashion Campaigner in the review roster in addition to Daksh, maniik, AI Native Director, AI Location Director, AI Writer, Ai Dubbing, AI Music Director, AI Socials and the Suno helper where relevant. This manual scope does not silently add Fashion to the existing scheduled coordinator or alter any timer. Review current user corrections first, then source-backed research where freshness matters. A no-change result for a specialist is valid.

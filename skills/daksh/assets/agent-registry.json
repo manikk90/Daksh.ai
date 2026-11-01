@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-27",
+  "updated_on": "2026-11-02",
   "availability": "Resolve from the current skill catalog and tools at invocation. Entries are routing hints, not installed-worker claims.",
   "defaults": {
     "direct_for_microtasks": true,
@@ -145,6 +145,19 @@
         "content planning"
       ],
       "handoff": "Resolve current availability; sources, platform, voice and image locks. Publishing needs its own authority."
+    },
+    {
+      "id": "fashion",
+      "kind": "skill",
+      "label": "AI Fashion Campaigner",
+      "skill_name": "fashion-campaign-director",
+      "tasks": [
+        "fashion campaign concept",
+        "editorial styling",
+        "locked visual system",
+        "hero and supporting fashion prompts"
+      ],
+      "handoff": "Strict identity/garment/frame locks; video -> AI Native Director, connected environments/props -> AI Location Director, captions -> AI Socials. Publishing/generation needs separate authority."
     },
     {
       "id": "data",

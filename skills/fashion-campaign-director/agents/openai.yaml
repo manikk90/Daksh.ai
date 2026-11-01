@@ -1,0 +1,5 @@
+interface:
+  display_name: AI Fashion Campaigner
+  short_description: Cohesive fashion campaigns, styling and image prompts.
+  default_prompt: Use AI Fashion Campaigner to turn my brief and references into a
+    cohesive campaign while preserving model identity and garment details.

@@ -1017,3 +1017,7 @@ Code, fixtures, schemas and JSON files are preserved, not claimed executed by th
 Original skill files and individual skill.zip archives are unchanged. This v3 changes documentation, adds recovered dated runtime records and records the audit. It does not install these latest overlay rules into the live skills. No actual image/audio/video QC, private inbox scan, paid request, scheduler mutation or independent worker review ran.
 
 See [audit report](../audit/AUDIT_REPORT.md), [coverage matrix](../audit/COVERAGE_MATRIX.md), [dependencies](../DEPENDENCIES_AND_LIMITS.md) and [mapping](../AGENT_SKILL_MAP.md).
+
+## Update — 2 November 2026
+
+Added automatic dialogue emotion/voice-tag refinement while preserving exact words and endpoint-support boundaries.

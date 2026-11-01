@@ -101,3 +101,13 @@ Source: [original API spec](https://github.com/Beatoven/public-api/blob/main/doc
 ## Selection rule
 
 Recommend by task fit, verified controls, editable output, usable exports, language evidence and actual access—not a universal “best platform” ranking. If a requested destination lacks a feature, produce the best supported route plus a clearly labelled editorial/DAW handoff. Do not buy credits, connect accounts or start training just to make a recommendation.
+
+## Official Suno updates checked 2 November 2026
+
+Source-backed capability notes, not automatic workflow changes:
+
+- **Suno v6 family**: v6, v6-wild and v6-mini; v6/v6-wild are paid-tier models, v6-mini is broadly available. Current help/release notes also describe multimodal starts and edit/remix workflows. Verify actual account/model availability before choosing one.
+- **Suno MCP beta (28 Oct 2026)**: Suno says MCP can connect to clients including ChatGPT for conversational creation, audio-start workflows and remixing. Treat this as a possible execution route only after the current host/account exposes and authorizes it; do not pretend the connector exists from documentation alone.
+- **Studio updates (29 Oct 2026)**: clearer clip settings/info, auto-stretch for added audio, fine pitch adjustment and grid controls. These are useful for timing/tuning repair after generation; they do not prove audio quality or change the creative brief.
+
+Keep existing platform-specific prompt budgets and exact lyrics/hooks. Prefer v6-mini for cheap ideation only when access and the task justify it; this is a routing hypothesis, not a measured quality claim.
