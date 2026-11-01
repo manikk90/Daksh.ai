@@ -1,0 +1,12 @@
+interface:
+  display_name: Brain Evals
+  short_description: Test that agents follow Manik's locks and route correctly
+  default_prompt: Use $brain-evals to check whether my agents still follow my locks
+    and whether each skill beats the no-skill baseline.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

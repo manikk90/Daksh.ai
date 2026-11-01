@@ -46,3 +46,18 @@ The recovery/resume described above preceded the later29October Writer save fail
 ## Manual all-agent update extension — 2 November 2026
 
 An explicit manual **update all agents** request now includes AI Fashion Campaigner in the review roster in addition to Daksh, maniik, AI Native Director, AI Location Director, AI Writer, Ai Dubbing, AI Music Director, AI Socials and the Suno helper where relevant. This manual scope does not silently add Fashion to the existing scheduled coordinator or alter any timer. Review current user corrections first, then source-backed research where freshness matters. A no-change result for a specialist is valid.
+
+## Repo runtime extension — 1 November 2026
+
+The GitHub repo `manikk90/Daksh.ai` is now the brain's source of truth. In it:
+- the live memory is `brain/DAKSH_BRAIN.json` (use `scripts/brain.py` with revision guards);
+- the eval gate is `skills/brain-evals/`;
+- research lives in `research/` and `research/god-mode/`.
+
+When this loop runs from the repo (Claude Code or a cloud scheduled task), work on a `claude/`-prefixed branch and open a PR. Don't push straight to main. Include in the PR:
+- the changes to brain records;
+- the changes to skills;
+- a new eval case for every new lock;
+- the results of `run_evals.py selftest`/`routing` and the affected skill tests.
+
+A lesson or skill edit is admitted only if those pass and no regression case drops. Manik merges. The ChatGPT-side automation and Library brain stay valid as a mirror: reconcile their newer records into the repo brain by record ID, and never overwrite the whole file. A repo scheduled task is created only after Manik explicitly approves it.

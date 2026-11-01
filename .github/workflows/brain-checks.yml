@@ -1,0 +1,37 @@
+name: brain-checks
+
+# Eval gate for the maniik brain: script regressions, grader selftest, routing and brain validity.
+# Deterministic only (no model calls, no secrets needed).
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest pyyaml
+      - name: Skill regression suites
+        run: |
+          set -e
+          for d in skills/daksh skills/ai-dubbing skills/ai-music-director skills/ai-location-director skills/ai-socials skills/god-mode/scripts skills/brain-evals/scripts; do
+            echo "== $d"; (cd "$d" && python -m pytest -q -p no:cacheprovider)
+          done
+      - name: Grader selftest
+        run: python skills/brain-evals/scripts/run_evals.py selftest
+      - name: Routing evals
+        run: python skills/brain-evals/scripts/run_evals.py routing
+      - name: Live brain valid
+        run: python skills/daksh/scripts/brain.py validate brain/DAKSH_BRAIN.json > /dev/null
+      - name: Skill structure
+        run: |
+          set -e
+          for d in skills/*/; do
+            [ -f "$d/SKILL.md" ] && python support_skills/skill-creator/scripts/quick_validate.py "$d"
+          done

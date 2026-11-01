@@ -74,7 +74,7 @@ Run a self-check before delivering. Is every recommendation tied to the goal? Is
 
 ### 5. Persist and grow the brain
 - When working in this repo, save the blueprint to `research/god-mode/YYYY-MM-DD-<slug>.md` (see `research/god-mode/README.md`).
-- In `gm build` mode, implement: create a skill under `skills/<id>/` (SKILL.md with name/description frontmatter, `agents/openai.yaml`, references, scripts with tests) or extend an existing one. Run its tests and the scanner tests. Update `README.md`'s brain map when you add a capability. Then commit and push.
+- In `gm build` mode, implement: create a skill under `skills/<id>/` (SKILL.md with name/description frontmatter, `agents/openai.yaml`, references, scripts with tests) or extend an existing one. Every new or changed capability ships with **at least 3 eval cases** in `skills/brain-evals/cases/` (see `skills/brain-evals/references/writing-cases.md`). Run its tests, `run_evals.py selftest` and `run_evals.py routing`. The routing cases must stay at 100%. Update `README.md`'s brain map when you add a capability. Then commit and push.
 - Never silently rewrite approved production canon, other agents' locked rules or historical snapshot folders (`original_dossier/`, `previous_v2_summaries/`, `audit/`, `runtime_state/`). Add new files or clearly scoped edits instead.
 
 ## Boundaries (non-negotiable even in God Mode)

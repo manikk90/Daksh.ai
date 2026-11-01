@@ -22,6 +22,15 @@ Is repo ka main kaam ek brain banana hai jo AI mein almost kuch bhi kar sake. To
 
 Skill: [skills/god-mode/SKILL.md](skills/god-mode/SKILL.md). Internal scanner: `python skills/god-mode/scripts/gm_scan.py "<goal>"`. Reports: `research/god-mode/`. Claude Code is repo mein `CLAUDE.md` ke through `gm` automatically pehchanta hai.
 
+### Brain infrastructure (2026-11-01)
+| Piece | Path | Kaam |
+|---|---|---|
+| Live memory | [brain/](brain/README.md) | `DAKSH_BRAIN.json`, versioned, `brain.py` se hi edit |
+| Eval gate | [skills/brain-evals/](skills/brain-evals/SKILL.md) | Locks ke regression cases, routing evals, with-skill vs baseline runs |
+| CI | `.github/workflows/brain-checks.yml` | Har push/PR par saare tests + selftest + routing + brain validate |
+| Cross-tool skills | `.agents/skills/` | `skills/*` ke symlinks (Agent Skills standard path) |
+| Eval results | `research/evals/` | Model runs ke dated reports |
+
 ## Start here
 - [Audit verdict and actual gaps](audit/AUDIT_REPORT.md)
 - [Coverage matrix](audit/COVERAGE_MATRIX.md)
