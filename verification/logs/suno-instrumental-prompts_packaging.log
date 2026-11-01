@@ -1,0 +1,14 @@
+📦 Packaging skill: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skills/suno-instrumental-prompts
+   Output directory: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/suno-instrumental-prompts
+
+🔍 Validating skill...
+✅ Skill is valid!
+
+  Added: suno-instrumental-prompts/SKILL.md
+  Added: suno-instrumental-prompts/assets/icon.svg
+  Added: suno-instrumental-prompts/agents/openai.yaml
+
+📏 Archive size: 3,907 bytes
+The upload service validates the configured skill size limits.
+✅ Successfully packaged skill to: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/suno-instrumental-prompts/skill.zip
+

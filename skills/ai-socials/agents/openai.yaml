@@ -1,0 +1,13 @@
+interface:
+  display_name: AI Socials
+  short_description: Social research, writing and analytics for Manik
+  default_prompt: Use $ai-socials to plan my social content in my own voice.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

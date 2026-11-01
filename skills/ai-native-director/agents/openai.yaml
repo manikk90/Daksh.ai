@@ -1,0 +1,15 @@
+interface:
+  display_name: AI Native Director
+  short_description: Direct cast, costume, acting, camera and boards with QC
+  default_prompt: Use $ai-native-director to create identity-consistent cast and costume
+    reference sheets or direct my scene into storyboard and video prompts with approved
+    references and continuity.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

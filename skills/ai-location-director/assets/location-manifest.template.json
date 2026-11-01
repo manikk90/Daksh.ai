@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "location_id": "location-slug",
+  "version": "v01",
+  "run_id": "run-slug",
+  "mode": "master-first",
+  "stage": "brief_ready",
+  "verification_level": "reference-based",
+  "coordinates": {
+    "units": "metres",
+    "axes": "X east, Y north, Z up",
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "orientation_evidence": "design convention"
+  },
+  "boundary": {
+    "description": "Define the scene-relevant area and camera sightlines",
+    "min_m": [
+      -10,
+      -10,
+      0
+    ],
+    "max_m": [
+      10,
+      10,
+      5
+    ],
+    "design_status": "proposed"
+  },
+  "plan": {
+    "artifact_id": "plan-v01",
+    "version": "v01",
+    "path": null,
+    "status": "pending",
+    "approved_version": null,
+    "approval_evidence": null,
+    "scope": []
+  },
+  "master": {
+    "artifact_id": "master-v01",
+    "version": "v01",
+    "approved_version": null,
+    "path": null,
+    "status": "pending",
+    "approval_evidence": null,
+    "requested_pixels": [
+      3840,
+      2160
+    ],
+    "native_pixels": null,
+    "exported_pixels": null,
+    "upscaled": false
+  },
+  "research": {
+    "status": "pending",
+    "findings": [],
+    "unresolved_questions": []
+  },
+  "reviews": [],
+  "questions": [],
+  "sources": [],
+  "design_decisions": [],
+  "geometry_version": "g01",
+  "material_version": "m01",
+  "state_version": "s01",
+  "model": {
+    "kind": "coordinate-manifest",
+    "path": null,
+    "master_match": "PENDING"
+  },
+  "objects": [],
+  "props": [],
+  "zones": [],
+  "connections": [],
+  "routes": [],
+  "lights": [],
+  "states": [],
+  "cameras": [],
+  "anchors": [],
+  "tags": [],
+  "outputs": [],
+  "required_output_ids": [],
+  "qc": [],
+  "unresolved": [],
+  "next_action": "Create exactly one master image and inspect it",
+  "reference_register": [],
+  "scene_coverage": [],
+  "attempts": [],
+  "execution_policy": {
+    "max_same_failure_attempts": 2,
+    "route": "scoped",
+    "reuse_verified_sources": true
+  },
+  "capabilities": {
+    "image_generation": "check-at-runtime",
+    "blockout": "box-mesh-and-wireframe-helper",
+    "beauty_renderer": "check-at-runtime",
+    "panorama_viewer": "offline WebGL builder; check actual browser support",
+    "spatial_checks": "Z-rotated-box visibility probes and conservative swept route envelopes"
+  },
+  "prop_interactions": []
+}

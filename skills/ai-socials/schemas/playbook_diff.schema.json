@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "playbook_diff",
+  "title": "PlaybookDiff (weekly retro -> Evaluator audit -> Manik approval)",
+  "type": "object",
+  "required": ["week", "version_from", "version_to", "changes", "confirmations", "guards"],
+  "properties": {
+    "week": {"type": "string", "pattern": "^\\d{4}-W\\d{2}$"},
+    "version_from": {"type": "integer", "minimum": 1},
+    "version_to": {"type": "integer", "minimum": 1},
+    "scored_posts": {"type": "integer", "minimum": 0},
+    "changes": {
+      "type": "array", "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["action", "rule_id", "platform", "dimension", "value", "direction", "evidence_post_ids", "n"],
+        "properties": {
+          "action": {"enum": ["add", "modify", "retire"]},
+          "dimension": {"enum": ["slot", "hook_type", "language", "format", "pillar"]},
+          "direction": {"enum": ["prefer", "avoid"]}
+        }
+      }
+    },
+    "confirmations": {"type": "array"},
+    "guards": {
+      "type": "object",
+      "required": ["changes_within_cap", "only_learnable_dimensions", "voice_anchor_untouched"],
+      "properties": {
+        "changes_within_cap": {"const": true},
+        "only_learnable_dimensions": {"const": true},
+        "voice_anchor_untouched": {"const": true}
+      }
+    }
+  }
+}

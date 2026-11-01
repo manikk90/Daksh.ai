@@ -35,3 +35,19 @@ Slack/Gmail read-only by default; never post, draft in external apps, react, inv
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`maniik/SKILL.md`](../skills/maniik/SKILL.md).
+Original-source files: 7. Standalone archive: [skill.zip](../skill_packages/maniik/skill.zip).
+
+- **Slack/Gmail evidence and exact weekly template**: [`references/context-and-template.md`](../skills/maniik/references/context-and-template.md).
+- **Dependencies, capacity and demonstrated workflows**: [`references/extended-workflows.md`](../skills/maniik/references/extended-workflows.md).
+- **Explicit preferences and scoped ownership**: [`references/preferences.md`](../skills/maniik/references/preferences.md).
+- **Learning/schedule binding snapshot**: [`assets/learning-runtime.json`](../skills/maniik/assets/learning-runtime.json).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

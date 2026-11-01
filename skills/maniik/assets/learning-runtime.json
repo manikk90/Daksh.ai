@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "coordinator_id": "6adb7de8023c8191bd2acd6bf088ca3b",
+  "source": "Explicit28October2026 user extension; live automation bindings privately read28October",
+  "timezone": "Asia/Kolkata",
+  "chat_review_checkpoint": null,
+  "research_checkpoint": null,
+  "last_partial_chat_review": {
+    "id": "nightly-chat-20261029-2300",
+    "reviewed_on": "2026-10-29",
+    "scheduled_for": "2026-10-29T23:00:00+05:30",
+    "started_at": "2026-10-29T23:04:22.537005+05:30",
+    "window": {
+      "from": "2026-10-22",
+      "through": "2026-10-29T23:04:24+05:30"
+    },
+    "coverage_kind": "partial_accessible_excerpts_and_retrieved_summaries",
+    "coverage": "One broad23–29October retrieval,24–26 and27–29 partitions, focused28–29 specialist/maniik gap check; supplied26–29 direct excerpts. Query restatements, out-of-window16October results and assistant-only claims excluded as correction evidence. No full raw chats or original media inspected. First-week baseline reuses saved21–28 partial review; focused22–23October maniik query returned no matching conversations, retained as gap, not proof of no activity.",
+    "source_types": {
+      "direct_user": "Current instructions and supplied user excerpts; global maintenance limits are run authority, not new domain facts.",
+      "retrieved_user": "Dated user-message summaries; not verbatim raw transcripts.",
+      "assistant_reports": "Historical maintenance, briefing, synthesis and output claims; deduplicated against saved records, never promoted to user approval.",
+      "inspected_outputs": "Current saved skills/records, current brain and live automation receipts; no production media."
+    },
+    "complete_history_checkpoint_advanced": false,
+    "research_checkpoint_advanced": false,
+    "research_review_performed": false,
+    "branch": "Thursday chat-only; manual29October research records preserved",
+    "media_tests": 0,
+    "timer_changes": false,
+    "pending": [
+      "Unretrieved raw chats and sparse dates/ranges; no account-complete coverage",
+      "Original image/video/audio and exact marked-image mappings",
+      "Existing unresolved research candidates, pronunciation conflicts, human calibration and customer/media tests"
+    ],
+    "validation": {
+      "kind": "record_structure_and_source_scope",
+      "status": "passed",
+      "independent_domain_review": "/root/specialist_review; read-only current saved specialist records; no new missing domain lessons",
+      "record_preservation_assertions": 55,
+      "skill_structures_valid": 6,
+      "director_ledger": "VALID34lessons",
+      "independent_integration_review": "Read-only /root/integration_qc: checkpoint/lesson/target scope passed; historical Writer fields moved out of current binding before save; no media pass.",
+      "media_tests": 0
+    },
+    "persistence_contract": "This partial-review record is durable only after scoped save and remote verification; complete-history and research checkpoints retained.",
+    "agent": "maniik",
+    "outcome": "No new lesson; responsibility attribution, confirmed-plan baseline and ChatGPT-only Roman Hinglish already saved. No inbox monitoring or calendar action repeated."
+  },
+  "preserve_work_automations": {
+    "morning": "6adfa750dd3c819199a2f027e2bc6125",
+    "hourly": "6adfa6f5f548819196f8ebd2c764c873",
+    "sunday_plan": "6adeddb1b6348191aaca9a7d81156aee",
+    "saturday_review": "6adeddc05cf0819199a821374a8085f7"
+  },
+  "new_timer_created": false,
+  "manual_history_reviews": [
+    {
+      "review_id": "manual-all-accessible-20261029",
+      "reviewed_on": "2026-10-29",
+      "source_extent": "Two bounded27–29/28–29 retrieved user summaries for28October ownership/availability plus current saved28October preferences. No Slack/Gmail review.",
+      "validation": "Root textual self-review and existing structural validators; independent worker review unavailable after prior spend cap. No media/generation/live service writes.",
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "automation_mutations": 0,
+      "changes": [
+        "dated Episode2–3 screenplay ownership stays Arun",
+        "date-local after-Friday / Monday availability; no automatic execution"
+      ]
+    }
+  ],
+  "partial_chat_review_history": [
+    {
+      "id": "nightly-chat-20261028-2300",
+      "reviewed_on": "2026-10-28",
+      "started_at": "2026-10-28T23:00:04+05:30",
+      "window": {
+        "from": "2026-10-21",
+        "through": "2026-10-28T23:00:00+05:30"
+      },
+      "coverage_kind": "partial",
+      "coverage": "First7-day baseline:21–22 query returned unrelated creative corrections, not planning evidence;23–28 broad/partitioned summaries plus direct supplied26/28 corrections and current preferences/extended workflows. No raw archive or Slack/Gmail monitoring repeated.",
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "media_tests": 0,
+      "pending": [
+        "Unretrieved raw chats and unavailable ranges",
+        "Original media and exact marked-image motorcycle mapping",
+        "Historical research patches/commercial validation remain pending",
+        "28Oct availability/Arun/deadline summary authorship conflicts across retrieval; do not overwrite confirmed plan",
+        "Hourly watch latest recorded completed run has no available result content; delivery unknown."
+      ],
+      "persistence_contract": "Durable only after actual Git push; external receipt authoritative.",
+      "outcome": "Existing ownership, realistic commitments, dependency acceptance, baseline and Roman Hinglish rules retained without duplicate lesson."
+    }
+  ]
+}

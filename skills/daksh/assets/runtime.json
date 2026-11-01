@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "brain": {
+    "name": "DAKSH_BRAIN.json",
+    "library_file_id": "libfile_f5d5dd04cd18819182fb648f5bef136d",
+    "status": "saved"
+  },
+  "master_context": {
+    "name": "MANIK_MASTER_CONTEXT_2026-10-19.md",
+    "library_file_id": "libfile_2b835704c3cc81919bfcccdd81b0809c"
+  },
+  "production_context": {
+    "name": "Laddu_Gopal_Production_Context.json",
+    "library_file_id": "libfile_3c31602922b08191a25c77593280bb60"
+  },
+  "weekly_review": {
+    "automation_id": "6adb7de8023c8191bd2acd6bf088ca3b",
+    "status": "enabled",
+    "timezone": "Asia/Kolkata",
+    "intended_day": "Sunday 23:00 research branch within daily 23:00 chat-review task",
+    "timing_mode": "exact_schedule",
+    "title": "Nightly Agent Self-Learning",
+    "last_configuration_verified_on": "2026-10-27",
+    "execution_mode": "conditional_branch_of_daily_coordinator",
+    "previous_automation_id": "6ad5d8166eec8191b8ab50b313c4aa13",
+    "verified_on": "2026-10-27"
+  },
+  "observation_mode": "on_invocation_and_scheduled_review",
+  "passive_device_monitor": false,
+  "bootstrap_validation": {
+    "state_cases_passed": 12,
+    "fresh_text_cases_passed": 2,
+    "media_tests": 0,
+    "latency_comparison": null
+  },
+  "master_orchestrator": {
+    "version": 2,
+    "registry": "assets/agent-registry.json",
+    "workflow": "references/master-orchestration.md",
+    "run_template": "assets/run.template.json",
+    "state_cli": "scripts/orchestrator.py",
+    "delegation": "on_invocation_when_useful_and_available",
+    "fallback": "sequential_skill_passes_labelled_self_review",
+    "canonical_writer": "daksh",
+    "max_parallel_hint": 3,
+    "model_weight_training": false,
+    "always_on_daemon": false
+  },
+  "master_validation": {
+    "checked_on": "2026-10-20",
+    "controller_cases_passed": 26,
+    "combined_software_cases_passed": 38,
+    "fresh_behavior_cases_passed": 2,
+    "fresh_handoff_review_checks_passed": 6,
+    "media_tests": 0,
+    "latency_comparison": null
+  },
+  "previous_maintenance_configuration": {
+    "automation_id": "6ad5d8166eec8191b8ab50b313c4aa13",
+    "status": "enabled",
+    "timezone": "Asia/Calcutta",
+    "intended_day": "Sunday morning",
+    "timing_mode": "flexible_schedule",
+    "starts_on": "2026-10-25",
+    "title": "Daksh Master Weekly Upgrade",
+    "workflow": "master orchestration, research, business and action learning",
+    "last_configuration_verified_on": "2026-10-20"
+  },
+  "maintenance_schedule": {
+    "automation_id": "6adb7de8023c8191bd2acd6bf088ca3b",
+    "title": "Nightly Agent Self-Learning",
+    "is_enabled": true,
+    "default_timezone": "Asia/Kolkata",
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261027T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+    "verified_on": "2026-10-30",
+    "daily_chat_review": {
+      "cadence": "P1D",
+      "not_before": "23:00"
+    },
+    "weekly_research": {
+      "day": "SU",
+      "not_before": "23:00",
+      "mode": "conditional_branch_in_same_daily_automation"
+    },
+    "status": "configured",
+    "prompt_contains_all_agents": true,
+    "agents": [
+      "daksh",
+      "ai-native-director",
+      "ai-dubbing",
+      "ai-music-director",
+      "ai-socials",
+      "maniik"
+    ],
+    "specific_overrides": {
+      "writer": {
+        "automation_id": "6ada57da59608191bce46ccf9c5fae82",
+        "is_enabled": false,
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261023T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+        "timezone": "Asia/Kolkata",
+        "weekly_research": "Sunday23:00 per its task prompt",
+        "verified_on": "2026-10-30",
+        "note": "Current observed original task paused after29October save-persistence failure; current remote has no Writer skill. Consume saved pending result only; do not resume or execute here.",
+        "latest_result_library_file_id": "libfile_32bbbaf281888191bd00c531334b07a9",
+        "skill_available_on_current_saved_remote": false
+      },
+      "location": {
+        "automation_id": "6ada57d13a3c8191b9d598e886ee8f46",
+        "is_enabled": true,
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261027T000000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+        "timezone": "Asia/Kolkata",
+        "weekly_research": "Monday00:00 Asia/Kolkata, Sunday night ending; conditional branch in actual task prompt",
+        "verified_on": "2026-10-27",
+        "note": "Latest matching run no_update; older result is historical, no current delivery inferred."
+      }
+    },
+    "previous_automation_id": "6ad5d8166eec8191b8ab50b313c4aa13",
+    "timing_mode": "exact_schedule",
+    "replacement_reason": "Exact clock scheduling replaces the prior flexible dispatcher; old coordinator paused after new exact task confirmed.",
+    "exact_clock_configuration_confirmed": true,
+    "previous_observations": [
+      {
+        "verified_on": "2026-10-23",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261023T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+        "specific_overrides": {
+          "writer": {
+            "automation_id": "6ada57da59608191bce46ccf9c5fae82",
+            "is_enabled": false,
+            "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261023T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+            "timezone": "Asia/Kolkata",
+            "weekly_research": "Sunday23:00 per its task prompt",
+            "verified_on": "2026-10-27",
+            "note": "Own task observed paused; preserve it. Intended cadence is not enabled state."
+          },
+          "location": {
+            "automation_id": "6ada57d13a3c8191b9d598e886ee8f46",
+            "is_enabled": true,
+            "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261027T000000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+            "timezone": "Asia/Kolkata",
+            "weekly_research": "Monday00:00 Asia/Kolkata, Sunday night ending; conditional branch in actual task prompt",
+            "verified_on": "2026-10-27",
+            "note": "Latest matching run no_update; older result is historical, no current delivery inferred."
+          }
+        }
+      }
+    ],
+    "live_lookup_only": true,
+    "timer_modified_by_this_review": false,
+    "next_run_time": null,
+    "timer_modified_in_review": false,
+    "previous_writer_observations": [
+      {
+        "automation_id": "6ada57da59608191bce46ccf9c5fae82",
+        "is_enabled": false,
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261023T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+        "timezone": "Asia/Kolkata",
+        "weekly_research": "Sunday23:00 per its task prompt",
+        "verified_on": "2026-10-27",
+        "note": "Own task observed paused; preserve it. Intended cadence is not enabled state."
+      }
+    ],
+    "writer_observation_history": [
+      {
+        "automation_id": "6ada57da59608191bce46ccf9c5fae82",
+        "is_enabled": true,
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261023T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+        "timezone": "Asia/Kolkata",
+        "weekly_research": "Sunday23:00 per its task prompt",
+        "verified_on": "2026-10-29",
+        "note": "Exact Writer base recovered, installation/content verified, then original task resumed under current all-agent completion request. Schedule/prompt unchanged. Prior pause was missing-root failure, no retrieved user deletion decision.",
+        "skill_directory": "skill-6ae2c66cf120819189195cc39a4c7e91",
+        "recovered_commit": "cb682c9c92cb674b9cbd5ec25840857f159511a3",
+        "resume_receipt_updated_at": "2026-10-29T04:08:22.229744+00:00"
+      }
+    ],
+    "latest_run_observation": {
+      "scheduled_for": "2026-10-30T23:00:00+05:30",
+      "started_at": "2026-10-30T23:04:27.188688+05:30",
+      "recorded_status": "in_progress",
+      "observed_enabled": true,
+      "timer_modified": false
+    }
+  },
+  "latest_chat_review": {
+    "reviewed_on": "2026-10-23",
+    "window": {
+      "from": "2026-10-20",
+      "through": "2026-10-23"
+    },
+    "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+    "research_review_performed": false,
+    "source_record": "DAKSH_BRAIN.json; same existing Library identity",
+    "state_save": {
+      "status": "saved",
+      "records": {
+        "DAKSH_BRAIN.json": {
+          "library_file_id": "libfile_f5d5dd04cd18819182fb648f5bef136d",
+          "file_id": "file_0000000026f881f4a61135e075fac9d4",
+          "current_version_number": 3
+        },
+        "Laddu_Gopal_Production_Context.json": {
+          "library_file_id": "libfile_3c31602922b08191a25c77593280bb60",
+          "file_id": "file_000000006fe481f7a34a16628ca8b5b1",
+          "current_version_number": 6
+        }
+      }
+    },
+    "skill_save": {
+      "status": "saved",
+      "confirmed_feature_commit": "53d0bf4c4d962dcabfca387d81616eaac6057098",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    },
+    "latest_explicit_correction": "Per-shot visible/reference inventory only; no stale scene-wide character, prop or location tags. Explicit offscreen audio separately routed.",
+    "test_results": {
+      "director": "Ledger valid32lessons; worker14 cadence and6 additional literal boundary cases;12 source-scoped same-context text decisions.",
+      "location": "Merged ledger valid23lessons; all22 newer remote lesson IDs preserved; current final-master record retained; media/geometry pending.",
+      "writer": "Skill/JSON/links;3 synthetic source-audit cases and frame-handoff text comparisons.",
+      "dubbing": "44 existing regressions and exact-line/unauthorized-synonym boundary passed; no audio test.",
+      "music": "32 regressions including5 cadence/confirmation boundary cases, runtime/resource validation passed; no audio/media test.",
+      "socials": "Structure/static/boundary checks passed. Full pytest/draft-validator gates unavailable due missing pytest/jsonschema; earlier saved validation retained as history.",
+      "root_literal": "Four independent-inventory cases matched: cart-only and separate Nandu/cart pass; extra actor and wrong location fail.",
+      "fresh_review": "Fresh reviewer A/B/C and visible strap/partial owner/crowd/offscreen audio boundaries passed; untagged Pooja deliberately gets literalPASS but semanticFAIL. Focused merged-source/timer review passed at aa0171b.",
+      "media_tests": 0,
+      "measured_speed_gain": null
+    },
+    "completed_at": "2026-10-23T20:40:56.786110+05:30"
+  },
+  "last_successful_chat_review_checkpoint": {
+    "reviewed_on": "2026-10-23",
+    "coverage_start": "2026-10-20",
+    "coverage_end": "2026-10-23",
+    "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+    "skill_save": {
+      "status": "saved",
+      "confirmed_feature_commit": "53d0bf4c4d962dcabfca387d81616eaac6057098",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    },
+    "media_tests": 0,
+    "research_checkpoint_advanced": false
+  },
+  "memory_engine": {
+    "version": 2,
+    "guide": "references/operating-loop.md",
+    "active_scoped_retrieval": true,
+    "explicit_history_opt_in": true,
+    "atomic_same_scope_supersession": true,
+    "optional_tasks_and_agenda": true,
+    "completion_evidence_required": true
+  },
+  "memory_audit_validation": {
+    "checked_on": "2026-10-23",
+    "software_tests_passed": 63,
+    "new_memory_task_tests_passed": 25,
+    "independent_new_behavior_review": "unavailable: workspace worker spend cap; direct author review and software regressions completed",
+    "media_tests": 0,
+    "measured_speed_gain": null
+  },
+  "latest_live_run_observation": {
+    "observed_on": "2026-10-27",
+    "automation_id": "6adb7de8023c8191bd2acd6bf088ca3b",
+    "run_id": "fb7ba0a5-3de0-8332-a147-c14513c4f45c",
+    "scheduled_for": "2026-10-25T17:30:00Z",
+    "recorded_status": "completed",
+    "matching_result_created_at": "2026-10-25T17:43:28.207874Z",
+    "result": "25 October review journal saved; skill installation reported pending after HTTP 422. Does not establish delivery or applied findings.",
+    "delivery_status": "unknown"
+  },
+  "latest_chat_review_observation": {
+    "reviewed_on": "2026-10-27",
+    "review_id": "review-overall-chat-20261027",
+    "source": "DAKSH_BRAIN.json same Library identity; direct supplied 26 October excerpts plus two targeted retrievals and current skill/scheduler reads",
+    "coverage_kind": "partial",
+    "raw_all_chats_reviewed": false,
+    "research_review_performed": false,
+    "media_tests": 0,
+    "timer_changes": false,
+    "validation_and_persistence": "See current brain review and actual save receipts; earlier successful checkpoint retained."
+  },
+  "last_partial_chat_review": {
+    "id": "nightly-chat-20261030-2300",
+    "reviewed_on": "2026-10-30",
+    "scheduled_for": "2026-10-30T23:00:00+05:30",
+    "started_at": "2026-10-30T23:04:27.188688+05:30",
+    "window": {
+      "from": "2026-10-29T23:04:24+05:30",
+      "through": "2026-10-30T23:04:28+05:30"
+    },
+    "coverage_kind": "partial",
+    "coverage": "Broad29–30October retrieval, focused30October gap query and23–28 retained-gap query; supplied direct user excerpts/current instructions and current saved skill/brain records. Earlier partial23–29 review reused. Query restatements, assistant briefings/output claims and out-of-window results excluded as new user evidence. Raw archive and source/output media unavailable.",
+    "complete_history_checkpoint_advanced": false,
+    "research_checkpoint_advanced": false,
+    "research_review_performed": false,
+    "branch": "Friday chat-only; separate Friday audio briefing is assistant-reported, not fresh adopted documentation evidence.",
+    "pending": [
+      "Unretrieved raw chats and sparse dates/ranges retained",
+      "Original source/output photo, exact crop and bird visibility inspection",
+      "Actual audio quality, sync, pending research/control/customer tests",
+      "Writer separately-owned paused/unapplied result retained; not resumed"
+    ],
+    "media_tests": 0,
+    "timer_changes": false,
+    "validation": {
+      "preservation_checks": 28,
+      "structures_valid": 3,
+      "music_qc": "PASS resources7platforms14lessons",
+      "music_runtime_validate": "PASS",
+      "media_tests": 0,
+      "independent_text_cases": 6,
+      "independent_review": "/root/qc30",
+      "status": "passed",
+      "limits": "Source/text scope only; no image/audio/app quality or complete raw-history review"
+    },
+    "persistence_contract": "Valid after scoped skill save/verification and canonical brain replacement; raw-history/research checkpoints retained.",
+    "agent_outcomes": {
+      "Daksh": "Remove stale recovery wording from current routing guidance; live state precedes historical restoration. No new business fact/task.",
+      "Director": "Current frame-local/dialogue/identity rules retained; no new source-backed correction.",
+      "Dubbing": "No new direct correction; Friday assistant feature report is not adoption evidence.",
+      "Music/Suno": "MUS-014 scoped cue arc added for validation/persistence; helper unchanged.",
+      "Socials": "Selected duck-photo zoom/light lesson; output inspection remains pending.",
+      "maniik": "No new direct correction; do not promote assistant deadline/support summaries into confirmed plan or user assignment."
+    }
+  },
+  "manual_history_reviews": [
+    {
+      "review_id": "manual-all-accessible-20261029",
+      "reviewed_on": "2026-10-29",
+      "source_extent": "Bounded retrieved user summaries across July–October plus direct current request; no pre-July matches, full raw archive or original media. Eight retrieval calls shared across agents.",
+      "validation": "Root textual self-review and existing structural validators; independent worker review unavailable after prior spend cap. No media/generation/live service writes.",
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "automation_mutations": 0,
+      "changes": [
+        "compaction/current-version continuation gate",
+        "latest maniik calendar authorization precedence"
+      ]
+    }
+  ],
+  "all_agent_completion_reviews": [
+    {
+      "id": "ALL-20261029",
+      "source": "Current user sab kro scope correction; current saved source/version and exact Writer recovery; prior broad history reused.",
+      "scope": "All8agents plus Suno helper, master/brain and pending operational/source-contract records.",
+      "software_checks": 261,
+      "writer_audit_cases": 3,
+      "skill_structures_valid": 9,
+      "new_media_tests": 0,
+      "research_extent": "Targeted official verification of pending audio contracts; no full Sunday research checkpoint advanced.",
+      "timer_change": "Only original Writer maintenance task resumed after verified installation; other schedules retained."
+    }
+  ],
+  "partial_chat_review_history": [
+    {
+      "id": "nightly-chat-20261028-2300",
+      "reviewed_on": "2026-10-28",
+      "started_at": "2026-10-28T23:00:04+05:30",
+      "window": {
+        "from": "2026-10-23",
+        "through": "2026-10-28T23:00:00+05:30"
+      },
+      "coverage_kind": "partial",
+      "coverage": "Supplied direct user excerpts26–28Oct; broad23–28 retrieval plus23–25 and26–28 gap partitions. Queries restated as history excluded; assistant claims not promoted. Original raw chats/media unavailable.",
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "media_tests": 0,
+      "pending": [
+        "Unretrieved raw chats and unavailable ranges",
+        "Original media and exact marked-image motorcycle mapping",
+        "Historical research patches/commercial validation remain pending"
+      ],
+      "persistence_contract": "Durable only after actual Git push; external receipt authoritative.",
+      "agent": "daksh",
+      "outcome": "maniik ownership integrated; no duplicate monitoring; business validation task remains open, complete memory audit stays closed."
+    },
+    {
+      "id": "nightly-chat-20261029-2300",
+      "reviewed_on": "2026-10-29",
+      "scheduled_for": "2026-10-29T23:00:00+05:30",
+      "started_at": "2026-10-29T23:04:22.537005+05:30",
+      "window": {
+        "from": "2026-10-23",
+        "through": "2026-10-29T23:04:24+05:30"
+      },
+      "coverage_kind": "partial_accessible_excerpts_and_retrieved_summaries",
+      "coverage": "One broad23–29October retrieval,24–26 and27–29 partitions, focused28–29 specialist/maniik gap check; supplied26–29 direct excerpts. Query restatements, out-of-window16October results and assistant-only claims excluded as correction evidence. No full raw chats or original media inspected.",
+      "source_types": {
+        "direct_user": "Current instructions and supplied user excerpts; global maintenance limits are run authority, not new domain facts.",
+        "retrieved_user": "Dated user-message summaries; not verbatim raw transcripts.",
+        "assistant_reports": "Historical maintenance, briefing, synthesis and output claims; deduplicated against saved records, never promoted to user approval.",
+        "inspected_outputs": "Current saved skills/records, current brain and live automation receipts; no production media."
+      },
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "research_review_performed": false,
+      "branch": "Thursday chat-only; manual29October research records preserved",
+      "media_tests": 0,
+      "timer_changes": false,
+      "pending": [
+        "Unretrieved raw chats and sparse dates/ranges; no account-complete coverage",
+        "Original image/video/audio and exact marked-image mappings",
+        "Existing unresolved research candidates, pronunciation conflicts, human calibration and customer/media tests"
+      ],
+      "validation": {
+        "kind": "record_structure_and_source_scope",
+        "status": "passed",
+        "independent_domain_review": "/root/specialist_review; read-only current saved specialist records; no new missing domain lessons",
+        "record_preservation_assertions": 55,
+        "skill_structures_valid": 6,
+        "director_ledger": "VALID34lessons",
+        "independent_integration_review": "Read-only /root/integration_qc: checkpoint/lesson/target scope passed; historical Writer fields moved out of current binding before save; no media pass.",
+        "media_tests": 0
+      },
+      "persistence_contract": "This partial-review record is durable only after scoped save and remote verification; complete-history and research checkpoints retained.",
+      "agent": "daksh",
+      "outcome": "Existing scoped rules retained; reconcile live Writer paused/unapplied status with stale recovery observation."
+    }
+  ]
+}

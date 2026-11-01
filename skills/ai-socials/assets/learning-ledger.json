@@ -1,0 +1,856 @@
+{
+  "schema_version": 1,
+  "skill": "ai-socials",
+  "created_on": "2026-10-20",
+  "last_successful_review": "2026-10-22",
+  "review_window": [
+    "2026-10-21",
+    "2026-10-22"
+  ],
+  "source_coverage": "Two Personal Context query results plus supplied project conversation summaries for 21–22 October; not exhaustive history or original images.",
+  "performance_data": "not supplied",
+  "automation": {
+    "id": "6adb7de8023c8191bd2acd6bf088ca3b",
+    "coordinator": "daksh",
+    "enabled": true,
+    "confirmation_pending": false,
+    "binding_status": "configured",
+    "interval_days": 1,
+    "daily_not_before": "23:00",
+    "local_time": "23:00",
+    "timezone": "Asia/Kolkata",
+    "weekly_research": {
+      "day": "SU",
+      "local_time": "23:00",
+      "source_policy": "relevant official primary sources",
+      "mode": "conditional_branch_in_same_daily_automation"
+    },
+    "authorization_evidence_id": "E17",
+    "note": "Configured nightly coordinator with Sunday research branch; configuration is not evidence of a completed future run.",
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261027T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+    "verified_on": "2026-10-27",
+    "verification_source": "Root coordinator update result supplied in nightly-schedule-confirmed-2026-10-22.json",
+    "binding_evidence": "Observed current automation list27October; coordinator enabled; Writer paused, Location enabled; neither modified."
+  },
+  "lessons": [
+    {
+      "id": "original-photo-layout",
+      "scope": "Photo-carousel layout only",
+      "rule": "Arrange supplied images without regeneration; later generative edits need their own request.",
+      "source": "20 Oct photo-carousel chat, retrieved excerpt",
+      "status": "adopted-instructions",
+      "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested."
+    },
+    {
+      "id": "scoped-five-slide-layout",
+      "scope": "20 Oct requested photo set",
+      "rule": "Five slides: one image above two below, last slide one above blank lower CTA. Do not generalize to all carousels.",
+      "source": "20 Oct photo-carousel chat, retrieved excerpt",
+      "status": "adopted-instructions",
+      "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested."
+    },
+    {
+      "id": "face-identity",
+      "scope": "Requested personal image edits",
+      "rule": "Use the explicitly supplied current personal face reference; preserve its identity and inspect each output separately against the actual reference before claiming visual fidelity.",
+      "source": "20 Oct photoshoot chat, retrieved excerpt",
+      "status": "adopted-instructions",
+      "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested.",
+      "refinement": {
+        "date": "2026-10-22",
+        "evidence_id": "E13",
+        "source": "फोटोशूट बनाना, 20–22 October supplied user excerpt",
+        "access_type": "supplied_user_excerpt; original media absent",
+        "original_problem": "The current supplied face must remain unchanged across the requested outputs.",
+        "prevention": "Compare every output with the current approved source instead of relying on remembered identity or the quality of a different output.",
+        "boundary": "A layout-only request preserves original image pixels; a later generative edit still needs its own request. No reference or outputs were visually inspected in this review."
+      },
+      "previous_instruction": {
+        "id": "face-identity",
+        "scope": "Requested personal image edits",
+        "rule": "Preserve supplied face identity and inspect actual references; do not claim visual QC from memory alone.",
+        "source": "20 Oct photoshoot chat, retrieved excerpt",
+        "status": "adopted-instructions",
+        "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested."
+      }
+    },
+    {
+      "id": "media-grounded-caption",
+      "scope": "Captions for provided photos",
+      "rule": "Use actual visible media and supplied notes; do not invent location, anecdote or results.",
+      "source": "20 Oct caption request, retrieved excerpt",
+      "status": "adopted-instructions",
+      "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested."
+    },
+    {
+      "id": "team-test-attribution",
+      "scope": "Public posts about team model tests",
+      "rule": "Retain named-team-observation attribution; do not turn it into Manik personal generation results.",
+      "source": "20 Oct model-comparison summary supplied in conversation",
+      "status": "adopted-instructions",
+      "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested."
+    },
+    {
+      "id": "approved-copy-lock",
+      "scope": "Revisions to approved copy or media",
+      "rule": "Preserve approved sections; describe changes and retain recoverable versions. Do not claim internal tool fix.",
+      "source": "20 Oct review-feedback summary supplied in conversation",
+      "status": "adopted-instructions",
+      "validation": "Context/source review and scoped operational rules. Independent boundary check covers layout versus generative edits; visual quality and audience performance are untested."
+    },
+    {
+      "id": "designated-face-reference",
+      "scope": "Manik personal portrait generation",
+      "rule": "Use accessible designated four-angle face sheet; newer explicit identity reference wins; style references do not replace identity.",
+      "source": "Personal Context photoshoot excerpt",
+      "source_date": "2026-10-21T18:03:22Z",
+      "status": "adopted-instructions",
+      "failure_boundary": "A scene/style image alone does not authorize inventing a replacement face.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "per-angle-likeness-review",
+      "scope": "Each face in an authorized portrait set",
+      "rule": "Check every output view against actual reference; do not claim exact likeness from memory or one passing view.",
+      "source": "Retrieved face-mismatch correction plus supplied chat summary",
+      "source_date": "2026-10-21/22",
+      "status": "adopted-instructions",
+      "failure_boundary": "No original images reviewed in this update; identity quality remains untested.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "four-photo-collage-scope",
+      "scope": "Requested four-photo collage",
+      "rule": "Use the requested four-image set; do not force the earlier five-slide layout onto it.",
+      "source": "Personal Context photoshoot excerpt",
+      "source_date": "2026-10-21T18:24:27Z",
+      "status": "adopted-instructions",
+      "failure_boundary": "Four source photos need not imply four or five slides; follow the actual design request.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "monochrome-photos-color-type",
+      "scope": "22 Oct collage style",
+      "rule": "Keep photos black-and-white and reference-like playful text colorful; preserve faces.",
+      "source": "Personal Context photoshoot excerpt",
+      "source_date": "2026-10-22T15:26:33Z",
+      "status": "adopted-instructions",
+      "failure_boundary": "No universal monochrome preference or independently verified trending-copy claim.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "reference-glasses-batch",
+      "scope": "All images explicitly included in the current glasses edit",
+      "rule": "Use the actual supplied glasses reference consistently across every target image.",
+      "source": "Personal Context photoshoot excerpt",
+      "source_date": "2026-10-22T15:37:55Z",
+      "status": "adopted-instructions",
+      "failure_boundary": "Do not substitute an old remembered brand or omit later images.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "lighting-grade-continuity",
+      "scope": "Requested social visual lighting correction",
+      "rule": "Add motivated highlights and shadow depth while retaining approved reference grade, composition and identity.",
+      "source": "Personal Context photoshoot excerpt",
+      "source_date": "2026-10-22T15:37:55Z",
+      "status": "adopted-instructions",
+      "failure_boundary": "Reddish eyes and a mood change remain portrait-specific; do not redesign unrelated layers.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "last-image-only-revision",
+      "scope": "Selected last image or strip in approved set",
+      "rule": "Edit only the designated last image/strip and preserve the approved remainder.",
+      "source": "Personal Context photoshoot excerpt",
+      "source_date": "2026-10-22T16:54:22Z",
+      "status": "adopted-instructions",
+      "failure_boundary": "Do not regenerate the entire collage or apply the local mood to later unrelated portraits.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "one-hinglish-caption",
+      "scope": "A request explicitly asking for one Hinglish caption",
+      "rule": "Return one complete Hinglish caption matching supplied mood/context.",
+      "source": "Recent photoshoot conversation summary supplied in this project",
+      "source_date": "2026-10-22",
+      "status": "adopted-instructions",
+      "failure_boundary": "Do not turn it into multiple options or invent visible details from inaccessible photos.",
+      "validation": "Context/source review plus a fresh-context three-request check: four-photo collage design, last-image-only revision with identity/style references separated, and one Hinglish caption. No visual/API/performance test."
+    },
+    {
+      "id": "scoped-artistic-portrait-brief",
+      "scope": "20–22 October artistic portrait/carousel brief only, unless requested again",
+      "rule": "Preserve the requested shadow-dominant treatment, partial edge/side crop, golden-ratio composition and mostly monochrome image with requested colourful typography, matching actual source screenshots when available.",
+      "source": "फोटोशूट बनाना, 20–22 October supplied user excerpt E14",
+      "access_type": "supplied_user_excerpt; full raw chat and original media absent",
+      "original_problem": "The user supplied a specific portrait treatment that must not drift into an unrelated style or become a universal post template.",
+      "prevention": "Load these style constraints only for the relevant brief; inspect actual screenshots and every output before a visual-match claim.",
+      "boundary": "The phrase 90% shadows is a requested styling target, not an observed measurement. No warm grade, universal dark style, or completed visual QC follows from text-only evidence.",
+      "status": "adopted-instructions",
+      "validation": "Skill structure and 12 direct static checks passed; eight same-context instruction boundary cases reviewed. Pytest/jsonschema unavailable. No visual-fidelity, audience-performance or independent behavior test performed."
+    },
+    {
+      "id": "current-frame-visual-reference-binding",
+      "scope": "Character/location reference bindings in social visual briefs and prompt QC",
+      "rule": "Bind only character and location references relevant to the current frame, and compare the bindings with its available source before claiming a visual match.",
+      "source": "23 October explicit current-user steering relayed in root/Daksh task handoff",
+      "access_type": "parent-relayed user-instruction summary; raw user transcript and source media absent",
+      "original_problem": "Project-wide character/location references must not be carried into frames where they are irrelevant.",
+      "prevention": "Resolve the current frame and its relevant character/location references before writing or checking the visual brief.",
+      "boundary": "No automatic asset insertion, image regeneration, altered face identity or visual-match certification follows from reference binding. Existing no-regeneration layout and per-output source checks remain in force.",
+      "status": "adopted-instructions",
+      "validation": "Structure validator, git diff --check and four direct static checks passed. Three same-context instruction boundary cases reviewed; no original frame/media inspection or independent behavioral test."
+    },
+    {
+      "id": "singular-plural-caption-routing",
+      "scope": "Caption-only requests with no explicit platform/count override",
+      "rule": "Bare caption do returns one Instagram caption; bare captions do returns one adapted version each for X, LinkedIn, Pinterest, Instagram, Facebook and WhatsApp. Explicit platform, count, language, length and revision instructions win.",
+      "source": "Direct visible user instruction in this conversation",
+      "source_date": "2026-10-23",
+      "access_type": "direct-current-user",
+      "status": "adopted-instructions",
+      "failure_boundary": "Plural alternatives with an explicit count do not automatically become six platforms; revisions preserve the selected set.",
+      "validation": "Structure and nine static checks passed; five fresh-context requests plus eleven observed-output checks passed. No measured virality or live-account test."
+    },
+    {
+      "id": "six-platform-caption-adaptation",
+      "scope": "Native image captions, not analytics integration or guaranteed reach",
+      "rule": "Adapt hook, length, tone, keywords and optional hashtags per platform; include Pinterest title/description and a short WhatsApp image/status caption. Preserve visible facts and voice; verify current trend claims.",
+      "source": "Direct user addition plus dated primary sources in references/caption-mode.md",
+      "source_date": "2026-10-23",
+      "access_type": "direct-current-user-and-live-primary-source-research",
+      "status": "adopted-instructions",
+      "failure_boundary": "Editorial target ranges are not algorithm-proven optimums; no viral guarantee, invented story, analytics support or publication permission.",
+      "validation": "Structure and nine static checks passed; five fresh-context requests plus eleven observed-output checks passed. No measured virality or live-account test."
+    },
+    {
+      "id": "image-selection-complement-20261024",
+      "scope": "Current explicitly selected ordered social image batch; not fixed carousel count",
+      "rule": "last-image-only selects N; except-last selects1..N−1. Preserve excluded images; resolve current order/count before editing.",
+      "source": "Retrieved24October user summary from broad23–28October history query; not inspected raw chat/media",
+      "source_date": "2026-10-24",
+      "access_type": "retrieved-user-summary",
+      "status": "adopted-instructions",
+      "failure_boundary": "No known order => mapping pending; earlier five-slide layout is not a new batch count.",
+      "validation": "Independent read-only manual text decisions: N4 last=>4; except=>1,2,3; N6 except=>1..5; missing order=>pending. No image QA."
+    },
+    {
+      "id": "final-carousel-source-delivery",
+      "scope": "24–25 October corrected carousel and comparable explicit final-source/delivery requests",
+      "rule": "Use the final selected corrected images and their requested order; preserve targeted revision scope. If the user asks for final individual-image downloads and rejects ZIP, deliver the images separately in the requested format.",
+      "source": "R24-25 gap retrieval c0, user-summary dated 25 October 2026",
+      "access_type": "retrieved user-summary; original photos/outputs/downloads not inspected",
+      "original_problem": "Reverting to earlier images, changing untargeted slides or substituting ZIP loses the requested final deliverable.",
+      "prevention": "Resolve the final source set, order, per-slide changes and delivery format before output.",
+      "failure_boundary": "Second/fourth/fifth slide changes, Devanagari/GenZ style, retro doodles and removed red-flag joke remain local to the identified brief; no visual/download success or popularity claim.",
+      "status": "adopted-instructions",
+      "validation": "See manual review CHAT-20261027-SOCIALS; text/static checks only."
+    },
+    {
+      "id": "aspect-ratio-without-crop-20261004",
+      "scope": "Selected4October2026 image and matching explicit no-crop resize requests",
+      "rule": "For explicit4:5 without-cropping, preserve the original complete image/identity and add matching canvas space only where requested; verify actual ratio and resulting pixels.",
+      "source": "Retrieved user-summary U@2026-10-04T13:58:25Z in manual29 October1–26 partition",
+      "source_date": "2026-10-04",
+      "access_type": "retrieved-user-summary; source/output images not inspected",
+      "status": "adopted-instructions",
+      "failure_boundary": "A separate explicit crop remains valid; original-photo no-regeneration layout does not authorize generative extension. No completed image or native detail claim.",
+      "validation": "29October root manual text decisions for no-crop request and explicit-crop/no-regeneration boundaries; no image QA."
+    },
+    {
+      "id": "selected-duck-photo-zoom-20261030",
+      "scope": "Selected30October source duck photograph; exact source/output mapping unresolved",
+      "rule": "Apply the requested approximately30% zoom, keep the already-present flying ducks clearly framed and correct the lighting, preserving unrequested source content and identity. Inspect source and result before claiming actual crop, retained bird visibility, likeness or clarity.",
+      "source": "Current supplied Ai socials user excerpt; retrieved assistant image-ready report is not inspected output evidence.",
+      "source_date": "2026-10-30",
+      "access_type": "supplied_user_excerpt; original photo/output uninspected",
+      "status": "adopted-instructions",
+      "failure_boundary": "Not a30% default for later photos. Do not invent bird count/species, placement, crop anchor or guaranteed recovered detail. Earlier different-photo no-crop requests remain scoped there.",
+      "example": "Zoom this photo30% and fix light: preserve existing subjects; inspect crop so flying ducks are not lost.",
+      "counterexample": "Another explicit no-crop resize preserves the entire original image.",
+      "validation": "PASS text/source scope: independent /root/qc30 matching-photo and no-crop counterexample; JSON/preservation and skill checks. Original/output image and actual30% crop/clarity/light remain pending."
+    }
+  ],
+  "pending": [
+    "Imported platform/model/API claims need current primary-source verification before use.",
+    "Actual published logs and comparable metric snapshots needed for performance learning.",
+    "Instagram handle ownership unconfirmed in imported profile."
+  ],
+  "validation": {
+    "skill_structure": {
+      "status": "passed",
+      "command": "python /root/.codex/skills/oai/skill-creator/scripts/quick_validate.py .",
+      "result": "Skill is valid!"
+    },
+    "unit_tests": {
+      "status": "unavailable",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m pytest -q --basetemp .validation-tmp -p no:cacheprovider",
+      "reason": "pytest absent from primary and /usr/bin Python; no packages installed",
+      "current_pass_count": null
+    },
+    "deterministic_draft_validator": {
+      "status": "unavailable",
+      "reason": "Importing ai_social.validate requires jsonschema, absent from both checked Python environments; no core-gate pass claimed"
+    },
+    "direct_static_checks": {
+      "passed": 12,
+      "failed": 0,
+      "details": [
+        "32 bundled JSON files parse",
+        "All Markdown local link targets exist",
+        "Six protected byte hashes unchanged: voice, platform limits, playbook rules, targets, retro formula and bandit code",
+        "Unique lesson IDs with two new lessons only",
+        "Prior successful review/window unchanged",
+        "Research checkpoint not advanced",
+        "Confirmed enabled coordinator and old timer observed paused"
+      ]
+    },
+    "instruction_boundary_review": {
+      "context": "same-context manual review of current instructions; not an independent task run or generated-media check",
+      "cases": [
+        {
+          "request": "Arrange the original photographs into the requested carousel without regeneration.",
+          "outcome": "Use deterministic composition and preserve source pixels; the artistic-portrait addition grants no blanket regeneration permission.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Make a separately requested generative portrait using the currently supplied personal face.",
+          "outcome": "Explicit generative edits remain allowed; use the current face source and inspect each output separately before a match claim.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Use the supplied dark portrait screenshots for this artistic set.",
+          "outcome": "Apply E14 shadow, crop, composition, monochrome and requested typography constraints only to that brief; source-media absence blocks visual-match certification.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Create a bright colourful social post after the dark portrait set.",
+          "outcome": "Follow the new current request; do not impose E14 styling or the earlier five-slide arrangement.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Ek caption, Hinglish.",
+          "outcome": "Deliver one primary caption grounded in available notes/media, without unsolicited variants or invented image details.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Give several alternative captions this time.",
+          "outcome": "The explicit variant request permits several; the singular-caption lesson does not forbid them.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Treat the team WAN/MiniMax/Seedance observations as my personal benchmark.",
+          "outcome": "Preserve actual team attribution and require evidence/authorization for public claims; the duplicate lesson remains intact.",
+          "result": "supported-by-instructions"
+        },
+        {
+          "request": "Run the Thursday daily chat review and report the research track.",
+          "outcome": "Review only accessible evidence; do not browse or advance research checkpoints. Sunday research remains a branch of the configured coordinator.",
+          "result": "supported-by-instructions"
+        }
+      ]
+    },
+    "limits": "No full raw-chat coverage, original image/video inspection, generated media, live API, official-source research, independent behavioral evaluation, algorithm, reach, likeness or speed test performed. Existing 82-test pass record is historical, not this review."
+  },
+  "rollback_reference": "Initial AI Socials import; prior voice SHA retained in source-manifest.json; changes versioned in Git.",
+  "update_status": "Saved bounded20–23October chat-learning and frame-local visual-QC rules; confirmed scoped feature push. Historical research/performance checkpoints retained. No media-quality or unavailable full-suite pass claimed.",
+  "review_history": [
+    {
+      "covered_through": "2026-10-20",
+      "last_successful_review": "2026-10-20T23:39:26.075642+05:30",
+      "validation": {
+        "unit_tests": {
+          "passed": 82,
+          "failed": 0
+        },
+        "skill_structure": "valid",
+        "voice": "original bytes preserved",
+        "references": "local targets exist",
+        "json": "all bundled JSON parses",
+        "cli_smoke": "status works with zero real posts; no metrics fabricated",
+        "independent_task_check": "Two realistic requests checked in a fresh context: layout without regeneration and separately authorized generative portrait; missing references acknowledged. The subagent could not start additional core validation during a transient executor disconnect; the root previously completed all 82 core tests.",
+        "limits": "No live API, original image/likeness, reach or latency test performed."
+      }
+    }
+  ],
+  "current_review": {
+    "date": "2026-10-22",
+    "window": [
+      "2026-10-21",
+      "2026-10-22"
+    ],
+    "new_or_refined_lesson_ids": [
+      "designated-face-reference",
+      "per-angle-likeness-review",
+      "four-photo-collage-scope",
+      "monochrome-photos-color-type",
+      "reference-glasses-batch",
+      "lighting-grade-continuity",
+      "last-image-only-revision",
+      "one-hinglish-caption"
+    ],
+    "source_coverage": "Two Personal Context queries plus supplied conversation summaries. Full history and original images not reviewed.",
+    "status": "validated-instructions; durable upon successful Git push",
+    "rollback_reference": "8b99729902715165e8721acec94c8ba520f45b7a",
+    "reference_asset_status": "Four-angle identity sheet described in source chat; actual image ID/path not resolved in this learning review.",
+    "independent_requests_checked": 3
+  },
+  "automation_history": [
+    {
+      "configuration": {
+        "id": "6ad7addcbde88191b30916df95178cd6",
+        "enabled": true,
+        "interval_days": 3,
+        "local_time": "23:00",
+        "timezone": "Asia/Kolkata",
+        "first_scheduled_date": "2026-10-23"
+      },
+      "observed_on": "2026-10-22",
+      "observed_enabled": false,
+      "state_note": "Root confirmed the prior AI Socials timer is paused; retained as configuration history only."
+    }
+  ],
+  "last_attempted_review": "2026-10-22",
+  "last_attempted_window": [
+    "2026-10-20",
+    "2026-10-22"
+  ],
+  "reviews": [
+    {
+      "date": "2026-10-22",
+      "window": [
+        "2026-10-20",
+        "2026-10-22"
+      ],
+      "kind": "authorized-immediate-chat-learning",
+      "coverage": "Read the supplied review packet of recent user excerpts plus two supported history retrieval summaries. This agent did not freshly retrieve chats; full raw chats, original screenshots, photographs, video and generated outputs were unavailable. Exclude retrieval-query restatements and assistant-only model/news assertions.",
+      "evidence": {
+        "E13": {
+          "provenance": "supplied_user_excerpt",
+          "source": "फोटोशूट बनाना",
+          "date": "2026-10-20–22",
+          "supplied_excerpt": "jab bhi ... khud ki photo ... ye photo as face refer ... faces ... exactly match ... original photo ... face change na ho"
+        },
+        "E14": {
+          "provenance": "supplied_user_excerpt",
+          "source": "फोटोशूट बनाना",
+          "date": "2026-10-20–22",
+          "supplied_excerpt": "artistic ... 90% shadows ... edges ... side ways ... original screenshots ... golden ratio ... black & white ... font colorful ... ek caption ... hinglish"
+        },
+        "E15": {
+          "provenance": "supplied_user_excerpt",
+          "source": "Review Feedback Draft",
+          "date": "2026-10-20",
+          "decision": "duplicate-approved-copy-lock"
+        },
+        "E16": {
+          "provenance": "supplied_user_excerpt",
+          "source": "WAN MiniMax Seedance Comparison",
+          "date": "2026-10-20",
+          "decision": "duplicate-team-test-attribution"
+        },
+        "E17": {
+          "provenance": "direct_current_user",
+          "source": "Current conversation recurring-learning instruction",
+          "date": "2026-10-21 request; reaffirmed 2026-10-22",
+          "supplied_excerpt": "timer ... roj raat ... 11 bje baad ... recents chats ... har Sunday raat 11 bje internet ... sab agent ... aaj ka auto update ... sari chats"
+        }
+      },
+      "provenance_note": "supplied_excerpt fields preserve the excerpt packet wording, including ellipses; they are not complete transcripts. Other scopes and decisions are review summaries, not user quotes.",
+      "adopted_new": [
+        "scoped-artistic-portrait-brief"
+      ],
+      "merged_refinement": {
+        "face-identity": [
+          "E13",
+          "current explicitly supplied reference and separate inspection of each output"
+        ]
+      },
+      "duplicates": {
+        "original-photo-layout": [
+          "E13"
+        ],
+        "approved-copy-lock": [
+          "E15"
+        ],
+        "team-test-attribution": [
+          "E16"
+        ]
+      },
+      "excluded": {
+        "E01–E12": "Filmmaking, storyboard, location, cast, prop, acting or dubbing-specific instructions; no new social-media lesson adopted."
+      },
+      "maintenance_policy": {
+        "evidence_id": "E17",
+        "decision": "daily 23:00 Asia/Kolkata chat learning and Sunday official-source research under one configured, enabled Daksh coordinator; prior AI Socials timer confirmed paused by root",
+        "binding_verified_on": "2026-10-22"
+      },
+      "internet_research_performed": false,
+      "research_checkpoint_advanced": false,
+      "performance_learning": "pending; no real published logs or comparable metric snapshots supplied, and no performance rules changed",
+      "validation": {
+        "skill_structure": "passed",
+        "direct_static_checks_passed": 12,
+        "instruction_boundary_cases_reviewed": 8,
+        "review_context": "same-context manual",
+        "pytest": "unavailable: pytest not installed",
+        "core_draft_gates": "unavailable: jsonschema not installed",
+        "details": "See top-level validation; historical 82-test result preserved separately."
+      },
+      "persistence": "Confirmed successful scoped Git push",
+      "save_evidence": {
+        "status": "saved",
+        "confirmed_feature_commit": "24787a80c02e21e537749d7d934bf534c7254cbf",
+        "push_observed": true,
+        "verified_at": "2026-10-23T20:40:56.786110+05:30",
+        "scope": "Bounded20–23October chat review; no new live research or media validation."
+      },
+      "merged_existing_caption_lesson": "one-hinglish-caption"
+    }
+  ],
+  "previous_review_validation": {
+    "checkpoint": "2026-10-20T23:39:26.075642+05:30",
+    "record": {
+      "unit_tests": {
+        "passed": 82,
+        "failed": 0
+      },
+      "skill_structure": "valid",
+      "voice": "original bytes preserved",
+      "references": "local targets exist",
+      "json": "all bundled JSON parses",
+      "cli_smoke": "status works with zero real posts; no metrics fabricated",
+      "independent_task_check": "Two realistic requests checked in a fresh context: layout without regeneration and separately authorized generative portrait; missing references acknowledged. The subagent could not start additional core validation during a transient executor disconnect; the root previously completed all 82 core tests.",
+      "limits": "No live API, original image/likeness, reach or latency test performed."
+    }
+  },
+  "narrow_addenda": [
+    {
+      "date": "2026-10-23",
+      "kind": "current-frame-visual-QC-boundary-only",
+      "source": "Explicit user steering relayed by root/Daksh task handoff; summary, not a verbatim quote",
+      "adopted": [
+        "current-frame-visual-reference-binding"
+      ],
+      "coverage": "Only the queued character/location frame-binding boundary was reviewed. No broad chat retrieval, platform research or caption-routing revision.",
+      "research_checkpoint_advanced": false,
+      "successful_review_checkpoint_advanced": false,
+      "validation": {
+        "skill_structure": "passed quick_validate.py",
+        "diff_whitespace": "passed git diff --check",
+        "direct_static_checks_passed": 4,
+        "instruction_boundary_review": {
+          "context": "same-context manual review; no generated-media or independent behavioral test",
+          "cases": [
+            "A frame needing one character at one location uses those relevant references; unrelated characters and alternate locations from the project list are omitted.",
+            "An unavailable frame/source leaves visual-binding match pending; text-only reference planning does not certify visible correctness.",
+            "Checking reference bindings for an original-photo layout grants no regeneration permission and does not replace per-output face inspection."
+          ],
+          "outcome": "All three cases supported by the current instructions without changing the prior layout/identity boundaries."
+        },
+        "limits": "No full chat retrieval, original-frame inspection, media generation, algorithm/reach test or caption-routing change. Pytest/jsonschema remain unavailable as recorded for the prior review; no package installation attempted."
+      },
+      "persistence": "Confirmed successful scoped Git push",
+      "save_evidence": {
+        "status": "saved",
+        "confirmed_feature_commit": "24787a80c02e21e537749d7d934bf534c7254cbf",
+        "push_observed": true,
+        "verified_at": "2026-10-23T20:40:56.786110+05:30",
+        "scope": "Bounded20–23October chat review; no new live research or media validation."
+      },
+      "chat_checkpoint_advanced": true
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "six-platform-caption-mode",
+      "source": "Direct current-user instruction; visible conversation",
+      "adopted": [
+        "singular-plural-caption-routing",
+        "six-platform-caption-adaptation"
+      ],
+      "reference": "references/caption-mode.md",
+      "chat_checkpoint_advanced": false,
+      "performance_rules_changed": false,
+      "maintenance_schedule_changed": false,
+      "research_scope": "Caption-specific live primary-source review; not a complete weekly research run.",
+      "validation": {
+        "skill_structure": "passed quick_validate.py",
+        "static_checks": {
+          "passed": 9,
+          "json_files": 32,
+          "protected_voice_caps_profiles_code_automation_prior_history": "preserved"
+        },
+        "fresh_context_requests": 5,
+        "observed_output_checks_passed": 11,
+        "cases": [
+          "Bare singular with described portrait",
+          "Bare plural with same portrait",
+          "Explicit LinkedIn/X subset in Hinglish",
+          "Two alternatives in English",
+          "Pinterest-only title/description, short"
+        ],
+        "editorial_result": "Requested routes/counts/languages and native fields correct. Distinct platform copy, conservative X fit and Pinterest field limits checked; no unsupported location, work result or current-trend claim.",
+        "runtime_code_changed": false,
+        "core_tests": "Not rerun for this instruction-only feature; historical core results retained.",
+        "limits": "No actual image/likeness, live account, posting, popularity, reach, latency or new analytics integration test."
+      },
+      "persistence": "Validation complete; durable when this scoped commit is successfully pushed."
+    },
+    {
+      "id": "manual-20261027-reconciled-20261029",
+      "source_review_date": "2026-10-27",
+      "reconciled_on": "2026-10-29",
+      "extent": "24–25October retrieved summaries, supplied excerpts and recovered pending patch; original images/downloads not inspected.",
+      "changes": [
+        "final-carousel-source-delivery",
+        "explicit per-image caption text mapping"
+      ],
+      "preserved": "Current last-only/except-last lesson, singular/plural routing, 28October review, runtime and checkpoints retained.",
+      "validation": "Prior worker static/manual boundary checks and root scoped text self-review; no native-platform feature or image-quality claim."
+    },
+    {
+      "review_id": "manual-all-accessible-20261029",
+      "reviewed_on": "2026-10-29",
+      "source_extent": "Bounded retrieved user summaries across July–October plus direct current request; no pre-July matches, full raw archive or original media. Eight retrieval calls shared across agents.",
+      "validation": "Root textual self-review and existing structural validators; independent worker review unavailable after prior spend cap. No media/generation/live service writes.",
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "automation_mutations": 0,
+      "changes": [
+        "aspect-ratio-without-crop-20261004"
+      ]
+    }
+  ],
+  "concurrent_review_validation": {
+    "review_type": "Instruction and context update; no runtime code change.",
+    "skill_structure": "valid",
+    "local_checks": "Unique lesson IDs, eight scoped updates, Markdown references, bundled JSON and original voice hash verified.",
+    "independent_task_check": "Three realistic requests completed in a fresh context; scope, missing references, identity/style separation and single-caption count behaved as required.",
+    "core_tests": "Not rerun for this instruction-only update; the 82-test run from 20 October is retained in review_history. Subagent full-core validation was unavailable because its jsonschema dependency was missing; it used standard-library caption checks.",
+    "limits": "No original image/likeness, live API, trend popularity, reach or latency verification."
+  },
+  "concurrent_merge": {
+    "reviewed_on": "2026-10-23",
+    "preserved_remote_lesson_ids": [
+      "original-photo-layout",
+      "scoped-five-slide-layout",
+      "face-identity",
+      "media-grounded-caption",
+      "team-test-attribution",
+      "approved-copy-lock",
+      "designated-face-reference",
+      "per-angle-likeness-review",
+      "four-photo-collage-scope",
+      "monochrome-photos-color-type",
+      "reference-glasses-batch",
+      "lighting-grade-continuity",
+      "last-image-only-revision",
+      "one-hinglish-caption"
+    ],
+    "new_nonduplicate_lessons": [
+      "scoped-artistic-portrait-brief",
+      "current-frame-visual-reference-binding"
+    ],
+    "deduplicated": {
+      "singular-hinglish-caption": "one-hinglish-caption"
+    },
+    "note": "Latest saved22October review/checkpoint and all per-angle/glasses/collage lessons retained. New nightly binding reflects observed later coordinator; current environment test limitations remain explicit."
+  },
+  "last_successful_chat_review_checkpoint": {
+    "reviewed_on": "2026-10-23",
+    "coverage_start": "2026-10-20",
+    "coverage_end": "2026-10-23",
+    "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+    "skill_save": {
+      "status": "saved",
+      "confirmed_feature_commit": "24787a80c02e21e537749d7d934bf534c7254cbf",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    },
+    "media_tests": 0,
+    "research_checkpoint_advanced": false
+  },
+  "caption_mode": {
+    "enabled": true,
+    "configured_on": "2026-10-23",
+    "singular_default": "instagram",
+    "bare_plural_order": [
+      "x",
+      "linkedin",
+      "pinterest",
+      "instagram",
+      "facebook",
+      "whatsapp"
+    ],
+    "explicit_instruction_priority": [
+      "platform/subset",
+      "variant_count",
+      "language",
+      "length",
+      "revision_scope"
+    ],
+    "reference": "references/caption-mode.md",
+    "primary_source_access_date": "2026-10-23",
+    "research_scope": "Official caption/content guidance, standard X weighted length and organic Pinterest fields; no claim of audited viral examples or performance experiments.",
+    "validation_status": "passed",
+    "rollback_reference": "9b29ea012ea1ab5e85189bbb64b19b7ebb2a66da",
+    "checkpoint_scope": "Feature addition only; prior chat-review history, successful chat checkpoint, maintenance schedule and analytics performance rules preserved.",
+    "validation": {
+      "skill_structure": "passed quick_validate.py",
+      "static_checks": {
+        "passed": 9,
+        "json_files": 32,
+        "protected_voice_caps_profiles_code_automation_prior_history": "preserved"
+      },
+      "fresh_context_requests": 5,
+      "observed_output_checks_passed": 11,
+      "cases": [
+        "Bare singular with described portrait",
+        "Bare plural with same portrait",
+        "Explicit LinkedIn/X subset in Hinglish",
+        "Two alternatives in English",
+        "Pinterest-only title/description, short"
+      ],
+      "editorial_result": "Requested routes/counts/languages and native fields correct. Distinct platform copy, conservative X fit and Pinterest field limits checked; no unsupported location, work result or current-trend claim.",
+      "runtime_code_changed": false,
+      "core_tests": "Not rerun for this instruction-only feature; historical core results retained.",
+      "limits": "No actual image/likeness, live account, posting, popularity, reach, latency or new analytics integration test."
+    }
+  },
+  "binding_history": [
+    {
+      "id": "6ad5d8166eec8191b8ab50b313c4aa13",
+      "coordinator": "daksh",
+      "enabled": true,
+      "confirmation_pending": false,
+      "binding_status": "configured",
+      "interval_days": 1,
+      "daily_not_before": "23:00",
+      "local_time": "23:00",
+      "timezone": "Asia/Kolkata",
+      "weekly_research": {
+        "day": "SU",
+        "local_time": "23:00",
+        "source_policy": "relevant official primary sources",
+        "mode": "conditional_branch_in_same_daily_automation"
+      },
+      "authorization_evidence_id": "E17",
+      "note": "Configured nightly coordinator with Sunday research branch; configuration is not evidence of a completed future run.",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261022T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+      "verified_on": "2026-10-22",
+      "verification_source": "Root coordinator update result supplied in nightly-schedule-confirmed-2026-10-22.json"
+    }
+  ],
+  "last_partial_chat_review": {
+    "id": "nightly-chat-20261030-2300",
+    "reviewed_on": "2026-10-30",
+    "scheduled_for": "2026-10-30T23:00:00+05:30",
+    "started_at": "2026-10-30T23:04:27.188688+05:30",
+    "window": {
+      "from": "2026-10-29T23:04:24+05:30",
+      "through": "2026-10-30T23:04:28+05:30"
+    },
+    "coverage_kind": "partial",
+    "coverage": "Broad29–30October retrieval, focused30October gap query and23–28 retained-gap query; supplied direct user excerpts/current instructions and current saved skill/brain records. Earlier partial23–29 review reused. Query restatements, assistant briefings/output claims and out-of-window results excluded as new user evidence. Raw archive and source/output media unavailable.",
+    "complete_history_checkpoint_advanced": false,
+    "research_checkpoint_advanced": false,
+    "research_review_performed": false,
+    "branch": "Friday chat-only; separate Friday audio briefing is assistant-reported, not fresh adopted documentation evidence.",
+    "pending": [
+      "Unretrieved raw chats and sparse dates/ranges retained",
+      "Original source/output photo, exact crop and bird visibility inspection",
+      "Actual audio quality, sync, pending research/control/customer tests",
+      "Writer separately-owned paused/unapplied result retained; not resumed"
+    ],
+    "media_tests": 0,
+    "timer_changes": false,
+    "validation": {
+      "preservation_checks": 28,
+      "structures_valid": 3,
+      "music_qc": "PASS resources7platforms14lessons",
+      "music_runtime_validate": "PASS",
+      "media_tests": 0,
+      "independent_text_cases": 6,
+      "independent_review": "/root/qc30",
+      "status": "passed",
+      "limits": "Source/text scope only; no image/audio/app quality or complete raw-history review"
+    },
+    "persistence_contract": "Valid after scoped skill save/verification and canonical brain replacement; raw-history/research checkpoints retained.",
+    "agent_outcomes": {
+      "Daksh": "Remove stale recovery wording from current routing guidance; live state precedes historical restoration. No new business fact/task.",
+      "Director": "Current frame-local/dialogue/identity rules retained; no new source-backed correction.",
+      "Dubbing": "No new direct correction; Friday assistant feature report is not adoption evidence.",
+      "Music/Suno": "MUS-014 scoped cue arc added for validation/persistence; helper unchanged.",
+      "Socials": "Selected duck-photo zoom/light lesson; output inspection remains pending.",
+      "maniik": "No new direct correction; do not promote assistant deadline/support summaries into confirmed plan or user assignment."
+    }
+  },
+  "partial_chat_review_history": [
+    {
+      "id": "nightly-chat-20261028-2300",
+      "reviewed_on": "2026-10-28",
+      "started_at": "2026-10-28T23:00:04+05:30",
+      "window": {
+        "from": "2026-10-23",
+        "through": "2026-10-28T23:00:00+05:30"
+      },
+      "coverage_kind": "partial",
+      "coverage": "Supplied direct user excerpts26–28Oct; broad23–28 retrieval plus23–25 and26–28 gap partitions. Queries restated as history excluded; assistant claims not promoted. Original raw chats/media unavailable.",
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "media_tests": 0,
+      "pending": [
+        "Unretrieved raw chats and unavailable ranges",
+        "Original media and exact marked-image motorcycle mapping",
+        "Historical research patches/commercial validation remain pending"
+      ],
+      "persistence_contract": "Durable only after actual Git push; external receipt authoritative.",
+      "agent": "ai-socials",
+      "outcome": "Selection complement adopted; existing tone/strategy retained."
+    },
+    {
+      "id": "nightly-chat-20261029-2300",
+      "reviewed_on": "2026-10-29",
+      "scheduled_for": "2026-10-29T23:00:00+05:30",
+      "started_at": "2026-10-29T23:04:22.537005+05:30",
+      "window": {
+        "from": "2026-10-23",
+        "through": "2026-10-29T23:04:24+05:30"
+      },
+      "coverage_kind": "partial_accessible_excerpts_and_retrieved_summaries",
+      "coverage": "One broad23–29October retrieval,24–26 and27–29 partitions, focused28–29 specialist/maniik gap check; supplied26–29 direct excerpts. Query restatements, out-of-window16October results and assistant-only claims excluded as correction evidence. No full raw chats or original media inspected.",
+      "source_types": {
+        "direct_user": "Current instructions and supplied user excerpts; global maintenance limits are run authority, not new domain facts.",
+        "retrieved_user": "Dated user-message summaries; not verbatim raw transcripts.",
+        "assistant_reports": "Historical maintenance, briefing, synthesis and output claims; deduplicated against saved records, never promoted to user approval.",
+        "inspected_outputs": "Current saved skills/records, current brain and live automation receipts; no production media."
+      },
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "research_review_performed": false,
+      "branch": "Thursday chat-only; manual29October research records preserved",
+      "media_tests": 0,
+      "timer_changes": false,
+      "pending": [
+        "Unretrieved raw chats and sparse dates/ranges; no account-complete coverage",
+        "Original image/video/audio and exact marked-image mappings",
+        "Existing unresolved research candidates, pronunciation conflicts, human calibration and customer/media tests"
+      ],
+      "validation": {
+        "kind": "record_structure_and_source_scope",
+        "status": "passed",
+        "independent_domain_review": "/root/specialist_review; read-only current saved specialist records; no new missing domain lessons",
+        "record_preservation_assertions": 55,
+        "skill_structures_valid": 6,
+        "director_ledger": "VALID34lessons",
+        "independent_integration_review": "Read-only /root/integration_qc: checkpoint/lesson/target scope passed; historical Writer fields moved out of current binding before save; no media pass.",
+        "media_tests": 0
+      },
+      "persistence_contract": "This partial-review record is durable only after scoped save and remote verification; complete-history and research checkpoints retained.",
+      "agent": "ai-socials",
+      "outcome": "No new lesson; selected-image/order, Devanagari retro-carousel and caption-count rules already saved; no reach claim."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19",
+  "counting": "Report Unicode code points and UTF-16 units; confirm destination counting when material. Do not truncate locked text.",
+  "profiles": {
+    "suno": {
+      "interface": "Create UI; not a claimed public API",
+      "styles_hard_max": null,
+      "instrumental_preferred_max": 800,
+      "lyrics_hard_max": null,
+      "vocal_generation": true,
+      "models": ["v6", "v6-wild", "v6-mini"],
+      "parameters": {"instrumental": {"type": "boolean"}, "model": {"enum": ["v6", "v6-wild", "v6-mini"]}},
+      "verify_before_use": ["weirdness", "style_influence", "audio_influence"],
+      "sources": ["https://help.suno.com/en/articles/13924801", "https://help.suno.com/en/articles/6141377"],
+      "notes": "800 is the user's normal instrumental preference. The 2025 slider guide does not establish v6-specific availability/ranges. Do not invent provider character caps."
+    },
+    "eleven-music": {
+      "interface": "Music compose API; prompt or v2 chunk-plan modes",
+      "styles_hard_max": 4100,
+      "instrumental_preferred_max": null,
+      "lyrics_hard_max": null,
+      "vocal_generation": true,
+      "models": ["music_v1", "music_v2", "music_v2_5"],
+      "parameters": {
+        "model_id": {"enum": ["music_v1", "music_v2", "music_v2_5"]},
+        "music_length_ms": {"type": "integer", "min": 3000, "max": 600000, "modes": ["song", "instrumental", "prompt"]},
+        "force_instrumental": {"type": "boolean", "modes": ["song", "instrumental", "prompt"]},
+        "seed": {"type": "integer", "min": 0, "max": 2147483647, "modes": ["plan"]},
+        "store_for_inpainting": {"type": "boolean"}
+      },
+      "chunk_limits": {"count_max": 30, "duration_min_ms": 3000, "duration_max_ms": 120000, "total_min_ms": 3000, "total_max_ms": 600000, "styles_count_max": 50},
+      "sources": ["https://elevenlabs.io/docs/api-reference/music/compose", "https://elevenlabs.io/docs/eleven-api/guides/how-to/music/composition-plans", "https://elevenlabs.io/docs/overview/capabilities/music/best-practices"],
+      "notes": "4100 applies to the simple prompt string, not the serialized composition plan or every UI field. Do not use speech voice_settings for music."
+    },
+    "udio": {
+      "interface": "Prompt/custom lyrics or Instrumental UI",
+      "styles_hard_max": null, "instrumental_preferred_max": null, "lyrics_hard_max": null,
+      "vocal_generation": true, "models": [], "parameters": {},
+      "sources": ["https://help.udio.com/en/articles/10716221-create-a-song-with-your-own-lyrics", "https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership"],
+      "notes": "Export needs current verification; documented transition notice disables downloads. Unknown settings remain pending."
+    },
+    "stable-audio": {
+      "interface": "Instrumental audio generation/editing; model/surface-specific controls",
+      "styles_hard_max": null, "instrumental_preferred_max": null, "lyrics_hard_max": null,
+      "vocal_generation": false, "models": ["Stable Audio 3.0"], "parameters": {},
+      "sources": ["https://stability.ai/guides/stable-audio-3-prompt-guide"],
+      "notes": "Not intended for intelligible singing. Preserve a vocal brief as a separate vocal-platform/singer handoff; do not silently remove words."
+    },
+    "aiva": {
+      "interface": "Composition/style/influence controls",
+      "styles_hard_max": null, "instrumental_preferred_max": null, "lyrics_hard_max": null,
+      "vocal_generation": null, "models": [], "parameters": {},
+      "sources": ["https://www.aiva.ai/documentation"],
+      "notes": "No verified free-text sung-lyric schema in this profile; check exact interface before promising vocals."
+    },
+    "soundraw": {
+      "interface": "Arrangement/energy/mixer control map",
+      "styles_hard_max": null, "instrumental_preferred_max": null, "lyrics_hard_max": null,
+      "vocal_generation": false, "models": [], "parameters": {},
+      "sources": ["https://docs.channel.io/soundraw-faq/en/articles/edit-a-song-in-soundraw-b6882b09"],
+      "notes": "Return actual settings rather than invent a Styles or Lyrics field; vocal request needs a separate route."
+    },
+    "beatoven": {
+      "interface": "Public track composition API",
+      "styles_hard_max": null, "instrumental_preferred_max": null, "lyrics_hard_max": null,
+      "vocal_generation": null, "models": [],
+      "parameters": {"format": {"enum": ["wav", "mp3", "aac"]}, "looping": {"type": "boolean"}},
+      "sources": ["https://github.com/Beatoven/public-api/blob/main/docs/api-spec.md"],
+      "notes": "prompt.text payload; duration described in prompt. Sung-language capability remains unverified."
+    }
+  }
+}

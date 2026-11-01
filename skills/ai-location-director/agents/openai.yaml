@@ -1,0 +1,15 @@
+interface:
+  display_name: AI Location Agent
+  short_description: Research, approve and build consistent film locations
+  default_prompt: Use $ai-location-director in researched-agent mode to understand
+    my scene, research its setting, get approval on one location plan, finalize one
+    master image, then build connected sublocations and verify every angle.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

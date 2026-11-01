@@ -1,0 +1,2697 @@
+{
+  "schema_version": 1,
+  "skill_name": "ai-location-director",
+  "version": 18,
+  "schedule": {
+    "status": "enabled",
+    "automation_id": "6ada57d13a3c8191b9d598e886ee8f46",
+    "coordinator": "ai-location-director",
+    "mode": "user_specific_daily_override",
+    "cadence": "P1D",
+    "timezone": "Asia/Kolkata",
+    "is_enabled": true,
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261024T000000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+    "daily_chat_review": {
+      "cadence": "P1D",
+      "not_before": "00:00"
+    },
+    "weekly_research": {
+      "day": "MO",
+      "not_before": "00:00",
+      "mode": "conditional_branch_in_same_daily_automation",
+      "interpretation": "Sunday night ending; not calendar-Sunday midnight"
+    },
+    "excluded_from_daksh_coordinator": true,
+    "confirmation_pending": false,
+    "verified_on": "2026-10-23",
+    "confirmation_evidence": "Root observed the newer enabled Location Agent Midnight Learning task and read its actual Monday00:00 research branch; specific user override supersedes shared23:00 for Location. Configuration only, no completed-run claim.",
+    "previous_configurations": [
+      {
+        "configuration": {
+          "automation_id": "6aceddf0d028819180a0430844d9e6ac",
+          "cadence": "every-three-days",
+          "timezone": "Asia/Kolkata",
+          "status": "enabled",
+          "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261017T080000\nRRULE:FREQ=DAILY;INTERVAL=3\nEND:VEVENT",
+          "timing_mode": "flexible_schedule",
+          "first_scheduled_local": "2026-10-17T08:00:00+05:30"
+        },
+        "replacement_confirmed_on": "2026-10-22",
+        "retirement_status": "paused-confirmed-by-coordinator",
+        "reason": "Explicit daily chat / Sunday research user request replaces specialist three-day maintenance."
+      },
+      {
+        "configuration": {
+          "status": "enabled",
+          "automation_id": "6ad5d8166eec8191b8ab50b313c4aa13",
+          "coordinator": "daksh",
+          "mode": "one_coordinator_with_weekly_branch",
+          "cadence": "P1D",
+          "timezone": "Asia/Kolkata",
+          "is_enabled": true,
+          "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261022T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+          "daily_chat_review": {
+            "cadence": "P1D",
+            "not_before": "23:00"
+          },
+          "weekly_research": {
+            "day": "SU",
+            "not_before": "23:00",
+            "mode": "conditional_branch_in_same_daily_automation"
+          },
+          "confirmation_pending": false,
+          "verified_on": "2026-10-22",
+          "confirmation_evidence": "Root observed the existing Daksh automation update enabled on 2026-10-22 and confirmed old specialist tasks paused; configuration only, not proof of a completed run."
+        },
+        "replacement_confirmed_on": "2026-10-23",
+        "retirement_status": "location-excluded-from-coordinator",
+        "reason": "Newer explicit Location midnight instruction; preserve actual specialist task, no duplicate Location run."
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "id": "loc-feedback-001",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "User instructed matching the approved outside-gate environment and removing coconut palms from this UP village setting."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple"
+      },
+      "trigger": "Generating or repairing views of the village outside the approved Krishna temple",
+      "failure": "Outside environment and vegetation drifted from the supplied approved reference",
+      "prevention": "Bind the actual approved outside-village reference and preserve its surroundings. Apply the user's coconut-palm exclusion only to this approved set, not as a universal regional fact.",
+      "regression_cases": [
+        {
+          "id": "vegetation-lock",
+          "input": "A temple reverse introduces coconut palms absent from the locked village reference.",
+          "expected": "Reject the drift and repair against the approved village."
+        },
+        {
+          "id": "vegetation-boundary",
+          "input": "An unrelated coastal location has user-approved palms.",
+          "expected": "Preserve those palms; do not import this location's exclusion."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Explicit user correction in this location's visible conversation; scope limited to that set"
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-002",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "observed_failure",
+        "evidence": "Prior gate/outside and reverse views had staircase slope/run errors."
+      },
+      "scope": {
+        "kind": "global-workflow"
+      },
+      "trigger": "Planning or checking any staircase from opposing camera directions",
+      "failure": "Camera-dependent ascent/descent contradicted the shared spatial layout",
+      "prevention": "Derive stair run, risers, landings and start/end elevations from the same geometry; compare opposing views. Do not assume every entrance has the same terrain or slope.",
+      "regression_cases": [
+        {
+          "id": "stair-opposing",
+          "input": "The approved gate is above the lane, but its outward reverse climbs further up into the lane.",
+          "expected": "Flag the contradiction and inspect/repair against the locked elevations."
+        },
+        {
+          "id": "stair-boundary",
+          "input": "A different approved set has a lane higher than the gate.",
+          "expected": "Use that set's geometry; do not force the previous descent pattern."
+        }
+      ],
+      "validation": {
+        "kind": "instruction-regression",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-14: independent read-only location_learning_check evaluated failure and boundary cases; root reviewed the returned decisions against the listed expectations. This validates instruction handling, not rendered image quality."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-003",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "observed_failure",
+        "evidence": "A sanctum floor image showed physically cut pillar tops rather than intact supports."
+      },
+      "scope": {
+        "kind": "global-workflow"
+      },
+      "trigger": "Producing low, floor, cutaway or overhead architectural views",
+      "failure": "Support geometry was sliced to satisfy framing without an authorized cutaway",
+      "prevention": "Keep physical supports intact in photographic views. Permit ordinary frame-edge cropping and separately labeled requested cutaways; do not invent pillar stumps.",
+      "regression_cases": [
+        {
+          "id": "pillar-stump",
+          "input": "A floor photograph shows sawed-off pillar tops inside an intact sanctum.",
+          "expected": "Reject impossible geometry and preserve complete supports."
+        },
+        {
+          "id": "pillar-boundary",
+          "input": "An intact pillar extends naturally beyond a low photograph's top edge.",
+          "expected": "Allow normal framing crop; it is not a sliced physical pillar."
+        }
+      ],
+      "validation": {
+        "kind": "instruction-regression",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-14: independent read-only location_learning_check evaluated failure and boundary cases; root reviewed the returned decisions against the listed expectations. This validates instruction handling, not rendered image quality."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-004",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "observed_failure",
+        "evidence": "Multiple sky-overhead outputs were elevated oblique images before top-down correction."
+      },
+      "scope": {
+        "kind": "global-workflow"
+      },
+      "trigger": "Requesting or delivering an exact top-down view",
+      "failure": "An oblique overview was labeled as exact overhead",
+      "prevention": "Check actual camera orientation and resulting layout for a straight-down view. Keep an intentionally oblique overview separately labeled.",
+      "regression_cases": [
+        {
+          "id": "overhead-check",
+          "input": "The requested 90-degree top-down image shows visible wall facades from an elevated oblique camera.",
+          "expected": "Flag camera mismatch and produce the actual top-down reference."
+        },
+        {
+          "id": "overhead-boundary",
+          "input": "User explicitly requests a three-quarter aerial overview.",
+          "expected": "Keep the intended oblique camera; do not force top-down."
+        }
+      ],
+      "validation": {
+        "kind": "instruction-regression",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-14: independent read-only location_learning_check evaluated failure and boundary cases; root reviewed the returned decisions against the listed expectations. This validates instruction handling, not rendered image quality."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-005",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "observed_failure",
+        "evidence": "The panorama seam repair replaced near-edge village buildings with a boundary wall."
+      },
+      "scope": {
+        "kind": "global-workflow"
+      },
+      "trigger": "Repairing panoramic seams or poles",
+      "failure": "A smoother join was achieved by changing the approved world",
+      "prevention": "Repair the local join while preserving approved surroundings and shared geometry; assess seam quality and world identity separately.",
+      "regression_cases": [
+        {
+          "id": "seam-identity",
+          "input": "A seam is smooth after two approved houses disappear into a new wall.",
+          "expected": "Fail continuity despite a smooth join and restore approved surroundings."
+        },
+        {
+          "id": "seam-boundary",
+          "input": "The user explicitly approves replacing those houses in a revised layout.",
+          "expected": "Adopt the authorized new version and invalidate affected old outputs."
+        }
+      ],
+      "validation": {
+        "kind": "instruction-regression",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-14: independent read-only location_learning_check evaluated failure and boundary cases; root reviewed the returned decisions against the listed expectations. This validates instruction handling, not rendered image quality."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-006",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "User pointed out that the provided 360 image was not interactive; prior viewer runtime test was unavailable."
+      },
+      "scope": {
+        "kind": "global-workflow"
+      },
+      "trigger": "Delivering an interactive or verified-seamless 360 view",
+      "failure": "A flat texture or untested viewer was treated as a completed interactive panorama",
+      "prevention": "Deliver an actual viewer and execute image-load, drag/turn, vertical-look, zoom, full-wrap and pole checks before the respective completion claims. Keep unavailable tests pending.",
+      "regression_cases": [
+        {
+          "id": "viewer-check",
+          "input": "A 2:1 image displays, but there is no drag-capable viewer or executed interaction test.",
+          "expected": "Do not claim verified interactive/seamless viewing; build/test the requested viewer or report pending."
+        },
+        {
+          "id": "viewer-boundary",
+          "input": "The user asks only for a flat panorama texture.",
+          "expected": "Deliver the texture without adding an unnecessary viewer requirement."
+        }
+      ],
+      "validation": {
+        "kind": "instruction-regression",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-14: independent read-only location_learning_check evaluated failure and boundary cases; root reviewed the returned decisions against the listed expectations. This validates instruction handling, not rendered image quality."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-007",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-15 temple blueprint correction; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple"
+      },
+      "trigger": "Connected temple coverage",
+      "failure": "Exterior reverse replaced the road and village with jungle or disconnected zones.",
+      "prevention": "Preserve outer stairs -> large road -> UP village houses and connected gate/courtyard/sanctum in one layout. Preserve screenshot camera directions; any unshown junction geometry remains proposed.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "Reverse opens directly into jungle.",
+          "expected": "Reject; restore the locked road and village connection."
+        },
+        {
+          "id": "boundary",
+          "input": "An unrelated forest shrine has an approved jungle approach.",
+          "expected": "Keep its own approved approach."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-008",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-16 courtyard correction; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple"
+      },
+      "trigger": "Courtyard anchor placement",
+      "failure": "Banyan moved or mirrored between views.",
+      "prevention": "Lock the banyan at the main gate inner left corner, tied to a named gate-facing reference camera; preserve its world position across reverses. Do not assume screen-left in every view. Resolve ambiguous orientation from the actual approved reference before generation.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "Reverse camera makes tree appear screen-right.",
+          "expected": "Allow when the fixed gate-relative world position is preserved."
+        },
+        {
+          "id": "boundary",
+          "input": "Another courtyard has no approved banyan.",
+          "expected": "Do not add one."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-009",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-16 six courtyard interior wall-only request; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple"
+      },
+      "trigger": "Wall-only courtyard coverage",
+      "failure": "Generic courtyard pack keeps temple visible.",
+      "prevention": "For this requested six-view pack frame courtyard interior walls with no temple visible. Choose cameras and occlusion from existing layout; never remove or relocate the temple to satisfy framing. Keep this visibility exclusion local to this pack.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "Wall-only frame includes temple shikhar.",
+          "expected": "Reframe from valid existing geometry to exclude temple."
+        },
+        {
+          "id": "boundary",
+          "input": "A later courtyard establishing shot requests the temple.",
+          "expected": "Show it according to the same layout."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-010",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-14 seating ramp and left-side coverage corrections; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple"
+      },
+      "trigger": "Temple terrace and seating coverage",
+      "failure": "Space is too cramped for Naina/group confrontation; approved extension disappears.",
+      "prevention": "Preserve the approved exterior seating ramp extension of 4x the earlier reference length and enough stairs-left staging space for Naina/group coverage. Treat 4x as a relative design change, not a surveyed dimension; inspect accepted reference before rebuilding.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "New reverse reverts ramp to original short version.",
+          "expected": "Reject stale geometry and use the approved extended version."
+        },
+        {
+          "id": "boundary",
+          "input": "Unrelated shrine requests compact steps.",
+          "expected": "Do not extend them by 4x."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-011",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-15 Path/Street/Alley blueprint and repeated-house corrections; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "govindpur-village-network"
+      },
+      "trigger": "Connected village routes",
+      "failure": "Cloned houses and generic straight lanes replace reference-specific turns and views.",
+      "prevention": "Keep Path, Street and Alley interlinked in one layout with reference-matched camera directions and stable house IDs. Preserve varied lived-in UP houses, uneven facades, setbacks, entrances and chabutras from references. Do not call a rough blockout final or treat an assistant-proposed neem junction/loop as approved.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "All three views duplicate one house and invent a loop.",
+          "expected": "Recover reference variation and preserve unapproved connections as proposals."
+        },
+        {
+          "id": "boundary",
+          "input": "Two shots intentionally show the same approved house.",
+          "expected": "Keep that house identical; diversity is between buildings, not across its views."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-012",
+      "version": 2,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-12 and 2026-10-16 explicit reference colour corrections; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Reference-based location or scene repair",
+      "failure": "A cinematic warm grade overwrites the supplied natural screenshot colours.",
+      "prevention": "Match the original supplied screenshot colour tone, white balance and exposure for applicable Laddu Gopal repairs. Bind and inspect the reference rather than defaulting to Jai Hanuman warm grading. Keep requested focus-shot blur separate from readable location-master geometry; blur cannot conceal layout errors. Re-evaluate motivated lighting per requested correction without hard-coded grading, while preserving the current approved source palette, time and world direction. The current shared temple record final-master-v01 describes warm dusty taupe / grey-brown stone with warm sunlight; that approved version supersedes older overall dark-grey master requests. Do not impose a new amber grade or recolour the final from history. Controlled neutral studio light remains appropriate for prop sheets.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "Repair adds orange grade to a natural-colour reference.",
+          "expected": "Preserve reference colour; change only requested defect."
+        },
+        {
+          "id": "boundary",
+          "input": "A new shot explicitly requests a different grade.",
+          "expected": "Apply the new scoped instruction without changing older approved outputs."
+        },
+        {
+          "id": "latest-master-palette",
+          "input": "An older dark-grey excerpt conflicts with current approved final-master-v01 colour record.",
+          "expected": "Preserve the current final approved source palette and motivated sunlight; inspect its actual media before claiming colour fidelity. Do not apply the old tone globally."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified.",
+          "2026-10-22: reconciled E01/E07 with the current shared project record version 5. Textual authority only; no final master image inspected."
+        ]
+      },
+      "supersedes": null,
+      "version_history": [
+        {
+          "id": "loc-feedback-012",
+          "version": 1,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "evidence": "2026-10-12 and 2026-10-16 explicit reference colour corrections; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal"
+          },
+          "trigger": "Reference-based location or scene repair",
+          "failure": "A cinematic warm grade overwrites the supplied natural screenshot colours.",
+          "prevention": "Match the original supplied screenshot colour tone, white balance and exposure for applicable Laddu Gopal repairs. Bind and inspect the reference rather than defaulting to Jai Hanuman warm grading. Keep requested focus-shot blur separate from readable location-master geometry; blur cannot conceal layout errors.",
+          "regression_cases": [
+            {
+              "id": "failure-or-scope",
+              "input": "Repair adds orange grade to a natural-colour reference.",
+              "expected": "Preserve reference colour; change only requested defect."
+            },
+            {
+              "id": "boundary",
+              "input": "A new shot explicitly requests a different grade.",
+              "expected": "Apply the new scoped instruction without changing older approved outputs."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+            ]
+          },
+          "supersedes": null
+        }
+      ],
+      "source_updates": [
+        {
+          "reviewed_on": "2026-10-22",
+          "evidence_ids": [
+            "E01",
+            "E07"
+          ],
+          "sources": [
+            {
+              "id": "E01",
+              "date": "2026-10-22",
+              "source": "Dynamic Lighting Added",
+              "provenance": "supplied_user_excerpt",
+              "quote": "hrr propmt correction m lighitng bhi dyanmic rkhni h ... hard coded ... jab m expremetn bolu ... list ke hisab se ... bina bole"
+            },
+            {
+              "id": "E07",
+              "date": "2026-10-22",
+              "source": "मंदिर ब्लूप्रिंट तैयार",
+              "provenance": "supplied_user_excerpt",
+              "quote": "main gate ... glt ... top se murti kha dekhoegi ... mandap ... structure same ... dark grey ... blueprint ... marked ... deep shadow ... area ... 30% ... lock kro final"
+            }
+          ],
+          "limits": "Supplied excerpts/retrieved summaries only; no source media inspected or production improvement measured."
+        }
+      ]
+    },
+    {
+      "id": "loc-feedback-013",
+      "version": 4,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-15 tag correction; Scene 8 exact @village-alley instruction; 2026-10-16 local cell-only exception; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Compiling location handoff or corrected prompts",
+      "failure": "Old tag namespaces are normalized globally or missing props are invented.",
+      "prevention": "Use exact current project/cell bindings and only visible assets; never invent tags or translate between @stairs.* and @krishna-temple.* without verified mapping. Scene 8 uses @village-alley, not @village-alley-street. Include @canvas-travel-bag at anatomical right hip when visible and required by the active format; distinguish lap idol/basket. Keep stick presence, crowd position/blur and cell-only tag exceptions scoped to their actual shot. Latest specific instruction overrides an older general default. Apply the latest strict frame-local inventory: only actual relevant on-frame entities, partial/reflected owners and exact selected location/surface in visual text, Refs and actual inputs. A globally valid tag can still be wrong for this frame. Remove extra untagged subject/location prose too. Never bind an off-frame bag/character just to state absence; keep continuity separately and requested offscreen voice/sound in the audio handoff only. Preserve an explicitly on-frame crowd. The corrected 23 October cart-only retrieved source has exactly @nandu-s-cart + @village-alley.ground; a separate Nandu-plus-cart source keeps its own visible inventory. Do not normalize location aliases or invent missing tags. For the retrieved 28 October local-date @s18p4s5 [CU] source, retain @vikram-01 with exact @krishna-temple-mandir_opposite. This is a shot-local source binding, not an alias for @krishna-temple-courtyard or @krishna-temple.courtyard and not proof of its camera geometry. Other shots retain their own exact source tokens. Grouped retrieval of several shot IDs and several reference tags does not establish one-to-one mapping; resolve the original matching source before binding. Supplied 28 October user prompt text resolves @s20p2s4 to exact @krishna-temple.ground and @s20p3s1 to exact @krishna-temple-courtyard. Treat these as shot-local textual source bindings only; do not spread them to @s20p2s5, alias namespaces or infer geometry/media approval.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "Scene 8 output uses @village-alley-street.",
+          "expected": "Use exact @village-alley."
+        },
+        {
+          "id": "boundary",
+          "input": "A specific video correction explicitly permits scene/cell tags only.",
+          "expected": "Honor that local format; do not force character/prop tags into it or export exception globally."
+        },
+        {
+          "id": "cart-only",
+          "input": "Cart-only frame uses @nandu-s-cart and @village-alley.ground, but draft adds Nandu/Pooja/temple.",
+          "expected": "Remove extra visual prose/tags/Refs/inputs; keep exact two-tag source inventory. Separate Nandu-plus-cart frame remains source-scoped."
+        },
+        {
+          "id": "face-crop-audio-boundary",
+          "input": "Face-only crop has out-of-frame bag in Refs and explicitly requested offscreen voice.",
+          "expected": "Remove bag visual binding/absence clause; keep requested speaker only in audio handoff. Retain actual visible partial owners and on-frame crowd in their own shots."
+        },
+        {
+          "id": "untagged-extra",
+          "input": "Allowed tags are correct but prose or an attached reference still inserts an extra character.",
+          "expected": "Fail semantic/reference-role QC; literal @tag PASS alone is insufficient."
+        },
+        {
+          "id": "vikram-opposite-exact-binding",
+          "input": "@s18p4s5 [CU] supplied with @vikram-01 and @krishna-temple-mandir_opposite; draft normalizes its location to @krishna-temple-courtyard.",
+          "expected": "Restore exact shot-local @krishna-temple-mandir_opposite; do not infer camera pose or visual verification."
+        },
+        {
+          "id": "other-courtyard-binding-boundary",
+          "input": "@s17p4s7 user source uses @krishna-temple-courtyard; grouped summary lists three other view tags with several shot IDs.",
+          "expected": "Keep this shot source token; do not export opposite binding or guess pairings from grouped lists."
+        },
+        {
+          "id": "scene20-explicit-pair",
+          "input": "Grouped retrieval left Scene20 mapping unresolved; direct user @s20p2s4 text explicitly names @krishna-temple.ground.",
+          "expected": "Use that exact textual binding for this shot; do not call original media verified."
+        },
+        {
+          "id": "scene20-courtyard-pair",
+          "input": "Direct @s20p3s1 prompt names @krishna-temple-courtyard while another shot uses @krishna-temple.ground.",
+          "expected": "Retain the courtyard token for @s20p3s1 without namespace normalization."
+        },
+        {
+          "id": "scene20-unbound-neighbor",
+          "input": "@s20p2s5 follows the ground-tagged shot but has no location tag in the supplied source.",
+          "expected": "Keep its location binding unresolved; adjacency does not authorize inheriting the previous tag."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified.",
+          "23 October direct current user correction and supported cart-only retrieval reconciled with existing exact-tag rule. Source/frame media and actual attachments uninspected; no visual improvement claimed.",
+          "29 October: two new failure/boundary text decisions self-reviewed. Exact binding supported by two bounded retrievals, not visually verified. Existing no-alias rule reused; no generated media or geometry change.",
+          "30 October lead text-scope review of three added Scene20 failure/boundary cases: exact two source bindings retained; adjacent unbound shot stays pending. No independent or visual test."
+        ]
+      },
+      "supersedes": null,
+      "version_history": [
+        {
+          "id": "loc-feedback-013",
+          "version": 1,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "evidence": "2026-10-15 tag correction; Scene 8 exact @village-alley instruction; 2026-10-16 local cell-only exception; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal"
+          },
+          "trigger": "Compiling location handoff or corrected prompts",
+          "failure": "Old tag namespaces are normalized globally or missing props are invented.",
+          "prevention": "Use exact current project/cell bindings and only visible assets; never invent tags or translate between @stairs.* and @krishna-temple.* without verified mapping. Scene 8 uses @village-alley, not @village-alley-street. Include @canvas-travel-bag at anatomical right hip when visible and required by the active format; distinguish lap idol/basket. Keep stick presence, crowd position/blur and cell-only tag exceptions scoped to their actual shot. Latest specific instruction overrides an older general default.",
+          "regression_cases": [
+            {
+              "id": "failure-or-scope",
+              "input": "Scene 8 output uses @village-alley-street.",
+              "expected": "Use exact @village-alley."
+            },
+            {
+              "id": "boundary",
+              "input": "A specific video correction explicitly permits scene/cell tags only.",
+              "expected": "Honor that local format; do not force character/prop tags into it or export exception globally."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+            ]
+          },
+          "supersedes": null
+        },
+        {
+          "id": "loc-feedback-013",
+          "version": 2,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "evidence": "2026-10-15 tag correction; Scene 8 exact @village-alley instruction; 2026-10-16 local cell-only exception; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal"
+          },
+          "trigger": "Compiling location handoff or corrected prompts",
+          "failure": "Old tag namespaces are normalized globally or missing props are invented.",
+          "prevention": "Use exact current project/cell bindings and only visible assets; never invent tags or translate between @stairs.* and @krishna-temple.* without verified mapping. Scene 8 uses @village-alley, not @village-alley-street. Include @canvas-travel-bag at anatomical right hip when visible and required by the active format; distinguish lap idol/basket. Keep stick presence, crowd position/blur and cell-only tag exceptions scoped to their actual shot. Latest specific instruction overrides an older general default. Apply the latest strict frame-local inventory: only actual relevant on-frame entities, partial/reflected owners and exact selected location/surface in visual text, Refs and actual inputs. A globally valid tag can still be wrong for this frame. Remove extra untagged subject/location prose too. Never bind an off-frame bag/character just to state absence; keep continuity separately and requested offscreen voice/sound in the audio handoff only. Preserve an explicitly on-frame crowd. The corrected 23 October cart-only retrieved source has exactly @nandu-s-cart + @village-alley.ground; a separate Nandu-plus-cart source keeps its own visible inventory. Do not normalize location aliases or invent missing tags.",
+          "regression_cases": [
+            {
+              "id": "failure-or-scope",
+              "input": "Scene 8 output uses @village-alley-street.",
+              "expected": "Use exact @village-alley."
+            },
+            {
+              "id": "boundary",
+              "input": "A specific video correction explicitly permits scene/cell tags only.",
+              "expected": "Honor that local format; do not force character/prop tags into it or export exception globally."
+            },
+            {
+              "id": "cart-only",
+              "input": "Cart-only frame uses @nandu-s-cart and @village-alley.ground, but draft adds Nandu/Pooja/temple.",
+              "expected": "Remove extra visual prose/tags/Refs/inputs; keep exact two-tag source inventory. Separate Nandu-plus-cart frame remains source-scoped."
+            },
+            {
+              "id": "face-crop-audio-boundary",
+              "input": "Face-only crop has out-of-frame bag in Refs and explicitly requested offscreen voice.",
+              "expected": "Remove bag visual binding/absence clause; keep requested speaker only in audio handoff. Retain actual visible partial owners and on-frame crowd in their own shots."
+            },
+            {
+              "id": "untagged-extra",
+              "input": "Allowed tags are correct but prose or an attached reference still inserts an extra character.",
+              "expected": "Fail semantic/reference-role QC; literal @tag PASS alone is insufficient."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified.",
+              "23 October direct current user correction and supported cart-only retrieval reconciled with existing exact-tag rule. Source/frame media and actual attachments uninspected; no visual improvement claimed."
+            ]
+          },
+          "supersedes": null,
+          "source_updates": [
+            {
+              "reviewed_on": "2026-10-23",
+              "evidence_ids": [
+                "E18",
+                "E19"
+              ],
+              "provenance": "E18 direct current user; E19 supported retrieved chat summary",
+              "evidence": "jis frame jis character or revelent character or location ki baat h sirf vhi ho dusra baki na ho; cart-only source exactly @nandu-s-cart + @village-alley.ground. Source media not inspected."
+            }
+          ]
+        },
+        {
+          "id": "loc-feedback-013",
+          "version": 3,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "evidence": "2026-10-15 tag correction; Scene 8 exact @village-alley instruction; 2026-10-16 local cell-only exception; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal"
+          },
+          "trigger": "Compiling location handoff or corrected prompts",
+          "failure": "Old tag namespaces are normalized globally or missing props are invented.",
+          "prevention": "Use exact current project/cell bindings and only visible assets; never invent tags or translate between @stairs.* and @krishna-temple.* without verified mapping. Scene 8 uses @village-alley, not @village-alley-street. Include @canvas-travel-bag at anatomical right hip when visible and required by the active format; distinguish lap idol/basket. Keep stick presence, crowd position/blur and cell-only tag exceptions scoped to their actual shot. Latest specific instruction overrides an older general default. Apply the latest strict frame-local inventory: only actual relevant on-frame entities, partial/reflected owners and exact selected location/surface in visual text, Refs and actual inputs. A globally valid tag can still be wrong for this frame. Remove extra untagged subject/location prose too. Never bind an off-frame bag/character just to state absence; keep continuity separately and requested offscreen voice/sound in the audio handoff only. Preserve an explicitly on-frame crowd. The corrected 23 October cart-only retrieved source has exactly @nandu-s-cart + @village-alley.ground; a separate Nandu-plus-cart source keeps its own visible inventory. Do not normalize location aliases or invent missing tags. For the retrieved 28 October local-date @s18p4s5 [CU] source, retain @vikram-01 with exact @krishna-temple-mandir_opposite. This is a shot-local source binding, not an alias for @krishna-temple-courtyard or @krishna-temple.courtyard and not proof of its camera geometry. Other shots retain their own exact source tokens. Grouped retrieval of several shot IDs and several reference tags does not establish one-to-one mapping; resolve the original matching source before binding.",
+          "regression_cases": [
+            {
+              "id": "failure-or-scope",
+              "input": "Scene 8 output uses @village-alley-street.",
+              "expected": "Use exact @village-alley."
+            },
+            {
+              "id": "boundary",
+              "input": "A specific video correction explicitly permits scene/cell tags only.",
+              "expected": "Honor that local format; do not force character/prop tags into it or export exception globally."
+            },
+            {
+              "id": "cart-only",
+              "input": "Cart-only frame uses @nandu-s-cart and @village-alley.ground, but draft adds Nandu/Pooja/temple.",
+              "expected": "Remove extra visual prose/tags/Refs/inputs; keep exact two-tag source inventory. Separate Nandu-plus-cart frame remains source-scoped."
+            },
+            {
+              "id": "face-crop-audio-boundary",
+              "input": "Face-only crop has out-of-frame bag in Refs and explicitly requested offscreen voice.",
+              "expected": "Remove bag visual binding/absence clause; keep requested speaker only in audio handoff. Retain actual visible partial owners and on-frame crowd in their own shots."
+            },
+            {
+              "id": "untagged-extra",
+              "input": "Allowed tags are correct but prose or an attached reference still inserts an extra character.",
+              "expected": "Fail semantic/reference-role QC; literal @tag PASS alone is insufficient."
+            },
+            {
+              "id": "vikram-opposite-exact-binding",
+              "input": "@s18p4s5 [CU] supplied with @vikram-01 and @krishna-temple-mandir_opposite; draft normalizes its location to @krishna-temple-courtyard.",
+              "expected": "Restore exact shot-local @krishna-temple-mandir_opposite; do not infer camera pose or visual verification."
+            },
+            {
+              "id": "other-courtyard-binding-boundary",
+              "input": "@s17p4s7 user source uses @krishna-temple-courtyard; grouped summary lists three other view tags with several shot IDs.",
+              "expected": "Keep this shot source token; do not export opposite binding or guess pairings from grouped lists."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified.",
+              "23 October direct current user correction and supported cart-only retrieval reconciled with existing exact-tag rule. Source/frame media and actual attachments uninspected; no visual improvement claimed.",
+              "29 October: two new failure/boundary text decisions self-reviewed. Exact binding supported by two bounded retrievals, not visually verified. Existing no-alias rule reused; no generated media or geometry change."
+            ]
+          },
+          "supersedes": null,
+          "source_updates": [
+            {
+              "reviewed_on": "2026-10-23",
+              "evidence_ids": [
+                "E18",
+                "E19"
+              ],
+              "provenance": "E18 direct current user; E19 supported retrieved chat summary",
+              "evidence": "jis frame jis character or revelent character or location ki baat h sirf vhi ho dusra baki na ho; cart-only source exactly @nandu-s-cart + @village-alley.ground. Source media not inspected."
+            },
+            {
+              "reviewed_on": "2026-10-29",
+              "source_timestamp": "2026-10-27T19:14:32Z",
+              "local_source_date": "2026-10-28",
+              "evidence_ids": [
+                "CL29-P1-c1",
+                "CL29-P2-c0"
+              ],
+              "provenance": "Personal Context retrieved user summary and reported exact source text; not raw full conversation or inspected media",
+              "evidence": "@s18p4s5 [CU] explicitly uses @krishna-temple-mandir_opposite with @vikram-01. No alias authorization stated. Other courtyard tokens occur in different shots."
+            }
+          ]
+        }
+      ],
+      "source_updates": [
+        {
+          "reviewed_on": "2026-10-23",
+          "evidence_ids": [
+            "E18",
+            "E19"
+          ],
+          "provenance": "E18 direct current user; E19 supported retrieved chat summary",
+          "evidence": "jis frame jis character or revelent character or location ki baat h sirf vhi ho dusra baki na ho; cart-only source exactly @nandu-s-cart + @village-alley.ground. Source media not inspected."
+        },
+        {
+          "reviewed_on": "2026-10-29",
+          "source_timestamp": "2026-10-27T19:14:32Z",
+          "local_source_date": "2026-10-28",
+          "evidence_ids": [
+            "CL29-P1-c1",
+            "CL29-P2-c0"
+          ],
+          "provenance": "Personal Context retrieved user summary and reported exact source text; not raw full conversation or inspected media",
+          "evidence": "@s18p4s5 [CU] explicitly uses @krishna-temple-mandir_opposite with @vikram-01. No alias authorization stated. Other courtyard tokens occur in different shots."
+        },
+        {
+          "reviewed_on": "2026-10-30",
+          "source_date": "2026-10-28",
+          "evidence_ids": [
+            "CL30-S1"
+          ],
+          "provenance": "direct supplied historical user prompt text; original media not inspected",
+          "evidence": "Cinematic Scene Description: @s20p2s4 [CU] names @krishna-temple.ground; later @s20p3s1 [MS] names @krishna-temple-courtyard. @s20p2s5 has no location token in this supplied excerpt."
+        }
+      ]
+    },
+    {
+      "id": "loc-feedback-014",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "2026-10-15 Nandu prop brief and explicit sheet layout in available chat history; available conversation excerpts and targeted Personal Context retrieval reviewed 2026-10-16. Image contents were not inspected in this learning-only run."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "nandu-rickshaw"
+      },
+      "trigger": "Nandu rickshaw reference sheet",
+      "failure": "Four default files omit requested driver view or rearrange the sheet; details drift.",
+      "prevention": "For this prop deliver one 1:1 sheet: dominant driver-seat handle POV on the left and four exterior angles on the right. Keep Indian jugaad autorickshaw, ladies makeup stock, kalava on accelerator grip, and plate UP 13AF2452 with final 52 faded consistent in every view where visible. Driver POV is an extra view, not a replacement exterior side. Keep requested image-only sheet free of unsolicited labels.",
+      "regression_cases": [
+        {
+          "id": "failure-or-scope",
+          "input": "Sheet has four views but no driver handle view.",
+          "expected": "Deliver all five requested views in the specified square layout."
+        },
+        {
+          "id": "boundary",
+          "input": "Another prop asks for four separate grey-background photos.",
+          "expected": "Use that requested format; do not import the rickshaw sheet arrangement."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct user decisions checked against available/retrieved excerpts; active only at the stated scope. No rendered output or image-quality improvement certified."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-research-001",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "primary_research",
+        "url": "https://docs.opencv.org/4.13.0/d9/d0c/group__calib3d.html",
+        "accessed_date": "2026-10-17",
+        "evidence": "OpenCV 4.13.0 documents p=K[R|t]P and scaling pixel focal lengths/principal point after resize. Crop/padding transfer K_out=A*K is derived from that equation, not a documented new release."
+      },
+      "scope": {
+        "kind": "global-workflow"
+      },
+      "trigger": "Known pinhole reference is resized/cropped/padded before camera-guided comparison",
+      "failure": "Stale pixel intrinsics give wrong projected landmark positions despite unchanged scene pose/lens. Existing spatial contract recorded pixels/lens but lacked an explicit preprocessing transfer.",
+      "cause": "Pixel coordinates changed without recording their source-to-output transform.",
+      "prevention": "Bind calibration to exact source pixels and actual preprocessing convention; use K_out=A*K for known positive scale/translation, including crop/padding and resampler offsets. Preserve original geometry/approval; version derivatives. Unknown transforms stay pending. Do not apply this helper to panorama/fisheye/undistortion/generative reframing.",
+      "regression_cases": [
+        {
+          "id": "resize-stale",
+          "input": "1920x1080 pinhole K has fx=fy=1000,cx=960,cy=540; resize coordinates by 0.5.",
+          "expected": "Use fx=fy=500,cx=480,cy=270. Stale K fails the known projected-point correspondence."
+        },
+        {
+          "id": "crop-resize",
+          "input": "Same K, u_out=0.5*(u-200), v_out=0.5*(v-100).",
+          "expected": "K_out=[[500,0,380],[0,500,220],[0,0,1]], preserving pose and approved architecture."
+        },
+        {
+          "id": "unchanged-boundary",
+          "input": "Explicit identity pixel map on the same pinhole source.",
+          "expected": "Keep K unchanged; no new approval or scene change."
+        },
+        {
+          "id": "unsupported-boundary",
+          "input": "Equirectangular/fisheye or unknown generative reframing is offered as input.",
+          "expected": "Reject helper application or retain alignment pending; do not claim camera calibration."
+        }
+      ],
+      "validation": {
+        "kind": "structural-test",
+        "result": "PASS",
+        "evidence": [
+          "scripts/test_transfer_intrinsics.py: 7 executed tests cover known-point projection before/after transforms; unchanged-record/identity boundary; rejection cases.",
+          "34 total helper tests PASS; separate CLI crop-resize test PASS.",
+          "Read-only location_regression returned correct decisions for 11 paired/scoped production cases, including seeded failures and versioned approvals. No images or viewer interaction evaluated."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-research-002",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "primary_research",
+        "url": "https://colmap.github.io/format.html#images-txt",
+        "accessed_date": "2026-10-20",
+        "evidence": "Official baseline images.txt documentation specifies Hamilton (qw,qx,qy,qz), image world-to-camera projection, camera centre -R^T*t and camera right/down/forward axes. Unversioned documentation, not a new release."
+      },
+      "scope": {
+        "kind": "tool",
+        "tool_id": "colmap-images-txt",
+        "interface_version": "documented image-level world-to-camera Hamilton wxyz format, checked 2026-10-20; not rig/body or pycolmap internal ordering"
+      },
+      "trigger": "Importing explicitly identified COLMAP images.txt image poses into shared location layout",
+      "failure": "Treating world-to-camera translation as camera position misplaces camera/axes; assuming reconstruction coordinates are project metres can break opposing-view geography.",
+      "cause": "The existing target/up camera contract did not explicitly spell out external pose direction, Hamilton component order, or camera-centre conversion.",
+      "prevention": "For this identified image-pose convention derive C=-R^T*t, visual up=-camera Y and forward=+camera Z. Record/map the source frame and scale consistently for cameras and geometry, then inspect landmarks. Reject unknown convention/rig-body imports; keep source-to-project alignment pending. Do not alter approved architecture or convert existing project-native cameras.",
+      "regression_cases": [
+        {
+          "id": "translation-not-centre",
+          "input": "COLMAP image q(wxyz)=[1,0,0,0], t=[1,2,3] is imported with centre=t.",
+          "expected": "Use source centre [-1,-2,-3]; R*C+t must be zero; project alignment and scale remain pending."
+        },
+        {
+          "id": "rotated-round-trip",
+          "input": "q(wxyz)=[sqrt(0.5),0,sqrt(0.5),0], t=[1,2,3].",
+          "expected": "Derive centre [3,-2,-1], forward [-1,0,0], up [0,-1,0] in source-world coordinates and verify round-trip."
+        },
+        {
+          "id": "native-boundary",
+          "input": "An existing approved project-native camera already has position/target/up.",
+          "expected": "Leave it unchanged; no conversion, geometry revision or added approval gate."
+        },
+        {
+          "id": "unknown-boundary",
+          "input": "Unlabeled quaternion or unresolved rig/body transform; world units/geographic orientation unknown.",
+          "expected": "Do not guess or declare metric project alignment. Require convention/alignment evidence; retain pending status."
+        }
+      ],
+      "validation": {
+        "kind": "structural-test",
+        "result": "PASS",
+        "evidence": [
+          "40 total executed helper tests PASS (34 existing plus 6 pose tests); CLI known-pose test PASS and source bytes unchanged.",
+          "Numeric comparison rejects centre=t baseline via R*C+t!=0; proposed conversion satisfies centre and rotated projection round-trip.",
+          "Read-only location_review_20261020 returned correct decisions for 12 paired/scoped cases, including native/unknown pose boundaries, all seeded failures, shared openings and exact tags. No production render/image-quality or live viewer evaluation."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-015",
+      "version": 2,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "22 October E07 blueprint corrections plus the current shared project record version 5, location_design_records.krishna-temple. User acceptance: “ye okay h ye lock kro final”. The current record binds final-master-v01 and supersedes earlier overall masters. Only record text was read; the master and generated pack were not inspected.",
+        "reviewed_on": "2026-10-22",
+        "evidence_ids": [
+          "E07"
+        ],
+        "master_version": "final-master-v01",
+        "master_sha256": "77c1563c41f1ca96dbaef06d54ffdf841d7a85c32747d76b7bccb6f4d60879b3"
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple"
+      },
+      "trigger": "Reusing or reconstructing the latest approved final Krishna temple master and its dependent views",
+      "failure": "Earlier dark-grey masters/v04 blueprint, see-through roof, stale landing or generated pack completion displace the latest approved source and actual pending camera checks.",
+      "prevention": "Preserve current USER_APPROVED_VISUAL_MASTER final-master-v01: carved arched gate, elongated temple, broad inner stairs, raised platform, expanded landing, approved taupe/grey-brown stone and warm sunlight, and no steel queue railing. The recorded landing increase is approximately 30% in depth at unchanged width relative to the prior source, visually approved rather than surveyed. Keep the aerial entrance in deep shadow and rear idol occluded by the mandap roof for that camera; only physically valid interior views show it. Reconcile earlier 4x ramp/v04 planning guidance to the final before rebuilding. Preserve all 24 exact existing tags; proposed tags and metric geometry remain unverified. Imported record status is 73 generated, 70 reference-reviewed, three exact-nadir repairs pending, not individual-view user approval or new media inspection. Bind side-gate/approach-road details to the actual approved master; do not infer metric road widths from earlier summaries.",
+      "regression_cases": [
+        {
+          "id": "old-master-conflict",
+          "input": "Older dark-grey/4x-ramp text is used to recolour and rebuild final-master-v01 without its source.",
+          "expected": "Retain final approval and palette; reconcile affected old planning geometry to that source, keeping unmeasured dimensions pending."
+        },
+        {
+          "id": "roof-occlusion",
+          "input": "Aerial view reveals the rear idol through the roof.",
+          "expected": "Preserve opaque approved mandap/roof and the source camera’s hidden-idol constraint; do not remove architecture to expose it."
+        },
+        {
+          "id": "generated-is-not-approved",
+          "input": "All 73 generated views are called approved and exact top-down.",
+          "expected": "Retain 70 recorded reference-reviewed views and the three pending exact-nadir tags; no shared-3D or individual-view approval claim."
+        },
+        {
+          "id": "interior-boundary",
+          "input": "A physically valid interior camera is meant to see the idol.",
+          "expected": "Allow its valid view; the aerial occlusion rule is camera-scoped, not a global ban."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Direct supplied correction and current shared final-master acceptance were reconciled as textual locks. Earlier palette/geometry requests are historical at conflicting scope; source media and metric reconstruction remain pending."
+        ]
+      },
+      "supersedes": null,
+      "previous_versions": [
+        {
+          "id": "loc-feedback-015",
+          "version": 1,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal"
+          },
+          "trigger": "Final temple blueprint/version",
+          "failure": "Old railing/geometry or visible interior idol from above overrides accepted master.",
+          "prevention": "Preserve 22 October final blueprint, gate, temple/stairs join, reference grey, local shadow and marked 30% area enlargement; remove left queue railing for this version, retain side gate/four-lane road. Opaque mandap hides idol from aerial cameras; recover exact master before matching.",
+          "regression_cases": [
+            {
+              "id": "failure",
+              "input": "Aerial image reveals idol through intact roof.",
+              "expected": "Reject impossible visibility; preserve roof and approved layout."
+            },
+            {
+              "id": "boundary",
+              "input": "User requests interior sanctum camera.",
+              "expected": "Allow idol visibility from the actual interior camera."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification."
+            ]
+          },
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "id": "loc-feedback-016",
+      "version": 2,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected. PC query 1 c0/c2/c5 retrieved user constraints dated 26–27 October; query 2 c6 corroborates 26 October 18:48:23Z and 27 October 03:55:39Z. Original media not inspected.",
+        "reviewed_on": "2026-10-27"
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Fixed seated staging across camera changes",
+      "failure": "Naina changes size/spot and bag/stick swap world sides across angles.",
+      "prevention": "Keep child scale, seated corner and world positions fixed. Bind physical-left bag/stick only to retrieved Sharda–Naina sequence and latest marks; travelling right-hip bag remains separate. Preserve exact view tags and sequence @crowd/@crowd-2 without global aliases. For the 26–27 October Sharda-house conversation, @avdhesh-01 and @sharda-01 stay seated on @old-wooden-charpai while @naina-01 is already standing before them, bag at physical right hip and @wooden-stick in left hand where the matched brief specifies it. Changing to OTS, CU or asymmetric two-shot does not make them rise or swap world positions. This newer sequence does not rewrite the older marked physical-left seated sequence. Preserve cautious sound/tactile navigation when Naina moves; do not add off-frame props or movement to a still seated beat.",
+      "regression_cases": [
+        {
+          "id": "failure",
+          "input": "Reverse camera moves seated Naina or mirrors her bag.",
+          "expected": "Keep world positions and use the actual matching reverse reference."
+        },
+        {
+          "id": "boundary",
+          "input": "Travelling sequence explicitly carries bag at right hip.",
+          "expected": "Preserve that separate state; do not force seated left placement."
+        },
+        {
+          "id": "sharda-standing-sequence",
+          "input": "New Sharda conversation reverse seats Naina and raises the elderly couple.",
+          "expected": "Retain standing Naina and seated couple; vary camera without changing staging."
+        },
+        {
+          "id": "sharda-left-history-boundary",
+          "input": "Older approved marked seated source has physical-left bag; later separate walking beat is explicit.",
+          "expected": "Keep older bag lock local and allow later authored motion; no global right-side or permanent seated rule."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification.",
+          "2026-10-27: lead self-reviewed new source-scoped failure/boundary decisions; text constraints only, not media verification."
+        ]
+      },
+      "supersedes": null,
+      "version_history": [
+        {
+          "id": "loc-feedback-016",
+          "version": 1,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal"
+          },
+          "trigger": "Fixed seated staging across camera changes",
+          "failure": "Naina changes size/spot and bag/stick swap world sides across angles.",
+          "prevention": "Keep child scale, seated corner and world positions fixed. Bind physical-left bag/stick only to retrieved Sharda–Naina sequence and latest marks; travelling right-hip bag remains separate. Preserve exact view tags and sequence @crowd/@crowd-2 without global aliases.",
+          "regression_cases": [
+            {
+              "id": "failure",
+              "input": "Reverse camera moves seated Naina or mirrors her bag.",
+              "expected": "Keep world positions and use the actual matching reverse reference."
+            },
+            {
+              "id": "boundary",
+              "input": "Travelling sequence explicitly carries bag at right hip.",
+              "expected": "Preserve that separate state; do not force seated left placement."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification."
+            ]
+          },
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "id": "loc-feedback-017",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Seated idol and authored state transitions",
+      "failure": "Basket returns, idol is oversized/facing away, or stick/strap duplicates.",
+      "prevention": "In 22 October seated sequence remove basket, small idol in lap facing Naina, stick at matching mark only. Allow explicitly authored two-hand lift to face level and next matching-height Bal Krishna shot; keep other sequence states separate.",
+      "regression_cases": [
+        {
+          "id": "failure",
+          "input": "New angle restores basket around seated idol.",
+          "expected": "Remove basket and preserve scale/orientation."
+        },
+        {
+          "id": "boundary",
+          "input": "User specifies lap-to-face idol lift.",
+          "expected": "Allow authored movement; do not freeze idol in lap."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-018",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Lighting and experiment continuity",
+      "failure": "Flat fill or creative angle changes approved grade, time or geography.",
+      "prevention": "Include motivated dynamic light preserving approved colours, time/direction, readable shadows/materials and controlled separation. Experiment selects creative angles automatically with fixed world/identity. 5 a.m. applies only to its sequence; studio prop sheets retain controlled consistent light.",
+      "regression_cases": [
+        {
+          "id": "failure",
+          "input": "Experiment rewrites temple lighting to unrelated golden sunset.",
+          "expected": "Preserve reference lighting/time and change suitable camera composition."
+        },
+        {
+          "id": "boundary",
+          "input": "Grey-background product turnaround.",
+          "expected": "Keep controlled readable studio illumination rather than dramatic scene shadows."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-019",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Scoped background and crowd correction",
+      "failure": "Background replacement changes unrelated approved elements or merges conflicting crowd states.",
+      "prevention": "Replace only bound requested background; preserve approved foreground. Keep crowd positions/routes, density/focus and pandit presence as specified for matching sequence; folded-hand lower-frame crowd is not every temple crowd.",
+      "regression_cases": [
+        {
+          "id": "failure",
+          "input": "Background-only replacement moves bag and removes marked pandit.",
+          "expected": "Preserve bag/world staging and specified crowd/pandit."
+        },
+        {
+          "id": "boundary",
+          "input": "Another shot explicitly has walking crowd.",
+          "expected": "Permit that route/state without forcing folded-hand poses."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-020",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "evidence": "22 October 2026 available user-chat excerpts and targeted Personal Context retrieval; text decisions only, original image attachments not inspected."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal"
+      },
+      "trigger": "Image pack completion and delivery",
+      "failure": "Planned counts or failed ZIP delivery are reported as complete.",
+      "prevention": "Reconcile actual outputs against manifest; verify archive contents/integrity and saved delivery. Treat historical assistant counts as plans until checked; report missing views and failed download unresolved.",
+      "regression_cases": [
+        {
+          "id": "failure",
+          "input": "73 planned views but only some files exist and ZIP fails.",
+          "expected": "Report actual files and unresolved delivery; repair authorized pack."
+        },
+        {
+          "id": "boundary",
+          "input": "User asks only for a view plan.",
+          "expected": "Return planned counts without claiming generated files."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "Explicit user decisions adopted within their sequence/version; failure and boundary expectations reviewed as text, not rendered-image verification."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-021",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "reviewed_on": "2026-10-22",
+        "evidence_ids": [
+          "E09"
+        ],
+        "evidence": "Supplied Purana Jhola Edit excerpt E09 asks old bag without label, four neutral-grey views, and tied bundle with a small knot gap revealing part of a gold necklace. Project/tag binding and actual source prop media were unavailable."
+      },
+      "scope": {
+        "kind": "global-workflow",
+        "source_brief": "22 October Purana Jhola Edit; apply design details only to this identified brief"
+      },
+      "trigger": "Preserving selected prop identity, closure and content state in the identified Purana Jhola four-view brief",
+      "failure": "Bag and bundle are merged, an invented label/tag appears, or the knot opens enough to show all necklace contents across inconsistent views.",
+      "prevention": "Treat source identity, wear, closure and visible contents as one selected prop-state contract. For this identified brief keep the old bag unlabelled; separately keep the tied bundle closed except its small knot gap showing only part of the gold necklace from a physically visible angle. Deliver four genuine neutral-grey views of the same respective source prop/state; do not invent production @tags, mirror a view or expose hidden contents through a reverse. Keep project/tag/source-media binding pending. The old/worn design and necklace are local brief details, never defaults for other props.",
+      "regression_cases": [
+        {
+          "id": "closure-content",
+          "input": "The tied bundle opens into a display of the full gold necklace in all four views.",
+          "expected": "Retain the knot and small source gap; reveal only the supported portion where visible, with consistent closure across sides."
+        },
+        {
+          "id": "identity-tag",
+          "input": "An old unlabelled bag is replaced with a newly named/tagged bundle.",
+          "expected": "Preserve each actual source object, no label artwork or invented @tag; retain unresolved bindings."
+        },
+        {
+          "id": "unrelated-prop-boundary",
+          "input": "Another approved clean bag has its own label and no visible contents.",
+          "expected": "Preserve that prop’s approved label/state; do not import this old-bag or necklace detail."
+        }
+      ],
+      "validation": {
+        "kind": "instruction-regression",
+        "result": "PASS",
+        "evidence": [
+          "Self-reviewed source-to-rule decisions for closure/content, object distinction and unrelated-prop boundary. This checks textual scope, not images, independent agent behavior or production quality."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-022",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "date": "2026-10-23",
+        "reviewed_on": "2026-10-24",
+        "conversation": "Scene description write",
+        "provenance": "Direct supplied user excerpt; source images/video not inspected",
+        "evidence": "After the @s1p13s7 / @s1p13s5 / @s1p13s8 pandit/crowd prompt, user explicitly corrected: isme camera one take shot hoga whip pan or handheld movement m. Backfilled from supplied excerpt; not claimed to be a post-checkpoint message."
+      },
+      "scope": {
+        "kind": "shot",
+        "project_id": "laddu-gopal",
+        "location_id": "krishna-temple",
+        "shot_id": "@s1p13s7 -> @s1p13s5 -> @s1p13s8"
+      },
+      "trigger": "Location/reference handoff for the identified 23 October pandit/crowd continuous take",
+      "failure": "Timed storyboard labels are treated as separate setups, permitting camera teleportation or contradictory entrance/sightline geography within the requested one take. This is a textual failure risk, not an inspected output defect.",
+      "cause": "Confusing timestamped reference beats with cuts; the supplied one-take override was not explicit in the prior location handoff rules.",
+      "prevention": "Preserve one continuous handheld camera path with whip-pan transitions across the exact three beats. Bind the matching sanctum entrance, crowd sightline and pandit return/push-in to the same world; check intervening path/occlusion instead of only endpoints. Preserve geometry, approved reference lighting and the same offscreen threat; keep visual assets local to each beat. Missing reference geometry leaves path feasibility pending, not permission to move walls. Let AI Native Director handle timing/performance/dialogue. Apply only to this identified sequence; keep separate approved shots and single-instant location stills unchanged.",
+      "regression_cases": [
+        {
+          "id": "beat-not-cut",
+          "input": "The identified 0–5 / 5–10 / 10–15 second sequence is compiled as three disconnected camera setups.",
+          "expected": "Keep a single handheld take with whip-pan transitions and a coherent crowd-to-pandit camera route."
+        },
+        {
+          "id": "intermediate-geometry",
+          "input": "Camera endpoints fit the approved set, but their interpolated route crosses an opaque wall or unverified doorway.",
+          "expected": "Flag path feasibility pending/fail according to actual evidence; revise camera route, never silently move architecture."
+        },
+        {
+          "id": "frame-local-boundary",
+          "input": "The take passes from pandit to crowd close framing and back; compiler inserts all cast/props into every crop.",
+          "expected": "Retain only each beat's actual visible entities and reference roles; offscreen danger stays offscreen."
+        },
+        {
+          "id": "separate-shots-boundary",
+          "input": "An unrelated approved sequence explicitly calls for cuts between three shots.",
+          "expected": "Preserve those cuts; do not export this local continuous-take override."
+        },
+        {
+          "id": "still-boundary",
+          "input": "A single location reference photograph is requested.",
+          "expected": "Keep one instant and one viewpoint; no time-sequence collage or paid generation during maintenance."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-24 lead self-review of the five listed failure/boundary cases against the direct supplied one-take correction and existing handoff scope. Text decisions only; no independent worker, production media, path render or visual quality comparison."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-023",
+      "version": 2,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "date": "2026-10-25",
+        "reviewed_on": "2026-10-27",
+        "provenance": "Direct supplied marked-gate correction plus dated Personal Context summaries of courtyard user instructions; source media not inspected. Separate sources are not assumed to identify the same door.",
+        "evidence": "Supplied Storyboard update excerpt: isme jo gate h vo close kro; are frame banao. Retrieved c0 user timestamps 2026-10-25T14:37:24Z and 14:56:17Z: first extreme-low-angle Mukund sharp/background blurred; courtyard starting frame rear/3/4 low angle, bedroom door shut, house/charpai/bike/tree shadows/layout matching reference. Retrieved assistant 14:56:25Z camera height 10–15 cm and slightly-left placement excluded as unapproved precision. Supplied 27 October scene prompts and PC query 2 user summaries c0/c1/c2/c3/c5/c6: same doorway 26 October 10:34:49Z, across-gate 27 October 04:40:34Z/04:41:04Z/11:11:53Z, right stationary bike 14:24:04Z. Assistant pose/tag claims distinguished; marks/media unavailable."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal",
+        "source_brief": "25 October Mukund courtyard starting frame; separately selected marked-gate repair retains unresolved identity"
+      },
+      "trigger": "Applying the identified closed-bedroom-door courtyard reference or the separately selected marked-gate correction",
+      "failure": "A gate/door silently reopens in a matching view, closure redesigns the opening/world, or an unresolved marked gate is assigned to the wrong location. These are textual risks, not inspected generated failures.",
+      "cause": "Opening state is omitted from the reference/state handoff, or summaries of different marked shots are merged without source identity.",
+      "prevention": "For the retrieved Mukund courtyard brief keep the bedroom door shut and preserve rear/three-quarter low camera intention, Mukund focus, reference house/charpai/bike/tree-shadow layout and motivated reference lighting. Recover the actual reference and resolve opening/shot IDs before claiming a match; no invented production tags, coordinates or approved 10–15 cm measurement. For the separate marked-gate edit close only its actual selected gate, keeping identity pending until bound. Preserve frame/opening geometry and adjoining geography; recheck affected sightlines, routes, light transmission and dependent views for the changed state. Do not export closure to unrelated gates or prevent an explicit later opening. This maintenance changes instructions only, not production assets. For the 27 October across-gate conversation, @mukund-03 stays inside the courtyard and @naina-01 outside the open property gate; she does not cross it. This differs from the separately authored Scene 12 entry beat where Naina enters, and from the 25 October closed bedroom door. Keep interior/exterior backgrounds on their correct side and use the same identified doorway for an exit/return. Retrieved 27 October 14:24:04Z user instruction fixes the stationary motorcycle on the courtyard RIGHT near the brick boundary wall for that brief. Treat rear/front orientation and other assistant-only left/right tag availability as unverified until the actual approved reference is bound. Older marked bike relocation requests remain local to their source; do not merge unavailable marks into this later brief. Include the bike when required and visible, never in tight crops solely to assert continuity. Preserve approved exact source tokens, including @motorcycle versus @broken-motorcycle as distinct unresolved bindings rather than automatic aliases.",
+      "regression_cases": [
+        {
+          "id": "closed-state-drift",
+          "input": "A matching courtyard reverse reopens the bedroom door to simplify its background.",
+          "expected": "Retain closed state for this brief; preserve opening geometry and review state-dependent visibility."
+        },
+        {
+          "id": "camera-precision-boundary",
+          "input": "A summary gives user rear/three-quarter low-angle intention; only an assistant says height 10–15 cm and slightly left.",
+          "expected": "Keep user camera intention, leave numerical pose unapproved and reference inspection pending."
+        },
+        {
+          "id": "marked-gate-identity",
+          "input": "A separate marked-gate close request has no inspected image, exact tag or verified location binding.",
+          "expected": "Preserve the local close instruction but do not assign it to temple/bedroom or invent tag/geometry."
+        },
+        {
+          "id": "later-open-boundary",
+          "input": "The script explicitly opens that same door later.",
+          "expected": "Allow the authored later state; do not globalize the starting-frame closure."
+        },
+        {
+          "id": "reference-layout",
+          "input": "Blur hides a moved charpai/bike or changed shadow direction in the specified starting frame.",
+          "expected": "Preserve reference layout/light direction; blur is not evidence of a valid spatial match."
+        },
+        {
+          "id": "across-gate-boundary",
+          "input": "Scene 15 across-gate conversation moves Naina inside or uses bedroom closure to shut main gate.",
+          "expected": "Keep Naina outside open property gate and Mukund inside; bedroom door is a separate opening/state."
+        },
+        {
+          "id": "entry-beat-boundary",
+          "input": "Separate Scene 12 authored action has Naina enter through main gate.",
+          "expected": "Allow that sequence entry; do not globalize Scene 15 no-cross rule."
+        },
+        {
+          "id": "bike-camera-boundary",
+          "input": "A reverse flips screen side, or CU omits the stationary bike; only assistant says rear/front orientation.",
+          "expected": "Keep same reference-relative world position, allow off-frame bike, and leave uninspected orientation pending."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "25 October lead self-reviewed five failure/boundary decisions against supplied correction and retrieved user-summary constraints. Scope handling only; no independent agent, attachment inspection, generated output or visual-quality comparison.",
+          "2026-10-27: lead self-reviewed new source-scoped failure/boundary decisions; text constraints only, not media verification."
+        ]
+      },
+      "supersedes": null,
+      "version_history": [
+        {
+          "id": "loc-feedback-023",
+          "version": 1,
+          "status": "active",
+          "source": {
+            "type": "user_feedback",
+            "date": "2026-10-25",
+            "reviewed_on": "2026-10-25",
+            "provenance": "Direct supplied marked-gate correction plus dated Personal Context summaries of courtyard user instructions; source media not inspected. Separate sources are not assumed to identify the same door.",
+            "evidence": "Supplied Storyboard update excerpt: isme jo gate h vo close kro; are frame banao. Retrieved c0 user timestamps 2026-10-25T14:37:24Z and 14:56:17Z: first extreme-low-angle Mukund sharp/background blurred; courtyard starting frame rear/3/4 low angle, bedroom door shut, house/charpai/bike/tree shadows/layout matching reference. Retrieved assistant 14:56:25Z camera height 10–15 cm and slightly-left placement excluded as unapproved precision."
+          },
+          "scope": {
+            "kind": "project",
+            "project_id": "laddu-gopal",
+            "source_brief": "25 October Mukund courtyard starting frame; separately selected marked-gate repair retains unresolved identity"
+          },
+          "trigger": "Applying the identified closed-bedroom-door courtyard reference or the separately selected marked-gate correction",
+          "failure": "A gate/door silently reopens in a matching view, closure redesigns the opening/world, or an unresolved marked gate is assigned to the wrong location. These are textual risks, not inspected generated failures.",
+          "cause": "Opening state is omitted from the reference/state handoff, or summaries of different marked shots are merged without source identity.",
+          "prevention": "For the retrieved Mukund courtyard brief keep the bedroom door shut and preserve rear/three-quarter low camera intention, Mukund focus, reference house/charpai/bike/tree-shadow layout and motivated reference lighting. Recover the actual reference and resolve opening/shot IDs before claiming a match; no invented production tags, coordinates or approved 10–15 cm measurement. For the separate marked-gate edit close only its actual selected gate, keeping identity pending until bound. Preserve frame/opening geometry and adjoining geography; recheck affected sightlines, routes, light transmission and dependent views for the changed state. Do not export closure to unrelated gates or prevent an explicit later opening. This maintenance changes instructions only, not production assets.",
+          "regression_cases": [
+            {
+              "id": "closed-state-drift",
+              "input": "A matching courtyard reverse reopens the bedroom door to simplify its background.",
+              "expected": "Retain closed state for this brief; preserve opening geometry and review state-dependent visibility."
+            },
+            {
+              "id": "camera-precision-boundary",
+              "input": "A summary gives user rear/three-quarter low-angle intention; only an assistant says height 10–15 cm and slightly left.",
+              "expected": "Keep user camera intention, leave numerical pose unapproved and reference inspection pending."
+            },
+            {
+              "id": "marked-gate-identity",
+              "input": "A separate marked-gate close request has no inspected image, exact tag or verified location binding.",
+              "expected": "Preserve the local close instruction but do not assign it to temple/bedroom or invent tag/geometry."
+            },
+            {
+              "id": "later-open-boundary",
+              "input": "The script explicitly opens that same door later.",
+              "expected": "Allow the authored later state; do not globalize the starting-frame closure."
+            },
+            {
+              "id": "reference-layout",
+              "input": "Blur hides a moved charpai/bike or changed shadow direction in the specified starting frame.",
+              "expected": "Preserve reference layout/light direction; blur is not evidence of a valid spatial match."
+            }
+          ],
+          "validation": {
+            "kind": "user-directed-scope",
+            "result": "PASS",
+            "evidence": [
+              "25 October lead self-reviewed five failure/boundary decisions against supplied correction and retrieved user-summary constraints. Scope handling only; no independent agent, attachment inspection, generated output or visual-quality comparison."
+            ]
+          },
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "id": "loc-feedback-024",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "date": "2026-10-27",
+        "evidence": "Direct supplied external chat user messages 12 and 17 request Sharda-house opposite connected lanes, then top and ground shots. PC query 1 c1 retrieves user 2026-10-27T14:03:49Z; three-view design and reported ready outputs are assistant assertions, not inspected assets or approved geometry."
+      },
+      "scope": {
+        "kind": "location",
+        "project_id": "laddu-gopal",
+        "location_id": "sharda-house-opposite-lanes"
+      },
+      "trigger": "Extending Sharda house opposite-side location coverage with top/ground views",
+      "failure": "Top or ground view is omitted, unapproved lane junctions become canon, or assistant ready claims substitute for actual file/media QC.",
+      "cause": "Coverage request is conflated with assistant design proposals and completion assertions.",
+      "prevention": "Record opposite-side connected-lane coverage plus separately requested top and ground views. Derive views from the same approved Sharda-house surroundings and camera register; preserve architecture, scale, road connections and reference light/colour. Inspect actual top-down orientation and near-ground perspective before labeling views verified. The assistant proposed front wide/left lane/right road and boundary-wall/neem anchors, but these are not independently approved or media-verified geometry. Recover existing exact view tags and references rather than inventing an opposite-lane namespace. Reconcile actual saved outputs before claiming pack completion; no new master/plan gate for already approved unchanged geometry, but new hidden geometry stays proposed.",
+      "regression_cases": [
+        {
+          "id": "opposite-coverage",
+          "input": "Opposite-lane pack claims complete from three assistant reported views while top/ground remain uninspected.",
+          "expected": "Retain requested top and ground in coverage; mark actual output/QC pending until inspected."
+        },
+        {
+          "id": "proposed-junction-boundary",
+          "input": "Only assistant describes neem wall and left/right branches; another brief explicitly requests oblique aerial.",
+          "expected": "Keep unseen junction proposed, preserve existing approved layout, and honor explicitly oblique view instead of forcing exact nadir."
+        },
+        {
+          "id": "existing-master-boundary",
+          "input": "Approved surroundings and exact camera references already cover requested angle.",
+          "expected": "Reuse existing master approval and mapping; no unnecessary redesign or repeated gate."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "2026-10-27: lead self-reviewed three scoped failure/boundary decisions against direct excerpts and retrieved user summary. No original image inspection, independent evaluation or measured quality improvement."
+        ]
+      },
+      "supersedes": null
+    },
+    {
+      "id": "loc-feedback-025",
+      "version": 1,
+      "status": "active",
+      "source": {
+        "type": "user_feedback",
+        "date": "2026-10-26",
+        "reviewed_on": "2026-10-27",
+        "provenance": "supplied_user_excerpt",
+        "anchor": "Bike removal update",
+        "evidence": "@AI Location Agent inn sabme jaha jaha bike h vo hata do; nhi storyboard nhi banaa sab images m sirf bike hatani h bss or final frame dena h mujhe. Six selected source images; original images unavailable in this review."
+      },
+      "scope": {
+        "kind": "project",
+        "project_id": "laddu-gopal",
+        "source_brief": "26October six selected source images; bikes-only removal and final-frame delivery"
+      },
+      "trigger": "The identified bikes-only selected-image edit request is invoked or handed off.",
+      "failure": "A direct final-frame edit is replaced by a storyboard/plan, or the selected removal silently deletes bikes from unrelated approved views.",
+      "cause": "Task artifact and selected-image scope are lost while routing into the full location/storyboard workflow.",
+      "prevention": "Edit only the six actual selected source images to remove their bikes and return their final frames. Preserve all unrequested content, camera/crop, reference lighting and world layout. Use an edits-only branch; a storyboard, new master/pack or prompt-only plan is not the requested final-image artifact. Bind actual selected images before execution; missing source images leave their edit/output verification pending. Do not generalize removal to the project or to another similar courtyard image.",
+      "regression_cases": [
+        {
+          "id": "artifact-routing",
+          "input": "User explicitly says no storyboard, just bikes removed in six selected images and final frames.",
+          "expected": "Route to the selected-image edit branch and return actual final image outputs after execution/inspection; no scene/storyboard replacement."
+        },
+        {
+          "id": "unrelated-bike-boundary",
+          "input": "25October courtyard reference preserves a bike; it is not established as one of the six selected26October removal images.",
+          "expected": "Keep its approved bike/layout. Apply later removal only if the exact target is included or separately authorized."
+        },
+        {
+          "id": "unavailable-source-boundary",
+          "input": "Only the text request is available; the six original selected images cannot be inspected.",
+          "expected": "Retain the narrow edit instruction and mark execution/output checks pending; do not edit substitute images or claim frames delivered."
+        },
+        {
+          "id": "explicit-storyboard-boundary",
+          "input": "A different request explicitly asks for a storyboard or a new location master.",
+          "expected": "Produce that requested artifact using its normal workflow; do not treat every Location invocation as bikes-only editing."
+        }
+      ],
+      "validation": {
+        "kind": "user-directed-scope",
+        "result": "PASS",
+        "evidence": [
+          "27October source-scope self-review of four artifact/selection boundaries against the direct supplied bike-removal excerpt and current saved courtyard rule. This validates instruction routing only; original images, actual edits, preservation and delivered frames uninspected."
+        ]
+      },
+      "supersedes": null,
+      "claims_quality_gain": false
+    }
+  ],
+  "research_reviews": [
+    {
+      "id": "location-research-20261017",
+      "reviewed_at": "2026-10-17",
+      "window": {
+        "from": "2026-10-10",
+        "through": "2026-10-17",
+        "first_review": true
+      },
+      "previous_successful_review": null,
+      "installed_base_commit": "fc576d6",
+      "remote_checkpoint": "7147fd0",
+      "sources": [
+        {
+          "url": "https://docs.opencv.org/4.13.0/d9/d0c/group__calib3d.html",
+          "date": "undated versioned documentation, accessed 2026-10-17",
+          "classification": "baseline official documentation",
+          "decision": "adopt explicit preprocessing/calibration rule; arithmetic tests only"
+        },
+        {
+          "url": "https://github.com/huggingface/diffusers/releases",
+          "date": "latest visible release 0.41.0 shown 06 Oct; outside 10-17 Oct window; full release timestamp not independently accessible",
+          "classification": "official changelog, no relevant in-window release verified",
+          "decision": "no upgrade or quality claim"
+        },
+        {
+          "url": "https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux",
+          "date": "undated main-branch documentation, accessed 2026-10-17",
+          "classification": "baseline documented capability",
+          "decision": "FluxControlPipeline documents depth/Canny control_image; not exposed by current image_gen interface; local install/weights/account availability unverified"
+        },
+        {
+          "url": "https://pannellum.org/documentation/reference/",
+          "date": "undated documentation, accessed 2026-10-17",
+          "classification": "baseline official documentation",
+          "decision": "existing separate viewer/content checks retained; no production viewer tested"
+        },
+        {
+          "url": "https://github.com/mpetroff/pannellum/releases/tag/2.5.7",
+          "date": "19 Feb shown; CVE-2026-27210; full timestamp inaccessible",
+          "classification": "older official release",
+          "decision": "no in-window novelty; bundled viewer is not Pannellum"
+        },
+        {
+          "url": "https://arxiv.org/abs/2411.16157",
+          "date": "v1 2024-11-25, v3 2025-03-06",
+          "classification": "older primary research, CVPR 2025",
+          "decision": "MVGenMaster pending environment-specific evaluation; no measured improvement here"
+        },
+        {
+          "url": "https://github.com/ewrfcas/MVGenMaster",
+          "date": "README news 2025-06-03; accessed 2026-10-17",
+          "classification": "reproducible research repository with setup, model links and inference instructions",
+          "decision": "implementation available publicly; not installed/executed or production-validated"
+        },
+        {
+          "url": "https://colmap.github.io/cameras.html",
+          "date": "undated documentation, accessed 2026-10-17",
+          "classification": "baseline official camera model documentation",
+          "decision": "retain model-specific handling, no new rule needed"
+        }
+      ],
+      "new_releases_verified": [],
+      "adopted_lesson_ids": [
+        "loc-research-001"
+      ],
+      "pending_candidates": [
+        {
+          "id": "mvgenmaster-location-eval",
+          "status": "pending",
+          "reason": "Public research implementation does not establish fidelity on approved UP temple/village references; requires supported inference and observed paired evaluation. No weights downloaded or images generated."
+        },
+        {
+          "id": "flux-depth-canny-location-eval",
+          "status": "pending",
+          "reason": "Documented capability for specific Diffusers FLUX pipelines; current image_gen has no named depth/edge conditioning parameter. Requires actual supported interface and matched-reference comparison."
+        }
+      ],
+      "feedback_review": {
+        "coverage": "Available conversation excerpts and existing 14 saved lessons only; no unseen feedback claimed.",
+        "result": "Existing lessons cover visible corrections; no duplicate project lesson added.",
+        "production_assets_inspected": false
+      },
+      "tests": {
+        "before": "27 existing helper tests PASS",
+        "after": "34 helper tests PASS (27 retained + 7 new); CLI crop-resize example PASS",
+        "instruction_regression": "11 scoped cases PASS from read-only location_regression worker; covers palms, stair direction, supports/crops, top-down/oblique, seam identity, viewer/texture scope, exact-version approvals, pinhole transfer, unsupported mappings, unknown preprocessing and exact tags.",
+        "validation_type": "documentation/arithmetic, executed structural/unit/CLI tests, instruction handling; no visual-quality benchmark",
+        "production_generation": "none",
+        "viewer_interaction": "not executed"
+      },
+      "rollback": {
+        "base_commit": "fc576d6",
+        "instruction": "Revert only this review commit on top of current Skills history (no force push); mark loc-research-001 rejected if it regresses and retain existing project locks.",
+        "affected_paths": [
+          "references/spatial-contract.md",
+          "references/production-runtime.md",
+          "scripts/transfer_intrinsics.py",
+          "scripts/test_transfer_intrinsics.py",
+          "assets/learning-ledger.json"
+        ]
+      },
+      "save_outcome": "saved",
+      "save_evidence": "This record is complete only when its skill-scoped commit is successfully pushed; the task response reports actual push outcome.",
+      "limitations": "No new visual consistency/production speed improvement measured. Search coverage is bounded, not proof no relevant releases exist. Blender official page could not be retrieved; no Blender-specific change adopted."
+    },
+    {
+      "id": "location-research-20261020",
+      "reviewed_at": "2026-10-20",
+      "window": {
+        "from": "2026-10-17",
+        "through": "2026-10-20",
+        "first_review": false
+      },
+      "previous_successful_review": "location-research-20261017",
+      "installed_base_commit": "ae2005d",
+      "remote_checkpoint": "9c302bd",
+      "sources": [
+        {
+          "url": "https://colmap.github.io/format.html#images-txt",
+          "date": "undated baseline documentation, accessed 2026-10-20",
+          "classification": "official image-level pose format",
+          "decision": "adopt explicit camera-centre/convention guard with a dependency-light read-only numerical diagnostic"
+        },
+        {
+          "url": "https://colmap.github.io/faq.html#geo-registration",
+          "date": "undated baseline documentation, accessed 2026-10-20",
+          "classification": "official source-frame alignment documentation",
+          "decision": "source-to-target alignment is separate; no assumption of metric/geographic source coordinates"
+        },
+        {
+          "url": "https://github.com/huggingface/diffusers/releases",
+          "date": "latest visible release v0.41.0 shown 06 Oct; unchanged from 17 Oct review; outside window",
+          "classification": "official changelog",
+          "decision": "no relevant in-window release verified; no model/runtime upgrade"
+        },
+        {
+          "url": "https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux",
+          "date": "undated main-branch documentation, accessed 2026-10-20",
+          "classification": "documented depth/Canny capability; main page requires source installation",
+          "decision": "keep specific FluxControlPipeline guidance pending local supported-interface and visual evaluation; not a feature of the current image_gen tool"
+        },
+        {
+          "url": "https://github.com/mpetroff/pannellum/releases",
+          "date": "latest visible 2.5.7 shown 19 Feb; unchanged from prior review",
+          "classification": "older official release",
+          "decision": "no in-window novelty; custom offline helper is not Pannellum"
+        },
+        {
+          "url": "https://pannellum.org/documentation/reference/",
+          "date": "undated baseline documentation, accessed 2026-10-20",
+          "classification": "official panorama/viewer reference",
+          "decision": "retain projection-specific configuration and separate interaction versus content QC"
+        },
+        {
+          "url": "https://arxiv.org/abs/2603.28980",
+          "date": "v1 2026-03-30; v2 2026-05-01",
+          "classification": "older original research newly inspected this review, not a new release",
+          "decision": "Stepper multiview panorama expansion is a pending research candidate, not a measured production improvement"
+        },
+        {
+          "url": "https://fwmb.github.io/stepper/",
+          "date": "undated original project page, accessed 2026-10-20",
+          "classification": "research demonstration and author-reported metrics",
+          "decision": "reported benchmark gains not reproduced; usable code/checkpoint availability not verified; do not change approved temple layout"
+        }
+      ],
+      "new_releases_verified": [],
+      "adopted_lesson_ids": [
+        "loc-research-002"
+      ],
+      "pending_candidates": [
+        {
+          "id": "mvgenmaster-location-eval",
+          "status": "pending",
+          "reason": "Retained from 17 Oct; no supported inference or paired production-image evaluation executed."
+        },
+        {
+          "id": "flux-depth-canny-location-eval",
+          "status": "pending",
+          "reason": "Official docs rechecked, but available image_gen interface exposes no named depth/Canny input; actual model/interface access and paired visual comparison remain unverified."
+        },
+        {
+          "id": "stepper-location-eval",
+          "status": "pending",
+          "reason": "Older paper and demo inspected; code/weights availability and local reproducibility unverified. No evidence that approved temple/village identity is preserved; no generation authorized for maintenance."
+        }
+      ],
+      "feedback_review": {
+        "coverage": "Current supplied conversation excerpts, available memory summary and 15 existing saved lessons only; not an exhaustive chat or attachment review.",
+        "result": "Visible repeated corrections already covered; no duplicate lesson or project design lock added. Summary-only asset details and assistant-proposed seating geometry are not treated as new approvals.",
+        "production_assets_inspected": false
+      },
+      "tests": {
+        "before": "34 existing automated tests PASS on latest remote skill base",
+        "after": "40 automated tests PASS: 34 retained plus 6 pose/convention tests",
+        "comparison": "Naive centre=t fails R*C+t=0; C=-R^T*t passes centre and rotated-coordinate round-trip. This is arithmetic correctness, not measured image quality.",
+        "cli": "Known-pose CLI PASS, input bytes unchanged and PENDING_PROJECT_ALIGNMENT retained",
+        "instruction_regression": "12 paired/scoped cases PASS from read-only location_review_20261020; root checked returned decisions against raw brief and scoped rules",
+        "validation_type": "official-format documentation check, executed unit/CLI/structural checks and text instruction handling",
+        "production_generation": "none",
+        "viewer_interaction": "not executed; no Chromium browser executable found"
+      },
+      "rollback": {
+        "base_commit": "9c302bd",
+        "instruction": "If a regression appears, revert only this review's skill-scoped commit on current Skills history (no force push); mark loc-research-002 rejected, retain original source poses, existing project-native cameras and all approved production designs.",
+        "affected_paths": [
+          "references/spatial-contract.md",
+          "references/production-runtime.md",
+          "scripts/inspect_colmap_pose.py",
+          "scripts/test_inspect_colmap_pose.py",
+          "assets/learning-ledger.json"
+        ]
+      },
+      "save_outcome": "saved",
+      "save_evidence": "Successful push of the commit containing this entry is the durable-save gate; actual outcome is reported in the task response.",
+      "limitations": "No production image quality/speed gain measured. Bounded search did not verify relevant new releases; this does not establish absence of all releases. Blender official camera page was inaccessible; no Blender-specific capability adopted. Full COLMAP reconstruction/import not executed; only local Python diagnostic arithmetic tested."
+    }
+  ],
+  "last_successful_review": {
+    "id": "location-research-20261020",
+    "reviewed_at": "2026-10-20"
+  },
+  "validation_runs": [
+    {
+      "id": "location-learning-check-20261014",
+      "method": "independent-read-only-instruction-regression",
+      "cases": 13,
+      "result": "PASS",
+      "coverage": [
+        "regional vegetation scope",
+        "reverse stair elevations",
+        "sliced pillars versus normal framing crops",
+        "top-down versus requested oblique",
+        "seam identity versus approved layout revision",
+        "tested viewer claims versus texture-only scope",
+        "unverified research adoption",
+        "shot-only preference scope"
+      ],
+      "limitations": "No images generated or inspected and no live viewer tested in this regression run."
+    },
+    {
+      "id": "location-history-check-20261016",
+      "method": "independent-read-only-instruction-regression",
+      "result": "PASS",
+      "coverage": [
+        "six wall-only views preserve temple geometry",
+        "gate-road-village connection",
+        "banyan world versus screen orientation",
+        "unapproved junction dimensions",
+        "Scene 8 exact tag and cell-only exception",
+        "rickshaw five-view square layout and details",
+        "unrelated four-photo prop boundary"
+      ],
+      "evidence": "location_rule_check returned a text production plan using the saved skill; root checked returned decisions against actual brief and scoped rules.",
+      "limitations": "Text instruction handling only; no generated images, attachment inspection, 3D rendering or viewer tests."
+    },
+    {
+      "id": "location-runtime-check-20261016",
+      "method": "executed-helper-regression",
+      "result": "PASS",
+      "coverage": [
+        "14 synthetic and manifest tests: image difference diagnostics and landmark errors",
+        "reference hash drift, coverage exclusions and lighting bindings",
+        "transitive stale propagation, unmapped visibility and unaffected approvals",
+        "retry reset and elapsed-time aggregation",
+        "actual OBJ solid export and wireframe camera image",
+        "custom five-view combined sheet versus default four-side contract"
+      ],
+      "limitations": "No production image generation, photoreal beauty rendering, collision or panorama viewer testing. Synthetic tests do not measure production speed/accuracy improvement.",
+      "independent_instruction_check": "PASS: worker plan preserved unknown-impact outputs, transitive prompt invalidation, retry method change, same-camera comparison restrictions and diagnostic-only rendering limits; discovered incomplete camera visibility mapping and added a regression before save."
+    },
+    {
+      "id": "location-spatial-viewer-check-20261016",
+      "method": "executed-helper-regression",
+      "result": "PASS",
+      "coverage": [
+        "27 total unit tests: previous 14 plus seven spatial/contact tests and six viewer-builder tests",
+        "continuous route sweep detects thin obstacles and conservative width contacts",
+        "rotated boxes, explicit support exclusions and unknown geometry",
+        "frustum probes, opaque/transparent ray blockers",
+        "prop state/version/grip record consistency",
+        "offline viewer generation, ratio/EXIF checks, embedding and overwrite rejection"
+      ],
+      "limitations": "Spatial checks use boxes and sample rays; not full mesh/physical feasibility. Viewer JavaScript syntax and CLI generation checked; actual browser rendering/interaction PENDING because Chromium executable unavailable. No production temple references inspected or images generated."
+    },
+    {
+      "id": "location-research-check-20261017",
+      "method": "executed-helper-and-read-only-instruction-regression",
+      "result": "PASS",
+      "coverage": [
+        "34 helper tests",
+        "CLI crop-resize known point transfer",
+        "11 scoped production decisions",
+        "skill/ledger/manifest validation"
+      ],
+      "limitations": "No production images, renderer or browser viewer test; no measured visual quality gain."
+    },
+    {
+      "id": "location-research-check-20261020",
+      "method": "executed-helper-and-read-only-instruction-regression",
+      "result": "PASS",
+      "coverage": [
+        "40 automated helper tests",
+        "known-pose read-only CLI",
+        "12 paired/scoped production cases",
+        "skill/ledger/manifest validation"
+      ],
+      "limitations": "No generated production images, visual-quality benchmark, calibrated reconstruction or live viewer test."
+    },
+    {
+      "id": "location-chat-check-20261024",
+      "method": "executed-structural-regression-and-lead-text-review",
+      "result": "PASS",
+      "coverage": [
+        "quick_validate.py: skill frontmatter/structure valid",
+        "validate_learning.py: ledger structure PASS",
+        "40 inherited helper unit tests PASS",
+        "Five new shot-scoped failure/boundary decisions self-reviewed",
+        "Executed preservation assertions: prior lessons/version histories, prior saved chat evidence, pending gaps, schedule and web checkpoint/reviews unchanged",
+        "git diff --check PASS"
+      ],
+      "limitations": "No independent worker, original image/video inspection, generated media, actual one-take path validation, live viewer or measured visual-quality gain. Helper tests cover existing tools, not proof that the new prose improves generated camera motion."
+    },
+    {
+      "id": "location-chat-check-20261025",
+      "method": "executed-metadata-preservation-and-lead-scope-review",
+      "result": "PASS",
+      "coverage": [
+        "Skill and ledger structural validation",
+        "Exact object equality of all prior lessons/version histories, schedule and research checkpoint/reviews",
+        "Prior chat checkpoint retained verbatim in history; prior unresolved gaps retained",
+        "Three text scope/boundary decisions reviewed by lead; no new rule adopted"
+      ],
+      "limitations": "No helper code changed; inherited helper suite not rerun. No media, independent worker or visual-quality test."
+    },
+    {
+      "id": "location-chat-check-20261025-late",
+      "method": "executed-regression-and-lead-text-review",
+      "result": "PASS",
+      "coverage": [
+        "Skill and ledger structural validators PASS",
+        "40 inherited helper tests PASS",
+        "Five new lesson failure/boundary decisions self-reviewed",
+        "Prior lesson/version, schedule, separate research state, saved chat history and pending-evidence preservation assertions PASS"
+      ],
+      "limitations": "No inspected media, independent reviewer, actual closed-gate output, calibrated pose or measured visual-quality gain. Existing helper tests are regression coverage, not proof that new prose improves generated images."
+    }
+  ],
+  "history_review": {
+    "reviewed_at": "2026-10-22",
+    "coverage": "Available recent chat excerpts plus one targeted Personal Context search; not exhaustive chat access.",
+    "new_lesson_ids": [
+      "loc-feedback-015",
+      "loc-feedback-016",
+      "loc-feedback-017",
+      "loc-feedback-018",
+      "loc-feedback-019",
+      "loc-feedback-020"
+    ],
+    "limitations": "No original images inspected, outputs regenerated or project geometry changed. Historical counts and unresolved edits not certified. Existing automation cadence unchanged."
+  },
+  "chat_review_history": [
+    {
+      "reviewed_at": "2026-10-16",
+      "coverage": "Available conversation summary plus two targeted Personal Context searches; not an exhaustive export of all chat history.",
+      "new_lesson_ids": [
+        "loc-feedback-007",
+        "loc-feedback-008",
+        "loc-feedback-009",
+        "loc-feedback-010",
+        "loc-feedback-011",
+        "loc-feedback-012",
+        "loc-feedback-013",
+        "loc-feedback-014"
+      ],
+      "limitations": "No attachment inspection, generation, render or viewer testing in this instruction update. Prior assistant proposals are not user approvals."
+    },
+    {
+      "reviewed_on": "2026-10-23",
+      "window": {
+        "from": "2026-10-20",
+        "through": "2026-10-23"
+      },
+      "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+      "source_anchors": [
+        "Dynamic Lighting Added (E01)",
+        "मंदिर ब्लूप्रिंट तैयार (E07)",
+        "Purana Jhola Edit (E09)",
+        "Current conversation recurring-learning instruction (E17)",
+        "Latest current user correction (E18)",
+        "Supported targeted recent-chat retrieval (E19)"
+      ],
+      "current_project_record_read": "Current same-identity shared project record version 5, krishna-temple final-master-v01; text only.",
+      "adopted_lessons": [
+        "loc-feedback-015",
+        "loc-feedback-021"
+      ],
+      "updated_existing_lessons": [
+        "loc-feedback-012",
+        "loc-feedback-013"
+      ],
+      "deduplicated": {
+        "E01": "Motivated-lighting reconciliation added to existing loc-feedback-012; no competing palette rule.",
+        "E07": "Existing connected-world/overhead/relative-dimension rules retained; current final-master lesson reconciles source versions.",
+        "E09": "Existing neutral-grey four-view/count/actual-side workflow retained; new narrow closure/content case does not redesign all props.",
+        "E18-E19": "Updated loc-feedback-013 exact per-frame inventory rather than creating another tag lesson; semantic/input-role and offscreen audio checks separate."
+      },
+      "pending": [
+        "17–19 October chat coverage is not established by this supplied 20–22 October window; prior 16 October history review retained.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection."
+      ],
+      "research_checkpoint_advanced": false,
+      "live_web_research": false,
+      "automation_binding": "Confirmed newer user-specific Location daily00:00 IST task6ada57d13a3c8191b9d598e886ee8f46; research MO00:00 means Sunday night ending; Location excluded from Daksh coordinator.",
+      "save_outcome": "saved",
+      "save_protocol": "Local skill edits only in this worker; root owns scoped commit/push and final persistence outcome. No shared project write performed.",
+      "validation": {
+        "kind": "user_scope_and_self_reviewed_text_cases",
+        "status": "PASS",
+        "limits": "Independent text review passed; no original media or generated-media quality inspection.",
+        "execution": "Source-scoped self-review plus executed affected ledger, cadence and literal checks; no independent media review.",
+        "evidence": [
+          "14 executed cadence cases passed across Director daily23/Sunday23 and Location midnight/Monday00 exception, including rejected stale cadence, wrong branch and duplicate execution.",
+          "Existing literal auditor: six additional face-crop/visible-crowd/audio-only boundary fixtures matched expected results. Root’s four cart-only/extra-cast/extra-location/separate-Nandu fixtures were read and matched expected outcomes.",
+          "Explicitly demonstrated literal PASS with untagged extra Pooja; semantic review correctly rejects it. Actual prose and reference-role inputs need separate checking.",
+          "12 source-to-rule decisions and boundary decisions self-reviewed; no separate model behavior or independent media QC claimed.",
+          "All prior lesson IDs and prior versions retained; prior research checkpoint/reviews unchanged."
+        ],
+        "independent_text_review": {
+          "status": "PASS",
+          "extent": "Fresh reviewer A/B/C and visible strap/partial owner/crowd/offscreen audio boundaries passed; untagged Pooja deliberately gets literalPASS but semanticFAIL. Focused merged-source/timer review passed at aa0171b.",
+          "media_tests": 0
+        }
+      },
+      "latest_direct_correction": "E18 strict frame-local visual inventory; E19 cart-only retrieved source; actual frame inspection pending.",
+      "save_evidence": {
+        "status": "saved",
+        "confirmed_feature_commit": "1704b15c848e28ef6c08f2a06d260e2023395a4f",
+        "push_observed": true,
+        "verified_at": "2026-10-23T20:40:56.786110+05:30",
+        "scope": "Bounded20–23October chat review; no new live research or media validation."
+      },
+      "shared_project_save": {
+        "library_file_id": "libfile_3c31602922b08191a25c77593280bb60",
+        "file_id": "file_000000006fe481f7a34a16628ca8b5b1",
+        "current_version_number": 6
+      },
+      "id": "location-chat-review-20261023"
+    },
+    {
+      "id": "location-chat-review-20261024",
+      "reviewed_on": "2026-10-24",
+      "window": {
+        "from": "2026-10-23T20:40:56.786110+05:30",
+        "through": "2026-10-24T00:00:15+05:30",
+        "basis": "Previous successfully saved chat checkpoint; bounded supplied-excerpt backfill also reviewed."
+      },
+      "backfill_window": {
+        "from": "2026-10-17",
+        "through": "2026-10-23",
+        "basis": "First midnight run seven-day window plus previously unresolved 17–19 October gap."
+      },
+      "coverage": "Current supplied recent excerpts plus two bounded Personal Context searches (post-save window and 17–19 October gap). Retrieval returned earlier/repeated messages and adjacent assistant summaries; no new post-checkpoint user correction was established. No exhaustive chat access or media inspection claimed.",
+      "previous_successful_chat_review": "location-chat-review-20261023",
+      "source_anchors": [
+        {
+          "id": "CL24-S1",
+          "type": "direct_supplied_user_excerpt",
+          "date": "2026-10-23",
+          "conversation": "Scene description write",
+          "scope": "@s1p13s7 -> @s1p13s5 -> @s1p13s8",
+          "decision": "Adopt narrow continuous-take geography/reference handoff lesson; historical backfill, not a new late-night message."
+        },
+        {
+          "id": "CL24-P1",
+          "type": "retrieved_summary",
+          "retrieved_on": "2026-10-24",
+          "source_user_timestamp": "2026-10-23T14:31:20Z",
+          "decision": "Strict frame-local correction predates saved checkpoint; deduplicate loc-feedback-013. Assistant 15:25:04Z memory-fix claim is not new user evidence or inspected behavior."
+        },
+        {
+          "id": "CL24-P2",
+          "type": "retrieved_summary",
+          "retrieved_on": "2026-10-24",
+          "window": "2026-10-17 through 2026-10-19",
+          "decision": "Returned 17 October calibration/geometry/gates summary duplicates loc-research-001 and existing locks. Assistant test/Pinterest/costume claims not adopted as tested location evidence. Other specialist results excluded."
+        },
+        {
+          "id": "CL24-S2",
+          "type": "direct_supplied_user_excerpts",
+          "dates": [
+            "2026-10-22",
+            "2026-10-23"
+          ],
+          "decision": "Dynamic lighting, fixed scale/staging, lap idol/basket, crowd state, Nandu-plus-cart and current reference-only crop rules already covered by loc-feedback-012/013/016/017/018/019; preserve separate cart-only and Nandu-plus-cart sources."
+        }
+      ],
+      "adopted_lessons": [
+        "loc-feedback-022"
+      ],
+      "updated_existing_lessons": [],
+      "deduplicated": [
+        "loc-research-001",
+        "loc-feedback-012",
+        "loc-feedback-013",
+        "loc-feedback-016",
+        "loc-feedback-017",
+        "loc-feedback-018",
+        "loc-feedback-019"
+      ],
+      "pending": [
+        "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection."
+      ],
+      "media_inspected": false,
+      "production_assets_changed": false,
+      "live_web_research": false,
+      "research_checkpoint_advanced": false,
+      "validation": {
+        "kind": "lead-self-reviewed-text-and-executed-structural-checks",
+        "status": "PASS",
+        "evidence": [
+          "Five new lesson failure/boundary decisions self-reviewed; continuous take, intermediate wall/unknown path, frame-local inventory, separate-cut boundary and still-image boundary.",
+          "Skill and ledger validators PASS; 40 inherited helper tests PASS; preservation assertions and git diff --check PASS."
+        ],
+        "limits": "No independent evaluation, generated media, inspected attachments, verified camera path or measured quality gain."
+      },
+      "save_outcome": "saved",
+      "save_protocol": "This checkpoint advances only if the containing skill-scoped commit is pushed successfully; failure must be reported as pending. Prior checkpoint preserved in chat_review_history. No shared project record or unrelated skill write."
+    },
+    {
+      "id": "location-chat-review-20261025",
+      "reviewed_on": "2026-10-25",
+      "window": {
+        "from": "2026-10-24T00:00:15+05:30",
+        "through": "2026-10-25T00:04:14+05:30",
+        "basis": "Previous successfully saved chat review; bounded retrieval and supplied excerpts, not exhaustive archive coverage."
+      },
+      "previous_successful_chat_review": "location-chat-review-20261024",
+      "coverage": "One targeted Personal Context query for the review window and current supplied recent-chat excerpts. Search returned two assistant maintenance summaries, one before the window, and no new explicit in-window location correction. Supplied 24 October excerpts concern personal portrait retouch/background changes and social captions; not promoted to production-location canon. Earlier supplied temple, crowd, prop and camera corrections were compared with saved lessons and deduplicated.",
+      "source_anchors": [
+        {
+          "id": "CL25-P1",
+          "type": "retrieved_assistant_summary",
+          "source_timestamp": "2026-10-23T18:36:40Z",
+          "decision": "Outside requested window; repeats saved loc-feedback-022. No new lesson or media evidence."
+        },
+        {
+          "id": "CL25-P2",
+          "type": "retrieved_assistant_summary",
+          "source_timestamp": "2026-10-24T17:37:00Z",
+          "decision": "Claims another maintenance review found no new Location lesson; recorded only as assistant assertion, not proof of exhaustive user-chat review, saved state or tested media."
+        },
+        {
+          "id": "CL25-S1",
+          "type": "supplied_user_excerpts",
+          "date": "2026-10-24",
+          "decision": "Personal portrait quality, lighting, background and caption requests excluded from this skill-only learning scope. No original photos inspected."
+        },
+        {
+          "id": "CL25-S2",
+          "type": "supplied_historical_user_excerpts",
+          "date": "2026-10-22 through 2026-10-23",
+          "decision": "Existing exact-frame inventory, dynamic lighting/reference palette, fixed scale/staging, crowd state, prop state and one-take rules retained without duplicate lessons."
+        }
+      ],
+      "review_result": "no-new-location-domain-lesson",
+      "adopted_lessons": [],
+      "updated_existing_lessons": [],
+      "deduplicated": [
+        "loc-feedback-012",
+        "loc-feedback-013",
+        "loc-feedback-016",
+        "loc-feedback-017",
+        "loc-feedback-018",
+        "loc-feedback-019",
+        "loc-feedback-022"
+      ],
+      "pending": [
+        "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection."
+      ],
+      "media_inspected": false,
+      "production_assets_changed": false,
+      "live_web_research": false,
+      "research_checkpoint_advanced": false,
+      "validation": {
+        "kind": "structural-preservation-checks-and-lead-scope-review",
+        "status": "PASS",
+        "evidence": [
+          "Skill and ledger validation plus preservation assertions run before commit/push.",
+          "Lead text boundary review: personal portrait background preference stays local to that photo task; an assistant no-change claim is not primary user/media evidence; Sunday scheduled run selects chat-only and preserves web checkpoint."
+        ],
+        "limits": "No original media, independent model behavior, live viewer, rendered path or visual quality tests."
+      },
+      "save_outcome": "saved",
+      "save_protocol": "Checkpoint is successful only when the containing scoped commit is pushed and remote content verified. The preceding saved checkpoint is retained in chat_review_history; report any persistence failure as pending."
+    },
+    {
+      "id": "location-chat-review-20261025-late",
+      "reviewed_on": "2026-10-25",
+      "window": {
+        "from": "2026-10-25T00:04:14+05:30",
+        "through": "2026-10-25T23:57:41+05:30",
+        "basis": "Provided local runtime date/window; scheduled occurrence date not supplied separately. Chat-only Sunday branch; no Monday research checkpoint claimed."
+      },
+      "previous_successful_chat_review": "location-chat-review-20261025",
+      "coverage": "One targeted Personal Context search plus current supplied excerpts since the saved early-25-October review. Bounded summaries and excerpts only; no exhaustive archive or original media inspection.",
+      "source_anchors": [
+        {
+          "id": "CL25L-S1",
+          "type": "direct_supplied_user_excerpt",
+          "conversation": "Storyboard update",
+          "date_context": "Older conversation title, newly supplied gate-close messages; exact per-message date unavailable in excerpt",
+          "decision": "Close the selected marked gate; actual image identity/exact tag unresolved. No assumption that it is temple or courtyard bedroom gate."
+        },
+        {
+          "id": "CL25L-P1",
+          "type": "retrieved_user_summary",
+          "source_timestamps": [
+            "2026-10-25T14:37:24Z",
+            "2026-10-25T14:56:17Z"
+          ],
+          "decision": "Mukund courtyard starting-frame camera/focus, shut bedroom door and reference layout/shadows adopted locally. Original media, shot IDs and calibrated pose pending."
+        },
+        {
+          "id": "CL25L-P2",
+          "type": "retrieved_assistant_summary",
+          "source_timestamp": "2026-10-25T14:56:25Z",
+          "decision": "Exact 10–15 cm camera height/slightly-left position not promoted to user approval."
+        },
+        {
+          "id": "CL25L-P3",
+          "type": "retrieved_user_and_assistant_summaries",
+          "source_timestamps": [
+            "2026-10-25T14:47:18Z",
+            "2026-10-25T14:53:40Z"
+          ],
+          "decision": "Gate-close user summary corroborates local state only; claimed delivered clean 16:9 frame is not inspected media, user approval or verified delivery."
+        },
+        {
+          "id": "CL25L-S2",
+          "type": "supplied_user_prompt_text",
+          "date": "2026-10-25",
+          "decision": "Bedroom front-wall/back-wall and Scene8 alley tokens retained as supplied source strings. No global alias normalization or inferred geometry from a performance prompt; existing loc-feedback-013 covers exact frame binding."
+        },
+        {
+          "id": "CL25L-S3",
+          "type": "supplied_user_excerpt",
+          "date": "2026-10-25",
+          "decision": "Personal portrait/image download failure remains outside this production task. Existing loc-feedback-020 and delivery rules already require actual files/download verification; no new cross-project design lesson."
+        }
+      ],
+      "adopted_lessons": [
+        "loc-feedback-023"
+      ],
+      "updated_existing_lessons": [],
+      "deduplicated": [
+        "loc-feedback-012",
+        "loc-feedback-013",
+        "loc-feedback-019",
+        "loc-feedback-020",
+        "loc-feedback-022"
+      ],
+      "pending": [
+        "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection.",
+        "25 October courtyard original reference, exact shot/door/tag bindings and numerical camera pose uninspected; separately marked gate source identity unresolved. No production repair or delivery verified."
+      ],
+      "media_inspected": false,
+      "production_assets_changed": false,
+      "live_web_research": false,
+      "research_checkpoint_advanced": false,
+      "validation": {
+        "kind": "lead-text-scope-and-executed-structural-checks",
+        "status": "PASS",
+        "evidence": [
+          "Five new source-scoped failure/boundary decisions self-reviewed. Structural validators, existing runtime tests and preservation assertions executed before commit/push. Skill/ledger validators and 40 helper tests PASS; preservation assertions PASS."
+        ],
+        "limits": "No visual/media, independent worker, camera-path or quality evaluation."
+      },
+      "save_outcome": "saved",
+      "save_protocol": "Checkpoint succeeds only after containing scoped commit is pushed and remote content verified. Previous saved checkpoint preserved in chat_review_history."
+    },
+    {
+      "id": "location-chat-review-20261027",
+      "reviewed_on": "2026-10-27",
+      "window": {
+        "from": "2026-10-25T23:57:41+05:30",
+        "through": "2026-10-27T23:56:07+05:30",
+        "basis": "Saved 25 October late checkpoint through supplied run cutoff. Scheduled local date Tuesday 27 October; chat-only branch even if execution completes later."
+      },
+      "previous_successful_chat_review": "location-chat-review-20261025-late",
+      "coverage": "Two targeted Personal Context queries plus supplied 26–27 October recent excerpts and external Location Agent chat. Retrieval includes corroborating and older 23–25 October material; no exhaustive archive access. Original media not inspected.",
+      "source_anchors": [
+        {
+          "id": "CL27-P1",
+          "type": "retrieved_user_summaries",
+          "date": "2026-10-26 through 2026-10-27",
+          "decision": "Sharda seated/standing staging, right-hip bag, exact wooden-stick and frame-relevant camera variants. Partial suffixes do not establish full asset IDs."
+        },
+        {
+          "id": "CL27-P2",
+          "type": "retrieved_user_summaries",
+          "date": "2026-10-26 through 2026-10-27",
+          "decision": "Across-gate no-cross, same doorway exit/return and stationary bike right-wall brief; assistant orientation/exact view-ID claims remain unverified. Raw ISO timestamps used; inconsistent relative-time labels ignored."
+        },
+        {
+          "id": "CL27-S1",
+          "type": "direct_supplied_user_excerpts",
+          "date": "2026-10-27",
+          "decision": "Sharda opposite lanes then top/ground requested; assistant 3-view design/ready claims not inspected media."
+        },
+        {
+          "id": "CL27-S2",
+          "type": "supplied_prompts_and_historical_excerpts",
+          "date": "2026-10-22 through 2026-10-27",
+          "decision": "Different marked-bike moves remain source-scoped; latest right-wall prompt not merged with earlier marks. fx/fm/pm and frame-local tag rules deduplicate existing lessons; dialogue/performance authority stays with Director."
+        }
+      ],
+      "adopted_lessons": [
+        "loc-feedback-024"
+      ],
+      "updated_existing_lessons": [
+        "loc-feedback-016",
+        "loc-feedback-023"
+      ],
+      "deduplicated": [
+        "loc-feedback-004",
+        "loc-feedback-012",
+        "loc-feedback-013",
+        "loc-feedback-018",
+        "loc-feedback-019",
+        "loc-feedback-020"
+      ],
+      "pending": [
+        "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection.",
+        "25 October courtyard original reference, exact shot/door/tag bindings and numerical camera pose uninspected; separately marked gate source identity unresolved. No production repair or delivery verified.",
+        "Sharda opposite-lane source references, exact full view tags, actual top/ground files and connected-layout comparison uninspected.",
+        "27 October courtyard marked images, bike orientation and exact per-camera asset bindings require actual reference inspection."
+      ],
+      "media_inspected": false,
+      "production_assets_changed": false,
+      "live_web_research": false,
+      "research_checkpoint_advanced": false,
+      "validation": {
+        "kind": "lead-self-reviewed-text-and-executed-structural-checks",
+        "status": "PASS",
+        "evidence": [
+          "Eight new failure/boundary decisions self-reviewed: two staging, three opening/bike, three opposite-coverage. Structural validators, inherited helper suite and preservation assertions executed before scoped save; exact results reported in run response.",
+          "Executed: quick_validate PASS, validate_learning structure PASS, 40 inherited unittest helper tests PASS, research/schedule/untouched-lesson/prior-checkpoint preservation assertions PASS, git diff --check PASS."
+        ],
+        "limits": "No independent worker, original-media comparison, 3D rendering, viewer interaction or quality gain measured."
+      },
+      "save_outcome": "saved",
+      "save_protocol": "Successful only after containing scoped commit is pushed and remote content verified; otherwise report unapplied and prior remote checkpoint remains authoritative."
+    },
+    {
+      "review_id": "manual-20261027-reconciled-20261029",
+      "source_review_date": "2026-10-27",
+      "reconciled_on": "2026-10-29",
+      "extent": "Only supplied six-selected-image bike-removal correction; no fresh location-source/media review.",
+      "changes": [
+        "loc-feedback-025"
+      ],
+      "preserved": "Current loc-feedback-013 v3 exact opposite-view binding and loc-feedback-024 Sharda-lane coverage retained; no geometry or schedule change.",
+      "validation": "Root text scope self-review; no image inspection."
+    },
+    {
+      "id": "location-chat-review-20261029",
+      "reviewed_on": "2026-10-29",
+      "window": {
+        "from": "2026-10-27T23:56:07+05:30",
+        "through": "2026-10-29T00:00:47+05:30",
+        "basis": "Scheduled local Thursday branch; bounded accessible retrieval since last saved chat checkpoint, including older corroboration."
+      },
+      "previous_successful_chat_review": "location-chat-review-20261027",
+      "coverage": "Two targeted Personal Context searches plus supplied recent/external user excerpts. Returned mainly 27 October UTC / 28 October IST material. No exhaustive archive access; no original media inspected.",
+      "source_anchors": [
+        {
+          "id": "CL29-P1",
+          "type": "retrieved_user_and_assistant_summaries",
+          "decision": "ISO source times retained over inconsistent relative-time labels. Offscreen Naina, exact tag and shot corrections distinguished from older courtyard corroboration. Other-agent planning excluded; assistant 28 October maintenance-save claim not accepted as evidence of saved skill or tests."
+        },
+        {
+          "id": "CL29-P2",
+          "type": "retrieved_user_summary_with_reported_exact_text",
+          "source_timestamp": "2026-10-27T19:14:32Z",
+          "decision": "@s18p4s5 [CU] @vikram-01 uses exact @krishna-temple-mandir_opposite; no aliases authorized. @s17p4s7 and @s17p1s4/@s17p2s2 retain @krishna-temple-courtyard. Grouped Scene20 tags lack per-shot pairing and stay pending."
+        },
+        {
+          "id": "CL29-S1",
+          "type": "direct_supplied_user_excerpts_and_assistant_claims",
+          "decision": "Sharda opposite lanes/top/ground request deduplicates loc-feedback-024. Assistant ready/save/test claims are historical assertions, not inspected files or tests executed now. Supplied fm/pm/fx/location/staging rules deduplicate saved lessons."
+        }
+      ],
+      "adopted_lessons": [],
+      "updated_existing_lessons": [
+        "loc-feedback-013"
+      ],
+      "deduplicated": [
+        "loc-feedback-004",
+        "loc-feedback-016",
+        "loc-feedback-018",
+        "loc-feedback-020",
+        "loc-feedback-023",
+        "loc-feedback-024"
+      ],
+      "pending": [
+        "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection.",
+        "25 October courtyard original reference, exact shot/door/tag bindings and numerical camera pose uninspected; separately marked gate source identity unresolved. No production repair or delivery verified.",
+        "Sharda opposite-lane source references, exact full view tags, actual top/ground files and connected-layout comparison uninspected.",
+        "27 October courtyard marked images, bike orientation and exact per-camera asset bindings require actual reference inspection.",
+        "Retrieved 28 October Scene20 group lists @krishna-temple.courtyard.front-view, @krishna-temple.ground and @krishna-temple.walls.overall alongside @s20p2s4/@s20p2s5/@s20p3s1; exact per-shot pairing unresolved. Preserve tokens, do not invent mappings.",
+        "@s18p4s5 original reference and exact view geometry uninspected; source binding is textual only."
+      ],
+      "media_inspected": false,
+      "production_assets_changed": false,
+      "live_web_research": false,
+      "research_checkpoint_advanced": false,
+      "validation": {
+        "kind": "lead-self-reviewed-text-and-executed-structural-checks",
+        "status": "PASS",
+        "evidence": [
+          "quick_validate PASS; validate_learning structure PASS; 40 inherited helper unit tests PASS.",
+          "Preservation assertions PASS: research checkpoint/reviews, schedule, prior review history, every untouched lesson.",
+          "Six lead self-reviewed text cases PASS: exact Vikram opposite binding retained; other courtyard shot token retained; grouped Scene20 pairings pending; offscreen Naina excluded from visual inventory; older Sharda top/ground ready claims not media evidence; latest shot-scoped bag/gate rules retained. No independent evaluator or media test.",
+          "Scoped diff whitespace check PASS before save."
+        ],
+        "limits": "No independent worker, media comparisons, 3D render, viewer interaction or measured visual improvement."
+      },
+      "save_outcome": "saved",
+      "save_protocol": "Advance only after scoped save and post-reconciliation remote verification; otherwise previous remote checkpoint remains authoritative."
+    },
+    {
+      "id": "location-chat-review-20261030",
+      "reviewed_on": "2026-10-30",
+      "window": {
+        "from": "2026-10-29T00:00:47+05:30",
+        "through": "2026-10-30T00:00:42+05:30",
+        "basis": "Scheduled Friday 00:00 Asia/Kolkata; chat-only branch."
+      },
+      "previous_successful_chat_review": "location-chat-review-20261029",
+      "coverage": "Two targeted Personal Context searches for 29 October plus supplied recent/external excerpts; older 28 October direct prompt resolves a saved mapping gap. Bounded summaries, no exhaustive archive access or inspected media. Latest remote ledger v16 and concurrent preflight/bike-removal lesson preserved.",
+      "source_anchors": [
+        {
+          "id": "CL30-P1",
+          "type": "retrieved_user_and_assistant_summaries",
+          "date": "2026-10-29",
+          "decision": "No new explicit location-domain correction found in bounded retrieval. Ratio/crop maintenance claims corroborate existing remote preflight, not media performance or new user authority. Compaction examples and proposed video research checks remain assistant-authored, not new production locks."
+        },
+        {
+          "id": "CL30-P2",
+          "type": "targeted_retrieval_followup",
+          "date": "2026-10-29",
+          "decision": "Underlying 29 October ratio/crop user correction not returned; raw archive/media unavailable. No vendor claim adopted; scripture-text formatting correction excluded from location design canon."
+        },
+        {
+          "id": "CL30-S1",
+          "type": "direct_supplied_historical_user_prompt_text",
+          "date": "2026-10-28",
+          "decision": "Exact textual Scene20 bindings resolved for s20p2s4 and s20p3s1 only. Neighbor s20p2s5 remains unbound."
+        },
+        {
+          "id": "CL30-S2",
+          "type": "supplied_external_assistant_claims_and_user_excerpts",
+          "decision": "Sharda opposite/top/ground and past saved/test assertions deduplicated; no current media/delivery verification."
+        }
+      ],
+      "adopted_lessons": [],
+      "updated_existing_lessons": [
+        "loc-feedback-013"
+      ],
+      "deduplicated": [
+        "loc-feedback-004",
+        "loc-feedback-016",
+        "loc-feedback-018",
+        "loc-feedback-020",
+        "loc-feedback-023",
+        "loc-feedback-024"
+      ],
+      "pending": [
+        "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+        "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+        "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+        "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+        "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection.",
+        "25 October courtyard original reference, exact shot/door/tag bindings and numerical camera pose uninspected; separately marked gate source identity unresolved. No production repair or delivery verified.",
+        "Sharda opposite-lane source references, exact full view tags, actual top/ground files and connected-layout comparison uninspected.",
+        "27 October courtyard marked images, bike orientation and exact per-camera asset bindings require actual reference inspection.",
+        "Scene20 textual pairing partially resolved from direct supplied 28 October prompt: @s20p2s4 -> @krishna-temple.ground; @s20p3s1 -> @krishna-temple-courtyard. @s20p2s5 location and grouped front-view/walls.overall assignments remain unresolved; all original media/camera geometry pending.",
+        "@s18p4s5 original reference and exact view geometry uninspected; source binding is textual only."
+      ],
+      "media_inspected": false,
+      "production_assets_changed": false,
+      "live_web_research": false,
+      "research_checkpoint_advanced": false,
+      "validation": {
+        "kind": "lead-self-reviewed-text-and-executed-structural-checks",
+        "status": "PASS",
+        "evidence": [
+          "Three new Scene20 text cases self-reviewed: two exact bindings retained, unbound adjacent shot remains pending. Assistant claims are not source-media proof.",
+          "Executed quick_validate PASS; validate_learning structure PASS; 40 inherited helper unit tests PASS; research/schedule/concurrent lesson025/prior-review/untouched-lesson preservation assertions PASS; scoped whitespace check PASS."
+        ],
+        "limits": "No independent evaluator, original media, generation, 3D render, panorama interaction or measured visual quality improvement."
+      },
+      "save_outcome": "saved",
+      "save_protocol": "Checkpoint valid only after scoped save and remote content verification; previous saved checkpoint retained in history. Failure leaves previous remote checkpoint authoritative."
+    }
+  ],
+  "chat_review_checkpoint": {
+    "id": "location-chat-review-20261031",
+    "reviewed_on": "2026-10-31",
+    "window": {
+      "from": "2026-10-30T00:00:42+05:30",
+      "through": "2026-10-31T00:00:00+05:30",
+      "basis": "Midnight Saturday chat-only branch; bounded accessible sources, not archive completeness."
+    },
+    "previous_successful_chat_review": "location-chat-review-20261030",
+    "coverage": "Two targeted Personal Context searches plus supplied recent/external excerpts. No new user-authored location correction retrieved in window; older corroboration and assistant maintenance/briefing claims excluded from new rule authority. Current run/query echo is not independent user evidence. Full archive and original media unavailable.",
+    "source_anchors": [
+      {
+        "id": "CL31-P1",
+        "type": "retrieved_prior_assistant_outputs",
+        "date": "2026-10-27 through 2026-10-30",
+        "decision": "Prior maintenance summaries repeat exact saved mappings and unresolved s20p2s5; do not treat them as new correction or inspected-media proof."
+      },
+      {
+        "id": "CL31-P2",
+        "type": "bounded_targeted_retrieval",
+        "date": "2026-10-30",
+        "decision": "No accessible new location user correction returned. Assistant tool/news/checklist suggestions unaccepted; current-query echo excluded. Older Sharda request deduplicated; music and other-agent planning outside scope."
+      },
+      {
+        "id": "CL31-S1",
+        "type": "supplied_historical_user_excerpts_and_assistant_claims",
+        "decision": "Existing Scene20, courtyard and Sharda coverage retained; repeated saved/ready/test claims do not verify files or current tests."
+      }
+    ],
+    "adopted_lessons": [],
+    "updated_existing_lessons": [],
+    "deduplicated": [
+      "loc-feedback-013",
+      "loc-feedback-016",
+      "loc-feedback-018",
+      "loc-feedback-020",
+      "loc-feedback-023",
+      "loc-feedback-024"
+    ],
+    "pending": [
+      "17–19 October gap was searched, but retrieval is bounded summary evidence; absence of other relevant chats is not established. Prior unresolved archive coverage remains recorded.",
+      "Actual final master, source screenshot/markings, current per-view outputs and bundle download inspection.",
+      "Three recorded exact-nadir repairs: @krishna-temple.outer-steps.sky-overhead, @krishna-temple.courtyard.sky-overhead, @krishna-temple.stairs.sky-overhead.",
+      "Metric/shared-3D reconciliation, precise poses/lenses and unseen geometry remain pending; no media/quality gain established.",
+      "Old bag and tied bundle source identity, exact production tags, project binding and visible gap inspection.",
+      "25 October courtyard original reference, exact shot/door/tag bindings and numerical camera pose uninspected; separately marked gate source identity unresolved. No production repair or delivery verified.",
+      "Sharda opposite-lane source references, exact full view tags, actual top/ground files and connected-layout comparison uninspected.",
+      "27 October courtyard marked images, bike orientation and exact per-camera asset bindings require actual reference inspection.",
+      "Scene20 textual pairing partially resolved from direct supplied 28 October prompt: @s20p2s4 -> @krishna-temple.ground; @s20p3s1 -> @krishna-temple-courtyard. @s20p2s5 location and grouped front-view/walls.overall assignments remain unresolved; all original media/camera geometry pending.",
+      "@s18p4s5 original reference and exact view geometry uninspected; source binding is textual only."
+    ],
+    "media_inspected": false,
+    "production_assets_changed": false,
+    "live_web_research": false,
+    "research_checkpoint_advanced": false,
+    "validation": {
+      "kind": "executed-metadata-preservation-and-lead-text-scope-review",
+      "status": "PASS",
+      "evidence": [
+        "Skill quick validation and learning-ledger structural validation executed; exact results reported after execution.",
+        "Preservation assertions: all lessons/version histories, separate research checkpoint/reviews, schedule and prior metadata unchanged; previous chat checkpoint retained verbatim in history.",
+        "Three lead self-reviewed text cases: unknown s20p2s5 stays unbound; prior assistant ready/save/test claims excluded as media evidence; repeated Sharda user requests deduplicate existing scoped lesson."
+      ],
+      "limits": "No independent evaluator or media comparison; helper code unchanged, inherited helper suite not rerun. No measured quality gain."
+    },
+    "result": "no-change",
+    "save_outcome": "saved",
+    "save_protocol": "Checkpoint valid only after scoped save and post-reconciliation remote verification; otherwise prior remote checkpoint remains authoritative."
+  },
+  "concurrent_merge": {
+    "reviewed_on": "2026-10-23",
+    "preserved_remote_lesson_ids": [
+      "loc-feedback-001",
+      "loc-feedback-002",
+      "loc-feedback-003",
+      "loc-feedback-004",
+      "loc-feedback-005",
+      "loc-feedback-006",
+      "loc-feedback-007",
+      "loc-feedback-008",
+      "loc-feedback-009",
+      "loc-feedback-010",
+      "loc-feedback-011",
+      "loc-feedback-012",
+      "loc-feedback-013",
+      "loc-feedback-014",
+      "loc-research-001",
+      "loc-research-002",
+      "loc-feedback-015",
+      "loc-feedback-016",
+      "loc-feedback-017",
+      "loc-feedback-018",
+      "loc-feedback-019",
+      "loc-feedback-020"
+    ],
+    "reconciled_existing": [
+      "loc-feedback-012",
+      "loc-feedback-013",
+      "loc-feedback-015"
+    ],
+    "new_nonduplicate_prop_lesson": "loc-feedback-021",
+    "note": "Earlier incoming loc-feedback-016 prop-state lesson was assigned021 because remote016 is a different seated-staging lesson. Research checkpoint and all remote review history retained."
+  }
+}

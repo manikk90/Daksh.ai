@@ -1,0 +1,14 @@
+interface:
+  display_name: Ai Dubbing
+  short_description: Fast regional dubbing with tone and vocal nuance
+  default_prompt: Use $ai-dubbing to quickly direct tone, emotion and vocal micro-expressions
+    while preserving my exact dialogue and character voice.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "draft_post",
+  "title": "DraftPost (Social Media Manager -> Evaluator)",
+  "type": "object",
+  "required": [
+    "post_id",
+    "platform",
+    "pillar",
+    "format",
+    "hook_type",
+    "language",
+    "text",
+    "hashtags",
+    "contains_ai_media",
+    "ai_label",
+    "experiment_id"
+  ],
+  "properties": {
+    "post_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "platform": {
+      "enum": [
+        "linkedin",
+        "instagram",
+        "facebook",
+        "x"
+      ]
+    },
+    "pillar": {
+      "type": "string"
+    },
+    "format": {
+      "enum": [
+        "carousel",
+        "reel",
+        "video",
+        "text",
+        "image",
+        "thread"
+      ]
+    },
+    "hook_type": {
+      "enum": [
+        "result_first",
+        "constraint_number",
+        "contrarian",
+        "failure_reveal",
+        "before_after",
+        "insider_number",
+        "story_open"
+      ]
+    },
+    "language": {
+      "enum": [
+        "en",
+        "hinglish",
+        "hi"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "thread": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "X threads: every tweet in order; thread[0] repeats text."
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hashtags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^#[\\w\\u0900-\\u097F]+$"
+      }
+    },
+    "first_comment": {
+      "type": "string"
+    },
+    "media_brief": {
+      "type": "string"
+    },
+    "contains_ai_media": {
+      "type": "boolean"
+    },
+    "ai_label": {
+      "type": "boolean"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "slot_ist": {
+      "type": "string"
+    },
+    "confirm": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Facts Manik must confirm before posting. Empty = ready."
+    }
+  }
+}

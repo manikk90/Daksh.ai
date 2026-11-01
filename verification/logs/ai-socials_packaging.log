@@ -1,0 +1,98 @@
+📦 Packaging skill: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skills/ai-socials
+   Output directory: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/ai-socials
+
+🔍 Validating skill...
+✅ Skill is valid!
+
+  Added: ai-socials/SKILL.md
+  Added: ai-socials/.gitignore
+  Added: ai-socials/pytest.ini
+  Added: ai-socials/schemas/research_brief.schema.json
+  Added: ai-socials/schemas/content_plan.schema.json
+  Added: ai-socials/schemas/eval_report.schema.json
+  Added: ai-socials/schemas/playbook_diff.schema.json
+  Added: ai-socials/schemas/draft_post.schema.json
+  Added: ai-socials/brain/hook_library.json
+  Added: ai-socials/brain/voice.md
+  Added: ai-socials/brain/playbook.md
+  Added: ai-socials/brain/playbook_rules.json
+  Added: ai-socials/brain/targets.json
+  Added: ai-socials/brain/pillars.json
+  Added: ai-socials/brain/slots.json
+  Added: ai-socials/brain/platform_rules.json
+  Added: ai-socials/brain/hypotheses.json
+  Added: ai-socials/brain/profiles.json
+  Added: ai-socials/brain/confidential_terms.json
+  Added: ai-socials/assets/profile_copy.md
+  Added: ai-socials/assets/source-manifest.json
+  Added: ai-socials/assets/icon.svg
+  Added: ai-socials/assets/learning-ledger.json
+  Added: ai-socials/scripts/social.py
+  Added: ai-socials/scripts/requirements.txt
+  Added: ai-socials/tests/test_portability_and_readiness.py
+  Added: ai-socials/tests/test_pullers_import.py
+  Added: ai-socials/tests/test_cli.py
+  Added: ai-socials/tests/test_storage.py
+  Added: ai-socials/tests/test_metrics_bandit.py
+  Added: ai-socials/tests/test_ingest_profile.py
+  Added: ai-socials/tests/conftest.py
+  Added: ai-socials/tests/helpers.py
+  Added: ai-socials/tests/test_validate.py
+  Added: ai-socials/tests/test_models_lang.py
+  Added: ai-socials/tests/test_retro.py
+  Added: ai-socials/tests/test_launch_pack.py
+  Added: ai-socials/references/roles.md
+  Added: ai-socials/references/learning.md
+  Added: ai-socials/references/recent-lessons.md
+  Added: ai-socials/references/workflows.md
+  Added: ai-socials/references/caption-mode.md
+  Added: ai-socials/references/growth-strategy.md
+  Added: ai-socials/agents/openai.yaml
+  Added: ai-socials/tests/fixtures/linkedin/Comments.csv
+  Added: ai-socials/tests/fixtures/linkedin/Reactions.csv
+  Added: ai-socials/tests/fixtures/linkedin/Shares.csv
+  Added: ai-socials/tests/fixtures/meta/connections/followers_and_following/followers_1.json
+  Added: ai-socials/tests/fixtures/meta/your_facebook_activity/comments_and_reactions/likes_and_reactions_1.json
+  Added: ai-socials/tests/fixtures/meta/your_facebook_activity/comments_and_reactions/comments.json
+  Added: ai-socials/tests/fixtures/meta/your_instagram_activity/likes/liked_comments.json
+  Added: ai-socials/tests/fixtures/meta/your_instagram_activity/likes/liked_posts.json
+  Added: ai-socials/tests/fixtures/meta/your_instagram_activity/comments/post_comments_1.json
+  Added: ai-socials/tests/fixtures/x/data/tweets.js
+  Added: ai-socials/tests/fixtures/x/data/like.js
+  Added: ai-socials/scripts/ai_social/cli.py
+  Added: ai-socials/scripts/ai_social/__init__.py
+  Added: ai-socials/scripts/ai_social/ready.py
+  Added: ai-socials/scripts/ai_social/metrics.py
+  Added: ai-socials/scripts/ai_social/validate.py
+  Added: ai-socials/scripts/ai_social/lang.py
+  Added: ai-socials/scripts/ai_social/metrics_import.py
+  Added: ai-socials/scripts/ai_social/liking_profile.py
+  Added: ai-socials/scripts/ai_social/retro.py
+  Added: ai-socials/scripts/ai_social/storage.py
+  Added: ai-socials/scripts/ai_social/__main__.py
+  Added: ai-socials/scripts/ai_social/models.py
+  Added: ai-socials/scripts/ai_social/bandit.py
+  Added: ai-socials/scripts/ai_social/pullers/__init__.py
+  Added: ai-socials/scripts/ai_social/pullers/x.py
+  Added: ai-socials/scripts/ai_social/pullers/instagram.py
+  Added: ai-socials/scripts/ai_social/pullers/http.py
+  Added: ai-socials/scripts/ai_social/ingest/__init__.py
+  Added: ai-socials/scripts/ai_social/ingest/x_archive.py
+  Added: ai-socials/scripts/ai_social/ingest/linkedin.py
+  Added: ai-socials/scripts/ai_social/ingest/meta.py
+  Added: ai-socials/assets/launch/2026-W44/READY.md
+  Added: ai-socials/assets/launch/2026-W44/w44-li-3.json
+  Added: ai-socials/assets/launch/2026-W44/w44-li-1.json
+  Added: ai-socials/assets/launch/2026-W44/w44-ig-1.json
+  Added: ai-socials/assets/launch/2026-W44/plan.json
+  Added: ai-socials/assets/launch/2026-W44/w44-li-2.json
+  Added: ai-socials/assets/launch/2026-W44/w44-fb-2.json
+  Added: ai-socials/assets/launch/2026-W44/w44-x-2.json
+  Added: ai-socials/assets/launch/2026-W44/w44-x-1.json
+  Added: ai-socials/assets/launch/2026-W44/w44-fb-1.json
+  Added: ai-socials/assets/launch/2026-W44/w44-ig-2.json
+
+📏 Archive size: 129,315 bytes
+The upload service validates the configured skill size limits.
+✅ Successfully packaged skill to: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/ai-socials/skill.zip
+

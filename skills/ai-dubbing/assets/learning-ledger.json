@@ -1,0 +1,483 @@
+{
+  "checked_date": "2026-10-22",
+  "audio_tests_performed": false,
+  "background_schedule_created": true,
+  "entries": [
+    {
+      "id": "USER-001",
+      "status": "user_rule",
+      "scope": "dialogue-tagging",
+      "rule": "Output only English square-bracket tags and dialogue; no narrator/character labels or explanation.",
+      "source": "User-supplied ElevenLabs conversation"
+    },
+    {
+      "id": "USER-002",
+      "status": "user_rule",
+      "scope": "approved-lines",
+      "rule": "Preserve words, repetitions and order; add no dialogue. Do not literary-upgrade vocabulary.",
+      "source": "User-supplied dialogue corrections"
+    },
+    {
+      "id": "USER-003",
+      "status": "user_rule",
+      "scope": "performance-revision",
+      "rule": "Respect latest pace, loudness and crying direction; remove zoned-out delivery when corrected.",
+      "source": "User-supplied dialogue corrections"
+    },
+    {
+      "id": "CAP-001",
+      "status": "documented",
+      "scope": "eleven_v4",
+      "rule": "Use model-specific Stability/Similarity guidance; no Speed/Style slider recipe or SSML breaks.",
+      "source": "https://elevenlabs.io/docs/eleven-creative/playground/text-to-speech",
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "EXP-001",
+      "status": "hypothesis",
+      "scope": "regional-guide-performance",
+      "proposal": "Compare approved native guide against an authorized supported-route voice transfer.",
+      "take_ids": [],
+      "listener_result": null
+    },
+    {
+      "id": "EXP-002",
+      "status": "hypothesis",
+      "scope": "word-locked-grief",
+      "proposal": "Compare sparse crying cue and verbose direction with identical words/voice/model.",
+      "take_ids": [],
+      "listener_result": null
+    },
+    {
+      "id": "USER-004",
+      "date": "2026-10-19",
+      "status": "user_rule",
+      "scope": "response-routing",
+      "rule": "Automatically choose a fast direct path for small requests; retain quality and reuse context instead of repeated research.",
+      "source": "Current user request"
+    },
+    {
+      "id": "USER-005",
+      "date": "2026-10-19",
+      "status": "user_rule",
+      "scope": "tone-and-micro-expression",
+      "rule": "Consider tone and vocal micro-expressions; map visual acting to audible intent without claiming facial controls.",
+      "source": "Current user request"
+    },
+    {
+      "id": "EXP-003",
+      "date": "2026-10-19",
+      "status": "hypothesis",
+      "scope": "vocal-micro-expression",
+      "proposal": "Compare sparse tone plus voice-catch or audible-smile cue with baseline; preserve approved words.",
+      "take_ids": [],
+      "listener_result": null
+    },
+    {
+      "id": "AUDIT-001",
+      "date": "2026-10-19",
+      "status": "implementation_tested",
+      "scope": "workflow-preflight",
+      "finding": "Empty cues and string word locks were not rejected; settings ranges, revision-bound reviews and overlap gates were absent.",
+      "fix": "Schema checks, independent review records, cue fingerprints, file hashes and draft/release gates.",
+      "audio_tests_performed": false,
+      "test_evidence": "25 offline regression cases in scripts/test_cue_qc.py; no voice/audio quality certification"
+    },
+    {
+      "id": "USER-006",
+      "date": "2026-10-19",
+      "status": "superseded_cadence",
+      "scope": "continuous-learning",
+      "rule": "Run relevant Internet research and evidence-backed internal improvement every three days, preserving quality and dialogue locks.",
+      "source": "Current user request",
+      "schedule_state_file": "assets/learning-runtime.json",
+      "first_scheduled_run_completed": true,
+      "superseded_on": "2026-10-22",
+      "superseded_by": "E17 / assets/learning-runtime.json current coordinator binding",
+      "history_note": "Original three-day authorization and first completed research run retained; cadence superseded, research findings/checkpoints unchanged."
+    },
+    {
+      "date": "2026-10-22",
+      "project": null,
+      "character": null,
+      "language": "route-specific; approved Hindi and six-language scopes retained",
+      "checked_at": "2026-10-22T09:03:02+05:30",
+      "publication_or_revision_date": null,
+      "audio_tests_performed": false,
+      "take_ids": [],
+      "listener_result": null,
+      "pending_audio_evidence": "Actual approved pilot takes, identity/performance comparison and native review; no audio generated or listened to.",
+      "id": "RESEARCH-20261022-01",
+      "status": "implementation_tested",
+      "scope": "Text to Dialogue REST preflight",
+      "model": "eleven_v3 / eleven_v4; Turbo separate WebSocket route",
+      "source": "https://elevenlabs.io/docs/api-reference/text-to-dialogue/convert",
+      "source_title": "Create dialogue",
+      "baseline_behavior": "Generic model limits/context advice; no REST payload checker and no explicit protection from default v3.",
+      "correction_or_proposal": "Pin approved REST model explicitly; conservatively bound total text to 2000 characters including tags, <=10 voices, context text <=100 characters, <=3 context request IDs and <=3 dictionary locators.",
+      "conditions": {
+        "surface": "REST /v1/text-to-dialogue",
+        "support": "Schema fields do not certify per-model context/language/account access",
+        "policy": "2000 is a reliability policy, not universal model capacity"
+      },
+      "expected_production_value": "Catch unintended v3 selection and prevent avoidable request rejection or truncated episode segments before spending credits.",
+      "regression_status": "13 offline request tests and valid/invalid CLI exits passed."
+    },
+    {
+      "date": "2026-10-22",
+      "project": null,
+      "character": null,
+      "language": "route-specific; approved Hindi and six-language scopes retained",
+      "checked_at": "2026-10-22T09:03:02+05:30",
+      "publication_or_revision_date": "2026-10-12",
+      "audio_tests_performed": false,
+      "take_ids": [],
+      "listener_result": null,
+      "pending_audio_evidence": "Actual approved pilot takes, identity/performance comparison and native review; no audio generated or listened to.",
+      "id": "RESEARCH-20261022-02",
+      "status": "implementation_tested",
+      "scope": "Post-generation effects, export format and revision approval integrity",
+      "model": "TTS/Text to Dialogue API; UI effects limited to TTS tab",
+      "source": "https://elevenlabs.io/docs/changelog/2026/10/12",
+      "source_title": "12 October 2026 changelog",
+      "baseline_behavior": "No top-level effects/output/endpoint/request-options fingerprinting; incompatible stereo effects/export not checked.",
+      "correction_or_proposal": "Preserve dry dialogue by default. Fingerprint optional execution records; reject documented stereo reverb/pan with pcm_*, ulaw_* or alaw_* formats.",
+      "conditions": {
+        "additional_source": "https://elevenlabs.io/docs/api-reference/text-to-dialogue/convert",
+        "new_launch_in_window": false,
+        "account_access_verified": false
+      },
+      "expected_production_value": "Avoid stale approval after processing changes and detect incompatible export requests.",
+      "regression_status": "31 cue_qc tests including six new effects/revision tests passed; absent optional records retain legacy fixture fingerprint."
+    },
+    {
+      "date": "2026-10-22",
+      "project": null,
+      "character": null,
+      "language": "route-specific; approved Hindi and six-language scopes retained",
+      "checked_at": "2026-10-22T09:03:02+05:30",
+      "publication_or_revision_date": null,
+      "audio_tests_performed": false,
+      "take_ids": [],
+      "listener_result": null,
+      "pending_audio_evidence": "Actual approved pilot takes, identity/performance comparison and native review; no audio generated or listened to.",
+      "id": "RESEARCH-20261022-03",
+      "status": "documented",
+      "scope": "ElevenCreative v4 Professional Voice Clone UI settings",
+      "model": "eleven_v4 + PVC only",
+      "source": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/eleven-v4",
+      "source_title": "Eleven v4: model variants and voice settings",
+      "baseline_behavior": "Skill said only Stability/Similarity and retained historical rollout caveat.",
+      "correction_or_proposal": "Document PVC-only additional Clone Strength UI control and current full-PVC-support wording. Keep UI control separate from Dubbing v2 cloning strength and API use_pvc_as_ivc.",
+      "conditions": {
+        "automatic_setting_change": false,
+        "invent_api_field": false,
+        "vendor_starting_point_is_project_approval": false
+      },
+      "expected_production_value": "Correct available-control guidance without changing approved voices or mistaking a different product control for an API setting.",
+      "regression_status": "Source contract inspection, skill validation and bounded fast-line forward use passed; no slider/audio experiment."
+    },
+    {
+      "id": "USER-007",
+      "date": "2026-10-22",
+      "status": "user_rule",
+      "scope": "delivery_only_scene_handoff",
+      "project": "Laddu Gopal / only matched scene locks",
+      "character": "supplied speaker; visual-reference identity remains separate",
+      "language": "approved source language",
+      "model": null,
+      "source_kind": "supplied_user_excerpt",
+      "source": {
+        "evidence_id": "E11",
+        "title": "Refine Dialogue Delivery",
+        "date": "2026-10-21",
+        "excerpt": "isko thik kro dailouge delivery part"
+      },
+      "rule": "In a delivery-only revision, preserve exact words, supplied speaker and approved camera/blocking/prop/offscreen state; keep distinct visual and speaker tags separate in a production handoff and alter audible intent only. For each shot, use only current on-frame visual bindings and keep explicitly requested offscreen audio/source separate without changing its words or speaker.",
+      "boundary": "Does not add labels, tags or handoff prose to strict fast-line output; the scene-specific OTS/lap/offscreen locks are not universal staging. A voice map identifies who speaks, not who appears; filtering visual bindings never suppresses an approved offscreen cue.",
+      "audio_tests_performed": false,
+      "take_ids": [],
+      "listener_result": null,
+      "regression_status": "PASS_TEXT_ONLY",
+      "version": 2,
+      "amended_on": "2026-10-23",
+      "amendment_source": {
+        "id": "CURRENT-20261023-FRAME-LOCAL",
+        "date": "2026-10-23",
+        "source_kind": "explicit_current_user_correction_relayed_by_coordinator",
+        "source": "Latest 23 October current-user correction relayed by root during this invocation; full original message is not duplicated here.",
+        "instruction": "Each frame/prompt uses only relevant current on-frame character/prop/location bindings. Keep explicitly requested offscreen dialogue/source separate, preserving exact words and speaker.",
+        "media_inspection": "Not performed; this is a text/handoff boundary."
+      },
+      "regression_evidence": "44 existing regressions and exact-line/unauthorized-synonym boundary passed; no audio test."
+    },
+    {
+      "id": "CAP-20261026-CLONE-STRENGTH",
+      "status": "documented",
+      "scope": "v4-fine-tuned PVC; named TTS/dialogue/voice-settings endpoints only",
+      "rule": "clone_strength0–1 is documented for TTS voice_settings and Text to Dialogue settings; voice-settings edit/get supports nullable0–1. Preserve approved settings; TTD use_pvc_as_ivc deprecated, no global Dubbing payload claim.",
+      "sources": [
+        "https://elevenlabs.io/docs/changelog/2026/10/26",
+        "https://elevenlabs.io/docs/api-reference/voices/settings/update"
+      ],
+      "checked": "2026-10-29",
+      "validation": "Official changelog and endpoint text checked; eligible/ineligible route boundary self-reviewed. No account/API/audio test.",
+      "supersedes_scope": "Older UI-only restriction, solely at documented endpoints."
+    }
+  ],
+  "new_entry_schema": {
+    "id": null,
+    "date": null,
+    "status": "hypothesis",
+    "project": null,
+    "character": null,
+    "language": null,
+    "model": null,
+    "correction_or_proposal": null,
+    "source": null,
+    "conditions": {},
+    "take_ids": [],
+    "listener_result": null,
+    "regression_status": null
+  },
+  "review_coverage": {
+    "start": "2026-10-15T08:54:35+05:30",
+    "end": "2026-10-22T09:03:02+05:30",
+    "first_successful_checkpoint_previously": null,
+    "accessible_corrections": [
+      "current supplied conversation",
+      "saved learning-ledger",
+      "saved performance-cues and fast-performance reference"
+    ],
+    "reviewed_audio_takes": [],
+    "new_relevant_model_release_in_window_verified": false,
+    "latest_visible_changelog": "2026-10-12",
+    "in_window_reading": [
+      {
+        "url": "https://elevenlabs.io/blog/elevenlabs-audio-tags-list",
+        "updated": "2026-10-15",
+        "decision": "Existing tag rule; deduplicated."
+      },
+      {
+        "url": "https://elevenlabs.io/blog/ssml-tags-explained",
+        "published": "2026-10-15",
+        "decision": "Existing no-v4-SSML rule; deduplicated."
+      },
+      {
+        "url": "https://elevenlabs.io/blog/speech-to-text-for-content-creators",
+        "published": "2026-10-19",
+        "updated": "2026-10-20",
+        "decision": "Transcript/subtitle workflow baseline retained; no new support inferred."
+      }
+    ],
+    "primary_research_baseline": {
+      "url": "https://github.com/AI4Bharat/IndicF5",
+      "decision": "Older original repository, no new in-window release verified; not adopted as production replacement."
+    },
+    "support_rechecked": {
+      "TTS": "Hindi Marathi Bengali Gujarati documented; not a dialect or account certification",
+      "Dubbing_v2": "Hindi Marathi Gujarati listed; Bengali omission unresolved",
+      "regional": "No newly verified Haryanvi Rajasthani Bhojpuri target",
+      "STS": "Separate 29-language route includes Hindi; do not inherit v4 language list"
+    },
+    "test_results": {
+      "unit_tests_passed": 44,
+      "type": "synthetic offline text/metadata/REST checks",
+      "cli_checks": "valid/invalid exit status passed",
+      "backward_compatibility": "legacy cue fingerprint preserved when optional fields absent",
+      "skill_validation": "passed",
+      "forward_use": {
+        "request_scope": "Laddu Gopal Bal Krishna, exact words, slight vocal smile with pause and no laughter",
+        "output": "[warm, slight smile in the voice, measured pace] बिल्कुल भी नहीं सखी।",
+        "assessment": "Words/order/punctuation preserved; one English vocal cue; no label or laugh. Behavioral spot check only."
+      }
+    },
+    "save_status": "saved",
+    "confirmed_review_commit": "5853508c91de0113ad8c57a390c4819afdd41d10",
+    "save_verified_at": "2026-10-22T09:04:11+05:30"
+  },
+  "schedule_status": "Confirmed existing Daksh daily 23:00 Asia/Kolkata coordinator, with Sunday 23:00 official research branch; prior individual timer paused per coordinator scheduler verification. No scheduled execution inferred.",
+  "chat_reviews": [
+    {
+      "id": "CHAT-20261022",
+      "date": "2026-10-22",
+      "type": "accessible_recent_chat_review",
+      "status": "completed_and_saved_for_stated_coverage",
+      "coverage_start": "2026-10-20",
+      "coverage_end": "2026-10-23",
+      "coverage": "Supplied user excerpts for 20–22 October plus two supported history-retrieval summaries (broad window and 21–22 gap); no full raw archive or inspected referenced images, video or audio. Retrieval-query restatements and assistant-only provider/news claims excluded.",
+      "evidence_policy": {
+        "direct_user_excerpts": "E01–E09, E11–E16 retain supplied excerpt provenance; no inspected media inferred.",
+        "mixed_excerpt_summary": "E10 contains both supplied excerpt and retrieved summary; exact prior chat/one-take media unavailable.",
+        "direct_current_user": "E17 authorizes daily/Sunday cadence.",
+        "assistant_claims": "Not adopted as user approval, current model facts or measured outcomes.",
+        "media": "Referenced images/videos/audio unavailable and uninspected."
+      },
+      "adopted": [
+        "USER-007"
+      ],
+      "deduplicated": [
+        {
+          "evidence_ids": [
+            "E10"
+          ],
+          "existing_rule": "USER-002/005; fast-performance Bal Krishna pattern; REVIEW-20261022-01 text-only forward use",
+          "decision": "Gentle composed pace, slight vocal smile and pause with exact reply are already saved; no duplicate cue profile or claim of approved/listened audio."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "existing_rule": "USER-002/003 and fast-line word/performance-axis locks",
+          "decision": "Word preservation, latest tension and sparse audible-only direction already covered; USER-007 adds only cross-department scene/binding boundary."
+        },
+        {
+          "evidence_ids": [
+            "E16"
+          ],
+          "existing_rule": "research evidence and scoped model/interface attribution",
+          "decision": "No personal benchmark, account capability or new provider adoption inferred from team observations."
+        },
+        {
+          "evidence_id": "CURRENT-20261023-FRAME-LOCAL",
+          "existing_rule": "USER-007 delivery-only handoff and source/voice-map separation",
+          "decision": "Amended USER-007 with frame-local visual bindings and offscreen speech boundary; no duplicated voice rule and no new TTS control."
+        }
+      ],
+      "pending": [
+        "Audio acting, pause length, voice identity, dialect, pronunciation and sync require actual take/native/acting review; no audio generated or inspected.",
+        "Exact source images/tags can be recorded only in an authorized matched project handoff; unavailable media not validated."
+      ],
+      "fresh_internet_research_performed": false,
+      "audio_generation_performed": false,
+      "audio_tests_performed": false,
+      "text_checks": "PASS_TEXT_ONLY",
+      "persistence": {
+        "status": "saved",
+        "confirmed_commit": "dcf4222708ba09cd5fae8d5ba81321c0cf3866d6"
+      },
+      "rollback": {
+        "base_commit": "ad30015f5cebe04a421d718a650b484a66754a69",
+        "condition": "Revert only a regressing internal candidate; retain user locks, historical research/audio checkpoints and unrelated edits."
+      },
+      "extended_on": "2026-10-23",
+      "additional_sources": [
+        {
+          "id": "CURRENT-20261023-FRAME-LOCAL",
+          "date": "2026-10-23",
+          "source_kind": "explicit_current_user_correction_relayed_by_coordinator",
+          "source": "Latest 23 October current-user correction relayed by root during this invocation; full original message is not duplicated here.",
+          "instruction": "Each frame/prompt uses only relevant current on-frame character/prop/location bindings. Keep explicitly requested offscreen dialogue/source separate, preserving exact words and speaker.",
+          "media_inspection": "Not performed; this is a text/handoff boundary."
+        }
+      ],
+      "completed_on": "2026-10-23",
+      "text_check_evidence": "44 existing regressions and exact-line/unauthorized-synonym boundary passed; no audio test.",
+      "save_evidence": {
+        "status": "saved",
+        "confirmed_feature_commit": "dcf4222708ba09cd5fae8d5ba81321c0cf3866d6",
+        "push_observed": true,
+        "verified_at": "2026-10-23T20:40:56.786110+05:30",
+        "scope": "Bounded20–23October chat review; no new live research or media validation."
+      }
+    },
+    {
+      "id": "ALL-20261029",
+      "scope": "All-agent completion and bounded verification of historical pending control correction",
+      "research_kind": "targeted_pending_contract_verification",
+      "media_tests": 0,
+      "validation": "Source/text review plus existing regressions; no full research checkpoint advance."
+    }
+  ],
+  "updated_at": "2026-10-23",
+  "last_successful_chat_review_checkpoint": {
+    "reviewed_on": "2026-10-23",
+    "coverage_start": "2026-10-20",
+    "coverage_end": "2026-10-23",
+    "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+    "skill_save": {
+      "status": "saved",
+      "confirmed_feature_commit": "dcf4222708ba09cd5fae8d5ba81321c0cf3866d6",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    },
+    "media_tests": 0,
+    "research_checkpoint_advanced": false
+  },
+  "last_partial_chat_review": {
+    "id": "nightly-chat-20261029-2300",
+    "reviewed_on": "2026-10-29",
+    "scheduled_for": "2026-10-29T23:00:00+05:30",
+    "started_at": "2026-10-29T23:04:22.537005+05:30",
+    "window": {
+      "from": "2026-10-23",
+      "through": "2026-10-29T23:04:24+05:30"
+    },
+    "coverage_kind": "partial_accessible_excerpts_and_retrieved_summaries",
+    "coverage": "One broad23–29October retrieval,24–26 and27–29 partitions, focused28–29 specialist/maniik gap check; supplied26–29 direct excerpts. Query restatements, out-of-window16October results and assistant-only claims excluded as correction evidence. No full raw chats or original media inspected.",
+    "source_types": {
+      "direct_user": "Current instructions and supplied user excerpts; global maintenance limits are run authority, not new domain facts.",
+      "retrieved_user": "Dated user-message summaries; not verbatim raw transcripts.",
+      "assistant_reports": "Historical maintenance, briefing, synthesis and output claims; deduplicated against saved records, never promoted to user approval.",
+      "inspected_outputs": "Current saved skills/records, current brain and live automation receipts; no production media."
+    },
+    "complete_history_checkpoint_advanced": false,
+    "research_checkpoint_advanced": false,
+    "research_review_performed": false,
+    "branch": "Thursday chat-only; manual29October research records preserved",
+    "media_tests": 0,
+    "timer_changes": false,
+    "pending": [
+      "Unretrieved raw chats and sparse dates/ranges; no account-complete coverage",
+      "Original image/video/audio and exact marked-image mappings",
+      "Existing unresolved research candidates, pronunciation conflicts, human calibration and customer/media tests"
+    ],
+    "validation": {
+      "kind": "record_structure_and_source_scope",
+      "status": "passed",
+      "independent_domain_review": "/root/specialist_review; read-only current saved specialist records; no new missing domain lessons",
+      "record_preservation_assertions": 55,
+      "skill_structures_valid": 6,
+      "director_ledger": "VALID34lessons",
+      "independent_integration_review": "Read-only /root/integration_qc: checkpoint/lesson/target scope passed; historical Writer fields moved out of current binding before save; no media pass.",
+      "media_tests": 0
+    },
+    "persistence_contract": "This partial-review record is durable only after scoped save and remote verification; complete-history and research checkpoints retained.",
+    "agent": "ai-dubbing",
+    "outcome": "No new domain lesson; manual29October interface-control notes retained, no fresh audio validation."
+  },
+  "partial_chat_review_history": [
+    {
+      "id": "nightly-chat-20261027-2300",
+      "reviewed_on": "2026-10-27",
+      "window": {
+        "from": "2026-10-23T00:00:00+05:30",
+        "through": "2026-10-27T23:00:00+05:30"
+      },
+      "coverage_kind": "partial_accessible_summary_and_supplied_excerpt_review",
+      "coverage": "Broad23–27October query returned23October summaries; partition24–25 returned maintenance/briefing reports and query echoes, excluded as new correction evidence; partition26–27 returned dated correction summaries. Current supplied user excerpts/memories included. No complete raw archive or original media inspected.",
+      "pending": [
+        "Unretrieved raw conversations across23–27October",
+        "Original media and exact marked-image motorcycle/blocking mapping",
+        "Exact target bindings for23October camera/crowd variants"
+      ],
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "live_web_research": false,
+      "media_tests": 0,
+      "persistence_contract": "Durable only when scoped skill save succeeds; external receipt authoritative.",
+      "agent": "dubbing",
+      "outcome": "No new voice-domain lesson; no audio/control/research updates.",
+      "validation": {
+        "software_tests": 139,
+        "failed": 0,
+        "director_ledger": "VALID33lessons",
+        "five_skill_structures": "PASS",
+        "media_tests": 0,
+        "independent_text_review": "Six decisions checked by /root/text_review; three template inconsistencies corrected and independently rechecked. No media tests."
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+📦 Packaging skill: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skills/maniik
+   Output directory: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/maniik
+
+🔍 Validating skill...
+✅ Skill is valid!
+
+  Added: maniik/SKILL.md
+  Added: maniik/assets/learning-runtime.json
+  Added: maniik/assets/icon.svg
+  Added: maniik/references/preferences.md
+  Added: maniik/references/extended-workflows.md
+  Added: maniik/references/context-and-template.md
+  Added: maniik/agents/openai.yaml
+
+📏 Archive size: 12,583 bytes
+The upload service validates the configured skill size limits.
+✅ Successfully packaged skill to: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/maniik/skill.zip
+

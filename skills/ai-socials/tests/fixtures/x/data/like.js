@@ -1,0 +1,1 @@
+window.YTD.like.part0 = [{"like": {"tweetId": "1", "fullText": "New open model for AI video lipsync", "expandedUrl": "https://twitter.com/runwayml/status/1"}}]

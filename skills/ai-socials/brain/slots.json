@@ -1,0 +1,7 @@
+{
+  "_note": "Candidate posting slots (IST) the bandit chooses between. Labels match models.slot_label: weekday_HHMM floored to :00/:30. Edit freely; the retro learns which win.",
+  "linkedin": ["tue_0800", "wed_0800", "thu_0800", "tue_1030", "wed_1030", "thu_1030", "mon_0900"],
+  "instagram": ["mon_1930", "tue_1930", "wed_1930", "thu_1930", "fri_1930", "sat_1130", "sun_1130", "sun_2030"],
+  "facebook": ["tue_0630", "sat_0630", "tue_2000", "thu_2000", "sat_2000", "sun_2000"],
+  "x": ["mon_2030", "tue_2030", "wed_2030", "thu_2030", "fri_2030", "tue_1300", "thu_1300"]
+}

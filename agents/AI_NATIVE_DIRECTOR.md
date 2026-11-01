@@ -39,3 +39,24 @@ Screenplay beat -> shot objective -> approved references/tags -> composition/lig
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`ai-native-director/SKILL.md`](../skills/ai-native-director/SKILL.md).
+Original-source files: 31. Standalone archive: [skill.zip](../skill_packages/ai-native-director/skill.zip).
+
+- **Director controller and task routing**: [`references/controller-runtime.md`](../skills/ai-native-director/references/controller-runtime.md), [`references/execution-quality.md`](../skills/ai-native-director/references/execution-quality.md).
+- **Camera, coverage, composition and focus**: [`references/camera-and-coverage.md`](../skills/ai-native-director/references/camera-and-coverage.md), [`references/camera-catalog.md`](../skills/ai-native-director/references/camera-catalog.md), [`references/shot-composition.md`](../skills/ai-native-director/references/shot-composition.md), [`assets/composition-patterns.json`](../skills/ai-native-director/assets/composition-patterns.json), [`assets/composition-study.frames.json`](../skills/ai-native-director/assets/composition-study.frames.json), [`scripts/composition_lookup.py`](../skills/ai-native-director/scripts/composition_lookup.py).
+- **Cast identity and costumes**: [`references/cast-and-costume.md`](../skills/ai-native-director/references/cast-and-costume.md), [`assets/cast-costume.template.json`](../skills/ai-native-director/assets/cast-costume.template.json).
+- **Performance, action and micro-expressions**: [`references/performance-and-action.md`](../skills/ai-native-director/references/performance-and-action.md), [`assets/character-performance.template.json`](../skills/ai-native-director/assets/character-performance.template.json).
+- **Image/video compiler and model adapters**: [`references/image-video-prompts.md`](../skills/ai-native-director/references/image-video-prompts.md), [`references/model-adapters.md`](../skills/ai-native-director/references/model-adapters.md), [`references/reference-input-preflight.md`](../skills/ai-native-director/references/reference-input-preflight.md), [`scripts/audit_prompt_contract.py`](../skills/ai-native-director/scripts/audit_prompt_contract.py).
+- **Reference Mapper role and tag/asset binding**: [`agents/reference-mapper.md`](../skills/ai-native-director/agents/reference-mapper.md), [`references/reference-mapper-contract.md`](../skills/ai-native-director/references/reference-mapper-contract.md), [`references/mapping-and-qc-agents.md`](../skills/ai-native-director/references/mapping-and-qc-agents.md), [`scripts/validate_handoff.py`](../skills/ai-native-director/scripts/validate_handoff.py).
+- **Filmmaking QC role and evidence contract**: [`agents/filmmaking-qc.md`](../skills/ai-native-director/agents/filmmaking-qc.md), [`references/filmmaking-qc-contract.md`](../skills/ai-native-director/references/filmmaking-qc-contract.md).
+- **Continuity, editing and sound**: [`references/composition-editing-sound.md`](../skills/ai-native-director/references/composition-editing-sound.md), [`references/laddu-gopal.md`](../skills/ai-native-director/references/laddu-gopal.md), [`scripts/project_context.py`](../skills/ai-native-director/scripts/project_context.py).
+- **Scoped corrections and continuous learning**: [`references/continuous-learning.md`](../skills/ai-native-director/references/continuous-learning.md), [`assets/learning-ledger.json`](../skills/ai-native-director/assets/learning-ledger.json), [`scripts/validate_learning_ledger.py`](../skills/ai-native-director/scripts/validate_learning_ledger.py).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

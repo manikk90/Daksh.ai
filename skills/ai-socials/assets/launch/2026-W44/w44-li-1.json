@@ -1,0 +1,20 @@
+{
+  "post_id": "w44-li-1",
+  "platform": "linkedin",
+  "pillar": "pipeline",
+  "format": "text",
+  "hook_type": "constraint_number",
+  "language": "en",
+  "slot_ist": "2026-10-27T08:00",
+  "experiment_id": "exp-li-slot-0800-vs-1030",
+  "text": "One editor. Six dialects. One Hanuman.\n\nSeason 1 of Jai Hanuman is streaming on STAGE in Haryanvi, Bhojpuri, Rajasthani, Gujarati, Marathi and Bengali. Two episodes went out every Saturday.\n\nindiantelevision.com wrote about it last month. Reading it was strange, because from the inside it never felt like a launch. It felt like a checklist I ran every week:\n\nCheck the story against Valmiki and Tulsidas. Devotional audiences catch mistakes fast.\nLock the look before shot one: one 3D style, asset tags for every character and prop, a master list of camera angles. That's how Hanuman ji looks the same in every frame.\nStoryboard prompts, then shots in Seedance 2.0.\nRewrite the dialogue for each dialect, voice it in ElevenLabs v3 with emotion tags. Music in Suno.\nEdit, cut the promo, ship.\n\nNone of it runs without STAGE's in-house AI tool, built by Sushant Kaushik, Kamal Singh Chauhan, Aditya Singh, Siddant Chetrii and Akhilesh Kumar.\n\nAI changed how much one editor can make. It didn't change what the audience wants: to hear their own boli and feel it was made for them.\n\nI'll break down each step here over the next few weeks, including what broke.\n\nWhich one first: keeping the character consistent, or six dialects of dialogue?",
+  "hashtags": [
+    "#AIFilmmaking",
+    "#RegionalContent"
+  ],
+  "first_comment": "The indiantelevision.com feature on Jai Hanuman: https://indiantelevision.com/iworld/%E0%A4%97%E0%A4%BE%E0%A4%82%E0%A4%B5-%E0%A4%95%E0%A5%87-%E0%A4%9B%E0%A5%8B%E0%A4%B0%E0%A5%87-%E0%A4%95%E0%A5%87-%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A4%A8%E0%A4%BE%E0%A4%AE%E0%A5%87-%E0%A4%A6%E0%A5%87/",
+  "media_brief": "Single still: the same Hanuman frame in a 2x3 grid, each tile labelled with its dialect. Tag the five tool-team colleagues in the post. After it's live, add it to your LinkedIn Featured section.",
+  "contains_ai_media": true,
+  "ai_label": true,
+  "confirm": []
+}

@@ -1,0 +1,105 @@
+{
+  "week": "2026-W44",
+  "brief_ref": "launch week: seeded from the October 2026 research report",
+  "posts": [
+    {
+      "post_id": "w44-li-1",
+      "platform": "linkedin",
+      "pillar": "pipeline",
+      "format": "text",
+      "hook_type": "constraint_number",
+      "language": "en",
+      "slot_ist": "2026-10-27T08:00",
+      "experiment_id": "exp-li-slot-0800-vs-1030",
+      "idea": "One editor. Six dialects. One Hanuman."
+    },
+    {
+      "post_id": "w44-li-2",
+      "platform": "linkedin",
+      "pillar": "pipeline",
+      "format": "carousel",
+      "hook_type": "before_after",
+      "language": "en",
+      "slot_ist": "2026-10-28T10:30",
+      "experiment_id": "exp-li-slot-0800-vs-1030",
+      "idea": "Left: what the model gave me. Right: what went on air."
+    },
+    {
+      "post_id": "w44-li-3",
+      "platform": "linkedin",
+      "pillar": "origin",
+      "format": "text",
+      "hook_type": "story_open",
+      "language": "hinglish",
+      "slot_ist": "2026-10-29T08:00",
+      "experiment_id": "exp-li-hinglish",
+      "idea": "3 saal sarkari exam ki taiyari ki. Paper leak ho gaya."
+    },
+    {
+      "post_id": "w44-ig-1",
+      "platform": "instagram",
+      "pillar": "pipeline",
+      "format": "reel",
+      "hook_type": "result_first",
+      "language": "hinglish",
+      "slot_ist": "2026-10-28T19:30",
+      "experiment_id": "exp-ig-hook",
+      "idea": "Ye episode ek editor ne banaya. 6 boliyon mein."
+    },
+    {
+      "post_id": "w44-ig-2",
+      "platform": "instagram",
+      "pillar": "builder_log",
+      "format": "reel",
+      "hook_type": "failure_reveal",
+      "language": "hinglish",
+      "slot_ist": "2026-10-30T19:30",
+      "experiment_id": "exp-ig-hook",
+      "idea": "Hanuman ji ka chehra har shot mein badal raha tha."
+    },
+    {
+      "post_id": "w44-fb-1",
+      "platform": "facebook",
+      "pillar": "bharat_insight",
+      "format": "reel",
+      "hook_type": "before_after",
+      "language": "hi",
+      "slot_ist": "2026-10-27T06:30",
+      "experiment_id": "exp-fb-devotional-morning",
+      "idea": "मंगलवार की सुबह, जय हनुमान 🙏"
+    },
+    {
+      "post_id": "w44-fb-2",
+      "platform": "facebook",
+      "pillar": "origin",
+      "format": "text",
+      "hook_type": "story_open",
+      "language": "hi",
+      "slot_ist": "2026-10-31T20:00",
+      "experiment_id": "control",
+      "idea": "तीन साल सरकारी नौकरी की तैयारी की। पेपर लीक हो गया।"
+    },
+    {
+      "post_id": "w44-x-1",
+      "platform": "x",
+      "pillar": "pipeline",
+      "format": "thread",
+      "hook_type": "constraint_number",
+      "language": "en",
+      "slot_ist": "2026-10-27T20:30",
+      "experiment_id": "exp-x-thread-vs-clip",
+      "idea": "One editor. Six Indian dialects. An AI-animated Hanuman series for STAGE."
+    },
+    {
+      "post_id": "w44-x-2",
+      "platform": "x",
+      "pillar": "industry",
+      "format": "text",
+      "hook_type": "contrarian",
+      "language": "en",
+      "slot_ist": "2026-10-29T20:30",
+      "experiment_id": "control",
+      "idea": "Regional Indian content needs better AI than English content, not cheaper AI."
+    }
+  ]
+}

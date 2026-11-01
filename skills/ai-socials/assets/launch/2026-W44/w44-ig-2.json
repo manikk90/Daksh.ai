@@ -1,0 +1,22 @@
+{
+  "post_id": "w44-ig-2",
+  "platform": "instagram",
+  "pillar": "builder_log",
+  "format": "reel",
+  "hook_type": "failure_reveal",
+  "language": "hinglish",
+  "slot_ist": "2026-10-30T19:30",
+  "experiment_id": "exp-ig-hook",
+  "text": "Hanuman ji ka chehra har shot mein badal raha tha.\n\nAI video ki sabse badi problem generation nahi hai. Consistency hai.\n\nJo kaam aaya: ek locked 3D style, har character aur prop ka asset tag, aur camera angles ki ek master list. Shot banane se pehle sab freeze.\n\nAgar tum bhi AI se characters bana rahe ho, ye reel save kar lo.",
+  "hashtags": [
+    "#AIAnimation",
+    "#AIVideo",
+    "#JaiHanuman"
+  ],
+  "media_brief": "20-30s vertical. 0-3s: rapid montage of 4 inconsistent faces (the failure). Then the fix shown step by step. End on 4 consistent frames side by side. AI label ON.",
+  "contains_ai_media": true,
+  "ai_label": true,
+  "confirm": [
+    "Rejected/inconsistent frames are STAGE material. Get a quick OK before showing them publicly, or use only the final locked frames."
+  ]
+}

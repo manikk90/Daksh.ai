@@ -1,0 +1,11 @@
+{
+  "_note": "Open experiments. The SMM tags posts with experiment_id so the retro can attribute results. Close an experiment by moving it to 'closed' with the retro week that decided it.",
+  "open": [
+    {"id": "exp-li-slot-0800-vs-1030", "platform": "linkedin", "dimension": "slot", "arms": ["wed_0800", "wed_1030", "tue_0800", "tue_1030"], "question": "Does 8 AM IST beat 10:30 AM for Manik's audience?", "min_posts_per_arm": 4},
+    {"id": "exp-li-hinglish", "platform": "linkedin", "dimension": "language", "arms": ["en", "hinglish"], "question": "Does a Hinglish-led post earn more saves/sends than English-led?", "min_posts_per_arm": 4},
+    {"id": "exp-ig-hook", "platform": "instagram", "dimension": "hook_type", "arms": ["result_first", "failure_reveal", "before_after"], "question": "Which opening keeps skip rate lowest and sends highest?", "min_posts_per_arm": 4},
+    {"id": "exp-fb-devotional-morning", "platform": "facebook", "dimension": "slot", "arms": ["tue_0630", "sat_0630", "tue_2000", "sat_2000"], "question": "Do devotional clips do better at 6:30 AM on Hanuman days than at 8 PM?", "min_posts_per_arm": 3},
+    {"id": "exp-x-thread-vs-clip", "platform": "x", "dimension": "format", "arms": ["thread", "video"], "question": "Threads or single clip + insight for replies and profile clicks?", "min_posts_per_arm": 4}
+  ],
+  "closed": []
+}

@@ -1,0 +1,96 @@
+{
+  "exported_at": "2026-11-01T14:20:09+05:30",
+  "original_files": 13,
+  "core_source_files": 217,
+  "support_source_files": 8,
+  "source_info": {
+    "daksh": {
+      "count": 22,
+      "bytes": 207019
+    },
+    "maniik": {
+      "count": 7,
+      "bytes": 26117
+    },
+    "ai-native-director": {
+      "count": 31,
+      "bytes": 951490
+    },
+    "ai-location-director": {
+      "count": 30,
+      "bytes": 376014
+    },
+    "ai-music-director": {
+      "count": 21,
+      "bytes": 173888
+    },
+    "ai-dubbing": {
+      "count": 16,
+      "bytes": 157023
+    },
+    "ai-socials": {
+      "count": 87,
+      "bytes": 296539
+    },
+    "suno-instrumental-prompts": {
+      "count": 3,
+      "bytes": 7270
+    },
+    "skill-creator": {
+      "count": 8,
+      "bytes": 55141
+    }
+  },
+  "packaging": [
+    {
+      "skill": "daksh",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 22,
+      "archive": "skill_packages/daksh/skill.zip"
+    },
+    {
+      "skill": "maniik",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 7,
+      "archive": "skill_packages/maniik/skill.zip"
+    },
+    {
+      "skill": "ai-native-director",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 31,
+      "archive": "skill_packages/ai-native-director/skill.zip"
+    },
+    {
+      "skill": "ai-location-director",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 30,
+      "archive": "skill_packages/ai-location-director/skill.zip"
+    },
+    {
+      "skill": "ai-music-director",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 21,
+      "archive": "skill_packages/ai-music-director/skill.zip"
+    },
+    {
+      "skill": "ai-dubbing",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 16,
+      "archive": "skill_packages/ai-dubbing/skill.zip"
+    },
+    {
+      "skill": "ai-socials",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 87,
+      "archive": "skill_packages/ai-socials/skill.zip"
+    },
+    {
+      "skill": "suno-instrumental-prompts",
+      "status": "passed_original_packager_structure_validation",
+      "file_count": 3,
+      "archive": "skill_packages/suno-instrumental-prompts/skill.zip"
+    }
+  ],
+  "source_manifest_count": 225,
+  "excluded": []
+}

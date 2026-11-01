@@ -1,0 +1,719 @@
+{
+  "schema_version": 2,
+  "exported_at": "2026-11-01T14:20:09+05:30",
+  "scope": "Current mapped agent sources and their documented internal modules; not a claim that every tool or worker is active.",
+  "core_sources": [
+    "daksh",
+    "maniik",
+    "ai-native-director",
+    "ai-location-director",
+    "ai-music-director",
+    "ai-dubbing",
+    "ai-socials",
+    "suno-instrumental-prompts"
+  ],
+  "maintenance_source": "skill-creator",
+  "edges": [
+    {
+      "from": "daksh",
+      "to": "research",
+      "label": "Daksh AI Research",
+      "source_kind": "internal",
+      "registered_skill_alias": null,
+      "resolved_archive_path": null,
+      "status": "internal_role_not_separate_skill",
+      "tasks": [
+        "primary-source research",
+        "reuse prior findings",
+        "turn evidence into tested workflow rules"
+      ],
+      "handoff": "Sources/dates, applicability, actual test and unresolved claims.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "business",
+      "label": "Daksh Business Analyst",
+      "source_kind": "internal",
+      "registered_skill_alias": null,
+      "resolved_archive_path": null,
+      "status": "internal_role_not_separate_skill",
+      "tasks": [
+        "buyer/problem analysis",
+        "offer/MVP",
+        "falsifiable business experiments"
+      ],
+      "handoff": "Evidence versus hypothesis, next experiment and failure signal; no outreach.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "action_model",
+      "label": "Daksh Action and Style Model",
+      "source_kind": "internal",
+      "registered_skill_alias": null,
+      "resolved_archive_path": null,
+      "status": "internal_role_not_separate_skill",
+      "tasks": [
+        "learn explicit corrections",
+        "decision patterns",
+        "next-best action"
+      ],
+      "handoff": "Actually observed actions, scoped corrections and counterexamples; on invocation/review.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "writer",
+      "label": "AI Writer",
+      "source_kind": "skill",
+      "registered_skill_alias": "ai-writer",
+      "resolved_archive_path": "agents/AI_WRITER.md",
+      "status": "mapped_but_installed_source_not_available_in_this_export",
+      "tasks": [
+        "story",
+        "screenplay",
+        "dialogue",
+        "breakdown"
+      ],
+      "handoff": "Current text/version, format, exact dialogue and approved canon.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "director",
+      "label": "AI Native Director",
+      "source_kind": "skill",
+      "registered_skill_alias": "ai-native-director",
+      "resolved_archive_path": "skills/ai-native-director/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "boards",
+        "camera",
+        "cast/costume",
+        "acting",
+        "video prompting"
+      ],
+      "handoff": "Scene/shot versions, approved profiles, exact tags and reference assets; preserve its controller.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "mapping",
+      "label": "Director Mapping",
+      "source_kind": "skill_branch",
+      "registered_skill_alias": "ai-native-director",
+      "resolved_archive_path": "skills/ai-native-director/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "asset/tag binding",
+        "continuity mapping"
+      ],
+      "handoff": "Exact source bindings and approvals; references/mapping-and-qc-agents.md.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "location",
+      "label": "AI Location Director",
+      "source_kind": "skill",
+      "registered_skill_alias": "ai-location-director",
+      "resolved_archive_path": "skills/ai-location-director/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "connected locations",
+        "props",
+        "camera references",
+        "360"
+      ],
+      "handoff": "Current layout/master/version and staged approvals when required; no independent geometry invention.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "music",
+      "label": "AI Music Director",
+      "source_kind": "skill",
+      "registered_skill_alias": "ai-music-director",
+      "resolved_archive_path": "skills/ai-music-director/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "songs",
+        "lyrics",
+        "score",
+        "music controls"
+      ],
+      "handoff": "Beat/timing, exact lyrics/hooks, instruments, platform and vocal/instrumental locks.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "dubbing",
+      "label": "Ai Dubbing",
+      "source_kind": "skill",
+      "registered_skill_alias": "ai-dubbing",
+      "resolved_archive_path": "skills/ai-dubbing/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "voice",
+        "emotion",
+        "regional delivery",
+        "sync"
+      ],
+      "handoff": "Speaker/voice ID, exact ordered words, delivery, actual model/interface and timing.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "suno",
+      "label": "Suno Instrumental Prompts",
+      "source_kind": "skill",
+      "registered_skill_alias": "suno-instrumental-prompts",
+      "resolved_archive_path": "skills/suno-instrumental-prompts/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "short instrumental Styles prompt"
+      ],
+      "handoff": "Cue arc, instruments and no-vocal requirements; normally within 800 characters.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "socials",
+      "label": "AI Socials",
+      "source_kind": "optional_skill",
+      "registered_skill_alias": "ai-socials",
+      "resolved_archive_path": "skills/ai-socials/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "platform research",
+        "social drafts",
+        "content planning"
+      ],
+      "handoff": "Resolve current availability; sources, platform, voice and image locks. Publishing needs its own authority.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "data",
+      "label": "Data Analysis",
+      "source_kind": "skill",
+      "registered_skill_alias": "data-analytics:index",
+      "resolved_archive_path": "external_dependencies/data/index/skill.md",
+      "status": "external_plugin_entrypoint_snapshot_and_mapping",
+      "tasks": [
+        "metrics",
+        "data quality",
+        "market sizing",
+        "business analysis"
+      ],
+      "handoff": "Actual source data/grain/definitions, assumptions and uncertainty; choose focused workflow.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "authored_voice",
+      "label": "Write Like Me",
+      "source_kind": "skill",
+      "registered_skill_alias": "write-like-me:write-like-me",
+      "resolved_archive_path": "external_dependencies/writing-style/write-like-me/skill.md",
+      "status": "external_plugin_entrypoint_snapshot_and_mapping",
+      "tasks": [
+        "authored documents",
+        "posts",
+        "proposals"
+      ],
+      "handoff": "Relevant actual writing samples, audience/purpose and requested artifact; no sending by default.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "qc",
+      "label": "Independent QC",
+      "source_kind": "fresh_worker",
+      "registered_skill_alias": null,
+      "resolved_archive_path": null,
+      "status": "execution_role_not_an_installed_skill",
+      "tasks": [
+        "source fidelity",
+        "scope/approval check",
+        "artifact review"
+      ],
+      "handoff": "Raw locked sources, artifact versions and acceptance criteria; fresh context and no intended verdict.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "maniik",
+      "label": "maniik",
+      "source_kind": "skill",
+      "registered_skill_alias": "maniik",
+      "resolved_archive_path": "skills/maniik/SKILL.md",
+      "status": "source_exported",
+      "tasks": [
+        "weekly commitments",
+        "Slack/mail work priorities",
+        "morning work briefing"
+      ],
+      "handoff": "Current user assignments and real due times; distinguish native calendar task/reminder from meeting. Reuse existing verified automation; no sending implied.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    },
+    {
+      "from": "daksh",
+      "to": "apps",
+      "label": "Current purpose-built app/skill",
+      "source_kind": "capability",
+      "registered_skill_alias": null,
+      "resolved_archive_path": null,
+      "status": "tool_or_connector_not_a_skill_bundle",
+      "tasks": [
+        "files",
+        "sites",
+        "calendar",
+        "explicit communication"
+      ],
+      "handoff": "Discover only task-needed capability; exact action, authority and verified recipients where applicable.",
+      "evidence": "skills/daksh/assets/agent-registry.json"
+    }
+  ],
+  "cross_agent_edges": [
+    {
+      "from": "ai-music-director",
+      "to": "suno-instrumental-prompts",
+      "kind": "helper",
+      "when": "Compact instrumental Suno Styles prompt",
+      "evidence": "skills/daksh/references/specialists.md"
+    },
+    {
+      "from": "ai-native-director",
+      "to": "ai-location-director",
+      "kind": "handoff",
+      "when": "Approved connected location/prop/camera references",
+      "evidence": "skills/daksh/references/specialists.md"
+    },
+    {
+      "from": "ai-native-director",
+      "to": "ai-dubbing",
+      "kind": "handoff",
+      "when": "Exact dialogue, picture/voice version, acting and timing",
+      "evidence": "shared/AGENT_MAP.md"
+    },
+    {
+      "from": "ai-native-director",
+      "to": "ai-music-director",
+      "kind": "handoff",
+      "when": "Cue arc, dramatic beats and timing",
+      "evidence": "shared/AGENT_MAP.md"
+    },
+    {
+      "from": "ai-writer",
+      "to": "ai-native-director",
+      "kind": "source_handoff_not_current_worker_claim",
+      "when": "Approved script, scene purpose and exact dialogue",
+      "evidence": "shared/AGENT_MAP.md"
+    },
+    {
+      "from": "ai-writer",
+      "to": "ai-dubbing",
+      "kind": "source_handoff_not_current_worker_claim",
+      "when": "Locked dialogue and pronunciation/adaptation notes",
+      "evidence": "shared/AGENT_MAP.md"
+    },
+    {
+      "from": "daksh",
+      "to": "skill-creator",
+      "kind": "maintenance_dependency",
+      "when": "Explicit skill authoring or scoped validated skill update",
+      "evidence": "skills/daksh/SKILL.md"
+    },
+    {
+      "from": "production_agents",
+      "to": "ai-socials",
+      "kind": "handoff",
+      "when": "Publicly cleared facts and images only",
+      "evidence": "shared/AGENT_MAP.md"
+    }
+  ],
+  "internal_modules": {
+    "daksh": [
+      {
+        "name": "Master orchestration and dependency tracking",
+        "paths": [
+          "skills/daksh/references/master-orchestration.md",
+          "skills/daksh/assets/agent-registry.json",
+          "skills/daksh/assets/run.template.json",
+          "skills/daksh/scripts/orchestrator.py"
+        ]
+      },
+      {
+        "name": "Memory, scoped corrections and action/style model",
+        "paths": [
+          "skills/daksh/references/memory-and-actions.md",
+          "skills/daksh/references/operating-loop.md",
+          "skills/daksh/assets/brain.template.json",
+          "skills/daksh/scripts/brain.py"
+        ]
+      },
+      {
+        "name": "AI research, synthesis and business analysis",
+        "paths": [
+          "skills/daksh/references/research-synthesis.md",
+          "skills/daksh/references/research-and-business.md",
+          "skills/daksh/scripts/synthesis.py"
+        ]
+      },
+      {
+        "name": "Specialist dispatch and independent QC contract",
+        "paths": [
+          "skills/daksh/references/specialists.md",
+          "skills/daksh/references/evaluation.md",
+          "skills/daksh/assets/evaluation.json"
+        ]
+      },
+      {
+        "name": "Daily/weekly learning and historical runtime state",
+        "paths": [
+          "skills/daksh/references/weekly-learning.md",
+          "skills/daksh/assets/runtime.json"
+        ]
+      }
+    ],
+    "maniik": [
+      {
+        "name": "Slack/Gmail evidence and exact weekly template",
+        "paths": [
+          "skills/maniik/references/context-and-template.md"
+        ]
+      },
+      {
+        "name": "Dependencies, capacity and demonstrated workflows",
+        "paths": [
+          "skills/maniik/references/extended-workflows.md"
+        ]
+      },
+      {
+        "name": "Explicit preferences and scoped ownership",
+        "paths": [
+          "skills/maniik/references/preferences.md"
+        ]
+      },
+      {
+        "name": "Learning/schedule binding snapshot",
+        "paths": [
+          "skills/maniik/assets/learning-runtime.json"
+        ]
+      }
+    ],
+    "ai-native-director": [
+      {
+        "name": "Director controller and task routing",
+        "paths": [
+          "skills/ai-native-director/references/controller-runtime.md",
+          "skills/ai-native-director/references/execution-quality.md"
+        ]
+      },
+      {
+        "name": "Camera, coverage, composition and focus",
+        "paths": [
+          "skills/ai-native-director/references/camera-and-coverage.md",
+          "skills/ai-native-director/references/camera-catalog.md",
+          "skills/ai-native-director/references/shot-composition.md",
+          "skills/ai-native-director/assets/composition-patterns.json",
+          "skills/ai-native-director/assets/composition-study.frames.json",
+          "skills/ai-native-director/scripts/composition_lookup.py"
+        ]
+      },
+      {
+        "name": "Cast identity and costumes",
+        "paths": [
+          "skills/ai-native-director/references/cast-and-costume.md",
+          "skills/ai-native-director/assets/cast-costume.template.json"
+        ]
+      },
+      {
+        "name": "Performance, action and micro-expressions",
+        "paths": [
+          "skills/ai-native-director/references/performance-and-action.md",
+          "skills/ai-native-director/assets/character-performance.template.json"
+        ]
+      },
+      {
+        "name": "Image/video compiler and model adapters",
+        "paths": [
+          "skills/ai-native-director/references/image-video-prompts.md",
+          "skills/ai-native-director/references/model-adapters.md",
+          "skills/ai-native-director/references/reference-input-preflight.md",
+          "skills/ai-native-director/scripts/audit_prompt_contract.py"
+        ]
+      },
+      {
+        "name": "Reference Mapper role and tag/asset binding",
+        "paths": [
+          "skills/ai-native-director/agents/reference-mapper.md",
+          "skills/ai-native-director/references/reference-mapper-contract.md",
+          "skills/ai-native-director/references/mapping-and-qc-agents.md",
+          "skills/ai-native-director/scripts/validate_handoff.py"
+        ]
+      },
+      {
+        "name": "Filmmaking QC role and evidence contract",
+        "paths": [
+          "skills/ai-native-director/agents/filmmaking-qc.md",
+          "skills/ai-native-director/references/filmmaking-qc-contract.md"
+        ]
+      },
+      {
+        "name": "Continuity, editing and sound",
+        "paths": [
+          "skills/ai-native-director/references/composition-editing-sound.md",
+          "skills/ai-native-director/references/laddu-gopal.md",
+          "skills/ai-native-director/scripts/project_context.py"
+        ]
+      },
+      {
+        "name": "Scoped corrections and continuous learning",
+        "paths": [
+          "skills/ai-native-director/references/continuous-learning.md",
+          "skills/ai-native-director/assets/learning-ledger.json",
+          "skills/ai-native-director/scripts/validate_learning_ledger.py"
+        ]
+      }
+    ],
+    "ai-location-director": [
+      {
+        "name": "Location controller and staged master workflow",
+        "paths": [
+          "skills/ai-location-director/references/agent-controller.md",
+          "skills/ai-location-director/references/workflow.md",
+          "skills/ai-location-director/references/context-research.md"
+        ]
+      },
+      {
+        "name": "Connected geography and spatial contracts",
+        "paths": [
+          "skills/ai-location-director/references/spatial-contract.md",
+          "skills/ai-location-director/references/project-location-locks.md",
+          "skills/ai-location-director/assets/location-manifest.template.json",
+          "skills/ai-location-director/scripts/spatial_checks.py"
+        ]
+      },
+      {
+        "name": "Four-view props",
+        "paths": [
+          "skills/ai-location-director/references/props-four-views.md"
+        ]
+      },
+      {
+        "name": "Reference-input and Director handoff",
+        "paths": [
+          "skills/ai-location-director/references/reference-input-preflight.md",
+          "skills/ai-location-director/references/prompts-and-handoff.md"
+        ]
+      },
+      {
+        "name": "Production state and location QC",
+        "paths": [
+          "skills/ai-location-director/references/production-runtime.md",
+          "skills/ai-location-director/references/qc-and-repair.md",
+          "skills/ai-location-director/scripts/location_runtime.py",
+          "skills/ai-location-director/scripts/validate_location.py"
+        ]
+      },
+      {
+        "name": "Panorama/pose/view tooling",
+        "paths": [
+          "skills/ai-location-director/scripts/build_panorama_viewer.py",
+          "skills/ai-location-director/scripts/inspect_colmap_pose.py",
+          "skills/ai-location-director/scripts/transfer_intrinsics.py",
+          "skills/ai-location-director/scripts/compare_views.py"
+        ]
+      },
+      {
+        "name": "Learning ledger and validation",
+        "paths": [
+          "skills/ai-location-director/references/continuous-learning.md",
+          "skills/ai-location-director/assets/learning-ledger.json",
+          "skills/ai-location-director/scripts/validate_learning.py"
+        ]
+      }
+    ],
+    "ai-music-director": [
+      {
+        "name": "Music director role and runtime",
+        "paths": [
+          "skills/ai-music-director/agents/music-director.md",
+          "skills/ai-music-director/references/autonomous-runtime.md",
+          "skills/ai-music-director/scripts/music_runtime.py"
+        ]
+      },
+      {
+        "name": "Scene scoring, instruments and project motifs",
+        "paths": [
+          "skills/ai-music-director/references/scene-scoring.md",
+          "skills/ai-music-director/references/instrument-palette.md",
+          "skills/ai-music-director/references/project-music-context.md"
+        ]
+      },
+      {
+        "name": "Lyrics and singing micro-expression",
+        "paths": [
+          "skills/ai-music-director/references/lyrics-and-vocal-direction.md",
+          "skills/ai-music-director/references/vocal-micro-expression.md",
+          "skills/ai-music-director/assets/lyric-patterns.json"
+        ]
+      },
+      {
+        "name": "Platform routing, model registry and controls",
+        "paths": [
+          "skills/ai-music-director/references/platform-workflows.md",
+          "skills/ai-music-director/references/smart-parameters.md",
+          "skills/ai-music-director/assets/model-registry.json",
+          "skills/ai-music-director/assets/control-profiles.json"
+        ]
+      },
+      {
+        "name": "Music QC and learning",
+        "paths": [
+          "skills/ai-music-director/scripts/music_qc.py",
+          "skills/ai-music-director/references/continuous-learning.md",
+          "skills/ai-music-director/assets/learning-ledger.json",
+          "skills/ai-music-director/assets/improvement-state.json"
+        ]
+      },
+      {
+        "name": "Suno instrumental delegation",
+        "paths": []
+      }
+    ],
+    "ai-dubbing": [
+      {
+        "name": "Fast emotion and performance direction",
+        "paths": [
+          "skills/ai-dubbing/references/fast-performance.md",
+          "skills/ai-dubbing/assets/performance-cues.json"
+        ]
+      },
+      {
+        "name": "Research, language and model/interface guidance",
+        "paths": [
+          "skills/ai-dubbing/references/research-and-playbook.md",
+          "skills/ai-dubbing/references/interface-specific-controls.md"
+        ]
+      },
+      {
+        "name": "Writer/Director/native-review/editor handoff",
+        "paths": [
+          "skills/ai-dubbing/references/workflow-contract.md",
+          "skills/ai-dubbing/assets/dubbing-manifest.example.json"
+        ]
+      },
+      {
+        "name": "Cue and request validation",
+        "paths": [
+          "skills/ai-dubbing/scripts/cue_qc.py",
+          "skills/ai-dubbing/scripts/dialogue_request_qc.py"
+        ]
+      },
+      {
+        "name": "Learning and observed runtime",
+        "paths": [
+          "skills/ai-dubbing/references/continuous-learning.md",
+          "skills/ai-dubbing/assets/learning-ledger.json",
+          "skills/ai-dubbing/assets/learning-runtime.json"
+        ]
+      }
+    ],
+    "ai-socials": [
+      {
+        "name": "Voice, profiles and editorial boundaries",
+        "paths": [
+          "skills/ai-socials/brain/voice.md",
+          "skills/ai-socials/brain/profiles.json",
+          "skills/ai-socials/brain/platform_rules.json",
+          "skills/ai-socials/assets/source-manifest.json"
+        ]
+      },
+      {
+        "name": "Caption routing and six platform formats",
+        "paths": [
+          "skills/ai-socials/references/caption-mode.md"
+        ]
+      },
+      {
+        "name": "Growth, hooks, pillars and planning",
+        "paths": [
+          "skills/ai-socials/references/growth-strategy.md",
+          "skills/ai-socials/brain/playbook.md",
+          "skills/ai-socials/brain/hook_library.json",
+          "skills/ai-socials/brain/pillars.json",
+          "skills/ai-socials/brain/hypotheses.json",
+          "skills/ai-socials/brain/slots.json",
+          "skills/ai-socials/brain/playbook_rules.json"
+        ]
+      },
+      {
+        "name": "Researcher, manager and independent-evaluator roles",
+        "paths": [
+          "skills/ai-socials/references/roles.md",
+          "skills/ai-socials/references/workflows.md"
+        ]
+      },
+      {
+        "name": "Draft/plan/evaluation schemas",
+        "paths": [
+          "skills/ai-socials/schemas/draft_post.schema.json",
+          "skills/ai-socials/schemas/content_plan.schema.json",
+          "skills/ai-socials/schemas/eval_report.schema.json",
+          "skills/ai-socials/schemas/research_brief.schema.json",
+          "skills/ai-socials/schemas/playbook_diff.schema.json"
+        ]
+      },
+      {
+        "name": "Social CLI, ingestion and analytics",
+        "paths": [
+          "skills/ai-socials/scripts/social.py",
+          "skills/ai-socials/scripts/ai_social/cli.py",
+          "skills/ai-socials/scripts/ai_social/validate.py",
+          "skills/ai-socials/scripts/ai_social/ready.py",
+          "skills/ai-socials/scripts/ai_social/metrics.py",
+          "skills/ai-socials/scripts/ai_social/metrics_import.py",
+          "skills/ai-socials/scripts/ai_social/retro.py",
+          "skills/ai-socials/scripts/ai_social/liking_profile.py"
+        ]
+      },
+      {
+        "name": "Image scope and learning",
+        "paths": [
+          "skills/ai-socials/references/recent-lessons.md",
+          "skills/ai-socials/references/learning.md",
+          "skills/ai-socials/assets/learning-ledger.json"
+        ]
+      },
+      {
+        "name": "Historical launch drafts, not publications",
+        "paths": [
+          "skills/ai-socials/assets/launch/2026-W44/READY.md",
+          "skills/ai-socials/assets/launch/2026-W44/plan.json"
+        ]
+      }
+    ],
+    "suno-instrumental-prompts": [
+      {
+        "name": "Compact Styles-field cue compiler",
+        "paths": [
+          "skills/suno-instrumental-prompts/SKILL.md"
+        ]
+      },
+      {
+        "name": "UI metadata and icon",
+        "paths": [
+          "skills/suno-instrumental-prompts/agents/openai.yaml",
+          "skills/suno-instrumental-prompts/assets/icon.svg"
+        ]
+      }
+    ]
+  },
+  "current_user_overrides": "overlays/LATEST_USER_OVERRIDES_2026-11-01.md",
+  "live_installation_changed": false,
+  "automations_changed": false
+}

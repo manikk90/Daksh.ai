@@ -36,3 +36,20 @@ Writer supplies locked meaning and spoken text; Director supplies picture/lip ti
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`ai-dubbing/SKILL.md`](../skills/ai-dubbing/SKILL.md).
+Original-source files: 16. Standalone archive: [skill.zip](../skill_packages/ai-dubbing/skill.zip).
+
+- **Fast emotion and performance direction**: [`references/fast-performance.md`](../skills/ai-dubbing/references/fast-performance.md), [`assets/performance-cues.json`](../skills/ai-dubbing/assets/performance-cues.json).
+- **Research, language and model/interface guidance**: [`references/research-and-playbook.md`](../skills/ai-dubbing/references/research-and-playbook.md), [`references/interface-specific-controls.md`](../skills/ai-dubbing/references/interface-specific-controls.md).
+- **Writer/Director/native-review/editor handoff**: [`references/workflow-contract.md`](../skills/ai-dubbing/references/workflow-contract.md), [`assets/dubbing-manifest.example.json`](../skills/ai-dubbing/assets/dubbing-manifest.example.json).
+- **Cue and request validation**: [`scripts/cue_qc.py`](../skills/ai-dubbing/scripts/cue_qc.py), [`scripts/dialogue_request_qc.py`](../skills/ai-dubbing/scripts/dialogue_request_qc.py).
+- **Learning and observed runtime**: [`references/continuous-learning.md`](../skills/ai-dubbing/references/continuous-learning.md), [`assets/learning-ledger.json`](../skills/ai-dubbing/assets/learning-ledger.json), [`assets/learning-runtime.json`](../skills/ai-dubbing/assets/learning-runtime.json).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

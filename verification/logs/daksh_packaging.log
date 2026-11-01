@@ -1,0 +1,33 @@
+📦 Packaging skill: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skills/daksh
+   Output directory: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/daksh
+
+🔍 Validating skill...
+✅ Skill is valid!
+
+  Added: daksh/SKILL.md
+  Added: daksh/assets/runtime.json
+  Added: daksh/assets/evaluation.json
+  Added: daksh/assets/agent-registry.json
+  Added: daksh/assets/run.template.json
+  Added: daksh/assets/icon.svg
+  Added: daksh/assets/brain.template.json
+  Added: daksh/scripts/test_orchestrator.py
+  Added: daksh/scripts/test_brain_extensions.py
+  Added: daksh/scripts/orchestrator.py
+  Added: daksh/scripts/brain.py
+  Added: daksh/scripts/synthesis.py
+  Added: daksh/scripts/test_brain.py
+  Added: daksh/references/memory-and-actions.md
+  Added: daksh/references/weekly-learning.md
+  Added: daksh/references/specialists.md
+  Added: daksh/references/research-synthesis.md
+  Added: daksh/references/evaluation.md
+  Added: daksh/references/research-and-business.md
+  Added: daksh/references/operating-loop.md
+  Added: daksh/references/master-orchestration.md
+  Added: daksh/agents/openai.yaml
+
+📏 Archive size: 68,897 bytes
+The upload service validates the configured skill size limits.
+✅ Successfully packaged skill to: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/daksh/skill.zip
+

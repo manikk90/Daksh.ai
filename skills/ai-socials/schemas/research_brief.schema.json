@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "research_brief",
+  "title": "ResearchBrief (AI Researcher -> Social Media Manager)",
+  "type": "object",
+  "required": ["week", "trends", "peer_patterns", "algo_changes", "completion"],
+  "properties": {
+    "week": {"type": "string", "pattern": "^\\d{4}-W\\d{2}$"},
+    "trends": {
+      "type": "array", "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["topic", "platforms", "angle_for_manik", "evidence_urls", "freshness_days", "relevance"],
+        "properties": {
+          "topic": {"type": "string", "minLength": 3},
+          "platforms": {"type": "array", "items": {"enum": ["linkedin", "instagram", "facebook", "x"]}, "minItems": 1},
+          "angle_for_manik": {"type": "string", "minLength": 10},
+          "evidence_urls": {"type": "array", "items": {"type": "string", "pattern": "^https?://"}, "minItems": 2},
+          "freshness_days": {"type": "integer", "minimum": 0, "maximum": 14},
+          "relevance": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "peer_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["account", "platform", "pattern", "evidence_url"],
+        "properties": {
+          "account": {"type": "string"}, "platform": {"enum": ["linkedin", "instagram", "facebook", "x"]},
+          "pattern": {"type": "string"}, "hook_type": {"type": "string"}, "evidence_url": {"type": "string"}
+        }
+      }
+    },
+    "algo_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["platform", "change", "source_url", "date", "confidence"],
+        "properties": {
+          "platform": {"enum": ["linkedin", "instagram", "facebook", "x"]},
+          "change": {"type": "string"}, "source_url": {"type": "string", "pattern": "^https?://"},
+          "date": {"type": "string", "format": "date"}, "confidence": {"enum": ["high", "med", "low"]}
+        }
+      }
+    },
+    "pr_opportunities": {"type": "array", "items": {"type": "object"}},
+    "completion": {
+      "type": "object",
+      "required": ["all_urls_fetched", "max_freshness_days"],
+      "properties": {"all_urls_fetched": {"const": true}, "max_freshness_days": {"type": "integer", "maximum": 14}}
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "snapshot_date": "2026-11-01",
+  "snapshot_mode": "API-returned entrypoint text transcribed with punctuation normalization; not original-file-byte verification",
+  "direct_dependencies": [
+    {
+      "alias": "data-analytics:index",
+      "resource_uri": "skills://plugins/data/index/skill.md",
+      "snapshot": "data/index/skill.md",
+      "source_response": "/response/turn14",
+      "full_provider_bundle_exported": false,
+      "shared_resources_exported": false
+    },
+    {
+      "alias": "write-like-me:write-like-me",
+      "resource_uri": "skills://plugins/writing-style/write-like-me/skill.md",
+      "snapshot": "writing-style/write-like-me/skill.md",
+      "source_response": "/response/turn15",
+      "full_provider_bundle_exported": false,
+      "connector_authorization_included": false
+    }
+  ],
+  "conditional_data_routes": [
+    {
+      "name": "product-business-analysis",
+      "purpose": "Business or product decisions",
+      "resource_uri": "skills://plugins/data/product-business-analysis/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "metric-diagnostics",
+      "purpose": "Metric changes and drivers",
+      "resource_uri": "skills://plugins/data/metric-diagnostics/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "kpi-reporting",
+      "purpose": "KPI/business review",
+      "resource_uri": "skills://plugins/data/kpi-reporting/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "design-kpis",
+      "purpose": "Success metrics and guardrails",
+      "resource_uri": "skills://plugins/data/design-kpis/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "market-sizing",
+      "purpose": "Market and opportunity size",
+      "resource_uri": "skills://plugins/data/market-sizing/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "analyze-data-quality",
+      "purpose": "Dataset quality",
+      "resource_uri": "skills://plugins/data/analyze-data-quality/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "validate-data",
+      "purpose": "Calculation/source/claim audit",
+      "resource_uri": "skills://plugins/data/validate-data/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "answers-follow-up",
+      "purpose": "Optional follow-up suggestions",
+      "resource_uri": "skills://plugins/data/answers-follow-up/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "build-report",
+      "purpose": "Narrative artifact",
+      "resource_uri": "skills://plugins/data/build-report/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "build-dashboard",
+      "purpose": "Interactive monitoring/exploration",
+      "resource_uri": "skills://plugins/data/build-dashboard/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "visualize-data",
+      "purpose": "Durable chart authoring",
+      "resource_uri": "skills://plugins/data/visualize-data/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "jupyter-notebooks",
+      "purpose": "Requested notebook",
+      "resource_uri": "skills://plugins/data/jupyter-notebooks/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "convert-to-doc",
+      "purpose": "Existing Data app to document",
+      "resource_uri": "skills://plugins/data/convert-to-doc/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "convert-to-slides",
+      "purpose": "Existing Data app to slides",
+      "resource_uri": "skills://plugins/data/convert-to-slides/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "report-to-pdf",
+      "purpose": "Report export",
+      "resource_uri": "skills://plugins/data/report-to-pdf/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "share-artifact-summary",
+      "purpose": "Requested artifact sharing",
+      "resource_uri": "skills://plugins/data/share-artifact-summary/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "publish-artifact-to-sites",
+      "purpose": "Requested Sites publication",
+      "resource_uri": "skills://plugins/data/publish-artifact-to-sites/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "schedule-refresh-jobs",
+      "purpose": "Authorized recurring refresh",
+      "resource_uri": "skills://plugins/data/schedule-refresh-jobs/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "onboarding",
+      "purpose": "Data onboarding",
+      "resource_uri": "skills://plugins/data/onboarding/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    },
+    {
+      "name": "customize-data-plugin",
+      "purpose": "Reusable Data working context",
+      "resource_uri": "skills://plugins/data/customize-data-plugin/skill.md",
+      "status": "mapped_by_data_index_provider_source_not_bundled"
+    }
+  ],
+  "mapping_evidence": [
+    "skills/daksh/assets/agent-registry.json",
+    "skills/daksh/references/specialists.md"
+  ],
+  "not_automatically_per_agent_mappings": [
+    "DOCX",
+    "PDF",
+    "Slides",
+    "Spreadsheets",
+    "Adobe",
+    "Google Drive"
+  ],
+  "skill_vs_connector_boundary": "Tools, credentials and live schedules are not portable skill source files."
+}

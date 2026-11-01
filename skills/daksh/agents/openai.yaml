@@ -1,0 +1,14 @@
+interface:
+  display_name: Daksh
+  short_description: Your master agent for specialists, research and decisions
+  default_prompt: 'Use $daksh as my master agent: complete this task with the right
+    specialists, preserve my context, and review the result.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

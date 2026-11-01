@@ -1,0 +1,24 @@
+{
+  "post_id": "w44-x-1",
+  "platform": "x",
+  "pillar": "pipeline",
+  "format": "thread",
+  "hook_type": "constraint_number",
+  "language": "en",
+  "slot_ist": "2026-10-27T20:30",
+  "experiment_id": "exp-x-thread-vs-clip",
+  "text": "One editor. Six Indian dialects. An AI-animated Hanuman series for STAGE.\n\nHere's what making it actually looks like 🧵",
+  "thread": [
+    "One editor. Six Indian dialects. An AI-animated Hanuman series for STAGE.\n\nHere's what making it actually looks like 🧵",
+    "The dialects: Haryanvi, Bhojpuri, Rajasthani, Gujarati, Marathi, Bengali.\n\nSame story, six voices. People who grew up speaking a dialect catch a bad dub in the first line.",
+    "Hardest problem isn't generation. It's consistency.\n\nWhat works: one locked 3D style, asset tags for every character and prop, and a master list of camera angles, all frozen before shot one.",
+    "Second hardest: dialogue. Every line is rewritten per dialect and voiced in ElevenLabs v3 with emotion tags.\n\nA Haryanvi taunt is not a translated Bengali taunt.",
+    "If you're an editor moving into AI: your cut sense is the moat. Models give you shots. You still decide which 3 seconds matter.\n\nBreaking down each step here over the next few weeks."
+  ],
+  "hashtags": [],
+  "first_comment": "Press coverage, as a reply to tweet 5: https://indiantelevision.com/iworld/%E0%A4%97%E0%A4%BE%E0%A4%82%E0%A4%B5-%E0%A4%95%E0%A5%87-%E0%A4%9B%E0%A5%8B%E0%A4%B0%E0%A5%87-%E0%A4%95%E0%A5%87-%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A4%A8%E0%A4%BE%E0%A4%AE%E0%A5%87-%E0%A4%A6%E0%A5%87/",
+  "media_brief": "Attach the IG reel (w44-ig-1) cut to 16-20s on tweet 1. Pin the thread to your profile.",
+  "contains_ai_media": true,
+  "ai_label": true,
+  "confirm": []
+}

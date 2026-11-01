@@ -1,0 +1,15 @@
+interface:
+  display_name: AI Music Director
+  short_description: Music, lyrics, daily chat learning and Sunday research
+  default_prompt: Use $ai-music-director to handle my scene music, singable lyrics,
+    subtle vocal expressions and platform settings, applying saved feedback and the
+    coordinated daily learning and Sunday research workflow.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

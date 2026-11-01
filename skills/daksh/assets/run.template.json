@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "run_id": "REPLACE_WITH_TASK_RUN_ID",
+  "revision": 1,
+  "objective": "REPLACE_WITH_MEASURABLE_AUTHORIZED_OUTCOME",
+  "layer": "harness",
+  "execution_mode": "multi_agent",
+  "status": "active",
+  "canonical_writer": "daksh",
+  "max_parallel": 2,
+  "permissions": [
+    "read_source",
+    "write_local_draft"
+  ],
+  "source_versions": {
+    "brief": "REPLACE_WITH_ACTUAL_REVISION"
+  },
+  "locks": [
+    {
+      "id": "scope",
+      "scope": "task",
+      "value": "REPLACE_WITH_EXACT_USER_LOCK"
+    }
+  ],
+  "review_node_id": "qc",
+  "history": [],
+  "nodes": [
+    {
+      "id": "research",
+      "role": "research",
+      "goal": "Extract useful source-backed findings.",
+      "depends_on": [],
+      "source_ids": [
+        "brief"
+      ],
+      "permissions": [
+        "read_source",
+        "write_local_draft"
+      ],
+      "write_targets": [
+        "/TASK_WORKSPACE/research.json"
+      ],
+      "checks": [
+        "source_fidelity"
+      ],
+      "status": "pending",
+      "attempt": 0,
+      "max_attempts": 2,
+      "worker_id": null,
+      "assignment_id": null,
+      "input_versions": {},
+      "dependency_assignments": {},
+      "result": null
+    },
+    {
+      "id": "business",
+      "role": "business",
+      "goal": "Prepare one falsifiable business hypothesis.",
+      "depends_on": [],
+      "source_ids": [
+        "brief"
+      ],
+      "permissions": [
+        "read_source",
+        "write_local_draft"
+      ],
+      "write_targets": [
+        "/TASK_WORKSPACE/business.json"
+      ],
+      "checks": [
+        "decision_value"
+      ],
+      "status": "pending",
+      "attempt": 0,
+      "max_attempts": 2,
+      "worker_id": null,
+      "assignment_id": null,
+      "input_versions": {},
+      "dependency_assignments": {},
+      "result": null
+    },
+    {
+      "id": "qc",
+      "role": "qc",
+      "goal": "Review both artifacts against raw sources and authorized scope.",
+      "depends_on": [
+        "research",
+        "business"
+      ],
+      "source_ids": [
+        "brief"
+      ],
+      "permissions": [
+        "read_source",
+        "write_local_draft"
+      ],
+      "write_targets": [
+        "/TASK_WORKSPACE/qc.json"
+      ],
+      "checks": [
+        "fidelity_and_scope"
+      ],
+      "status": "pending",
+      "attempt": 0,
+      "max_attempts": 2,
+      "worker_id": null,
+      "assignment_id": null,
+      "input_versions": {},
+      "dependency_assignments": {},
+      "result": null
+    }
+  ],
+  "completion_contract": {
+    "required_node_status": "done",
+    "required_check_outcome": "pass",
+    "unresolved_blockers": 0,
+    "current_source_snapshots": true,
+    "independent_final_review": true,
+    "observed_delivery_or_save": true
+  }
+}

@@ -1,0 +1,42 @@
+📦 Packaging skill: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skills/ai-native-director
+   Output directory: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/ai-native-director
+
+🔍 Validating skill...
+✅ Skill is valid!
+
+  Added: ai-native-director/SKILL.md
+  Added: ai-native-director/assets/composition-study.frames.json
+  Added: ai-native-director/assets/cast-costume.template.json
+  Added: ai-native-director/assets/icon.svg
+  Added: ai-native-director/assets/character-performance.template.json
+  Added: ai-native-director/assets/composition-patterns.json
+  Added: ai-native-director/assets/learning-ledger.json
+  Added: ai-native-director/scripts/composition_lookup.py
+  Added: ai-native-director/scripts/validate_learning_ledger.py
+  Added: ai-native-director/scripts/project_context.py
+  Added: ai-native-director/scripts/validate_handoff.py
+  Added: ai-native-director/scripts/audit_prompt_contract.py
+  Added: ai-native-director/references/cast-and-costume.md
+  Added: ai-native-director/references/reference-input-preflight.md
+  Added: ai-native-director/references/image-video-prompts.md
+  Added: ai-native-director/references/camera-catalog.md
+  Added: ai-native-director/references/filmmaking-qc-contract.md
+  Added: ai-native-director/references/mapping-and-qc-agents.md
+  Added: ai-native-director/references/execution-quality.md
+  Added: ai-native-director/references/composition-editing-sound.md
+  Added: ai-native-director/references/model-adapters.md
+  Added: ai-native-director/references/continuous-learning.md
+  Added: ai-native-director/references/camera-and-coverage.md
+  Added: ai-native-director/references/performance-and-action.md
+  Added: ai-native-director/references/controller-runtime.md
+  Added: ai-native-director/references/laddu-gopal.md
+  Added: ai-native-director/references/shot-composition.md
+  Added: ai-native-director/references/reference-mapper-contract.md
+  Added: ai-native-director/agents/filmmaking-qc.md
+  Added: ai-native-director/agents/openai.yaml
+  Added: ai-native-director/agents/reference-mapper.md
+
+📏 Archive size: 209,161 bytes
+The upload service validates the configured skill size limits.
+✅ Successfully packaged skill to: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/ai-native-director/skill.zip
+

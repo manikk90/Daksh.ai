@@ -35,3 +35,15 @@ Previous records mention every-three-day learning and later a separate 23:00 nig
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+`ai-writer` is explicitly mapped in the Daksh registry, but its installed source was not available in the current catalog/container. A bounded Library search found historical records, not an exportable source bundle. This file remains reconstructed documentation, not the original installed skill. No fake `SKILL.md` or installer was created.
+
+Source/status notes: [missing/AI_WRITER_SOURCE_STATUS.md](../missing/AI_WRITER_SOURCE_STATUS.md).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

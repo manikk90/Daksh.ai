@@ -1,0 +1,31 @@
+{
+  "post_id": "w44-li-2",
+  "platform": "linkedin",
+  "pillar": "pipeline",
+  "format": "carousel",
+  "hook_type": "before_after",
+  "language": "en",
+  "slot_ist": "2026-10-28T10:30",
+  "experiment_id": "exp-li-slot-0800-vs-1030",
+  "text": "Left: what the model gave me. Right: what went on air.\n\nThe gap between those two frames is the actual job.\n\nThis carousel is the full assembly line for one Jai Hanuman episode, in the order I run it. Slide 9 is where most of the hours go, and it isn't generation.\n\nSave it if you're building AI video in Indian languages. Which step would you automate first?",
+  "slides": [
+    "1 episode. 6 boliyan. The assembly line.",
+    "Step 1. Story check. Every scene against Valmiki and Tulsidas. Devotional audiences notice everything.",
+    "Step 2. Character bible. One locked 3D style, asset tags for every character and prop, a master list of camera angles.",
+    "Step 3. Storyboard prompts, then shots in Seedance 2.0. Vertical 9:16 from the first frame, never cropped later.",
+    "Step 4. Dialect dialogue. Not translation. Idioms, taunts and jokes change from boli to boli.",
+    "Step 5. Voices in ElevenLabs v3 with emotion tags on every line. Music in Suno.",
+    "Step 6. Edit. Episodes run 5 to 8 minutes. Two went out every Saturday.",
+    "Step 7. A promo cut for each region. A promo editor's instinct still decides the first 3 seconds.",
+    "The hardest part: keeping Hanuman ji's face and proportions identical across hundreds of shots. The style lock and asset tags from Step 2 are what made it possible.",
+    "Built on STAGE's in-house AI tool, made by our tech team. The audience cares about one thing: hearing its own boli."
+  ],
+  "hashtags": [
+    "#AIFilmmaking",
+    "#GenerativeAI"
+  ],
+  "media_brief": "Export as a 10-page PDF, 1080x1350. Slide 1 = before/after split frame. One step per slide, large type, one supporting frame each.",
+  "contains_ai_media": true,
+  "ai_label": true,
+  "confirm": []
+}

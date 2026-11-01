@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "owner": "Manik",
+  "timezone": "Asia/Kolkata",
+  "updated_at": "2026-10-19T00:00:00+05:30",
+  "sources": [],
+  "memory": [],
+  "actions": [],
+  "research": [],
+  "opportunities": [],
+  "lessons": [],
+  "reviews": [],
+  "automations": [],
+  "coverage": {"all_chats_accessible": false, "passive_device_monitoring": false, "history_checkpoint": null, "research_checkpoint": null},
+  "metrics": {"wall_time_seconds": null, "repeat_reads": null, "correction_rounds": null, "accepted_outputs": null, "cost": null}
+}

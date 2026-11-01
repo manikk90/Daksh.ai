@@ -1,0 +1,27 @@
+📦 Packaging skill: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skills/ai-dubbing
+   Output directory: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/ai-dubbing
+
+🔍 Validating skill...
+✅ Skill is valid!
+
+  Added: ai-dubbing/SKILL.md
+  Added: ai-dubbing/assets/learning-runtime.json
+  Added: ai-dubbing/assets/icon.svg
+  Added: ai-dubbing/assets/dubbing-manifest.example.json
+  Added: ai-dubbing/assets/learning-ledger.json
+  Added: ai-dubbing/assets/performance-cues.json
+  Added: ai-dubbing/scripts/dialogue_request_qc.py
+  Added: ai-dubbing/scripts/test_cue_qc.py
+  Added: ai-dubbing/scripts/test_dialogue_request_qc.py
+  Added: ai-dubbing/scripts/cue_qc.py
+  Added: ai-dubbing/references/workflow-contract.md
+  Added: ai-dubbing/references/research-and-playbook.md
+  Added: ai-dubbing/references/fast-performance.md
+  Added: ai-dubbing/references/continuous-learning.md
+  Added: ai-dubbing/references/interface-specific-controls.md
+  Added: ai-dubbing/agents/openai.yaml
+
+📏 Archive size: 60,057 bytes
+The upload service validates the configured skill size limits.
+✅ Successfully packaged skill to: /mnt/data/Manik_All_Agents_And_Mapped_Skills_2026-11-01/skill_packages/ai-dubbing/skill.zip
+

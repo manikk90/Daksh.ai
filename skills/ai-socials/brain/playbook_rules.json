@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-19",
+  "rules": [
+    {"id": "facebook:language:hi", "platform": "facebook", "dimension": "language", "value": "hi", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "Regional Tier 2/3 audience lives here; Hindi/Hinglish first. Hypothesis, not data."},
+    {"id": "instagram:format:reel", "platform": "instagram", "dimension": "format", "value": "reel", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "Reels drive non-follower reach via watch time and sends (Mosseri)."},
+    {"id": "instagram:hook_type:result_first", "platform": "instagram", "dimension": "hook_type", "value": "result_first", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "Skip rate is judged in the first 3 seconds; open on the finished AI shot."},
+    {"id": "linkedin:format:carousel", "platform": "linkedin", "dimension": "format", "value": "carousel", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "Document carousels earn dwell time and saves, the strongest 2026 LinkedIn signals."},
+    {"id": "linkedin:language:en", "platform": "linkedin", "dimension": "language", "value": "en", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "English-led with one or two Hinglish lines for voice. Test hinglish as an experiment."},
+    {"id": "linkedin:slot:wed_0800", "platform": "linkedin", "dimension": "slot", "value": "wed_0800", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "MagicPost India data: Wed 8 AM IST scored 96/100."},
+    {"id": "x:format:thread", "platform": "x", "dimension": "format", "value": "thread", "direction": "prefer", "origin": "seed", "evidence_post_ids": [], "n": 0, "lift_pct": null, "added_in": 1, "last_confirmed": "2026-10-19", "note": "Threads invite replies, the heaviest weight in X's ranker."}
+  ],
+  "changelog": [
+    {"version": 1, "date": "2026-10-19", "week": "2026-W43", "summary": "Seeded from the October 2026 research report. All rules are hypotheses until the retro confirms them with data."}
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "proposed_not_audio_tested",
+  "checked_date": "2026-10-19",
+  "rules": {
+    "default_path": "direct_line",
+    "visual_only_tags": false,
+    "preserve_word_order": true,
+    "revision_scope": "only_requested_axes",
+    "default_candidates": 1
+  },
+  "profiles": [
+    {
+      "id": "soft_grief",
+      "tone": "pleading",
+      "cue": "[crying softly, low trembling voice]"
+    },
+    {
+      "id": "held_grief",
+      "tone": "restrained grief",
+      "cue": "[quietly, voice catching with grief]"
+    },
+    {
+      "id": "urgent_quiet_grief",
+      "tone": "urgent pleading",
+      "cue": "[hurried, quiet and tearful]"
+    },
+    {
+      "id": "restrained_anger",
+      "tone": "contained accusation",
+      "cue": "[quiet, controlled anger]"
+    },
+    {
+      "id": "warm_smile",
+      "tone": "affectionate",
+      "cue": "[warm voice, with a slight smile]"
+    },
+    {
+      "id": "relief",
+      "tone": "reassuring",
+      "cue": "[softly, relief warming the voice]"
+    },
+    {
+      "id": "hesitant_resolve",
+      "tone": "gathering courage",
+      "cue": "[hesitant, then quietly firm]"
+    },
+    {
+      "id": "reverent_wonder",
+      "tone": "awe",
+      "cue": "[hushed, quietly awed]"
+    }
+  ],
+  "capability_notes": {
+    "checked_date": "2026-10-22",
+    "status": "documented_not_audio_tested",
+    "scope": "ElevenCreative UI, eleven_v4 with Professional Voice Clone only",
+    "additional_control": "Clone Strength",
+    "source": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/eleven-v4",
+    "rule": "Keep approved setting unchanged. Do not confuse UI Clone Strength with Dubbing v2 cloning strength or API use_pvc_as_ivc; no numeric API field inferred. Cue profiles remain authored hypotheses."
+  }
+}

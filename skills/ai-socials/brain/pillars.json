@@ -1,0 +1,39 @@
+{
+  "pillars": [
+    {
+      "id": "pipeline",
+      "name": "Pipeline breakdowns",
+      "target_share": 0.35,
+      "what": "How one person ships an AI episode in six dialects: script, character consistency, voice, dub, lipsync, edit.",
+      "keywords": ["pipeline", "workflow", "lipsync", "lip sync", "character consistency", "dubbing", "dub", "voice clone", "kling", "runway", "elevenlabs", "heygen", "firefly", "sarvam", "prompt", "ai video", "ai animation", "ai film", "storyboard", "comfyui"]
+    },
+    {
+      "id": "bharat_insight",
+      "name": "Bharat audience insight",
+      "target_share": 0.20,
+      "what": "What Haryanvi, Bhojpuri, Rajasthani, Gujarati, Marathi viewers respond to; devotional viewing; promo psychology for Tier 2/3.",
+      "keywords": ["haryanvi", "bhojpuri", "rajasthani", "gujarati", "marathi", "regional", "tier 2", "tier 3", "bharat", "dialect", "boli", "devotional", "bhakti", "hanuman", "krishna", "village", "gaon", "ott", "vernacular", "indic"]
+    },
+    {
+      "id": "builder_log",
+      "name": "Tool-builder log",
+      "target_share": 0.20,
+      "what": "Model tests, agents, automation, failures and fixes. Editor turning tool-builder in public.",
+      "keywords": ["agent", "agents", "claude", "automation", "model", "benchmark", "test", "api", "tool", "build", "vibe coding", "llm", "open source", "minimax", "veo", "sora", "seedance"]
+    },
+    {
+      "id": "origin",
+      "name": "Origin story / career arc",
+      "target_share": 0.15,
+      "what": "Village school with no computers to AI series creator; editor to tool-builder to AI infra architect.",
+      "keywords": ["journey", "career", "story", "school", "first job", "learned", "lesson", "mistake", "editor", "promo editor", "growth", "mehnat"]
+    },
+    {
+      "id": "industry",
+      "name": "Industry commentary",
+      "target_share": 0.10,
+      "what": "Micro-dramas, AI in OTT, AI and creative jobs, platform shifts.",
+      "keywords": ["micro drama", "microdrama", "vertical series", "short drama", "ott", "streaming", "industry", "jobs", "future of", "studio", "content economy", "creator economy"]
+    }
+  ]
+}

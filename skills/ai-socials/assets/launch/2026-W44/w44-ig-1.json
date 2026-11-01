@@ -1,0 +1,21 @@
+{
+  "post_id": "w44-ig-1",
+  "platform": "instagram",
+  "pillar": "pipeline",
+  "format": "reel",
+  "hook_type": "result_first",
+  "language": "hinglish",
+  "slot_ist": "2026-10-28T19:30",
+  "experiment_id": "exp-ig-hook",
+  "text": "Ye episode ek editor ne banaya. 6 boliyon mein.\n\nJai Hanuman, STAGE pe. Haryanvi, Bhojpuri, Rajasthani, Gujarati, Marathi, Bengali.\n\nIs reel mein ek scene ka poora safar: story check, character lock, storyboard, shots, dialect voice, final edit.\n\nAgla breakdown kis boli mein chahiye? Comment mein boli ka naam likho.",
+  "hashtags": [
+    "#AIAnimation",
+    "#JaiHanuman",
+    "#AIFilmmaking",
+    "#HaryanviContent"
+  ],
+  "media_brief": "25-35s vertical. 0-2s: the finished shot, full screen, no text. 2-25s: fast steps (script, character sheet, raw generation, voice, lipsync, final), each 2-3s, with Devanagari on-screen labels. Last 3s: final frame again + 'STAGE pe dekho'. Turn the AI label ON. Post as a Trial Reel first if the option is available.",
+  "contains_ai_media": true,
+  "ai_label": true,
+  "confirm": []
+}

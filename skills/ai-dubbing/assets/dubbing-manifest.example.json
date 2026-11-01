@@ -1,0 +1,93 @@
+{
+  "project_id": "jai-hanuman-template",
+  "status": "template_not_generated",
+  "picture_version": null,
+  "cues": [
+    {
+      "cue_id": "JH_EXAMPLE_ANJANA_001",
+      "character_id": "anjana",
+      "source_text": "फेर आँख क्यूँ ना खोल रह्या मेरा पुत्र",
+      "approved_localized_text": "फेर आँख क्यूँ ना खोल रह्या मेरा पुत्र",
+      "render_text": "[crying softly, low trembling voice] फेर आँख क्यूँ ना खोल रह्या... मेरा पुत्र?",
+      "word_lock": true,
+      "language": "Haryanvi",
+      "regional_variety": null,
+      "route": "authored_tts_audition_unverified_regional_quality",
+      "model_id": "eleven_v4",
+      "voice_id": null,
+      "voice_settings": {},
+      "start_s": 0,
+      "end_s": 6,
+      "allowed_overhang_s": 0,
+      "measured_duration_s": null,
+      "pronunciation_version": null,
+      "approved_take_id": null,
+      "request_id": null,
+      "audio_path": null,
+      "track_id": "anjana_dialogue",
+      "casting_version": null,
+      "picture_segment_version": null,
+      "audio_sha256": null,
+      "context_ref_ids": [],
+      "generation_context": {},
+      "overlap_group": null,
+      "capability_evidence": {
+        "status": "unverified",
+        "account_verified": false,
+        "checked_at": null,
+        "reference": null
+      },
+      "reviews": {
+        "text": {
+          "status": "pending",
+          "reviewer": null,
+          "evidence_ref": null,
+          "fingerprint": null
+        },
+        "native": {
+          "status": "pending",
+          "reviewer": null,
+          "evidence_ref": null,
+          "fingerprint": null
+        },
+        "acting": {
+          "status": "pending",
+          "reviewer": null,
+          "evidence_ref": null,
+          "fingerprint": null
+        },
+        "sync": {
+          "status": "pending",
+          "reviewer": null,
+          "evidence_ref": null,
+          "fingerprint": null
+        },
+        "technical": {
+          "status": "pending",
+          "reviewer": null,
+          "evidence_ref": null,
+          "fingerprint": null
+        }
+      }
+    }
+  ],
+  "voice_bible_template": {
+    "character_id": null,
+    "language": null,
+    "regional_variety": null,
+    "voice_id": null,
+    "model_id": null,
+    "casting_version": null,
+    "baseline_timbre": null,
+    "cadence": null,
+    "age_impression": null,
+    "register": null,
+    "relationships": {},
+    "allowed_deviations": [],
+    "anchor_take_ids": [],
+    "lexicon": [],
+    "review_status": "pending"
+  },
+  "schema_version": 2,
+  "source_version": null
+}

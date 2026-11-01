@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "requested_cadence": {
+    "frequency": "daily",
+    "interval": 1,
+    "timezone": "Asia/Kolkata",
+    "timing_mode": "exact_schedule",
+    "daily_not_before": "23:00",
+    "internet_research_day": "SU",
+    "internet_research_time": "23:00"
+  },
+  "automation": {
+    "id": "6adb7de8023c8191bd2acd6bf088ca3b",
+    "title": "Nightly Agent Self-Learning",
+    "coordinator": "Daksh",
+    "status": "ENABLED",
+    "mode": "one_coordinator_with_weekly_branch",
+    "cadence": "daily",
+    "timing_mode": "exact_schedule",
+    "preferred_local_time": "23:00",
+    "daily_not_before": "23:00",
+    "is_enabled": true,
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261027T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+    "confirmed_at": "2026-10-22",
+    "verification_note": "Observed coordinator confirmation on 2026-10-22: enabled daily at 23:00 Asia/Kolkata; Sunday research is a conditional branch in the same task. Date-only confirmation; no execution or file persistence inferred.",
+    "weekly_research": {
+      "day": "SU",
+      "not_before": "23:00",
+      "mode": "conditional_branch_in_same_daily_automation"
+    },
+    "scheduled_execution_observed": false,
+    "verified_on": "2026-10-27",
+    "binding_evidence": "Observed current automation list27October; coordinator enabled; Writer paused, Location enabled; neither modified."
+  },
+  "last_successful_research_at": "2026-10-22T09:03:02+05:30",
+  "last_successful_save_at": "2026-10-22T09:04:11+05:30",
+  "last_attempt_at": "2026-10-22T09:03:02+05:30",
+  "first_run_lookback_days": 7,
+  "max_candidates_per_run": 3,
+  "available_modes": [
+    "daily_accessible_chat_correction_learning",
+    "sunday_primary_source_research",
+    "validated_internal_rule_updates"
+  ],
+  "audio_benchmark_performed": false,
+  "weight_training": false,
+  "runtime_fallback": "UNAPPLIED_RUNTIME_LIMIT",
+  "pending_candidates": [],
+  "rollback_records": [
+    {
+      "review_id": "REVIEW-20261022-01",
+      "base_commit": "7efb866419be5d45ea2f8179a264bba38dafac18",
+      "candidate_ids": [
+        "RESEARCH-20261022-01",
+        "RESEARCH-20261022-02",
+        "RESEARCH-20261022-03"
+      ],
+      "paths": [
+        "SKILL.md",
+        "references/research-and-playbook.md",
+        "references/workflow-contract.md",
+        "assets/performance-cues.json",
+        "scripts/cue_qc.py",
+        "scripts/test_cue_qc.py",
+        "scripts/dialogue_request_qc.py",
+        "scripts/test_dialogue_request_qc.py"
+      ],
+      "tests": "44 offline unit tests; payload CLI, legacy fingerprint, skill validation; one text-only forward use",
+      "revert_condition": "Verified provider contract change or regression in request validation, optional-field compatibility or fast line behavior. Revert only affected candidate; preserve user locks and unrelated edits.",
+      "adopted_commit": "5853508c91de0113ad8c57a390c4819afdd41d10"
+    }
+  ],
+  "review_history": [
+    {
+      "id": "REVIEW-20261022-01",
+      "status": "complete_saved",
+      "coverage_start": "2026-10-15T08:54:35+05:30",
+      "coverage_end": "2026-10-22T09:03:02+05:30",
+      "base_commit": "7efb866419be5d45ea2f8179a264bba38dafac18",
+      "selected_candidates": [
+        "RESEARCH-20261022-01",
+        "RESEARCH-20261022-02",
+        "RESEARCH-20261022-03"
+      ],
+      "checks": {
+        "unit_tests_passed": 44,
+        "type": "synthetic offline text/metadata/REST checks",
+        "cli_checks": "valid/invalid exit status passed",
+        "backward_compatibility": "legacy cue fingerprint preserved when optional fields absent",
+        "skill_validation": "passed",
+        "forward_use": {
+          "request_scope": "Laddu Gopal Bal Krishna, exact words, slight vocal smile with pause and no laughter",
+          "output": "[warm, slight smile in the voice, measured pace] बिल्कुल भी नहीं सखी।",
+          "assessment": "Words/order/punctuation preserved; one English vocal cue; no label or laugh. Behavioral spot check only."
+        }
+      },
+      "audio_tested": false,
+      "confirmed_review_commit": "5853508c91de0113ad8c57a390c4819afdd41d10",
+      "save_verified_at": "2026-10-22T09:04:11+05:30",
+      "persistence": "Successful non-force push to origin/master; recorded only after push completed."
+    },
+    {
+      "id": "CHAT-20261022",
+      "date": "2026-10-22",
+      "type": "accessible_recent_chat_review",
+      "status": "completed_and_saved_for_stated_coverage",
+      "coverage_start": "2026-10-20",
+      "coverage_end": "2026-10-23",
+      "ledger_record": "assets/learning-ledger.json#chat_reviews/CHAT-20261022",
+      "adopted": [
+        "USER-007"
+      ],
+      "fresh_internet_research_performed": false,
+      "audio_tests_performed": false,
+      "text_checks": "PASS_TEXT_ONLY",
+      "persistence": "Confirmed successful scoped Git push; see save_evidence.",
+      "extended_on": "2026-10-23",
+      "completed_on": "2026-10-23",
+      "text_check_evidence": "44 existing regressions and exact-line/unauthorized-synonym boundary passed; no audio test.",
+      "save_evidence": {
+        "status": "saved",
+        "confirmed_feature_commit": "dcf4222708ba09cd5fae8d5ba81321c0cf3866d6",
+        "push_observed": true,
+        "verified_at": "2026-10-23T20:40:56.786110+05:30",
+        "scope": "Bounded20–23October chat review; no new live research or media validation."
+      }
+    }
+  ],
+  "last_confirmed_save_commit": "5853508c91de0113ad8c57a390c4819afdd41d10",
+  "previous_automation": {
+    "id": "6ad5da56d50081919706ed3d7b7bc83d",
+    "title": "Improve Ai Dubbing",
+    "is_enabled": true,
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261022T080000\nRRULE:FREQ=DAILY;INTERVAL=3\nEND:VEVENT",
+    "registered_at": "2026-10-19T08:52:40.684382+00:00",
+    "last_verified_at": "2026-10-22T09:03:02+05:30",
+    "verification_note": "Private scheduler lookup confirmed registered task enabled; current review in progress. No schedule change made in this run.",
+    "superseded_on": "2026-10-22",
+    "superseded_by": "6ad5d8166eec8191b8ab50b313c4aa13",
+    "current_status": "PAUSED",
+    "migration_evidence": "Coordinator reports scheduler-observed pause of old specialist timers on 2026-10-22; historical is_enabled/verification fields above retain their original observation."
+  },
+  "last_successful_chat_review_checkpoint": {
+    "reviewed_on": "2026-10-23",
+    "coverage_start": "2026-10-20",
+    "coverage_end": "2026-10-23",
+    "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+    "skill_save": {
+      "status": "saved",
+      "confirmed_feature_commit": "dcf4222708ba09cd5fae8d5ba81321c0cf3866d6",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    },
+    "media_tests": 0,
+    "research_checkpoint_advanced": false
+  },
+  "last_chat_review_attempt_date": "2026-10-22",
+  "last_chat_review": {
+    "id": "CHAT-20261022",
+    "date": "2026-10-22",
+    "type": "accessible_recent_chat_review",
+    "status": "completed_and_saved_for_stated_coverage",
+    "coverage_start": "2026-10-20",
+    "coverage_end": "2026-10-23",
+    "ledger_record": "assets/learning-ledger.json#chat_reviews/CHAT-20261022",
+    "adopted": [
+      "USER-007"
+    ],
+    "fresh_internet_research_performed": false,
+    "audio_tests_performed": false,
+    "text_checks": "PASS_TEXT_ONLY",
+    "persistence": "Confirmed successful scoped Git push; see save_evidence.",
+    "extended_on": "2026-10-23",
+    "completed_on": "2026-10-23",
+    "text_check_evidence": "44 existing regressions and exact-line/unauthorized-synonym boundary passed; no audio test.",
+    "save_evidence": {
+      "status": "saved",
+      "confirmed_feature_commit": "dcf4222708ba09cd5fae8d5ba81321c0cf3866d6",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    }
+  },
+  "updated_at": "2026-10-23T20:40:56.786110+05:30",
+  "last_successful_chat_save_at": "2026-10-23T20:40:56.786110+05:30",
+  "binding_history": [
+    {
+      "id": "6ad5d8166eec8191b8ab50b313c4aa13",
+      "title": "Nightly Agent Self-Learning",
+      "coordinator": "Daksh",
+      "status": "ENABLED",
+      "mode": "one_coordinator_with_weekly_branch",
+      "cadence": "daily",
+      "timing_mode": "exact_schedule",
+      "preferred_local_time": "23:00",
+      "daily_not_before": "23:00",
+      "is_enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Kolkata:20261022T230000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+      "confirmed_at": "2026-10-22",
+      "verification_note": "Observed coordinator confirmation on 2026-10-22: enabled daily at 23:00 Asia/Kolkata; Sunday research is a conditional branch in the same task. Date-only confirmation; no execution or file persistence inferred.",
+      "weekly_research": {
+        "day": "SU",
+        "not_before": "23:00",
+        "mode": "conditional_branch_in_same_daily_automation"
+      },
+      "scheduled_execution_observed": false
+    }
+  ],
+  "last_partial_chat_review": {
+    "id": "nightly-chat-20261029-2300",
+    "reviewed_on": "2026-10-29",
+    "scheduled_for": "2026-10-29T23:00:00+05:30",
+    "started_at": "2026-10-29T23:04:22.537005+05:30",
+    "window": {
+      "from": "2026-10-23",
+      "through": "2026-10-29T23:04:24+05:30"
+    },
+    "coverage_kind": "partial_accessible_excerpts_and_retrieved_summaries",
+    "coverage": "One broad23–29October retrieval,24–26 and27–29 partitions, focused28–29 specialist/maniik gap check; supplied26–29 direct excerpts. Query restatements, out-of-window16October results and assistant-only claims excluded as correction evidence. No full raw chats or original media inspected.",
+    "source_types": {
+      "direct_user": "Current instructions and supplied user excerpts; global maintenance limits are run authority, not new domain facts.",
+      "retrieved_user": "Dated user-message summaries; not verbatim raw transcripts.",
+      "assistant_reports": "Historical maintenance, briefing, synthesis and output claims; deduplicated against saved records, never promoted to user approval.",
+      "inspected_outputs": "Current saved skills/records, current brain and live automation receipts; no production media."
+    },
+    "complete_history_checkpoint_advanced": false,
+    "research_checkpoint_advanced": false,
+    "research_review_performed": false,
+    "branch": "Thursday chat-only; manual29October research records preserved",
+    "media_tests": 0,
+    "timer_changes": false,
+    "pending": [
+      "Unretrieved raw chats and sparse dates/ranges; no account-complete coverage",
+      "Original image/video/audio and exact marked-image mappings",
+      "Existing unresolved research candidates, pronunciation conflicts, human calibration and customer/media tests"
+    ],
+    "validation": {
+      "kind": "record_structure_and_source_scope",
+      "status": "passed",
+      "independent_domain_review": "/root/specialist_review; read-only current saved specialist records; no new missing domain lessons",
+      "record_preservation_assertions": 55,
+      "skill_structures_valid": 6,
+      "director_ledger": "VALID34lessons",
+      "independent_integration_review": "Read-only /root/integration_qc: checkpoint/lesson/target scope passed; historical Writer fields moved out of current binding before save; no media pass.",
+      "media_tests": 0
+    },
+    "persistence_contract": "This partial-review record is durable only after scoped save and remote verification; complete-history and research checkpoints retained.",
+    "agent": "ai-dubbing",
+    "outcome": "No new domain lesson; manual29October interface-control notes retained, no fresh audio validation."
+  },
+  "manual_reconciliations": [
+    {
+      "id": "ALL-20261029",
+      "candidate": "CAP-20261026-CLONE-STRENGTH",
+      "extent": "Current official26October changelog plus endpoint reads; documentation adoption only. Earlier research checkpoint retained.",
+      "audio_tests": 0,
+      "source": "https://elevenlabs.io/docs/changelog/2026/10/26"
+    }
+  ],
+  "partial_chat_review_history": [
+    {
+      "id": "nightly-chat-20261027-2300",
+      "reviewed_on": "2026-10-27",
+      "window": {
+        "from": "2026-10-23T00:00:00+05:30",
+        "through": "2026-10-27T23:00:00+05:30"
+      },
+      "coverage_kind": "partial_accessible_summary_and_supplied_excerpt_review",
+      "coverage": "Broad23–27October query returned23October summaries; partition24–25 returned maintenance/briefing reports and query echoes, excluded as new correction evidence; partition26–27 returned dated correction summaries. Current supplied user excerpts/memories included. No complete raw archive or original media inspected.",
+      "pending": [
+        "Unretrieved raw conversations across23–27October",
+        "Original media and exact marked-image motorcycle/blocking mapping",
+        "Exact target bindings for23October camera/crowd variants"
+      ],
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "live_web_research": false,
+      "media_tests": 0,
+      "persistence_contract": "Durable only when scoped skill save succeeds; external receipt authoritative.",
+      "agent": "dubbing",
+      "outcome": "No new voice-domain lesson; no audio/control/research updates.",
+      "validation": {
+        "software_tests": 139,
+        "failed": 0,
+        "director_ledger": "VALID33lessons",
+        "five_skill_structures": "PASS",
+        "media_tests": 0,
+        "independent_text_review": "Six decisions checked by /root/text_review; three template inconsistencies corrected and independently rechecked. No media tests."
+      }
+    }
+  ]
+}

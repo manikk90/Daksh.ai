@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "eval_report",
+  "title": "EvalReport (Evaluator, fresh context)",
+  "type": "object",
+  "required": ["post_id", "scores", "pass", "blocking_issues", "fix_instructions"],
+  "properties": {
+    "post_id": {"type": "string"},
+    "scores": {
+      "type": "object",
+      "required": ["hook_strength", "voice_match", "originality", "platform_fit", "factual_safety", "confidentiality"],
+      "properties": {
+        "hook_strength": {"type": "integer", "minimum": 0, "maximum": 10},
+        "voice_match": {"type": "integer", "minimum": 0, "maximum": 10},
+        "originality": {"type": "integer", "minimum": 0, "maximum": 10},
+        "platform_fit": {"type": "integer", "minimum": 0, "maximum": 10},
+        "factual_safety": {"type": "integer", "minimum": 0, "maximum": 10},
+        "confidentiality": {"type": "integer", "minimum": 0, "maximum": 10}
+      }
+    },
+    "pass": {"type": "boolean"},
+    "blocking_issues": {"type": "array", "items": {"type": "string"}},
+    "fix_instructions": {"type": "array", "items": {"type": "string"}},
+    "revise_round": {"type": "integer", "minimum": 0, "maximum": 2}
+  }
+}

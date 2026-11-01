@@ -31,3 +31,22 @@ Share canon coordinates, view names, layout and allowed set dressing with Direct
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`ai-location-director/SKILL.md`](../skills/ai-location-director/SKILL.md).
+Original-source files: 30. Standalone archive: [skill.zip](../skill_packages/ai-location-director/skill.zip).
+
+- **Location controller and staged master workflow**: [`references/agent-controller.md`](../skills/ai-location-director/references/agent-controller.md), [`references/workflow.md`](../skills/ai-location-director/references/workflow.md), [`references/context-research.md`](../skills/ai-location-director/references/context-research.md).
+- **Connected geography and spatial contracts**: [`references/spatial-contract.md`](../skills/ai-location-director/references/spatial-contract.md), [`references/project-location-locks.md`](../skills/ai-location-director/references/project-location-locks.md), [`assets/location-manifest.template.json`](../skills/ai-location-director/assets/location-manifest.template.json), [`scripts/spatial_checks.py`](../skills/ai-location-director/scripts/spatial_checks.py).
+- **Four-view props**: [`references/props-four-views.md`](../skills/ai-location-director/references/props-four-views.md).
+- **Reference-input and Director handoff**: [`references/reference-input-preflight.md`](../skills/ai-location-director/references/reference-input-preflight.md), [`references/prompts-and-handoff.md`](../skills/ai-location-director/references/prompts-and-handoff.md).
+- **Production state and location QC**: [`references/production-runtime.md`](../skills/ai-location-director/references/production-runtime.md), [`references/qc-and-repair.md`](../skills/ai-location-director/references/qc-and-repair.md), [`scripts/location_runtime.py`](../skills/ai-location-director/scripts/location_runtime.py), [`scripts/validate_location.py`](../skills/ai-location-director/scripts/validate_location.py).
+- **Panorama/pose/view tooling**: [`scripts/build_panorama_viewer.py`](../skills/ai-location-director/scripts/build_panorama_viewer.py), [`scripts/inspect_colmap_pose.py`](../skills/ai-location-director/scripts/inspect_colmap_pose.py), [`scripts/transfer_intrinsics.py`](../skills/ai-location-director/scripts/transfer_intrinsics.py), [`scripts/compare_views.py`](../skills/ai-location-director/scripts/compare_views.py).
+- **Learning ledger and validation**: [`references/continuous-learning.md`](../skills/ai-location-director/references/continuous-learning.md), [`assets/learning-ledger.json`](../skills/ai-location-director/assets/learning-ledger.json), [`scripts/validate_learning.py`](../skills/ai-location-director/scripts/validate_learning.py).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

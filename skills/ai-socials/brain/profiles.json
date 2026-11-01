@@ -1,0 +1,31 @@
+{
+  "owner": "Manik Prajapati (Mohit Kumar)",
+  "display_name_target": "Manik Prajapati (Mohit Kumar)",
+  "profiles": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/me-mohit-kumarr/",
+      "status": "confirmed by Manik 2026-10-19",
+      "role": "primary professional channel",
+      "api": "no member analytics without approved partner app; import CSV (LinkedIn post analytics or Metricool/Buffer)"
+    },
+    "x": {
+      "url": "https://x.com/memanik2079",
+      "handle": "memanik2079",
+      "status": "confirmed by Manik 2026-10-19; not indexed by search, treat as a fresh account",
+      "role": "global AI-video builder network",
+      "api": "X API v2 pay-per-use; set X_BEARER_TOKEN"
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/me.mohitkumarr",
+      "status": "confirmed by Manik 2026-10-19; bio outdated (Brand Ads | TV Commercial | Fashion)",
+      "role": "Hindi/Hinglish regional reach",
+      "api": "none for personal profiles; turn on Professional Mode and import dashboard CSV monthly"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/me.mohitkumarr/",
+      "status": "UNCONFIRMED (~65%): handle seen on Facebook intro; Manik to confirm",
+      "role": "discovery via Reels",
+      "api": "Instagram Graph API after switching to a Creator account; set IG_ACCESS_TOKEN"
+    }
+  }
+}

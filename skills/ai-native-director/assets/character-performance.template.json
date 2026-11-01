@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "project_id": null,
+  "source_revision": null,
+  "characters": [],
+  "character_record_shape": {
+    "exact_identity_tag": null,
+    "profile_version": 1,
+    "approval": "PENDING",
+    "sources": [],
+    "movement_baseline": [],
+    "individual_mannerisms": [],
+    "speaking_action": [],
+    "listening_response": [],
+    "physical_and_visibility_constraints": [],
+    "relationship_modifiers": [],
+    "scene_overrides": [],
+    "unknown_fields": [],
+    "evidence_record_shape": {
+      "claim": null,
+      "source_anchor": null,
+      "status": "UNKNOWN",
+      "scope": null
+    }
+  }
+}

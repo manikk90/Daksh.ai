@@ -1,0 +1,10 @@
+{
+  "_note": "Accounts to engage with daily (substantive comments, not 'Great post!'). Researcher fills verified profile URLs only; never guess a handle. Keep 20-30 total.",
+  "categories": {
+    "stage_and_indian_ott_leaders": {"why": "Visibility with leadership and OTT peers", "accounts": [{"name": "Vinay Singhal (STAGE co-founder & CEO)", "url": "", "platforms": ["linkedin", "x"]}]},
+    "global_ai_video_tool_teams": {"why": "Tool teams reshare honest regional benchmarks", "accounts": []},
+    "indian_ai_creators_and_builders": {"why": "Peer network, collaborations", "accounts": []},
+    "media_and_trade_journalists": {"why": "PR pipeline (Inc42, ETBrandEquity, afaqs, exchange4media, YourStory, indiantelevision)", "accounts": []},
+    "regional_creators_tier2_3": {"why": "Audience and cultural credibility", "accounts": []}
+  }
+}

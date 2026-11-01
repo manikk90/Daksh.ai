@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-27",
+  "availability": "Resolve from the current skill catalog and tools at invocation. Entries are routing hints, not installed-worker claims.",
+  "defaults": {
+    "direct_for_microtasks": true,
+    "discover_relevant_only": true,
+    "max_parallel_hint": 3,
+    "canonical_writer": "daksh",
+    "worker_mutation": "isolated authorized drafts only",
+    "review": "fresh worker for substantial work; otherwise label self-review"
+  },
+  "roles": [
+    {
+      "id": "research",
+      "kind": "internal",
+      "label": "Daksh AI Research",
+      "skill_name": null,
+      "tasks": [
+        "primary-source research",
+        "reuse prior findings",
+        "turn evidence into tested workflow rules"
+      ],
+      "handoff": "Sources/dates, applicability, actual test and unresolved claims."
+    },
+    {
+      "id": "business",
+      "kind": "internal",
+      "label": "Daksh Business Analyst",
+      "skill_name": null,
+      "tasks": [
+        "buyer/problem analysis",
+        "offer/MVP",
+        "falsifiable business experiments"
+      ],
+      "handoff": "Evidence versus hypothesis, next experiment and failure signal; no outreach."
+    },
+    {
+      "id": "action_model",
+      "kind": "internal",
+      "label": "Daksh Action and Style Model",
+      "skill_name": null,
+      "tasks": [
+        "learn explicit corrections",
+        "decision patterns",
+        "next-best action"
+      ],
+      "handoff": "Actually observed actions, scoped corrections and counterexamples; on invocation/review."
+    },
+    {
+      "id": "writer",
+      "kind": "skill",
+      "label": "AI Writer",
+      "skill_name": "ai-writer",
+      "tasks": [
+        "story",
+        "screenplay",
+        "dialogue",
+        "breakdown"
+      ],
+      "handoff": "Current text/version, format, exact dialogue and approved canon."
+    },
+    {
+      "id": "director",
+      "kind": "skill",
+      "label": "AI Native Director",
+      "skill_name": "ai-native-director",
+      "tasks": [
+        "boards",
+        "camera",
+        "cast/costume",
+        "acting",
+        "video prompting"
+      ],
+      "handoff": "Scene/shot versions, approved profiles, exact tags and reference assets; preserve its controller."
+    },
+    {
+      "id": "mapping",
+      "kind": "skill_branch",
+      "label": "Director Mapping",
+      "skill_name": "ai-native-director",
+      "tasks": [
+        "asset/tag binding",
+        "continuity mapping"
+      ],
+      "handoff": "Exact source bindings and approvals; references/mapping-and-qc-agents.md."
+    },
+    {
+      "id": "location",
+      "kind": "skill",
+      "label": "AI Location Director",
+      "skill_name": "ai-location-director",
+      "tasks": [
+        "connected locations",
+        "props",
+        "camera references",
+        "360"
+      ],
+      "handoff": "Current layout/master/version and staged approvals when required; no independent geometry invention."
+    },
+    {
+      "id": "music",
+      "kind": "skill",
+      "label": "AI Music Director",
+      "skill_name": "ai-music-director",
+      "tasks": [
+        "songs",
+        "lyrics",
+        "score",
+        "music controls"
+      ],
+      "handoff": "Beat/timing, exact lyrics/hooks, instruments, platform and vocal/instrumental locks."
+    },
+    {
+      "id": "dubbing",
+      "kind": "skill",
+      "label": "Ai Dubbing",
+      "skill_name": "ai-dubbing",
+      "tasks": [
+        "voice",
+        "emotion",
+        "regional delivery",
+        "sync"
+      ],
+      "handoff": "Speaker/voice ID, exact ordered words, delivery, actual model/interface and timing."
+    },
+    {
+      "id": "suno",
+      "kind": "skill",
+      "label": "Suno Instrumental Prompts",
+      "skill_name": "suno-instrumental-prompts",
+      "tasks": [
+        "short instrumental Styles prompt"
+      ],
+      "handoff": "Cue arc, instruments and no-vocal requirements; normally within 800 characters."
+    },
+    {
+      "id": "socials",
+      "kind": "optional_skill",
+      "label": "AI Socials",
+      "skill_name": "ai-socials",
+      "tasks": [
+        "platform research",
+        "social drafts",
+        "content planning"
+      ],
+      "handoff": "Resolve current availability; sources, platform, voice and image locks. Publishing needs its own authority."
+    },
+    {
+      "id": "data",
+      "kind": "skill",
+      "label": "Data Analysis",
+      "skill_name": "data-analytics:index",
+      "tasks": [
+        "metrics",
+        "data quality",
+        "market sizing",
+        "business analysis"
+      ],
+      "handoff": "Actual source data/grain/definitions, assumptions and uncertainty; choose focused workflow."
+    },
+    {
+      "id": "authored_voice",
+      "kind": "skill",
+      "label": "Write Like Me",
+      "skill_name": "write-like-me:write-like-me",
+      "tasks": [
+        "authored documents",
+        "posts",
+        "proposals"
+      ],
+      "handoff": "Relevant actual writing samples, audience/purpose and requested artifact; no sending by default."
+    },
+    {
+      "id": "qc",
+      "kind": "fresh_worker",
+      "label": "Independent QC",
+      "skill_name": null,
+      "tasks": [
+        "source fidelity",
+        "scope/approval check",
+        "artifact review"
+      ],
+      "handoff": "Raw locked sources, artifact versions and acceptance criteria; fresh context and no intended verdict."
+    },
+    {
+      "id": "maniik",
+      "kind": "skill",
+      "label": "maniik",
+      "skill_name": "maniik",
+      "tasks": [
+        "weekly commitments",
+        "Slack/mail work priorities",
+        "morning work briefing"
+      ],
+      "handoff": "Current user assignments and real due times; distinguish native calendar task/reminder from meeting. Reuse existing verified automation; no sending implied."
+    },
+    {
+      "id": "apps",
+      "kind": "capability",
+      "label": "Current purpose-built app/skill",
+      "skill_name": null,
+      "tasks": [
+        "files",
+        "sites",
+        "calendar",
+        "explicit communication"
+      ],
+      "handoff": "Discover only task-needed capability; exact action, authority and verified recipients where applicable."
+    }
+  ]
+}

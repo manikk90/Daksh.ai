@@ -1,0 +1,11 @@
+{
+  "_note": "Any draft containing one of these (case-insensitive) is blocked until STAGE comms clears it. Add internal tool names, unreleased show titles and internal metric names here.",
+  "terms": [
+    "cut.stage.in",
+    "stage studio",
+    "internal only",
+    "confidential",
+    "do not share",
+    "not for external"
+  ]
+}

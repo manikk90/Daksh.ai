@@ -35,3 +35,21 @@ Requested nightly accessible chat/correction learning and Sunday official resear
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`ai-music-director/SKILL.md`](../skills/ai-music-director/SKILL.md).
+Original-source files: 21. Standalone archive: [skill.zip](../skill_packages/ai-music-director/skill.zip).
+
+- **Music director role and runtime**: [`agents/music-director.md`](../skills/ai-music-director/agents/music-director.md), [`references/autonomous-runtime.md`](../skills/ai-music-director/references/autonomous-runtime.md), [`scripts/music_runtime.py`](../skills/ai-music-director/scripts/music_runtime.py).
+- **Scene scoring, instruments and project motifs**: [`references/scene-scoring.md`](../skills/ai-music-director/references/scene-scoring.md), [`references/instrument-palette.md`](../skills/ai-music-director/references/instrument-palette.md), [`references/project-music-context.md`](../skills/ai-music-director/references/project-music-context.md).
+- **Lyrics and singing micro-expression**: [`references/lyrics-and-vocal-direction.md`](../skills/ai-music-director/references/lyrics-and-vocal-direction.md), [`references/vocal-micro-expression.md`](../skills/ai-music-director/references/vocal-micro-expression.md), [`assets/lyric-patterns.json`](../skills/ai-music-director/assets/lyric-patterns.json).
+- **Platform routing, model registry and controls**: [`references/platform-workflows.md`](../skills/ai-music-director/references/platform-workflows.md), [`references/smart-parameters.md`](../skills/ai-music-director/references/smart-parameters.md), [`assets/model-registry.json`](../skills/ai-music-director/assets/model-registry.json), [`assets/control-profiles.json`](../skills/ai-music-director/assets/control-profiles.json).
+- **Music QC and learning**: [`scripts/music_qc.py`](../skills/ai-music-director/scripts/music_qc.py), [`references/continuous-learning.md`](../skills/ai-music-director/references/continuous-learning.md), [`assets/learning-ledger.json`](../skills/ai-music-director/assets/learning-ledger.json), [`assets/improvement-state.json`](../skills/ai-music-director/assets/improvement-state.json).
+- **Suno instrumental delegation**: [Suno helper](../skills/suno-instrumental-prompts/SKILL.md).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

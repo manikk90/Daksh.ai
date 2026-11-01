@@ -43,3 +43,20 @@ Coordinator for the user's 23:00 nightly and Sunday research system only when co
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`daksh/SKILL.md`](../skills/daksh/SKILL.md).
+Original-source files: 22. Standalone archive: [skill.zip](../skill_packages/daksh/skill.zip).
+
+- **Master orchestration and dependency tracking**: [`references/master-orchestration.md`](../skills/daksh/references/master-orchestration.md), [`assets/agent-registry.json`](../skills/daksh/assets/agent-registry.json), [`assets/run.template.json`](../skills/daksh/assets/run.template.json), [`scripts/orchestrator.py`](../skills/daksh/scripts/orchestrator.py).
+- **Memory, scoped corrections and action/style model**: [`references/memory-and-actions.md`](../skills/daksh/references/memory-and-actions.md), [`references/operating-loop.md`](../skills/daksh/references/operating-loop.md), [`assets/brain.template.json`](../skills/daksh/assets/brain.template.json), [`scripts/brain.py`](../skills/daksh/scripts/brain.py).
+- **AI research, synthesis and business analysis**: [`references/research-synthesis.md`](../skills/daksh/references/research-synthesis.md), [`references/research-and-business.md`](../skills/daksh/references/research-and-business.md), [`scripts/synthesis.py`](../skills/daksh/scripts/synthesis.py).
+- **Specialist dispatch and independent QC contract**: [`references/specialists.md`](../skills/daksh/references/specialists.md), [`references/evaluation.md`](../skills/daksh/references/evaluation.md), [`assets/evaluation.json`](../skills/daksh/assets/evaluation.json).
+- **Daily/weekly learning and historical runtime state**: [`references/weekly-learning.md`](../skills/daksh/references/weekly-learning.md), [`assets/runtime.json`](../skills/daksh/assets/runtime.json).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

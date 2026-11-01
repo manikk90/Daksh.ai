@@ -1,0 +1,510 @@
+{
+  "schema_version": "1.0",
+  "name": "AI Native Director - Shot Composition Add-on",
+  "language": "English operating instructions with portable prompt structure; concise Hinglish production responses remain appropriate.",
+  "study": {
+    "study_date": "2026-10-17",
+    "requested_minimum_images": 500,
+    "counted_distinct_frame_images": 545,
+    "contributing_pins": 209,
+    "numbered_search_viewports": 65,
+    "selected_main_pin_detail_checks": 4,
+    "unit": "One distinct visible still/frame image; each distinct collage panel counts individually. A person, face, board title or duplicate pin does not count as another image.",
+    "method": "Purposive visual reading in connected Pinterest; individual composition annotations; manual repeated-frame and grade-only exclusions; pin-to-preview source reconciliation; selected larger pin checks.",
+    "sampling": "Six targeted searches spanning general cinematography, Indian cinema, crowd staging, triptych references, formal symmetry and vertical portrait photography. This is not a random or popularity-weighted sample.",
+    "limits": [
+      "Most images were inspected at on-screen preview scale; selected pins were enlarged.",
+      "Pin film labels, authorship, original crop, camera settings and AI-versus-live-action provenance were not independently authenticated.",
+      "Emotional uses are analyst interpretations, not established creator intention.",
+      "No temporal, audio, focal-length or generative-model performance claims are established by these stills.",
+      "Repeated shot geometry with genuinely different performance/action states may contribute distinct images; the study does not claim 545 different composition types."
+    ],
+    "adoption_state": "Integrated into AI Native Director as optional directing heuristics. Structural and six-case behavioral text checks completed; no model training or generation-quality comparison."
+  },
+  "integration": {
+    "target": "AI Native Director / attention, composition and focus",
+    "status": "installed in ai-native-director; structural and behavioral text validation passed",
+    "load_rule": "Load core instructions for new scene composition or substantive reframing. Load only matching patterns and a small evidence subset. Reuse existing approved context for micro-edits.",
+    "precedence": "Current explicit user instructions and approved screenplay, tags, cast, physical state, location, grade and reveal locks override research heuristics.",
+    "evidence_file": "assets/composition-study.frames.json",
+    "future_validation": "Test only within authorized production scope; use one changed rule and a boundary case. Text compliance does not prove improved visual or temporal fidelity.",
+    "installed_on": "2026-10-19",
+    "target_skill": "ai-native-director",
+    "operating_reference": "references/shot-composition.md",
+    "lookup_script": "scripts/composition_lookup.py",
+    "source_corpus_sha256": "60a1d2c8e1c0267247ed2496d457cb5c40098ed434311ce02b4fc6fcaa64e63e",
+    "source_study_reinspection": "No new image inspection in this integration run; original study extent retained."
+  },
+  "core_instructions": [
+    "Start with the beat: what must be understood first, what must be understood second, and what must remain unseen?",
+    "Resolve character intention, physical support, contact, prop ownership, location anchors and the action axis before choosing composition.",
+    "Name a primary attention target and any essential secondary evidence. If both are required, stage them at compatible depths or provide enough depth of field.",
+    "Assign foreground, midground and background jobs. An occluder must establish viewpoint, pressure, separation or reveal timing; otherwise simplify it.",
+    "Choose one dominant attention mechanism and a supporting one when useful. Treat this as a simplification heuristic, not a fixed quota.",
+    "Specify subject placement, relative scale, facing/attention direction, open space, support/contact and required crop boundaries before decorative lens language.",
+    "Select height, pitch, distance and lens look consistent with the chosen geometry. Never infer exact lens, aperture or camera motion from an unsourced still.",
+    "Check the action envelope: the hand, face, prop and contact must remain readable through the intended movement, not only at the selected still instant.",
+    "Compare adjacent coverage for new information, eye-line/attention direction, source of a reaction, action phase, identity, prop state and architecture continuity.",
+    "Preserve all approved tags, identity, costume, grade, geography, perception and reveal locks. A reference transfers a relationship or attention mechanism, not its cast or world.",
+    "Use a plain eye-level hold when performance supplies the information. Do not force creative-angle checklists or replace blocked evidence with an attractive frame.",
+    "Retrieve only the relevant pattern and a few evidence cases during production. Do not load the full 545-frame evidence file into every prompt rewrite."
+  ],
+  "decision_sequence": [
+    {
+      "step": "Meaning",
+      "decide": "Beat, first read, second read, hidden information and whose perception controls visibility."
+    },
+    {
+      "step": "Evidence",
+      "decide": "Which face, hand, prop, contact or spatial relationship proves the beat."
+    },
+    {
+      "step": "World",
+      "decide": "Approved layout, supports, routes, axis, light direction, identities and reference bindings."
+    },
+    {
+      "step": "Staging",
+      "decide": "Body positions, depth alignment, gaze or sound-attention, scale and gesture envelope."
+    },
+    {
+      "step": "Composition",
+      "decide": "Dominant mechanism, layer jobs, empty-space purpose, crop and silhouette separation."
+    },
+    {
+      "step": "Camera and focus",
+      "decide": "Plausible position, pitch, distance, lens look, sharp plane and deliberately softer layers."
+    },
+    {
+      "step": "Still versus video",
+      "decide": "One precise still instant; a separate start/path/end plan for any motion."
+    },
+    {
+      "step": "Cut and QC",
+      "decide": "New information, compatible entry/exit and binary evidence checks."
+    }
+  ],
+  "patterns": [
+    {
+      "id": "ATT-01",
+      "name": "Attention through a gap",
+      "possible_dramatic_use": "Reveal, discovery, watchfulness",
+      "geometry": "Place the target inside an existing doorway, pole gap, shoulder gap or aperture. Separate near border from the target.",
+      "focus_and_readability": "Focus the information-bearing face or object; keep the border identifiable.",
+      "avoid_when": "Reject when the gap hides a required hand, mouth, identity cue or action.",
+      "evidence_frame_ids": [
+        "F0516"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/376191375139751197/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "ATT-02",
+      "name": "Nested architectural frames",
+      "possible_dramatic_use": "Thresholds, anticipation, private versus shared space",
+      "geometry": "Use successive real doors or arches; retain a clear path and an unambiguous floor plane.",
+      "focus_and_readability": "Use enough focus to read the relevant thresholds.",
+      "avoid_when": "Do not invent architecture, shift doors or centre the subject by breaking the approved layout.",
+      "evidence_frame_ids": [
+        "F0530"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/83316661852686204/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "ATT-03",
+      "name": "Broken repetition",
+      "possible_dramatic_use": "An individual within a system or crowd",
+      "geometry": "Establish repeated bodies, seats, poles or windows, then let one meaningful difference select the target.",
+      "focus_and_readability": "Difference may be posture, spacing, value, colour or sharpness.",
+      "avoid_when": "Uniform faces and identical reactions destroy identity and believable crowd behaviour.",
+      "evidence_frame_ids": [
+        "F0378"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/834291899749441204/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "ATT-04",
+      "name": "Scale against environment",
+      "possible_dramatic_use": "Awe, solitude, vulnerability, destination",
+      "geometry": "Keep a clear small silhouette against one dominant environmental mass; provide a ground anchor.",
+      "focus_and_readability": "Enough environmental detail must survive to communicate scale.",
+      "avoid_when": "A tiny person is unusable if their outline or location cannot be read at delivery size.",
+      "evidence_frame_ids": [
+        "F0159",
+        "F0160",
+        "F0161"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/665829126197191154/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested",
+      "production_boundary": "Use a support or spatial scale anchor appropriate to the approved environment. Deep-space flight has no invented ground or horizon; retain only approved Sun/Earth relationships and motion vectors."
+    },
+    {
+      "id": "ATT-05",
+      "name": "Empty space with a job",
+      "possible_dramatic_use": "Waiting, absence, anticipation, distance",
+      "geometry": "Reserve space toward a destination, attention source or meaningful absence. Track what occupies it later.",
+      "focus_and_readability": "Keep the target distinct without making every empty region conspicuously bright.",
+      "avoid_when": "Do not fill the space with decoration; do not reveal a later event prematurely.",
+      "evidence_frame_ids": [
+        "F0017"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/705939310332465983/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "ATT-06",
+      "name": "Local light island",
+      "possible_dramatic_use": "Isolation, a thought, an object discovery",
+      "geometry": "Give the required evidence a local light or value advantage and keep competing highlights quieter.",
+      "focus_and_readability": "Check face, gesture and support remain readable inside or beside the light.",
+      "avoid_when": "Do not infer mood solely from warm/cool hue or move the source when reversing camera.",
+      "evidence_frame_ids": [
+        "F0529"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/1138988562031104629/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "DEP-01",
+      "name": "Near object, far reaction",
+      "possible_dramatic_use": "Cause and response in one frame",
+      "geometry": "Put an owned hand, prop or obstacle near camera and the reacting person farther away.",
+      "focus_and_readability": "Choose one priority; retain the second read, or align depths/increase DOF if both are essential.",
+      "avoid_when": "Blur must not erase the object whose identity explains the reaction.",
+      "evidence_frame_ids": [
+        "F0110"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/1119214944914727974/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "DEP-02",
+      "name": "Tactile evidence insert",
+      "possible_dramatic_use": "Touch, grip, support, object choice",
+      "geometry": "Frame the contact point with enough wrist, sleeve or body context to establish ownership.",
+      "focus_and_readability": "Keep fingers, object and contact in the required sharp plane.",
+      "avoid_when": "A pretty macro that hides contact cannot cover the scripted action.",
+      "evidence_frame_ids": [
+        "F0071",
+        "F0072",
+        "F0073"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/567664728046351555/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "DEP-03",
+      "name": "Shared depth for shared evidence",
+      "possible_dramatic_use": "Hand-hold, two-person response, prop exchange",
+      "geometry": "Stage required faces or contacts at compatible depth before choosing blur.",
+      "focus_and_readability": "Use sufficient DOF rather than universally prescribing a wide aperture.",
+      "avoid_when": "Do not put one required participant in decorative bokeh.",
+      "evidence_frame_ids": [
+        "F0483"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/631207704004053943/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "DEP-04",
+      "name": "Reflection with one physical owner",
+      "possible_dramatic_use": "Indirect reveal, self-observation, a second presence",
+      "geometry": "Place actual body, reflective surface and reflected view in a coherent geometry.",
+      "focus_and_readability": "Prioritize the reflection when it carries new information; keep the real owner identifiable.",
+      "avoid_when": "No duplicate physical person, mismatched hand, false reflected gaze or impossible reverse.",
+      "evidence_frame_ids": [
+        "F0185"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/897553400765266850/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested",
+      "production_boundary": "A reflection requires plausible physical geometry. When an essential reflected view cannot coexist with locked hand/body/camera positions, propose the smallest compatible camera or mirror adjustment rather than claiming the view is verified."
+    },
+    {
+      "id": "DEP-05",
+      "name": "Overhead task map",
+      "possible_dramatic_use": "Working surface, object placement, route or group layout",
+      "geometry": "Use high/overhead views to expose actual relationships among tools, hands, bodies and support surfaces.",
+      "focus_and_readability": "Read the task plane rather than automatically demanding shallow focus.",
+      "avoid_when": "Do not choose overhead when the required facial reaction becomes unreadable.",
+      "evidence_frame_ids": [
+        "F0466",
+        "F0467"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/859624647663219846/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "DEP-06",
+      "name": "Low view with support",
+      "possible_dramatic_use": "Presence, child-scale perspective, vertical relation",
+      "geometry": "Specify actual low position, pitch and the support plane. Keep body scale and limbs plausible.",
+      "focus_and_readability": "Protect face and action from near-object occlusion.",
+      "avoid_when": "Low height alone is not a worm-eye view; distortion must not mutate identity.",
+      "evidence_frame_ids": [
+        "F0521"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/947655946606418100/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GRP-01",
+      "name": "A pocket inside a crowd",
+      "possible_dramatic_use": "An individual under social pressure",
+      "geometry": "Use near shoulders/backs to form a gap around the target; stagger heads across depth.",
+      "focus_and_readability": "Keep target readable; preserve enough crowd structure to understand enclosure.",
+      "avoid_when": "Do not remove the required crowd just to isolate the subject.",
+      "evidence_frame_ids": [
+        "F0359"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/598134394261687368/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GRP-02",
+      "name": "Unequal levels and distances",
+      "possible_dramatic_use": "Hierarchy, disagreement, observation",
+      "geometry": "Vary sitting/standing levels and camera distance while keeping all essential faces separate.",
+      "focus_and_readability": "Use depth that preserves the intended relationship.",
+      "avoid_when": "Relative scale is a proposal, not proof of character status; respect actual platform levels.",
+      "evidence_frame_ids": [
+        "F0368"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/125467539611650831/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GRP-03",
+      "name": "Radial group aperture",
+      "possible_dramatic_use": "Shared inspection, collective focus",
+      "geometry": "Arrange separate faces around an opening or central object, with distinct head sizes and silhouettes.",
+      "focus_and_readability": "Read the shared centre plus the necessary participants.",
+      "avoid_when": "Do not merge faces or demand impossible camera access through bodies.",
+      "evidence_frame_ids": [
+        "F0370"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/67202219435078666/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GRP-04",
+      "name": "A route through a mass",
+      "possible_dramatic_use": "Pursuit, procession, arrival",
+      "geometry": "Use leading curves, open lanes and staggered bodies to define collective direction.",
+      "focus_and_readability": "Retain route geography and key silhouettes.",
+      "avoid_when": "Do not replace people with a duplicated texture or give everyone the same gesture.",
+      "evidence_frame_ids": [
+        "F0357"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/417075615491134607/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GRP-05",
+      "name": "Stillness against movement cues",
+      "possible_dramatic_use": "Disconnection, persistence, a held thought",
+      "geometry": "Keep one readable target against passing or streaked surroundings.",
+      "focus_and_readability": "The target stays recognizable; blur never replaces necessary action evidence.",
+      "avoid_when": "A still cannot prove shutter speed, camera lock or a tracking path; video needs a separate plan.",
+      "evidence_frame_ids": [
+        "F0393"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/4601060458913315584/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GEO-01",
+      "name": "Balanced frame, unequal meaning",
+      "possible_dramatic_use": "Ritual, formality, deadpan, controlled tension",
+      "geometry": "Use a central axis or bilateral setting, then let posture, gesture or spacing supply the difference.",
+      "focus_and_readability": "Protect the action that breaks the balance.",
+      "avoid_when": "Do not impose symmetry on every beat or relocate approved world anchors.",
+      "evidence_frame_ids": [
+        "F0483"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/631207704004053943/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GEO-02",
+      "name": "Diagonals from the world",
+      "possible_dramatic_use": "Routes, effort, unstable relations",
+      "geometry": "Use real stairs, railings, roads or body vectors as diagonals before adding camera roll.",
+      "focus_and_readability": "Maintain readable feet, hand contact and destination.",
+      "avoid_when": "A sloped setting or a rotated pin is not evidence for a Dutch angle.",
+      "evidence_frame_ids": [
+        "F0152",
+        "F0153",
+        "F0154"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/1038220520353175904/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GEO-03",
+      "name": "Silhouette as information",
+      "possible_dramatic_use": "Scale, anonymity, withheld facial detail",
+      "geometry": "Preserve distinctive outline, limb separation and contact against a simpler value plane.",
+      "focus_and_readability": "Check readability at final display size.",
+      "avoid_when": "Reject when the required beat depends on eyes, lips or a specific hand detail.",
+      "evidence_frame_ids": [
+        "F0530"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/83316661852686204/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GEO-04",
+      "name": "Colour as a local exception",
+      "possible_dramatic_use": "One prop/person among repeated forms",
+      "geometry": "Use one meaningful colour accent against quieter surroundings while preserving approved grade and costume.",
+      "focus_and_readability": "Value and silhouette should still work without colour.",
+      "avoid_when": "Reference palette does not authorize recolouring a locked character, garment or location.",
+      "evidence_frame_ids": [
+        "F0517"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/1128996200351629192/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GEO-05",
+      "name": "Environmental insert with evidence",
+      "possible_dramatic_use": "Weather, time, route, scale, a new location fact",
+      "geometry": "Choose a roof drip, road, tree, flame or landmark that supplies specific new information.",
+      "focus_and_readability": "Keep that evidence legible rather than uniformly blurred.",
+      "avoid_when": "A landscape beauty frame is not automatically useful coverage or a new story beat.",
+      "evidence_frame_ids": [
+        "F0123",
+        "F0124",
+        "F0125"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/644014815495725195/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "GEO-06",
+      "name": "Texture kept below the story",
+      "possible_dramatic_use": "Lived spaces without clutter overload",
+      "geometry": "Let one plane carry texture and a quieter plane carry the face/gesture; preserve regional specificity.",
+      "focus_and_readability": "Control contrast, depth and overlap instead of erasing all detail.",
+      "avoid_when": "Never copy vegetation, architecture or sacred design across incompatible worlds.",
+      "evidence_frame_ids": [
+        "F0162",
+        "F0163",
+        "F0164"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/841258405405364591/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "SEQ-01",
+      "name": "Fixed composition, changed performance",
+      "possible_dramatic_use": "A thought developing within one spatial setup",
+      "geometry": "Hold world, camera and prop placement while a meaningful pose or gesture changes.",
+      "focus_and_readability": "Maintain the required face and contact through the action envelope.",
+      "avoid_when": "Do not count near-identical alternatives as sequential coverage without changed information.",
+      "evidence_frame_ids": [
+        "F0404",
+        "F0405",
+        "F0406"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/911767887061785222/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    },
+    {
+      "id": "SEQ-02",
+      "name": "Format-aware restaging",
+      "possible_dramatic_use": "Same beat delivered in horizontal and vertical frames",
+      "geometry": "Reposition camera and depth stacking so face, hands, secondary relation and route fit the target ratio.",
+      "focus_and_readability": "Protect the primary read and essential secondary evidence.",
+      "avoid_when": "A tall collage is not a vertical shot; centre-cropping can destroy ownership and geography.",
+      "evidence_frame_ids": [
+        "F0545"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/413909022017162681/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested",
+      "production_boundary": "When body positions are locked, reframe from feasible camera space or adjust lens/distance intent; do not silently move actors to solve the target ratio."
+    },
+    {
+      "id": "SEQ-03",
+      "name": "Attention carried across a cut",
+      "possible_dramatic_use": "Cause, response, reveal or an action match",
+      "geometry": "Carry the relevant direction, screen region, action phase and prop ownership into the next frame.",
+      "focus_and_readability": "Change attention only when a new beat motivates it.",
+      "avoid_when": "A single still does not establish an edit or prove continuity across unviewed footage.",
+      "evidence_frame_ids": [
+        "F0061",
+        "F0062",
+        "F0063"
+      ],
+      "source_pin_url": "https://in.pinterest.com/pin/220113500521523055/",
+      "status": "proposed directing heuristic supported by visual examples; generation reliability untested"
+    }
+  ],
+  "still_prompt_structure": "{SHOT_ID} [{SIZE}]: {ONE_EXACT_INSTANT_AND_LOCKED_ENTITIES}; {PRIMARY_TARGET_AND_SECONDARY_EVIDENCE}; {SUBJECT_PLACEMENT_SCALE_FACING_AND_CONTACT}; foreground {JOB}; midground {JOB}; background {JOB_AND_EXACT_APPROVED_LOCATION_TAG}; {SHARP_PLANE_AND_SOFT_LAYERS}; {PLAUSIBLE_CAMERA_POSITION_PITCH_AND_LENS_LOOK}; {GRADE_AND_CRITICAL_CONTINUITY_CONSTRAINTS}.",
+  "video_addendum_structure": "Begin from the inspected approved frame. State supported pose/contact, one primary action progression, camera start/path/end if any, maintained visibility, focus behaviour, end state and cut connection. Do not put these multiple time states into a still prompt.",
+  "qc_checks": [
+    "Can the intended first read be identified at delivery size?",
+    "Is every essential secondary face, hand, prop, contact or route still readable?",
+    "Are face and costume identities preserved, including partial bodies and reflections?",
+    "Are limbs separated and all bodies/props supported by visible or verified surfaces?",
+    "Does any foreground line cut through a crucial eye, mouth, finger or contact point?",
+    "Does empty space have an intentional job without exposing a future reveal?",
+    "Do reflections match one physical owner, pose, hand and plausible camera geometry?",
+    "Does camera placement fit the approved location and maintained action axis?",
+    "Are light source, sound-attention and gaze rules consistent in the world?",
+    "Will the composition survive the intended movement and final aspect ratio?",
+    "Does this shot add a new fact, reaction or useful emotional duration to adjacent coverage?",
+    "Are visual, temporal and audio claims separated according to what was actually inspected?"
+  ],
+  "behavioral_test_cases": [
+    {
+      "case": "Hand and face both carry the beat",
+      "pass": "Stage both at compatible depth or use enough DOF; identify exact owned contact.",
+      "fail": "Portrait bokeh makes the hand-hold or object unreadable."
+    },
+    {
+      "case": "Blind character hears a bell",
+      "pass": "Attention follows sound and established perception; do not import a binocular or normal-vision POV.",
+      "fail": "Eyes track a visually observed event or reaction precedes the audible stimulus."
+    },
+    {
+      "case": "Large crowd isolates a child",
+      "pass": "Keep crowd layers and a clear attention gap with believable adult-child scale.",
+      "fail": "Delete the crowd or shrink every adult to fit the close-up."
+    },
+    {
+      "case": "Approved stairs do not permit a low reverse",
+      "pass": "Choose a feasible compatible position or mark the missing reference; preserve geometry.",
+      "fail": "Invent extra steps, invisible support or a moved entrance."
+    },
+    {
+      "case": "Reflective prop beside two people",
+      "pass": "Track actual versus reflected bodies and owned hands.",
+      "fail": "Generate a second physical person from the reflection."
+    },
+    {
+      "case": "Horizontal two-shot becomes vertical",
+      "pass": "Restage depth or widen physically enough to retain face, hands and required relation.",
+      "fail": "Centre-crop away the second participant or contact."
+    },
+    {
+      "case": "Symmetric reference but asymmetric performance beat",
+      "pass": "Keep approved world, allow gesture/spacing to break balance; use symmetry only when useful.",
+      "fail": "Move architecture or pin every face to the centre."
+    },
+    {
+      "case": "Single still used to request an orbit",
+      "pass": "Check unseen geometry and separately plan motion; mark reliability pending.",
+      "fail": "Claim the reference proves a full continuous camera path."
+    }
+  ],
+  "test_status": {
+    "evidence_structure": "All 26 patterns and referenced frames checked during integration; imported 545-frame/209-pin counts and immutable corpus verified.",
+    "visual_reference_reading": "completed at stated preview/detail extent",
+    "prompt_behavior_cases": "Six fresh-thread task outputs reviewed by Director: PASS for text behavior; no independent media evaluation.",
+    "image_generation_comparison": "not performed",
+    "temporal_audio_test": "not performed",
+    "integration_checked_on": "2026-10-19"
+  }
+}

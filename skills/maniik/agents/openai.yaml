@@ -1,0 +1,14 @@
+interface:
+  display_name: maniik
+  short_description: Work updates, dependencies and demonstrated workflows
+  default_prompt: Use $maniik to review my work updates, check dependencies and prepare
+    a realistic outcome plan.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

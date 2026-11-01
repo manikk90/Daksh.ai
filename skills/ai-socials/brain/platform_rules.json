@@ -1,0 +1,27 @@
+{
+  "_note": "hard_constraints are enforced by validate.py and are NOT learnable by the weekly retro. facts are the Researcher's dated, sourced algorithm notes; DESIGNED TO BE DELETED once live model knowledge + search is reliable. Researcher may append facts; only Manik edits hard_constraints.",
+  "last_reviewed": "2026-10-19",
+  "hard_constraints": {
+    "linkedin": {"max_hashtags": 3, "max_chars": 3000, "external_link_in_body": false},
+    "instagram": {"max_hashtags": 5, "max_chars": 2200, "external_link_in_body": false},
+    "facebook": {"max_hashtags": 3, "max_chars": 63206, "external_link_in_body": true},
+    "x": {"max_hashtags": 2, "max_chars": 280, "external_link_in_body": false}
+  },
+  "facts": [
+    {"platform": "linkedin", "fact": "Dwell time, saves and private sends outweigh reactions; comment quality is read semantically; generic AI-written posts are suppressed.", "source": "socialpilot.co/blog/linkedin-algorithm (Sep 2026 update)", "date": "2026-09", "confidence": "med"},
+    {"platform": "linkedin", "fact": "One external link in the post body cuts median reach about 19% (van der Blom, 1.3M posts); other 2026 analyses say up to ~60%. Link-in-first-comment is reportedly detected too.", "source": "van der Blom Algorithm Insights; Dataslayer 2026", "date": "2026", "confidence": "med"},
+    {"platform": "linkedin", "fact": "LinkedIn is actively detecting and removing engagement pods.", "source": "Forbes (Jodie Cook) 2026-03-18; LinkedIn VP Product Gyanda Sachdeva", "date": "2026-03-18", "confidence": "high"},
+    {"platform": "linkedin", "fact": "Member post analytics API exposes IMPRESSION, MEMBERS_REACHED, POST_SAVE, POST_SEND, COMMENT, FOLLOWER_GAINED_FROM_CONTENT, PROFILE_VIEW_FROM_CONTENT (POST_SAVE/POST_SEND added in 202604).", "source": "learn.microsoft.com LinkedIn Member Post Statistics", "date": "2026-09", "confidence": "high"},
+    {"platform": "linkedin", "fact": "Indian audience peak around 8 AM IST on weekdays (MagicPost, 220,220 Indian posts measured in IST); others say 9-11 AM Tue-Thu.", "source": "magicpost.in best time to post India", "date": "2026", "confidence": "med"},
+    {"platform": "instagram", "fact": "Max 5 hashtags per post since 2025-12-18; hashtags help categorisation/search, not reach.", "source": "@creators announcement; Mosseri", "date": "2025-12-18", "confidence": "high"},
+    {"platform": "instagram", "fact": "Top signals: watch time, likes, sends; sends matter most for non-follower reach. Skip rate (first 3s) replaced view rate in Aug 2025.", "source": "Mosseri statements Jan 2025; creator analytics guides", "date": "2025-2026", "confidence": "high"},
+    {"platform": "instagram", "fact": "Originality enforcement extended to photos and carousels on 2026-04-30; accounts reposting 10+ others' pieces in 30 days lose recommendations.", "source": "exemplary.ai; creatorflow.so summaries of Meta updates", "date": "2026-04-30", "confidence": "med"},
+    {"platform": "instagram", "fact": "AI-generated profile/content labels shipped 2026-08-31: label AI media openly.", "source": "Meta/Instagram update coverage", "date": "2026-08-31", "confidence": "med"},
+    {"platform": "instagram", "fact": "Graph API: Professional account required; 'views' replaced impressions (impressions removed 2025-04-21); ~25 API publishes per 24h.", "source": "Meta developer docs; postzen.dev", "date": "2025-2026", "confidence": "high"},
+    {"platform": "facebook", "fact": "Original Reels prioritised; lightly edited re-uploads (borders, captions, speed changes, logo overlays) deprioritised.", "source": "Meta Newsroom: Rewarding Original Creators on Facebook (2026-03-13)", "date": "2026-03-13", "confidence": "high"},
+    {"platform": "facebook", "fact": "36.6% of US Feed content views in Q2 2026 came from unconnected recommended posts (39.0% in Q1).", "source": "Meta Widely Viewed Content Report Q2 2026", "date": "2026", "confidence": "high"},
+    {"platform": "facebook", "fact": "No API can publish to or read insights from a personal profile; Professional Mode dashboard shows 90 days of reach/engagement/3-second views.", "source": "Meta developer docs (publish_actions removed 2018-04-24); facebook.com/business/help/545581016154662", "date": "2026", "confidence": "high"},
+    {"platform": "x", "fact": "Open-sourced Grok-based ranker (2026-01-20) default weights: like 0.5, repost 1.0, reply 5.0, quote 5.0, share-by-copied-link 20.0, link open 0.2; mutual-follow reply boosts to 20.0. Weights scale predicted probabilities, not raw counts (README note 2026-08-14).", "source": "x-algorithm repo; frameos.studio/blog/twitter-algorithm", "date": "2026-08-14", "confidence": "high"},
+    {"platform": "x", "fact": "API is pay-per-use since free tier ended 2026-02-06: about $0.015 per post created ($0.20 with URL), $0.005 per post read, $0.010 per user read.", "source": "postproxy.dev; postzen.dev X API pricing 2026", "date": "2026", "confidence": "med"}
+  ]
+}

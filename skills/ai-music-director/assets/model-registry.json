@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19",
+  "account_access": "UNVERIFIED",
+  "audio_evaluation": "PENDING",
+  "review_policy": "Refresh primary documentation for current/model-specific claims; this is a dated capability snapshot, not a live account inventory.",
+  "platforms": [
+    {
+      "id": "suno",
+      "models": [
+        "v6",
+        "v6-wild",
+        "v6-mini"
+      ],
+      "interface": "Create; Studio is a distinct editing surface",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "Instrumental and custom-lyric generation",
+        "Vendor differentiates control, experimentation and fast ideation variants",
+        "Studio 2.0, advanced stems and custom-model features require actual access checks"
+      ],
+      "limits": "Do not confuse Manik's normal 800-character instrumental prompt preference with provider limits.",
+      "sources": [
+        {
+          "url": "https://help.suno.com/en/articles/13924801",
+          "published_at": "2026-09-09",
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://help.suno.com/en/articles/13924737",
+          "published_at": "2026-09-09",
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://help.suno.com/en/articles/13670529",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://help.suno.com/en/articles/13925185",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://help.suno.com/en/articles/6141377",
+          "published_at": "2025-06-03",
+          "checked_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "eleven-music",
+      "models": [
+        "music_v1",
+        "music_v2",
+        "music_v2_5"
+      ],
+      "interface": "ElevenCreative Music; documented Music API",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "Prompt OR composition plan",
+        "v2/v2.5 chunk plans",
+        "Prompt-mode force_instrumental",
+        "Documented video-to-music, audio reference and inpainting routes"
+      ],
+      "limits": "Checked plan: up to 30 chunks, 3000-120000ms each, 3000-600000ms total. Select model explicitly; refresh before execution.",
+      "sources": [
+        {
+          "url": "https://elevenlabs.io/docs/api-reference/music/compose",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://elevenlabs.io/docs/eleven-api/guides/how-to/music/composition-plans",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://elevenlabs.io/docs/eleven-creative/products/music",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://elevenlabs.io/docs/api-reference/music/video-to-music",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://elevenlabs.io/docs/overview/capabilities/music/best-practices",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "udio",
+      "models": [],
+      "interface": "Documented song creation UI; no current model ID asserted",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "Custom lyrics and instrumental selection"
+      ],
+      "limits": "Official transition notice says audio, video and stem downloads disabled. Verify current export path before production recommendation.",
+      "sources": [
+        {
+          "url": "https://help.udio.com/en/articles/10716221-create-a-song-with-your-own-lyrics",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership",
+          "published_at": "2026-02-17",
+          "checked_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "stable-audio",
+      "models": [
+        "Stable Audio 3.0"
+      ],
+      "interface": "Hosted product and original model repository are separate surfaces",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "Primarily instrumental",
+        "TrackType prompt hints",
+        "Individual-part generation",
+        "Audio-to-audio, inpainting and continuation"
+      ],
+      "limits": "Not intended for intelligible vocals; duration/compute limits vary by model and surface.",
+      "sources": [
+        {
+          "url": "https://stability.ai/guides/stable-audio-3-prompt-guide",
+          "published_at": "2026-08-18",
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://github.com/Stability-AI/stable-audio-3",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "aiva",
+      "models": [],
+      "interface": "Composition/style/influence workflow; current model ID unspecified",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "Audio/MIDI influence",
+        "Composition editing",
+        "Plan-dependent exports"
+      ],
+      "limits": "Confirm plan and actual delivery permissions; do not generalize marketing ownership statements.",
+      "sources": [
+        {
+          "url": "https://www.aiva.ai/documentation",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "soundraw",
+      "models": [],
+      "interface": "Selection controls, energy blocks and mixer; current model ID unspecified",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "Arrangement length/energy edits",
+        "Instrument-group mixer",
+        "Plan-dependent stems"
+      ],
+      "limits": "Do not invent a free-text lyric field or assume stem entitlement.",
+      "sources": [
+        {
+          "url": "https://docs.channel.io/soundraw-faq/en/articles/edit-a-song-in-soundraw-b6882b09",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        },
+        {
+          "url": "https://docs.channel.io/soundraw-faq/en/articles/Can-I-download-stem-files-6aee13c3",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "beatoven",
+      "models": [],
+      "interface": "Documented public track-composition API; current model ID unspecified",
+      "documentation_status": "DOC_VERIFIED",
+      "capabilities": [
+        "prompt.text with optional format/looping",
+        "Asynchronous task status",
+        "Documented track and stem URLs"
+      ],
+      "limits": "Refresh schema before coding; job completion is not audio or sync review.",
+      "sources": [
+        {
+          "url": "https://github.com/Beatoven/public-api/blob/main/docs/api-spec.md",
+          "published_at": null,
+          "checked_at": "2026-10-19"
+        }
+      ]
+    }
+  ]
+}

@@ -25,3 +25,17 @@ Does the prompt describe a clear arc? Does the ending instrument enter at the ri
 - [ ] Evidence, limitations and approvals distinguished
 - [ ] Domain-specific QA passed with actual artifacts where applicable
 - [ ] No unauthorized actions or fictitious scheduling claims
+
+---
+
+## Mapped skills addon | 1 November 2026
+
+Primary source: [`suno-instrumental-prompts/SKILL.md`](../skills/suno-instrumental-prompts/SKILL.md).
+Original-source files: 3. Standalone archive: [skill.zip](../skill_packages/suno-instrumental-prompts/skill.zip).
+
+- **Compact Styles-field cue compiler**: [`SKILL.md`](../skills/suno-instrumental-prompts/SKILL.md).
+- **UI metadata and icon**: [`agents/openai.yaml`](../skills/suno-instrumental-prompts/agents/openai.yaml), [`assets/icon.svg`](../skills/suno-instrumental-prompts/assets/icon.svg).
+
+Cross-agent ownership: [AGENT_SKILL_MAP.md](../AGENT_SKILL_MAP.md). Newer conversation-scoped rules: [latest overrides](../overlays/LATEST_USER_OVERRIDES_2026-11-01.md).
+
+The copied original skill snapshot and this readable dossier are different evidence levels. Use the latest explicit user instruction, current approved assets, applicable source-skill rules and scoped overrides before older dossier generalizations.

@@ -1,0 +1,40 @@
+{
+  "_note": "Every post is tagged with exactly one hook_type so the retro can learn which hooks win per platform. Templates are starting shapes, not copy to paste.",
+  "hooks": {
+    "result_first": {
+      "what": "Show or state the finished result in the first line / first 2 seconds, then explain.",
+      "templates": ["Ye shot ek insaan ne banaya. Crew zero.", "Final frame first. Process neeche.", "This Haryanvi scene took 40 minutes, start to finish."],
+      "best_for": ["instagram", "facebook", "x"]
+    },
+    "constraint_number": {
+      "what": "A hard number that sounds impossible.",
+      "templates": ["6 boliyan. 1 creator. Har hafte ek episode.", "One person. Six dialects. Weekly.", "Rs 0 shoot budget. 52 episodes."],
+      "best_for": ["linkedin", "x", "instagram"]
+    },
+    "contrarian": {
+      "what": "A defensible take most people in the feed disagree with.",
+      "templates": ["AI promo editors ko replace nahi karega. Brief na likh paane wale editors ko karega.", "Regional content needs better AI than English content, not cheaper AI."],
+      "best_for": ["linkedin", "x"]
+    },
+    "failure_reveal": {
+      "what": "Open on a real failure, then the fix.",
+      "templates": ["Hanuman ji ka chehra har shot mein badal raha tha.", "Our Bhojpuri lipsync was 300ms off. Here's what fixed it."],
+      "best_for": ["linkedin", "instagram", "x"]
+    },
+    "before_after": {
+      "what": "Storyboard or raw generation next to the final frame.",
+      "templates": ["Left: what the model gave me. Right: what went on air.", "Pehle vs baad. Beech mein 4 tools."],
+      "best_for": ["instagram", "facebook", "linkedin"]
+    },
+    "insider_number": {
+      "what": "A cleared internal metric (needs STAGE comms approval).",
+      "templates": ["Completion rate on the Haryanvi cut beat the Hindi cut. Why:", "Devotional promos at 6 AM did X. Here's the pattern."],
+      "best_for": ["linkedin"]
+    },
+    "story_open": {
+      "what": "First-person scene from the origin story.",
+      "templates": ["Mere school mein computer nahi tha.", "First edit I ever got paid for was a fashion ad. Rs 500."],
+      "best_for": ["linkedin", "facebook"]
+    }
+  }
+}

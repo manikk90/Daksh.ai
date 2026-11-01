@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-23",
+  "history_coverage": "Supplied user excerpts for 20–22 October plus two supported history-retrieval summaries (broad window and 21–22 gap); no full raw archive or inspected referenced images, video or audio. Retrieval-query restatements and assistant-only provider/news claims excluded. Earlier music-specific sources retained in their existing lesson/evaluation records.",
+  "schedule_status": "Confirmed existing Daksh coordinator enabled daily at 23:00 Asia/Kolkata; relevant official-source research Sunday 23:00 in the same task. Prior individual Music timer paused per coordinator scheduler verification; configuration does not imply a completed run.",
+  "lessons": [
+    {
+      "id": "MUS-001",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "prior_user_preference_existing_skill",
+      "source": "Suno Styles instrumental preference: normally max 800 characters",
+      "scope": {
+        "platform": "suno",
+        "task": "instrumental_prompt"
+      },
+      "rule": "Deliver one compact pasteable Styles prompt, normally at most 800 characters including spaces.",
+      "boundary": "Not a claimed Suno platform limit; full lyrics and other-platform plans have their own requirements.",
+      "validation": {
+        "kind": "imported_preference",
+        "status": "TEXT_RULE",
+        "evidence": "Existing suno-instrumental-prompts skill and retrieved user preference",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-002",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "prior_user_constraint_existing_skill",
+      "source": "Instrumental-only requests",
+      "scope": {
+        "task": "instrumental"
+      },
+      "rule": "Use supported instrumental control and explicit no vocals, lyrics, spoken word or choir; do not add humming/aalap.",
+      "boundary": "A requested sung theme or bhajan allows its authorized vocals.",
+      "validation": {
+        "kind": "imported_constraint",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied music context and existing instrumental skill",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-003",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "visible_prior_user_correction",
+      "source": "already devotee k pass laddu gopal h ... daily usse baate ... seva",
+      "scope": {
+        "project": "Laddu Gopal",
+        "task": "daily_seva_song"
+      },
+      "rule": "Write from an existing intimate relationship and daily seva, not an unrequested first arrival.",
+      "boundary": "A separate origin/arrival scene or a post-miracle song has its own story moment.",
+      "validation": {
+        "kind": "explicit_user_correction",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied external conversation message 25",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-004",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "visible_prior_user_request_and_editorial_inference",
+      "source": "lyrics enhance kro ... rhyming; repeated lyrics change requests",
+      "scope": {
+        "language": "Hindi",
+        "task": "lyrics"
+      },
+      "rule": "Improve natural idiom, rhyme and singability; full rewrites need fresh content, not forced word endings or repeated stock verses.",
+      "boundary": "Preserve a hook only when the current brief locks it; do not treat assistant proposals as approved.",
+      "validation": {
+        "kind": "text_editorial_rule",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied lyric iterations; forced 'उजाल' is an observed draft defect, not an attributed user quote",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-005",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "visible_prior_user_example",
+      "source": "लड्डू गोपाल मेरा, लड्डू गोपाल / छोटा सा है लला मेरा, करतब करे कमाल",
+      "scope": {
+        "project": "Laddu Gopal",
+        "task": "playful_theme_rhythm"
+      },
+      "rule": "Use the supplied bouncing name-return rhythm and rhyme as the requested template.",
+      "boundary": "It is not approval of all subsequent assistant lyrics and not a required hook for unrelated songs.",
+      "validation": {
+        "kind": "user_example",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied external conversation message 35",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-006",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "visible_prior_user_reference",
+      "source": "music composition thodi jungle book type",
+      "scope": {
+        "task": "playful_adventure"
+      },
+      "rule": "Translate reference into original acoustic folk-adventure bounce, curiosity and ensemble call-response.",
+      "boundary": "Do not copy a tune or impose comic adventure on tragic/devotional-intimate scenes.",
+      "validation": {
+        "kind": "style_translation_rule",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied external conversation message 33",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-007",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "visible_prior_user_revision_request",
+      "source": "iski jgah koi orr composition",
+      "scope": {
+        "task": "alternative_composition"
+      },
+      "rule": "Change musical motif/phrase, groove, ensemble roles and development rather than merely swapping instruments.",
+      "boundary": "A request to add one instrument is a scoped repair, not a new composition.",
+      "validation": {
+        "kind": "editorial_interpretation",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied external conversation message 31",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-008",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "project_fact_and_derived_boundary",
+      "source": "Naina is blind; generic devotional drafts mention school and visual actions",
+      "scope": {
+        "project": "Laddu Gopal",
+        "character": "Naina"
+      },
+      "rule": "Keep Naina's POV and screenplay facts separate from generic title-song lyrics; do not invent school, physical sight or cure.",
+      "boundary": "A declared narrator or inner-vision metaphor can differ when authorized.",
+      "validation": {
+        "kind": "source_consistency_rule",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied project facts, not inspection of every screenplay page",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-009",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "prior_user_scoped_preferences",
+      "source": "Veena added to fall cue; violin/slow tick lullaby; fast epic Vayu destruction",
+      "scope": {
+        "project": "Jai Hanuman",
+        "task": "matching_scene_score"
+      },
+      "rule": "Preserve must-use instruments and emotional state in each matching cue; no premature heroic resolution of grief/rage.",
+      "boundary": "These do not prescribe every cue's instrumentation or tempo.",
+      "validation": {
+        "kind": "imported_preferences",
+        "status": "TEXT_RULE",
+        "evidence": "Supplied project music memory and retrieved instrumental direction",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-010",
+      "version": 2,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "current_user_instruction",
+      "source": "User requested automatic weekly improvement, file updates, lyric patterns, song micro-expression, prompt limits, parameters and smarter work; task resumed.",
+      "scope": {
+        "skill": "ai-music-director",
+        "task": "automatic_improvement"
+      },
+      "rule": "Automatically maintain this skill through daily accessible recent-chat review after 23:00 Asia/Kolkata and relevant official-source research on Sunday at 23:00, using the existing Daksh coordinator; update patterns/profiles only when domain evidence warrants it.",
+      "boundary": "Underlying model training, paid generation, unrelated skills/accounts and unseen-chat surveillance are outside this maintenance instruction.",
+      "validation": {
+        "kind": "text_contract_and_behavioral_tests",
+        "status": "TEXT_RULE",
+        "evidence": "27 automated regression cases and one fresh-context song case; official-source baseline checked",
+        "audio_status": "PENDING",
+        "cadence_check": "Observed enabled daily coordinator binding and Sunday conditional branch; current regression validation pending. No musical or audio improvement inferred."
+      },
+      "amended_at": "2026-10-22",
+      "amendment_source": {
+        "evidence_id": "E17",
+        "source_kind": "direct_current_user",
+        "date": "2026-10-22"
+      }
+    },
+    {
+      "id": "MUS-011",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "current_user_instruction",
+      "source": "User requested automatic weekly improvement, file updates, lyric patterns, song micro-expression, prompt limits, parameters and smarter work; task resumed.",
+      "scope": {
+        "skill": "ai-music-director",
+        "task": "singing_micro_expression"
+      },
+      "rule": "Choose subtle phrase-level singing intent and breath/articulation/dynamic cues; keep technical instructions separate from locked lyric text.",
+      "boundary": "These are singing directions, not universal TTS tags or guaranteed acoustic controls; skip for instrumentals.",
+      "validation": {
+        "kind": "text_contract_and_behavioral_tests",
+        "status": "TEXT_RULE",
+        "evidence": "27 automated regression cases and one fresh-context song case; official-source baseline checked",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-012",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "current_user_instruction",
+      "source": "User requested automatic weekly improvement, file updates, lyric patterns, song micro-expression, prompt limits, parameters and smarter work; task resumed.",
+      "scope": {
+        "skill": "ai-music-director",
+        "task": "smart_parameters"
+      },
+      "rule": "Handle mode, prompt budgets, parameter support, exact ordered lyrics and repeated refrains automatically, checking the actual submitted request.",
+      "boundary": "Unknown provider caps/ranges remain pending; never truncate locks or silently change singing to instrumental.",
+      "validation": {
+        "kind": "text_contract_and_behavioral_tests",
+        "status": "TEXT_RULE",
+        "evidence": "27 automated regression cases and one fresh-context song case; official-source baseline checked",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-013",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-19",
+      "source_kind": "current_user_instruction",
+      "source": "User requested automatic weekly improvement, file updates, lyric patterns, song micro-expression, prompt limits, parameters and smarter work; task resumed.",
+      "scope": {
+        "skill": "ai-music-director",
+        "task": "fast_execution"
+      },
+      "rule": "Use FAST for scoped edits, COMPOSE for new music and REVIEW for maintenance/unknown controls; reuse relevant context and repair the smallest cause.",
+      "boundary": "Speed must not skip current-source verification for new capability claims or actual audio review when required.",
+      "validation": {
+        "kind": "text_contract_and_behavioral_tests",
+        "status": "TEXT_RULE",
+        "evidence": "27 automated regression cases and one fresh-context song case; official-source baseline checked",
+        "audio_status": "PENDING"
+      }
+    },
+    {
+      "id": "MUS-014",
+      "version": 1,
+      "status": "active",
+      "recorded_at": "2026-10-30",
+      "source_kind": "current_user_instruction",
+      "source": "Supplied Ai music user excerpt: start sad/end grand; sadder start; ending grander/epic; then flute after it. Dated30October retrieved user-summary corroborates cue request; assistant percentages, silent beats and orchestration are drafts, not new user locks.",
+      "scope": {
+        "skill": "ai-music-director",
+        "project": "Laddu Gopal",
+        "task": "30October sad-to-epic-reveal cue; exact cue/scene ID not supplied"
+      },
+      "rule": "For this cue preserve the sad opening through later ending-only grandeur revisions. Escalate the requested reveal to an epic peak, then place the requested flute tail after that peak. Preserve unaffected existing cue constraints and approved words.",
+      "boundary": "Not a default for all Laddu Gopal music; no invented timing/75-percent allocation, silence, exact instrument stack or measured musical success. A different cue or newer explicit opening rewrite follows its own brief.",
+      "example": "Last ko aur epic, phir flute: keep the sad start; epic reveal precedes the flute release.",
+      "counterexample": "A separate playful theme stays playful; do not import this sad opening or mandatory flute tail.",
+      "validation": {
+        "kind": "source_scope_text",
+        "status": "TEXT_RULE",
+        "evidence": "Direct supplied user chain and current-source comparison; music resource/runtime validators PASS; independent /root/qc30 six text boundary cases; root verified premature save wording removed. AUDIO_PENDING.",
+        "audio_status": "PENDING"
+      }
+    }
+  ],
+  "research_candidates": [],
+  "evaluations": [
+    {
+      "id": "MUS-EVAL-001",
+      "checked_at": "2026-10-19",
+      "kind": "fresh_context_behavioral_text",
+      "task": "Jai Hanuman grief instrumental; bansuri, sarangi and veena; one Suno Styles prompt; max 800 characters; unresolved ending",
+      "result": "PASS",
+      "evidence": "Separate fresh-context run returned one copyable prompt with all three instruments, a restrained arc and unresolved ending. music_qc.py verified length and explicit instrumental exclusions.",
+      "audio_review": "NOT_PERFORMED"
+    },
+    {
+      "id": "MUS-EVAL-002",
+      "checked_at": "2026-10-19",
+      "kind": "fresh_context_behavioral_text",
+      "task": "12-16-line Laddu Gopal theme; retain two supplied hook lines; existing seva relationship; young-girl vocal; original playful adventure",
+      "result": "PASS",
+      "evidence": "Separate fresh-context run returned 12 lyric lines in a separate field from Styles, kept both hook lines, used daily care/conversation and bedtime details, and avoided an arrival story or invented Naina school/eyesight facts. Parent review checked natural paired rhymes and request fit.",
+      "audio_review": "NOT_PERFORMED"
+    },
+    {
+      "id": "MUS-EVAL-003",
+      "checked_at": "2026-10-19",
+      "kind": "fresh_context_behavioral_text_and_json_contract",
+      "task": "Eleven Music v2.5 45-second instrumental plan; miracle at 27 seconds; final 6 seconds calm",
+      "result": "PASS",
+      "evidence": "Separate fresh-context run produced chunks of 18000, 9000, 12000 and 6000ms, no prompt-only force control, and no-voice exclusions in every chunk. music_qc.py validated the request; parent checks verified 45000ms total, reveal boundary and calm tail. Rendered sync remained explicitly untested.",
+      "audio_review": "NOT_PERFORMED"
+    },
+    {
+      "id": "MUS-EVAL-004",
+      "checked_at": "2026-10-19",
+      "kind": "deterministic_contract_and_boundary_checks",
+      "task": "music_qc.py correctness and resource integrity",
+      "result": "PASS",
+      "evidence": "Nine cases passed: valid instrumental prompt, missing exclusions rejected, overlength rejected, bundled plan accepted, mixed prompt/plan rejected, prompt-only control on plan rejected, overlong chunk rejected, valid prompt mode accepted, saved resources validated. Relative resource links, placeholders and UI metadata were also checked.",
+      "audio_review": "NOT_PERFORMED"
+    },
+    {
+      "id": "MUS-EVAL-005",
+      "checked_at": "2026-10-19",
+      "kind": "automatic_runtime_regression_and_fresh_context_text",
+      "task": "Weekly learning, singing expressions, parameter budgets, payload/lyric lock preservation",
+      "result": "PASS",
+      "evidence": "27 regression cases passed. Read-only fresh review identified wrapper-versus-payload omissions, ordering/repetition, mode bypasses and parameter types; fixes added with focused tests. Separate 8-line lyric case retained both hook lines, separated expressions and produced 385-character Styles. Automation creation confirmed enabled; no scheduled run or audio generation claimed.",
+      "audio_review": "NOT_PERFORMED"
+    }
+  ],
+  "chat_reviews": [
+    {
+      "id": "CHAT-20261022",
+      "date": "2026-10-22",
+      "type": "accessible_recent_chat_review",
+      "status": "completed_and_saved_for_stated_coverage",
+      "coverage_start": "2026-10-20",
+      "coverage_end": "2026-10-23",
+      "coverage": "Supplied user excerpts for 20–22 October plus two supported history-retrieval summaries (broad window and 21–22 gap); no full raw archive or inspected referenced images, video or audio. Retrieval-query restatements and assistant-only provider/news claims excluded.",
+      "evidence_policy": {
+        "direct_user_excerpts": "E01–E09, E11–E16 retain supplied excerpt provenance; no inspected media inferred.",
+        "mixed_excerpt_summary": "E10 contains both supplied excerpt and retrieved summary; exact prior chat/one-take media unavailable.",
+        "direct_current_user": "E17 authorizes daily/Sunday cadence.",
+        "assistant_claims": "Not adopted as user approval, current model facts or measured outcomes.",
+        "media": "Referenced images/videos/audio unavailable and uninspected."
+      },
+      "adopted": [],
+      "deduplicated": [
+        "MUS-010 automatic improvement cadence updated in place to current E17 instruction; no duplicate automatic-learning lesson.",
+        "E10/E11 are spoken delivery and scene performance; they do not establish singing controls or musical tempo.",
+        "E01–E09/E12–E16 contain image, staging, identity, source attribution and revision evidence; no new composition, lyric, instrument, motif, audio-test or provider-contract correction.",
+        "The explicit 23 October frame-local binding correction concerns visual prompt/handoff scope; it adds no composition, lyric, singing-control or musical-performance evidence. Preserve separate offscreen audio intent under existing source/story truth rules."
+      ],
+      "pending": [
+        "Existing audio/native/listening comparisons remain pending. Existing model/control source dates and all previous musical evaluations remain unchanged."
+      ],
+      "fresh_internet_research_performed": false,
+      "audio_generation_performed": false,
+      "audio_tests_performed": false,
+      "text_checks": "PASS_TEXT_ONLY",
+      "persistence": {
+        "status": "saved",
+        "confirmed_commit": "650410a51b8b3a99d8f028cd15def7e7b7a91d55"
+      },
+      "rollback": {
+        "base_commit": "ad30015f5cebe04a421d718a650b484a66754a69",
+        "condition": "Revert only a regressing internal candidate; retain user locks, historical research/audio checkpoints and unrelated edits."
+      },
+      "finding": "NO_NEW_DOMAIN_LEARNING",
+      "extended_on": "2026-10-23",
+      "additional_sources": [
+        {
+          "id": "CURRENT-20261023-FRAME-LOCAL",
+          "date": "2026-10-23",
+          "source_kind": "explicit_current_user_correction_relayed_by_coordinator",
+          "source": "Latest 23 October current-user correction relayed by root during this invocation; full original message is not duplicated here.",
+          "instruction": "Each frame/prompt uses only relevant current on-frame character/prop/location bindings. Keep explicitly requested offscreen dialogue/source separate, preserving exact words and speaker.",
+          "media_inspection": "Not performed; this is a text/handoff boundary."
+        }
+      ],
+      "completed_on": "2026-10-23",
+      "text_check_evidence": "32 regressions including5 cadence/confirmation boundary cases, runtime/resource validation passed; no audio/media test.",
+      "save_evidence": {
+        "status": "saved",
+        "confirmed_feature_commit": "650410a51b8b3a99d8f028cd15def7e7b7a91d55",
+        "push_observed": true,
+        "verified_at": "2026-10-23T20:40:56.786110+05:30",
+        "scope": "Bounded20–23October chat review; no new live research or media validation."
+      }
+    }
+  ],
+  "last_successful_chat_review_checkpoint": {
+    "reviewed_on": "2026-10-23",
+    "coverage_start": "2026-10-20",
+    "coverage_end": "2026-10-23",
+    "coverage": "Supplied recent user excerpts, two bounded history retrievals for20–22October and a targeted23October QC lookup; exact current user correction. Not a complete raw-chat archive. Original images/videos/audio not inspected.",
+    "skill_save": {
+      "status": "saved",
+      "confirmed_feature_commit": "650410a51b8b3a99d8f028cd15def7e7b7a91d55",
+      "push_observed": true,
+      "verified_at": "2026-10-23T20:40:56.786110+05:30",
+      "scope": "Bounded20–23October chat review; no new live research or media validation."
+    },
+    "media_tests": 0,
+    "research_checkpoint_advanced": false
+  },
+  "last_partial_chat_review": {
+    "id": "nightly-chat-20261030-2300",
+    "reviewed_on": "2026-10-30",
+    "scheduled_for": "2026-10-30T23:00:00+05:30",
+    "started_at": "2026-10-30T23:04:27.188688+05:30",
+    "window": {
+      "from": "2026-10-29T23:04:24+05:30",
+      "through": "2026-10-30T23:04:28+05:30"
+    },
+    "coverage_kind": "partial",
+    "coverage": "Broad29–30October retrieval, focused30October gap query and23–28 retained-gap query; supplied direct user excerpts/current instructions and current saved skill/brain records. Earlier partial23–29 review reused. Query restatements, assistant briefings/output claims and out-of-window results excluded as new user evidence. Raw archive and source/output media unavailable.",
+    "complete_history_checkpoint_advanced": false,
+    "research_checkpoint_advanced": false,
+    "research_review_performed": false,
+    "branch": "Friday chat-only; separate Friday audio briefing is assistant-reported, not fresh adopted documentation evidence.",
+    "pending": [
+      "Unretrieved raw chats and sparse dates/ranges retained",
+      "Original source/output photo, exact crop and bird visibility inspection",
+      "Actual audio quality, sync, pending research/control/customer tests",
+      "Writer separately-owned paused/unapplied result retained; not resumed"
+    ],
+    "media_tests": 0,
+    "timer_changes": false,
+    "validation": {
+      "preservation_checks": 28,
+      "structures_valid": 3,
+      "music_qc": "PASS resources7platforms14lessons",
+      "music_runtime_validate": "PASS",
+      "media_tests": 0,
+      "independent_text_cases": 6,
+      "independent_review": "/root/qc30",
+      "status": "passed",
+      "limits": "Source/text scope only; no image/audio/app quality or complete raw-history review"
+    },
+    "persistence_contract": "Valid after scoped skill save/verification and canonical brain replacement; raw-history/research checkpoints retained.",
+    "agent_outcomes": {
+      "Daksh": "Remove stale recovery wording from current routing guidance; live state precedes historical restoration. No new business fact/task.",
+      "Director": "Current frame-local/dialogue/identity rules retained; no new source-backed correction.",
+      "Dubbing": "No new direct correction; Friday assistant feature report is not adoption evidence.",
+      "Music/Suno": "MUS-014 scoped cue arc added for validation/persistence; helper unchanged.",
+      "Socials": "Selected duck-photo zoom/light lesson; output inspection remains pending.",
+      "maniik": "No new direct correction; do not promote assistant deadline/support summaries into confirmed plan or user assignment."
+    }
+  },
+  "partial_chat_review_history": [
+    {
+      "id": "nightly-chat-20261027-2300",
+      "reviewed_on": "2026-10-27",
+      "window": {
+        "from": "2026-10-23T00:00:00+05:30",
+        "through": "2026-10-27T23:00:00+05:30"
+      },
+      "coverage_kind": "partial_accessible_summary_and_supplied_excerpt_review",
+      "coverage": "Broad23–27October query returned23October summaries; partition24–25 returned maintenance/briefing reports and query echoes, excluded as new correction evidence; partition26–27 returned dated correction summaries. Current supplied user excerpts/memories included. No complete raw archive or original media inspected.",
+      "pending": [
+        "Unretrieved raw conversations across23–27October",
+        "Original media and exact marked-image motorcycle/blocking mapping",
+        "Exact target bindings for23October camera/crowd variants"
+      ],
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "live_web_research": false,
+      "media_tests": 0,
+      "persistence_contract": "Durable only when scoped skill save succeeds; external receipt authoritative.",
+      "agent": "music",
+      "outcome": "No new music-domain lesson; Suno helper unchanged; audio candidates retained.",
+      "validation": {
+        "software_tests": 139,
+        "failed": 0,
+        "director_ledger": "VALID33lessons",
+        "five_skill_structures": "PASS",
+        "media_tests": 0,
+        "independent_text_review": "Six decisions checked by /root/text_review; three template inconsistencies corrected and independently rechecked. No media tests."
+      }
+    },
+    {
+      "id": "nightly-chat-20261029-2300",
+      "reviewed_on": "2026-10-29",
+      "scheduled_for": "2026-10-29T23:00:00+05:30",
+      "started_at": "2026-10-29T23:04:22.537005+05:30",
+      "window": {
+        "from": "2026-10-23",
+        "through": "2026-10-29T23:04:24+05:30"
+      },
+      "coverage_kind": "partial_accessible_excerpts_and_retrieved_summaries",
+      "coverage": "One broad23–29October retrieval,24–26 and27–29 partitions, focused28–29 specialist/maniik gap check; supplied26–29 direct excerpts. Query restatements, out-of-window16October results and assistant-only claims excluded as correction evidence. No full raw chats or original media inspected.",
+      "source_types": {
+        "direct_user": "Current instructions and supplied user excerpts; global maintenance limits are run authority, not new domain facts.",
+        "retrieved_user": "Dated user-message summaries; not verbatim raw transcripts.",
+        "assistant_reports": "Historical maintenance, briefing, synthesis and output claims; deduplicated against saved records, never promoted to user approval.",
+        "inspected_outputs": "Current saved skills/records, current brain and live automation receipts; no production media."
+      },
+      "complete_history_checkpoint_advanced": false,
+      "research_checkpoint_advanced": false,
+      "research_review_performed": false,
+      "branch": "Thursday chat-only; manual29October research records preserved",
+      "media_tests": 0,
+      "timer_changes": false,
+      "pending": [
+        "Unretrieved raw chats and sparse dates/ranges; no account-complete coverage",
+        "Original image/video/audio and exact marked-image mappings",
+        "Existing unresolved research candidates, pronunciation conflicts, human calibration and customer/media tests"
+      ],
+      "validation": {
+        "kind": "record_structure_and_source_scope",
+        "status": "passed",
+        "independent_domain_review": "/root/specialist_review; read-only current saved specialist records; no new missing domain lessons",
+        "record_preservation_assertions": 55,
+        "skill_structures_valid": 6,
+        "director_ledger": "VALID34lessons",
+        "independent_integration_review": "Read-only /root/integration_qc: checkpoint/lesson/target scope passed; historical Writer fields moved out of current binding before save; no media pass.",
+        "media_tests": 0
+      },
+      "persistence_contract": "This partial-review record is durable only after scoped save and remote verification; complete-history and research checkpoints retained.",
+      "agent": "ai-music-director",
+      "outcome": "No new domain lesson; existing controls and pending audio tests retained. Suno helper inspected by read-only worker, unchanged."
+    }
+  ]
+}
