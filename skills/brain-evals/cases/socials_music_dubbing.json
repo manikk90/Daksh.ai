@@ -6,17 +6,50 @@
     "lock": "skills/ai-socials/SKILL.md V5.1 (shared Instagram/Facebook caption, Pinterest Title + Description separate)",
     "task": "captions do\n\nImage: ek AI-generated still jisme ek andhi bachchi mandir ki seedhiyon par baithi hai, subah ki dhoop, devotional mood. Mera AI film project ka BTS share karna hai.",
     "checks": [
-      {"type": "regex_present", "pattern": "Pinterest[^\\n]*Title", "flags": "i"},
-      {"type": "regex_present", "pattern": "Description", "flags": "i"},
-      {"type": "regex_present", "pattern": "Instagram\\s*(/|\\+|&|and)\\s*Facebook|Facebook\\s*(/|\\+|&|and)\\s*Instagram", "flags": "i"},
-      {"type": "regex_absent", "pattern": "^[#*\\s]*Facebook[*\\s]*:?[*\\s]*$", "flags": "i"},
-      {"type": "regex_present", "pattern": "LinkedIn", "flags": "i"},
-      {"type": "regex_present", "pattern": "WhatsApp", "flags": "i"},
-      {"type": "regex_present", "pattern": "(^|\\W)X(\\W|$)|Twitter", "flags": ""}
+      {
+        "type": "regex_present",
+        "pattern": "Pinterest[\\s\\S]{0,80}?Title",
+        "flags": "i"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "Title[\\s\\S]*Description",
+        "flags": "i"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "Instagram\\s*(/|\\+|&|and)\\s*Facebook|Facebook\\s*(/|\\+|&|and)\\s*Instagram",
+        "flags": "i"
+      },
+      {
+        "type": "regex_absent",
+        "pattern": "^[#*\\s]*Facebook[*\\s]*:?[*\\s]*$",
+        "flags": "i"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "LinkedIn",
+        "flags": "i"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "WhatsApp",
+        "flags": "i"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "(^|\\W)X(\\W|$)|Twitter",
+        "flags": ""
+      }
     ],
     "fixtures": {
-      "pass": ["**X:** One frame, one prayer. Building a devotional AI film shot by shot.\n\n**LinkedIn:** Continuity is the hard part of AI film...\n\n**Pinterest Title:** Devotional AI film still, temple steps at dawn\n**Pinterest Description:** A blind girl sits on temple steps in soft morning light...\n\n**Instagram/Facebook:** Subah ki dhoop, mandir ki seedhiyan, aur ek chhoti si dua.\n\n**WhatsApp:** Naye project ki ek jhalak"],
-      "fail": ["**X:** One frame, one prayer.\n\n**LinkedIn:** Continuity is hard...\n\n**Pinterest:** Devotional AI film still at dawn\n\n**Instagram:**\nSubah ki dhoop...\n\n**Facebook:**\nMandir ki seedhiyan...\n\n**WhatsApp:** Naye project ki jhalak"]
+      "pass": [
+        "**X:** One frame, one prayer. Building a devotional AI film shot by shot.\n\n**LinkedIn:** Continuity is the hard part of AI film...\n\n**Pinterest Title:** Devotional AI film still, temple steps at dawn\n**Pinterest Description:** A blind girl sits on temple steps in soft morning light...\n\n**Instagram/Facebook:** Subah ki dhoop, mandir ki seedhiyan, aur ek chhoti si dua.\n\n**WhatsApp:** Naye project ki ek jhalak",
+        "**X:** x\n\n**LinkedIn:** y\n\n**Pinterest**\n\n**Title:**\nTemple steps at dawn\n\n**Description:**\nA blind girl...\n\n**Instagram / Facebook**\nSubah ki dhoop\n\n**WhatsApp**\nJhalak"
+      ],
+      "fail": [
+        "**X:** One frame, one prayer.\n\n**LinkedIn:** Continuity is hard...\n\n**Pinterest:** Devotional AI film still at dawn\n\n**Instagram:**\nSubah ki dhoop...\n\n**Facebook:**\nMandir ki seedhiyan...\n\n**WhatsApp:** Naye project ki jhalak"
+      ]
     }
   },
   {
@@ -26,12 +59,23 @@
     "lock": "skills/ai-socials/SKILL.md (bare 'caption do' = one Instagram caption)",
     "task": "caption do\n\nImage: AI-generated portrait, ek bachchi diya jala rahi hai, warm light.",
     "checks": [
-      {"type": "regex_absent", "pattern": "LinkedIn|Pinterest|WhatsApp|^\\W*X\\W*:", "flags": "i"},
-      {"type": "max_chars", "max": 600}
+      {
+        "type": "regex_absent",
+        "pattern": "LinkedIn|Pinterest|WhatsApp|^\\W*X\\W*:",
+        "flags": "i"
+      },
+      {
+        "type": "max_chars",
+        "max": 600
+      }
     ],
     "fixtures": {
-      "pass": ["Ek diya, aur poori raat ka andhera chhota pad gaya. ✨ #AIFilmmaking"],
-      "fail": ["**Instagram:** Ek diya...\n**LinkedIn:** Lighting in AI film...\n**WhatsApp:** Diya"]
+      "pass": [
+        "Ek diya, aur poori raat ka andhera chhota pad gaya. ✨ #AIFilmmaking"
+      ],
+      "fail": [
+        "**Instagram:** Ek diya...\n**LinkedIn:** Lighting in AI film...\n**WhatsApp:** Diya"
+      ]
     }
   },
   {
@@ -41,13 +85,28 @@
     "lock": "skills/suno-instrumental-prompts/SKILL.md (one Styles prompt, normally <= 800 chars, instrumental)",
     "task": "Laddu Gopal promo ke liye Suno Styles prompt do: sad intimate opening, phir dheere dheere bada devotional reveal, end mein expressive bansuri. Vocals nahi chahiye.",
     "checks": [
-      {"type": "max_chars", "max": 800},
-      {"type": "regex_present", "pattern": "no vocals|instrumental|without vocals", "flags": "i"},
-      {"type": "regex_present", "pattern": "bansuri|flute", "flags": "i"}
+      {
+        "type": "max_chars",
+        "max": 800
+      },
+      {
+        "type": "regex_present",
+        "pattern": "no vocals|instrumental|without vocals",
+        "flags": "i"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "bansuri|flute",
+        "flags": "i"
+      }
     ],
     "fixtures": {
-      "pass": ["Original cinematic devotional underscore, intimate grief opening with restrained bowed strings and tanpura drone; gradually swelling percussion and choir-like pads into a vast Krishna reveal; release into an expressive bansuri solo; spacious stereo, warm low end, no vocals."],
-      "fail": ["Devotional pop song with female lead singing Hindi lyrics, Verse 1: Kanha mere aao, chorus with harmonies, flute fills."]
+      "pass": [
+        "Original cinematic devotional underscore, intimate grief opening with restrained bowed strings and tanpura drone; gradually swelling percussion and choir-like pads into a vast Krishna reveal; release into an expressive bansuri solo; spacious stereo, warm low end, no vocals."
+      ],
+      "fail": [
+        "Devotional pop song with female lead singing Hindi lyrics, Verse 1: Kanha mere aao, chorus with harmonies, flute fills."
+      ]
     }
   },
   {
@@ -57,13 +116,26 @@
     "lock": "skills/ai-dubbing/SKILL.md (preserve words/order; add tags only)",
     "task": "Is line ko ElevenLabs ke liye emotion tags ke saath ready karo, shabd bilkul mat badlo, Hindi Devanagari mein: \"माँ, मुझे डर लग रहा है।\" Character: Naina, rote hue.",
     "checks": [
-      {"type": "preserves_words", "text": "माँ, मुझे डर लग रहा है।"},
-      {"type": "regex_present", "pattern": "\\[[^\\]]+\\]"},
-      {"type": "regex_absent", "pattern": "मैया"}
+      {
+        "type": "preserves_words",
+        "text": "माँ, मुझे डर लग रहा है।"
+      },
+      {
+        "type": "regex_present",
+        "pattern": "\\[[^\\]]+\\]"
+      },
+      {
+        "type": "regex_absent",
+        "pattern": "मैया"
+      }
     ],
     "fixtures": {
-      "pass": ["[crying softly, voice trembling] माँ, मुझे डर लग रहा है।"],
-      "fail": ["[crying] मैया, मुझे बहुत डर लग रहा है।"]
+      "pass": [
+        "[crying softly, voice trembling] माँ, मुझे डर लग रहा है।"
+      ],
+      "fail": [
+        "[crying] मैया, मुझे बहुत डर लग रहा है।"
+      ]
     }
   }
 ]

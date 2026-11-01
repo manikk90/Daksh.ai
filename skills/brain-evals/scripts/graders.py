@@ -17,8 +17,25 @@ FENCE_RE = re.compile(r"^\s*```")
 
 
 def strip_fences(text: str) -> str:
-    """Drop markdown code-fence lines so prompts inside a copyable block are graded as content."""
-    return "\n".join(line for line in text.splitlines() if not FENCE_RE.match(line)).strip("\n")
+    """Return the deliverable to grade.
+
+    If the output has fenced code blocks, the executable prompt is their content: notes the agent
+    writes outside the block (pending tags, QC remarks) are not part of the pasted prompt, so they
+    are excluded. Without fences, the whole text is graded.
+    """
+    blocks, inside, cur = [], False, []
+    for line in text.splitlines():
+        if FENCE_RE.match(line):
+            if inside:
+                blocks.append("\n".join(cur))
+                cur = []
+            inside = not inside
+            continue
+        if inside:
+            cur.append(line)
+    if inside and cur:
+        blocks.append("\n".join(cur))
+    return ("\n\n".join(blocks) if blocks else text).strip("\n")
 
 
 def _flags(spec: dict) -> int:
@@ -33,8 +50,9 @@ def _nonempty_lines(text: str) -> list[str]:
 
 
 def words(text: str) -> list[str]:
-    """Spoken-word tokens: bracketed delivery tags removed, case-folded."""
-    return [w.casefold() for w in WORD_RE.findall(re.sub(r"\[[^\]]*\]", " ", text))]
+    """Spoken-word tokens: [tags] and (delivery cues) removed, case-folded."""
+    text = re.sub(r"\[[^\]]*\]|\([^)]*\)", " ", text)
+    return [w.casefold() for w in WORD_RE.findall(text)]
 
 
 def _contains_sequence(hay: list[str], needle: list[str]) -> bool:

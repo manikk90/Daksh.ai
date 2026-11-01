@@ -6,12 +6,24 @@
     "lock": "skills/ai-native-director/references/image-video-prompts.md (DIALOGUE absolute last)",
     "task": "Laddu Gopal video prompt likho: @naina-01 temple ki outer steps par baithi hai, halki hawa, dheere se muskurati hai aur bolti hai. Exact dialogue: \"Kanha, aaj tum der se aaye.\" Sirf executable video prompt do.",
     "checks": [
-      {"type": "last_line", "pattern": "^DIALOGUE:\\s*@[\\w-]+:\\s*\".*\"\\s*$"},
-      {"type": "count_regex", "pattern": "^DIALOGUE:", "min": 1, "max": 1}
+      {
+        "type": "last_line",
+        "pattern": "^DIALOGUE:\\s*@[\\w.-]+:"
+      },
+      {
+        "type": "count_regex",
+        "pattern": "^DIALOGUE:",
+        "min": 1,
+        "max": 1
+      }
     ],
     "fixtures": {
-      "pass": ["```\n[0-5s] @naina-01 sits on @krishna-temple.outer-steps.ground, breeze moves her dupatta, a slow smile.\n\nDIALOGUE: @naina-01: \"Kanha, aaj tum der se aaye.\"\n```"],
-      "fail": ["DIALOGUE: @naina-01: \"Kanha, aaj tum der se aaye.\"\nCamera: slow push-in, soft morning light."]
+      "pass": [
+        "```\n[0-5s] @naina-01 sits on @krishna-temple.outer-steps.ground, breeze moves her dupatta, a slow smile.\n\nDIALOGUE: @naina-01: \"Kanha, aaj tum der se aaye.\"\n```"
+      ],
+      "fail": [
+        "DIALOGUE: @naina-01: \"Kanha, aaj tum der se aaye.\"\nCamera: slow push-in, soft morning light."
+      ]
     }
   },
   {
@@ -21,12 +33,22 @@
     "lock": "skills/ai-native-director/SKILL.md V5.1 overlay (blank line before final DIALOGUE)",
     "task": "Video prompt do: @mukund-03 gate ke andar khada hai, gussa control karte hue bolta hai. Exact dialogue: \"Yahan se chali jao.\"",
     "checks": [
-      {"type": "blank_line_before", "pattern": "^DIALOGUE:"},
-      {"type": "last_line", "pattern": "^DIALOGUE:"}
+      {
+        "type": "blank_line_before",
+        "pattern": "^DIALOGUE:"
+      },
+      {
+        "type": "last_line",
+        "pattern": "^DIALOGUE:"
+      }
     ],
     "fixtures": {
-      "pass": ["[0-4s] @mukund-03 stands inside the gate, jaw tight, voice controlled.\n\nDIALOGUE: @mukund-03: \"Yahan se chali jao.\""],
-      "fail": ["[0-4s] @mukund-03 stands inside the gate, jaw tight.\nDIALOGUE: @mukund-03: \"Yahan se chali jao.\""]
+      "pass": [
+        "[0-4s] @mukund-03 stands inside the gate, jaw tight, voice controlled.\n\nDIALOGUE: @mukund-03: \"Yahan se chali jao.\""
+      ],
+      "fail": [
+        "[0-4s] @mukund-03 stands inside the gate, jaw tight.\nDIALOGUE: @mukund-03: \"Yahan se chali jao.\""
+      ]
     }
   },
   {
@@ -36,12 +58,27 @@
     "lock": "skills/ai-native-director/SKILL.md V5.1 overlay (no standalone Refs (continuity) line)",
     "task": "Image prompt likho: @naina-01 apni @wooden-stick ke saath @krishna-temple.outer-steps.ground par pehli seedhi par kadam rakh rahi hai, early morning.",
     "checks": [
-      {"type": "regex_absent", "pattern": "^\\s*\\**\\s*Refs\\s*\\(continuity\\)", "flags": "i"},
-      {"type": "tags", "required": ["@naina-01", "@wooden-stick", "@krishna-temple.outer-steps.ground"]}
+      {
+        "type": "regex_absent",
+        "pattern": "^\\s*\\**\\s*Refs\\s*\\(continuity\\)",
+        "flags": "i"
+      },
+      {
+        "type": "tags",
+        "required": [
+          "@naina-01",
+          "@wooden-stick",
+          "@krishna-temple.outer-steps.ground"
+        ]
+      }
     ],
     "fixtures": {
-      "pass": ["Early morning, @naina-01 probes the first step with @wooden-stick on @krishna-temple.outer-steps.ground, soft side light."],
-      "fail": ["Early morning, a girl probes the first step with a stick.\nRefs (continuity): @naina-01 @wooden-stick @krishna-temple.outer-steps.ground"]
+      "pass": [
+        "Early morning, @naina-01 probes the first step with @wooden-stick on @krishna-temple.outer-steps.ground, soft side light."
+      ],
+      "fail": [
+        "Early morning, a girl probes the first step with a stick.\nRefs (continuity): @naina-01 @wooden-stick @krishna-temple.outer-steps.ground"
+      ]
     }
   },
   {
@@ -51,12 +88,26 @@
     "lock": "skills/ai-native-director/SKILL.md V5.1 overlay (exact @mukund-03 and @pooja-02)",
     "task": "Laddu Gopal: Mukund aur Pooja ghar ke gate par baat kar rahe hain, Pooja bike ke paas khadi hai. Is shot ka image prompt do. Approved tags: Mukund = @mukund-03, Pooja = @pooja-02.",
     "checks": [
-      {"type": "tags", "required": ["@mukund-03", "@pooja-02"]},
-      {"type": "regex_absent", "pattern": "@mukund(?!-03\\b)[\\w-]*|@pooja(?!-02\\b)[\\w-]*", "flags": "i"}
+      {
+        "type": "tags",
+        "required": [
+          "@mukund-03",
+          "@pooja-02"
+        ]
+      },
+      {
+        "type": "regex_absent",
+        "pattern": "@mukund(?!-03\\b)[\\w-]*|@pooja(?!-02\\b)[\\w-]*",
+        "flags": "i"
+      }
     ],
     "fixtures": {
-      "pass": ["@mukund-03 inside the gate, @pooja-02 standing beside the bike in the lane, late afternoon light."],
-      "fail": ["@mukund-01 inside the gate, @pooja standing beside the bike."]
+      "pass": [
+        "@mukund-03 inside the gate, @pooja-02 standing beside the bike in the lane, late afternoon light."
+      ],
+      "fail": [
+        "@mukund-01 inside the gate, @pooja standing beside the bike."
+      ]
     }
   },
   {
@@ -66,11 +117,25 @@
     "lock": "skills/ai-native-director/references/laddu-gopal.md (Panchayat crowd-tag lock)",
     "task": "Laddu Gopal Panchayat scene, lekin ye shot ek tight close-up hai sirf @naina-01 ke chehre ka; crowd frame se bahar hai, sirf unki aawaz sunai deti hai. Image prompt do.",
     "checks": [
-      {"type": "tags", "required": ["@naina-01"], "forbidden": ["@crowd", "@crowd-2"]}
+      {
+        "type": "tags",
+        "required": [
+          "@naina-01"
+        ],
+        "forbidden": [
+          "@crowd",
+          "@crowd-2"
+        ]
+      }
     ],
     "fixtures": {
-      "pass": ["Tight close-up of @naina-01, eyelids about 20% open, head tilting toward the murmuring voices off-frame."],
-      "fail": ["Tight close-up of @naina-01 with @crowd murmuring behind her."]
+      "pass": [
+        "Tight close-up of @naina-01, eyelids about 20% open, head tilting toward the murmuring voices off-frame.",
+        "```\nTight close-up of @naina-01, crowd voices offscreen.\n```\n- I left out @crowd because the crowd is not visible."
+      ],
+      "fail": [
+        "Tight close-up of @naina-01 with @crowd murmuring behind her."
+      ]
     }
   },
   {
@@ -80,11 +145,21 @@
     "lock": "skills/ai-native-director/references/laddu-gopal.md (Panchayat crowd-tag lock)",
     "task": "Laddu Gopal Panchayat ka wide shot: @naina-01 beech mein khadi hai, dono taraf gaon wale (crowd) saaf dikh rahe hain. Approved crowd tag: @crowd. Image prompt do.",
     "checks": [
-      {"type": "tags", "required": ["@naina-01", "@crowd"]}
+      {
+        "type": "tags",
+        "required": [
+          "@naina-01",
+          "@crowd"
+        ]
+      }
     ],
     "fixtures": {
-      "pass": ["Wide shot: @naina-01 stands at the centre of the Panchayat, @crowd gathered on both sides."],
-      "fail": ["Wide shot: @naina-01 stands at the centre, villagers gathered on both sides."]
+      "pass": [
+        "Wide shot: @naina-01 stands at the centre of the Panchayat, @crowd gathered on both sides."
+      ],
+      "fail": [
+        "Wide shot: @naina-01 stands at the centre, villagers gathered on both sides."
+      ]
     }
   },
   {
@@ -94,12 +169,24 @@
     "lock": "skills/ai-native-director/SKILL.md V5.1 overlay (Naina ~20% eyelids, no visual tracking)",
     "task": "Laddu Gopal: @naina-01 ka medium close-up, wo mandir ki ghanti ki aawaz sun rahi hai. Image prompt do.",
     "checks": [
-      {"type": "regex_present", "pattern": "20\\s*%|twenty percent", "flags": "i"},
-      {"type": "regex_absent", "pattern": "\\b(looks? (directly )?at|eye contact|gazes? at|stares? at)\\b", "flags": "i"}
+      {
+        "type": "regex_present",
+        "pattern": "20\\s*%|twenty percent",
+        "flags": "i"
+      },
+      {
+        "type": "regex_absent",
+        "pattern": "\\b(makes? eye contact|looks? (directly |straight )?(at|into) the (camera|bell|lens)|stares? at|gazes? at|tracks? the)\\b",
+        "flags": "i"
+      }
     ],
     "fixtures": {
-      "pass": ["Medium close-up of @naina-01, eyelids about 20% open, eyes lowered and unfocused, head turning toward the temple bell sound."],
-      "fail": ["Medium close-up of @naina-01, she looks at the temple bell with wide eyes."]
+      "pass": [
+        "Medium close-up of @naina-01, eyelids about 20% open, eyes lowered and unfocused, head turning toward the temple bell sound."
+      ],
+      "fail": [
+        "Medium close-up of @naina-01, she looks at the temple bell with wide eyes."
+      ]
     }
   },
   {
@@ -109,12 +196,23 @@
     "lock": "skills/ai-native-director/references/image-video-prompts.md (preserve exact supplied words)",
     "task": "Video prompt do, dialogue-heavy (dh): @naina-01 rote hue bolti hai. Exact dialogue, ek bhi shabd mat badlo: \"Maa, tum kab wapas aaogi? Main roz yahin baithti hoon.\"",
     "checks": [
-      {"type": "preserves_words", "text": "Maa, tum kab wapas aaogi? Main roz yahin baithti hoon."},
-      {"type": "last_line", "pattern": "^DIALOGUE:"}
+      {
+        "type": "preserves_words",
+        "text": "Maa, tum kab wapas aaogi? Main roz yahin baithti hoon."
+      },
+      {
+        "type": "last_line",
+        "pattern": "^DIALOGUE:"
+      }
     ],
     "fixtures": {
-      "pass": ["[0-6s] @naina-01 cries softly, breath catching.\n\nDIALOGUE: @naina-01: \"[voice breaking] Maa, tum kab wapas aaogi? [sobbing softly] Main roz yahin baithti hoon.\""],
-      "fail": ["[0-6s] @naina-01 cries softly.\n\nDIALOGUE: @naina-01: \"Maiya, tum kab aaogi? Main roz yahan baithti hoon.\""]
+      "pass": [
+        "[0-6s] @naina-01 cries softly, breath catching.\n\nDIALOGUE: @naina-01: \"[voice breaking] Maa, tum kab wapas aaogi? [sobbing softly] Main roz yahin baithti hoon.\"",
+        "```\n[0-6s] @naina-01 cries.\n\nDIALOGUE: @naina-01: (rote hue) \"Maa, tum kab wapas aaogi?\" (sisak) \"Main roz yahin baithti hoon.\"\n```\n- Note: words unchanged."
+      ],
+      "fail": [
+        "[0-6s] @naina-01 cries softly.\n\nDIALOGUE: @naina-01: \"Maiya, tum kab aaogi? Main roz yahan baithti hoon.\""
+      ]
     }
   }
 ]

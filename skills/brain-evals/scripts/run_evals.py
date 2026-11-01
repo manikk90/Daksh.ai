@@ -5,6 +5,7 @@ Commands
   selftest                 Grade every case's pass/fail fixtures. Proves the graders work. No model.
   routing                  Run routing (scan_top) cases against the current skill descriptions. No model.
   grade CASE_ID FILE       Grade one saved agent output against a case.
+  regrade REPORT           Re-grade a saved run report with the current graders (no model calls).
   run                      Run cases through a real agent CLI, with and without the owning skill,
                            for N trials, and report pass rates and the skill's lift.
 
@@ -128,7 +129,7 @@ def cmd_run(cases: list[dict], root: Path, args) -> int:
         except subprocess.TimeoutExpired:
             out = ""
         ok, res = case_ok(out, case, root)
-        return job, {"ok": ok, "failed": [r["detail"] for r in res if not r["ok"]], "output": out[-1500:]}
+        return job, {"ok": ok, "failed": [r["detail"] for r in res if not r["ok"]], "output": out}
 
     results: dict = {}
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
@@ -141,16 +142,40 @@ def cmd_run(cases: list[dict], root: Path, args) -> int:
             row[cond] = {"pass_rate": sum(r["ok"] for r in runs) / len(runs), "runs": runs}
         print(f"{case['id']}: " + "  ".join(f"{c}={row[c]['pass_rate']:.0%}" for c in conditions))
         report["cases"].append(row)
-    for cond in conditions:
-        report[f"{cond}_mean"] = round(sum(r[cond]["pass_rate"] for r in report["cases"]) / len(report["cases"]), 3)
-    if "baseline" in conditions:
-        report["lift"] = round(report["with_skill_mean"] - report["baseline_mean"], 3)
+    summarize(report, conditions)
     print(json.dumps({k: v for k, v in report.items() if k != "cases"}, indent=2))
     if args.out:
         out = root / args.out
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"saved {args.out}")
+    return 0
+
+
+def summarize(report: dict, conditions: list[str]) -> None:
+    for cond in conditions:
+        report[f"{cond}_mean"] = round(sum(r[cond]["pass_rate"] for r in report["cases"]) / len(report["cases"]), 3)
+    if "baseline" in conditions:
+        report["lift"] = round(report["with_skill_mean"] - report["baseline_mean"], 3)
+
+
+def cmd_regrade(cases: list[dict], root: Path, path: Path) -> int:
+    report = json.loads(path.read_text(encoding="utf-8"))
+    by_id = {c["id"]: c for c in cases}
+    conditions = [c for c in ("with_skill", "baseline") if c in report["cases"][0]]
+    for row in report["cases"]:
+        case = by_id[row["id"]]
+        for cond in conditions:
+            for run in row[cond]["runs"]:
+                ok, res = case_ok(run["output"], case, root)
+                run["ok"], run["failed"] = ok, [r["detail"] for r in res if not r["ok"]]
+            runs = row[cond]["runs"]
+            row[cond]["pass_rate"] = sum(r["ok"] for r in runs) / len(runs)
+        print(f"{row['id']}: " + "  ".join(f"{c}={row[c]['pass_rate']:.0%}" for c in conditions))
+    summarize(report, conditions)
+    report["regraded"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(json.dumps({k: v for k, v in report.items() if k != "cases"}, indent=2))
     return 0
 
 
@@ -163,6 +188,8 @@ def main(argv: list[str] | None = None) -> int:
     g = sub.add_parser("grade")
     g.add_argument("case_id")
     g.add_argument("file", type=Path)
+    rg = sub.add_parser("regrade")
+    rg.add_argument("report", type=Path)
     r = sub.add_parser("run")
     r.add_argument("--agent-cmd", required=True)
     r.add_argument("--skill")
@@ -179,6 +206,8 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_selftest(cases, root)
     if args.cmd == "routing":
         return cmd_routing(cases, root)
+    if args.cmd == "regrade":
+        return cmd_regrade(cases, root, args.report)
     if args.cmd == "grade":
         case = next((c for c in cases if c["id"] == args.case_id), None)
         if case is None:

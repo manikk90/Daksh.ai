@@ -21,6 +21,17 @@ class GraderTests(unittest.TestCase):
         text = "```\nshot\n\nDIALOGUE: @a: \"hi\"\n```"
         self.assertTrue(ok(text, {"type": "last_line", "pattern": "^DIALOGUE:"}))
 
+    def test_notes_outside_code_block_are_not_graded(self):
+        text = "```\nshot @naina-01\n\nDIALOGUE: @naina-01: \"hi\"\n```\n- I left out @crowd on purpose."
+        self.assertTrue(ok(text, {"type": "last_line", "pattern": "^DIALOGUE:"}, {"type": "tags", "forbidden": ["@crowd"]}))
+
+    def test_no_fences_grades_whole_text(self):
+        self.assertFalse(ok("shot\n- note with @crowd", {"type": "tags", "forbidden": ["@crowd"]}))
+
+    def test_parenthetical_cues_ignored_in_words(self):
+        spec = {"type": "preserves_words", "text": "Maa, tum kab aaogi? Main yahin hoon."}
+        self.assertTrue(ok('(rote hue) "Maa, tum kab aaogi?" (sisak) "Main yahin hoon."', spec))
+
     def test_last_line_rejects_trailing_content(self):
         self.assertFalse(ok("DIALOGUE: @a: \"hi\"\nCamera: push", {"type": "last_line", "pattern": "^DIALOGUE:"}))
 
