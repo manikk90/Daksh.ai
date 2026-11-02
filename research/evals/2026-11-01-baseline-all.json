@@ -1,0 +1,666 @@
+{
+  "date": "2026-11-01T19:47:27+00:00",
+  "agent_cmd": "claude -p",
+  "trials": 3,
+  "cases": [
+    {
+      "id": "dir-dialogue-last",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": 0.6666666666666666,
+        "runs": [
+          {
+            "ok": false,
+            "failed": [
+              "last line: 'DIALOGUE: @naina-01 (soft, pyaar bhari halki shikayat, muskurate hue): \"Kanha, a'"
+            ],
+            "output": "```\n[MCU] @naina-01 temple ki outer stone steps par baithi hai, frame ke centre-left mein, body thodi screen-right ki taraf turned. Camera eye-level par hai, 50mm look, background mein temple ki diwaar aur upar jaati steps soft focus mein. Focus Naina ke face par fixed rehta hai. Light scene ki existing light jaisi hi rahe, koi naya colour grade nahi.\n\nHalki hawa uske baalon ki kuch strands aur costume ke fabric edges ko dheere-dheere hilaati hai. Uske kandhe relaxed hain aur haath god mein rest kar rahe hain. Blind-state lock: palkein lagbhag 20% khuli hain, aankhein neeche aur unfocused, koi direct eye contact ya visual tracking nahi. Wo offscreen right se aayi aahat sunti hai, uska sir dheere se us aawaz ki taraf thoda mudta hai aur thodi der ke liye ruk jaata hai, phir chehre par ek halki, apnepan wali muskaan aati hai. Dialogue ke saath lip-sync natural rahe aur line se pehle ek chhoti saans dikhe. Line ke baad muskaan bani rehti hai.\n\nCamera bahut dheere, lagbhag na dikhne wala push-in karta hai MCU se soft CU tak, aur composition stable rehta hai. Koi doosra character frame mein nahi aata. Identity, costume aur steps ki geography poore shot mein same rehti hai.\n\nDIALOGUE: @naina-01 (soft, pyaar bhari halki shikayat, muskurate hue): \"Kanha, aaj tum der se aaye.\"\n```\n"
+          },
+          {
+            "ok": true,
+            "failed": [],
+            "output": "```\n[MS]: @naina-01 temple ki outer stone steps par shant baithi hai. Body frame mein thoda screen-left hai, steps ke saath diagonal leading lines bante hain, aur temple ka entrance background mein soft focus mein hai. Camera eye-level se thoda neeche hai, 50mm look ke saath. Camera lagbhag static rehta hai: natural handheld breath aur bahut slow micro push-in, MS se MCU ke kareeb tak. Focus @naina-01 ke face aur hands par locked rahe. Halki hawa uske dupatte ke kinare aur baalon ki loose lattein dheere se hilaati hai. Haath godi mein relaxed hain aur posture stable hai. Eyelids lagbhag 20% khule rahen, eyes lowered aur unfocused. Direct eye contact aur visual tracking nahi. Head halka sa screen-right ki taraf turn hota hai, jahan se offscreen halki aahat aati hai, aur sound ki taraf hi attention rakhta hai. Ek chhoti saans, phir lips ke corners se dheere-dheere soft, apnapan bhari muskaan khulti hai, jo cheeks tak pahunchti hai. Phir wo bolti hai. Lip-sync natural ho aur dialogue ke beech \"Kanha,\" ke baad halka pause ho. Lighting soft natural daylight ho, location ki existing light direction aur palette ke saath consistent. Ambient: hawa ki sarsarahat, door mandir ki halki ghanti. Identity, costume aur face consistent rahen. Koi extra character frame mein na aaye.\n\nDIALOGUE: @naina-01: (soft, affectionate, halki playful shikayat, smile in voice, thoda ruk kar) \"Kanha, aaj tum der se aaye.\"\n```\n"
+          },
+          {
+            "ok": true,
+            "failed": [],
+            "output": "```\n[MCU] @naina-01 temple ki outer stone steps par baithi hai, frame ke left-third mein, body thodi screen-right ki taraf turned. Camera child-adult neutral eye level par, 50mm look, shallow depth: focus @naina-01 ke face aur haathon par, temple steps aur background softly defocused. Camera bahut slow, gentle push-in (MCU se tight MCU tak), smooth aur stable, koi angle change nahi. Halki hawa uske dupatte ke kinare aur kuch baalon ki latton ko dheere hilati hai; baaki costume aur haathon ki position stable rehti hai, haath godi mein relaxed. Naina blind hai: eyelids lagbhag 20% open, aankhen neeche aur unfocused, koi direct eye contact ya visual tracking nahi. Ek halki aawaz sunkar uska sir screen-right ki taraf thoda ghoomta hai, phir dheere se, naturally muskurati hai (pehle lips ke corners, phir cheeks soft hote hain). Halki saans lekar bolti hai, lip-sync natural aur clear, words ke beech chhota pyaar bhara pause. Shot ke end tak muskaan bani rehti hai, head sound ki taraf hi rehta hai. Lighting scene ki existing natural light jaisi, direction consistent, koi grade change nahi. Identity, costume aur face @naina-01 ke reference jaise hi locked; koi extra character frame mein nahi.\n\nDIALOGUE: @naina-01: [soft, pyaar bhari mithi shikayat, warm smile ke saath, halka playful tone, \"Kanha\" ke baad chhota pause] \"Kanha, aaj tum der se aaye.\"\n```\n"
+          }
+        ],
+        "valid_runs": 3,
+        "errored_runs": 0
+      },
+      "baseline": {
+        "pass_rate": 0.0,
+        "runs": [
+          {
+            "ok": false,
+            "failed": [
+              "last line: 'Avoid: extra characters, distorted hands, morphing face, text on screen, subtitl'",
+              "count=0 (want 1..1)"
+            ],
+            "output": "**Video prompt:**\n\n```\n@naina-01 sits on the outer stone steps of an old Indian temple at golden hour, warm soft sunlight, saffron flags and marigold garlands gently moving in a light breeze. She wears a simple traditional saree, hair loosely tied, a few strands moving softly in the wind. Beside her on the step sits a small brass Laddu Gopal idol in a yellow silk outfit with a tiny peacock-feather crown, placed on a little embroidered cushion.\n\nCamera: medium close-up, eye level, slow gentle push-in from a slight side angle, shallow depth of field, temple bells and diyas softly blurred in the background.\n\nAction: She looks lovingly at the Laddu Gopal, tilts her head slightly, smiles slowly and warmly with a hint of playful complaint, then speaks softly in Hindi with clear lip-sync:\n\"Kanha, aaj tum der se aaye.\"\n\nAfter the line, she keeps smiling tenderly, eyes soft, and gently adjusts the idol's tiny dupatta.\n\nMood: devotional, peaceful, intimate, emotional warmth. Cinematic, photorealistic, natural skin tones, soft warm color grade.\nAudio: light breeze, distant temple bells, faint birds, her soft natural female voice. No background music overpowering the dialogue.\nDuration: 6–8 seconds. Aspect ratio: 9:16.\nAvoid: extra characters, distorted hands, morphing face, text on screen, subtitles, dialogue changes.\n```\n"
+          },
+          {
+            "ok": false,
+            "failed": [
+              "last line: 'Negative: No extra people, no change to the dialogue, no subtitles or text on sc'",
+              "count=0 (want 1..1)"
+            ],
+            "output": "```\n@naina-01 sits on the outer stone steps of an old Indian temple in soft golden-hour light. Her face, hair, outfit and features exactly match @naina-01. She wears a simple traditional saree with a dupatta over one shoulder, with a small brass diya burning beside her on the step. She holds a small Laddu Gopal idol in her lap with both hands. The idol is dressed in yellow silk with a tiny mukut, peacock feather and flute.\n\nSetting: The temple entrance is behind her, slightly out of focus, with carved stone pillars, marigold garlands, hanging brass bells and soft red-orange light. Warm sunset light comes from the left and casts a gentle rim light on her hair.\n\nAtmosphere: A light breeze moves the loose strands of her hair, the edge of her dupatta and the marigold garlands. A few flower petals drift across the steps. The mood is calm, devotional and intimate.\n\nAction (8 seconds):\n0–2s: She looks down at Laddu Gopal with soft, affectionate eyes. The breeze moves her hair.\n2–4s: She slowly breaks into a gentle, loving smile and tilts her head slightly.\n4–7s: She speaks softly to the idol, with a playful complaint and tenderness, as if talking to a child:\n\"Kanha, aaj tum der se aaye.\"\nHer lip-sync is accurate, her voice is soft and warm, and she speaks Hindi in a natural pace.\n7–8s: She keeps smiling and gently adjusts the idol's tiny dupatta with her fingers.\n\nCamera: Medium close-up at eye level, with a slow, smooth push-in from medium shot to medium close-up. Shallow depth of field keeps her face and the idol sharp while the temple background stays softly blurred. 35mm cinematic lens.\n\nStyle: Photorealistic and cinematic, with warm golden tones, soft film grain, natural skin texture and gentle highlights. The look is devotional, serene and emotional.\n\nAudio: Faint temple bells far away, soft wind, birds chirping lightly, and her soft voice delivering only the exact dialogue.\n\nNegative: No extra people, no change to the dialogue, no subtitles or text on screen, no distorted hands or fingers, no face morphing, no flickering, no exaggerated expressions, no modern objects.\n```\n"
+          },
+          {
+            "ok": false,
+            "failed": [
+              "last line: 'Negative: no extra people, no face change, no distorted hands, no extra fingers,'",
+              "count=0 (want 1..1)"
+            ],
+            "output": "```\n@naina-01 sits on the outer stone steps of an old Indian temple in soft golden late-afternoon light. Keep her face, hair, outfit and features exactly as in the reference. She sits sideways on a middle step, knees slightly drawn up and back relaxed. In her lap she holds a small brass Laddu Gopal idol dressed in yellow silk with a tiny peacock-feather crown and flower garland, cradled in both hands like a baby.\n\nBackground: the carved sandstone temple entrance with a hanging brass bell, marigold garlands on the doorframe, and a few diyas glowing on the side of the steps. The background is softly out of focus with a shallow depth of field.\n\nAtmosphere: a light breeze moves a few loose strands of her hair and the edge of her dupatta. Marigold petals drift slowly across the steps and the bell sways a little. The mood is calm, devotional and warm.\n\nAction (0–8s, single continuous shot):\n0–2s: Slow push-in from medium to medium close-up, eye level. She looks down at Laddu Gopal and her expression softens.\n2–4s: A gentle smile slowly forms and her eyes stay tender and slightly teasing.\n4–7s: She tilts her head a little and speaks softly to the idol in Hindi, with natural lip-sync and an affectionate, playfully complaining tone:\n\"Kanha, aaj tum der se aaye.\"\n7–8s: She smiles a little wider and lightly adjusts the idol's garland with one finger. Hold on her face.\n\nCamera: 50mm lens, slow smooth dolly-in, no cuts, natural handheld stability.\nLighting: warm golden-hour backlight with a soft rim on her hair and gentle diya glow on her face.\nAudio: soft breeze, a faint distant temple bell, birds far away, and only her dialogue. No music overpowering the voice.\nStyle: photorealistic, cinematic, 4K, natural skin texture, true-to-life Indian temple setting.\n\nNegative: no extra people, no face change, no distorted hands, no extra fingers, no text, no subtitles, no watermark, no dialogue changes, no exaggerated expressions.\n```\n"
+          }
+        ],
+        "valid_runs": 3,
+        "errored_runs": 0
+      }
+    },
+    {
+      "id": "dir-blank-line-before-dialogue",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": 1.0,
+        "runs": [
+          {
+            "ok": true,
+            "failed": [],
+            "output": "```\n@s1p1s1 [MCU]: @mukund-03 gate ke andar khada hai. Camera gate ke bahar se, eye-level, 50mm look, gate ki bars foreground mein halki soft, focus @mukund-03 ke face par locked. Wo straight khada hai, kandhe tight, jaw clenched, ek haath gate ke frame par grip karta hai, knuckles halka tight. Eyeline camera ke thoda frame-left, gate ke bahar khadi listener ki taraf. Listener off-frame rahegi. Usse direct eye contact nahi dena. Shuru mein @mukund-03 ek gehri saans andar kheenchta hai, nostrils halki flare, palkein ek baar dheere jhapakti hain, gussa daba hua hai. Phir wo dheemi, neechi aawaz mein, har shabd alag karke bolta hai. Line ke baad wo jagah se nahi hilta. Jaw tight rehta hai aur stare hold karta hai. Camera bahut dheema push-in karta hai, lagbhag 5–8% frame tak. Koi cut nahi, koi handheld shake nahi. Existing scene ki motivated lighting aur light direction same rehti hai. Ek hi @mukund-03, identity aur costume locked rahenge. Koi extra character frame mein nahi aayega.\n\nDIALOGUE: @mukund-03: (dabe gusse mein, dheemi aur sakht aawaz, shabdon ke beech halka thehraav) \"Yahan se chali jao.\"\n```\n\nDialogue ke shabd nahi badle. Sirf delivery ke tags add kiye hain.\n\n**Kuch cheezein abhi decide nahi hui hain (pending):**\n- **Shot ID:** `@s1p1s1` sirf placeholder hai. Asli scene/panel/shot ID de do, main badal dunga.\n- **Gate ka location tag:** approved tag diya nahi gaya tha, isliye koi tag nahi banaya. Tag de do toh prompt mein jod dunga.\n- **Listener:** \"chali jao\" kisko bola ja raha hai, ye nahi bataya. Isliye wo off-frame hai aur uska koi tag nahi lagaya. Agar wo frame mein dikhni chahiye (jaise OTS mein), toh character aur uska exact tag batao.\n- **Composition:** reference frame nahi mila tha, isliye framing mera suggestion hai. Screenshot doge toh prompt ko usi frame se exactly match (fm) kar dunga.\n"
+          },
+          {
+            "ok": true,
+            "failed": [],
+            "output": "Header nahi bana raha kyunki shot ID diya nahi gaya hai. ID bata do toh `@sXpYsZ [MCU]:` laga dunga.\n\n```\n[MCU]: @mukund-03 gate ke andar khada hai, frame-center se thoda screen-left. Camera gate ke bahar eye-level se thoda neeche hai, 50mm look. Foreground mein gate ki soft-focus salakhein frame ko halka sa todti hain, focus @mukund-03 ke chehre par fixed. Camera bahut dheere, barely-noticeable push-in karta hai aur salakhon ke paas aakar ruk jaata hai, crop wahi rehta hai. Shuru mein @mukund-03 seedha samne off-screen listener ko dekh raha hai. Jaw tight hai, nathune halke phoolte hain aur ek gehri saans andar jaati hai. Ek haath gate ki salakh par kas jaata hai. Gussa daba hua hai, chillata nahi. Line ke dauraan sir sthir rehta hai, aankhein nahi jhapakti aur last word par aankhein halki sikudti hain. Line ke baad ek pal ki khamoshi, saans bahar, aur haath ki pakad dheeli nahi hoti. Lighting, time aur background ka rang scene ke established look jaisa hi rakho. Koi doosra character frame mein nahi hai. Lip-sync clean, face identity stable.\n\nDIALOGUE: @mukund-03: [dabe gusse mein, dheemi aur sakht awaaz, daant bheeche hue, har shabd alag-alag] \"Yahan se chali jao.\"\n```\n\n- Gate/location ka tag maine nahi daala kyunki approved tag pata nahi hai. Bata do toh prompt mein jod dunga.\n- Agar is shot ka start frame hai toh bhej do. Tab prompt ko us frame ke hisaab se lock karke banaunga, aur camera ka gate ke bahar hona badal sakta hai.\n- Listener off-screen hai aur uska tag nahi lagaya. Agar woh frame mein dikhta hai toh bata do, use tag ke saath add kar dunga.\n- Dialogue ke shabd bilkul wahi rakhe hain jo tumne diye. Sirf bolne ke tareeke ke tags badhaye hain.\n"
+          },
+          {
+            "ok": true,
+            "failed": [],
+            "output": "```\n[MCU, eye-level, ~50mm look, 16:9]: @mukund-03 gate ke andar khada hai, frame center-right. Gate ka edge/bars frame-left foreground mein halka soft, focus @mukund-03 ke face par locked. Body steady, shoulders tight, ek haath gate frame par grip karta hai, knuckles halke tense. Eyeline off-screen frame-left, camera ke bilkul paas, direct lens contact nahi. Gussa andar dabaya hua hai: jaw clenched, nostrils halke flare, ek controlled saans andar leta hai, phir chhota sa pause. Lips dialogue ke saath natural sync mein, aawaz low aur steady, chillana nahi. Line ke baad gaze hold karta hai, jaw ek baar tightens, head bilkul nahi hilta. Camera STATIC tripod, bahut subtle slow push-in, end framing tight MCU. Lighting soft natural, scene ke world light direction ke saath consistent. No extra characters, no camera shake, no face/outfit drift.\n\nDIALOGUE: @mukund-03: (dabe gusse mein, low controlled voice, daant bheenchkar, har shabd alag) \"Yahan se chali jao.\"\n```\n\n**Pending:**\n- **Gate ka location tag:** Aapne koi approved tag nahi diya, isliye maine koi naya tag nahi banaya. Agar approved tag hai, toh bata do, main prompt mein add kar dunga.\n- **Shot ID:** Aapne nahi diya, isliye prompt bina ID ke hai. ID bhejo toh `@sXpXsX [MCU]:` format mein laga dunga.\n- **Mukund kisse baat kar raha hai:** Prompt mein woh offscreen hai. Agar woh frame mein dikhna chahiye (jaise OTS shot), toh uska exact tag bhejo.\n- **Reference frame:** Koi frame supply nahi hua tha, isliye composition maine khud choose ki. Approved frame ho toh bhejo, main use exact match karke (`fm`) prompt de dunga.\n"
+          }
+        ],
+        "valid_runs": 3,
+        "errored_runs": 0
+      },
+      "baseline": {
+        "pass_rate": 0.0,
+        "runs": [
+          {
+            "ok": false,
+            "failed": [
+              "no line matches /^DIALOGUE:/",
+              "last line: 'A tight medium close-up of his face behind the soft-focus gate bars. His eyes ar'"
+            ],
+            "output": "Yeh prompt **@mukund-03** ke liye ek single shot hai: woh gate ke andar khada hai aur bahar khadi aurat ko gussa dabate hue \"Yahan se chali jao.\" bolta hai. Mode **R2V** hai, kyunki @mukund-03 character identity reference hai.\n\n### Director's interpretation\nIs shot mein gussa chillana nahi, dabaya hua gussa hona chahiye. Jabda kasa hua hai, haath gate pakde hue hai aur awaaz dheemi par sakht hai. Gate ki salakhen dono ke beech ki doori dikhati hain. Woh andar hai aur woh aurat bahar. Aurat frame mein nahi hai, isliye poora focus Mukund ke chehre par rehta hai.\n\n### Spatial blocking map\n- **Camera:** gate ke bahar, aurat ki POV se thoda side mein, eye-level par.\n- **Foreground:** iron gate ki salakhen, halki out of focus.\n- **Midground:** Mukund center-right mein (x≈55%), chest-up medium close-up, frame height ka lagbhag 60%.\n- **Background:** ghar ka aangan ya porch, soft blur mein.\n- **Gaze:** Mukund ki nazar camera ke thoda left, off-screen, jahan aurat khadi hai.\n\n### Final Seedance 2.0 prompt\n\n```\nDuration: 8 seconds. Aspect ratio: 16:9. Mode: reference-to-video. One continuous shot.\n\nReference: Use @mukund-03 as the identity reference for the man. His face, hairstyle, facial hair, clothing, skin tone, and body proportions match @mukund-03 exactly throughout.\n\nSpatial blocking:\nThe camera is outside a closed iron gate, looking in at eye level. Dark iron gate bars stand in the soft-focus foreground. The man from @mukund-03 stands just inside the gate in the midground, about one step behind the bars. He sits center-right around x=55%, in a medium close-up from chest up, and fills about 60% of the frame height. He faces the camera at a slight 3/4 angle. His eyes stay locked on a point just left of the lens, where a woman stands off-screen outside the gate. He is the only person in the frame.\n\nCharacter anchor:\nHe stands still with both feet planted on the stone floor inside the gate. His right hand grips one gate bar at chest height with tight knuckles. His jaw is clenched, his nostrils flare slightly, and his breathing is heavy but controlled. His expression shows anger he is holding back. His eyes are hard and steady, and his eyebrows are slightly lowered.\n\nAction:\n0 to 3 seconds: He stares silently, takes one slow, deep breath through his nose, and tightens his grip on the gate bar.\n3.5 to 6 seconds: He speaks in a low, firm, controlled voice in Hindi, with clear lip sync: \"Yahan se chali jao.\"\n6 to 8 seconds: He holds his stare without blinking. His jaw stays tight, and he releases one short breath.\nOnly his eyes, jaw, lips, breathing, and fingers move. His body and feet stay in the same position.\n\nCamera:\n50mm lens, eye level. A very slow, controlled dolly-in of about 10% toward his face. The dolly-in keeps him center-right and keeps the gate bars in the foreground. Shallow depth of field: his eyes are in sharp focus, the foreground bars and background are softly blurred.\n\nEnvironment:\nThe gate of an Indian house at dusk. Behind him are a simple courtyard and a porch wall. A small warm porch bulb glows in the background.\n\nAesthetics:\nGrounded Indian family drama. A warm practical key light from screen-right falls on half of his face. The other half is in soft shadow with cool dusk fill light. Natural skin texture, a muted warm-and-teal color grade, and subtle film grain. The gate bars cast faint shadow lines across his shoulder.\n\nAudio:\nQuiet evening ambience with distant traffic and crickets. A soft metal creak as his hand tightens on the gate. His single spoken line is low and firm. No music.\n\nContinuity:\nHe stays in the same center-right position, the same depth behind the gate, and the same pose. His identity, costume, and gaze direction stay the same through the whole shot. The gate bars stay fixed in the foreground.\n\nFinal frame:\nA tight medium close-up of his face behind the soft-focus gate bars. His eyes are steady and cold, his jaw is clenched, and his hand still grips the bar. He holds a silent, final stare toward the off-screen woman.\n```\n\n### Positive constraints\n- Frame mein sirf Mukund hai. Aurat sirf off-screen nazar ki direction se mehsoos hoti hai.\n- Pair ek hi jagah tike rehte hain aur haath gate ki salakh par hi rehta hai, isliye woh apni jagah se khiskega nahi.\n- Woh dheemi, sakht awaaz mein ek hi line bolta hai, ek baar.\n- Shot ek hi continuous take hai. Camera sirf dheere-dheere andar jaata hai, isliye composition wahi rehta hai.\n\n### QA checklist\n- [x] Subject aur action: ek clear action hai, gussa daba kar dialogue bolna\n- [x] Screen position aur depth: center-right, midground, gate ke peeche\n- [x] Pose aur state: haath salakh par, jabda kasa hua, gussa dabaya hua\n- [x] Gaze: lens ke thoda left, off-screen aurat ki taraf\n- [x] Contact points: pair zameen par, haath gate ki salakh par\n- [x] Character ki movement aur camera ki movement alag-alag likhi hain\n- [x] Continuity aur final frame lock hain\n- [x] Dialogue exact hai aur uski timing tay hai: 3.5 se 6 seconds\n\n**Options:**\n- Reels/Shorts ke liye `Aspect ratio: 9:16` kar dein aur Mukund ko center (x=50%) mein rakhein.\n- Subtitle chahiye to yeh line prompt mein jod dein: *Display clean bottom-center subtitles reading \"Yahan se chali jao.\" synchronized with the line.*\n"
+          },
+          {
+            "ok": false,
+            "failed": [
+              "no line matches /^DIALOGUE:/",
+              "last line: 'A medium close-up of his still, angry face through the blurred gate bars. His ha'"
+            ],
+            "output": "**Director's interpretation:** Mukund ka gussa bahar nahi phoot raha, andar daba hua hai. Wo chillata nahi, dheemi aur sakht awaaz mein line bolta hai. Beech ka gate dono ke beech ki doori dikhata hai. \"Chali jao\" se pata chalta hai ki saamne ek aurat hai, isliye wo frame ke bahar camera ki taraf khadi rahegi aur sirf Mukund dikhega.\n\n**Spatial blocking map:**\n- Camera gate ke bahar hai, wahin jahan aurat khadi hai, aur eye-level par hai.\n- Foreground mein iron gate ki vertical bars hain, halki out-of-focus.\n- Mukund midground mein gate ke andar hai, center se thoda right (x≈55%). Medium close-up, frame height ka lagbhag 60%. Body seedhe camera ki taraf, nazar lens ke thoda left (off-screen woman ki aankhon par).\n- Background mein ghar ka aangan aur entrance door hai, soft focus mein.\n\n**Reference plan:** @mukund-03 sirf face aur identity control karta hai. Costume, location aur light text prompt se aayenge.\n\n---\n\n### Final Seedance 2.0 prompt\n\n```\nDuration: 6 seconds. Aspect ratio: 16:9. Mode: reference-to-video. One continuous shot.\n\nReference: Use @mukund-03 as the identity reference for the man. His face, hairstyle, skin tone, and body proportions match @mukund-03 exactly throughout.\n\nSpatial blocking:\nThe camera is outside a closed black wrought-iron house gate, at eye level. Two vertical gate bars stand in the soft-focus foreground at x=20% and x=85%. The man from @mukund-03 stands inside the gate in the midground, centered around x=55%, shown in a medium close-up from chest up, occupying about 60% of frame height. He faces the camera directly. His eyes look just left of the lens, at a woman standing off-screen outside the gate. The frame contains only this man.\n\nCharacter anchor:\nHe wears a plain dark kurta. He stands still with both feet planted on the stone floor of the courtyard. His right hand grips one vertical gate bar at chest height. His jaw is tight, his nostrils flare slightly, and his eyes are steady and hard. He is holding back anger. He does not shout.\n\nAction:\nFrom 0 to 2 seconds, he stays silent and breathes slowly through his nose. His grip on the gate bar tightens and his knuckles go pale.\nAt 2.5 seconds, he speaks in Hindi in a low, controlled, firm voice: \"Yahan se chali jao.\"\nAfter the line, he holds the stare without blinking. Only his breathing, a small jaw clench, and his eyes move.\n\nCamera:\n50mm lens, eye level, very slow dolly-in of about 10 percent, through the gate bars. The man stays centered around x=55% throughout. Shallow depth of field. His eyes are in sharp focus and the gate bars in the foreground stay softly blurred.\n\nEnvironment:\nLate evening outside an Indian middle-class house. A small courtyard behind him with a potted plant and a half-open wooden front door.\n\nLighting and aesthetics:\nWarm tungsten porch light from screen-right above him makes a hard side light on his face. Cool blue dusk ambient light comes from behind the camera. Realistic skin texture, natural color grade, subtle film grain, grounded Indian family drama tone.\n\nAudio:\nQuiet evening ambience, distant traffic, a faint metal creak as his hand tightens on the gate. Dialogue is clear and lip-synced. No music.\n\nContinuity:\nHis identity, face, kurta, hand on the gate bar, planted feet, and screen position stay the same throughout. The gate stays closed for the whole shot.\n\nFinal frame:\nA medium close-up of his still, angry face through the blurred gate bars. His hand still grips the bar and his eyes stay locked on the off-screen woman.\n```\n\n---\n\n**Positive constraints:**\n- Gate poore shot mein band rehta hai aur Mukund uske andar hi rehta hai.\n- Wo gussa aawaz ki volume se nahi, jaw, nostrils aur grip se dikhata hai.\n- Dialogue bilkul yahi rehta hai: \"Yahan se chali jao.\" Ek baar bola jaata hai, lip-sync ke saath.\n- Frame mein sirf Mukund dikhta hai. Aurat frame ke bahar hi rehti hai.\n\n**QA checklist:**\n| Check | Status |\n|---|---|\n| Subject aur identity (@mukund-03) | ✅ |\n| Screen position aur depth (x≈55%, midground) | ✅ |\n| Pose, state aur contact points (haath gate bar par, pair zameen par) | ✅ |\n| Nazar ki direction (lens ke left, off-screen aurat) | ✅ |\n| Dialogue kab bola jaata hai (2.5s) | ✅ |\n| Camera blocking nahi todta (sirf 10% dolly-in) | ✅ |\n| Continuity lock aur final frame | ✅ |\n\nAgar aurat ko bhi frame mein chahiye, jaise over-the-shoulder shot mein, to batao. Main two-character version bana dunga.\n"
+          },
+          {
+            "ok": false,
+            "failed": [
+              "no line matches /^DIALOGUE:/",
+              "last line: 'Medium close-up of Mukund behind the gate bars. His eyes hold firm on the woman '"
+            ],
+            "output": "## 1. Director's interpretation\nMukund ghar ke gate ke **andar** khada hai, aur ek aurat bahar hai (wo frame mein nahi dikhti). Wo chillata nahi. Uska gussa jabda kasne, nathne phoolne aur haath se gate ki salakh pakadne mein dikhta hai. Line dheemi, bhaari aur napi-tuli aawaz mein aati hai. Gate un dono ke beech ki deewar ka kaam karta hai.\n\n## 2. Spatial blocking map\n- **Camera:** Gate ke bahar hai, yaani us aurat ki nazar se (off-screen POV side), aur salakhon ke beech se Mukund ko dekhta hai.\n- **Foreground:** Out-of-focus iron gate ki salakhein, frame ke left aur right edge par.\n- **Midground:** Mukund center-right mein (x≈55%), chest-up medium close-up, frame height ka lagbhag 60%. Wo gate se ek kadam peeche khada hai.\n- **Background:** Aangan aur ghar ki deewar, soft focus mein.\n- **Gaze:** Camera ke thoda left ki taraf, jahan aurat khadi hai. Wo seedha lens mein nahi dekhta.\n\n## 3. Reference plan\n`@mukund-03` sirf character identity, chehra, costume aur body proportions control karta hai. Action, camera aur mood text prompt se aayenge.\n\n## 4. Final Seedance 2.0 prompt\n\n```\nDuration: 6 seconds. Aspect ratio: 16:9. Mode: reference-to-video. One continuous shot.\n\nReference: Use @mukund-03 as the identity reference for Mukund. His face, hairstyle, clothing, skin tone, and body proportions match @mukund-03 exactly throughout.\n\nSpatial blocking:\nThe camera is outside a closed black iron gate, looking in through the vertical bars. Mukund stands inside the gate, one step behind it, in the midground, centered around x=55%, shown in a medium close-up from chest up, occupying about 60% of frame height. Out-of-focus gate bars frame the left and right edges of the foreground. A house courtyard and wall sit softly blurred in the background.\n\nMukund anchor:\nMukund stands still with both feet planted on the stone courtyard floor. His body faces the camera at a slight 3/4 angle. His right hand grips one gate bar at chest height, knuckles tight. His eyes look slightly to screen-left of the lens, toward a woman standing outside the gate off-screen. His jaw is clenched, his nostrils flare, and his breathing is heavy but controlled. He is holding back his anger.\n\nAction:\nMukund takes one slow breath through his nose, keeps his eyes fixed on the woman off-screen, and says in a low, firm, controlled voice in Hindi: \"Yahan se chali jao.\" His lips sync clearly to the line. He does not shout and he does not move forward. After the line, he holds his stare and his grip on the bar tightens slightly.\n\nCamera:\nEye-level 50mm lens, shallow depth of field, focus locked on Mukund's eyes. Very slow push-in through the gate bars, about 10 percent, preserving Mukund's position at center-right. The gate bars stay soft in the foreground.\n\nEnvironment:\nIndian residential home, late afternoon, a quiet courtyard behind him, a few dry leaves on the floor.\n\nAesthetics:\nGrounded realistic Hindi family drama. Warm low sun key light from screen-right, casting thin bar-shaped shadows across his chest. Muted warm color grade, natural skin texture, subtle film grain.\n\nAudio:\nDialogue in Hindi, male voice, low and restrained: \"Yahan se chali jao.\" Quiet ambient street sounds, a faint metal creak as his hand tightens on the gate, no music.\n\nContinuity:\nMukund stays inside the gate at center-right, behind the bars, feet on the same floor marks. His identity, costume, angry restrained expression, gaze direction, and hand on the bar remain consistent throughout. The gate stays closed.\n\nFinal frame:\nMedium close-up of Mukund behind the gate bars. His eyes hold firm on the woman off-screen, his jaw is tight, his hand grips the bar, and a bar shadow falls across his chest.\n```\n\n## 5. Positive constraints\n- Mukund gate ke andar hi khada rehta hai, bahar nahi aata, aur uske pair usi jagah tike rehte hain.\n- Gate poore shot mein band rehta hai.\n- Aawaz dheemi aur firm rehti hai, wo chillata nahi.\n- Frame mein sirf Mukund dikhta hai. Aurat off-screen rehti hai.\n- Uska chehra, kapde aur proportions `@mukund-03` jaise hi rehte hain.\n\n## 6. QA checklist\n| Check | Status |\n|---|---|\n| Subject aur motion | ✅ Saans, dialogue, grip tight hona |\n| Screen position aur depth | ✅ x≈55%, midground, gate foreground mein |\n| Pose, state aur gaze | ✅ Haath salakh par, gussa control mein, nazar off-screen left |\n| Contact points | ✅ Pair zameen par, haath gate bar par |\n| Camera composition bachata hai | ✅ Sirf 10% ka slow push-in |\n| Exact dialogue | ✅ \"Yahan se chali jao.\" |\n| Final frame | ✅ Defined hai |\n\n**Do baatein dhyaan rakhein:**\n- Maine aurat ko off-screen rakha hai, kyunki sawaal mein sirf Mukund ka zikr tha. Agar wo bhi frame mein chahiye, to uska reference tag bhejiye, main two-character blocking bana dunga.\n- Agar tool Hindi line ko theek se lip-sync nahi karta, to \"Yahan se chali jao\" ko quotes mein hi rehne dijiye aur duration 6 se badha kar 8 seconds kar dijiye.\n"
+          }
+        ],
+        "valid_runs": 3,
+        "errored_runs": 0
+      }
+    },
+    {
+      "id": "dir-no-refs-line",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": 1.0,
+        "runs": [
+          {
+            "ok": true,
+            "failed": [],
+            "output": "```\n[MS]: Early morning, @krishna-temple.outer-steps.ground. Camera low, knee-height, 3/4 side angle from screen-left, 35mm look, eye-line slightly upward toward the steps. @naina-01 frame ke center-right mein, steps ki taraf mudi hui, apni @wooden-stick ki tip pehli seedhi ke kinare par tiki hui. Ek hi pal: uska aage wala pair pehli seedhi par abhi-abhi rakha gaya hai, poora wazan dheere se aage shift ho raha hai, peeche wala pair abhi ground par hai. Stick wala haath thoda aage, grip steady. Blind-state: palkein lagbhag 20% khuli, aankhein neeche aur unfocused, kahin dekh nahi rahi, kisi se eye contact nahi; sir thoda jhuka aur aage ki aawaz ki taraf mudha. Chehre par shaant concentration, saans dheemi. Focus pair, stick tip aur seedhi ke contact par; chehra readable aur soft-sharp; background ki upar wali seedhiyan halki out-of-focus. Halki subah ki dhundh, soft low-angle subah ki roshni, neeche thandi neeli shadows, seedhiyon ke kinaron par halki garam rim light. Naturalistic, cinematic, photoreal. Frame mein koi aur vyakti nahi, koi text nahi.\n```\n\n- **Abhi ka maan liya gaya hai:** maine dikhaya hai ki Naina ne pehle stick se seedhi ko touch kiya, phir pair rakha. Isse dikhta hai ki woh blind hai, aur frame mein sirf ek pal rehta hai.\n- **Abhi baaki hai (PENDING):**\n  - Shot ID (`@sXpYsZ`): batao, main jod dunga.\n  - Kaun sa haath aur pair: maine generic rakha hai, kyunki character profile mein yeh nahi hai.\n  - Costume tag: nahi diya gaya, isliye prompt mein nahi daala.\n- **Reference-tag QC:** prompt mein teeno tags exact likhe hain. Asset images maine nahi dekhi, isliye asset verification abhi baaki hai.\n"
+          },
+          {
+            "ok": true,
+            "failed": [],
+            "output": "```\n@s1p1s1 [WS]: Early morning par @krishna-temple.outer-steps.ground, low-angle 3/4 side view, camera knee height par, frame screen-left se right ki taraf, 35mm look. @naina-01 ka full body screen-left third mein. Uska right foot pehli seedhi par abhi-abhi flat rakha hai aur weight usi par shift ho raha hai. Left foot neeche ground par hai, heel thodi uthi hui. Right hand mein @wooden-stick hai, jiski tip pehli seedhi ke edge par tiki hai aur stone ko chhoo rahi hai. Stick ki grip saaf aur ek hi hai. Naina blind hai: eyelids lagbhag 20% khule, aankhein neeche aur unfocused, kahin dekh nahi rahi, kisi cheez ko track nahi kar rahi. Sar thoda upar seedhiyon ki taraf, jaise aawaz ya space ko sun rahi ho. Expression shant aur dhyan se bhara, saans controlled. Left hand body ke paas halka balance mein. Uske peeche baaki seedhiyan upar ki taraf jaati hain, halki soft focus mein, aur upar ka hissa dhundh mein. Halki subah ki dhoop screen-right upar se low angle mein aa rahi hai, stone steps par lambi soft shadows, halki dhundh. Focus Naina ke paanv, stick ki tip aur chehre par. Background soft depth mein. Koi aur insaan nahi, stick ek hi, haath aur paanv sahi anatomy mein, Naina ki aankhein camera ki taraf nahi.\n```\n\n- Shot ID `@s1p1s1` sirf format ke liye rakha hai. Asli scene/panel/shot ID bata do toh replace kar dunga.\n- Naina ke costume ka koi tag nahi diya gaya, isliye maine koi tag add nahi kiya. Agar costume tag approved hai toh bhejo, prompt mein jod dunga.\n- **Reference-tag check:** teeno tags exactly waise hi hain jaise aapne diye. Inke images maine nahi dekhe, isliye asset verification baaki hai.\n- Image abhi generate nahi hui hai, isliye output ka visual check bhi baaki hai.\n"
+          },
+          {
+            "ok": true,
+            "failed": [],
+            "output": "**[MWS]:** Early morning ka shot, `@krishna-temple.outer-steps.ground` par. `@naina-01` steps ke neeche khadi hai, frame mein left-center par, body thodi 3/4 profile mein frame-right ki taraf jahan seedhiyan upar ja rahi hain. Ek precise instant hai: uska right foot pehli seedhi ke upar flat rakha hua hai aur weight abhi transfer ho raha hai, left foot ground par hai, heel thodi upar. Right hand mein `@wooden-stick` hai. Stick ka tip pehli seedhi ke edge par tika hua hai, jaise usne abhi step dhundh ke confirm kiya ho. Left hand balance ke liye body ke paas halka khula hai. Naina ki palkein lagbhag 20% khuli hain, aankhein neeche aur unfocused hain, kisi cheez ko dekh nahi rahi. Sir thoda tilt hai, jaise upar mandir ki ghanti ya awaaz sun rahi ho. Chehre par shaant concentration hai aur hothon par halki si muskaan.\n\nCamera thoda neeche, knee height par, eye-level se halka upward pitch, roll 0°. 35mm natural perspective. Foreground mein left edge par ground ka thoda texture soft focus mein. Midground mein Naina ka foot, stick ka tip aur step ka contact ekdum sharp aur saaf dikh raha hai, aur uska chehra bhi readable hai. Background mein upar jaati seedhiyan aur mandir ka bahari hissa halka defocused hai.\n\nEarly morning ki light naram, low angle sunlight frame-right/upar se, patthar ki seedhiyon par lambi halki shadows, aur hawa mein halki dhund. Natural skin texture, realistic anatomy, ek hi Naina, stick saaf dikh rahi hai aur haath stick ko theek se pakde hue hai. Frame mein koi aur vyakti nahi.\n\n- **Shot ID nahi diya tha**, isliye shot-size label ke saath prompt likha hai. Aapka format `@s1p1s1 [WS]:` hai, toh sahi ID batao ya khud aage laga lo.\n- **Stick right hand mein maana hai.** Yeh mera choice hai, aapne kisi haath ka nahi bataya tha. Agar profile mein left hand hai toh yeh ek shabd badal dena.\n- **Tags QC: abhi PENDING hai.** Teeno tags aapke likhe hue exact tags hain, kuch badla nahi. Lekin unki reference images maine nahi dekhi, isliye images bhi pending hain, aur Naina ka costume prompt mein nahi daala.\n"
+          }
+        ],
+        "valid_runs": 3,
+        "errored_runs": 0
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "dir-exact-mukund-pooja-tags",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "dir-crowd-only-when-visible",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "dir-crowd-required-when-visible",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "dir-naina-eyelid-default",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "dir-exact-dialogue-words",
+      "skill": "ai-native-director",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "soc-captions-do-groups",
+      "skill": "ai-socials",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "soc-caption-do-single",
+      "skill": "ai-socials",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "suno-800-instrumental",
+      "skill": "suno-instrumental-prompts",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    },
+    {
+      "id": "dub-word-lock-tags",
+      "skill": "ai-dubbing",
+      "with_skill": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      },
+      "baseline": {
+        "pass_rate": null,
+        "runs": [
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          },
+          {
+            "ok": null,
+            "failed": [],
+            "output": "You've hit your 5-hour limit · resets 10:50pm (UTC)\n",
+            "error": "hit your 5-hour limit"
+          }
+        ],
+        "valid_runs": 0,
+        "errored_runs": 3
+      }
+    }
+  ],
+  "with_skill_mean": 0.833,
+  "baseline_mean": 0.0,
+  "lift": 0.833,
+  "comparable_cases": 2,
+  "errored_runs": 57,
+  "regraded": "2026-11-02T01:37:24+00:00"
+}

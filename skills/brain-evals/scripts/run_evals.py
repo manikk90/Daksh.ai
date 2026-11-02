@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shlex
 import subprocess
 import sys
@@ -48,6 +49,23 @@ def load_cases(cases_dir: Path = CASES_DIR) -> list[dict]:
     if dupes:
         raise SystemExit(f"duplicate case ids: {sorted(dupes)}")
     return cases
+
+
+INFRA_ERROR = re.compile(r"hit your [^\n]*limit|usage limit|rate limit|overloaded|Credit balance is too low", re.I)
+
+
+def infra_error(output: str) -> str | None:
+    """Agent/infra failures (empty output, usage limits) are not skill failures: exclude them."""
+    if not output.strip():
+        return "empty output"
+    m = INFRA_ERROR.search(output[-400:])
+    return m.group(0) if m and len(output) < 400 else None
+
+
+def score(runs: list[dict]) -> dict:
+    valid = [r for r in runs if not r.get("error")]
+    return {"pass_rate": (sum(r["ok"] for r in valid) / len(valid)) if valid else None,
+            "valid_runs": len(valid), "errored_runs": len(runs) - len(valid)}
 
 
 def case_ok(output: str, case: dict, root: Path) -> tuple[bool, list[dict]]:
@@ -128,6 +146,9 @@ def cmd_run(cases: list[dict], root: Path, args) -> int:
             out = call_agent(args.agent_cmd, build_prompt(case, root, cond == "with_skill"), args.timeout)
         except subprocess.TimeoutExpired:
             out = ""
+        err = infra_error(out)
+        if err:
+            return job, {"ok": None, "error": err, "failed": [], "output": out}
         ok, res = case_ok(out, case, root)
         return job, {"ok": ok, "failed": [r["detail"] for r in res if not r["ok"]], "output": out}
 
@@ -139,8 +160,8 @@ def cmd_run(cases: list[dict], root: Path, args) -> int:
         row = {"id": case["id"], "skill": case["skill"]}
         for cond in conditions:
             runs = results[(ci, cond)]
-            row[cond] = {"pass_rate": sum(r["ok"] for r in runs) / len(runs), "runs": runs}
-        print(f"{case['id']}: " + "  ".join(f"{c}={row[c]['pass_rate']:.0%}" for c in conditions))
+            row[cond] = {**score(runs), "runs": runs}
+        print(f"{case['id']}: " + "  ".join(fmt(row[c]) + f" {c}" for c in conditions))
         report["cases"].append(row)
     summarize(report, conditions)
     print(json.dumps({k: v for k, v in report.items() if k != "cases"}, indent=2))
@@ -152,11 +173,21 @@ def cmd_run(cases: list[dict], root: Path, args) -> int:
     return 0
 
 
+def fmt(cell: dict) -> str:
+    rate = cell["pass_rate"]
+    tail = f" ({cell['errored_runs']} err)" if cell.get("errored_runs") else ""
+    return ("n/a" if rate is None else f"{rate:.0%}") + tail
+
+
 def summarize(report: dict, conditions: list[str]) -> None:
+    """Means over cases where BOTH conditions have valid runs, so lift compares like with like."""
+    usable = [r for r in report["cases"] if all(r[c]["pass_rate"] is not None for c in conditions)]
+    report["comparable_cases"] = len(usable)
+    report["errored_runs"] = sum(r[c].get("errored_runs", 0) for r in report["cases"] for c in conditions)
     for cond in conditions:
-        report[f"{cond}_mean"] = round(sum(r[cond]["pass_rate"] for r in report["cases"]) / len(report["cases"]), 3)
+        report[f"{cond}_mean"] = round(sum(r[cond]["pass_rate"] for r in usable) / len(usable), 3) if usable else None
     if "baseline" in conditions:
-        report["lift"] = round(report["with_skill_mean"] - report["baseline_mean"], 3)
+        report["lift"] = (round(report["with_skill_mean"] - report["baseline_mean"], 3) if usable else None)
 
 
 def cmd_regrade(cases: list[dict], root: Path, path: Path) -> int:
@@ -167,11 +198,15 @@ def cmd_regrade(cases: list[dict], root: Path, path: Path) -> int:
         case = by_id[row["id"]]
         for cond in conditions:
             for run in row[cond]["runs"]:
+                err = infra_error(run["output"])
+                if err:
+                    run.update(ok=None, error=err, failed=[])
+                    continue
+                run.pop("error", None)
                 ok, res = case_ok(run["output"], case, root)
                 run["ok"], run["failed"] = ok, [r["detail"] for r in res if not r["ok"]]
-            runs = row[cond]["runs"]
-            row[cond]["pass_rate"] = sum(r["ok"] for r in runs) / len(runs)
-        print(f"{row['id']}: " + "  ".join(f"{c}={row[c]['pass_rate']:.0%}" for c in conditions))
+            row[cond].update(score(row[cond]["runs"]))
+        print(f"{row['id']}: " + "  ".join(fmt(row[c]) + f" {c}" for c in conditions))
     summarize(report, conditions)
     report["regraded"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

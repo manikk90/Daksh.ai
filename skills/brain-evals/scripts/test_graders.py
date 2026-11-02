@@ -86,6 +86,13 @@ class CaseSuiteTests(unittest.TestCase):
             proc = subprocess.run([sys.executable, str(HERE / "run_evals.py"), cmd], capture_output=True, text=True)
             self.assertEqual(proc.returncode, 0, proc.stdout + proc.stderr)
 
+    def test_infra_errors_are_excluded(self):
+        self.assertTrue(run_evals.infra_error("You've hit your 5-hour limit · resets 10:50pm (UTC)"))
+        self.assertTrue(run_evals.infra_error("   "))
+        self.assertIsNone(run_evals.infra_error("A long real prompt " * 40 + " rate limit mentioned in prose"))
+        cell = run_evals.score([{"ok": True}, {"ok": None, "error": "limit"}])
+        self.assertEqual((cell["pass_rate"], cell["valid_runs"], cell["errored_runs"]), (1.0, 1, 1))
+
     def test_run_with_fake_agent(self):
         fake = f"{sys.executable} -c \"import sys; sys.stdin.read(); print('[crying softly] माँ, मुझे डर लग रहा है।')\""
         out = ROOT / "research/evals/_test_tmp.json"
