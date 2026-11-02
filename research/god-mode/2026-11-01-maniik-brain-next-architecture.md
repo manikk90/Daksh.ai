@@ -1,5 +1,5 @@
 # GM: maniik brain ka next architecture
-**Date:** 2026-11-01 | **Mode:** gm | **Status:** proposal
+**Date:** 2026-11-01 | **Mode:** gm | **Status:** built + tested (2026-11-02)
 **Goal:** Is repo ko aisa AI-founder brain banana jo khud seekhe, khud capabilities banaye, aur har tool (Claude Code, ChatGPT, Codex) mein chale.
 **Done means:** ek ranked architecture, aur pehla step jo aaj build ho sake.
 
@@ -87,3 +87,7 @@ Native Director ke 10 locked rules ko eval cases mein convert karo. 5 prompt-fix
 ## Open questions
 - Primary runtime ChatGPT rahega ya Claude Code? **Default assumption:** dono. Repo source of truth rahega, ChatGPT ko `skill.zip` export milega.
 - Nightly scheduled task banana hai? **Default:** abhi nahi. Pehle evals bano, phir aapke "haan" ke baad.
+
+## Outcome (2026-11-02)
+- **Built:** `skills/brain-evals/`, `brain/DAKSH_BRAIN.json`, `.github/workflows/brain-checks.yml`, `.agents/skills/`, and the nightly scheduled task `trig_01FXLbCpbXh2kKoD86SLvoew` (22:37 IST, draft PRs only).
+- **Experiment:** with skill 100% vs baseline 41.7% on 12 lock cases, 3 trials each, 0 errors (`research/evals/2026-11-02-full.json`). The pass bar is met; the kill signal did not trigger.
