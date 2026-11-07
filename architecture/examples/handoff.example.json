@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task_id": "example-film-001",
+  "node_id": "shots",
+  "assignment_id": "synthetic-assignment-001",
+  "from_agent": "daksh-brain",
+  "to_agent": "native-director",
+  "source_versions": {
+    "screenplay": "example-v1",
+    "references": "example-v2"
+  },
+  "depends_on": [
+    "mapping"
+  ],
+  "locks": [
+    "strict source frame"
+  ],
+  "visual_inventory": [
+    "synthetic-character-a",
+    "synthetic-door-front"
+  ],
+  "offscreen_audio": [
+    "synthetic-speaker-b line 2"
+  ],
+  "expected_outputs": [
+    "versioned shot prompt pack"
+  ],
+  "acceptance_criteria": [
+    "visual and offscreen audio sources separated"
+  ],
+  "permissions": [
+    "write isolated draft"
+  ],
+  "write_targets": [
+    "outputs/example-film-001/shots/"
+  ]
+}

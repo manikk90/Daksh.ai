@@ -1,0 +1,1882 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-11-07",
+  "root_agent_id": "daksh-brain",
+  "kind": "design-time DAG templates; offline preview only",
+  "workflows": [
+    {
+      "id": "direct-task",
+      "label": "Small direct task",
+      "required_inputs": [
+        "objective"
+      ],
+      "nodes": [
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "requested result complete",
+        "same-context review labelled honestly"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "full-launch",
+      "label": "Full show launch package",
+      "required_inputs": [
+        "synopsis",
+        "audience",
+        "dialect",
+        "deliverables"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "calendar",
+          "agent": "operations",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "calendar-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "assets",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "assets-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script",
+          "agent": "writer",
+          "depends_on": [
+            "research",
+            "assets"
+          ],
+          "output": "script-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "shots",
+          "agent": "native-director",
+          "depends_on": [
+            "script",
+            "assets"
+          ],
+          "output": "shots-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "voice",
+          "agent": "dubbing-director",
+          "depends_on": [
+            "script"
+          ],
+          "output": "voice-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "score",
+          "agent": "music-director",
+          "depends_on": [
+            "script"
+          ],
+          "output": "score-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "social",
+          "agent": "socials",
+          "depends_on": [
+            "shots"
+          ],
+          "output": "social-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "assemble",
+          "agent": "native-director",
+          "depends_on": [
+            "shots",
+            "voice",
+            "score"
+          ],
+          "output": "assemble-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "assemble",
+            "social",
+            "calendar"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "no missing footage represented as rendered video",
+        "locked script before voice",
+        "actual media QC before media completion"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "screenplay-to-film",
+      "label": "Screenplay to storyboard and film",
+      "required_inputs": [
+        "screenplay",
+        "shot_scope",
+        "references"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "breakdown",
+          "agent": "writer",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "breakdown-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "mapping",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "breakdown"
+          ],
+          "output": "mapping-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "locations",
+          "agent": "location-director",
+          "depends_on": [
+            "mapping"
+          ],
+          "output": "locations-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "shots",
+          "agent": "native-director",
+          "depends_on": [
+            "breakdown",
+            "locations",
+            "mapping"
+          ],
+          "output": "shots-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "voice",
+          "agent": "dubbing-director",
+          "depends_on": [
+            "breakdown"
+          ],
+          "output": "voice-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "score",
+          "agent": "music-director",
+          "depends_on": [
+            "breakdown"
+          ],
+          "output": "score-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "shots",
+            "voice",
+            "score"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "every current shot audited",
+        "exact dialogue and frame-local tags",
+        "paid generations only inside current budget"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "connected-locations",
+      "label": "Connected location and props",
+      "required_inputs": [
+        "region",
+        "layout",
+        "requested_views"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "plan",
+          "agent": "location-director",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "plan-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "master",
+          "agent": "location-director",
+          "depends_on": [
+            "plan"
+          ],
+          "output": "master-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "views",
+          "agent": "location-director",
+          "depends_on": [
+            "master"
+          ],
+          "output": "views-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "mapping",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "views"
+          ],
+          "output": "mapping-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "mapping"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "required plan/master approval satisfied before dependent steps",
+        "same geometry and regional identity across views"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "exact-tag-inventory",
+      "label": "Preview-verified asset tag inventory",
+      "required_inputs": [
+        "project",
+        "inventory_scope"
+      ],
+      "nodes": [
+        {
+          "id": "access",
+          "agent": "capability-operator",
+          "depends_on": [],
+          "output": "access-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "previews",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "access"
+          ],
+          "output": "previews-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "mapping",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "previews"
+          ],
+          "output": "mapping-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "mapping"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "every requested preview visited",
+        "exact character/costume/location/view/prop tags",
+        "coverage gaps reported"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "dialogue-dubbing",
+      "label": "Exact dialogue dubbing",
+      "required_inputs": [
+        "dialogue",
+        "speaker_map",
+        "language",
+        "timing"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "prepare",
+          "agent": "dubbing-director",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "prepare-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "voice",
+          "agent": "dubbing-director",
+          "depends_on": [
+            "prepare"
+          ],
+          "output": "voice-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "voice"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "ordered text exact",
+        "pronunciation/audio listened to when generated",
+        "repair attempts bounded by source skill"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "music-score",
+      "label": "Song or score package",
+      "required_inputs": [
+        "cue_brief",
+        "duration",
+        "vocal_mode"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "compose",
+          "agent": "music-director",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "compose-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "compose"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "lyric/melody/instrumental locks",
+        "actual audio evidence for acoustic quality"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "suno-instrumental",
+      "label": "Compact Suno instrumental prompt",
+      "required_inputs": [
+        "cue_arc",
+        "instruments"
+      ],
+      "nodes": [
+        {
+          "id": "prompt",
+          "agent": "suno-helper",
+          "depends_on": [],
+          "output": "prompt-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "prompt"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "character cap measured",
+        "no unintended vocals"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "fashion-campaign",
+      "label": "Fashion campaign",
+      "required_inputs": [
+        "campaign_brief",
+        "model_reference",
+        "garment_reference"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "concept",
+          "agent": "fashion-campaigner",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "concept-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "location",
+          "agent": "location-director",
+          "depends_on": [
+            "concept"
+          ],
+          "output": "location-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "frames",
+          "agent": "fashion-campaigner",
+          "depends_on": [
+            "location"
+          ],
+          "output": "frames-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "captions",
+          "agent": "socials",
+          "depends_on": [
+            "frames"
+          ],
+          "output": "captions-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "captions",
+            "frames"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "identity/garment/frame locks held",
+        "generation/publishing only if authorized"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "social-content",
+      "label": "Platform content and retrospective",
+      "required_inputs": [
+        "platforms",
+        "audience",
+        "assets"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "draft",
+          "agent": "socials",
+          "depends_on": [
+            "research"
+          ],
+          "output": "draft-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "design",
+          "agent": "design",
+          "depends_on": [
+            "draft"
+          ],
+          "output": "design-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "draft",
+            "design"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "platform variants correct",
+        "drafting never implies publication",
+        "performance claims use actual metrics"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "engineering-change",
+      "label": "Scoped software change",
+      "required_inputs": [
+        "repository",
+        "objective",
+        "acceptance_criteria"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "implement",
+          "agent": "engineering",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "implement-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "tests",
+          "agent": "engineering",
+          "depends_on": [
+            "implement"
+          ],
+          "output": "tests-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "tests"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "unrelated work preserved",
+        "affected tests pass",
+        "remote receipt verified when push requested"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "research-blueprint",
+      "label": "God Mode research blueprint",
+      "required_inputs": [
+        "goal"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "internal",
+          "agent": "knowledge",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "internal-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "external",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "external-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "business",
+          "agent": "business-strategy",
+          "depends_on": [
+            "internal",
+            "external"
+          ],
+          "output": "business-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "synthesis",
+          "agent": "maniik-advisor",
+          "depends_on": [
+            "business"
+          ],
+          "output": "synthesis-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "synthesis"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "current primary evidence where needed",
+        "one ranked recommendation",
+        "smallest experiment and kill signal"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "business-validation",
+      "label": "Business idea to experiment",
+      "required_inputs": [
+        "idea",
+        "target_buyer"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "strategy",
+          "agent": "business-strategy",
+          "depends_on": [
+            "research"
+          ],
+          "output": "strategy-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "model",
+          "agent": "finance",
+          "depends_on": [
+            "strategy"
+          ],
+          "output": "model-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "model"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "buyer problem and current alternative",
+        "hypotheses not invented demand",
+        "outreach not performed without explicit instruction"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "document-package",
+      "label": "Document, sheet or deck",
+      "required_inputs": [
+        "purpose",
+        "audience",
+        "format"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "sources",
+          "agent": "knowledge",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "sources-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "author",
+          "agent": "documents",
+          "depends_on": [
+            "sources"
+          ],
+          "output": "author-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "author"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "native editable artifact when requested",
+        "render/export inspected"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "data-analysis",
+      "label": "Data to decision",
+      "required_inputs": [
+        "dataset",
+        "question",
+        "metric_definitions"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "quality",
+          "agent": "data-analytics",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "quality-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "analysis",
+          "agent": "data-analytics",
+          "depends_on": [
+            "quality"
+          ],
+          "output": "analysis-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "analysis"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "grain and totals reconcile",
+        "uncertainty and missingness explicit"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "work-planning",
+      "label": "Source-backed work planning",
+      "required_inputs": [
+        "planning_window",
+        "authorized_sources"
+      ],
+      "nodes": [
+        {
+          "id": "access",
+          "agent": "capability-operator",
+          "depends_on": [],
+          "output": "access-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "sources",
+          "agent": "knowledge",
+          "depends_on": [
+            "access"
+          ],
+          "output": "sources-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "plan",
+          "agent": "operations",
+          "depends_on": [
+            "sources"
+          ],
+          "output": "plan-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "plan"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "actual owners/deadlines",
+        "no meetings substituted for reminders",
+        "no duplicate timers"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "season-batch",
+      "label": "Season batch production",
+      "required_inputs": [
+        "episode_manifest",
+        "deliverables"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "index",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "index-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "scripts",
+          "agent": "writer",
+          "depends_on": [
+            "index"
+          ],
+          "output": "scripts-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "shots",
+          "agent": "native-director",
+          "depends_on": [
+            "scripts"
+          ],
+          "output": "shots-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "audio",
+          "agent": "dubbing-director",
+          "depends_on": [
+            "scripts"
+          ],
+          "output": "audio-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "score",
+          "agent": "music-director",
+          "depends_on": [
+            "scripts"
+          ],
+          "output": "score-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "shots",
+            "audio",
+            "score"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "expand episode tasks with isolated IDs",
+        "per-episode QC",
+        "partial failures not hidden"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "competitor-response",
+      "label": "Evidence-based competitor response",
+      "required_inputs": [
+        "competitor_event",
+        "own_product_brief"
+      ],
+      "nodes": [
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [],
+          "output": "research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "angle",
+          "agent": "business-strategy",
+          "depends_on": [
+            "research"
+          ],
+          "output": "angle-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script",
+          "agent": "writer",
+          "depends_on": [
+            "angle"
+          ],
+          "output": "script-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "pack",
+          "agent": "socials",
+          "depends_on": [
+            "script"
+          ],
+          "output": "pack-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "pack"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "verify actual event and date",
+        "no unsupported competitor claims",
+        "publish only when specifically authorized"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "script-voice",
+      "label": "Script and voice only",
+      "required_inputs": [
+        "synopsis",
+        "dialect",
+        "duration"
+      ],
+      "nodes": [
+        {
+          "id": "script",
+          "agent": "writer",
+          "depends_on": [],
+          "output": "script-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "voice",
+          "agent": "dubbing-director",
+          "depends_on": [
+            "script"
+          ],
+          "output": "voice-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "voice"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "no video claimed",
+        "exact approved script binds voice"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "multi-show-sprint",
+      "label": "Multi-show sprint",
+      "required_inputs": [
+        "show_briefs",
+        "global_budget"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "shared-research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "shared-research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "calendar",
+          "agent": "operations",
+          "depends_on": [
+            "shared-research"
+          ],
+          "output": "calendar-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "packages",
+          "agent": "native-director",
+          "depends_on": [
+            "calendar"
+          ],
+          "output": "packages-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "packages"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "expand each show into full-launch sub-DAG",
+        "actual concurrency and budget cap respected",
+        "per-show success/failure visible"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "image-edit",
+      "label": "Reference-faithful image edit",
+      "required_inputs": [
+        "source_image",
+        "requested_edit"
+      ],
+      "nodes": [
+        {
+          "id": "inspect",
+          "agent": "design",
+          "depends_on": [],
+          "output": "inspect-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "edit",
+          "agent": "design",
+          "depends_on": [
+            "inspect"
+          ],
+          "output": "edit-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "edit"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "source image inspected",
+        "edited image delivered not prompt-only",
+        "preserve requested transparency and exact reference text"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "memory-update",
+      "label": "Scoped knowledge improvement",
+      "required_inputs": [
+        "correction_source",
+        "target_scope"
+      ],
+      "nodes": [
+        {
+          "id": "extract",
+          "agent": "action-style",
+          "depends_on": [],
+          "output": "extract-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "propose",
+          "agent": "knowledge",
+          "depends_on": [
+            "extract"
+          ],
+          "output": "propose-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "eval",
+          "agent": "brain-evals",
+          "depends_on": [
+            "propose"
+          ],
+          "output": "eval-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "eval"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "persist",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "persist-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "candidate not automatically trusted",
+        "revision guard and permitted write scope",
+        "no timer/access/model-budget expansion"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "sales-research",
+      "label": "Sales account research and reviewed draft",
+      "required_inputs": [
+        "account",
+        "research_goal"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "brief",
+          "agent": "sales",
+          "depends_on": [
+            "research"
+          ],
+          "output": "brief-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "brief"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "verified account facts",
+        "no outreach without explicit sending instruction"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "support-triage",
+      "label": "Support issue triage and response draft",
+      "required_inputs": [
+        "issue",
+        "authorized_context"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "evidence",
+          "agent": "knowledge",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "evidence-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "triage",
+          "agent": "support",
+          "depends_on": [
+            "evidence"
+          ],
+          "output": "triage-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "triage"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "response matches actual policy",
+        "no invented refund or product commitments"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "legal-review",
+      "label": "Source-backed legal review",
+      "required_inputs": [
+        "jurisdiction",
+        "question",
+        "documents"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "research-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review-draft",
+          "agent": "legal",
+          "depends_on": [
+            "research"
+          ],
+          "output": "review-draft-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "qc",
+          "agent": "independent-qc",
+          "depends_on": [
+            "review-draft"
+          ],
+          "output": "qc-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "qc"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "jurisdiction and current sources explicit",
+        "no binding signature/acceptance or unsupported certainty"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "people-planning",
+      "label": "Organizational roles and people planning",
+      "required_inputs": [
+        "objective",
+        "authorized_context"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "evidence",
+          "agent": "knowledge",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "evidence-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "plan",
+          "agent": "people",
+          "depends_on": [
+            "evidence"
+          ],
+          "output": "plan-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "plan"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "personal data minimized",
+        "no automated high-impact personnel decision"
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "design-handoff",
+      "label": "Design and interface handoff",
+      "required_inputs": [
+        "brief",
+        "references",
+        "deliverables"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "intake-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "design",
+          "agent": "design",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "design-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "prototype",
+          "agent": "design",
+          "depends_on": [
+            "design"
+          ],
+          "output": "prototype-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "prototype"
+          ],
+          "output": "review-artifact",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "deliver-artifact",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "reference and brand fidelity",
+        "artifact inspected at target size",
+        "relevant accessibility and interaction states checked"
+      ],
+      "execution_status": "plan template, not executed"
+    }
+  ]
+}

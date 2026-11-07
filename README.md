@@ -1,62 +1,63 @@
-# Manik | All Agents, Mapped Skills and Content Audit v3
+# Daksh Brain
 
-**Private working export | 1 November 2026**
+**One accountable AI controller. All agents, skills and tools work under Daksh Brain.**
 
-> **Latest: V5.1 (2 November 2026)** — Director aur Socials ke latest locks skill source aur agent MDs dono mein sync ([V5.1 audit](reports/V5_1_CONTENT_AUDIT.md), [V5.1 manifest](reports/V5_1_MANIFEST.json)). Base update: **V5.** `agents/` aur `skills/` ab V5 wale hain: AI Fashion Campaigner (`agents/AI_FASHION_CAMPAIGNER.md`, `skills/fashion-campaign-director/`) add hua, aur Native Director, Dubbing, Socials, Location, Music, Suno, Daksh, maniik update hue. Details: [V5 update report](reports/V5_UPDATE_REPORT.md), [V5 QA](reports/V5_QA_REPORT.md), [official research](research/OFFICIAL_RESEARCH_2026-11-02.md), [V5 manifest](reports/V5_MANIFEST.json).
->
-> Baaki folders (`audit/`, `runtime_state/`, `mapping/`, `skill_packages/`, `verification/`, `previous_v2_summaries/`, `original_dossier/`) v3 snapshot hain. `skill_packages/*.zip` aur `verification/FILE_HASHES.json` V5 se update nahi hue, isliye V5 files ke liye `reports/V5_MANIFEST.json` ke hashes use karo.
+The human user sets goals and authority. Daksh Brain understands the task, retrieves relevant context, plans dependencies, delegates to specialists, controls budgets and permissions, reviews outputs and verifies delivery. The maniik founder/style persona is an advisor under Daksh Brain.
 
-
-V2 ke source folders complete the, lekin main agent MDs short summaries the. V3 mein main dossiers expand kiye hain, scope/wording errors fix kiye hain aur actual dated memory/project records add kiye hain. AI Writer ka exact source abhi bhi missing hai; uski file clearly reconstructed hai.
-
-## maniik brain + God Mode (`gm`)
-
-Is repo ka main kaam ek brain banana hai jo AI mein almost kuch bhi kar sake. Top layer **maniik** hai, Manik ka AI-founder alter ego ([identity](agents/MANIIK_FOUNDER.md)). maniik decide karta hai kya banana hai. Daksh orchestrate karta hai, aur specialists execute karte hain.
-
-| Command | Kaam |
-|---|---|
-| `gm <goal>` | Repo ke relevant agents/skills + current tools, hacks, architecture ka research -> ek ranked blueprint |
-| `gm deep <goal>` | Parallel deep research + independent review |
-| `gm build <goal>` | Research ke baad capability repo mein bana ke commit |
-| `gm scan <goal>` | Sirf internal: brain mein kya already hai, gaps kya hain |
-
-Skill: [skills/god-mode/SKILL.md](skills/god-mode/SKILL.md). Internal scanner: `python skills/god-mode/scripts/gm_scan.py "<goal>"`. Reports: `research/god-mode/`. Claude Code is repo mein `CLAUDE.md` ke through `gm` automatically pehchanta hai.
-
-### Brain infrastructure (2026-11-01)
-| Piece | Path | Kaam |
-|---|---|---|
-| Live memory | [brain/](brain/README.md) | `DAKSH_BRAIN.json`, versioned, `brain.py` se hi edit |
-| Eval gate | [skills/brain-evals/](skills/brain-evals/SKILL.md) | Locks ke regression cases, routing evals, with-skill vs baseline runs |
-| CI | `.github/workflows/brain-checks.yml` | Har push/PR par saare tests + selftest + routing + brain validate |
-| Cross-tool skills | `.agents/skills/` | `skills/*` ke symlinks (Agent Skills standard path) |
-| Eval results | `research/evals/` | Model runs ke dated reports |
+```text
+Human user
+  └─ Daksh Brain — context, planning, routing, QC, memory, recovery
+       ├─ Founder/style advice · Research · Business · Knowledge
+       ├─ Writer · Native Director · Reference Mapper · Location
+       ├─ Music · Suno · Dubbing · Fashion · Socials · Design
+       ├─ Engineering · Data · Documents · Work Operations
+       ├─ Sales · Support · Finance · Legal · People
+       └─ Independent QC · Brain Evals · Tools/Connector Operator
+            └─ Relevant skills → currently authorized tools → verified artifacts
+```
 
 ## Start here
-- [Audit verdict and actual gaps](audit/AUDIT_REPORT.md)
-- [Coverage matrix](audit/COVERAGE_MATRIX.md)
-- [Agent to skill map](AGENT_SKILL_MAP.md)
-- [Detailed skill catalogue](SKILL_CATALOG.md)
-- [How to use](HOW_TO_USE.md)
-- [Validation report](verification/QA_REPORT.md)
 
-## Package contents
-| Folder | What it contains |
+- **[Complete architecture and workflow index](docs/daksh-brain/README.md)** — system design, diagrams and source links.
+- [Architecture](docs/daksh-brain/ARCHITECTURE.md) · [Workflows](docs/daksh-brain/WORKFLOWS.md) · [Handoffs/QC](docs/daksh-brain/HANDOFFS_AND_QC.md).
+- [All skills](catalog/SKILLS.md) · [All tools](catalog/TOOLS.md) · [Skill/tool activation design](docs/daksh-brain/SKILLS_AND_TOOLS.md).
+- [Memory/learning](docs/daksh-brain/MEMORY_AND_LEARNING.md) · [Learned operating rules](docs/daksh-brain/LEARNED_OPERATING_RULES.md) · [Operations](docs/daksh-brain/OPERATIONS.md).
+- [Coverage and provenance](docs/daksh-brain/COVERAGE_AND_PROVENANCE.md) · [Validation report](docs/daksh-brain/VALIDATION_REPORT.md).
+- **[Repository operating instructions](AGENTS.md)** — current hierarchy and precedence for assistants.
+
+## What is included
+
+| Component | Contents |
 |---|---|
-| agents/ | 8 source-expanded agent/helper dossiers plus 1 reconstructed Writer dossier |
-| skills/ | All 217 exact original custom source files, unchanged |
-| skill_packages/ | Eight original single-skill skill.zip archives, unchanged |
-| runtime_state/ | Actual dated Daksh brain, Laddu Gopal revision 7, Writer unapplied maintenance |
-| shared/ | Current cross-agent contract and recent source-scoped project exceptions |
-| overlays/ | Latest conversation-scoped rules and audit clarifications |
-| audit/ | Findings, source provenance, content counts, inclusion indices and gaps |
-| previous_v2_summaries/ | Exact previous nine short agent MDs |
-| original_dossier/ | Earlier v1 dossier files preserved |
-| mapping/, support_skills/, external_dependencies/ | Existing routing and supporting dependency snapshots |
-| verification/ | v3 checks, preserved v2 reports and integrity verifier |
+| [28 agent contracts](agents/contracts/) | Mission, inputs, responsibilities, source locks, outputs, completion checks and escalation |
+| [27 workflow templates](architecture/workflows.json) | Creative launch/film, location, tags, audio, fashion, socials, code, research, business, documents, data, planning and scoped learning |
+| [Complete skill inventory](catalog/skills.json) | 669 readable skill-source records; 11 bundled repo skills plus external metadata, versions and ownership |
+| [Session skill manifest](catalog/session-skill-manifest.json) | 390 session-listed sources; disk-only and policy-disabled sources remain separate |
+| [Tool inventory](catalog/tools.json) | 628 advertised capability records, with no credential or account-readiness claims |
+| [Machine contracts](architecture/contracts/) | Task, handoff, artifact and memory candidate JSON Schemas |
+| [Policy and compatibility](architecture/) | Authority, budgets, concurrency, recovery and existing role-ID mapping |
+| [Existing production source](skills/) | 11 original skill roots, runtime scripts, validators and existing regression suites |
 
-## Boundaries
-All 73 available custom Markdown source modules are consolidated into the corresponding agent MDs. Saved lesson records are included with their original statuses. Scripts, templates and larger structured datasets remain in the indexed source folders. Writer has no original source/installer here.
+Inventory is a dated 7 November 2026 snapshot. External skill implementations are not bulk-vendored; catalogued metadata does not imply installed/connected/authorized runtime capability. This is a private working repo.
 
-This is not an exhaustive raw-chat/media archive. Original source statements about APIs, accounts and schedules remain dated and need verification when used for execution. No live agent, timer, external account or approved production asset was modified. The outer ZIP is a documentation/source bundle, not a one-click multi-skill installation.
+## Validate and preview locally
 
-Use the audited main MD and current scoped overrides for documentation. Loading an unchanged nested skill.zip alone does not install the new v3 clarifications.
+Use Python 3.12 or newer. Install validation/test dependencies in a virtual environment:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install pytest pyyaml pillow numpy 'jsonschema>=4.20,<5'
+python3 tools/daksh_architecture.py validate
+python3 tools/daksh_architecture.py plan screenplay-to-film \
+  --inputs architecture/examples/film-inputs.json --max-parallel 3
+python3 -m pytest -q -p no:cacheprovider tests/
+```
+
+The new utility validates the specification and prints an offline plan. It launches no workers, spends no credits, creates no schedules and makes no provider calls. The existing strict ledger at `skills/daksh/scripts/orchestrator.py` remains unchanged. A future runtime broker and provider adapters are described explicitly as implementation work, not as a deployed service.
+
+## Existing source and history
+
+The V5.1 creative agent dossiers, source skills, strict frame/dialogue locks, brain/eval utilities and historical records remain available. [Previous README](https://github.com/manikk90/Daksh.ai/blob/4c7276d9388817c175ad7ad85caa3130d6ca912c/README.md), [existing agent/skill mapping](AGENT_SKILL_MAP.md), [existing skill catalogue](SKILL_CATALOG.md), [brain source](brain/README.md), [shared rules](shared/COMMON_RULES.md) and [V5.1 report](reports/V5_1_CONTENT_AUDIT.md) preserve that context.
+
+The user's 7 November instruction supersedes the older maniik-above-Daksh hierarchy. Historical snapshots are retained and do not override the active master contract. AI Writer's dossier remains explicitly reconstructed; no missing original skill or inaccessible conversation is invented.

@@ -1,5 +1,8 @@
 # Mapped Skills: Detailed File Catalog
 
+> Current master edition: [Daksh Brain architecture](docs/daksh-brain/README.md) and [complete installed skill inventory](catalog/SKILLS.md). Daksh Brain is the top AI controller; this existing source catalogue remains a compatibility/reference record.
+
+
 Har custom skill ka complete available directory copy kiya gaya hai. Neeche modules ke entry points diye hain; full file index bhi included hai. Source content English mein jaisa saved tha waisa hi preserve hai.
 
 ## Contents

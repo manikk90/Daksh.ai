@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "task_id": "example-film-001",
+  "objective": "Prepare a source-faithful shot and audio package",
+  "owner": "daksh-brain",
+  "scope": {
+    "project": "synthetic-example",
+    "target": "scene-01",
+    "scene": "01"
+  },
+  "source_versions": {
+    "screenplay": "example-v1",
+    "references": "example-v2"
+  },
+  "locks": [
+    "preserve exact dialogue",
+    "use only visible frame assets"
+  ],
+  "permissions": [
+    "read supplied sources",
+    "write task drafts"
+  ],
+  "acceptance_criteria": [
+    "every requested shot covered",
+    "exact dialogue checked"
+  ],
+  "budget": {
+    "max_parallel": 3,
+    "max_attempts": 2,
+    "paid_generation_authorized": false
+  }
+}

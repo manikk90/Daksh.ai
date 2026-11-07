@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "artifact_id": "example-shot-pack-v1",
+  "task_id": "example-film-001",
+  "producer": "native-director",
+  "uri": "outputs/example-film-001/shot-pack.md",
+  "source_versions": {
+    "screenplay": "example-v1"
+  },
+  "statuses": [
+    "produced",
+    "pending"
+  ],
+  "checks": [
+    {
+      "id": "source-text",
+      "outcome": "pass",
+      "evidence": "synthetic exact-text comparison fixture"
+    },
+    {
+      "id": "visual-quality",
+      "outcome": "not_run",
+      "evidence": "no paid generation or rendered media in this example"
+    }
+  ],
+  "blockers": [
+    "media not generated; prompt pack only"
+  ]
+}

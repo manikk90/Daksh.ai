@@ -1,6 +1,6 @@
 name: brain-checks
 
-# Eval gate for the maniik brain: script regressions, grader selftest, routing and brain validity.
+# Eval gate for Daksh Brain: specification, regressions, routing and brain validity.
 # Deterministic only (no model calls, no secrets needed).
 on:
   push:
@@ -17,6 +17,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pytest pyyaml pillow numpy "jsonschema>=4.20,<5"
+      - name: Daksh Brain architecture and contracts
+        run: |
+          python tools/daksh_architecture.py validate
+          python -m pytest -q -p no:cacheprovider tests/
       - name: Skill regression suites
         run: |
           set -e

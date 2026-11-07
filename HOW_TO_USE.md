@@ -1,5 +1,8 @@
 # How to use this audited bundle
 
+> Current master edition: [Daksh Brain architecture](docs/daksh-brain/README.md) and [complete installed skill inventory](catalog/SKILLS.md). Daksh Brain is the top AI controller; this existing source catalogue remains a compatibility/reference record.
+
+
 1. Open audit/AUDIT_REPORT.md to understand what was checked and what remains missing.
 2. Choose the relevant agents/*.md. Its opening clarifications govern this export; full original source modules follow with explicit provenance. Do not load all agents for a tiny task.
 3. Use the original skills/ folder for executable scripts, exact templates, structured data and byte-exact source recovery. Paths inside quoted source instructions are relative to their original skill root.

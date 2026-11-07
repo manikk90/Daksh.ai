@@ -1,5 +1,8 @@
 # Shared current operating contract | v3
 
+**7 November 2026 hierarchy update:** The human user retains final authority; Daksh Brain is the highest AI controller. All specialists and maniik founder/style advice operate under it. See [AGENTS.md](../AGENTS.md). Existing scoped creative and action locks below remain applicable.
+
+
 Snapshot: 1 November 2026. This is a private documentation export, not a live installation or a running service.
 
 ## Authority and scope

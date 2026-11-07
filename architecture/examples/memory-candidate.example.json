@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "example-lesson-001",
+  "kind": "direct_correction",
+  "scope": {
+    "project": "synthetic-example",
+    "target": "shot-02"
+  },
+  "claim": "Preserve the source camera framing for this shot",
+  "source": {
+    "reference": "synthetic user correction fixture",
+    "observed_on": "2026-11-07",
+    "source_version": "example-v1"
+  },
+  "status": "proposed",
+  "confidence": 0.8,
+  "review_condition": "Confirm scope and source revision before promotion"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "legacy_registry": "skills/daksh/assets/agent-registry.json",
+  "mapping": {
+    "research": "research-intelligence",
+    "business": "business-strategy",
+    "action_model": "action-style",
+    "writer": "writer",
+    "director": "native-director",
+    "mapping": "reference-mapper",
+    "location": "location-director",
+    "music": "music-director",
+    "dubbing": "dubbing-director",
+    "suno": "suno-helper",
+    "socials": "socials",
+    "fashion": "fashion-campaigner",
+    "data": "data-analytics",
+    "authored_voice": "action-style",
+    "qc": "independent-qc",
+    "maniik": "operations",
+    "apps": "capability-operator",
+    "daksh": "daksh-brain"
+  },
+  "note": "Compatibility aliases only. This does not rewrite existing run ledgers or add fields to their strict schema."
+}

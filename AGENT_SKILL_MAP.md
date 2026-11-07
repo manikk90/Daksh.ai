@@ -1,5 +1,8 @@
 # Agent -> Skill Map
 
+> Current master edition: [Daksh Brain architecture](docs/daksh-brain/README.md) and [complete installed skill inventory](catalog/SKILLS.md). Daksh Brain is the top AI controller; this existing source catalogue remains a compatibility/reference record.
+
+
 Is file mein actual mapped skills, internal roles aur external dependencies alag rakhe gaye hain. Kisi role ka naam hona uske live run ya active automation ka proof nahi hai.
 
 | Agent / role | Skill ya implementation | Export status |
