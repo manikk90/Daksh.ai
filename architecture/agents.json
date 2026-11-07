@@ -37,7 +37,9 @@
         "save/push receipt verified"
       ],
       "skill_paths": [
-        "skills/daksh/SKILL.md"
+        "skills/daksh/SKILL.md",
+        "modules/ai-film/.claude/skills/viral-studio/SKILL.md",
+        "modules/ai-film/skills/film-production/SKILL.md"
       ],
       "external_domains": [],
       "write_scope": "Only assigned task-local drafts; canonical merge belongs to Daksh Brain.",
@@ -213,7 +215,8 @@
         "source and expiry/review condition present"
       ],
       "skill_paths": [
-        "skills/daksh/SKILL.md"
+        "skills/daksh/SKILL.md",
+        "modules/ai-film/.claude/skills/studio-learn/SKILL.md"
       ],
       "external_domains": [
         "writing-style",
@@ -244,9 +247,10 @@
         "screenplay and exact dialogue"
       ],
       "must_preserve": [
-        "writer source is reconstructed, not an installed original skill",
+        "legacy Writer dossier is reconstructed; AI-film writer is a distinct pinned source, not recovery of that original",
         "approved wording and reveal timing",
-        "screenplay dialogue is not moved under the video-prompt-only rule"
+        "screenplay dialogue is not moved under the video-prompt-only rule",
+        "AI-film newly authored scripts require independent critique and explicit owner approval before media work"
       ],
       "outputs": [
         "versioned script",
@@ -257,7 +261,10 @@
         "narrative continuity checked",
         "dialogue and scene IDs preserved"
       ],
-      "skill_paths": [],
+      "skill_paths": [
+        "modules/ai-film/skills/ai-writer/SKILL.md",
+        "modules/ai-film/skills/screenplay-breakdown/SKILL.md"
+      ],
       "external_domains": [
         "creative-writing"
       ],
@@ -285,13 +292,15 @@
         "camera and composition",
         "shot timing and action",
         "frame-local reference binding",
-        "specialist director controller"
+        "specialist director controller",
+        "AI-film director and Mann editing procedures under Daksh Brain"
       ],
       "must_preserve": [
         "strict reference frame and camera locks",
         "only relevant visible subjects",
         "exact dialogue at absolute end of video prompt",
-        "gradual reveals and accessibility behavior"
+        "gradual reveals and accessibility behavior",
+        "Mann exact-EDL storyboard approval and viral studio look/music gates"
       ],
       "outputs": [
         "shot plan",
@@ -305,7 +314,12 @@
         "media claims require actual inspection"
       ],
       "skill_paths": [
-        "skills/ai-native-director/SKILL.md"
+        "skills/ai-native-director/SKILL.md",
+        "modules/ai-film/.claude/skills/mann-edit/SKILL.md",
+        "modules/ai-film/.claude/skills/mann-style-lab/SKILL.md",
+        "modules/ai-film/skills/creative-direction/SKILL.md",
+        "modules/ai-film/skills/shot-continuity/SKILL.md",
+        "modules/ai-film/skills/storyboard-keyframes/SKILL.md"
       ],
       "external_domains": [
         "video",
@@ -353,7 +367,8 @@
         "missing preview access reported as blocker"
       ],
       "skill_paths": [
-        "skills/ai-native-director/SKILL.md"
+        "skills/ai-native-director/SKILL.md",
+        "modules/ai-film/skills/character-costume-design/SKILL.md"
       ],
       "external_domains": [
         "browser",
@@ -402,7 +417,8 @@
         "exact existing orientation preserved"
       ],
       "skill_paths": [
-        "skills/ai-location-director/SKILL.md"
+        "skills/ai-location-director/SKILL.md",
+        "modules/ai-film/skills/location-prop-design/SKILL.md"
       ],
       "external_domains": [
         "image",
@@ -1154,7 +1170,9 @@
         "failures not relabelled as complete",
         "remaining risk and gaps explicit"
       ],
-      "skill_paths": [],
+      "skill_paths": [
+        "modules/ai-film/skills/coverage-quality-audit/SKILL.md"
+      ],
       "external_domains": [
         "quality"
       ],
@@ -1241,7 +1259,9 @@
         "account/repository/destination verified",
         "post-action state or receipt inspected"
       ],
-      "skill_paths": [],
+      "skill_paths": [
+        "modules/ai-film/skills/video-tool-handoff/SKILL.md"
+      ],
       "external_domains": [
         "connectors",
         "automation",

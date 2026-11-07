@@ -2,6 +2,8 @@
 
 > Current master edition: [Daksh Brain architecture](docs/daksh-brain/README.md) and [complete installed skill inventory](catalog/SKILLS.md). Daksh Brain is the top AI controller; this existing source catalogue remains a compatibility/reference record.
 
+For the current AI-film production CLI, viral studio and Mann editor, follow [the integration guide](docs/daksh-brain/AI_FILM_INTEGRATION.md). Initialize `modules/ai-film` with `git submodule update --init --recursive`, then use `python3 tools/ai_film.py film --help` or `python3 tools/ai_film.py mann doctor`. The audit instructions below describe the historical bundle.
+
 
 1. Open audit/AUDIT_REPORT.md to understand what was checked and what remains missing.
 2. Choose the relevant agents/*.md. Its opening clarifications govern this export; full original source modules follow with explicit provenance. Do not load all agents for a tiny task.

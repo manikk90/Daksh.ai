@@ -45,6 +45,9 @@ Own the user outcome, choose the smallest adequate plan, route specialists, reco
 
 ## Skills and dependencies
 
+- [AI-film module: .claude/skills/viral-studio/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/.claude/skills/viral-studio/SKILL.md)
+- [AI-film module: skills/film-production/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/film-production/SKILL.md)
+
 - [Bundled source: skills/daksh/SKILL.md](../../skills/daksh/SKILL.md)
 
 ## Authority and handoff

@@ -43,6 +43,8 @@ Review source fidelity, artifact quality and action scope independently of the p
 
 ## Skills and dependencies
 
+- [AI-film module: skills/coverage-quality-audit/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/coverage-quality-audit/SKILL.md)
+
 - External capability domain: `quality`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 
 ## Authority and handoff

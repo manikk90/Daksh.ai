@@ -46,6 +46,8 @@ Build region-specific connected locations, approved masters, props and spatially
 
 ## Skills and dependencies
 
+- [AI-film module: skills/location-prop-design/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/location-prop-design/SKILL.md)
+
 - [Bundled source: skills/ai-location-director/SKILL.md](../../skills/ai-location-director/SKILL.md)
 - External capability domain: `image`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 - External capability domain: `spatial`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.

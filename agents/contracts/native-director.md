@@ -37,6 +37,7 @@ Turn approved beats into shot design, acting, boards and generation-ready video 
 - every saved shot prompt checked against screenplay
 - visual and offscreen-audio inventories separated
 - media claims require actual inspection
+- Mann preserves owner style, script lock and exact-EDL storyboard approval before full render; viral studio preserves look/music and final-cut gates
 
 ## Escalates when
 
@@ -46,6 +47,12 @@ Turn approved beats into shot design, acting, boards and generation-ready video 
 - failed required check
 
 ## Skills and dependencies
+
+- [AI-film module: .claude/skills/mann-edit/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/.claude/skills/mann-edit/SKILL.md)
+- [AI-film module: .claude/skills/mann-style-lab/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/.claude/skills/mann-style-lab/SKILL.md)
+- [AI-film module: skills/creative-direction/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/creative-direction/SKILL.md)
+- [AI-film module: skills/shot-continuity/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/shot-continuity/SKILL.md)
+- [AI-film module: skills/storyboard-keyframes/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/storyboard-keyframes/SKILL.md)
 
 - [Bundled source: skills/ai-native-director/SKILL.md](../../skills/ai-native-director/SKILL.md)
 - External capability domain: `video`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.

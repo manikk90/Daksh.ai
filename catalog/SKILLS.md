@@ -4,6 +4,8 @@ Snapshot: 2026-11-07. Generated from readable metadata; skill bodies and secrets
 
 Presence in this inventory is not permission to invoke a skill. Session exposure is a separate fact from credentials, adapter readiness, service connection, and a successful live test.
 
+The separately pinned AI-film module is indexed in the [AI-film supplement](AI_FILM_SKILLS.md) (61 source entrypoints). The historical counts below remain unchanged; see the [integration guide](../docs/daksh-brain/AI_FILM_INTEGRATION.md).
+
 ## Completeness
 
 | Measure | Count |

@@ -9,6 +9,7 @@ Effective 7 November 2026. The current user's explicit direction makes **Daksh B
 3. For trivial tasks, Daksh Brain may act directly. For independent substantial work, delegate scoped tasks within actual runtime capacity. A role card or catalog entry is not an instantiated worker.
 4. Keep one canonical writer, explicit dependencies and source revisions. Each specialist keeps its internal controller and current project locks.
 5. Inherit [shared/COMMON_RULES.md](shared/COMMON_RULES.md). Current explicit user instructions and same-scope approved corrections override older defaults.
+6. For AI-film production, viral studio or Mann editing, read [the integration guide](docs/daksh-brain/AI_FILM_INTEGRATION.md), initialize the pinned `modules/ai-film` submodule and run `python3 tools/ai_film.py validate`. Its specialist procedures stay under Daksh Brain. Preserve upstream script, look/music, exact-EDL storyboard and final-cut gates; repository integration is not production approval. Do not activate historical schedules or copy upstream learning into the live brain automatically.
 
 ## Hierarchy and responsibilities
 
@@ -33,6 +34,7 @@ Effective 7 November 2026. The current user's explicit direction makes **Daksh B
 - Live `brain/DAKSH_BRAIN.json` changes only through its revision-guarded existing CLI and actual scoped authorization. This architecture update does not edit that memory or schedule jobs.
 - Full schema gate: `python3 tools/daksh_architecture.py validate` (requires `jsonschema>=4.20,<5`).
 - New regression gate: `python3 -m pytest -q -p no:cacheprovider tests/`.
+- AI-film gate: `python3 tools/ai_film.py validate`; run `python3 -m unittest discover -s tests -v` from `modules/ai-film` (FFmpeg required for media checks). Keep module changes upstream and advance its gitlink, manifest and inventory together after review.
 - Existing skill regression suites, grader `selftest`, `routing`, brain validation and skill structure checks remain required. Run each skill's tests separately to avoid same-name test module collisions.
 - Before a push, inspect only the intended changed files, run affected checks, preserve remote updates, and verify the resulting remote commit and files. No force push.
 
