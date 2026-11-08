@@ -23,6 +23,28 @@ def make_repo(tmp: Path) -> Path:
          "tasks": ["songs", "lyrics"], "handoff": "beat timing"}]}))
     (tmp / "agents").mkdir()
     (tmp / "agents/AI_SOCIALS.md").write_text("# AI Socials | Captions\nInstagram caption workflow.\n")
+
+    # A pinned-module integration (mirrors integrations/ai-film.json + catalog/ai-film-skills.json).
+    (tmp / "integrations").mkdir()
+    (tmp / "integrations/ai-film.json").write_text(json.dumps({
+        "source": {"url": "https://github.com/manikk90/AI-film.git", "path": "modules/ai-film",
+                   "commit": "abc123", "integration": "pinned_git_submodule"},
+        "skill_inventory": "catalog/ai-film-skills.json",
+    }))
+    (tmp / "catalog").mkdir()
+    (tmp / "catalog/ai-film-skills.json").write_text(json.dumps({
+        "skills": [
+            {"id": "ai-film:anime-reel", "name": "anime-reel", "path": ".claude/skills/anime-reel/SKILL.md",
+             "owner_agent_id": "native-director", "kind": "imported_format", "sha256": "x"},
+            {"id": "ai-film:madhubani-kahani", "name": "madhubani-kahani",
+             "path": ".claude/skills/madhubani-kahani/SKILL.md", "owner_agent_id": "native-director",
+             "kind": "imported_format", "sha256": "y"},
+        ],
+    }))
+    # Submodule checked out for anime-reel only, so one hit gets a real description and one doesn't.
+    (tmp / "modules/ai-film/.claude/skills/anime-reel").mkdir(parents=True)
+    (tmp / "modules/ai-film/.claude/skills/anime-reel/SKILL.md").write_text(
+        '---\nname: anime-reel\ndescription: "An anime-style episode with original characters."\n---\nBody text.\n')
     return tmp
 
 
@@ -40,6 +62,31 @@ class ScanTests(unittest.TestCase):
         self.assertEqual(sorted(inv["skill"]), ["ai-dubbing", "ai-music-director", "daksh"])
         self.assertEqual(inv["agent"], ["AI_SOCIALS"])
         self.assertEqual(inv["role"], ["music"])
+        self.assertEqual(sorted(inv["module_skill"]), ["ai-film:anime-reel", "ai-film:madhubani-kahani"])
+
+    def test_module_skill_checked_out_gets_real_description(self):
+        top = gm_scan.rank(self.docs, "anime reel with original characters", 3)
+        self.assertEqual(top[0]["id"], "ai-film:anime-reel")
+        self.assertEqual(top[0]["module"], "ai-film")
+        self.assertTrue(top[0]["checked_out"])
+        self.assertTrue(top[0]["path"].startswith("modules/ai-film/"))
+
+    def test_module_skill_not_checked_out_still_ranks_by_name(self):
+        top = gm_scan.rank(self.docs, "madhubani kahani", 3)
+        self.assertEqual(top[0]["id"], "ai-film:madhubani-kahani")
+        self.assertFalse(top[0]["checked_out"])
+
+    def test_no_integrations_dir_is_fine(self):
+        with tempfile.TemporaryDirectory() as t2:
+            bare = make_repo(Path(t2))
+            import shutil
+            shutil.rmtree(bare / "integrations")
+            docs = gm_scan.collect(bare)
+            self.assertNotIn("module_skill", gm_scan.inventory(docs))
+
+    def test_internal_result_has_no_module_field(self):
+        top = gm_scan.rank(self.docs, "devotional song with lyrics", 1)
+        self.assertNotIn("module", top[0])
 
     def test_music_goal_ranks_music_first(self):
         top = gm_scan.rank(self.docs, "devotional song with lyrics", 3)

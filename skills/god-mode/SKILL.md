@@ -33,13 +33,13 @@ Run:
 ```bash
 python skills/god-mode/scripts/gm_scan.py "<goal>" --top 12
 ```
-It ranks every skill, agent dossier, reference module and Daksh registry role by relevance. Then **read the top hits** (the SKILL.md and the specific reference, not the whole archive). The score is lexical, so a hit is only a candidate until you have read it. Record:
-- **Reuse:** which existing agents and skills already cover part of the goal, citing the exact file.
+It ranks every skill, agent dossier, reference module and Daksh registry role by relevance — and, from `integrations/*.json` (e.g. `integrations/ai-film.json`), any pinned module Daksh Brain has integrated as a submodule too (currently **AI-film**, at `modules/ai-film`; see `docs/daksh-brain/AI_FILM_INTEGRATION.md`). A module hit is marked `[MODULE: <id>]`. If that submodule is checked out (`git submodule update --init -- modules/<id>`), its real SKILL.md gives a full description; if not, the hit still ranks on the hashed catalog's id/name/owner alone and is marked "not checked out". Then **read the top hits**: the SKILL.md and the specific reference (checking out the submodule first for a module hit). The score is lexical, so a hit is only a candidate until you have read it. Record:
+- **Reuse:** which existing agents and skills — this repo's own or a pinned module's — already cover part of the goal, citing the exact file and, for a module hit, which module.
 - **Locks:** the project canon or user locks that constrain the answer (e.g. Laddu Gopal / Jai Hanuman continuity in `skills/ai-native-director/references/`).
-- **Gaps:** what no agent covers. A gap is a candidate for a new skill.
+- **Gaps:** what nothing covers, in this repo or a pinned module. A real gap is a candidate for a new skill.
 - **Prior research:** check `research/` and `research/god-mode/` first and reuse dated findings before searching again.
 
-If the scanner is unavailable (for example in ChatGPT without the repo), use `AGENT_SKILL_MAP.md`, `skills/daksh/assets/agent-registry.json` and the skill descriptions instead.
+If the scanner is unavailable (for example in ChatGPT without the repo), use `AGENT_SKILL_MAP.md`, `skills/daksh/assets/agent-registry.json`, `catalog/SKILLS.md` and the skill descriptions instead. A pinned module's own repo can move past its pin — `gm` only sees what `integrations/<id>.json` currently points at; updating that pin is a separate, reviewed change (see the integration doc), not something `gm` does on its own.
 
 ### 3. External research: tracks, not random searches
 Pick only the tracks the goal needs. Run independent tracks in parallel when workers are available.

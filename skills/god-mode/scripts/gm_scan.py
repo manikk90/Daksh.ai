@@ -8,6 +8,14 @@ Usage:
 Pure standard library, read-only. Scoring is lexical (BM25-style) with field weights,
 so it finds candidates fast; the God Mode run must still read the top hits before
 relying on them.
+
+Also ranks the skills of any pinned module Daksh Brain has integrated (see
+integrations/*.json, e.g. integrations/ai-film.json for the modules/ai-film
+submodule), reading each module's hashed skill_inventory catalog. Those hits are
+kind "module_skill" with a "module" field. If the submodule is checked out
+(`git submodule update --init -- modules/ai-film`) its real SKILL.md is read for a
+full description; otherwise only the catalog's id/name/owner are used, and the hit
+is marked "(not checked out)".
 """
 from __future__ import annotations
 
@@ -135,6 +143,56 @@ def collect(root: Path) -> list[dict]:
                 "fields": {"title": role.get("label", ""), "description": " ".join(role.get("tasks", [])),
                            "body": role.get("handoff", "")},
             })
+    docs.extend(collect_modules(root))
+    return docs
+
+
+def collect_modules(root: Path) -> list[dict]:
+    """Load pinned-module skills from integrations/*.json + their skill_inventory catalog.
+
+    Each integrations/<id>.json (written when Daksh Brain integrates a sister repo as a
+    pinned git submodule, e.g. integrations/ai-film.json) points at a hashed
+    skill_inventory catalog (e.g. catalog/ai-film-skills.json: a list of
+    {id, name, path, owner_agent_id, kind, sha256}). This reuses that single source of
+    truth instead of maintaining a second index: no network calls, no duplicated catalog.
+    """
+    docs: list[dict] = []
+    integrations_dir = root / "integrations"
+    if not integrations_dir.is_dir():
+        return docs
+    for integ_path in sorted(integrations_dir.glob("*.json")):
+        module_id = integ_path.stem
+        try:
+            integ = json.loads(read(integ_path))
+        except json.JSONDecodeError:
+            continue
+        inventory_rel = integ.get("skill_inventory")
+        module_root = root / integ.get("source", {}).get("path", "") if integ.get("source", {}).get("path") else None
+        if not inventory_rel or not (root / inventory_rel).is_file():
+            continue
+        try:
+            catalog = json.loads(read(root / inventory_rel))
+        except json.JSONDecodeError:
+            continue
+        for entry in catalog.get("skills", catalog if isinstance(catalog, list) else []):
+            doc_id = entry.get("id") or f"{module_id}:{entry.get('name', '?')}"
+            name = entry.get("name", doc_id)
+            description, excerpt, checked_out = "", "", False
+            if module_root is not None and entry.get("path"):
+                skill_file = module_root / entry["path"]
+                if skill_file.is_file():
+                    meta, body = parse_frontmatter(read(skill_file))
+                    description, excerpt, checked_out = meta.get("description", ""), body.strip(), True
+            if not description:
+                description = f"{name} ({entry.get('kind', 'skill')}), owner: {entry.get('owner_agent_id', '?')}"
+            docs.append({
+                "kind": "module_skill", "id": doc_id,
+                "path": f"{integ.get('source', {}).get('path', module_id)}/{entry.get('path', '')}",
+                "module": module_id, "checked_out": checked_out,
+                "summary": description[:240],
+                "fields": {"name": name.replace("-", " "), "description": description,
+                           "body": excerpt[:BODY_CHARS]},
+            })
     return docs
 
 
@@ -170,8 +228,11 @@ def rank(docs: list[dict], query: str, top: int = 12) -> list[dict]:
                     score += WEIGHTS.get(field, 1.0) * idf * norm * (1 + 0.2 * (qtf - 1))
                     hits.add(term)
         if score > 0:
-            results.append({"kind": d["kind"], "id": d["id"], "path": d["path"], "score": round(score, 2),
-                            "matched": sorted(hits), "summary": d["summary"]})
+            row = {"kind": d["kind"], "id": d["id"], "path": d["path"], "score": round(score, 2),
+                   "matched": sorted(hits), "summary": d["summary"]}
+            if "module" in d:
+                row["module"], row["checked_out"] = d["module"], d["checked_out"]
+            results.append(row)
     results.sort(key=lambda r: (-r["score"], r["kind"], r["id"]))
     return results[:top]
 
@@ -179,7 +240,7 @@ def rank(docs: list[dict], query: str, top: int = 12) -> list[dict]:
 def inventory(docs: list[dict]) -> dict:
     out: dict[str, list[str]] = {}
     for d in docs:
-        if d["kind"] in ("skill", "agent", "role"):
+        if d["kind"] in ("skill", "agent", "role", "module_skill"):
             out.setdefault(d["kind"], []).append(d["id"])
     return out
 
@@ -206,7 +267,12 @@ def main(argv: list[str] | None = None) -> int:
         print("No internal match. Treat this as a capability gap and research externally.")
         return 0
     for i, r in enumerate(results, 1):
-        print(f"{i:>2}. [{r['kind']}] {r['id']}  score={r['score']}  ({r['path']})")
+        if "module" in r:
+            state = "" if r["checked_out"] else " — not checked out, catalog-only description"
+            tag = f" [MODULE: {r['module']}{state}]"
+        else:
+            tag = ""
+        print(f"{i:>2}. [{r['kind']}] {r['id']}  score={r['score']}  ({r['path']}){tag}")
         print(f"    matched: {', '.join(r['matched'][:8])}")
         print(f"    {r['summary'][:160]}")
     return 0
