@@ -1,0 +1,5 @@
+{
+  "objective": "Prepare source-linked shot bundles",
+  "screenplay": "Owner-supplied screenplay path; replace before a real run",
+  "project_directory": "projects/demo"
+}

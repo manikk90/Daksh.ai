@@ -1,0 +1,3 @@
+[submodule "modules/ai-film"]
+	path = modules/ai-film
+	url = https://github.com/manikk90/AI-film.git

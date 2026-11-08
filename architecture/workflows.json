@@ -1877,6 +1877,446 @@
         "relevant accessibility and interaction states checked"
       ],
       "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "ai-film-production",
+      "label": "AI-film screenplay to reviewed shot bundles",
+      "required_inputs": [
+        "objective",
+        "screenplay",
+        "project_directory"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "source-and-authority-packet",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "breakdown",
+          "agent": "writer",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "source-linked-beats",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "breakdown"
+          ],
+          "output": "supplied-source-or-owner-approved-script",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Preserve supplied screenplay; a newly authored script needs owner approval before media work."
+        },
+        {
+          "id": "references",
+          "agent": "reference-mapper",
+          "depends_on": [
+            "script-gate"
+          ],
+          "output": "canonical-character-costume-assets",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "locations",
+          "agent": "location-director",
+          "depends_on": [
+            "script-gate"
+          ],
+          "output": "canonical-location-prop-assets",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "shot-plan",
+          "agent": "native-director",
+          "depends_on": [
+            "references",
+            "locations"
+          ],
+          "output": "validated-plan-and-keyframes",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "export",
+          "agent": "capability-operator",
+          "depends_on": [
+            "shot-plan"
+          ],
+          "output": "immutable-portable-shot-bundles",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "import-takes",
+          "agent": "capability-operator",
+          "depends_on": [
+            "export"
+          ],
+          "output": "real-takes-with-provider-and-bundle-provenance",
+          "effect": "authorized_external",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "import-takes"
+          ],
+          "output": "breakdown-review-and-full-clip-evidence",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "audit-and-verified-delivery",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "No provider is invoked by the adapter; manual export/import remains usable.",
+        "Preserve source units, beats, references, dialogue and actual bundle hashes.",
+        "Generated takes are accepted only after full-clip review; audit must report incomplete work honestly.",
+        "New scripts go through the distinct AI-film writer, critique and explicit owner approval before media work."
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "ai-film-viral-studio",
+      "label": "AI-film viral studio under Daksh Brain",
+      "required_inputs": [
+        "objective",
+        "topic",
+        "project_directory"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "brief-and-scoped-learnings",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "trend-scan",
+          "agent": "socials",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "topic-and-competition-board",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "research",
+          "agent": "research-intelligence",
+          "depends_on": [
+            "trend-scan"
+          ],
+          "output": "verified-facts",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "format",
+          "agent": "native-director",
+          "depends_on": [
+            "trend-scan"
+          ],
+          "output": "style-duration-and-experiment",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script",
+          "agent": "writer",
+          "depends_on": [
+            "research",
+            "format"
+          ],
+          "output": "versioned-script-packet",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script-critique",
+          "agent": "independent-qc",
+          "depends_on": [
+            "script"
+          ],
+          "output": "script-revision-notes",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script-revision",
+          "agent": "writer",
+          "depends_on": [
+            "script-critique"
+          ],
+          "output": "revised-script-packet-with-change-list",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "script-revision"
+          ],
+          "output": "owner-approved-script-and-format",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner explicitly approves the current revised script and format."
+        },
+        {
+          "id": "preview",
+          "agent": "native-director",
+          "depends_on": [
+            "script-gate"
+          ],
+          "output": "three-numbered-timecoded-frames",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "music-sketch",
+          "agent": "music-director",
+          "depends_on": [
+            "script-gate"
+          ],
+          "output": "music-sketch",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "look-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "preview",
+            "music-sketch"
+          ],
+          "output": "owner-approved-look-and-music",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner explicitly approves look and music before full production."
+        },
+        {
+          "id": "production",
+          "agent": "native-director",
+          "depends_on": [
+            "look-gate"
+          ],
+          "output": "film-and-editor-package",
+          "effect": "authorized_external",
+          "required": true
+        },
+        {
+          "id": "final-cut-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "production"
+          ],
+          "output": "owner-approved-final-cut",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner approves final cut before publishing kit is called final."
+        },
+        {
+          "id": "publish-kit",
+          "agent": "socials",
+          "depends_on": [
+            "final-cut-gate"
+          ],
+          "output": "draft-only-publishing-kit",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "publish-kit"
+          ],
+          "output": "clip-audio-facts-and-delivery-qc",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "video-plus-supporting-zip",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "A supplied topic resolves pitch selection; otherwise use upstream pick gate before this template.",
+        "Separate writer and independent critique precede explicit script approval.",
+        "Retain look/music and final-cut gates; never fabricate an approval.",
+        "Deliver real final video plus supporting ZIP including NLE package, with upstream size limits.",
+        "No posting, sending to third parties or schedule activation is inferred."
+      ],
+      "execution_status": "plan template, not executed"
+    },
+    {
+      "id": "ai-film-mann-edit",
+      "label": "Mann footage editing under Daksh Brain",
+      "required_inputs": [
+        "objective",
+        "footage",
+        "project_directory"
+      ],
+      "nodes": [
+        {
+          "id": "intake",
+          "agent": "daksh-brain",
+          "depends_on": [],
+          "output": "owner-footage-and-edit-brief",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "suggest",
+          "agent": "native-director",
+          "depends_on": [
+            "intake"
+          ],
+          "output": "style-and-edit-suggestions",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "style-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "suggest"
+          ],
+          "output": "owner-finalised-style",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner finalises style."
+        },
+        {
+          "id": "script-lock",
+          "agent": "writer",
+          "depends_on": [
+            "style-gate"
+          ],
+          "output": "exact-source-script-lock-or-recorded-no-dialogue",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "script-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "script-lock"
+          ],
+          "output": "owner-locked-script-or-no-dialogue-decision",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner locks narration/dialogue; do not invent dialogue for silent footage."
+        },
+        {
+          "id": "edit-plan",
+          "agent": "native-director",
+          "depends_on": [
+            "script-gate"
+          ],
+          "output": "versioned-edl",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "storyboard",
+          "agent": "native-director",
+          "depends_on": [
+            "edit-plan"
+          ],
+          "output": "numbered-storyboard-and-change-list",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "storyboard-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "storyboard"
+          ],
+          "output": "exact-edl-owner-approval",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner approves current EDL storyboard or affected clips before full render."
+        },
+        {
+          "id": "render",
+          "agent": "native-director",
+          "depends_on": [
+            "storyboard-gate"
+          ],
+          "output": "master-preview-and-credits",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "review",
+          "agent": "independent-qc",
+          "depends_on": [
+            "render"
+          ],
+          "output": "measured-qc-and-full-clip-review",
+          "effect": "draft",
+          "required": true
+        },
+        {
+          "id": "final-cut-gate",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "review"
+          ],
+          "output": "owner-final-cut-decision",
+          "effect": "read",
+          "required": true,
+          "owner_gate": "Owner approves final cut."
+        },
+        {
+          "id": "deliver",
+          "agent": "daksh-brain",
+          "depends_on": [
+            "final-cut-gate"
+          ],
+          "output": "verified-edit-and-supporting-package",
+          "effect": "draft",
+          "required": true
+        }
+      ],
+      "acceptance_checks": [
+        "Preserve owner media, source hashes, rights provenance and approval records.",
+        "Full render is refused without current style, script and exact-EDL storyboard approvals.",
+        "Changed edits invalidate affected approvals through upstream logic.",
+        "Source/structural validation does not establish cinematic or audio quality."
+      ],
+      "execution_status": "plan template, not executed"
     }
   ]
 }

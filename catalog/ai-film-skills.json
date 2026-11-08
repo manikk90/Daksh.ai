@@ -1,0 +1,557 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/manikk90/AI-film",
+  "source_commit": "2c096fe562340ccb8b4a313e6a313d919db6a407",
+  "scope": "Supplement to the dated 669-source catalog; separate upstream source identities, not global skill installation.",
+  "skills": [
+    {
+      "id": "ai-film:anime-reel",
+      "name": "anime-reel",
+      "path": ".claude/skills/anime-reel/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "989e95037793311cefe0de6614e7b12fd312f6ef33579dbdce517e1529783bf5",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:blueprint-explainer",
+      "name": "blueprint-explainer",
+      "path": ".claude/skills/blueprint-explainer/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "9c5c01cd25350208b7e825a18593f2461ee39aba6361126f5bc70dd8de536181",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:breaking-news",
+      "name": "breaking-news",
+      "path": ".claude/skills/breaking-news/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "cd99f6f385eba919b0bbf5081abfd0176374dddd4c6acfb363ba0f279416bb37",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:business-short-form-reels",
+      "name": "business-short-form-reels",
+      "path": ".claude/skills/business-short-form-reels/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "f6c18fcbe8c43a0208a0efe655dd7e74e04abb81e014d593f04ab370a1703c5a",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:cinema-scope",
+      "name": "cinema-scope",
+      "path": ".claude/skills/cinema-scope/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "3cb785934d99a57e0391334b010e5374a57cd02032a8a88947237306cecc8474",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:comic-halftone",
+      "name": "comic-halftone",
+      "path": ".claude/skills/comic-halftone/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "1bd9cb82161d475bffca80094ada2406f1522e47daee53c7870566bcc3017420",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:comic-reel",
+      "name": "comic-reel",
+      "path": ".claude/skills/comic-reel/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "e40db529559a8bf127edbdde5686c03b1af6bafc1d6182ec735f1188b72a325b",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:daksh-ai",
+      "name": "daksh-ai",
+      "path": ".claude/skills/daksh-ai/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "bb46f36c0c7a15c21d8752cfb884f0ca8de842f982108c1a46bf09ef0e7c1b0c",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:dark-red-timeline-motion-graphics",
+      "name": "dark-red-timeline-motion-graphics",
+      "path": ".claude/skills/dark-red-timeline-motion-graphics/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "78c8aa77310cad4ac91bc0785f7c32518304178940c76eab34bb8cd09cd25113",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:depth-ui-reel",
+      "name": "depth-ui-reel",
+      "path": ".claude/skills/depth-ui-reel/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "1e60972e659cb766cdd3af0f5327cece2ad86db381ef7047136ebd7f74ede17d",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:educational-youtube-editor",
+      "name": "educational-youtube-editor",
+      "path": ".claude/skills/educational-youtube-editor/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "9f8e6e25243f9cd550f59b4830adf36547478cd35aecc598b4aed50ea5311cb7",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:glass-stat-card",
+      "name": "glass-stat-card",
+      "path": ".claude/skills/glass-stat-card/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "604b7b400585323cbf236129b4caf38612d8794611396d12f74512296f3a0ba9",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:hindi-lyric-video",
+      "name": "hindi-lyric-video",
+      "path": ".claude/skills/hindi-lyric-video/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "b488272e8aafac6785c5a21b69c26d283a5448feddd9bd9958cb288699976866",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:hindi-pastel-reel-edit",
+      "name": "hindi-pastel-reel-edit",
+      "path": ".claude/skills/hindi-pastel-reel-edit/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "2a5c7deba0e3f3b50811461daea9aebb07ea5efa31bdc9dbf98aa09d3b0326e7",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:instagram-ui-hinglish",
+      "name": "instagram-ui-hinglish",
+      "path": ".claude/skills/instagram-ui-hinglish/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "86ba9a97559ab1e2269cfacb0abfd247df9d24d0e666e29efffaf7c4dcc37dc1",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:iphone-style-by-daksh-ai",
+      "name": "iphone-style-by-daksh-ai",
+      "path": ".claude/skills/iphone-style-by-daksh-ai/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "ec91d2786124b878891f0df8a69da41dea53a0e43ac2fd34d56083ee26a61c8f",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:katha-video",
+      "name": "katha-video",
+      "path": ".claude/skills/katha-video/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "e65373f09abd49cc59e2dfb9b1b3fb4c612d7508fe952b8a6bfb7832b1d66320",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:kinetic-lyrics",
+      "name": "kinetic-lyrics",
+      "path": ".claude/skills/kinetic-lyrics/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "c7bbb6d5261ca8e90a048894377d40aff42f34005c489839e6ac4f6497f99716",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:kinetic-talking-head-edit",
+      "name": "kinetic-talking-head-edit",
+      "path": ".claude/skills/kinetic-talking-head-edit/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "055d44da31ed3090439cf0f0bb108a7f4c39f13b0300f9e99d052ad7505af23f",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:latent-reel",
+      "name": "latent-reel",
+      "path": ".claude/skills/latent-reel/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "a54cd0a1e098f0dfb3c5502eff7205daf06108f9982d65d79098dab8ba901b97",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:led-matrix-text",
+      "name": "led-matrix-text",
+      "path": ".claude/skills/led-matrix-text/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "21b249d6103e04327120e26e61ea750bb9b4a561290a4a8f567835ecefcb4cff",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:lyric-video",
+      "name": "lyric-video",
+      "path": ".claude/skills/lyric-video/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "a29b25c95312a33b4f7d2ced26a0633b6df8a108b64efb067ff48d386644e6e7",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:madhubani-kahani",
+      "name": "madhubani-kahani",
+      "path": ".claude/skills/madhubani-kahani/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "0105759d93cf82d94588c12f7783b4643f88b56e56d8bab1c072171f7e741abe",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:magazine-cover",
+      "name": "magazine-cover",
+      "path": ".claude/skills/magazine-cover/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "a42c262215f999d3042ec21f762f7316ad885e0a0daec5bc31d0d8f1d104d036",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:mann-edit",
+      "name": "mann-edit",
+      "path": ".claude/skills/mann-edit/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "production_skill",
+      "sha256": "e133e9b3d3f97e03f90148813a5183c6467c05e75307b997d010b0bc0477fb26",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:mann-style-lab",
+      "name": "mann-style-lab",
+      "path": ".claude/skills/mann-style-lab/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "production_skill",
+      "sha256": "2bec274fe1f0a1b7c03bc916c8771b7368b1e388dc5ba6e1212e76cba651bc30",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:match-cut",
+      "name": "match-cut",
+      "path": ".claude/skills/match-cut/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "9e99e3a26cf170c7467127aaf36893db9ee27c3e7edc99b2e7c2175541c68ecb",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:neon-outline",
+      "name": "neon-outline",
+      "path": ".claude/skills/neon-outline/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "617b550c6713c66cb7434c3605969c11b1dbc197dc2613ad74585b59d4981605",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:news-report",
+      "name": "news-report",
+      "path": ".claude/skills/news-report/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "43da58e4c5fcbdad2f074b9ed064f259ec0a4902618538cfe9740f29a3c4be08",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:particle-chart",
+      "name": "particle-chart",
+      "path": ".claude/skills/particle-chart/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "33b5b55fbfd75fee7dbf1ce5efa53787ec6a97e7d90b59a9bdae819f001dd2fa",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:particle-text",
+      "name": "particle-text",
+      "path": ".claude/skills/particle-text/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "f0e3c9cb637ecb077b7335de8efae205f05e455c9b0a9ca54e77a136a946eb5a",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:personal-broll-library",
+      "name": "personal-broll-library",
+      "path": ".claude/skills/personal-broll-library/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "5413ffd65bc8d9b71de28ea23d4881315e7887d64677bfc4060eec0b1da11258",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:personal-explainer",
+      "name": "personal-explainer",
+      "path": ".claude/skills/personal-explainer/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "0f6a5c15d56adbfedb4b99a1e7d4227bb6bd81cc24a4b06a738df40e2b1b88c1",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:personal-short-form-reels",
+      "name": "personal-short-form-reels",
+      "path": ".claude/skills/personal-short-form-reels/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "fe09088aa22ac737fb69355f277164677699d192bab52e3c0b963bf18b4a05cf",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:podcast-explainer",
+      "name": "podcast-explainer",
+      "path": ".claude/skills/podcast-explainer/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "60d07075b94756d69466acb4c11d77d51582336ce178d43c3290bd068bc79adc",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:podcast-reel-edit",
+      "name": "podcast-reel-edit",
+      "path": ".claude/skills/podcast-reel-edit/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "0f50620a923eb62328ad0c6bbf8e50b69434a174d7ed596f5b242ee8ed0577c7",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:price-tag-zoom",
+      "name": "price-tag-zoom",
+      "path": ".claude/skills/price-tag-zoom/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "2cd663292899e6b543d8752db63a867f335e92029959e08c68ab1a69e9ecce39",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:pusho-reel",
+      "name": "pusho-reel",
+      "path": ".claude/skills/pusho-reel/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "fd988f868c3e7f76623006d0e341b9ed56ea1260b21438d77cda5eb7aeba0756",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:ranking-format",
+      "name": "ranking-format",
+      "path": ".claude/skills/ranking-format/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "d9812caf9fe603d7ce2c07b6940c67e9d87fcc93915a74371848908ba684f3f4",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:red-kinetic-collage-edit",
+      "name": "red-kinetic-collage-edit",
+      "path": ".claude/skills/red-kinetic-collage-edit/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "565fd7bf49ff224096321454a011e470e0cd9eb3b64721cdd9800983f40bb68f",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:rgb-glitch-live",
+      "name": "rgb-glitch-live",
+      "path": ".claude/skills/rgb-glitch-live/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "12dfee435656487d9f59d13396cbb8499034073265614b632772294b619ed34f",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:shutter-stack",
+      "name": "shutter-stack",
+      "path": ".claude/skills/shutter-stack/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "83cee68a1c655cbc23577b4451ce20c8281c3b76b9412f35295726253ded1a53",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:sketch-music-video",
+      "name": "sketch-music-video",
+      "path": ".claude/skills/sketch-music-video/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "7826bb36a2f3f7b6d35b11ed025593d8b56429cd98b98d3f4b9426ccc35b97e2",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:sketch-to-motion",
+      "name": "sketch-to-motion",
+      "path": ".claude/skills/sketch-to-motion/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "fa41d8c733b2c97ff3526a8fb7b1719fe6aff7aa26873f57e0607f679e947603",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:studio-learn",
+      "name": "studio-learn",
+      "path": ".claude/skills/studio-learn/SKILL.md",
+      "owner_agent_id": "action-style",
+      "kind": "production_skill",
+      "sha256": "41e839ce1f1ccec6b1a4ab4f71246631a7a5e6cd59534ded610a91964d017ca0",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:talking-head-edit",
+      "name": "talking-head-edit",
+      "path": ".claude/skills/talking-head-edit/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "c7cf3065e195a33ab8c6b8c584eb59006cfff09f1126db64006fe675c508d2df",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:titan-anime",
+      "name": "titan-anime",
+      "path": ".claude/skills/titan-anime/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "09c42ec22e3c270f168bae1504cadaa75eea9b3b0e8ebe5f4a2b9f042cdb235b",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:triptych-timecode",
+      "name": "triptych-timecode",
+      "path": ".claude/skills/triptych-timecode/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "cd8fe6994895db2709a4901b3909de0e04306e915326cc4cb476aae6fb8bb59a",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:viral-studio",
+      "name": "viral-studio",
+      "path": ".claude/skills/viral-studio/SKILL.md",
+      "owner_agent_id": "daksh-brain",
+      "kind": "production_skill",
+      "sha256": "f7ad78a06dedb0bb6b6ecb8ccb149d33d78fc339e7385d612472b64107a07ebc",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:watercolor-map",
+      "name": "watercolor-map",
+      "path": ".claude/skills/watercolor-map/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "f8ae8b9d8604b8d38dbc38364b53c3598d49465522a7e4df7981a2fe03d14dab",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:youtube-clips",
+      "name": "youtube-clips",
+      "path": ".claude/skills/youtube-clips/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "imported_format",
+      "sha256": "7f2c9c02ae402b3ffa44348cad04ccf75f94e0388a19e911093fd3d4a2c9cd2d",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:ai-writer",
+      "name": "ai-writer",
+      "path": "skills/ai-writer/SKILL.md",
+      "owner_agent_id": "writer",
+      "kind": "production_skill",
+      "sha256": "75dad5e4d9afd7a1a8aa0c6a0f7d555ace23f6388e614f033d19aaddc750edc2",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:character-costume-design",
+      "name": "character-costume-design",
+      "path": "skills/character-costume-design/SKILL.md",
+      "owner_agent_id": "reference-mapper",
+      "kind": "production_skill",
+      "sha256": "2c8fbe7030b3a572b47dcd6a48b322e4bba5c167096be72bde3e805b2af69aca",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:coverage-quality-audit",
+      "name": "coverage-quality-audit",
+      "path": "skills/coverage-quality-audit/SKILL.md",
+      "owner_agent_id": "independent-qc",
+      "kind": "production_skill",
+      "sha256": "516d09a467e4881606960c8ca8da6a8fcb2185f70afc0ea06aa61b15b23c3156",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:creative-direction",
+      "name": "creative-direction",
+      "path": "skills/creative-direction/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "production_skill",
+      "sha256": "847de36fc426de118c76eed60801074f3df7995491c93aea1e1a97d1fdce4fef",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:film-production",
+      "name": "film-production",
+      "path": "skills/film-production/SKILL.md",
+      "owner_agent_id": "daksh-brain",
+      "kind": "production_skill",
+      "sha256": "0deaf274dd9231ca09a0192193a37cf95b3c34667c71ba20f69298a3dc1baa0b",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:location-prop-design",
+      "name": "location-prop-design",
+      "path": "skills/location-prop-design/SKILL.md",
+      "owner_agent_id": "location-director",
+      "kind": "production_skill",
+      "sha256": "464232632488200f1171ef6fb5547c6b1ef3c1d36e6910c727d393e1e4357480",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:screenplay-breakdown",
+      "name": "screenplay-breakdown",
+      "path": "skills/screenplay-breakdown/SKILL.md",
+      "owner_agent_id": "writer",
+      "kind": "production_skill",
+      "sha256": "a5e1bdcdb720453fdd12782d19d4eedf7e97244cf022b4fd3ced6d87bd8cc0d4",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:shot-continuity",
+      "name": "shot-continuity",
+      "path": "skills/shot-continuity/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "production_skill",
+      "sha256": "90eda49dc774dc458a5f879d594a751b4fb23da6ea1ddf349c41f270292e6f59",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:storyboard-keyframes",
+      "name": "storyboard-keyframes",
+      "path": "skills/storyboard-keyframes/SKILL.md",
+      "owner_agent_id": "native-director",
+      "kind": "production_skill",
+      "sha256": "48cd9799eec850b583212370ea6141780cf6935c8502f8ac473f269226f7847b",
+      "runtime_verified": false
+    },
+    {
+      "id": "ai-film:video-tool-handoff",
+      "name": "video-tool-handoff",
+      "path": "skills/video-tool-handoff/SKILL.md",
+      "owner_agent_id": "capability-operator",
+      "kind": "production_skill",
+      "sha256": "7febf227eec68c79f5b3bd9c8724e6573f74631624637069be3b3c19fd4051f0",
+      "runtime_verified": false
+    }
+  ]
+}

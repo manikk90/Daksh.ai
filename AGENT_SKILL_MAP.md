@@ -2,6 +2,8 @@
 
 > Current master edition: [Daksh Brain architecture](docs/daksh-brain/README.md) and [complete installed skill inventory](catalog/SKILLS.md). Daksh Brain is the top AI controller; this existing source catalogue remains a compatibility/reference record.
 
+AI-film is now integrated as a pinned production/editing module under Daksh Brain. See [the integration and current role mapping](docs/daksh-brain/AI_FILM_INTEGRATION.md) and [61 upstream skill entrypoints](catalog/AI_FILM_SKILLS.md). Its Writer implementation is distinct from the unavailable original Writer source described below.
+
 
 Is file mein actual mapped skills, internal roles aur external dependencies alag rakhe gaye hain. Kisi role ka naam hona uske live run ya active automation ka proof nahi hai.
 

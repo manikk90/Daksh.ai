@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "controller": "daksh-brain",
+  "source": {
+    "url": "https://github.com/manikk90/AI-film.git",
+    "path": "modules/ai-film",
+    "commit": "2c096fe562340ccb8b4a313e6a313d919db6a407",
+    "integration": "pinned_git_submodule"
+  },
+  "skill_inventory": "catalog/ai-film-skills.json",
+  "role_mapping": {
+    "production-controller": "daksh-brain",
+    "social": "socials",
+    "researcher": "research-intelligence",
+    "writer": "writer",
+    "director": "native-director",
+    "mann": "native-director",
+    "location-and-props": "location-director",
+    "canonical-assets": "reference-mapper",
+    "music": "music-director",
+    "voice": "dubbing-director",
+    "provider-handoff": "capability-operator",
+    "independent-review": "independent-qc",
+    "studio-learning": "action-style"
+  },
+  "workflow_ids": [
+    "ai-film-production",
+    "ai-film-viral-studio",
+    "ai-film-mann-edit"
+  ],
+  "approval_rules": [
+    "Newly authored scripts require separate writer, independent critique and explicit owner approval before media work.",
+    "Viral studio retains script/format, look/music and final-cut approval gates.",
+    "Mann retains style, script lock and exact-EDL storyboard approval before full render.",
+    "Recorded approval words must come from the owner; a plan or integration is not approval."
+  ],
+  "boundaries": [
+    "No scheduled jobs or provider adapters are activated by integration.",
+    "Root Daksh Brain remains accountable; nested daksh-ai is a format engine, not another master.",
+    "Original Writer source remains unavailable; the AI-film writer is a distinct available implementation.",
+    "Upstream generated formats and third-party notices stay intact; update through their importer.",
+    "Live Daksh memory and upstream studio feedback are separate canonical stores."
+  ]
+}

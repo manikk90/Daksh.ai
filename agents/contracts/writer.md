@@ -18,7 +18,8 @@ Develop stories, screenplays, dialogue and production breakdowns from approved s
 
 ## Preserves
 
-- writer source is reconstructed, not an installed original skill
+- legacy Writer source remains reconstructed; the pinned AI-film writer is a distinct implementation, not recovery of the original
+- new AI-film scripts require a separate writer, independent critique, writer revision and explicit owner approval before media work
 - approved wording and reveal timing
 - screenplay dialogue is not moved under the video-prompt-only rule
 
@@ -41,6 +42,9 @@ Develop stories, screenplays, dialogue and production breakdowns from approved s
 - failed required check
 
 ## Skills and dependencies
+
+- [AI-film module: skills/ai-writer/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/ai-writer/SKILL.md)
+- [AI-film module: skills/screenplay-breakdown/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/screenplay-breakdown/SKILL.md)
 
 - External capability domain: `creative-writing`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 

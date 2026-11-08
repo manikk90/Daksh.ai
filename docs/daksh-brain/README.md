@@ -24,6 +24,7 @@ flowchart TB
 
 | Need | Entry |
 |---|---|
+| AI-film production, viral studio and Mann editing | [AI-film integration](AI_FILM_INTEGRATION.md) |
 | Overall hierarchy, components, runtime boundaries and roadmap | [Architecture](ARCHITECTURE.md) |
 | Exact task flows, modes and recovery behavior | [Workflows](WORKFLOWS.md) |
 | Source, assignment, artifact and QC handoffs | [Handoffs and QC](HANDOFFS_AND_QC.md) |
@@ -40,7 +41,7 @@ flowchart TB
 |---|---|
 | [architecture/agents.json](../../architecture/agents.json) | 28 roles, one Daksh Brain parent, inputs, ownership, locks, outputs, checks and source skills |
 | [agents/contracts/](../../agents/contracts/) | One readable execution contract per role |
-| [architecture/workflows.json](../../architecture/workflows.json) | 22 design-time dependency graphs, required inputs and acceptance checks |
+| [architecture/workflows.json](../../architecture/workflows.json) | 30 design-time dependency graphs, required inputs and acceptance checks |
 | [architecture/policies.json](../../architecture/policies.json) | Authority, budgets, capabilities, memory, delivery and safety boundaries |
 | [architecture/contracts/](../../architecture/contracts/) | Four JSON Schema contracts: task, handoff, artifact, memory candidate |
 | [architecture/examples/](../../architecture/examples/) | Synthetic validated examples without private project records |

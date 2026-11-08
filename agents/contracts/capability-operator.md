@@ -43,6 +43,8 @@ Resolve current tool schemas, account scope and supported actions for authorized
 
 ## Skills and dependencies
 
+- [AI-film module: skills/video-tool-handoff/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/video-tool-handoff/SKILL.md)
+
 - External capability domain: `connectors`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 - External capability domain: `automation`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 - External capability domain: `browser`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.

@@ -13,14 +13,30 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - run: pip install pytest pyyaml pillow numpy "jsonschema>=4.20,<5"
       - name: Daksh Brain architecture and contracts
         run: |
+          python tools/ai_film.py validate
           python tools/daksh_architecture.py validate
           python -m pytest -q -p no:cacheprovider tests/
+      - name: AI-film production and Mann regressions
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install opencv-python-headless==4.10.0.84
+          npm install --prefix "$RUNNER_TEMP/ai-film-node" --no-save playwright@1.62.1
+          export NODE_PATH="$RUNNER_TEMP/ai-film-node/node_modules"
+          node "$RUNNER_TEMP/ai-film-node/node_modules/playwright/cli.js" install --with-deps chromium
+          (cd modules/ai-film && python -m unittest discover -s tests -v)
+          python -m compileall -q modules/ai-film/aifilm
       - name: Skill regression suites
         run: |
           set -e

@@ -45,6 +45,8 @@ Resolve exact asset tags and shot bindings from actual sources and previews.
 
 ## Skills and dependencies
 
+- [AI-film module: skills/character-costume-design/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/skills/character-costume-design/SKILL.md)
+
 - [Bundled source: skills/ai-native-director/SKILL.md](../../skills/ai-native-director/SKILL.md)
 - External capability domain: `browser`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 - External capability domain: `asset-management`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.

@@ -42,6 +42,8 @@ Model explicit corrections and demonstrated decisions at the correct scope.
 
 ## Skills and dependencies
 
+- [AI-film module: .claude/skills/studio-learn/SKILL.md](https://github.com/manikk90/AI-film/blob/2c096fe562340ccb8b4a313e6a313d919db6a407/.claude/skills/studio-learn/SKILL.md)
+
 - [Bundled source: skills/daksh/SKILL.md](../../skills/daksh/SKILL.md)
 - External capability domain: `writing-style`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.
 - External capability domain: `knowledge`. Resolve the current relevant catalog entry and runtime tool; presence does not grant access.

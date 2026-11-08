@@ -4,6 +4,8 @@ This is the target operating design for coordinated work. **Daksh Brain is the s
 
 These workflows do not establish a running service, installed agent, connected provider, approved asset, scheduled job or spent generation credit. Existing skill source and the applicable current user instruction remain the execution contract. New capability roles are designed responsibilities until implemented and verified. Read [HANDOFFS_AND_QC.md](HANDOFFS_AND_QC.md) for the artifact, revision, QC and recovery protocol.
 
+AI-film adds three pinned-module workflows: `ai-film-production`, `ai-film-viral-studio` and `ai-film-mann-edit`. See [the integration guide](AI_FILM_INTEGRATION.md) for executable commands, source mapping and preserved owner gates.
+
 ## 1. One orchestration loop
 
 ```mermaid
