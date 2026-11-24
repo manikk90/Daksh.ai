@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Consultancy"
+  short_description: "Build and run a lean AI consulting practice"
+  default_prompt: "Use $ai-consultancy to plan my next consulting pilot and prepare the materials."

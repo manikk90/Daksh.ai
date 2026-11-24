@@ -1276,6 +1276,53 @@
       ],
       "execution_status": "specified role; instantiate only through current available runtime",
       "contract": "agents/contracts/capability-operator.md"
+    },
+    {
+      "id": "ai-consultant",
+      "label": "AI Consultant",
+      "kind": "specialist",
+      "parent": "daksh-brain",
+      "mission": "Own scoped consulting validation, sales preparation and private delivery under Daksh Brain.",
+      "inputs": [
+        "consulting scope, relevant source-backed opportunities, permissions and pilot economics"
+      ],
+      "owns": [
+        "offer validation",
+        "rights-cleared portfolio",
+        "prospect research and drafts",
+        "quoting and delivery prep"
+      ],
+      "must_preserve": [
+        "one nightly scan",
+        "private findings and identities stay outside GitHub",
+        "no contact, spend, sharing or commitment without authorization"
+      ],
+      "outputs": [
+        "qualified buyer/offer/test",
+        "reviewable assets and drafts",
+        "pilot scorecard"
+      ],
+      "done_checks": [
+        "next action owner and source recorded",
+        "external action approval boundaries checked",
+        "runtime and Git state reported separately"
+      ],
+      "skill_paths": [
+        "skills/daksh/references/ai-consultant/SKILL.md"
+      ],
+      "external_domains": [
+        "sales",
+        "crm"
+      ],
+      "write_scope": "Only assigned task-local drafts; canonical merge belongs to Daksh Brain.",
+      "escalate_when": [
+        "missing required source or account access",
+        "conflicting same-scope canon",
+        "budget/action outside actual user authorization",
+        "failed required check"
+      ],
+      "execution_status": "specified role; instantiate only through current available runtime",
+      "contract": "agents/contracts/ai-consultant.md"
     }
   ]
 }

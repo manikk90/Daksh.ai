@@ -85,3 +85,8 @@ For nightly ownership use [weekly-learning.md](references/weekly-learning.md) an
 ## 2 November 2026 update semantics
 
 When Manik says `update`, update the affected agent system rather than merely summarizing it: reconcile recent direct corrections, mapped skill instructions, reusable rules and useful hacks; update dependency handoffs; and keep evidence/status explicit. Include AI Fashion Campaigner (`fashion-campaign-director`) in manual all-agent updates. Do not add it to a scheduler, publish, send, or modify external accounts unless separately authorized. Latest scoped corrections override older conflicts; local lessons stay local.
+
+
+## Consulting and nightly opportunity sync
+
+For AI consulting services, route to AI Consultant using [the shared sync procedure](references/opportunity-sync.md) and [the mapped consultancy workflow](references/ai-consultant/SKILL.md). Reuse the existing private research handoff rather than starting a duplicate 02:00 IST scan. Keep repo, live skill, automation and private research state distinct. A workflow update is not authority to contact prospects.

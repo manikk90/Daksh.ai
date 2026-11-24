@@ -36,6 +36,20 @@
       "handoff": "Evidence versus hypothesis, next experiment and failure signal; no outreach."
     },
     {
+      "id": "ai_consultant",
+      "kind": "skill",
+      "label": "AI Consultant",
+      "skill_name": "ai-consultancy",
+      "tasks": [
+        "consulting offer and pilot",
+        "rights-cleared portfolio",
+        "buyer signals and qualified pipeline",
+        "scope, quotes and outreach drafts",
+        "secure delivery and read-only research"
+      ],
+      "handoff": "Use the mapped Daksh reference or the verified existing dedicated workspace. Pass buyer, offer, evidence, approved scope, safe next action and stop criteria. No implicit outreach."
+    },
+    {
       "id": "action_model",
       "kind": "internal",
       "label": "Daksh Action and Style Model",

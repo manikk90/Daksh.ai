@@ -10,6 +10,7 @@ Is file mein actual mapped skills, internal roles aur external dependencies alag
 | Agent / role | Skill ya implementation | Export status |
 |---|---|---|
 | Daksh | [`daksh`](skills/daksh/SKILL.md) | Original source, 22 files |
+| AI Consultant | [`ai-consultancy` workflow](skills/daksh/references/ai-consultant/SKILL.md) | Mapped under Daksh; runtime invocation verified separately |
 | maniik | [`maniik`](skills/maniik/SKILL.md) | Original source, 7 files |
 | AI Native Director | [`ai-native-director`](skills/ai-native-director/SKILL.md) | Original source, 31 files |
 | AI Location Director | [`ai-location-director`](skills/ai-location-director/SKILL.md) | Original source, 30 files |
