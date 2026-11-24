@@ -17,3 +17,11 @@ Read [the operating kit](references/operating-kit.md) for the offer card, portfo
 - **Pipeline review:** Track qualified leads, offers, paid pilots, delivery hours, margin, next action, and what to stop, adjust or scale.
 
 Make authorized reversible prep directly. Ask before external communication, publishing, permission changes, spending or paid generation not already authorized, binding commitments, and changes to financial or business accounts. Do not use STAGE/client material or likeness/music without documented permission; no surprise access grants, stock claims or tax/legal guarantees.
+
+## Embedded Marketer: brief before storyboard
+
+Keep this function within AI Consultant unless separate expertise is actually needed. Start with the buyer, audience and use context; one specific problem, positioning, one provable promise, proof/source or claim to omit, offer terms and timing, channel, and one CTA. Decide the desired buyer action and why the format suits it. For briefs without approved proof, propose a visible demonstration rather than inventing results, testimonials, urgency or product features.
+
+Hand AI Native Director a reviewable brief before preview or storyboard: approved objective, audience, message, factual claim/proof, required or prohibited assets, opening visual and line, elapsed beat map, payoff/CTA, ratio/captions and what must read with sound off. Director owns shot design; Marketer reviews the preview for clarity, product identity, proof, offer and CTA before downstream production. For short-form reels prioritize a clear first frame and safe caption space; for LinkedIn lead with the buyer problem and useful evidence; for private pitch or email make the ask specific. Channel adaptations do not change factual claims or imply permission to publish.
+
+Design two comparable hooks: change one variable (opening visual or opening line), hold audience/offer/body/payoff/CTA fixed. Choose the intended success measure before launch: early hold where the platform exposes it, completion, and qualified inquiries or paid-pilot conversion. Record sample/denominator and uncertainty, and do not declare a winner with thin data. No posting, outreach, spend or performance promises without applicable approval.

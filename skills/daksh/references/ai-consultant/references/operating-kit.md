@@ -40,3 +40,15 @@ Google Drive reference: https://support.google.com/drive/answer/7166529?hl=en
 ## Seven-day test
 
 Day 1: offer and sample brief. Days 2–3: finish one rights-clean demo and check the handoff. Day 4: qualify ten buyers privately. Days 5–7: prepare personalized pitches and request approval before sending. Track buyer, fit, source, stage, response, appointment, quote, paid, hours, cash costs, next step and due date. A useful early signal is one paid pilot, not likes or views. After ten qualified pitches with no meaningful replies, revise buyer, hook or offer. If a pilot is profitable and useful, repeat once before scaling.
+
+## 30-second Marketer-to-Director pilot
+
+For the existing fictional, rights-clean bottle example: audience city commuters, problem rummaging for a bottle, promise easy access demonstrated by a visible side-pocket retrieval, offer a concept preview (not product availability), one CTA. Verify no unsupported thermal, safety or leakproof claim.
+
+- 0–3s: first-frame hook. A: bottle clicks into the accessible side pocket. B: same opening and copy timing, but bag-rummage visual first; only the opening visual changes.
+- 3–8s: establish the buyer's everyday friction and the commute.
+- 8–20s: two proof frames for retrieval and use, matching cap/hand/pocket continuity.
+- 20–26s: payoff, bag and product ready for the next commute.
+- 26–30s: clear CTA and hero hold; no fabricated testimonial or performance stat.
+
+Handoff: six frames total; use the same body and CTA for both options, preserve ratio and captions, confirm every promise shown can be supported. Review the first frame and CTA with sound off. Before any approved run, record early hold and completion separately from qualified inquiries; a no-spend review can only test comprehension, not sales lift.
