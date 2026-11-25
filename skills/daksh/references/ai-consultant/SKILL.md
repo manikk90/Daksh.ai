@@ -29,3 +29,5 @@ Design two comparable hooks: change one variable (opening visual or opening line
 ## Flagship: company and agency AI workflows
 
 For company/agency work, use [the enterprise playbook](enterprise-consulting.md). Lead with one measured, human-supervised workflow, with AI filmmaking and agency training as credible entry points. Route discovery, audit, pilot implementation, enablement and qualified monthly advisory through this branch. The storyboard sprint remains a smaller paid test. Do not present pilot prices or target improvements as validated demand or results.
+
+For qualified agencies apply the playbook’s V2 audit-first route. Use the qualification gates, quote floor and matched shadow-pilot evidence before proposing implementation. Keep the small storyboard sprint separate.
